@@ -1,0 +1,18 @@
+{
+  "name": "System (GeoJSON)",
+  "abstract": "A System (GeoJSON encoding, a profile of the OGC API - Features feature): a sensor, actuator, platform, sampler or other asset that produces observations or receives commands, with its identity, type and relationships to other resources.",
+  "status": "under-development",
+  "dateTimeAddition": "2026-09-23T00:00:00Z",
+  "itemClass": "schema",
+  "version": "0.1",
+  "group": "Part 1",
+  "sources": [
+    {
+      "title": "api/part1/openapi/schemas/geojson/system.json in opengeospatial/ogcapi-connected-systems",
+      "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/api/part1/openapi/schemas/geojson/system.json"
+    }
+  ],
+  "isProfileOf": [
+    "bblocks://ogc.api.connected-systems.part1.feature"
+  ]
+}

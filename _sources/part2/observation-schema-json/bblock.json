@@ -1,0 +1,15 @@
+{
+  "name": "ObservationSchemaJson",
+  "abstract": "Observation schema for the JSON format (`application/json`), describing the observation result, parameters and related fields with SWE Common components.",
+  "status": "under-development",
+  "dateTimeAddition": "2026-09-23T00:00:00Z",
+  "itemClass": "schema",
+  "version": "0.1",
+  "group": "Part 2",
+  "sources": [
+    {
+      "title": "api/part2/openapi/schemas/json/observationSchemaJson.json in opengeospatial/ogcapi-connected-systems",
+      "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/api/part2/openapi/schemas/json/observationSchemaJson.json"
+    }
+  ]
+}

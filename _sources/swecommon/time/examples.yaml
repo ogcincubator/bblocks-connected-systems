@@ -1,0 +1,25 @@
+examples:
+  - title: AllowedTimes1
+    snippets:
+      - language: json
+        ref: examples/allowedTimes1.json
+  - title: AllowedTimes2
+    snippets:
+      - language: json
+        ref: examples/allowedTimes2.json
+  - title: Time1
+    snippets:
+      - language: json
+        ref: examples/time1.json
+  - title: Time2
+    snippets:
+      - language: json
+        ref: examples/time2.json
+  - title: Time3
+    snippets:
+      - language: json
+        ref: examples/time3.json
+  - title: Time4
+    snippets:
+      - language: json
+        ref: examples/time4.json

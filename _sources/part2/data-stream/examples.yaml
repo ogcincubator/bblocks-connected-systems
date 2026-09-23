@@ -1,0 +1,9 @@
+examples:
+  - title: Datastream simple
+    snippets:
+      - language: json
+        ref: examples/datastream-simple.json
+  - title: Datastream
+    snippets:
+      - language: json
+        ref: examples/datastream.json

@@ -1,0 +1,13 @@
+examples:
+  - title: ObservationSchema geopose swejson
+    snippets:
+      - language: json
+        ref: examples/observationSchema-geopose-swejson.json
+  - title: ObservationSchema scalar swecsv
+    snippets:
+      - language: json
+        ref: examples/observationSchema-scalar-swecsv.json
+  - title: ObservationSchema scalar swejson
+    snippets:
+      - language: json
+        ref: examples/observationSchema-scalar-swejson.json

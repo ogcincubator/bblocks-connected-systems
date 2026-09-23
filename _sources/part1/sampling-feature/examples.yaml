@@ -1,0 +1,37 @@
+examples:
+  - title: Sampling part geojson
+    snippets:
+      - language: json
+        ref: examples/sampling-part-geojson.json
+  - title: Sampling point geojson
+    snippets:
+      - language: json
+        ref: examples/sampling-point-geojson.json
+  - title: Sampling point xyz geojson
+    snippets:
+      - language: json
+        ref: examples/sampling-point-xyz-geojson.json
+  - title: Sampling proxy geojson
+    snippets:
+      - language: json
+        ref: examples/sampling-proxy-geojson.json
+  - title: Sampling specimen geojson
+    snippets:
+      - language: json
+        ref: examples/sampling-specimen-geojson.json
+  - title: SamplingProfile at location geojson
+    snippets:
+      - language: json
+        ref: examples/samplingProfile-at-location-geojson.json
+  - title: Viewing frustum at location geojson
+    snippets:
+      - language: json
+        ref: examples/viewing-frustum-at-location-geojson.json
+  - title: Viewing frustum on platform geojson
+    snippets:
+      - language: json
+        ref: examples/viewing-frustum-on-platform-geojson.json
+  - title: Viewing sector at location geojson
+    snippets:
+      - language: json
+        ref: examples/viewing-sector-at-location-geojson.json

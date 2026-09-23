@@ -1,0 +1,13 @@
+examples:
+  - title: AllowedTokens2
+    snippets:
+      - language: json
+        ref: examples/allowedTokens2.json
+  - title: Category1
+    snippets:
+      - language: json
+        ref: examples/category1.json
+  - title: Category2
+    snippets:
+      - language: json
+        ref: examples/category2.json

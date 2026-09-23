@@ -1,6 +1,6 @@
 {
   "name": "AbstractSimpleComponent",
-  "abstract": "Abstract base class for SWE Common simple (scalar or range) components.",
+  "abstract": "AbstractSimpleComponent schema.",
   "status": "under-development",
   "dateTimeAddition": "2026-09-23T00:00:00Z",
   "itemClass": "schema",
@@ -8,7 +8,7 @@
   "group": "SWE Common",
   "sources": [
     {
-      "title": "AbstractSimpleComponent.json in opengeospatial/ogcapi-connected-systems",
+      "title": "swecommon/schemas/json/AbstractSimpleComponent.json in opengeospatial/ogcapi-connected-systems",
       "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/swecommon/schemas/json/AbstractSimpleComponent.json"
     }
   ]

@@ -1,0 +1,15 @@
+{
+  "name": "CategoryRange",
+  "abstract": "Pair of categorical values used to specify a range in an ordinal reference system (specified by the code space)",
+  "status": "under-development",
+  "dateTimeAddition": "2026-09-23T00:00:00Z",
+  "itemClass": "schema",
+  "version": "0.1",
+  "group": "SWE Common",
+  "sources": [
+    {
+      "title": "swecommon/schemas/json/CategoryRange.json in opengeospatial/ogcapi-connected-systems",
+      "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/swecommon/schemas/json/CategoryRange.json"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Time Instant",
+  "anyOf": [
+    {
+      "$ref": "bblocks://ogc.api.connected-systems.common.time-instant"
+    },
+    {
+      "type": "string",
+      "const": "now"
+    }
+  ]
+}

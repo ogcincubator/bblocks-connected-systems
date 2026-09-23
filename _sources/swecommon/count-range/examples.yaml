@@ -1,0 +1,5 @@
+examples:
+  - title: Count range1
+    snippets:
+      - language: json
+        ref: examples/count-range1.json

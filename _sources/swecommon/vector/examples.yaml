@@ -1,0 +1,13 @@
+examples:
+  - title: Vector1
+    snippets:
+      - language: json
+        ref: examples/vector1.json
+  - title: Vector2
+    snippets:
+      - language: json
+        ref: examples/vector2.json
+  - title: Vector3
+    snippets:
+      - language: json
+        ref: examples/vector3.json

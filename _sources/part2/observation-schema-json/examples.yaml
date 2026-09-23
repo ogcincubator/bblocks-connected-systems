@@ -1,0 +1,17 @@
+examples:
+  - title: ObservationSchema geopose json
+    snippets:
+      - language: json
+        ref: examples/observationSchema-geopose-json.json
+  - title: ObservationSchema imagelink json
+    snippets:
+      - language: json
+        ref: examples/observationSchema-imagelink-json.json
+  - title: ObservationSchema scalar json
+    snippets:
+      - language: json
+        ref: examples/observationSchema-scalar-json.json
+  - title: ObservationSchema vector json
+    snippets:
+      - language: json
+        ref: examples/observationSchema-vector-json.json

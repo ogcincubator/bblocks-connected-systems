@@ -4,7 +4,7 @@
   "type": "object",
   "allOf": [
     {
-      "$ref": "bblocks://ogc.swecommon.abstract-simple-component"
+      "$ref": "bblocks://ogc.api.connected-systems.swecommon.abstract-simple-component"
     },
     {
       "properties": {
@@ -13,16 +13,16 @@
         },
         "uom": {
           "description": "Unit of measure used to express the value of this data component",
-          "$ref": "bblocks://ogc.swecommon.basic-types#UnitReference"
+          "$ref": "bblocks://ogc.api.connected-systems.swecommon.basic-types#UnitReference"
         },
         "constraint": {
-          "$ref": "bblocks://ogc.swecommon.basic-types#AllowedValues"
+          "$ref": "bblocks://ogc.api.connected-systems.swecommon.basic-types#AllowedValues"
         },
         "nilValues": {
-          "$ref": "bblocks://ogc.swecommon.basic-types#NilValuesNumber"
+          "$ref": "bblocks://ogc.api.connected-systems.swecommon.basic-types#NilValuesNumber"
         },
         "value": {
-          "$ref": "bblocks://ogc.swecommon.basic-types#NumberOrSpecial"
+          "$ref": "bblocks://ogc.api.connected-systems.swecommon.basic-types#NumberOrSpecial"
         }
       },
       "required": [

@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "items": {
+      "$ref": "bblocks://ogc.api.connected-systems.part1.procedure-array-sensorml"
+    },
+    "links": {
+      "description": "Links to related resources (including paging)",
+      "$ref": "bblocks://ogc.api.connected-systems.part1.links"
+    }
+  },
+  "required": [
+    "items"
+  ]
+}

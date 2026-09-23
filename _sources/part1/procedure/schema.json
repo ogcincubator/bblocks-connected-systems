@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "allOf": [
+    {
+      "$ref": "bblocks://ogc.api.connected-systems.part1.feature"
+    },
+    {
+      "properties": {
+        "geometry": {
+          "type": "null"
+        },
+        "properties": {
+          "properties": {
+            "featureType": {
+              "$ref": "bblocks://ogc.api.connected-systems.part1.uris#ProcedureTypeUris"
+            }
+          }
+        }
+      }
+    }
+  ]
+}

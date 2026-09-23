@@ -1,0 +1,17 @@
+examples:
+  - title: Array1
+    snippets:
+      - language: json
+        ref: examples/array1.json
+  - title: Array2
+    snippets:
+      - language: json
+        ref: examples/array2.json
+  - title: Array3 encoded values
+    snippets:
+      - language: json
+        ref: examples/array3-encoded-values.json
+  - title: Array3
+    snippets:
+      - language: json
+        ref: examples/array3.json

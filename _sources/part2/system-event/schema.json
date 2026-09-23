@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "allOf": [
+    {
+      "$ref": "bblocks://ogc.api.connected-systems.sensorml.event"
+    },
+    {
+      "properties": {
+        "id": {
+          "readOnly": true
+        },
+        "links": {
+          "description": "Links to related resources",
+          "$ref": "bblocks://ogc.api.connected-systems.part1.links"
+        }
+      },
+      "required": [
+        "definition",
+        "label",
+        "time"
+      ]
+    }
+  ]
+}

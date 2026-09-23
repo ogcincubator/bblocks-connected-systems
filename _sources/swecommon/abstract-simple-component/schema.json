@@ -3,7 +3,7 @@
   "type": "object",
   "allOf": [
     {
-      "$ref": "bblocks://ogc.swecommon.abstract-data-component"
+      "$ref": "bblocks://ogc.api.connected-systems.swecommon.abstract-data-component"
     },
     {
       "properties": {

@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "allOf": [
+    {
+      "$ref": "bblocks://ogc.api.connected-systems.part1.feature"
+    },
+    {
+      "properties": {
+        "properties": {
+          "properties": {
+            "featureType": {
+              "$ref": "bblocks://ogc.api.connected-systems.part1.uris#SystemTypeUris"
+            },
+            "assetType": {
+              "description": "Type of asset represented by this system.",
+              "type": "string",
+              "enum": [
+                "Equipment",
+                "Human",
+                "LivingThing",
+                "Simulation",
+                "Process",
+                "Group",
+                "Other"
+              ]
+            },
+            "validTime": {
+              "description": "Time period during which the system description is valid.",
+              "$ref": "bblocks://ogc.api.connected-systems.common.time-period"
+            },
+            "systemKind@link": {
+              "description": "Link to the system kind description (i.e., its nature or specifications).",
+              "$ref": "bblocks://ogc.api.connected-systems.common.link"
+            }
+          }
+        }
+      }
+    }
+  ]
+}

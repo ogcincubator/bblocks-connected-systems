@@ -1,0 +1,15 @@
+{
+  "name": "CommandStatus",
+  "abstract": "A CommandStatus report: the state of execution of a Command at a given report time, with status code, percent completion, message and any results.",
+  "status": "under-development",
+  "dateTimeAddition": "2026-09-23T00:00:00Z",
+  "itemClass": "schema",
+  "version": "0.1",
+  "group": "Part 2",
+  "sources": [
+    {
+      "title": "api/part2/openapi/schemas/json/commandStatus.json in opengeospatial/ogcapi-connected-systems",
+      "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/api/part2/openapi/schemas/json/commandStatus.json"
+    }
+  ]
+}

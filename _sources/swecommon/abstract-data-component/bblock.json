@@ -1,6 +1,6 @@
 {
   "name": "AbstractDataComponent",
-  "abstract": "Abstract base class for all SWE Common data components.",
+  "abstract": "Abstract base class for all data components",
   "status": "under-development",
   "dateTimeAddition": "2026-09-23T00:00:00Z",
   "itemClass": "schema",
@@ -8,7 +8,7 @@
   "group": "SWE Common",
   "sources": [
     {
-      "title": "AbstractDataComponent.json in opengeospatial/ogcapi-connected-systems",
+      "title": "swecommon/schemas/json/AbstractDataComponent.json in opengeospatial/ogcapi-connected-systems",
       "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/swecommon/schemas/json/AbstractDataComponent.json"
     }
   ]

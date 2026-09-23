@@ -1,0 +1,5 @@
+examples:
+  - title: Matrix1
+    snippets:
+      - language: json
+        ref: examples/matrix1.json

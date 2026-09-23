@@ -1,0 +1,9 @@
+examples:
+  - title: Thermometer sensor sml
+    snippets:
+      - language: json
+        ref: examples/thermometer-sensor-sml.json
+  - title: Uav platform sml
+    snippets:
+      - language: json
+        ref: examples/uav-platform-sml.json

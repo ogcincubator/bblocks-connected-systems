@@ -1,0 +1,15 @@
+{
+  "name": "Event",
+  "abstract": "A time tagged event with description and relevant property values.",
+  "status": "under-development",
+  "dateTimeAddition": "2026-09-23T00:00:00Z",
+  "itemClass": "schema",
+  "version": "0.1",
+  "group": "SensorML",
+  "sources": [
+    {
+      "title": "sensorml/schemas/json/Event.json in opengeospatial/ogcapi-connected-systems",
+      "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/sensorml/schemas/json/Event.json"
+    }
+  ]
+}

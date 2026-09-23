@@ -1,0 +1,25 @@
+examples:
+  - title: Obs geopose
+    snippets:
+      - language: json
+        ref: examples/obs-geopose.json
+  - title: Obs link inline image
+    snippets:
+      - language: json
+        ref: examples/obs-link-inline-image.json
+  - title: Obs link
+    snippets:
+      - language: json
+        ref: examples/obs-link.json
+  - title: Obs location
+    snippets:
+      - language: json
+        ref: examples/obs-location.json
+  - title: Obs profile
+    snippets:
+      - language: json
+        ref: examples/obs-profile.json
+  - title: Obs simple
+    snippets:
+      - language: json
+        ref: examples/obs-simple.json

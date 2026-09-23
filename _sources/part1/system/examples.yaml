@@ -1,0 +1,9 @@
+examples:
+  - title: Thermometer sensor geojson
+    snippets:
+      - language: json
+        ref: examples/thermometer-sensor-geojson.json
+  - title: Uav platform geojson
+    snippets:
+      - language: json
+        ref: examples/uav-platform-geojson.json

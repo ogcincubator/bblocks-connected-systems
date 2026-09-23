@@ -1,0 +1,9 @@
+examples:
+  - title: CommandSchema ptz swecsv
+    snippets:
+      - language: json
+        ref: examples/commandSchema-ptz-swecsv.json
+  - title: CommandSchema ptz swejson
+    snippets:
+      - language: json
+        ref: examples/commandSchema-ptz-swejson.json

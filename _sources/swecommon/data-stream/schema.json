@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Defines the structure of the element that will be repeated in the stream",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "bblocks://ogc.api.connected-systems.swecommon.abstract-swe-identifiable"
+    },
+    {
+      "properties": {
+        "type": {
+          "const": "DataStream"
+        },
+        "elementType": {
+          "description": "Definition and structure of one stream element",
+          "allOf": [
+            {
+              "$ref": "bblocks://ogc.api.connected-systems.swecommon.basic-types#SoftNamedProperty"
+            },
+            {
+              "oneOf": [
+                {
+                  "$ref": "bblocks://ogc.api.connected-systems.swecommon.basic-types#AssociationAttributeGroup"
+                },
+                {
+                  "$ref": "bblocks://ogc.api.connected-systems.swecommon.swe-common#AnyComponent"
+                }
+              ]
+            }
+          ]
+        },
+        "encoding": {
+          "description": "Method used to encode the stream values",
+          "oneOf": [
+            {
+              "$ref": "bblocks://ogc.api.connected-systems.swecommon.encodings#BinaryEncoding"
+            },
+            {
+              "$ref": "bblocks://ogc.api.connected-systems.swecommon.encodings#TextEncoding"
+            },
+            {
+              "$ref": "bblocks://ogc.api.connected-systems.swecommon.encodings#XMLEncoding"
+            },
+            {
+              "$ref": "bblocks://ogc.api.connected-systems.swecommon.encodings#JSONEncoding"
+            }
+          ]
+        },
+        "values": {
+          "description": "Encoded values for the stream (can be out of band)",
+          "$ref": "bblocks://ogc.api.connected-systems.swecommon.basic-types#AssociationAttributeGroup"
+        }
+      },
+      "required": [
+        "type",
+        "elementType",
+        "encoding"
+      ]
+    }
+  ]
+}

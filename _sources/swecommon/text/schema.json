@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Free text component used to store comments or any other type of textual statement",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "bblocks://ogc.api.connected-systems.swecommon.abstract-simple-component"
+    },
+    {
+      "properties": {
+        "type": {
+          "const": "Text"
+        },
+        "constraint": {
+          "$ref": "bblocks://ogc.api.connected-systems.swecommon.basic-types#AllowedTokens"
+        },
+        "nilValues": {
+          "$ref": "bblocks://ogc.api.connected-systems.swecommon.basic-types#NilValuesText"
+        },
+        "value": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "type",
+        "definition",
+        "label"
+      ]
+    }
+  ]
+}

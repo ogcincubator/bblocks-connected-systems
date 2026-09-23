@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "commandFormat": {
+      "type": "string"
+    },
+    "recordSchema": {
+      "$ref": "bblocks://ogc.api.connected-systems.swecommon.swe-common#AnyComponent"
+    },
+    "encoding": {}
+  },
+  "required": [
+    "commandFormat",
+    "recordSchema",
+    "encoding"
+  ],
+  "oneOf": [
+    {
+      "title": "SWE JSON",
+      "properties": {
+        "commandFormat": {
+          "const": "application/swe+json"
+        },
+        "encoding": {
+          "$ref": "bblocks://ogc.api.connected-systems.swecommon.encodings#JSONEncoding"
+        }
+      }
+    },
+    {
+      "title": "SWE Text",
+      "properties": {
+        "commandFormat": {
+          "const": "application/swe+text"
+        },
+        "encoding": {
+          "$ref": "bblocks://ogc.api.connected-systems.swecommon.encodings#TextEncoding"
+        }
+      }
+    },
+    {
+      "title": "SWE CSV",
+      "properties": {
+        "commandFormat": {
+          "const": "application/swe+csv"
+        },
+        "encoding": {
+          "allOf": [
+            {
+              "$ref": "bblocks://ogc.api.connected-systems.swecommon.encodings#TextEncoding"
+            },
+            {
+              "properties": {
+                "tokenSeparator": {
+                  "const": ","
+                },
+                "blockSeparator": {
+                  "const": "\n"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "title": "SWE Binary",
+      "properties": {
+        "commandFormat": {
+          "const": "application/swe+binary"
+        },
+        "encoding": {
+          "$ref": "bblocks://ogc.api.connected-systems.swecommon.encodings#BinaryEncoding"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "Common Definitions",
+  "abstract": "Definitions shared by SensorML schemas: observable properties, terms, any-property and any-constraint unions, path references and time instant-or-period.",
+  "status": "under-development",
+  "dateTimeAddition": "2026-09-23T00:00:00Z",
+  "itemClass": "schema",
+  "version": "0.1",
+  "group": "SensorML",
+  "sources": [
+    {
+      "title": "sensorml/schemas/json/commonDefs.json in opengeospatial/ogcapi-connected-systems",
+      "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/sensorml/schemas/json/commonDefs.json"
+    }
+  ]
+}

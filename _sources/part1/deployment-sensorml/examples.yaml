@@ -1,0 +1,5 @@
+examples:
+  - title: Deployment sml
+    snippets:
+      - language: json
+        ref: examples/deployment-sml.json

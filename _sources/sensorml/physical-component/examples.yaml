@@ -1,0 +1,9 @@
+examples:
+  - title: Physical component
+    snippets:
+      - language: json
+        ref: examples/physical_component.json
+  - title: Sensor instance with geopose ypr
+    snippets:
+      - language: json
+        ref: examples/sensor_instance_with_geopose_ypr.json

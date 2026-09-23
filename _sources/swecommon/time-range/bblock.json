@@ -1,0 +1,15 @@
+{
+  "name": "TimeRange",
+  "abstract": "Time value pair for specifying a time range (can be a decimal or ISO 8601)",
+  "status": "under-development",
+  "dateTimeAddition": "2026-09-23T00:00:00Z",
+  "itemClass": "schema",
+  "version": "0.1",
+  "group": "SWE Common",
+  "sources": [
+    {
+      "title": "swecommon/schemas/json/TimeRange.json in opengeospatial/ogcapi-connected-systems",
+      "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/swecommon/schemas/json/TimeRange.json"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "Boolean",
+  "abstract": "Scalar component used to express truth: True or False, 0 or 1",
+  "status": "under-development",
+  "dateTimeAddition": "2026-09-23T00:00:00Z",
+  "itemClass": "schema",
+  "version": "0.1",
+  "group": "SWE Common",
+  "sources": [
+    {
+      "title": "swecommon/schemas/json/Boolean.json in opengeospatial/ogcapi-connected-systems",
+      "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/swecommon/schemas/json/Boolean.json"
+    }
+  ]
+}

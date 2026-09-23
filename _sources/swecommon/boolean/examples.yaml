@@ -1,0 +1,9 @@
+examples:
+  - title: Boolean1
+    snippets:
+      - language: json
+        ref: examples/boolean1.json
+  - title: Boolean2
+    snippets:
+      - language: json
+        ref: examples/boolean2.json

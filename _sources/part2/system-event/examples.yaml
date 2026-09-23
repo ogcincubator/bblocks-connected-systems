@@ -1,0 +1,5 @@
+examples:
+  - title: SystemEvent
+    snippets:
+      - language: json
+        ref: examples/systemEvent.json

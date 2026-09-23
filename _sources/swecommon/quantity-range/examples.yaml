@@ -1,0 +1,9 @@
+examples:
+  - title: Quantity range1
+    snippets:
+      - language: json
+        ref: examples/quantity-range1.json
+  - title: Quantity range2
+    snippets:
+      - language: json
+        ref: examples/quantity-range2.json

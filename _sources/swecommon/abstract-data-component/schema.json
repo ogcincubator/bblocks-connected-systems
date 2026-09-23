@@ -4,7 +4,7 @@
   "type": "object",
   "allOf": [
     {
-      "$ref": "bblocks://ogc.swecommon.abstract-swe-identifiable"
+      "$ref": "bblocks://ogc.api.connected-systems.swecommon.abstract-swe-identifiable"
     },
     {
       "properties": {

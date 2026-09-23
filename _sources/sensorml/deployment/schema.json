@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "allOf": [
+    {
+      "$ref": "bblocks://ogc.api.connected-systems.sensorml.described-object"
+    },
+    {
+      "properties": {
+        "type": {
+          "const": "Deployment"
+        },
+        "definition": {
+          "description": "Type of deployment (semantic link)",
+          "type": "string",
+          "format": "uri"
+        },
+        "location": {
+          "description": "The deployment location or area",
+          "$ref": "https://geojson.org/schema/Geometry.json"
+        },
+        "platform": {
+          "description": "The platform that the systems are deployed on",
+          "$ref": "bblocks://ogc.api.connected-systems.sensorml.deployed-system"
+        },
+        "deployedSystems": {
+          "description": "The list of deployed systems",
+          "type": "array",
+          "items": {
+            "allOf": [
+              {
+                "$ref": "bblocks://ogc.api.connected-systems.swecommon.basic-types#SoftNamedProperty"
+              },
+              {
+                "$ref": "bblocks://ogc.api.connected-systems.sensorml.deployed-system"
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

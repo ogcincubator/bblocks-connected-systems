@@ -1,17 +1,33 @@
 examples:
-  - title: Quantity example 1
+  - title: AllowedValues1
+    snippets:
+      - language: json
+        ref: examples/allowedValues1.json
+  - title: AllowedValues3
+    snippets:
+      - language: json
+        ref: examples/allowedValues3.json
+  - title: AllowedValues4
+    snippets:
+      - language: json
+        ref: examples/allowedValues4.json
+  - title: Nil values1
+    snippets:
+      - language: json
+        ref: examples/nil-values1.json
+  - title: Quantity1
     snippets:
       - language: json
         ref: examples/quantity1.json
-  - title: Quantity example 2
+  - title: Quantity2
     snippets:
       - language: json
         ref: examples/quantity2.json
-  - title: Quantity example 3
+  - title: Quantity3
     snippets:
       - language: json
         ref: examples/quantity3.json
-  - title: Quantity example 4
+  - title: Quantity4
     snippets:
       - language: json
         ref: examples/quantity4.json

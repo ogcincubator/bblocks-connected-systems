@@ -1,0 +1,13 @@
+examples:
+  - title: AllowedValues2
+    snippets:
+      - language: json
+        ref: examples/allowedValues2.json
+  - title: Count1
+    snippets:
+      - language: json
+        ref: examples/count1.json
+  - title: Nil values2
+    snippets:
+      - language: json
+        ref: examples/nil-values2.json

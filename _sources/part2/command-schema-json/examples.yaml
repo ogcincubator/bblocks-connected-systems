@@ -1,0 +1,5 @@
+examples:
+  - title: CommandSchema ptz json
+    snippets:
+      - language: json
+        ref: examples/commandSchema-ptz-json.json

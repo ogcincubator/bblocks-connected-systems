@@ -1,0 +1,15 @@
+{
+  "name": "DataStream",
+  "abstract": "A DataStream: a time-ordered stream of observations produced by a System, describing the observed properties, result schema and formats. Observations are posted to and retrieved from it.",
+  "status": "under-development",
+  "dateTimeAddition": "2026-09-23T00:00:00Z",
+  "itemClass": "schema",
+  "version": "0.1",
+  "group": "Part 2",
+  "sources": [
+    {
+      "title": "api/part2/openapi/schemas/json/dataStream.json in opengeospatial/ogcapi-connected-systems",
+      "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/api/part2/openapi/schemas/json/dataStream.json"
+    }
+  ]
+}

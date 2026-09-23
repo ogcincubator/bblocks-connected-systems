@@ -1,0 +1,15 @@
+{
+  "name": "Matrix",
+  "abstract": "Implementation of ISO-11404 Array datatype. This defines an array of identical data components with a elementCount. Values are given as a block and can be encoded in different ways",
+  "status": "under-development",
+  "dateTimeAddition": "2026-09-23T00:00:00Z",
+  "itemClass": "schema",
+  "version": "0.1",
+  "group": "SWE Common",
+  "sources": [
+    {
+      "title": "swecommon/schemas/json/Matrix.json in opengeospatial/ogcapi-connected-systems",
+      "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/swecommon/schemas/json/Matrix.json"
+    }
+  ]
+}

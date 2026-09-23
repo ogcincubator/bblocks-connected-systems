@@ -1,0 +1,15 @@
+{
+  "name": "Time",
+  "abstract": "Scalar component used to represent a time quantity either as ISO 8601 (e.g., 2004-04-18T12:03:04.6Z) or as a duration relative to a time of reference",
+  "status": "under-development",
+  "dateTimeAddition": "2026-09-23T00:00:00Z",
+  "itemClass": "schema",
+  "version": "0.1",
+  "group": "SWE Common",
+  "sources": [
+    {
+      "title": "swecommon/schemas/json/Time.json in opengeospatial/ogcapi-connected-systems",
+      "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/swecommon/schemas/json/Time.json"
+    }
+  ]
+}

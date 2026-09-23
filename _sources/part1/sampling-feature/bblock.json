@@ -1,0 +1,18 @@
+{
+  "name": "SamplingFeature (GeoJSON)",
+  "abstract": "A Sampling Feature (GeoJSON encoding): a feature such as a station, specimen or transect that is sampled or observed by systems, and serves as the feature of interest of observations; profile of the OGC API - Features feature.",
+  "status": "under-development",
+  "dateTimeAddition": "2026-09-23T00:00:00Z",
+  "itemClass": "schema",
+  "version": "0.1",
+  "group": "Part 1",
+  "sources": [
+    {
+      "title": "api/part1/openapi/schemas/geojson/samplingFeature.json in opengeospatial/ogcapi-connected-systems",
+      "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/api/part1/openapi/schemas/geojson/samplingFeature.json"
+    }
+  ],
+  "isProfileOf": [
+    "bblocks://ogc.api.connected-systems.part1.feature"
+  ]
+}

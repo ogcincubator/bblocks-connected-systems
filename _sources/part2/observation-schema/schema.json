@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "oneOf": [
+    {
+      "title": "JSON",
+      "$ref": "bblocks://ogc.api.connected-systems.part2.observation-schema-json"
+    },
+    {
+      "title": "SWE Common",
+      "$ref": "bblocks://ogc.api.connected-systems.part2.observation-schema-swe"
+    },
+    {
+      "title": "Protobuf",
+      "$ref": "bblocks://ogc.api.connected-systems.part2.observation-schema-protobuf"
+    },
+    {
+      "title": "Other format",
+      "$ref": "bblocks://ogc.api.connected-systems.part2.observation-schema-any-other"
+    }
+  ],
+  "required": [
+    "obsFormat"
+  ]
+}

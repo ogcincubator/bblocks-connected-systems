@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "items": {
+      "type": "array",
+      "items": {
+        "$ref": "bblocks://ogc.api.connected-systems.part2.command-result"
+      }
+    },
+    "links": {
+      "description": "Links to related resources (including paging)",
+      "$ref": "bblocks://ogc.api.connected-systems.part1.links"
+    }
+  },
+  "required": [
+    "items"
+  ]
+}

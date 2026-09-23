@@ -12,7 +12,7 @@ description: |
   Semantic annotations (JSON-LD contexts) are not yet provided.
 
 # Customize the following prefix (will be prepended to the path of the building blocks):
-identifier-prefix: ogc.
+identifier-prefix: ogc.api.connected-systems.
 
 # List of imports ("default" is an alias for the main OGC Building Blocks Register).
 # An entry can also be an "@org/register" alias (e.g. "@ogc/main", equivalent to "default"),

@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "allOf": [
+    {
+      "$ref": "bblocks://ogc.api.connected-systems.part1.feature"
+    },
+    {
+      "properties": {
+        "properties": {
+          "required": [
+            "validTime"
+          ],
+          "properties": {
+            "featureType": {
+              "$ref": "bblocks://ogc.api.connected-systems.part1.uris#DeploymentTypeUris"
+            },
+            "validTime": {
+              "description": "Time period during which the systems are deployed.",
+              "$ref": "bblocks://ogc.api.connected-systems.common.time-period"
+            },
+            "platform@link": {
+              "description": "Link to the platform on which the systems are deployed.",
+              "$ref": "bblocks://ogc.api.connected-systems.common.link"
+            },
+            "deployedSystems@link": {
+              "type": "array",
+              "items": {
+                "description": "Link to the system being deployed. Either a URN if the system is stored locally, or a URL if the system is hosted externally",
+                "$ref": "bblocks://ogc.api.connected-systems.common.link"
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

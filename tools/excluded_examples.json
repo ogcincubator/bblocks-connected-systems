@@ -1,0 +1,98 @@
+{
+ "obs-link-create.json": {
+  "block": "part2/observation",
+  "reason": "Request payload validated against the response schema: `readOnly` properties (`id`, `live`, `system@link`...) are `required`."
+ },
+ "obs-location-create.json": {
+  "block": "part2/observation",
+  "reason": "Request payload validated against the response schema: `readOnly` properties (`id`, `live`, `system@link`...) are `required`."
+ },
+ "obs-profile-create.json": {
+  "block": "part2/observation",
+  "reason": "Request payload validated against the response schema: `readOnly` properties (`id`, `live`, `system@link`...) are `required`."
+ },
+ "obs-simple-create.json": {
+  "block": "part2/observation",
+  "reason": "Request payload validated against the response schema: `readOnly` properties (`id`, `live`, `system@link`...) are `required`."
+ },
+ "observationSchema-image-link.json": {
+  "block": "part2/observation",
+  "reason": "Request payload validated against the response schema: `readOnly` properties (`id`, `live`, `system@link`...) are `required`."
+ },
+ "command-ptz-create.json": {
+  "block": "part2/command",
+  "reason": "Request payload validated against the response schema: `readOnly` properties (`id`, `live`, `system@link`...) are `required`."
+ },
+ "uav-mission.json": {
+  "block": "part2/command",
+  "reason": "Request payload validated against the response schema: `readOnly` properties (`id`, `live`, `system@link`...) are `required`."
+ },
+ "command-result-datastream.json": {
+  "block": "part2/command-result",
+  "reason": "Request payload validated against the response schema: `readOnly` properties (`id`, `live`, `system@link`...) are `required`."
+ },
+ "command-result-inline.json": {
+  "block": "part2/command-result",
+  "reason": "Request payload validated against the response schema: `readOnly` properties (`id`, `live`, `system@link`...) are `required`."
+ },
+ "command-result-single-obs.json": {
+  "block": "part2/command-result",
+  "reason": "Request payload validated against the response schema: `readOnly` properties (`id`, `live`, `system@link`...) are `required`."
+ },
+ "command-status-inline-result-complex.json": {
+  "block": "part2/command-status",
+  "reason": "Request payload validated against the response schema: `readOnly` properties (`id`, `live`, `system@link`...) are `required`."
+ },
+ "command-status-inline-result-simple.json": {
+  "block": "part2/command-status",
+  "reason": "Request payload validated against the response schema: `readOnly` properties (`id`, `live`, `system@link`...) are `required`."
+ },
+ "air-temp.json": {
+  "block": "part1/property-sensorml",
+  "reason": "Example has `id` but no `uniqueId`, which the property schema requires."
+ },
+ "avg-cpu-temp.json": {
+  "block": "part1/property-sensorml",
+  "reason": "Example has `id` but no `uniqueId`, which the property schema requires."
+ },
+ "combustion-chamber-temp.json": {
+  "block": "part1/property-sensorml",
+  "reason": "Example has `id` but no `uniqueId`, which the property schema requires."
+ },
+ "daily-avg-air-temp.json": {
+  "block": "part1/property-sensorml",
+  "reason": "Example has `id` but no `uniqueId`, which the property schema requires."
+ },
+ "engine-power.json": {
+  "block": "part1/property-sensorml",
+  "reason": "Example has `id` but no `uniqueId`, which the property schema requires."
+ },
+ "engine-temp.json": {
+  "block": "part1/property-sensorml",
+  "reason": "Example has `id` but no `uniqueId`, which the property schema requires."
+ },
+ "received-rf-power-xband.json": {
+  "block": "part1/property-sensorml",
+  "reason": "Example has `id` but no `uniqueId`, which the property schema requires."
+ },
+ "received-rf-power.json": {
+  "block": "part1/property-sensorml",
+  "reason": "Example has `id` but no `uniqueId`, which the property schema requires."
+ },
+ "water-temp.json": {
+  "block": "part1/property-sensorml",
+  "reason": "Example has `id` but no `uniqueId`, which the property schema requires."
+ },
+ "datastream-external-link-edr.json": {
+  "block": "part2/data-stream",
+  "reason": "Request payload validated against the response schema: `readOnly` properties (`id`, `live`, `system@link`...) are `required`."
+ },
+ "controlstream-ptz-create.json": {
+  "block": "part2/control-stream-create",
+  "reason": "Request payload validated against the response schema: `readOnly` properties (`id`, `live`, `system@link`...) are `required`."
+ },
+ "datastream-simple-create.json": {
+  "block": "part2/data-stream-create",
+  "reason": "Request payload validated against the response schema: `readOnly` properties (`id`, `live`, `system@link`...) are `required`."
+ }
+}

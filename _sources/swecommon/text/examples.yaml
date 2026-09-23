@@ -1,0 +1,21 @@
+examples:
+  - title: AllowedTokens1
+    snippets:
+      - language: json
+        ref: examples/allowedTokens1.json
+  - title: Nil values3
+    snippets:
+      - language: json
+        ref: examples/nil-values3.json
+  - title: Text1
+    snippets:
+      - language: json
+        ref: examples/text1.json
+  - title: Text2
+    snippets:
+      - language: json
+        ref: examples/text2.json
+  - title: Text3
+    snippets:
+      - language: json
+        ref: examples/text3.json

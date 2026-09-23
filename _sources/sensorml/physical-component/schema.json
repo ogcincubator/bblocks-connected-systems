@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "bblocks://ogc.api.connected-systems.sensorml.abstract-physical-process"
+    },
+    {
+      "properties": {
+        "type": {
+          "const": "PhysicalComponent"
+        },
+        "method": {
+          "$ref": "bblocks://ogc.api.connected-systems.sensorml.simple-process#ProcessMethod"
+        }
+      }
+    }
+  ]
+}

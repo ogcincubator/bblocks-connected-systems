@@ -1,17 +1,24 @@
-# OGC Building Block template
+# OGC API - Connected Systems building blocks
 
-This template provides a working example of an [OGC Building Block](https:blocks.ogc.org). For more info see [the Documentation](https://ogcincubator.github.io/bblocks-docs/).
+[OGC Blocks](https://opengeospatial.github.io/bblocks/) conversion of the **data models** of
+[OGC API - Connected Systems](https://github.com/opengeospatial/ogcapi-connected-systems) and the
+encodings it builds on. This is a draft: the schemas are generated from the upstream JSON schemas and
+have no semantic annotations (JSON-LD contexts) yet.
 
-This template is a working automation recipe to define, test and document a set of Building Blocks.
+| Directory in `_sources/` | Contents |
+|---|---|
+| `swecommon/` | SWE Common 3.0 JSON data components, encodings and basic types |
+| `sensorml/` | SensorML 3.0 JSON (systems, components, processes, deployments, ...) |
+| `common/` | Shared time and link schemas |
+| `part1/` | Part 1 (Feature resources): GeoJSON and SensorML encodings of systems, deployments, procedures, sampling features, properties |
+| `part2/` | Part 2 (Dynamic data): datastreams, observations, control streams, commands, system events |
 
-The automation-generated documentation for this example is here: [https://opengeospatial.github.io/bblock-template/](https://opengeospatial.github.io/bblock-template/)
+Out of scope: OpenAPI paths/parameters/responses and the XML encodings.
 
-[Examples of using this with typical applications of OGC standards](https://github.com/ogcincubator/bblocks-examples)
+## Regenerating
 
-Please replace the contents of this README with information about your Building Block(s).
+`tools/convert.py` converts the upstream schemas (expects the upstream repository next to this one) into
+`_sources/`. See [SCHEMA-FIXES.md](SCHEMA-FIXES.md) for the differences from the upstream schemas, which are
+candidates for backporting.
 
-# How to use this template
-
-[More information on design and usage](https://github.com/opengeospatial/bblock-template/blob/master/USAGE.md)
-
-
+Build locally with `./build.sh` (requires Docker) and browse the result with `./view.sh`.

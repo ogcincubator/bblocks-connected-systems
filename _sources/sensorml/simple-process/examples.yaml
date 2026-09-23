@@ -1,0 +1,5 @@
+examples:
+  - title: Simple process
+    snippets:
+      - language: json
+        ref: examples/simple_process.json

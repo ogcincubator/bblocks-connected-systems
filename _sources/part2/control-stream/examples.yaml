@@ -1,0 +1,5 @@
+examples:
+  - title: Controlstream ptz
+    snippets:
+      - language: json
+        ref: examples/controlstream-ptz.json

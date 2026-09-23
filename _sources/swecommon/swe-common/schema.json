@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$defs": {
+    "AnyComponent": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/AnySimpleComponent"
+        },
+        {
+          "$ref": "bblocks://ogc.api.connected-systems.swecommon.data-record"
+        },
+        {
+          "$ref": "bblocks://ogc.api.connected-systems.swecommon.vector"
+        },
+        {
+          "$ref": "bblocks://ogc.api.connected-systems.swecommon.data-array"
+        },
+        {
+          "$ref": "bblocks://ogc.api.connected-systems.swecommon.matrix"
+        },
+        {
+          "$ref": "bblocks://ogc.api.connected-systems.swecommon.data-choice"
+        },
+        {
+          "$ref": "bblocks://ogc.api.connected-systems.swecommon.geometry"
+        }
+      ],
+      "$anchor": "AnyComponent"
+    },
+    "AnySimpleComponent": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/AnyScalarComponent"
+        },
+        {
+          "$ref": "bblocks://ogc.api.connected-systems.swecommon.count-range"
+        },
+        {
+          "$ref": "bblocks://ogc.api.connected-systems.swecommon.quantity-range"
+        },
+        {
+          "$ref": "bblocks://ogc.api.connected-systems.swecommon.time-range"
+        },
+        {
+          "$ref": "bblocks://ogc.api.connected-systems.swecommon.category-range"
+        }
+      ],
+      "$anchor": "AnySimpleComponent"
+    },
+    "AnyScalarComponent": {
+      "oneOf": [
+        {
+          "$ref": "bblocks://ogc.api.connected-systems.swecommon.boolean"
+        },
+        {
+          "$ref": "bblocks://ogc.api.connected-systems.swecommon.count"
+        },
+        {
+          "$ref": "bblocks://ogc.api.connected-systems.swecommon.quantity"
+        },
+        {
+          "$ref": "bblocks://ogc.api.connected-systems.swecommon.time"
+        },
+        {
+          "$ref": "bblocks://ogc.api.connected-systems.swecommon.category"
+        },
+        {
+          "$ref": "bblocks://ogc.api.connected-systems.swecommon.text"
+        }
+      ],
+      "$anchor": "AnyScalarComponent"
+    }
+  },
+  "oneOf": [
+    {
+      "$ref": "#/$defs/AnyComponent"
+    },
+    {
+      "$ref": "bblocks://ogc.api.connected-systems.swecommon.data-stream"
+    }
+  ]
+}

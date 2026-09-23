@@ -1,0 +1,18 @@
+{
+  "name": "Feature (GeoJSON)",
+  "abstract": "Generic GeoJSON feature used as the base of the Connected Systems feature resources, with local `id`, `geometry`, `bbox`, free-form `properties` and `links`.",
+  "status": "under-development",
+  "dateTimeAddition": "2026-09-23T00:00:00Z",
+  "itemClass": "schema",
+  "version": "0.1",
+  "group": "Part 1",
+  "sources": [
+    {
+      "title": "api/part1/openapi/schemas/geojson/feature.json in opengeospatial/ogcapi-connected-systems",
+      "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/api/part1/openapi/schemas/geojson/feature.json"
+    }
+  ],
+  "isProfileOf": [
+    "bblocks://ogc.geo.features.feature"
+  ]
+}

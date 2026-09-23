@@ -1,0 +1,5 @@
+examples:
+  - title: Category range1
+    snippets:
+      - language: json
+        ref: examples/category-range1.json

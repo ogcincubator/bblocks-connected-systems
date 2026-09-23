@@ -1,0 +1,13 @@
+examples:
+  - title: Geometry1
+    snippets:
+      - language: json
+        ref: examples/geometry1.json
+  - title: Geometry2
+    snippets:
+      - language: json
+        ref: examples/geometry2.json
+  - title: Geometry3
+    snippets:
+      - language: json
+        ref: examples/geometry3.json

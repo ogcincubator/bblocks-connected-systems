@@ -1,0 +1,9 @@
+examples:
+  - title: Record1
+    snippets:
+      - language: json
+        ref: examples/record1.json
+  - title: Record2
+    snippets:
+      - language: json
+        ref: examples/record2.json

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "bblocks://ogc.api.connected-systems.sensorml.described-object"
+    },
+    {
+      "properties": {
+        "configuration": {
+          "description": "Value settings that further constrain the properties of the base process in this mode.",
+          "$ref": "bblocks://ogc.api.connected-systems.sensorml.settings"
+        }
+      }
+    }
+  ]
+}

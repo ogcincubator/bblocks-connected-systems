@@ -1,0 +1,15 @@
+{
+  "name": "Batch_response",
+  "abstract": "Response describing the outcome of a batch create, update or delete operation, reporting the per-item result of each request.",
+  "status": "under-development",
+  "dateTimeAddition": "2026-09-23T00:00:00Z",
+  "itemClass": "schema",
+  "version": "0.1",
+  "group": "Part 1",
+  "sources": [
+    {
+      "title": "api/part1/openapi/schemas/common/batch_response.json in opengeospatial/ogcapi-connected-systems",
+      "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/api/part1/openapi/schemas/common/batch_response.json"
+    }
+  ]
+}

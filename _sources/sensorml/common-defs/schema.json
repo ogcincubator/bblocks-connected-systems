@@ -1,0 +1,108 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$defs": {
+    "TimeInstantOrPeriod": {
+      "oneOf": [
+        {
+          "$ref": "bblocks://ogc.api.connected-systems.common.time-instant"
+        },
+        {
+          "$ref": "bblocks://ogc.api.connected-systems.common.time-period"
+        }
+      ],
+      "$anchor": "TimeInstantOrPeriod"
+    },
+    "ObservableProperty": {
+      "description": "A physical property that can be observed and possibly measured (e.g., temperature, color, position). An ObservableProperty has unambiguous definition, but does not have units of measure.",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "bblocks://ogc.api.connected-systems.swecommon.abstract-swe-identifiable"
+        },
+        {
+          "properties": {
+            "type": {
+              "const": "ObservableProperty"
+            },
+            "definition": {
+              "type": "string",
+              "format": "uri"
+            }
+          },
+          "required": [
+            "type",
+            "definition"
+          ]
+        }
+      ],
+      "$anchor": "ObservableProperty"
+    },
+    "Term": {
+      "type": "object",
+      "properties": {
+        "definition": {
+          "description": "Type of identifier/classifier (semantic link)",
+          "type": "string",
+          "format": "uri"
+        },
+        "label": {
+          "description": "Human readable label for this identifier/classifier",
+          "type": "string",
+          "minLength": 1
+        },
+        "codeSpace": {
+          "description": "URI of codespace defining the possible values for this identifier/classifier",
+          "type": "string",
+          "format": "uri"
+        },
+        "value": {
+          "description": "Actual identifier/classifier value",
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "label",
+        "value"
+      ],
+      "unevaluatedProperties": false,
+      "$anchor": "Term"
+    },
+    "AnyProperty": {
+      "oneOf": [
+        {
+          "$ref": "bblocks://ogc.api.connected-systems.swecommon.swe-common#AnySimpleComponent"
+        },
+        {
+          "$ref": "bblocks://ogc.api.connected-systems.swecommon.vector"
+        },
+        {
+          "$ref": "bblocks://ogc.api.connected-systems.swecommon.data-array"
+        },
+        {
+          "$ref": "bblocks://ogc.api.connected-systems.swecommon.matrix"
+        }
+      ],
+      "$anchor": "AnyProperty"
+    },
+    "PathRef": {
+      "type": "string",
+      "pattern": "^(components|inputs|outputs|parameters|modes)/([A-Za-z][A-Za-z0-9_\\-]*/)*[A-Za-z][A-Za-z0-9_\\-]*$",
+      "$anchor": "PathRef"
+    },
+    "AnyConstraint": {
+      "oneOf": [
+        {
+          "$ref": "bblocks://ogc.api.connected-systems.swecommon.basic-types#AllowedTokens"
+        },
+        {
+          "$ref": "bblocks://ogc.api.connected-systems.swecommon.basic-types#AllowedValues"
+        },
+        {
+          "$ref": "bblocks://ogc.api.connected-systems.swecommon.basic-types#AllowedTimes"
+        }
+      ],
+      "$anchor": "AnyConstraint"
+    }
+  }
+}

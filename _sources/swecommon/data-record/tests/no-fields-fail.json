@@ -1,0 +1,5 @@
+{
+  "type": "DataRecord",
+  "definition": "urn:x-ogc:def:property:CSM::RadialDistortionCoefficients",
+  "label": "Radial Distortion Coefficients"
+}

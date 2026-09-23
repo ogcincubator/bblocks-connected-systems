@@ -1,0 +1,5 @@
+examples:
+  - title: Process chain
+    snippets:
+      - language: json
+        ref: examples/process_chain.json

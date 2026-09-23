@@ -1,0 +1,15 @@
+{
+  "name": "DeploymentArray (GeoJSON)",
+  "abstract": "Bare JSON array of Deployment resources (GeoJSON encoding), used as the request payload for batch creation or update of several resources at once.",
+  "status": "under-development",
+  "dateTimeAddition": "2026-09-23T00:00:00Z",
+  "itemClass": "schema",
+  "version": "0.1",
+  "group": "Part 1",
+  "sources": [
+    {
+      "title": "api/part1/openapi/schemas/geojson/deploymentArray.json in opengeospatial/ogcapi-connected-systems",
+      "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/api/part1/openapi/schemas/geojson/deploymentArray.json"
+    }
+  ]
+}
