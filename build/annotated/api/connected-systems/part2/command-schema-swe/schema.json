@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "commandFormat": {
+      "type": "string"
+    },
+    "recordSchema": {
+      "$ref": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/swe-common/schema.json#AnyComponent"
+    },
+    "encoding": {}
+  },
+  "required": [
+    "commandFormat",
+    "recordSchema",
+    "encoding"
+  ],
+  "oneOf": [
+    {
+      "title": "SWE JSON",
+      "properties": {
+        "commandFormat": {
+          "const": "application/swe+json"
+        },
+        "encoding": {
+          "$ref": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/encodings/schema.json#JSONEncoding"
+        }
+      }
+    },
+    {
+      "title": "SWE Text",
+      "properties": {
+        "commandFormat": {
+          "const": "application/swe+text"
+        },
+        "encoding": {
+          "$ref": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/encodings/schema.json#TextEncoding"
+        }
+      }
+    },
+    {
+      "title": "SWE CSV",
+      "properties": {
+        "commandFormat": {
+          "const": "application/swe+csv"
+        },
+        "encoding": {
+          "allOf": [
+            {
+              "$ref": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/encodings/schema.json#TextEncoding"
+            },
+            {
+              "properties": {
+                "tokenSeparator": {
+                  "const": ","
+                },
+                "blockSeparator": {
+                  "const": "\n"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "title": "SWE Binary",
+      "properties": {
+        "commandFormat": {
+          "const": "application/swe+binary"
+        },
+        "encoding": {
+          "$ref": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/encodings/schema.json#BinaryEncoding"
+        }
+      }
+    }
+  ]
+}

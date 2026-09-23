@@ -1,0 +1,10 @@
+Validation report for ogc.api.connected-systems.sensorml.physical-system - PhysicalSystem
+Generated 2026-09-23T22:13:52.809177+00:00
+=== Files ===
+Using examples/sensor_instance_with_parent_and_frame.json from examples
+=== End Files ===
+
+=== JSON Schema ===
+Validation passed
+=== End JSON Schema ===
+

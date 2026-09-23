@@ -1,0 +1,89 @@
+
+
+{
+  "itemIdentifier": "ogc.api.connected-systems.swecommon.data-array",
+  "name": "DataArray",
+  "abstract": "Implementation of ISO-11404 Array datatype. This defines an array of identical data components with a elementCount. Values are given as a block and can be encoded in different ways",
+  "status": "under-development",
+  "dateTimeAddition": "2026-09-23T00:00:00Z",
+  "itemClass": "schema",
+  "version": "0.1",
+  "group": "SWE Common",
+  "sources": [
+    {
+      "title": "swecommon/schemas/json/DataArray.json in opengeospatial/ogcapi-connected-systems",
+      "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/swecommon/schemas/json/DataArray.json"
+    }
+  ],
+  "shaclShapes": {},
+  "dependsOn": [
+    "ogc.api.connected-systems.swecommon.swe-common",
+    "ogc.api.connected-systems.swecommon.encodings",
+    "ogc.api.connected-systems.swecommon.basic-types",
+    "ogc.api.connected-systems.swecommon.abstract-data-component"
+  ],
+  "dateOfLastChange": "2026-09-23",
+  "schema": {
+    "application/yaml": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/data-array/schema.yaml",
+    "application/json": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/data-array/schema.json"
+  },
+  "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/data-array/schema.json",
+  "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/data-array/resolvedProperties.json",
+  "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/data-array/",
+  "validationPassed": true,
+  "testOutputs": "https://github.com/ogcincubator/bblocks-connected-systems/blob/master/build/tests/api/connected-systems/swecommon/data-array/",
+  "description": "<!-- generated -->\n# DataArray\n\nImplementation of ISO-11404 Array datatype. This defines an array of identical data components with a elementCount. Values are given as a block and can be encoded in different ways\n\nConverted from [`swecommon/schemas/json/DataArray.json`](https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/swecommon/schemas/json/DataArray.json) in the OGC API - Connected Systems repository.\n\n## Definitions\n\nThe following definitions can be referenced individually using their anchor, e.g. `bblocks://ogc.api.connected-systems.swecommon.data-array#AbstractArray`:\n\n- `AbstractArray`\n\n## Properties\n\n| Property | Type | Required | Description |\n|---|---|---|---|\n| `type` | `\"DataArray\"` | yes |  |\n\n## Examples\n\n4 example(s) taken from the specification are included and validated against this schema.\n\n",
+  "examples": [
+    {
+      "title": "Array1",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/data-array/examples/array1.json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/swecommon/data-array/example_1_1.json",
+          "sizeBytes": 739,
+          "code": "{\n  \"type\": \"DataArray\",\n  \"label\": \"Calibration Table\",\n  \"elementType\": {\n    \"name\": \"point\",\n    \"type\": \"DataRecord\",\n    \"label\": \"Data Point\",\n    \"fields\": [\n      {\n        \"name\": \"t\",\n        \"type\": \"Quantity\",\n        \"definition\": \"https://qudt.org/vocab/quantitykind/Temperature\",\n        \"label\": \"Temperature\",\n        \"uom\": { \"code\": \"Cel\" }\n      },\n      {\n        \"name\": \"r\",\n        \"type\": \"Quantity\",\n        \"definition\": \"https://qudt.org/vocab/quantitykind/Resistance\",\n        \"label\": \"Resistance\",\n        \"uom\": { \"code\": \"KOhm\" }\n      }\n    ]\n  },\n  \"values\": [\n    {\"t\": 12, \"r\": 3.03},\n    {\"t\": 30.1, \"r\": 1.68},\n    {\"t\": 40.0, \"r\": 1.16},\n    {\"t\": 50.1, \"r\": 0.85},\n    {\"t\": 59.8, \"r\": 0.62}\n  ]\n}"
+        }
+      ]
+    },
+    {
+      "title": "Array2",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/data-array/examples/array2.json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/swecommon/data-array/example_2_1.json",
+          "sizeBytes": 990,
+          "code": "{\n  \"type\": \"DataArray\",\n  \"definition\": \"http://sensorml.com/ont/swe/property/Trajectory\",\n  \"label\": \"Mobile Trajectory\",\n  \"elementCount\": {\n    \"definition\": \"http://www.opengis.net/def/property/OGC/0/NumberOfPoints\",\n    \"label\": \"Implicit Size\"\n  },\n  \"elementType\": {\n    \"name\": \"point\",\n    \"type\": \"Vector\",\n    \"definition\": \"http://www.opengis.net/def/property/OGC/0/PlatformLocation\",\n    \"referenceFrame\": \"http://www.opengis.net/def/crs/EPSG/0/4326\",\n    \"label\": \"Location Point\",\n    \"coordinates\": [\n      {\n        \"name\": \"lat\",\n        \"type\": \"Quantity\",\n        \"definition\": \"http://sensorml.com/ont/swe/property/GeodeticLatitude\",\n        \"label\": \"Latitude\",\n        \"axisID\": \"Lat\",\n        \"uom\": { \"code\": \"deg\" }\n      },\n      {\n        \"name\": \"lon\",\n        \"type\": \"Quantity\",\n        \"definition\": \"http://sensorml.com/ont/swe/property/Longitude\",\n        \"label\": \"Longitude\",\n        \"axisID\": \"Lon\",\n        \"uom\": { \"code\": \"deg\" }\n      }\n    ]\n  }\n}"
+        }
+      ]
+    },
+    {
+      "title": "Array3 encoded values",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/data-array/examples/array3-encoded-values.json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/swecommon/data-array/example_3_1.json",
+          "sizeBytes": 2344,
+          "code": "{\n  \"$schema\": \"file:///home/autermann/Source/ogcapi-connected-systems/swecommon/schemas/json/DataArray.json\",\n  \"type\": \"DataArray\",\n  \"definition\": \"http://sensorml.com/ont/swe/property/RasterImage\",\n  \"label\": \"Satellite Image\",\n  \"elementCount\": {\n    \"definition\": \"http://www.opengis.net/def/property/OGC/0/NumberOfRows\",\n    \"value\": 4\n  },\n  \"elementType\": {\n    \"name\": \"row\",\n    \"type\": \"DataArray\",\n    \"definition\": \"http://sensorml.com/ont/swe/property/RasterImage\",\n    \"elementCount\": {\n      \"definition\": \"http://www.opengis.net/def/property/OGC/0/NumberOfSamples\",\n      \"value\": 4\n    },\n    \"elementType\": {\n      \"name\": \"pixel\",\n      \"type\": \"DataRecord\",\n      \"definition\": \"http://sensorml.com/ont/swe/property/GridCell\",\n      \"fields\": [\n        {\n          \"name\": \"band1\",\n          \"type\": \"Quantity\",\n          \"definition\": \"http://qudt.org/vocab/quantitykind/Radiance\",\n          \"label\": \"Radiance\",\n          \"description\": \"Radiance measured on band1\",\n          \"uom\": { \"code\": \"W.m-2.Sr-1\" }\n        },\n        {\n          \"name\": \"band2\",\n          \"type\": \"Quantity\",\n          \"definition\": \"http://qudt.org/vocab/quantitykind/Radiance\",\n          \"label\": \"Radiance\",\n          \"description\": \"Radiance measured on band2\",\n          \"uom\": { \"code\": \"W.m-2.Sr-1\" }\n        },\n        {\n          \"name\": \"band3\",\n          \"type\": \"Quantity\",\n          \"definition\": \"http://qudt.org/vocab/quantitykind/Radiance\",\n          \"label\": \"Radiance\",\n          \"description\": \"Radiance measured on band3\",\n          \"uom\": { \"code\": \"W.m-2.Sr-1\" }\n        }\n      ]\n    }\n  },\n  \"encoding\": {\n    \"type\": \"BinaryEncoding\",\n    \"byteEncoding\": \"raw\",\n    \"byteOrder\": \"bigEndian\",\n    \"members\": [\n      {\n        \"type\": \"Component\",\n        \"ref\": \"row/pixel/band1\",\n        \"dataType\": \"http://www.opengis.net/def/dataType/OGC/0/unsignedByte\"\n      },\n      {\n        \"type\": \"Component\",\n        \"ref\": \"row/pixel/band2\",\n        \"dataType\": \"http://www.opengis.net/def/dataType/OGC/0/unsignedByte\"\n      },\n      {\n        \"type\": \"Component\",\n        \"ref\": \"row/pixel/band3\",\n        \"dataType\": \"http://www.opengis.net/def/dataType/OGC/0/unsignedByte\"\n      }\n    ]\n  },\n  \"values\":{\"href\": \"data:application/octet-stream;base64,MptSyfqPYAB5A9aV3j1uYw9EywICwMDZVcmnRlpS1NI1crn8K7NUe/X0I8r4IVq9\"}\n}\n"
+        }
+      ]
+    },
+    {
+      "title": "Array3",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/data-array/examples/array3.json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/swecommon/data-array/example_4_1.json",
+          "sizeBytes": 1513,
+          "code": "{\n  \"type\": \"DataArray\",\n  \"definition\": \"http://sensorml.com/ont/swe/property/RasterImage\",\n  \"label\": \"Satellite Image\",\n  \"elementCount\": {\n    \"definition\": \"http://www.opengis.net/def/property/OGC/0/NumberOfRows\",\n    \"value\": 3000\n  },\n  \"elementType\": {\n    \"name\": \"row\",\n    \"type\": \"DataArray\",\n    \"definition\": \"http://sensorml.com/ont/swe/property/RasterImage\",\n    \"elementCount\": {\n      \"definition\": \"http://www.opengis.net/def/property/OGC/0/NumberOfSamples\",\n      \"value\": 3000\n    },\n    \"elementType\": {\n      \"name\": \"pixel\",\n      \"type\": \"DataRecord\",\n      \"definition\": \"http://sensorml.com/ont/swe/property/GridCell\",\n      \"fields\": [\n        {\n          \"name\": \"band1\",\n          \"type\": \"Quantity\",\n          \"definition\": \"http://qudt.org/vocab/quantitykind/Radiance\",\n          \"label\": \"Radiance\",\n          \"description\": \"Radiance measured on band1\",\n          \"uom\": { \"code\": \"W.m-2.Sr-1\" }\n        },\n        {\n          \"name\": \"band2\",\n          \"type\": \"Quantity\",\n          \"definition\": \"http://qudt.org/vocab/quantitykind/Radiance\",\n          \"label\": \"Radiance\",\n          \"description\": \"Radiance measured on band2\",\n          \"uom\": { \"code\": \"W.m-2.Sr-1\" }\n        },\n        {\n          \"name\": \"band3\",\n          \"type\": \"Quantity\",\n          \"definition\": \"http://qudt.org/vocab/quantitykind/Radiance\",\n          \"label\": \"Radiance\",\n          \"description\": \"Radiance measured on band3\",\n          \"uom\": { \"code\": \"W.m-2.Sr-1\" }\n        }\n      ]\n    }\n  }\n}"
+        }
+      ]
+    }
+  ],
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: Implementation of ISO-11404 Array datatype. This defines an array of\n  identical data components with a elementCount. Values are given as a block and can\n  be encoded in different ways\nallOf:\n- $ref: '#/$defs/AbstractArray'\n- properties:\n    type:\n      const: DataArray\n  required:\n  - type\n  - elementType\n$defs:\n  AbstractArray:\n    type: object\n    allOf:\n    - $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/abstract-data-component/schema.yaml\n    - properties:\n        elementCount:\n          description: Specifies the size of the array (i.e., the number of elements\n            of the defined type it contains)\n          oneOf:\n          - $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/basic-types/schema.yaml#AssociationAttributeGroup\n          - $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/basic-types/schema.yaml#ElementCount\n        elementType:\n          description: Defines the structure of the element that will be repeated\n            in the array\n          allOf:\n          - $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/basic-types/schema.yaml#SoftNamedProperty\n          - oneOf:\n            - $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/basic-types/schema.yaml#AssociationAttributeGroup\n            - $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/swe-common/schema.yaml#AnyComponent\n        encoding:\n          description: Specifies the type of method used to encode the array values\n          oneOf:\n          - $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/encodings/schema.yaml#BinaryEncoding\n          - $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/encodings/schema.yaml#TextEncoding\n          - $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/encodings/schema.yaml#XMLEncoding\n          - $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/encodings/schema.yaml#JSONEncoding\n        values:\n          description: If present, contains an encoded block of the values contained\n            in the array. Values are optional so that the array definition can be\n            used a as a schema for values provided separately\n          $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/basic-types/schema.yaml#EncodedValues\n    $anchor: AbstractArray\n",
+  "gitRepository": "https://github.com/ogcincubator/bblocks-connected-systems",
+  "gitPath": "_sources/swecommon/data-array"
+}

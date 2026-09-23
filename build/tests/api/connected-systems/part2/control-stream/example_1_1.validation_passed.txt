@@ -1,0 +1,10 @@
+Validation report for ogc.api.connected-systems.part2.control-stream - ControlStream
+Generated 2026-09-23T22:13:51.898191+00:00
+=== Files ===
+Using examples/controlstream-ptz.json from examples
+=== End Files ===
+
+=== JSON Schema ===
+Validation passed
+=== End JSON Schema ===
+

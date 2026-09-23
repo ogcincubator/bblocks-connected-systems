@@ -1,0 +1,32 @@
+
+
+{
+  "itemIdentifier": "ogc.api.connected-systems.sensorml.responsible-party",
+  "name": "ResponsibleParty",
+  "abstract": "ResponsibleParty schema.",
+  "status": "under-development",
+  "dateTimeAddition": "2026-09-23T00:00:00Z",
+  "itemClass": "schema",
+  "version": "0.1",
+  "group": "SensorML",
+  "sources": [
+    {
+      "title": "sensorml/schemas/json/ResponsibleParty.json in opengeospatial/ogcapi-connected-systems",
+      "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/sensorml/schemas/json/ResponsibleParty.json"
+    }
+  ],
+  "shaclShapes": {},
+  "dateOfLastChange": "2026-09-23",
+  "schema": {
+    "application/yaml": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/responsible-party/schema.yaml",
+    "application/json": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/responsible-party/schema.json"
+  },
+  "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/sensorml/responsible-party/schema.json",
+  "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/responsible-party/resolvedProperties.json",
+  "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/sensorml/responsible-party/",
+  "validationPassed": true,
+  "description": "<!-- generated -->\n# ResponsibleParty\n\nConverted from [`sensorml/schemas/json/ResponsibleParty.json`](https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/sensorml/schemas/json/ResponsibleParty.json) in the OGC API - Connected Systems repository.\n\n## Definitions\n\nThe following definitions can be referenced individually using their anchor, e.g. `bblocks://ogc.api.connected-systems.sensorml.responsible-party#Contact`:\n\n- `Contact`\n- `Phone`\n- `Address`\n\n## Properties\n\n| Property | Type | Required | Description |\n|---|---|---|---|\n| `individualName` | `string` |  |  |\n| `organisationName` | `string` |  |  |\n| `positionName` | `string` |  |  |\n| `contactInfo` | `#/$defs/Contact` |  |  |\n| `role` | `string` | yes |  |\n\n",
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ntype: object\nproperties:\n  individualName:\n    type: string\n  organisationName:\n    type: string\n  positionName:\n    type: string\n  contactInfo:\n    $ref: '#/$defs/Contact'\n  role:\n    type: string\n    format: uri\nunevaluatedProperties: false\nrequired:\n- role\noneOf:\n- title: Individual\n  required:\n  - individualName\n- title: Organization\n  required:\n  - organisationName\n$defs:\n  Contact:\n    type: object\n    properties:\n      phone:\n        $ref: '#/$defs/Phone'\n      address:\n        $ref: '#/$defs/Address'\n      website:\n        type: string\n      hoursOfService:\n        type: string\n      contactInstructions:\n        type: string\n    unevaluatedProperties: false\n    $anchor: Contact\n  Phone:\n    type: object\n    properties:\n      voice:\n        type: string\n      facsimile:\n        type: string\n    unevaluatedProperties: false\n    $anchor: Phone\n  Address:\n    type: object\n    properties:\n      deliveryPoint:\n        type: string\n      city:\n        type: string\n      administrativeArea:\n        type: string\n      postalCode:\n        type: string\n      country:\n        type: string\n      electronicMailAddress:\n        type: string\n        format: email\n    unevaluatedProperties: false\n    $anchor: Address\n",
+  "gitRepository": "https://github.com/ogcincubator/bblocks-connected-systems",
+  "gitPath": "_sources/sensorml/responsible-party"
+}

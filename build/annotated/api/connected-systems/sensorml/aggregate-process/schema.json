@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/abstract-process/schema.json"
+    },
+    {
+      "properties": {
+        "type": {
+          "const": "AggregateProcess"
+        },
+        "components": {
+          "description": "The list of sub-processes",
+          "$ref": "#/$defs/ComponentList"
+        },
+        "connections": {
+          "description": "The explicit definition of data links between outputs, inputs, and parameters of the components within an aggregate process.",
+          "$ref": "#/$defs/ConnectionList"
+        }
+      }
+    }
+  ],
+  "$defs": {
+    "ComponentList": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "allOf": [
+          {
+            "$ref": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/basic-types/schema.json#SoftNamedProperty"
+          },
+          {
+            "oneOf": [
+              {
+                "$ref": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/simple-process/schema.json"
+              },
+              {
+                "$ref": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/aggregate-process/schema.json"
+              },
+              {
+                "$ref": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/physical-component/schema.json"
+              },
+              {
+                "$ref": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/physical-system/schema.json"
+              },
+              {
+                "$ref": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/link/schema.json",
+                "properties": {
+                  "type": {
+                    "const": "Link"
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "$anchor": "ComponentList"
+    },
+    "ConnectionList": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "properties": {
+          "source": {
+            "$ref": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/common-defs/schema.json#PathRef"
+          },
+          "destination": {
+            "$ref": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/common-defs/schema.json#PathRef"
+          }
+        },
+        "required": [
+          "source",
+          "destination"
+        ]
+      },
+      "$anchor": "ConnectionList"
+    }
+  }
+}

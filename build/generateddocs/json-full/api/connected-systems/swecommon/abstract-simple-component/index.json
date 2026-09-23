@@ -1,0 +1,35 @@
+
+
+{
+  "itemIdentifier": "ogc.api.connected-systems.swecommon.abstract-simple-component",
+  "name": "AbstractSimpleComponent",
+  "abstract": "AbstractSimpleComponent schema.",
+  "status": "under-development",
+  "dateTimeAddition": "2026-09-23T00:00:00Z",
+  "itemClass": "schema",
+  "version": "0.1",
+  "group": "SWE Common",
+  "sources": [
+    {
+      "title": "swecommon/schemas/json/AbstractSimpleComponent.json in opengeospatial/ogcapi-connected-systems",
+      "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/swecommon/schemas/json/AbstractSimpleComponent.json"
+    }
+  ],
+  "shaclShapes": {},
+  "dependsOn": [
+    "ogc.api.connected-systems.swecommon.abstract-data-component"
+  ],
+  "dateOfLastChange": "2026-09-23",
+  "schema": {
+    "application/yaml": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/abstract-simple-component/schema.yaml",
+    "application/json": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/abstract-simple-component/schema.json"
+  },
+  "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/abstract-simple-component/schema.json",
+  "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/abstract-simple-component/resolvedProperties.json",
+  "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/abstract-simple-component/",
+  "validationPassed": true,
+  "description": "<!-- generated -->\n# AbstractSimpleComponent\n\nConverted from [`swecommon/schemas/json/AbstractSimpleComponent.json`](https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/swecommon/schemas/json/AbstractSimpleComponent.json) in the OGC API - Connected Systems repository.\n\n## Properties\n\n| Property | Type | Required | Description |\n|---|---|---|---|\n| `referenceFrame` | `string` |  | Frame of reference (usually temporal or spatial) with respect to which the value of the component is expressed. A reference frame anchors a value to a real world datum. |\n| `axisID` | `string` |  | Specifies the reference axis (refer to CRS axisID). The reference frame URI should also be specified unless it is inherited from parent Vector |\n| `nilValues` |  |  | Defines reserved values with special meaning (e.g., missing, out-of-range, etc.) |\n| `constraint` |  |  |  |\n| `value` |  |  | Inline value(s) for the component. This property is optional to enable structure to act as a schema for values provided separately (e.g., in a datastream) |\n\n",
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ntype: object\nallOf:\n- $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/abstract-data-component/schema.yaml\n- properties:\n    referenceFrame:\n      description: Frame of reference (usually temporal or spatial) with respect to\n        which the value of the component is expressed. A reference frame anchors a\n        value to a real world datum.\n      type: string\n      format: uri-reference\n    axisID:\n      description: Specifies the reference axis (refer to CRS axisID). The reference\n        frame URI should also be specified unless it is inherited from parent Vector\n      type: string\n      minLength: 1\n    nilValues:\n      description: Defines reserved values with special meaning (e.g., missing, out-of-range,\n        etc.)\n    constraint: {}\n    value:\n      description: Inline value(s) for the component. This property is optional to\n        enable structure to act as a schema for values provided separately (e.g.,\n        in a datastream)\n",
+  "gitRepository": "https://github.com/ogcincubator/bblocks-connected-systems",
+  "gitPath": "_sources/swecommon/abstract-simple-component"
+}

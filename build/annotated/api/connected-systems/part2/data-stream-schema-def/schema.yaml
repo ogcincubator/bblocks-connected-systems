@@ -1,0 +1,36 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+type: object
+properties:
+  phenomenonTime:
+    description: Descriptor for the observation `phenomenonTime` property. If omitted,
+      values for phenomenon time are not included in the datastream and are assumed
+      to be equal to the observation result time.
+    $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/time/schema.yaml
+  resultTime:
+    description: Descriptor for the observation `resultTime` property. If omitted,
+      the result time is a fixed value provided in the datastream metadata and is
+      not included in observations.
+    $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/time/schema.yaml
+  featureOfInterest:
+    description: Descriptor for the `featureOfInterest` property. If omitted, the
+      single fixed FOI is provided in the datastream metadata and is not included
+      in observations.
+    $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/category/schema.yaml
+  result:
+    description: Descriptor for the observation `result` property. This describes
+      the observed properties included in the result and how they are structured if
+      the result is a record, a vector quantity or a coverage.
+    $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/swe-common/schema.yaml#AnyComponent
+  parameters:
+    description: Descriptor for the observation `parameters` property. If omitted,
+      parameters are not included in the datastream.
+    $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/data-record/schema.yaml
+required:
+- result
+oneOf:
+- title: resultTime schema required
+  required:
+  - resultTime
+- title: phenomenonTime schema required
+  required:
+  - phenomenonTime

@@ -1,0 +1,63 @@
+
+
+{
+  "itemIdentifier": "ogc.api.connected-systems.sensorml.physical-component",
+  "name": "PhysicalComponent",
+  "abstract": "PhysicalComponent schema.",
+  "status": "under-development",
+  "dateTimeAddition": "2026-09-23T00:00:00Z",
+  "itemClass": "schema",
+  "version": "0.1",
+  "group": "SensorML",
+  "sources": [
+    {
+      "title": "sensorml/schemas/json/PhysicalComponent.json in opengeospatial/ogcapi-connected-systems",
+      "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/sensorml/schemas/json/PhysicalComponent.json"
+    }
+  ],
+  "shaclShapes": {},
+  "dependsOn": [
+    "ogc.api.connected-systems.sensorml.abstract-physical-process",
+    "ogc.api.connected-systems.sensorml.simple-process"
+  ],
+  "dateOfLastChange": "2026-09-23",
+  "schema": {
+    "application/yaml": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/physical-component/schema.yaml",
+    "application/json": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/physical-component/schema.json"
+  },
+  "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/sensorml/physical-component/schema.json",
+  "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/physical-component/resolvedProperties.json",
+  "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/sensorml/physical-component/",
+  "validationPassed": true,
+  "testOutputs": "https://github.com/ogcincubator/bblocks-connected-systems/blob/master/build/tests/api/connected-systems/sensorml/physical-component/",
+  "description": "<!-- generated -->\n# PhysicalComponent\n\nConverted from [`sensorml/schemas/json/PhysicalComponent.json`](https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/sensorml/schemas/json/PhysicalComponent.json) in the OGC API - Connected Systems repository.\n\n## Properties\n\n| Property | Type | Required | Description |\n|---|---|---|---|\n| `type` | `\"PhysicalComponent\"` |  |  |\n| `method` | `SimpleProcess.json#/$defs/ProcessMethod` |  |  |\n\n## Examples\n\n2 example(s) taken from the specification are included and validated against this schema.\n\n",
+  "examples": [
+    {
+      "title": "Physical component",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/sensorml/physical-component/examples/physical_component.json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/sensorml/physical-component/example_1_1.json",
+          "sizeBytes": 514,
+          "code": "{\n  \"$schema\": \"../../PhysicalComponent.json\",\n  \"type\": \"PhysicalComponent\",\n  \"definition\": \"http://www.w3.org/ns/sosa/Sensor\",\n  \"uniqueId\": \"urn:x-org:systems:001\",\n  \"label\": \"Outdoor Thermometer 001\",\n  \"description\": \"Digital thermometer located on first floor window 1\",\n  \"typeOf\": {\n    \"href\": \"https://data.example.org/api/procedures/TP60S?f=sml\",\n    \"title\": \"ThermoPro TP60S\",\n    \"type\" : \"application/sml+json\"\n  },\n  \"position\": {\n    \"type\": \"Point\",\n    \"coordinates\": [41.8781, -87.6298]\n  }\n}"
+        }
+      ]
+    },
+    {
+      "title": "Sensor instance with geopose ypr",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/sensorml/physical-component/examples/sensor_instance_with_geopose_ypr.json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/sensorml/physical-component/example_2_1.json",
+          "sizeBytes": 501,
+          "code": "{\n  \"$schema\": \"../PhysicalComponent.json\",\n  \"type\": \"PhysicalComponent\",\n  \"definition\": \"http://www.w3.org/ns/sosa/Sensor\",\n  \"uniqueId\": \"urn:x-org:sensors:001\",\n  \"label\": \"Sensor with GeoPose\",\n  \"position\": {\n    \"type\": \"GeoPose\",\n    \"ltpReferenceFrame\": \"http://www.opengis.net/def/cs/OGC/0/NED\",\n    \"position\": {\n      \"lat\": 47.7,\n      \"lon\": -122.3,\n      \"h\": 11.5\n    },\n    \"angles\": {\n      \"yaw\": 5.946590591427664,\n      \"pitch\": -0.4683537318018044,\n      \"roll\": 0.0\n    }\n  }\n}"
+        }
+      ]
+    }
+  ],
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ntype: object\nallOf:\n- $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/abstract-physical-process/schema.yaml\n- properties:\n    type:\n      const: PhysicalComponent\n    method:\n      $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/simple-process/schema.yaml#ProcessMethod\n",
+  "gitRepository": "https://github.com/ogcincubator/bblocks-connected-systems",
+  "gitPath": "_sources/sensorml/physical-component"
+}

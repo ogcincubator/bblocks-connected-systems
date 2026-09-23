@@ -1,0 +1,211 @@
+Validation report for ogc.api.connected-systems.sensorml.physical-system - PhysicalSystem
+Generated 2026-09-23T22:13:52.757145+00:00
+=== General ===
+Test was expected to fail and it did.
+=== End General ===
+
+=== Files ===
+Using no-label-fail.json from test resources
+=== End Files ===
+
+=== JSON Schema ===
+
+** Validation error **
+ValidationError: 'label' is a required property
+
+Failed validating 'required' in schema['allOf'][0]['allOf'][0]['allOf'][0]:
+    {'$defs': {'CapabilityList': {'$anchor': 'CapabilityList',
+                                  'allOf': [{'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/abstract-swe-identifiable/schema.yaml'},
+                                            {'description': 'A group of '
+                                                            'capabilities.',
+                                             'properties': {'capabilities': {'description': 'The '
+                                                                                            'list '
+                                                                                            'of '
+                                                                                            'capabilities '
+                                                                                            'in '
+                                                                                            'this '
+                                                                                            'group',
+                                                                             'items': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/common-defs/schema.yaml#AnyProperty'},
+                                                                             'type': 'array'},
+                                                            'conditions': {'description': 'The '
+                                                                                          'conditions '
+                                                                                          'under '
+                                                                                          'which '
+                                                                                          'the '
+                                                                                          'capabilities '
+                                                                                          'apply',
+                                                                           'items': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/swe-common/schema.yaml#AnySimpleComponent'},
+                                                                           'type': 'array'},
+                                                            'definition': {'description': 'Semantic '
+                                                                                          'link '
+                                                                                          'to '
+                                                                                          'the '
+                                                                                          'definition '
+                                                                                          'of '
+                                                                                          'this '
+                                                                                          'group '
+                                                                                          'of '
+                                                                                          'capabilities',
+                                                                           'format': 'uri',
+                                                                           'type': 'string'}},
+                                             'required': ['capabilities'],
+                                             'type': 'object'}],
+                                  'unevaluatedProperties': False},
+               'CharacteristicList': {'$anchor': 'CharacteristicList',
+                                      'allOf': [{'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/abstract-swe-identifiable/schema.yaml'},
+                                                {'properties': {'characteristics': {'description': 'The '
+                                                                                                   'list '
+                                                                                                   'of '
+                                                                                                   'characteristics '
+                                                                                                   'in '
+                                                                                                   'this '
+                                                                                                   'group',
+                                                                                    'items': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/common-defs/schema.yaml#AnyProperty'},
+                                                                                    'type': 'array'},
+                                                                'conditions': {'description': 'The '
+                                                                                              'conditions '
+                                                                                              'under '
+                                                                                              'which '
+                                                                                              'the '
+                                                                                              'characteristics '
+                                                                                              'apply',
+                                                                               'items': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/swe-common/schema.yaml#AnySimpleComponent'},
+                                                                               'type': 'array'},
+                                                                'definition': {'description': 'Semantic '
+                                                                                              'link '
+                                                                                              'to '
+                                                                                              'the '
+                                                                                              'definition '
+                                                                                              'of '
+                                                                                              'this '
+                                                                                              'group '
+                                                                                              'of '
+                                                                                              'capabilities',
+                                                                               'format': 'uri',
+                                                                               'type': 'string'}},
+                                                 'required': ['characteristics'],
+                                                 'type': 'object'}],
+                                      'unevaluatedProperties': False}},
+     '$schema': 'https://json-schema.org/draft/2020-12/schema',
+     'properties': {'capabilities': {'description': 'Groups of '
+                                                    'capabilities '
+                                                    'applicable to this '
+                                                    'asset under various '
+                                                    'conditions',
+                                     'items': {'$ref': '#/$defs/CapabilityList'},
+                                     'type': 'array'},
+                    'characteristics': {'description': 'Groups of '
+                                                       'characteristics '
+                                                       'applicable to this '
+                                                       'asset under '
+                                                       'various conditions',
+                                        'items': {'$ref': '#/$defs/CharacteristicList'},
+                                        'type': 'array'},
+                    'classifiers': {'description': 'Classifiers for the '
+                                                   'asset, useful for '
+                                                   'discovery (e.g., '
+                                                   'process type, sensor '
+                                                   'type, intended '
+                                                   'application, etc.).',
+                                    'items': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/common-defs/schema.yaml#Term'},
+                                    'type': 'array'},
+                    'contacts': {'description': 'The list of contacts '
+                                                'related to this asset',
+                                 'items': {'oneOf': [{'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/responsible-party/schema.yaml'},
+                                                     {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/contact-link/schema.yaml'}]},
+                                 'type': 'array'},
+                    'description': {'description': 'A textual description '
+                                                   'of the feature',
+                                    'minLength': 1,
+                                    'type': 'string'},
+                    'documents': {'description': 'Additional documentation '
+                                                 'about the asset',
+                                  'items': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/document/schema.yaml'},
+                                  'type': 'array'},
+                    'history': {'description': 'The list of events related '
+                                               'to this asset',
+                                'items': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/event/schema.yaml'},
+                                'type': 'array'},
+                    'id': {'description': 'Local ID of the feature (e.g., '
+                                          'locally unique on a server)',
+                           'minLength': 1,
+                           'type': 'string'},
+                    'identifiers': {'description': 'Additional identifiers '
+                                                   'for the asset, useful '
+                                                   'for discovery (e.g., '
+                                                   'short name, mission '
+                                                   'id, model number, '
+                                                   'serial number, etc.).',
+                                    'items': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/common-defs/schema.yaml#Term'},
+                                    'type': 'array'},
+                    'keywords': {'description': 'Short keywords describing '
+                                                'the context of this '
+                                                'document to aid in '
+                                                'discovery.',
+                                 'items': {'minLength': 1,
+                                           'type': 'string'},
+                                 'type': 'array'},
+                    'label': {'description': 'A human readable label for '
+                                             'the feature',
+                              'minLength': 1,
+                              'type': 'string'},
+                    'lang': {'description': 'Language of this document',
+                             'type': 'string'},
+                    'legalConstraints': {'description': 'Legal constraints '
+                                                        'applied to this '
+                                                        'description '
+                                                        '(e.g., '
+                                                        'copyrights, legal '
+                                                        'use, etc.)',
+                                         'items': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/legal-constraint/schema.yaml'},
+                                         'type': 'array'},
+                    'securityConstraints': {'description': 'Overall '
+                                                           'security '
+                                                           'tagging of '
+                                                           'process '
+                                                           'description; '
+                                                           'Individual '
+                                                           'tagging of '
+                                                           'properties can '
+                                                           'be done using '
+                                                           'extension '
+                                                           'properties.',
+                                            'items': {'additionalProperties': True,
+                                                      'properties': {'type': {'format': 'uri',
+                                                                              'type': 'string'}},
+                                                      'required': ['type'],
+                                                      'type': 'object'},
+                                            'type': 'array'},
+                    'type': {'description': 'Type of object',
+                             'type': 'string'},
+                    'uniqueId': {'description': 'URI serving as the '
+                                                'globally unique '
+                                                'identifier of the feature '
+                                                '(typically a URN)',
+                                 'format': 'uri',
+                                 'type': 'string'},
+                    'validTime': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/time-period/schema.yaml'}},
+     'required': ['type', 'label'],
+     'type': 'object'}
+
+On instance:
+    {'$schema': '../../PhysicalSystem.json',
+     'contacts': [{'contactInfo': {'address': {'city': 'TOULOUSE',
+                                               'country': 'France',
+                                               'deliveryPoint': '42 avenue '
+                                                                'Gaspard-Coriolis',
+                                               'postalCode': '31057 Cedex '
+                                                             '1'},
+                                   'phone': {'voice': '+33 5 61 07 80 80'},
+                                   'website': 'https://www.meteo.fr'},
+                   'organisationName': 'Meteo France',
+                   'role': 'http://sensorml.com/ont/swe/property/Operator'}],
+     'definition': 'http://www.w3.org/ns/sosa/Sensor',
+     'position': {'coordinates': [1.35997, 43.637788], 'type': 'Point'},
+     'type': 'PhysicalSystem',
+     'typeOf': {'href': 'http://example.org/api/procedures/2ev1rrr8dkeuu',
+                'type': 'application/sml+json',
+                'uid': 'urn:x-davis:station:vantagepro2'},
+     'uniqueId': 'urn:x-meteofrance:stations:davis:WS00010'}
+=== End JSON Schema ===
+

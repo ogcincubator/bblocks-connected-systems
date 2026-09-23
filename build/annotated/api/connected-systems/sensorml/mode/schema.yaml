@@ -1,0 +1,9 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+type: object
+allOf:
+- $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/described-object/schema.yaml
+- properties:
+    configuration:
+      description: Value settings that further constrain the properties of the base
+        process in this mode.
+      $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/settings/schema.yaml

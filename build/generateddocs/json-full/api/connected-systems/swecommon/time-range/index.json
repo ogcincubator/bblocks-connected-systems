@@ -1,0 +1,51 @@
+
+
+{
+  "itemIdentifier": "ogc.api.connected-systems.swecommon.time-range",
+  "name": "TimeRange",
+  "abstract": "Time value pair for specifying a time range (can be a decimal or ISO 8601)",
+  "status": "under-development",
+  "dateTimeAddition": "2026-09-23T00:00:00Z",
+  "itemClass": "schema",
+  "version": "0.1",
+  "group": "SWE Common",
+  "sources": [
+    {
+      "title": "swecommon/schemas/json/TimeRange.json in opengeospatial/ogcapi-connected-systems",
+      "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/swecommon/schemas/json/TimeRange.json"
+    }
+  ],
+  "shaclShapes": {},
+  "dependsOn": [
+    "ogc.api.connected-systems.swecommon.basic-types",
+    "ogc.api.connected-systems.swecommon.abstract-simple-component"
+  ],
+  "dateOfLastChange": "2026-09-23",
+  "schema": {
+    "application/yaml": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/time-range/schema.yaml",
+    "application/json": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/time-range/schema.json"
+  },
+  "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/time-range/schema.json",
+  "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/time-range/resolvedProperties.json",
+  "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/time-range/",
+  "validationPassed": true,
+  "testOutputs": "https://github.com/ogcincubator/bblocks-connected-systems/blob/master/build/tests/api/connected-systems/swecommon/time-range/",
+  "description": "<!-- generated -->\n# TimeRange\n\nTime value pair for specifying a time range (can be a decimal or ISO 8601)\n\nConverted from [`swecommon/schemas/json/TimeRange.json`](https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/swecommon/schemas/json/TimeRange.json) in the OGC API - Connected Systems repository.\n\n## Properties\n\n| Property | Type | Required | Description |\n|---|---|---|---|\n| `type` | `\"TimeRange\"` | yes |  |\n| `referenceTime` | `string` |  | Specifies the origin of the temporal reference frame as an ISO8601 date (used to specify time after an epoch that is to say in a custom frame) |\n| `localFrame` | `string` |  | Temporal frame of reference whose origin is located by the value of this component |\n| `uom` | `basicTypes.json#/$defs/UnitReference` | yes | Temporal unit of measure used to express the value of this data component |\n| `constraint` | `basicTypes.json#/$defs/AllowedTimes` |  |  |\n| `nilValues` | `basicTypes.json#/$defs/NilValuesTime` |  |  |\n| `value` | `array` |  |  |\n\n## Examples\n\n1 example(s) taken from the specification are included and validated against this schema.\n\n",
+  "examples": [
+    {
+      "title": "Time range1",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/time-range/examples/time-range1.json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/swecommon/time-range/example_1_1.json",
+          "sizeBytes": 334,
+          "code": "{\n  \"type\": \"TimeRange\",\n  \"definition\": \"http://www.opengis.net/def/property/EO/0/SurveyPeriod\",\n  \"referenceFrame\": \"http://www.opengis.net/def/trs/BIPM/0/UTC\",\n  \"label\": \"Survey Period\",\n  \"uom\": {\n    \"href\": \"http://www.opengis.net/def/uom/ISO-8601/0/Gregorian\"\n  },\n  \"value\": [\"2008-01-05T11:02:54Z\", \"2009-11-05T16:29:26Z\"]\n}"
+        }
+      ]
+    }
+  ],
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: Time value pair for specifying a time range (can be a decimal or ISO\n  8601)\ntype: object\nallOf:\n- $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/abstract-simple-component/schema.yaml\n- properties:\n    type:\n      const: TimeRange\n    referenceTime:\n      description: Specifies the origin of the temporal reference frame as an ISO8601\n        date (used to specify time after an epoch that is to say in a custom frame)\n      type: string\n      format: date-time\n    localFrame:\n      description: Temporal frame of reference whose origin is located by the value\n        of this component\n      type: string\n      format: uri\n    uom:\n      description: Temporal unit of measure used to express the value of this data\n        component\n      $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/basic-types/schema.yaml#UnitReference\n    constraint:\n      $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/basic-types/schema.yaml#AllowedTimes\n    nilValues:\n      $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/basic-types/schema.yaml#NilValuesTime\n    value:\n      type: array\n      minItems: 2\n      maxItems: 2\n      items:\n        $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/basic-types/schema.yaml#DateTimeNumberOrSpecial\n  required:\n  - type\n  - definition\n  - label\n  - uom\n",
+  "gitRepository": "https://github.com/ogcincubator/bblocks-connected-systems",
+  "gitPath": "_sources/swecommon/time-range"
+}

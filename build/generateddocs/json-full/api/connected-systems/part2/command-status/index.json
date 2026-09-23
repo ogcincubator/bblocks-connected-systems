@@ -1,0 +1,77 @@
+
+
+{
+  "itemIdentifier": "ogc.api.connected-systems.part2.command-status",
+  "name": "CommandStatus",
+  "abstract": "A CommandStatus report: the state of execution of a Command at a given report time, with status code, percent completion, message and any results.",
+  "status": "under-development",
+  "dateTimeAddition": "2026-09-23T00:00:00Z",
+  "itemClass": "schema",
+  "version": "0.1",
+  "group": "Part 2",
+  "sources": [
+    {
+      "title": "api/part2/openapi/schemas/json/commandStatus.json in opengeospatial/ogcapi-connected-systems",
+      "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/api/part2/openapi/schemas/json/commandStatus.json"
+    }
+  ],
+  "shaclShapes": {},
+  "dependsOn": [
+    "ogc.api.connected-systems.common.time-period",
+    "ogc.api.connected-systems.part2.command-status-code",
+    "ogc.api.connected-systems.common.time-instant",
+    "ogc.api.connected-systems.part2.command-result"
+  ],
+  "dateOfLastChange": "2026-09-23",
+  "schema": {
+    "application/yaml": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part2/command-status/schema.yaml",
+    "application/json": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part2/command-status/schema.json"
+  },
+  "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part2/command-status/schema.json",
+  "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part2/command-status/resolvedProperties.json",
+  "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part2/command-status/",
+  "validationPassed": true,
+  "testOutputs": "https://github.com/ogcincubator/bblocks-connected-systems/blob/master/build/tests/api/connected-systems/part2/command-status/",
+  "description": "<!-- generated -->\n# CommandStatus\n\nConverted from [`api/part2/openapi/schemas/json/commandStatus.json`](https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/api/part2/openapi/schemas/json/commandStatus.json) in the OGC API - Connected Systems repository.\n\n## Properties\n\n| Property | Type | Required | Description |\n|---|---|---|---|\n| `id` | `string` | yes | Local identifier of the status report |\n| `command@id` | `string` | yes | Local identifier of the command that this report applies to |\n| `reportTime` | `../common/commonDefs.json#/$defs/TimeInstant` | yes | Time at which this report was generated. If omitted on creation, the server sets it to the time the request was received. |\n| `statusCode` | `commandStatusCode.json` | yes | Current status code |\n| `percentCompletion` | `number` |  | Current progress expressed as a percentage of total task execution |\n| `executionTime` | `../common/commonDefs.json#/$defs/TimePeriod` |  | Time period during which the command was executed or is scheduled to be executed (depending on status code) |\n| `message` | `string` |  | Human readable message providing more details on the current status (can be both an error or information message depending on the status code) |\n| `results` | `array` |  | New result(s) of the command available at the time of the progress report (can be a partial result) |\n\n## Examples\n\n3 example(s) taken from the specification are included and validated against this schema.\n\n",
+  "examples": [
+    {
+      "title": "Command status accepted",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part2/command-status/examples/command-status-accepted.json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part2/command-status/example_1_1.json",
+          "sizeBytes": 171,
+          "code": "{\n  \"id\": \"rlg2905142qs5uvish4vktotffds2iss8aa0a00\",\n  \"command@id\": \"1125alnna75hafppknk9aefpvs\",\n  \"reportTime\": \"2021-03-15T04:53:34.348Z\",\n  \"statusCode\": \"ACCEPTED\"\n}"
+        }
+      ]
+    },
+    {
+      "title": "Command status completed",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part2/command-status/examples/command-status-completed.json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part2/command-status/example_2_1.json",
+          "sizeBytes": 217,
+          "code": "{\n  \"id\": \"155rufq7aplr8id10839fc8d6u0ulqfu1bjfumo\",\n  \"command@id\": \"1125alnna75hafppknk9aefpvs\",\n  \"reportTime\": \"2021-03-15T04:53:36.021Z\",\n  \"statusCode\": \"COMPLETED\",\n  \"message\": \"Camera moved to new position\"\n}"
+        }
+      ]
+    },
+    {
+      "title": "Command status result obs link",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part2/command-status/examples/command-status-result-obs-link.json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part2/command-status/example_3_1.json",
+          "sizeBytes": 395,
+          "code": "{\n  \"id\": \"155rufq7aplr8id10839fc8d6u0ulqfu1bjfumo\",\n  \"command@id\": \"1125alnna75hafppknk9aefpvs\",\n  \"reportTime\": \"2021-03-15T04:53:36.021Z\",\n  \"statusCode\": \"EXECUTING\",\n  \"message\": \"New image acquired\",\n  \"result\": [\n    {\n      \"observation@link\": {\n        \"href\": \"https://data.example.org/api/observations/11g2s5ddggg7dogt5gs8949s\",\n        \"type\": \"application/json\"\n      }\n    }\n  ]\n}"
+        }
+      ]
+    }
+  ],
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ntype: object\nproperties:\n  id:\n    description: Local identifier of the status report\n    type: string\n    minLength: 1\n    readOnly: true\n  command@id:\n    description: Local identifier of the command that this report applies to\n    type: string\n    minLength: 1\n    readOnly: true\n  reportTime:\n    description: Time at which this report was generated. If omitted on creation,\n      the server sets it to the time the request was received.\n    $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/time-instant/schema.yaml\n    readOnly: true\n  statusCode:\n    description: Current status code\n    $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part2/command-status-code/schema.yaml\n  percentCompletion:\n    description: Current progress expressed as a percentage of total task execution\n    type: number\n    minimum: 0\n    maximum: 100\n  executionTime:\n    description: Time period during which the command was executed or is scheduled\n      to be executed (depending on status code)\n    $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/time-period/schema.yaml\n  message:\n    description: Human readable message providing more details on the current status\n      (can be both an error or information message depending on the status code)\n    type: string\n    minLength: 1\n  results:\n    description: New result(s) of the command available at the time of the progress\n      report (can be a partial result)\n    type: array\n    items:\n      $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part2/command-result/schema.yaml\nrequired:\n- id\n- command@id\n- reportTime\n- statusCode\n",
+  "gitRepository": "https://github.com/ogcincubator/bblocks-connected-systems",
+  "gitPath": "_sources/part2/command-status"
+}

@@ -1,0 +1,1 @@
+{"defs":{},"properties":[{"path":["obsFormat"],"required":true,"schema_type":"string","sources":["bblocks://ogc.api.connected-systems.part2.observation-schema-any-other"]},{"path":["any"],"description":"Any other properties to describe schema","sources":["bblocks://ogc.api.connected-systems.part2.observation-schema-any-other"]}]}

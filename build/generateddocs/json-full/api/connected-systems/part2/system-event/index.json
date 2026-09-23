@@ -1,0 +1,51 @@
+
+
+{
+  "itemIdentifier": "ogc.api.connected-systems.part2.system-event",
+  "name": "SystemEvent",
+  "abstract": "A SystemEvent: a time-stamped event in the life of a System (e.g. calibration, maintenance, deployment or failure), stored as a feature-like record with links.",
+  "status": "under-development",
+  "dateTimeAddition": "2026-09-23T00:00:00Z",
+  "itemClass": "schema",
+  "version": "0.1",
+  "group": "Part 2",
+  "sources": [
+    {
+      "title": "api/part2/openapi/schemas/json/systemEvent.json in opengeospatial/ogcapi-connected-systems",
+      "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/api/part2/openapi/schemas/json/systemEvent.json"
+    }
+  ],
+  "shaclShapes": {},
+  "dependsOn": [
+    "ogc.api.connected-systems.part1.links",
+    "ogc.api.connected-systems.sensorml.event"
+  ],
+  "dateOfLastChange": "2026-09-23",
+  "schema": {
+    "application/yaml": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part2/system-event/schema.yaml",
+    "application/json": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part2/system-event/schema.json"
+  },
+  "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part2/system-event/schema.json",
+  "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part2/system-event/resolvedProperties.json",
+  "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part2/system-event/",
+  "validationPassed": true,
+  "testOutputs": "https://github.com/ogcincubator/bblocks-connected-systems/blob/master/build/tests/api/connected-systems/part2/system-event/",
+  "description": "<!-- generated -->\n# SystemEvent\n\nConverted from [`api/part2/openapi/schemas/json/systemEvent.json`](https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/api/part2/openapi/schemas/json/systemEvent.json) in the OGC API - Connected Systems repository.\n\n## Properties\n\n| Property | Type | Required | Description |\n|---|---|---|---|\n| `id` |  |  |  |\n| `links` | `../common/commonDefs.json#/$defs/Links` |  | Links to related resources |\n\n## Examples\n\n1 example(s) taken from the specification are included and validated against this schema.\n\n",
+  "examples": [
+    {
+      "title": "SystemEvent",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part2/system-event/examples/systemEvent.json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part2/system-event/example_1_1.json",
+          "sizeBytes": 487,
+          "code": "{\n  \"id\": \"e5ce3b97-0fe2-4f92-a631-4bba0bd82fb1\",\n  \"label\": \"Deployment\",\n  \"definition\": \"https://vocab.nerc.ac.uk/collection/W03/current/W030002/\",\n  \"time\": \"2015-10-12T12:02:00.000Z\",\n  \"documentation\": [\n    {\n      \"name\": \"log\",\n      \"link\": {\n        \"href\": \"http://trios.de/lisa3075_installation.log\"\n      }\n    }\n  ],\n  \"links\": [\n    {\n      \"href\": \"https://data.example.com/link/to/resource\",\n      \"type\": \"application/json\",\n      \"title\": \"Resource Name\"\n    }\n  ]\n}\n"
+        }
+      ]
+    }
+  ],
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\nallOf:\n- $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/event/schema.yaml\n- properties:\n    id:\n      readOnly: true\n    links:\n      description: Links to related resources\n      $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part1/links/schema.yaml\n  required:\n  - definition\n  - label\n  - time\n",
+  "gitRepository": "https://github.com/ogcincubator/bblocks-connected-systems",
+  "gitPath": "_sources/part2/system-event"
+}

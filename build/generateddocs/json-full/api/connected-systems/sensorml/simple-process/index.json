@@ -1,0 +1,50 @@
+
+
+{
+  "itemIdentifier": "ogc.api.connected-systems.sensorml.simple-process",
+  "name": "SimpleProcess",
+  "abstract": "SimpleProcess schema.",
+  "status": "under-development",
+  "dateTimeAddition": "2026-09-23T00:00:00Z",
+  "itemClass": "schema",
+  "version": "0.1",
+  "group": "SensorML",
+  "sources": [
+    {
+      "title": "sensorml/schemas/json/SimpleProcess.json in opengeospatial/ogcapi-connected-systems",
+      "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/sensorml/schemas/json/SimpleProcess.json"
+    }
+  ],
+  "shaclShapes": {},
+  "dependsOn": [
+    "ogc.api.connected-systems.sensorml.abstract-process"
+  ],
+  "dateOfLastChange": "2026-09-23",
+  "schema": {
+    "application/yaml": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/simple-process/schema.yaml",
+    "application/json": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/simple-process/schema.json"
+  },
+  "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/sensorml/simple-process/schema.json",
+  "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/simple-process/resolvedProperties.json",
+  "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/sensorml/simple-process/",
+  "validationPassed": true,
+  "testOutputs": "https://github.com/ogcincubator/bblocks-connected-systems/blob/master/build/tests/api/connected-systems/sensorml/simple-process/",
+  "description": "<!-- generated -->\n# SimpleProcess\n\nConverted from [`sensorml/schemas/json/SimpleProcess.json`](https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/sensorml/schemas/json/SimpleProcess.json) in the OGC API - Connected Systems repository.\n\n## Definitions\n\nThe following definitions can be referenced individually using their anchor, e.g. `bblocks://ogc.api.connected-systems.sensorml.simple-process#ProcessMethod`:\n\n- `ProcessMethod`\n\n## Properties\n\n| Property | Type | Required | Description |\n|---|---|---|---|\n| `type` | `\"SimpleProcess\"` |  |  |\n| `method` | `#/$defs/ProcessMethod` |  |  |\n\n## Examples\n\n1 example(s) taken from the specification are included and validated against this schema.\n\n",
+  "examples": [
+    {
+      "title": "Simple process",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/sensorml/simple-process/examples/simple_process.json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/sensorml/simple-process/example_1_1.json",
+          "sizeBytes": 1236,
+          "code": "{\n  \"$schema\": \"../../SimpleProcess.json\",\n  \"type\": \"SimpleProcess\",\n  \"uniqueId\": \"urn:x-org:process:windchill:001\",\n  \"label\": \"Wind Chill Process\",\n  \"description\": \"A simple process for taking temperature and wind speed and determining wind chill.\",\n  \"inputs\": [\n    {\n      \"name\": \"temp\",\n      \"type\": \"Quantity\",\n      \"definition\": \"http://mmisw.org/ont/cf/parameter/air_temperature\",\n      \"label\": \"Air Temperature\",\n      \"uom\": { \"code\": \"Cel\", \"symbol\": \"\u00b0C\" }\n    },\n    {\n      \"name\": \"wind\",\n      \"type\": \"Quantity\",\n      \"definition\": \"http://mmisw.org/ont/cf/parameter/wind_speed\",\n      \"label\": \"Wind Speed\",\n      \"uom\": { \"code\": \"km/h\" }\n    }\n  ],\n  \"outputs\": [\n    {\n      \"name\": \"wind_chill\",\n      \"type\": \"Quantity\",\n      \"definition\": \"http://mmisw.org/ont/cf/parameter/wind_chill_of_air_temperature\",\n      \"label\": \"Wind Chill Factor\",\n      \"uom\": { \"code\": \"Cel\", \"symbol\": \"\u00b0C\" }\n    }\n  ],\n  \"method\": {\n    \"description\": \"The formula used to compute windchill is:\\nTwc = 13.12 + 0.6215*Ta - 11.37*v^0.16 + 0.3965*Ta*v^0.16, where\\nTwc is the wind chill index on the Celsius temperature scale;\\nTa is the air temperature in degrees Celsius;\\nv is the wind speed at 10 m AGL, in km/h\"\n  }\n}"
+        }
+      ]
+    }
+  ],
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ntype: object\nallOf:\n- $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/abstract-process/schema.yaml\n- properties:\n    type:\n      const: SimpleProcess\n    method:\n      $ref: '#/$defs/ProcessMethod'\n$defs:\n  ProcessMethod:\n    type: object\n    properties:\n      algorithm:\n        title: A description of the algorithm using a machine readable language, either\n          inline or by reference\n      description:\n        title: A description of the method in natural language\n        type: string\n    $anchor: ProcessMethod\n",
+  "gitRepository": "https://github.com/ogcincubator/bblocks-connected-systems",
+  "gitPath": "_sources/sensorml/simple-process"
+}

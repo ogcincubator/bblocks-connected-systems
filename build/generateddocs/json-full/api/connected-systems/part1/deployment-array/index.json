@@ -1,0 +1,40 @@
+
+
+{
+  "itemIdentifier": "ogc.api.connected-systems.part1.deployment-array",
+  "name": "DeploymentArray (GeoJSON)",
+  "abstract": "Bare JSON array of Deployment resources (GeoJSON encoding), used as the request payload for batch creation or update of several resources at once.",
+  "status": "under-development",
+  "dateTimeAddition": "2026-09-23T00:00:00Z",
+  "itemClass": "schema",
+  "version": "0.1",
+  "group": "Part 1",
+  "sources": [
+    {
+      "title": "api/part1/openapi/schemas/geojson/deploymentArray.json in opengeospatial/ogcapi-connected-systems",
+      "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/api/part1/openapi/schemas/geojson/deploymentArray.json"
+    }
+  ],
+  "shaclShapes": {
+    "ogc.geo.features.feature": [
+      "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl"
+    ]
+  },
+  "dependsOn": [
+    "ogc.api.connected-systems.part1.deployment"
+  ],
+  "dateOfLastChange": "2026-09-23",
+  "schema": {
+    "application/yaml": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part1/deployment-array/schema.yaml",
+    "application/json": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part1/deployment-array/schema.json"
+  },
+  "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part1/deployment-array/schema.json",
+  "ldContext": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part1/deployment-array/context.jsonld",
+  "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part1/deployment-array/resolvedProperties.json",
+  "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part1/deployment-array/",
+  "validationPassed": true,
+  "description": "<!-- generated -->\n# DeploymentArray (GeoJSON)\n\nConverted from [`api/part1/openapi/schemas/geojson/deploymentArray.json`](https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/api/part1/openapi/schemas/geojson/deploymentArray.json) in the OGC API - Connected Systems repository.\n\n",
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ntype: array\nitems:\n  title: Deployment Feature\n  $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part1/deployment/schema.yaml\n",
+  "gitRepository": "https://github.com/ogcincubator/bblocks-connected-systems",
+  "gitPath": "_sources/part1/deployment-array"
+}

@@ -1,0 +1,10 @@
+Validation report for ogc.api.connected-systems.sensorml.simple-process - SimpleProcess
+Generated 2026-09-23T22:13:52.391940+00:00
+=== Files ===
+Using examples/simple_process.json from examples
+=== End Files ===
+
+=== JSON Schema ===
+Validation passed
+=== End JSON Schema ===
+

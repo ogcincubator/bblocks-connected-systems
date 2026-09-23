@@ -1,0 +1,39 @@
+
+
+{
+  "itemIdentifier": "ogc.api.connected-systems.sensorml.event",
+  "name": "Event",
+  "abstract": "A time tagged event with description and relevant property values.",
+  "status": "under-development",
+  "dateTimeAddition": "2026-09-23T00:00:00Z",
+  "itemClass": "schema",
+  "version": "0.1",
+  "group": "SensorML",
+  "sources": [
+    {
+      "title": "sensorml/schemas/json/Event.json in opengeospatial/ogcapi-connected-systems",
+      "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/sensorml/schemas/json/Event.json"
+    }
+  ],
+  "shaclShapes": {},
+  "dependsOn": [
+    "ogc.api.connected-systems.sensorml.settings",
+    "ogc.api.connected-systems.sensorml.common-defs",
+    "ogc.api.connected-systems.sensorml.responsible-party",
+    "ogc.api.connected-systems.sensorml.document",
+    "ogc.api.connected-systems.swecommon.abstract-swe-identifiable"
+  ],
+  "dateOfLastChange": "2026-09-23",
+  "schema": {
+    "application/yaml": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/event/schema.yaml",
+    "application/json": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/event/schema.json"
+  },
+  "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/sensorml/event/schema.json",
+  "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/event/resolvedProperties.json",
+  "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/sensorml/event/",
+  "validationPassed": true,
+  "description": "<!-- generated -->\n# Event\n\nA time tagged event with description and relevant property values.\n\nConverted from [`sensorml/schemas/json/Event.json`](https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/sensorml/schemas/json/Event.json) in the OGC API - Connected Systems repository.\n\n## Properties\n\n| Property | Type | Required | Description |\n|---|---|---|---|\n| `definition` | `string` |  | Type of event (semantic link) |\n| `identifiers` | `array` |  | Additional identifiers for the event, useful for discovery. |\n| `classifiers` | `array` |  | Additional classifiers for the event, useful for discovery. |\n| `contacts` | `array` |  | The list of contacts relevant to this event |\n| `documentation` | `array` |  | Additional documentation relevant to this event |\n| `time` | `commonDefs.json#/$defs/TimeInstantOrPeriod` | yes | Time of the event |\n| `properties` | `array` |  | A list of additional properties of interest to the event (e.g., calibration values, condition category, error codes, etc). |\n| `configuration` | `Settings.json` |  | Configuration settings adjusted during the event. |\n\n",
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: A time tagged event with description and relevant property values.\ntype: object\nallOf:\n- $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/abstract-swe-identifiable/schema.yaml\n- properties:\n    definition:\n      description: Type of event (semantic link)\n      type: string\n      format: uri\n    identifiers:\n      description: Additional identifiers for the event, useful for discovery.\n      type: array\n      items:\n        $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/common-defs/schema.yaml#Term\n    classifiers:\n      description: Additional classifiers for the event, useful for discovery.\n      type: array\n      items:\n        $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/common-defs/schema.yaml#Term\n    contacts:\n      description: The list of contacts relevant to this event\n      type: array\n      items:\n        $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/responsible-party/schema.yaml\n    documentation:\n      description: Additional documentation relevant to this event\n      type: array\n      items:\n        $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/document/schema.yaml\n    time:\n      description: Time of the event\n      $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/common-defs/schema.yaml#TimeInstantOrPeriod\n    properties:\n      description: A list of additional properties of interest to the event (e.g.,\n        calibration values, condition category, error codes, etc).\n      type: array\n      items:\n        $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/common-defs/schema.yaml#AnyProperty\n    configuration:\n      description: Configuration settings adjusted during the event.\n      $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/settings/schema.yaml\n  required:\n  - label\n  - time\n",
+  "gitRepository": "https://github.com/ogcincubator/bblocks-connected-systems",
+  "gitPath": "_sources/sensorml/event"
+}

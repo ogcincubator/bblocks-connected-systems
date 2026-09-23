@@ -1,0 +1,48 @@
+
+
+{
+  "itemIdentifier": "ogc.api.connected-systems.part1.sampling-feature-collection",
+  "name": "SamplingFeatureCollection (GeoJSON)",
+  "abstract": "Paged collection of Sampling Feature resources (GeoJSON encoding) as returned by list queries, with the items plus navigation `links`.",
+  "status": "under-development",
+  "dateTimeAddition": "2026-09-23T00:00:00Z",
+  "itemClass": "schema",
+  "version": "0.1",
+  "group": "Part 1",
+  "sources": [
+    {
+      "title": "api/part1/openapi/schemas/geojson/samplingFeatureCollection.json in opengeospatial/ogcapi-connected-systems",
+      "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/api/part1/openapi/schemas/geojson/samplingFeatureCollection.json"
+    }
+  ],
+  "isProfileOf": [
+    "ogc.geo.features.featureCollection"
+  ],
+  "shaclShapes": {
+    "ogc.geo.features.feature": [
+      "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl"
+    ],
+    "ogc.geo.features.featureCollection": [
+      "https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl"
+    ]
+  },
+  "dependsOn": [
+    "ogc.api.connected-systems.part1.sampling-feature-array",
+    "ogc.geo.features.featureCollection",
+    "ogc.api.connected-systems.part1.links"
+  ],
+  "dateOfLastChange": "2026-09-23",
+  "schema": {
+    "application/yaml": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part1/sampling-feature-collection/schema.yaml",
+    "application/json": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part1/sampling-feature-collection/schema.json"
+  },
+  "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part1/sampling-feature-collection/schema.json",
+  "ldContext": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part1/sampling-feature-collection/context.jsonld",
+  "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part1/sampling-feature-collection/resolvedProperties.json",
+  "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part1/sampling-feature-collection/",
+  "validationPassed": true,
+  "description": "<!-- generated -->\n# SamplingFeatureCollection (GeoJSON)\n\nConverted from [`api/part1/openapi/schemas/geojson/samplingFeatureCollection.json`](https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/api/part1/openapi/schemas/geojson/samplingFeatureCollection.json) in the OGC API - Connected Systems repository.\n\n## Properties\n\n| Property | Type | Required | Description |\n|---|---|---|---|\n| `features` | `samplingFeatureArray.json` |  |  |\n| `links` | `../common/links.json` |  | Links to related resources (including paging) |\n\n",
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\nallOf:\n- $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/featureCollection/schema.yaml\n- type: object\n  properties:\n    features:\n      $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part1/sampling-feature-array/schema.yaml\n    links:\n      description: Links to related resources (including paging)\n      $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part1/links/schema.yaml\n",
+  "gitRepository": "https://github.com/ogcincubator/bblocks-connected-systems",
+  "gitPath": "_sources/part1/sampling-feature-collection"
+}

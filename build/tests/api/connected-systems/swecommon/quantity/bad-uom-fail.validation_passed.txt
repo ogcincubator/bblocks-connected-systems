@@ -1,0 +1,39 @@
+Validation report for ogc.api.connected-systems.swecommon.quantity - Quantity
+Generated 2026-09-23T22:13:48.351959+00:00
+=== General ===
+Test was expected to fail and it did.
+=== End General ===
+
+=== Files ===
+Using bad-uom-fail.json from test resources
+=== End Files ===
+
+=== JSON Schema ===
+
+** Validation error **
+ValidationError: Unevaluated properties are not allowed ('unknownProp' was unexpected)
+
+Failed validating 'unevaluatedProperties' in schema['allOf'][1]['properties']['uom']:
+    {'$anchor': 'UnitReference',
+     'anyOf': [{'required': ['code'], 'title': 'UCUM Code'},
+               {'required': ['href'], 'title': 'URI'}],
+     'properties': {'code': {'minLength': 1, 'type': 'string'},
+                    'href': {'format': 'uri', 'type': 'string'},
+                    'label': {'description': 'A human readable label for '
+                                             'the unit',
+                              'minLength': 1,
+                              'type': 'string'},
+                    'symbol': {'description': 'The preferred unit symbol '
+                                              'to use when presenting the '
+                                              'data in a UI (use the UCUM '
+                                              'code instead if no symbol '
+                                              'is provided)',
+                               'minLength': 1,
+                               'type': 'string'}},
+     'type': 'object',
+     'unevaluatedProperties': False}
+
+On instance['uom']:
+    {'label': 'Celsius', 'unknownProp': True}
+=== End JSON Schema ===
+

@@ -1,0 +1,264 @@
+
+
+{
+  "itemIdentifier": "ogc.api.connected-systems.part1.sampling-feature",
+  "name": "SamplingFeature (GeoJSON)",
+  "abstract": "A Sampling Feature (GeoJSON encoding): a feature such as a station, specimen or transect that is sampled or observed by systems, and serves as the feature of interest of observations; profile of the OGC API - Features feature.",
+  "status": "under-development",
+  "dateTimeAddition": "2026-09-23T00:00:00Z",
+  "itemClass": "schema",
+  "version": "0.1",
+  "group": "Part 1",
+  "sources": [
+    {
+      "title": "api/part1/openapi/schemas/geojson/samplingFeature.json in opengeospatial/ogcapi-connected-systems",
+      "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/api/part1/openapi/schemas/geojson/samplingFeature.json"
+    }
+  ],
+  "isProfileOf": [
+    "ogc.api.connected-systems.part1.feature"
+  ],
+  "shaclShapes": {
+    "ogc.geo.features.feature": [
+      "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl"
+    ]
+  },
+  "dependsOn": [
+    "ogc.api.connected-systems.common.time-period",
+    "ogc.api.connected-systems.part1.feature",
+    "ogc.api.connected-systems.common.link"
+  ],
+  "dateOfLastChange": "2026-09-23",
+  "schema": {
+    "application/yaml": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part1/sampling-feature/schema.yaml",
+    "application/json": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part1/sampling-feature/schema.json"
+  },
+  "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part1/sampling-feature/schema.json",
+  "ldContext": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part1/sampling-feature/context.jsonld",
+  "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part1/sampling-feature/resolvedProperties.json",
+  "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part1/sampling-feature/",
+  "validationPassed": true,
+  "testOutputs": "https://github.com/ogcincubator/bblocks-connected-systems/blob/master/build/tests/api/connected-systems/part1/sampling-feature/",
+  "description": "<!-- generated -->\n# SamplingFeature (GeoJSON)\n\nSamplingFeature\n\nConverted from [`api/part1/openapi/schemas/geojson/samplingFeature.json`](https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/api/part1/openapi/schemas/geojson/samplingFeature.json) in the OGC API - Connected Systems repository.\n\n## Properties\n\n| Property | Type | Required | Description |\n|---|---|---|---|\n| `properties` | `object` |  |  |\n\n## Examples\n\n9 example(s) taken from the specification are included and validated against this schema.\n\n",
+  "examples": [
+    {
+      "title": "Sampling part geojson",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part1/sampling-feature/examples/sampling-part-geojson.json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part1/sampling-feature/example_1_1.json",
+          "sizeBytes": 677,
+          "code": "{\n  \"type\": \"Feature\",\n  \"id\": \"1a0f80f9\",\n  \"geometry\": null,\n  \"properties\": {\n    \"uid\": \"urn:x-ogc:sf:456\",\n    \"name\": \"CPU 2\",\n    \"description\": \"CPU 2 located in the robot chassis\",\n    \"featureType\": \"http://www.opengis.net/def/samplingFeatureType/OGC-SML/2.0/FeaturePart\",\n    \"sampledFeature@link\": {\n      \"href\": \"https://data.example.org/api/systems/8624d054?f=json\",\n      \"type\" : \"application/geo+json\",\n      \"title\": \"Tactical Ground Robot 457\"\n    }\n  },\n  \"links\": [\n    {\n      \"rel\": \"parentSystem\",\n      \"href\": \"https://data.example.org/api/systems/447845?f=json\",\n      \"type\" : \"application/geo+json\",\n      \"title\": \"Water Level Sensor\"\n    }\n  ]\n}"
+        },
+        {
+          "language": "jsonld",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part1/sampling-feature/example_1_1.jsonld",
+          "sizeBytes": 825,
+          "code": "{\n  \"@context\": \"https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part1/sampling-feature/context.jsonld\",\n  \"type\": \"Feature\",\n  \"id\": \"1a0f80f9\",\n  \"geometry\": null,\n  \"properties\": {\n    \"uid\": \"urn:x-ogc:sf:456\",\n    \"name\": \"CPU 2\",\n    \"description\": \"CPU 2 located in the robot chassis\",\n    \"featureType\": \"http://www.opengis.net/def/samplingFeatureType/OGC-SML/2.0/FeaturePart\",\n    \"sampledFeature@link\": {\n      \"href\": \"https://data.example.org/api/systems/8624d054?f=json\",\n      \"type\": \"application/geo+json\",\n      \"title\": \"Tactical Ground Robot 457\"\n    }\n  },\n  \"links\": [\n    {\n      \"rel\": \"parentSystem\",\n      \"href\": \"https://data.example.org/api/systems/447845?f=json\",\n      \"type\": \"application/geo+json\",\n      \"title\": \"Water Level Sensor\"\n    }\n  ]\n}"
+        },
+        {
+          "language": "ttl",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part1/sampling-feature/example_1_1.ttl",
+          "sizeBytes": 565,
+          "code": "@prefix dct: <http://purl.org/dc/terms/> .\n@prefix geojson: <https://purl.org/geojson/vocab#> .\n@prefix ns1: <http://www.iana.org/assignments/> .\n@prefix oa: <http://www.w3.org/ns/oa#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n\n<file:///github/workspace/1a0f80f9> a geojson:Feature ;\n    rdfs:seeAlso [ rdfs:label \"Water Level Sensor\" ;\n            dct:type \"application/geo+json\" ;\n            ns1:relation <http://www.iana.org/assignments/relation/parentSystem> ;\n            oa:hasTarget <https://data.example.org/api/systems/447845?f=json> ] .\n\n"
+        }
+      ]
+    },
+    {
+      "title": "Sampling point geojson",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part1/sampling-feature/examples/sampling-point-geojson.json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part1/sampling-feature/example_2_1.json",
+          "sizeBytes": 639,
+          "code": "{\n  \"type\": \"Feature\",\n  \"id\": \"SP001\",\n  \"geometry\": {\n    \"type\": \"Point\",\n    \"coordinates\": [ 12.31, -86.98, -21]\n  },\n  \"properties\": {\n    \"uid\": \"urn:x-usgs:sites:301244087575701:sf:bottom\",\n    \"name\": \"Bottom of Well - USGS Site #301244087575701\",\n    \"description\": \"Sampling point is 2-4 inches above the bottom of the well\",\n    \"featureType\": \"http://www.opengis.net/def/samplingFeatureType/OGC-OM/2.0/SF_SamplingPoint\",\n    \"sampledFeature@link\": {\n      \"href\": \"https://api.usgs.gov/collections/hydrological_features/items/112TRRC?f=json\",\n      \"type\" : \"application/geo+json\",\n      \"title\": \"Aquifer 112TRRC\"\n    }\n  }\n}"
+        },
+        {
+          "language": "jsonld",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part1/sampling-feature/example_2_1.jsonld",
+          "sizeBytes": 811,
+          "code": "{\n  \"@context\": \"https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part1/sampling-feature/context.jsonld\",\n  \"type\": \"Feature\",\n  \"id\": \"SP001\",\n  \"geometry\": {\n    \"type\": \"Point\",\n    \"coordinates\": [\n      12.31,\n      -86.98,\n      -21\n    ]\n  },\n  \"properties\": {\n    \"uid\": \"urn:x-usgs:sites:301244087575701:sf:bottom\",\n    \"name\": \"Bottom of Well - USGS Site #301244087575701\",\n    \"description\": \"Sampling point is 2-4 inches above the bottom of the well\",\n    \"featureType\": \"http://www.opengis.net/def/samplingFeatureType/OGC-OM/2.0/SF_SamplingPoint\",\n    \"sampledFeature@link\": {\n      \"href\": \"https://api.usgs.gov/collections/hydrological_features/items/112TRRC?f=json\",\n      \"type\": \"application/geo+json\",\n      \"title\": \"Aquifer 112TRRC\"\n    }\n  }\n}"
+        },
+        {
+          "language": "ttl",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part1/sampling-feature/example_2_1.ttl",
+          "sizeBytes": 326,
+          "code": "@prefix geojson: <https://purl.org/geojson/vocab#> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n<file:///github/workspace/SP001> a geojson:Feature ;\n    geojson:geometry [ a geojson:Point ;\n            geojson:coordinates ( 1.231e+01 -8.698e+01 -21 ) ] .\n\n"
+        }
+      ]
+    },
+    {
+      "title": "Sampling point xyz geojson",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part1/sampling-feature/examples/sampling-point-xyz-geojson.json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part1/sampling-feature/example_3_1.json",
+          "sizeBytes": 957,
+          "code": "{\n  \"type\": \"Feature\",\n  \"id\": \"tkckcs6che9i8\",\n  \"geometry\": null,\n  \"properties\": {\n    \"uid\": \"urn:x-osh:saildrone:1001:water-sf\",\n    \"name\": \"Water Sampling Point\",\n    \"description\": \"Sampling point for the CTD measurements\",\n    \"featureType\": \"http://www.opengis.net/def/samplingFeatureType/OGC-SML/2.0/SamplingPointXYZ\",\n    \"sampledFeature@link\": {\n      \"href\": \"http://dbpedia.org/resource/Seawater\",\n      \"type\" : \"text/html\",\n      \"title\": \"Seawater\"\n    },\n    \"pose\": {\n      \"type\": \"RelativePose\",\n      \"referenceFrame\": \"urn:x-osh:saildrone:1001#PLATFORM_FRAME\",\n      \"position\": {\n        \"x\": 0.0,\n        \"y\": 0.0,\n        \"z\": -0.5\n      },\n      \"angles\": {\n        \"yaw\": 0,\n        \"pitch\": 0,\n        \"roll\": 0\n      }\n    }\n  },\n  \"links\": [\n    {\n      \"rel\": \"parentSystem\",\n      \"href\": \"https://data.example.org/api/systems/fs4g5sd6?f=json\",\n      \"type\" : \"application/geo+json\",\n      \"title\": \"CTD Sensor\"\n    }\n  ]\n}"
+        },
+        {
+          "language": "jsonld",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part1/sampling-feature/example_3_1.jsonld",
+          "sizeBytes": 1105,
+          "code": "{\n  \"@context\": \"https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part1/sampling-feature/context.jsonld\",\n  \"type\": \"Feature\",\n  \"id\": \"tkckcs6che9i8\",\n  \"geometry\": null,\n  \"properties\": {\n    \"uid\": \"urn:x-osh:saildrone:1001:water-sf\",\n    \"name\": \"Water Sampling Point\",\n    \"description\": \"Sampling point for the CTD measurements\",\n    \"featureType\": \"http://www.opengis.net/def/samplingFeatureType/OGC-SML/2.0/SamplingPointXYZ\",\n    \"sampledFeature@link\": {\n      \"href\": \"http://dbpedia.org/resource/Seawater\",\n      \"type\": \"text/html\",\n      \"title\": \"Seawater\"\n    },\n    \"pose\": {\n      \"type\": \"RelativePose\",\n      \"referenceFrame\": \"urn:x-osh:saildrone:1001#PLATFORM_FRAME\",\n      \"position\": {\n        \"x\": 0.0,\n        \"y\": 0.0,\n        \"z\": -0.5\n      },\n      \"angles\": {\n        \"yaw\": 0,\n        \"pitch\": 0,\n        \"roll\": 0\n      }\n    }\n  },\n  \"links\": [\n    {\n      \"rel\": \"parentSystem\",\n      \"href\": \"https://data.example.org/api/systems/fs4g5sd6?f=json\",\n      \"type\": \"application/geo+json\",\n      \"title\": \"CTD Sensor\"\n    }\n  ]\n}"
+        },
+        {
+          "language": "ttl",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part1/sampling-feature/example_3_1.ttl",
+          "sizeBytes": 564,
+          "code": "@prefix dct: <http://purl.org/dc/terms/> .\n@prefix geojson: <https://purl.org/geojson/vocab#> .\n@prefix ns1: <http://www.iana.org/assignments/> .\n@prefix oa: <http://www.w3.org/ns/oa#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n\n<file:///github/workspace/tkckcs6che9i8> a geojson:Feature ;\n    rdfs:seeAlso [ rdfs:label \"CTD Sensor\" ;\n            dct:type \"application/geo+json\" ;\n            ns1:relation <http://www.iana.org/assignments/relation/parentSystem> ;\n            oa:hasTarget <https://data.example.org/api/systems/fs4g5sd6?f=json> ] .\n\n"
+        }
+      ]
+    },
+    {
+      "title": "Sampling proxy geojson",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part1/sampling-feature/examples/sampling-proxy-geojson.json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part1/sampling-feature/example_4_1.json",
+          "sizeBytes": 607,
+          "code": "{\n  \"type\": \"Feature\",\n  \"id\": \"1a0f80f9\",\n  \"geometry\": null,\n  \"properties\": {\n    \"uid\": \"x-safecity:sg:traffic:sf:PIE12-34\",\n    \"name\": \"PIE Junction 34\",\n    \"description\": \"Junction 34 on Pan-Island Expressway\",\n    \"featureType\": \"Junction\",\n    \"sampledFeature@link\": {\n      \"href\": \"https://ext.features.org/api/collections/roads/PIE12?f=json\",\n      \"type\" : \"application/geo+json\"\n    }\n  },\n  \"links\": [\n    {\n      \"rel\": \"parentSystem\",\n      \"href\": \"https://data.example.org/api/systems/751588?f=json\",\n      \"type\" : \"application/geo+json\",\n      \"title\": \"Traffic Camera 456\"\n    }\n  ]\n}"
+        },
+        {
+          "language": "jsonld",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part1/sampling-feature/example_4_1.jsonld",
+          "sizeBytes": 755,
+          "code": "{\n  \"@context\": \"https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part1/sampling-feature/context.jsonld\",\n  \"type\": \"Feature\",\n  \"id\": \"1a0f80f9\",\n  \"geometry\": null,\n  \"properties\": {\n    \"uid\": \"x-safecity:sg:traffic:sf:PIE12-34\",\n    \"name\": \"PIE Junction 34\",\n    \"description\": \"Junction 34 on Pan-Island Expressway\",\n    \"featureType\": \"Junction\",\n    \"sampledFeature@link\": {\n      \"href\": \"https://ext.features.org/api/collections/roads/PIE12?f=json\",\n      \"type\": \"application/geo+json\"\n    }\n  },\n  \"links\": [\n    {\n      \"rel\": \"parentSystem\",\n      \"href\": \"https://data.example.org/api/systems/751588?f=json\",\n      \"type\": \"application/geo+json\",\n      \"title\": \"Traffic Camera 456\"\n    }\n  ]\n}"
+        },
+        {
+          "language": "ttl",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part1/sampling-feature/example_4_1.ttl",
+          "sizeBytes": 565,
+          "code": "@prefix dct: <http://purl.org/dc/terms/> .\n@prefix geojson: <https://purl.org/geojson/vocab#> .\n@prefix ns1: <http://www.iana.org/assignments/> .\n@prefix oa: <http://www.w3.org/ns/oa#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n\n<file:///github/workspace/1a0f80f9> a geojson:Feature ;\n    rdfs:seeAlso [ rdfs:label \"Traffic Camera 456\" ;\n            dct:type \"application/geo+json\" ;\n            ns1:relation <http://www.iana.org/assignments/relation/parentSystem> ;\n            oa:hasTarget <https://data.example.org/api/systems/751588?f=json> ] .\n\n"
+        }
+      ]
+    },
+    {
+      "title": "Sampling specimen geojson",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part1/sampling-feature/examples/sampling-specimen-geojson.json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part1/sampling-feature/example_5_1.json",
+          "sizeBytes": 925,
+          "code": "{\n  \"type\": \"Feature\",\n  \"id\": \"f6b464cf\",\n  \"geometry\": {\n    \"type\": \"Point\",\n    \"coordinates\": [ 30.706, -134.196, 272 ]\n  },\n  \"properties\": {\n    \"uid\": \"urn:x-csiro:samples:1114457888\",\n    \"name\": \"Rock Sample CSIRO:1114457888\",\n    \"description\": \"Rock sample collected on traverse\",\n    \"featureType\": \"http://www.opengis.net/def/samplingFeatureType/OGC-OM/2.0/SF_Specimen\",\n    \"samplingTime\": \"2007-01-24T12:14:50Z\",\n    \"materialClass\": \"http://dbpedia.org/resource/Rock_(geology)\",\n    \"sampledFeature@link\": {\n      \"href\": \"https://api.usgs.gov/collections/geological_features/items/1458955?f=json\",\n      \"type\" : \"application/geo+json\",\n      \"title\": \"Geological Unit 235\"\n    }\n  },\n  \"links\": [\n    {\n      \"rel\": \"parentSystem\",\n      \"href\": \"https://data.example.org/api/systems/2ad45f69?f=json\",\n      \"type\" : \"application/geo+json\",\n      \"title\": \"Field Technician #123 (Rock Sampler)\"\n    }\n  ]\n}"
+        },
+        {
+          "language": "jsonld",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part1/sampling-feature/example_5_1.jsonld",
+          "sizeBytes": 1095,
+          "code": "{\n  \"@context\": \"https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part1/sampling-feature/context.jsonld\",\n  \"type\": \"Feature\",\n  \"id\": \"f6b464cf\",\n  \"geometry\": {\n    \"type\": \"Point\",\n    \"coordinates\": [\n      30.706,\n      -134.196,\n      272\n    ]\n  },\n  \"properties\": {\n    \"uid\": \"urn:x-csiro:samples:1114457888\",\n    \"name\": \"Rock Sample CSIRO:1114457888\",\n    \"description\": \"Rock sample collected on traverse\",\n    \"featureType\": \"http://www.opengis.net/def/samplingFeatureType/OGC-OM/2.0/SF_Specimen\",\n    \"samplingTime\": \"2007-01-24T12:14:50Z\",\n    \"materialClass\": \"http://dbpedia.org/resource/Rock_(geology)\",\n    \"sampledFeature@link\": {\n      \"href\": \"https://api.usgs.gov/collections/geological_features/items/1458955?f=json\",\n      \"type\": \"application/geo+json\",\n      \"title\": \"Geological Unit 235\"\n    }\n  },\n  \"links\": [\n    {\n      \"rel\": \"parentSystem\",\n      \"href\": \"https://data.example.org/api/systems/2ad45f69?f=json\",\n      \"type\": \"application/geo+json\",\n      \"title\": \"Field Technician #123 (Rock Sampler)\"\n    }\n  ]\n}"
+        },
+        {
+          "language": "ttl",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part1/sampling-feature/example_5_1.ttl",
+          "sizeBytes": 806,
+          "code": "@prefix dct: <http://purl.org/dc/terms/> .\n@prefix geojson: <https://purl.org/geojson/vocab#> .\n@prefix ns1: <http://www.iana.org/assignments/> .\n@prefix oa: <http://www.w3.org/ns/oa#> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n<file:///github/workspace/f6b464cf> a geojson:Feature ;\n    rdfs:seeAlso [ rdfs:label \"Field Technician #123 (Rock Sampler)\" ;\n            dct:type \"application/geo+json\" ;\n            ns1:relation <http://www.iana.org/assignments/relation/parentSystem> ;\n            oa:hasTarget <https://data.example.org/api/systems/2ad45f69?f=json> ] ;\n    geojson:geometry [ a geojson:Point ;\n            geojson:coordinates ( 3.0706e+01 -1.34196e+02 272 ) ] .\n\n"
+        }
+      ]
+    },
+    {
+      "title": "SamplingProfile at location geojson",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part1/sampling-feature/examples/samplingProfile-at-location-geojson.json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part1/sampling-feature/example_6_1.json",
+          "sizeBytes": 1068,
+          "code": "{\n  \"type\": \"Feature\",\n  \"id\": \"SPF001\",\n  \"geometry\": {\n    \"type\": \"Point\",\n    \"coordinates\": [-151.458848, 59.649740, 7.6]\n  },\n  \"properties\": {\n    \"uid\": \"urn:x-noaa:npn:HWPA2:spf\",\n    \"name\": \"Homer Wind Profiler Beam 1\",\n    \"featureType\": \"http://www.opengis.net/def/samplingFeatureType/OGC-SML/2.0/SamplingProfile\",\n    \"sampledFeature@link\": {\n      \"href\": \"http://dbpedia.org/resource/Atmosphere_of_Earth\",\n      \"type\" : \"text/html\",\n      \"title\": \"Atmosphere\"\n    },\n    \"pose\": {\n      \"type\": \"RelativePose\",\n      \"referenceFrame\": \"http://www.opengis.net/def/cs/OGC/0/NED\",\n      \"position\": {\n        \"x\": 0,\n        \"y\": 0,\n        \"z\": 0\n      },\n      \"angles\": {\n        \"yaw\": 0.0,\n        \"pitch\": 0.0,\n        \"roll\": 0.0\n      }\n    },\n    \"profileAxis\": \"-Z\",\n    \"numBins\": 10,\n    \"startDistance\": 1.2,\n    \"stepDistance\": 0.4\n  },\n  \"links\": [\n    {\n      \"rel\": \"parentSystem\",\n      \"href\": \"https://data.example.org/api/systems/72562?f=json\",\n      \"type\" : \"application/geo+json\",\n      \"title\": \"Homer Wind Profiler\"\n    }\n  ]\n}"
+        },
+        {
+          "language": "jsonld",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part1/sampling-feature/example_6_1.jsonld",
+          "sizeBytes": 1239,
+          "code": "{\n  \"@context\": \"https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part1/sampling-feature/context.jsonld\",\n  \"type\": \"Feature\",\n  \"id\": \"SPF001\",\n  \"geometry\": {\n    \"type\": \"Point\",\n    \"coordinates\": [\n      -151.458848,\n      59.64974,\n      7.6\n    ]\n  },\n  \"properties\": {\n    \"uid\": \"urn:x-noaa:npn:HWPA2:spf\",\n    \"name\": \"Homer Wind Profiler Beam 1\",\n    \"featureType\": \"http://www.opengis.net/def/samplingFeatureType/OGC-SML/2.0/SamplingProfile\",\n    \"sampledFeature@link\": {\n      \"href\": \"http://dbpedia.org/resource/Atmosphere_of_Earth\",\n      \"type\": \"text/html\",\n      \"title\": \"Atmosphere\"\n    },\n    \"pose\": {\n      \"type\": \"RelativePose\",\n      \"referenceFrame\": \"http://www.opengis.net/def/cs/OGC/0/NED\",\n      \"position\": {\n        \"x\": 0,\n        \"y\": 0,\n        \"z\": 0\n      },\n      \"angles\": {\n        \"yaw\": 0.0,\n        \"pitch\": 0.0,\n        \"roll\": 0.0\n      }\n    },\n    \"profileAxis\": \"-Z\",\n    \"numBins\": 10,\n    \"startDistance\": 1.2,\n    \"stepDistance\": 0.4\n  },\n  \"links\": [\n    {\n      \"rel\": \"parentSystem\",\n      \"href\": \"https://data.example.org/api/systems/72562?f=json\",\n      \"type\": \"application/geo+json\",\n      \"title\": \"Homer Wind Profiler\"\n    }\n  ]\n}"
+        },
+        {
+          "language": "ttl",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part1/sampling-feature/example_6_1.ttl",
+          "sizeBytes": 791,
+          "code": "@prefix dct: <http://purl.org/dc/terms/> .\n@prefix geojson: <https://purl.org/geojson/vocab#> .\n@prefix ns1: <http://www.iana.org/assignments/> .\n@prefix oa: <http://www.w3.org/ns/oa#> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n<file:///github/workspace/SPF001> a geojson:Feature ;\n    rdfs:seeAlso [ rdfs:label \"Homer Wind Profiler\" ;\n            dct:type \"application/geo+json\" ;\n            ns1:relation <http://www.iana.org/assignments/relation/parentSystem> ;\n            oa:hasTarget <https://data.example.org/api/systems/72562?f=json> ] ;\n    geojson:geometry [ a geojson:Point ;\n            geojson:coordinates ( -1.514588e+02 5.964974e+01 7.6e+00 ) ] .\n\n"
+        }
+      ]
+    },
+    {
+      "title": "Viewing frustum at location geojson",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part1/sampling-feature/examples/viewing-frustum-at-location-geojson.json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part1/sampling-feature/example_7_1.json",
+          "sizeBytes": 1160,
+          "code": "{\n  \"type\": \"Feature\",\n  \"id\": \"VF002\",\n  \"geometry\": {\n    \"type\": \"Point\",\n    \"coordinates\": [103.868811, 1.327909]\n  },\n  \"properties\": {\n    \"uid\": \"urn:x-safecity:sg:dahua:SG00010:vf\",\n    \"name\": \"Camera Viewing Frustum\",\n    \"description\": \"Viewing frustum of fixed camera\",\n    \"featureType\": \"http://www.opengis.net/def/samplingFeatureType/OGC-SML/2.0/ViewingFrustum\",\n    \"sampledFeature@link\": {\n      \"href\": \"https://data.example.org/api/collections/roads/PIE12\",\n      \"type\" : \"application/geo+json\",\n      \"title\": \"Pan-Island Expressway\"\n    },\n    \"pose\": {\n      \"type\": \"RelativePose\",\n      \"referenceFrame\": \"http://www.opengis.net/def/cs/OGC/0/NED\",\n      \"position\": {\n        \"x\": 0,\n        \"y\": 0,\n        \"z\": 0\n      },\n      \"angles\": {\n        \"yaw\": 123.0,\n        \"pitch\": -2.0,\n        \"roll\": 0.0\n      }\n    },\n    \"frustumAxis\": \"X\",\n    \"upAxis\": \"-Z\",\n    \"fov\": 46.0,\n    \"aspectRatio\": 1.33,\n    \"length\": 50.0\n  },\n  \"links\": [\n    {\n      \"rel\": \"parentSystem\",\n      \"href\": \"https://data.example.org/api/systems/751588?f=json\",\n      \"type\" : \"application/geo+json\",\n      \"title\": \"Traffic Camera 456\"\n    }\n  ]\n}"
+        },
+        {
+          "language": "jsonld",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part1/sampling-feature/example_7_1.jsonld",
+          "sizeBytes": 1326,
+          "code": "{\n  \"@context\": \"https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part1/sampling-feature/context.jsonld\",\n  \"type\": \"Feature\",\n  \"id\": \"VF002\",\n  \"geometry\": {\n    \"type\": \"Point\",\n    \"coordinates\": [\n      103.868811,\n      1.327909\n    ]\n  },\n  \"properties\": {\n    \"uid\": \"urn:x-safecity:sg:dahua:SG00010:vf\",\n    \"name\": \"Camera Viewing Frustum\",\n    \"description\": \"Viewing frustum of fixed camera\",\n    \"featureType\": \"http://www.opengis.net/def/samplingFeatureType/OGC-SML/2.0/ViewingFrustum\",\n    \"sampledFeature@link\": {\n      \"href\": \"https://data.example.org/api/collections/roads/PIE12\",\n      \"type\": \"application/geo+json\",\n      \"title\": \"Pan-Island Expressway\"\n    },\n    \"pose\": {\n      \"type\": \"RelativePose\",\n      \"referenceFrame\": \"http://www.opengis.net/def/cs/OGC/0/NED\",\n      \"position\": {\n        \"x\": 0,\n        \"y\": 0,\n        \"z\": 0\n      },\n      \"angles\": {\n        \"yaw\": 123.0,\n        \"pitch\": -2.0,\n        \"roll\": 0.0\n      }\n    },\n    \"frustumAxis\": \"X\",\n    \"upAxis\": \"-Z\",\n    \"fov\": 46.0,\n    \"aspectRatio\": 1.33,\n    \"length\": 50.0\n  },\n  \"links\": [\n    {\n      \"rel\": \"parentSystem\",\n      \"href\": \"https://data.example.org/api/systems/751588?f=json\",\n      \"type\": \"application/geo+json\",\n      \"title\": \"Traffic Camera 456\"\n    }\n  ]\n}"
+        },
+        {
+          "language": "ttl",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part1/sampling-feature/example_7_1.ttl",
+          "sizeBytes": 781,
+          "code": "@prefix dct: <http://purl.org/dc/terms/> .\n@prefix geojson: <https://purl.org/geojson/vocab#> .\n@prefix ns1: <http://www.iana.org/assignments/> .\n@prefix oa: <http://www.w3.org/ns/oa#> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n<file:///github/workspace/VF002> a geojson:Feature ;\n    rdfs:seeAlso [ rdfs:label \"Traffic Camera 456\" ;\n            dct:type \"application/geo+json\" ;\n            ns1:relation <http://www.iana.org/assignments/relation/parentSystem> ;\n            oa:hasTarget <https://data.example.org/api/systems/751588?f=json> ] ;\n    geojson:geometry [ a geojson:Point ;\n            geojson:coordinates ( 1.038688e+02 1.327909e+00 ) ] .\n\n"
+        }
+      ]
+    },
+    {
+      "title": "Viewing frustum on platform geojson",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part1/sampling-feature/examples/viewing-frustum-on-platform-geojson.json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part1/sampling-feature/example_8_1.json",
+          "sizeBytes": 1059,
+          "code": "{\n  \"type\": \"Feature\",\n  \"id\": \"VF001\",\n  \"geometry\": null,\n  \"properties\": {\n    \"uid\": \"urn:x-usgs:sites:301244087575701\",\n    \"name\": \"Camera Viewing Frustum\",\n    \"description\": \"Viewing frustum of camera attached to the boom\",\n    \"featureType\": \"http://www.opengis.net/def/samplingFeatureType/OGC-SML/2.0/ViewingFrustum\",\n    \"sampledFeature@link\": {\n      \"href\": \"http://dbpedia.org/resource/Atmosphere_of_Earth\",\n      \"type\" : \"text/html\",\n      \"title\": \"Atmosphere\"\n    },\n    \"pose\": {\n      \"type\": \"RelativePose\",\n      \"referenceFrame\": \"urn:x-osh:saildrone:1001#PLATFORM_FRAME\",\n      \"position\": {\n        \"x\": 0.0,\n        \"y\": 1.0,\n        \"z\": 2.5\n      },\n      \"angles\": {\n        \"yaw\": 0.0,\n        \"pitch\": -6.0,\n        \"roll\": 0.0\n      }\n    },\n    \"frustumAxis\": \"Y\",\n    \"upAxis\": \"Z\",\n    \"fov\": 58,\n    \"aspectRatio\": 1.33\n  },\n  \"links\": [\n    {\n      \"rel\": \"parentSystem\",\n      \"href\": \"https://data.example.org/api/systems/422381?f=json\",\n      \"type\" : \"application/geo+json\",\n      \"title\": \"Saildrone 1001\"\n    }\n  ]\n}"
+        },
+        {
+          "language": "jsonld",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part1/sampling-feature/example_8_1.jsonld",
+          "sizeBytes": 1207,
+          "code": "{\n  \"@context\": \"https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part1/sampling-feature/context.jsonld\",\n  \"type\": \"Feature\",\n  \"id\": \"VF001\",\n  \"geometry\": null,\n  \"properties\": {\n    \"uid\": \"urn:x-usgs:sites:301244087575701\",\n    \"name\": \"Camera Viewing Frustum\",\n    \"description\": \"Viewing frustum of camera attached to the boom\",\n    \"featureType\": \"http://www.opengis.net/def/samplingFeatureType/OGC-SML/2.0/ViewingFrustum\",\n    \"sampledFeature@link\": {\n      \"href\": \"http://dbpedia.org/resource/Atmosphere_of_Earth\",\n      \"type\": \"text/html\",\n      \"title\": \"Atmosphere\"\n    },\n    \"pose\": {\n      \"type\": \"RelativePose\",\n      \"referenceFrame\": \"urn:x-osh:saildrone:1001#PLATFORM_FRAME\",\n      \"position\": {\n        \"x\": 0.0,\n        \"y\": 1.0,\n        \"z\": 2.5\n      },\n      \"angles\": {\n        \"yaw\": 0.0,\n        \"pitch\": -6.0,\n        \"roll\": 0.0\n      }\n    },\n    \"frustumAxis\": \"Y\",\n    \"upAxis\": \"Z\",\n    \"fov\": 58,\n    \"aspectRatio\": 1.33\n  },\n  \"links\": [\n    {\n      \"rel\": \"parentSystem\",\n      \"href\": \"https://data.example.org/api/systems/422381?f=json\",\n      \"type\": \"application/geo+json\",\n      \"title\": \"Saildrone 1001\"\n    }\n  ]\n}"
+        },
+        {
+          "language": "ttl",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part1/sampling-feature/example_8_1.ttl",
+          "sizeBytes": 558,
+          "code": "@prefix dct: <http://purl.org/dc/terms/> .\n@prefix geojson: <https://purl.org/geojson/vocab#> .\n@prefix ns1: <http://www.iana.org/assignments/> .\n@prefix oa: <http://www.w3.org/ns/oa#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n\n<file:///github/workspace/VF001> a geojson:Feature ;\n    rdfs:seeAlso [ rdfs:label \"Saildrone 1001\" ;\n            dct:type \"application/geo+json\" ;\n            ns1:relation <http://www.iana.org/assignments/relation/parentSystem> ;\n            oa:hasTarget <https://data.example.org/api/systems/422381?f=json> ] .\n\n"
+        }
+      ]
+    },
+    {
+      "title": "Viewing sector at location geojson",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part1/sampling-feature/examples/viewing-sector-at-location-geojson.json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part1/sampling-feature/example_9_1.json",
+          "sizeBytes": 1168,
+          "code": "{\n  \"type\": \"Feature\",\n  \"id\": \"VS001\",\n  \"geometry\": {\n    \"type\": \"Point\",\n    \"coordinates\": [103.868811, 1.327909]\n  },\n  \"properties\": {\n    \"uid\": \"urn:x-safecity:sg:dahua:SG00010:vf\",\n    \"name\": \"Camera Viewable Area\",\n    \"description\": \"Area visible to the PTZ camera\",\n    \"featureType\": \"http://www.opengis.net/def/samplingFeatureType/OGC-SML/2.0/SphericalSector\",\n    \"sampledFeature@link\": {\n      \"href\": \"https://ext.features.org/api/collections/roads/PIE12?f=json\",\n      \"type\" : \"application/geo+json\",\n      \"title\": \"Pan-Island Expressway\"\n    },\n    \"pose\": {\n      \"type\": \"RelativePose\",\n      \"referenceFrame\": \"http://www.opengis.net/def/cs/OGC/0/NED\",\n      \"position\": {\n        \"x\": 0.0,\n        \"y\": 1.0,\n        \"z\": 2.5\n      },\n      \"angles\": {\n        \"yaw\": 0.0,\n        \"pitch\": 0.0,\n        \"roll\": 0.0\n      }\n    },\n    \"radius\": 50.0,\n    \"minElev\": -90.0,\n    \"maxElev\": 25.0,\n    \"minAzim\": 23.0,\n    \"maxAzim\": 223.0\n  },\n  \"links\": [\n    {\n      \"rel\": \"parentSystem\",\n      \"href\": \"https://data.example.org/api/systems/751588?f=json\",\n      \"type\" : \"application/geo+json\",\n      \"title\": \"Traffic Camera 456\"\n    }\n  ]\n}"
+        },
+        {
+          "language": "jsonld",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part1/sampling-feature/example_9_1.jsonld",
+          "sizeBytes": 1334,
+          "code": "{\n  \"@context\": \"https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part1/sampling-feature/context.jsonld\",\n  \"type\": \"Feature\",\n  \"id\": \"VS001\",\n  \"geometry\": {\n    \"type\": \"Point\",\n    \"coordinates\": [\n      103.868811,\n      1.327909\n    ]\n  },\n  \"properties\": {\n    \"uid\": \"urn:x-safecity:sg:dahua:SG00010:vf\",\n    \"name\": \"Camera Viewable Area\",\n    \"description\": \"Area visible to the PTZ camera\",\n    \"featureType\": \"http://www.opengis.net/def/samplingFeatureType/OGC-SML/2.0/SphericalSector\",\n    \"sampledFeature@link\": {\n      \"href\": \"https://ext.features.org/api/collections/roads/PIE12?f=json\",\n      \"type\": \"application/geo+json\",\n      \"title\": \"Pan-Island Expressway\"\n    },\n    \"pose\": {\n      \"type\": \"RelativePose\",\n      \"referenceFrame\": \"http://www.opengis.net/def/cs/OGC/0/NED\",\n      \"position\": {\n        \"x\": 0.0,\n        \"y\": 1.0,\n        \"z\": 2.5\n      },\n      \"angles\": {\n        \"yaw\": 0.0,\n        \"pitch\": 0.0,\n        \"roll\": 0.0\n      }\n    },\n    \"radius\": 50.0,\n    \"minElev\": -90.0,\n    \"maxElev\": 25.0,\n    \"minAzim\": 23.0,\n    \"maxAzim\": 223.0\n  },\n  \"links\": [\n    {\n      \"rel\": \"parentSystem\",\n      \"href\": \"https://data.example.org/api/systems/751588?f=json\",\n      \"type\": \"application/geo+json\",\n      \"title\": \"Traffic Camera 456\"\n    }\n  ]\n}"
+        },
+        {
+          "language": "ttl",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part1/sampling-feature/example_9_1.ttl",
+          "sizeBytes": 781,
+          "code": "@prefix dct: <http://purl.org/dc/terms/> .\n@prefix geojson: <https://purl.org/geojson/vocab#> .\n@prefix ns1: <http://www.iana.org/assignments/> .\n@prefix oa: <http://www.w3.org/ns/oa#> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n<file:///github/workspace/VS001> a geojson:Feature ;\n    rdfs:seeAlso [ rdfs:label \"Traffic Camera 456\" ;\n            dct:type \"application/geo+json\" ;\n            ns1:relation <http://www.iana.org/assignments/relation/parentSystem> ;\n            oa:hasTarget <https://data.example.org/api/systems/751588?f=json> ] ;\n    geojson:geometry [ a geojson:Point ;\n            geojson:coordinates ( 1.038688e+02 1.327909e+00 ) ] .\n\n"
+        }
+      ]
+    }
+  ],
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ntitle: SamplingFeature\nallOf:\n- $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part1/feature/schema.yaml\n- type: object\n  properties:\n    properties:\n      type: object\n      required:\n      - featureType\n      - sampledFeature@link\n      properties:\n        validTime:\n          $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/time-period/schema.yaml\n        sampledFeature@link:\n          $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/link/schema.yaml\n",
+  "gitRepository": "https://github.com/ogcincubator/bblocks-connected-systems",
+  "gitPath": "_sources/part1/sampling-feature"
+}

@@ -1,0 +1,87 @@
+
+
+{
+  "itemIdentifier": "ogc.api.connected-systems.part2.observation-schema-json",
+  "name": "ObservationSchemaJson",
+  "abstract": "Observation schema for the JSON format (`application/json`), describing the observation result, parameters and related fields with SWE Common components.",
+  "status": "under-development",
+  "dateTimeAddition": "2026-09-23T00:00:00Z",
+  "itemClass": "schema",
+  "version": "0.1",
+  "group": "Part 2",
+  "sources": [
+    {
+      "title": "api/part2/openapi/schemas/json/observationSchemaJson.json in opengeospatial/ogcapi-connected-systems",
+      "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/api/part2/openapi/schemas/json/observationSchemaJson.json"
+    }
+  ],
+  "shaclShapes": {},
+  "dependsOn": [
+    "ogc.api.connected-systems.swecommon.swe-common",
+    "ogc.api.connected-systems.swecommon.data-record"
+  ],
+  "dateOfLastChange": "2026-09-23",
+  "schema": {
+    "application/yaml": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part2/observation-schema-json/schema.yaml",
+    "application/json": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part2/observation-schema-json/schema.json"
+  },
+  "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part2/observation-schema-json/schema.json",
+  "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part2/observation-schema-json/resolvedProperties.json",
+  "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part2/observation-schema-json/",
+  "validationPassed": true,
+  "testOutputs": "https://github.com/ogcincubator/bblocks-connected-systems/blob/master/build/tests/api/connected-systems/part2/observation-schema-json/",
+  "description": "<!-- generated -->\n# ObservationSchemaJson\n\nConverted from [`api/part2/openapi/schemas/json/observationSchemaJson.json`](https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/api/part2/openapi/schemas/json/observationSchemaJson.json) in the OGC API - Connected Systems repository.\n\n## Properties\n\n| Property | Type | Required | Description |\n|---|---|---|---|\n| `obsFormat` | `\"application/json\"` | yes |  |\n| `parametersSchema` | `../common/sweCommonDefs.json#/$defs/DataRecord` |  | Record schema for the observation `parameters` property. If omitted, parameters are not included in the datastream. |\n| `resultSchema` | `../common/sweCommonDefs.json#/$defs/AnyComponent` |  | Schema for the observation `result` property. This describes the observed properties included in the result and how they are structured if the result is a record, a vector quantity or a coverage. |\n| `resultLink` | `object` |  | Encoding information in case the result is provided out-of-band via the `result@link` property. |\n\n## Examples\n\n4 example(s) taken from the specification are included and validated against this schema.\n\n",
+  "examples": [
+    {
+      "title": "ObservationSchema geopose json",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part2/observation-schema-json/examples/observationSchema-geopose-json.json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part2/observation-schema-json/example_1_1.json",
+          "sizeBytes": 2992,
+          "code": "{\n  \"obsFormat\": \"application/json\",\n  \"resultSchema\": {\n    \"type\": \"DataRecord\",\n    \"label\": \"Basic YPR Pose\",\n    \"description\": \"Pose of platform (position + euler angles) in WGS84/ENU\",\n    \"definition\": \"http://www.opengis.net/spec/geopose/1.0/req/basic-ypr\",\n    \"fields\": [\n      {\n        \"name\": \"position\",\n        \"type\": \"Vector\",\n        \"label\": \"Tangent Point Position\",\n        \"definition\": \"http://sensorml.com/ont/swe/property/Location\",\n        \"referenceFrame\": \"http://www.opengis.net/def/crs/EPSG/0/4979\",\n        \"coordinates\": [\n          {\n            \"name\": \"lat\",\n            \"type\": \"Quantity\",\n            \"definition\": \"http://sensorml.com/ont/swe/property/GeodeticLatitude\",\n            \"axisID\": \"Lat\",\n            \"label\": \"Geodetic Latitude\",\n            \"uom\": {\n              \"code\": \"deg\"\n            }\n          },\n          {\n            \"name\": \"lon\",\n            \"type\": \"Quantity\",\n            \"definition\": \"http://sensorml.com/ont/swe/property/Longitude\",\n            \"axisID\": \"Lon\",\n            \"label\": \"Longitude\",\n            \"uom\": {\n              \"code\": \"deg\"\n            }\n          },\n          {\n            \"name\": \"h\",\n            \"type\": \"Quantity\",\n            \"definition\": \"http://sensorml.com/ont/swe/property/HeightAboveEllipsoid\",\n            \"axisID\": \"h\",\n            \"label\": \"Ellipsoidal Height\",\n            \"uom\": {\n              \"code\": \"m\"\n            }\n          }\n        ]\n      },\n      {\n        \"name\": \"angles\",\n        \"type\": \"Vector\",\n        \"label\": \"Yaw Pitch Roll Angles\",\n        \"description\": \"Euler angles with order of rotation yaw/pitch/roll in rotating frame\",\n        \"definition\": \"http://sensorml.com/ont/swe/property/EulerAngles\",\n        \"referenceFrame\": \"http://www.opengis.net/def/cs/OGC/0/ENU\",\n        \"coordinates\": [\n          {\n            \"name\": \"yaw\",\n            \"type\": \"Quantity\",\n            \"definition\": \"http://sensorml.com/ont/swe/property/YawAngle\",\n            \"axisID\": \"Z\",\n            \"label\": \"Yaw Angle\",\n            \"description\": \"Heading angle from true north, measured clockwise\",\n            \"uom\": {\n              \"code\": \"deg\"\n            }\n          },\n          {\n            \"name\": \"pitch\",\n            \"type\": \"Quantity\",\n            \"definition\": \"http://sensorml.com/ont/swe/property/PitchAngle\",\n            \"axisID\": \"Y\",\n            \"label\": \"Pitch Angle\",\n            \"description\": \"Rotation around the lateral axis, up/down from the local horizontal plane (positive when pointing up)\",\n            \"uom\": {\n              \"code\": \"deg\"\n            }\n          },\n          {\n            \"name\": \"roll\",\n            \"type\": \"Quantity\",\n            \"definition\": \"http://sensorml.com/ont/swe/property/RollAngle\",\n            \"axisID\": \"X\",\n            \"label\": \"Roll Angle\",\n            \"description\": \"Rotation around the longitudinal axis\",\n            \"uom\": {\n              \"code\": \"deg\"\n            }\n          }\n        ]\n      }\n    ]\n  }\n}"
+        }
+      ]
+    },
+    {
+      "title": "ObservationSchema imagelink json",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part2/observation-schema-json/examples/observationSchema-imagelink-json.json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part2/observation-schema-json/example_2_1.json",
+          "sizeBytes": 89,
+          "code": "{\n  \"obsFormat\": \"application/json\",\n  \"resultLink\": {\n    \"mediaType\": \"image/png\"\n  }\n}"
+        }
+      ]
+    },
+    {
+      "title": "ObservationSchema scalar json",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part2/observation-schema-json/examples/observationSchema-scalar-json.json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part2/observation-schema-json/example_3_1.json",
+          "sizeBytes": 633,
+          "code": "{\n  \"obsFormat\": \"application/json\",\n  \"resultSchema\": {\n    \"name\": \"temp\",\n    \"type\": \"Quantity\",\n    \"definition\": \"http://mmisw.org/ont/cf/parameter/air_temperature\",\n    \"label\": \"Room Temperature\",\n    \"description\": \"Ambient air temperature measured inside the room\",\n    \"uom\": {\n      \"code\": \"Cel\"\n    },\n    \"nilValues\": [\n      { \"reason\": \"http://www.opengis.net/def/nil/OGC/0/missing\", \"value\": \"NaN\" },\n      { \"reason\": \"http://www.opengis.net/def/nil/OGC/0/BelowDetectionRange\", \"value\": \"-Infinity\" },\n      { \"reason\": \"http://www.opengis.net/def/nil/OGC/0/AboveDetectionRange\", \"value\": \"+Infinity\" }\n    ]\n  }\n}"
+        }
+      ]
+    },
+    {
+      "title": "ObservationSchema vector json",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part2/observation-schema-json/examples/observationSchema-vector-json.json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part2/observation-schema-json/example_4_1.json",
+          "sizeBytes": 1070,
+          "code": "{\n  \"obsFormat\": \"application/json\",\n  \"resultSchema\": {\n    \"name\": \"location\",\n    \"type\": \"Vector\",\n    \"label\": \"Platform Location\",\n    \"definition\": \"http://sensorml.com/ont/swe/property/Location\",\n    \"referenceFrame\": \"http://www.opengis.net/def/crs/EPSG/0/4979\",\n    \"coordinates\": [\n      {\n        \"name\": \"lat\",\n        \"type\": \"Quantity\",\n        \"definition\": \"http://sensorml.com/ont/swe/property/GeodeticLatitude\",\n        \"axisID\": \"Lat\",\n        \"label\": \"Geodetic Latitude\",\n        \"uom\": {\n          \"code\": \"deg\"\n        }\n      },\n      {\n        \"name\": \"lon\",\n        \"type\": \"Quantity\",\n        \"definition\": \"http://sensorml.com/ont/swe/property/Longitude\",\n        \"axisID\": \"Lon\",\n        \"label\": \"Longitude\",\n        \"uom\": {\n          \"code\": \"deg\"\n        }\n      },\n      {\n        \"name\": \"h\",\n        \"type\": \"Quantity\",\n        \"definition\": \"http://sensorml.com/ont/swe/property/HeightAboveEllipsoid\",\n        \"axisID\": \"h\",\n        \"label\": \"Ellipsoidal Height\",\n        \"uom\": {\n          \"code\": \"m\"\n        }\n      }\n    ]\n  }\n}"
+        }
+      ]
+    }
+  ],
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ntype: object\nproperties:\n  obsFormat:\n    const: application/json\n  parametersSchema:\n    description: Record schema for the observation `parameters` property. If omitted,\n      parameters are not included in the datastream.\n    $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/data-record/schema.yaml\n  resultSchema:\n    description: Schema for the observation `result` property. This describes the\n      observed properties included in the result and how they are structured if the\n      result is a record, a vector quantity or a coverage.\n    $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/swe-common/schema.yaml#AnyComponent\n  resultLink:\n    description: Encoding information in case the result is provided out-of-band via\n      the `result@link` property.\n    type: object\n    properties:\n      mediaType:\n        description: Media type of out-of-band resources obtained by dereferencing\n          the result links\n        type: string\n    required:\n    - mediaType\nrequired:\n- obsFormat\noneOf:\n- title: Inline Result\n  required:\n  - resultSchema\n- title: Result Link\n  required:\n  - resultLink\n",
+  "gitRepository": "https://github.com/ogcincubator/bblocks-connected-systems",
+  "gitPath": "_sources/part2/observation-schema-json"
+}

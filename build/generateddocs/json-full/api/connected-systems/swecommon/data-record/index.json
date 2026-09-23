@@ -1,0 +1,64 @@
+
+
+{
+  "itemIdentifier": "ogc.api.connected-systems.swecommon.data-record",
+  "name": "DataRecord",
+  "abstract": "Implementation of ISO-11404 Record datatype. This allows grouping (sequence) of data components which can themselves be simple types, records, arrays or choices",
+  "status": "under-development",
+  "dateTimeAddition": "2026-09-23T00:00:00Z",
+  "itemClass": "schema",
+  "version": "0.1",
+  "group": "SWE Common",
+  "sources": [
+    {
+      "title": "swecommon/schemas/json/DataRecord.json in opengeospatial/ogcapi-connected-systems",
+      "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/swecommon/schemas/json/DataRecord.json"
+    }
+  ],
+  "shaclShapes": {},
+  "dependsOn": [
+    "ogc.api.connected-systems.swecommon.swe-common",
+    "ogc.api.connected-systems.swecommon.basic-types",
+    "ogc.api.connected-systems.swecommon.abstract-data-component"
+  ],
+  "dateOfLastChange": "2026-09-23",
+  "schema": {
+    "application/yaml": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/data-record/schema.yaml",
+    "application/json": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/data-record/schema.json"
+  },
+  "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/data-record/schema.json",
+  "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/data-record/resolvedProperties.json",
+  "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/data-record/",
+  "validationPassed": true,
+  "testOutputs": "https://github.com/ogcincubator/bblocks-connected-systems/blob/master/build/tests/api/connected-systems/swecommon/data-record/",
+  "description": "<!-- generated -->\n# DataRecord\n\nImplementation of ISO-11404 Record datatype. This allows grouping (sequence) of data components which can themselves be simple types, records, arrays or choices\n\nConverted from [`swecommon/schemas/json/DataRecord.json`](https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/swecommon/schemas/json/DataRecord.json) in the OGC API - Connected Systems repository.\n\n## Properties\n\n| Property | Type | Required | Description |\n|---|---|---|---|\n| `type` | `\"DataRecord\"` | yes |  |\n| `fields` | `array` | yes | Definition of the record fields. Fields can be scalars or can themself be aggregates such as records, vectors, arrays, or choices. |\n\n## Examples\n\n2 example(s) taken from the specification are included and validated against this schema.\n\n",
+  "examples": [
+    {
+      "title": "Record1",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/data-record/examples/record1.json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/swecommon/data-record/example_1_1.json",
+          "sizeBytes": 1233,
+          "code": "{\n  \"type\": \"DataRecord\",\n  \"label\": \"Weather Data Record\",\n  \"fields\": [\n    {\n      \"name\": \"time\",\n      \"type\": \"Time\",\n      \"definition\": \"http://www.opengis.net/def/property/OGC/0/SamplingTime\",\n      \"referenceFrame\": \"http://www.opengis.net/def/trs/BIPM/0/UTC\",\n      \"label\": \"Sampling Time\",\n      \"uom\": {\n        \"href\": \"http://www.opengis.net/def/uom/ISO-8601/0/Gregorian\"\n      }\n    },\n    {\n      \"name\": \"temperature\",\n      \"type\": \"Quantity\",\n      \"definition\": \"http://mmisw.org/ont/cf/parameter/air_temperature\",\n      \"label\": \"Air Temperature\",\n      \"uom\": { \"code\": \"Cel\" }\n    },\n    {\n      \"name\": \"pressure\",\n      \"type\": \"Quantity\",\n      \"definition\": \"http://mmisw.org/ont/cf/parameter/air_pressure_at_mean_sea_level\",\n      \"label\": \"Air Pressure\",\n      \"uom\": { \"code\": \"mbar\" }\n    },\n    {\n      \"name\": \"windSpeed\",\n      \"type\": \"Quantity\",\n      \"definition\": \"http://mmisw.org/ont/cf/parameter/wind_speed\",\n      \"label\": \"Wind Speed\",\n      \"uom\": { \"code\": \"km/h\" }\n    },\n    {\n      \"name\": \"windDirection\",\n      \"type\": \"Quantity\",\n      \"definition\": \"http://mmisw.org/ont/cf/parameter/wind_to_direction\",\n      \"label\": \"Wind Direction\",\n      \"uom\": { \"code\": \"deg\" }\n    }\n  ]\n}"
+        }
+      ]
+    },
+    {
+      "title": "Record2",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/data-record/examples/record2.json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/swecommon/data-record/example_2_1.json",
+          "sizeBytes": 790,
+          "code": "{\n  \"type\": \"DataRecord\",\n  \"definition\": \"urn:x-ogc:def:property:CSM::RadialDistortionCoefficients\",\n  \"label\": \"Radial Distortion Coefficients\",\n  \"fields\": [\n    {\n      \"name\": \"k1\",\n      \"type\": \"Quantity\",\n      \"definition\": \"urn:x-ogc:def:property:CSM::DISTOR_RAD1\",\n      \"label\": \"Coef k1\",\n      \"uom\": { \"code\": \"mm-2\" },\n      \"value\": 1.92709e-5\n    },\n    {\n      \"name\": \"k2\",\n      \"type\": \"Quantity\",\n      \"definition\": \"urn:x-ogc:def:property:CSM::DISTOR_RAD2\",\n      \"label\": \"Coef k2\",\n      \"uom\": { \"code\": \"mm-2\" },\n      \"value\": -5.14206e-10\n    },\n    {\n      \"name\": \"k3\",\n      \"type\": \"Quantity\",\n      \"definition\": \"urn:x-ogc:def:property:CSM::DISTOR_RAD3\",\n      \"label\": \"Coef k3\",\n      \"uom\": { \"code\": \"mm-2\" },\n      \"value\": -3.33356e-12\n    }\n  ]\n}"
+        }
+      ]
+    }
+  ],
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: Implementation of ISO-11404 Record datatype. This allows grouping (sequence)\n  of data components which can themselves be simple types, records, arrays or choices\ntype: object\nallOf:\n- $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/abstract-data-component/schema.yaml\n- properties:\n    type:\n      const: DataRecord\n    fields:\n      description: Definition of the record fields. Fields can be scalars or can themself\n        be aggregates such as records, vectors, arrays, or choices.\n      type: array\n      minItems: 1\n      items:\n        allOf:\n        - $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/basic-types/schema.yaml#SoftNamedProperty\n        - oneOf:\n          - $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/basic-types/schema.yaml#AssociationAttributeGroup\n          - $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/swe-common/schema.yaml#AnyComponent\n  required:\n  - type\n  - fields\n",
+  "gitRepository": "https://github.com/ogcincubator/bblocks-connected-systems",
+  "gitPath": "_sources/swecommon/data-record"
+}

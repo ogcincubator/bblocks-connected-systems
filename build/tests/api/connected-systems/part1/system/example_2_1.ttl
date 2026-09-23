@@ -1,0 +1,4 @@
+@prefix geojson: <https://purl.org/geojson/vocab#> .
+
+<file:///github/workspace/PLT412> a geojson:Feature .
+

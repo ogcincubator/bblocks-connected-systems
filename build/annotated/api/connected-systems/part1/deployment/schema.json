@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "allOf": [
+    {
+      "$ref": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part1/feature/schema.json"
+    },
+    {
+      "properties": {
+        "properties": {
+          "required": [
+            "validTime"
+          ],
+          "properties": {
+            "featureType": {
+              "$ref": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part1/uris/schema.json#DeploymentTypeUris"
+            },
+            "validTime": {
+              "description": "Time period during which the systems are deployed.",
+              "$ref": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/time-period/schema.json"
+            },
+            "platform@link": {
+              "description": "Link to the platform on which the systems are deployed.",
+              "$ref": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/link/schema.json"
+            },
+            "deployedSystems@link": {
+              "type": "array",
+              "items": {
+                "description": "Link to the system being deployed. Either a URN if the system is stored locally, or a URL if the system is hosted externally",
+                "$ref": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/link/schema.json"
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

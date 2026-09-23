@@ -1,0 +1,10 @@
+Validation report for ogc.api.connected-systems.part2.command - Command
+Generated 2026-09-23T22:13:49.966165+00:00
+=== Files ===
+Using examples/command-ptz.json from examples
+=== End Files ===
+
+=== JSON Schema ===
+Validation passed
+=== End JSON Schema ===
+

@@ -1,0 +1,32 @@
+
+
+{
+  "itemIdentifier": "ogc.api.connected-systems.sensorml.pose",
+  "name": "Pose",
+  "abstract": "A Pose object that can be either a GeoPose Basic instance of a relative pose.",
+  "status": "under-development",
+  "dateTimeAddition": "2026-09-23T00:00:00Z",
+  "itemClass": "schema",
+  "version": "0.1",
+  "group": "SensorML",
+  "sources": [
+    {
+      "title": "sensorml/schemas/json/Pose.json in opengeospatial/ogcapi-connected-systems",
+      "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/sensorml/schemas/json/Pose.json"
+    }
+  ],
+  "shaclShapes": {},
+  "dateOfLastChange": "2026-09-23",
+  "schema": {
+    "application/yaml": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/pose/schema.yaml",
+    "application/json": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/pose/schema.json"
+  },
+  "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/sensorml/pose/schema.json",
+  "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/pose/resolvedProperties.json",
+  "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/sensorml/pose/",
+  "validationPassed": true,
+  "description": "<!-- generated -->\n# Pose\n\nA Pose object that can be either a GeoPose Basic instance of a relative pose.\n\nConverted from [`sensorml/schemas/json/Pose.json`](https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/sensorml/schemas/json/Pose.json) in the OGC API - Connected Systems repository.\n\n## Definitions\n\nThe following definitions can be referenced individually using their anchor, e.g. `bblocks://ogc.api.connected-systems.sensorml.pose#PositionGeo`:\n\n- `PositionGeo`: Geographic position in EPSG:4979 CRS (WGS84)\n- `PositionXYZ`: Cartesian position expressed in the specified reference frame\n- `AnglesYPR`: Euler angles, with yaw, pitch and roll rotations about the local (rotated) axes Z, Y, and X respectively, applied in that order\n- `Quaternion`: Quaternion orientation expressed in the specified reference frame\n\n",
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: A Pose object that can be either a GeoPose Basic instance of a relative\n  pose.\noneOf:\n- type: object\n  title: GeoPose YPR\n  description: 'Basic-YPR: Basic GeoPose using yaw, pitch, and roll to specify orientation'\n  properties:\n    type:\n      const: GeoPose\n    ltpReferenceFrame:\n      type: string\n      format: uri\n    position:\n      $ref: '#/$defs/PositionGeo'\n    angles:\n      $ref: '#/$defs/AnglesYPR'\n  required:\n  - type\n  - position\n  - angles\n- type: object\n  title: GeoPose Quaternion\n  description: 'Basic-Quaternion: Basic GeoPose using quaternion to specify orientation'\n  properties:\n    type:\n      const: GeoPose\n    ltpReferenceFrame:\n      type: string\n      format: uri\n    position:\n      $ref: '#/$defs/PositionGeo'\n    quaternion:\n      $ref: '#/$defs/Quaternion'\n  required:\n  - type\n  - position\n  - quaternion\n- type: object\n  title: Relative Pose YPR\n  description: 'Relative-YPR: Relative pose using yaw, pitch, and roll to specify\n    orientation'\n  properties:\n    type:\n      const: RelativePose\n    referenceFrame:\n      type: string\n      format: uri\n    position:\n      $ref: '#/$defs/PositionXYZ'\n    angles:\n      $ref: '#/$defs/AnglesYPR'\n  required:\n  - type\n  - referenceFrame\n  - position\n  - angles\n- type: object\n  title: Relative Pose Quaternion\n  description: 'Relative-Quaternion: Relative pose using quaternion to specify orientation'\n  properties:\n    type:\n      const: RelativePose\n    referenceFrame:\n      type: string\n      format: uri\n    position:\n      $ref: '#/$defs/PositionXYZ'\n    quaternion:\n      $ref: '#/$defs/Quaternion'\n  required:\n  - type\n  - referenceFrame\n  - position\n  - quaternion\n$defs:\n  PositionGeo:\n    description: Geographic position in EPSG:4979 CRS (WGS84)\n    properties:\n      lat:\n        type: number\n      lon:\n        type: number\n      h:\n        type: number\n    required:\n    - lat\n    - lon\n    - h\n    $anchor: PositionGeo\n  PositionXYZ:\n    description: Cartesian position expressed in the specified reference frame\n    properties:\n      x:\n        description: Distance along the X axis, in meters\n        type: number\n      y:\n        description: Distance along the Y axis, in meters\n        type: number\n      z:\n        description: Distance along the Z axis, in meters\n        type: number\n    required:\n    - x\n    - y\n    - z\n    $anchor: PositionXYZ\n  AnglesYPR:\n    description: Euler angles, with yaw, pitch and roll rotations about the local\n      (rotated) axes Z, Y, and X respectively, applied in that order\n    properties:\n      yaw:\n        description: Yaw angle about Z axis, in degrees\n        type: number\n      pitch:\n        description: Pitch angle about Y axis, in degrees\n        type: number\n      roll:\n        description: Roll angle about X axis, in degrees\n        type: number\n    required:\n    - yaw\n    - pitch\n    - roll\n    $anchor: AnglesYPR\n  Quaternion:\n    description: Quaternion orientation expressed in the specified reference frame\n    properties:\n      x:\n        type: number\n      y:\n        type: number\n      z:\n        type: number\n      w:\n        type: number\n    required:\n    - x\n    - y\n    - z\n    - w\n    $anchor: Quaternion\n",
+  "gitRepository": "https://github.com/ogcincubator/bblocks-connected-systems",
+  "gitPath": "_sources/sensorml/pose"
+}

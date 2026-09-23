@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "allOf": [
+    {
+      "$ref": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part2/data-stream/schema.json"
+    },
+    {
+      "properties": {
+        "schema": {
+          "description": "Schema describing the content of observations in this datastream. The exact syntax of the schema depends on the encoding format.",
+          "$ref": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part2/observation-schema/schema.json",
+          "writeOnly": true
+        }
+      },
+      "required": [
+        "schema"
+      ]
+    }
+  ]
+}

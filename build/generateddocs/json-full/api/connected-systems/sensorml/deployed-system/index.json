@@ -1,0 +1,36 @@
+
+
+{
+  "itemIdentifier": "ogc.api.connected-systems.sensorml.deployed-system",
+  "name": "DeployedSystem",
+  "abstract": "DeployedSystem schema.",
+  "status": "under-development",
+  "dateTimeAddition": "2026-09-23T00:00:00Z",
+  "itemClass": "schema",
+  "version": "0.1",
+  "group": "SensorML",
+  "sources": [
+    {
+      "title": "sensorml/schemas/json/DeployedSystem.json in opengeospatial/ogcapi-connected-systems",
+      "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/sensorml/schemas/json/DeployedSystem.json"
+    }
+  ],
+  "shaclShapes": {},
+  "dependsOn": [
+    "ogc.api.connected-systems.sensorml.settings",
+    "ogc.api.connected-systems.common.link"
+  ],
+  "dateOfLastChange": "2026-09-23",
+  "schema": {
+    "application/yaml": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/deployed-system/schema.yaml",
+    "application/json": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/deployed-system/schema.json"
+  },
+  "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/sensorml/deployed-system/schema.json",
+  "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/deployed-system/resolvedProperties.json",
+  "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/sensorml/deployed-system/",
+  "validationPassed": true,
+  "description": "<!-- generated -->\n# DeployedSystem\n\nConverted from [`sensorml/schemas/json/DeployedSystem.json`](https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/sensorml/schemas/json/DeployedSystem.json) in the OGC API - Connected Systems repository.\n\n## Properties\n\n| Property | Type | Required | Description |\n|---|---|---|---|\n| `description` | `string` |  | A textual description of the deployed system |\n| `system` | `commonDefs.json#/$defs/XLink` | yes | Link to the system being deployed |\n| `configuration` | `Settings.json` |  | The configuration of the system used during this deployment (e.g., sampling rate setting, etc.) |\n\n",
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ntype: object\nproperties:\n  description:\n    description: A textual description of the deployed system\n    type: string\n    minLength: 1\n  system:\n    description: Link to the system being deployed\n    $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/link/schema.yaml\n  configuration:\n    description: The configuration of the system used during this deployment (e.g.,\n      sampling rate setting, etc.)\n    $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/settings/schema.yaml\nrequired:\n- system\n",
+  "gitRepository": "https://github.com/ogcincubator/bblocks-connected-systems",
+  "gitPath": "_sources/sensorml/deployed-system"
+}

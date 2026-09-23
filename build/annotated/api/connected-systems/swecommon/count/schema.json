@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Scalar component with integer representation used for a discrete counting value",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/abstract-simple-component/schema.json"
+    },
+    {
+      "properties": {
+        "type": {
+          "const": "Count"
+        },
+        "constraint": {
+          "$ref": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/basic-types/schema.json#AllowedValues"
+        },
+        "nilValues": {
+          "$ref": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/basic-types/schema.json#NilValuesInteger"
+        },
+        "value": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "type",
+        "definition",
+        "label"
+      ]
+    }
+  ]
+}

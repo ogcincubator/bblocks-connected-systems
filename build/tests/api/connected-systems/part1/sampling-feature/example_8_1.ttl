@@ -1,0 +1,12 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix geojson: <https://purl.org/geojson/vocab#> .
+@prefix ns1: <http://www.iana.org/assignments/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<file:///github/workspace/VF001> a geojson:Feature ;
+    rdfs:seeAlso [ rdfs:label "Saildrone 1001" ;
+            dct:type "application/geo+json" ;
+            ns1:relation <http://www.iana.org/assignments/relation/parentSystem> ;
+            oa:hasTarget <https://data.example.org/api/systems/422381?f=json> ] .
+

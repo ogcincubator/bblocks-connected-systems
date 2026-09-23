@@ -1,0 +1,45 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+description: A time tagged event with description and relevant property values.
+type: object
+allOf:
+- $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/abstract-swe-identifiable/schema.yaml
+- properties:
+    definition:
+      description: Type of event (semantic link)
+      type: string
+      format: uri
+    identifiers:
+      description: Additional identifiers for the event, useful for discovery.
+      type: array
+      items:
+        $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/common-defs/schema.yaml#Term
+    classifiers:
+      description: Additional classifiers for the event, useful for discovery.
+      type: array
+      items:
+        $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/common-defs/schema.yaml#Term
+    contacts:
+      description: The list of contacts relevant to this event
+      type: array
+      items:
+        $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/responsible-party/schema.yaml
+    documentation:
+      description: Additional documentation relevant to this event
+      type: array
+      items:
+        $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/document/schema.yaml
+    time:
+      description: Time of the event
+      $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/common-defs/schema.yaml#TimeInstantOrPeriod
+    properties:
+      description: A list of additional properties of interest to the event (e.g.,
+        calibration values, condition category, error codes, etc).
+      type: array
+      items:
+        $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/common-defs/schema.yaml#AnyProperty
+    configuration:
+      description: Configuration settings adjusted during the event.
+      $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/settings/schema.yaml
+  required:
+  - label
+  - time

@@ -1,0 +1,1 @@
+{"defs":{},"properties":[{"path":["commandFormat"],"required":true,"schema_type":"string","sources":["bblocks://ogc.api.connected-systems.part2.command-schema-any-other"]},{"path":["any"],"description":"Any other properties to describe schema","sources":["bblocks://ogc.api.connected-systems.part2.command-schema-any-other"]}]}

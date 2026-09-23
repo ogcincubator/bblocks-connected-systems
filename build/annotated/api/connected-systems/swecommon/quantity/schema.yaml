@@ -1,0 +1,23 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+description: Scalar component with decimal representation and a unit of measure used
+  to store value of a continuous quantity
+type: object
+allOf:
+- $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/abstract-simple-component/schema.yaml
+- properties:
+    type:
+      const: Quantity
+    uom:
+      description: Unit of measure used to express the value of this data component
+      $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/basic-types/schema.yaml#UnitReference
+    constraint:
+      $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/basic-types/schema.yaml#AllowedValues
+    nilValues:
+      $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/basic-types/schema.yaml#NilValuesNumber
+    value:
+      $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/basic-types/schema.yaml#NumberOrSpecial
+  required:
+  - type
+  - definition
+  - label
+  - uom

@@ -1,0 +1,31 @@
+
+
+{
+  "itemIdentifier": "ogc.api.connected-systems.part2.command-status-code",
+  "name": "CommandStatusCode",
+  "abstract": "Enumeration of the status codes a Command can report, such as pending, accepted, executing, completed, failed or rejected.",
+  "status": "under-development",
+  "dateTimeAddition": "2026-09-23T00:00:00Z",
+  "itemClass": "schema",
+  "version": "0.1",
+  "group": "Part 2",
+  "sources": [
+    {
+      "title": "api/part2/openapi/schemas/json/commandStatusCode.json in opengeospatial/ogcapi-connected-systems",
+      "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/api/part2/openapi/schemas/json/commandStatusCode.json"
+    }
+  ],
+  "shaclShapes": {},
+  "dateOfLastChange": "2026-09-23",
+  "schema": {
+    "application/yaml": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part2/command-status-code/schema.yaml",
+    "application/json": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part2/command-status-code/schema.json"
+  },
+  "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part2/command-status-code/schema.json",
+  "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part2/command-status-code/",
+  "validationPassed": true,
+  "description": "<!-- generated -->\n# CommandStatusCode\n\nConverted from [`api/part2/openapi/schemas/json/commandStatusCode.json`](https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/api/part2/openapi/schemas/json/commandStatusCode.json) in the OGC API - Connected Systems repository.\n\n",
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ntype: string\noneOf:\n- const: PENDING\n  description: The command is pending, meaning it has been received by the system\n    but no decision to accept or reject it has been taken.\n- const: ACCEPTED\n  description: The command was accepted by the receiving system. This usually means\n    that the command has passed the first validation steps but note that it can still\n    be rejected later or fail during execution. An estimated execution time can optionally\n    be provided using the `executionTime` property.\n- const: REJECTED\n  description: The command was rejected by the receiving system. It won't be executed\n    at all and the `message` property provides the reason for the rejection. This\n    is a final state. No further status updates will be sent.\n- const: SCHEDULED\n  description: The command was validated and effectively scheduled by the receiving\n    system. When this status code is used, the scheduled execution time must be provided\n    using the `executionTime` property. Note that systems are not required to notify\n    the planned execution time before execution.\n- const: UPDATED\n  description: An update to the command was received and accepted. This code must\n    be used if the system supports task updates. See the `ACCEPTED` status code for\n    other details.\n- const: CANCELED\n  description: The command was canceled by an authorized user. This code must be used\n    if the system supports user driven task cancellations. The `REJECTED` and `FAILED`\n    status codes are used instead if the command was canceled by the receiving system.\n    This is a final state. No further status updates will be sent.\n- const: EXECUTING\n  description: The command is currently being executed by the receiving system. The\n    status message can provide more information about the current progress using the\n    `percentCompletion` and `message` properties. A system can send several status\n    updates with this code but different time stamps to report progress incrementally\n    (e.g., for multi-stage executions). In particular, the progress percentage and\n    the end of the (estimated) execution time period can be refined at each update.\n- const: FAILED\n  description: The command has failed during execution. The `message` property provides\n    the reason for failure. This is a final state. No further status updates will\n    be sent.\n- const: COMPLETED\n  description: The command has completed after a successful execution. The actual\n    execution time must be provided using the `executionTime` property. This is a\n    final state. No further status updates will be sent.\n",
+  "gitRepository": "https://github.com/ogcincubator/bblocks-connected-systems",
+  "gitPath": "_sources/part2/command-status-code"
+}

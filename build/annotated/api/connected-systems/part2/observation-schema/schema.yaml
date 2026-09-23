@@ -1,0 +1,12 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+oneOf:
+- title: JSON
+  $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part2/observation-schema-json/schema.yaml
+- title: SWE Common
+  $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part2/observation-schema-swe/schema.yaml
+- title: Protobuf
+  $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part2/observation-schema-protobuf/schema.yaml
+- title: Other format
+  $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part2/observation-schema-any-other/schema.yaml
+required:
+- obsFormat

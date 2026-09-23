@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Time value pair for specifying a time range (can be a decimal or ISO 8601)",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/abstract-simple-component/schema.json"
+    },
+    {
+      "properties": {
+        "type": {
+          "const": "TimeRange"
+        },
+        "referenceTime": {
+          "description": "Specifies the origin of the temporal reference frame as an ISO8601 date (used to specify time after an epoch that is to say in a custom frame)",
+          "type": "string",
+          "format": "date-time"
+        },
+        "localFrame": {
+          "description": "Temporal frame of reference whose origin is located by the value of this component",
+          "type": "string",
+          "format": "uri"
+        },
+        "uom": {
+          "description": "Temporal unit of measure used to express the value of this data component",
+          "$ref": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/basic-types/schema.json#UnitReference"
+        },
+        "constraint": {
+          "$ref": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/basic-types/schema.json#AllowedTimes"
+        },
+        "nilValues": {
+          "$ref": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/basic-types/schema.json#NilValuesTime"
+        },
+        "value": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 2,
+          "items": {
+            "$ref": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/basic-types/schema.json#DateTimeNumberOrSpecial"
+          }
+        }
+      },
+      "required": [
+        "type",
+        "definition",
+        "label",
+        "uom"
+      ]
+    }
+  ]
+}

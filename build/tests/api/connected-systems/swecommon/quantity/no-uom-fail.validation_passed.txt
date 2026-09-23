@@ -1,0 +1,33 @@
+Validation report for ogc.api.connected-systems.swecommon.quantity - Quantity
+Generated 2026-09-23T22:13:48.353084+00:00
+=== General ===
+Test was expected to fail and it did.
+=== End General ===
+
+=== Files ===
+Using no-uom-fail.json from test resources
+=== End Files ===
+
+=== JSON Schema ===
+
+** Validation error **
+ValidationError: 'uom' is a required property
+
+Failed validating 'required' in schema['allOf'][1]:
+    {'properties': {'constraint': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/basic-types/schema.yaml#AllowedValues'},
+                    'nilValues': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/basic-types/schema.yaml#NilValuesNumber'},
+                    'type': {'const': 'Quantity'},
+                    'uom': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/basic-types/schema.yaml#UnitReference',
+                            'description': 'Unit of measure used to '
+                                           'express the value of this data '
+                                           'component'},
+                    'value': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/basic-types/schema.yaml#NumberOrSpecial'}},
+     'required': ['type', 'definition', 'label', 'uom']}
+
+On instance:
+    {'definition': 'http://qudt.org/vocab/quantitykind/Temperature',
+     'label': 'Outside Temperature',
+     'type': 'Quantity',
+     'value': 21.5}
+=== End JSON Schema ===
+

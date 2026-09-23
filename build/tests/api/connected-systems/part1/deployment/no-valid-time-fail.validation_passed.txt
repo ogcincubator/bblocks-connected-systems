@@ -1,0 +1,91 @@
+Validation report for ogc.api.connected-systems.part1.deployment - Deployment (GeoJSON)
+Generated 2026-09-23T22:13:49.177167+00:00
+=== General ===
+Test was expected to fail and it did.
+=== End General ===
+
+=== Files ===
+Using no-valid-time-fail.json from test resources
+JSON-LD context is present - uplifting
+Output JSON-LD no-valid-time-fail.jsonld created
+Output Turtle no-valid-time-fail.ttl created
+=== End Files ===
+
+=== JSON Schema ===
+
+** Validation error **
+ValidationError: 'validTime' is a required property
+
+Failed validating 'required' in schema['allOf'][1]['properties']['properties']:
+    {'properties': {'deployedSystems@link': {'items': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/link/schema.yaml',
+                                                       'description': 'Link '
+                                                                      'to '
+                                                                      'the '
+                                                                      'system '
+                                                                      'being '
+                                                                      'deployed. '
+                                                                      'Either '
+                                                                      'a '
+                                                                      'URN '
+                                                                      'if '
+                                                                      'the '
+                                                                      'system '
+                                                                      'is '
+                                                                      'stored '
+                                                                      'locally, '
+                                                                      'or '
+                                                                      'a '
+                                                                      'URL '
+                                                                      'if '
+                                                                      'the '
+                                                                      'system '
+                                                                      'is '
+                                                                      'hosted '
+                                                                      'externally'},
+                                             'type': 'array'},
+                    'featureType': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part1/uris/schema.yaml#DeploymentTypeUris'},
+                    'platform@link': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/link/schema.yaml',
+                                      'description': 'Link to the platform '
+                                                     'on which the systems '
+                                                     'are deployed.'},
+                    'validTime': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/time-period/schema.yaml',
+                                  'description': 'Time period during which '
+                                                 'the systems are '
+                                                 'deployed.'}},
+     'required': ['validTime']}
+
+On instance['properties']:
+    {'deployedSystems@link': [{'href': 'https://data.example.org/api/systems/41548?f=sml',
+                               'title': 'Air Temperature Sensor',
+                               'uid': 'urn:x-saildrone:sensors:temp01'},
+                              {'href': 'https://data.example.org/api/systems/36584?f=sml',
+                               'title': 'Water Temperature Sensor',
+                               'uid': 'urn:x-saildrone:sensors:temp02'},
+                              {'href': 'https://data.example.org/api/systems/47752?f=sml',
+                               'title': 'Wind Speed and Direction Sensor',
+                               'uid': 'urn:x-saildrone:sensors:wind01'}],
+     'description': 'In July 2017, three saildrones were launched from '
+                    'Dutch Harbor, Alaska, in partnership with NOAA '
+                    'Research...',
+     'featureType': 'http://www.w3.org/ns/sosa/Deployment',
+     'name': 'Saildrone - 2017 Arctic Mission',
+     'platform@link': {'href': 'https://data.example.org/api/systems/27559?f=sml',
+                       'title': 'Saildrone SD-1003',
+                       'uid': 'urn:x-saildrone:platforms:SD-1003'},
+     'uid': 'urn:x-ogc:deployments:D001'}
+=== End JSON Schema ===
+
+=== SHACL ===
+Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
+  Validation Report
+  Conforms: True
+  
+Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
+ - Shape geojson:GeometryShape: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
+ - Shape geojson:LinkShape: *none*
+ - Shape geojson:FeatureShape: <file:///github/workspace/iv3f2kcq27gfi>
+
+=== End SHACL ===
+

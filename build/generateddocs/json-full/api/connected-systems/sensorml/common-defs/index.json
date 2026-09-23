@@ -1,0 +1,41 @@
+
+
+{
+  "itemIdentifier": "ogc.api.connected-systems.sensorml.common-defs",
+  "name": "Common Definitions",
+  "abstract": "Definitions shared by SensorML schemas: observable properties, terms, any-property and any-constraint unions, path references and time instant-or-period.",
+  "status": "under-development",
+  "dateTimeAddition": "2026-09-23T00:00:00Z",
+  "itemClass": "schema",
+  "version": "0.1",
+  "group": "SensorML",
+  "sources": [
+    {
+      "title": "sensorml/schemas/json/commonDefs.json in opengeospatial/ogcapi-connected-systems",
+      "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/sensorml/schemas/json/commonDefs.json"
+    }
+  ],
+  "shaclShapes": {},
+  "dependsOn": [
+    "ogc.api.connected-systems.common.time-period",
+    "ogc.api.connected-systems.swecommon.vector",
+    "ogc.api.connected-systems.swecommon.data-array",
+    "ogc.api.connected-systems.common.time-instant",
+    "ogc.api.connected-systems.swecommon.swe-common",
+    "ogc.api.connected-systems.swecommon.matrix",
+    "ogc.api.connected-systems.swecommon.basic-types",
+    "ogc.api.connected-systems.swecommon.abstract-swe-identifiable"
+  ],
+  "dateOfLastChange": "2026-09-23",
+  "schema": {
+    "application/yaml": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/common-defs/schema.yaml",
+    "application/json": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/common-defs/schema.json"
+  },
+  "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/sensorml/common-defs/schema.json",
+  "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/sensorml/common-defs/",
+  "validationPassed": true,
+  "description": "<!-- generated -->\n# Common Definitions\n\nConverted from [`sensorml/schemas/json/commonDefs.json`](https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/sensorml/schemas/json/commonDefs.json) in the OGC API - Connected Systems repository.\n\n## Definitions\n\nThe following definitions can be referenced individually using their anchor, e.g. `bblocks://ogc.api.connected-systems.sensorml.common-defs#TimeInstantOrPeriod`:\n\n- `TimeInstantOrPeriod`\n- `ObservableProperty`: A physical property that can be observed and possibly measured (e.g., temperature, color, position). An ObservableProperty has unambiguous definition, but does not have units of measure.\n- `Term`\n- `AnyProperty`\n- `PathRef`\n- `AnyConstraint`\n\n",
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\n$defs:\n  TimeInstantOrPeriod:\n    oneOf:\n    - $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/time-instant/schema.yaml\n    - $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/time-period/schema.yaml\n    $anchor: TimeInstantOrPeriod\n  ObservableProperty:\n    description: A physical property that can be observed and possibly measured (e.g.,\n      temperature, color, position). An ObservableProperty has unambiguous definition,\n      but does not have units of measure.\n    type: object\n    allOf:\n    - $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/abstract-swe-identifiable/schema.yaml\n    - properties:\n        type:\n          const: ObservableProperty\n        definition:\n          type: string\n          format: uri\n      required:\n      - type\n      - definition\n    $anchor: ObservableProperty\n  Term:\n    type: object\n    properties:\n      definition:\n        description: Type of identifier/classifier (semantic link)\n        type: string\n        format: uri\n      label:\n        description: Human readable label for this identifier/classifier\n        type: string\n        minLength: 1\n      codeSpace:\n        description: URI of codespace defining the possible values for this identifier/classifier\n        type: string\n        format: uri\n      value:\n        description: Actual identifier/classifier value\n        type: string\n        minLength: 1\n    required:\n    - label\n    - value\n    unevaluatedProperties: false\n    $anchor: Term\n  AnyProperty:\n    oneOf:\n    - $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/swe-common/schema.yaml#AnySimpleComponent\n    - $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/vector/schema.yaml\n    - $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/data-array/schema.yaml\n    - $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/matrix/schema.yaml\n    $anchor: AnyProperty\n  PathRef:\n    type: string\n    pattern: ^(components|inputs|outputs|parameters|modes)/([A-Za-z][A-Za-z0-9_\\-]*/)*[A-Za-z][A-Za-z0-9_\\-]*$\n    $anchor: PathRef\n  AnyConstraint:\n    oneOf:\n    - $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/basic-types/schema.yaml#AllowedTokens\n    - $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/basic-types/schema.yaml#AllowedValues\n    - $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/basic-types/schema.yaml#AllowedTimes\n    $anchor: AnyConstraint\n",
+  "gitRepository": "https://github.com/ogcincubator/bblocks-connected-systems",
+  "gitPath": "_sources/sensorml/common-defs"
+}

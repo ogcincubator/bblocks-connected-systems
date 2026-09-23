@@ -1,0 +1,35 @@
+
+
+{
+  "itemIdentifier": "ogc.api.connected-systems.sensorml.settings",
+  "name": "Settings",
+  "abstract": "Settings schema.",
+  "status": "under-development",
+  "dateTimeAddition": "2026-09-23T00:00:00Z",
+  "itemClass": "schema",
+  "version": "0.1",
+  "group": "SensorML",
+  "sources": [
+    {
+      "title": "sensorml/schemas/json/Settings.json in opengeospatial/ogcapi-connected-systems",
+      "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/sensorml/schemas/json/Settings.json"
+    }
+  ],
+  "shaclShapes": {},
+  "dependsOn": [
+    "ogc.api.connected-systems.sensorml.common-defs"
+  ],
+  "dateOfLastChange": "2026-09-23",
+  "schema": {
+    "application/yaml": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/settings/schema.yaml",
+    "application/json": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/settings/schema.json"
+  },
+  "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/sensorml/settings/schema.json",
+  "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/settings/resolvedProperties.json",
+  "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/sensorml/settings/",
+  "validationPassed": true,
+  "description": "<!-- generated -->\n# Settings\n\nConverted from [`sensorml/schemas/json/Settings.json`](https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/sensorml/schemas/json/Settings.json) in the OGC API - Connected Systems repository.\n\n## Properties\n\n| Property | Type | Required | Description |\n|---|---|---|---|\n| `setValues` | `array` |  |  |\n| `setArrayValues` | `array` |  |  |\n| `setModes` | `array` |  |  |\n| `setConstraints` | `array` |  |  |\n| `setStatus` | `array` |  |  |\n\n",
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ntype: object\nproperties:\n  setValues:\n    type: array\n    minItems: 1\n    items:\n      type: object\n      properties:\n        ref:\n          $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/common-defs/schema.yaml#PathRef\n        value:\n          oneOf:\n          - title: Number\n            type: number\n          - title: String\n            type: string\n      required:\n      - ref\n      - value\n      additionalProperties: false\n  setArrayValues:\n    type: array\n    minItems: 1\n    items:\n      type: object\n      properties:\n        ref:\n          $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/common-defs/schema.yaml#PathRef\n        value:\n          type: array\n      required:\n      - ref\n      - value\n      additionalProperties: false\n  setModes:\n    type: array\n    minItems: 1\n    items:\n      type: object\n      properties:\n        ref:\n          $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/common-defs/schema.yaml#PathRef\n        value:\n          type: string\n      required:\n      - ref\n      - value\n      additionalProperties: false\n  setConstraints:\n    type: array\n    minItems: 1\n    items:\n      allOf:\n      - properties:\n          ref:\n            $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/common-defs/schema.yaml#PathRef\n      - $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/common-defs/schema.yaml#AnyConstraint\n      required:\n      - type\n      - ref\n      additionalProperties: true\n  setStatus:\n    type: array\n    minItems: 1\n    items:\n      type: object\n      properties:\n        ref:\n          $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/common-defs/schema.yaml#PathRef\n        value:\n          type: string\n          enum:\n          - enabled\n          - disabled\n      required:\n      - ref\n      - value\n      additionalProperties: false\n",
+  "gitRepository": "https://github.com/ogcincubator/bblocks-connected-systems",
+  "gitPath": "_sources/sensorml/settings"
+}

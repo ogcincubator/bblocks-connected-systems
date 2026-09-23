@@ -1,0 +1,36 @@
+Validation report for ogc.api.connected-systems.swecommon.data-record - DataRecord
+Generated 2026-09-23T22:13:50.595210+00:00
+=== General ===
+Test was expected to fail and it did.
+=== End General ===
+
+=== Files ===
+Using no-fields-fail.json from test resources
+=== End Files ===
+
+=== JSON Schema ===
+
+** Validation error **
+ValidationError: 'fields' is a required property
+
+Failed validating 'required' in schema['allOf'][1]:
+    {'properties': {'fields': {'description': 'Definition of the record '
+                                              'fields. Fields can be '
+                                              'scalars or can themself be '
+                                              'aggregates such as records, '
+                                              'vectors, arrays, or '
+                                              'choices.',
+                               'items': {'allOf': [{'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/basic-types/schema.yaml#SoftNamedProperty'},
+                                                   {'oneOf': [{'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/basic-types/schema.yaml#AssociationAttributeGroup'},
+                                                              {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/swe-common/schema.yaml#AnyComponent'}]}]},
+                               'minItems': 1,
+                               'type': 'array'},
+                    'type': {'const': 'DataRecord'}},
+     'required': ['type', 'fields']}
+
+On instance:
+    {'definition': 'urn:x-ogc:def:property:CSM::RadialDistortionCoefficients',
+     'label': 'Radial Distortion Coefficients',
+     'type': 'DataRecord'}
+=== End JSON Schema ===
+

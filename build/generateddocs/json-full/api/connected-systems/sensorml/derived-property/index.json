@@ -1,0 +1,36 @@
+
+
+{
+  "itemIdentifier": "ogc.api.connected-systems.sensorml.derived-property",
+  "name": "DerivedProperty",
+  "abstract": "DerivedProperty schema.",
+  "status": "under-development",
+  "dateTimeAddition": "2026-09-23T00:00:00Z",
+  "itemClass": "schema",
+  "version": "0.1",
+  "group": "SensorML",
+  "sources": [
+    {
+      "title": "sensorml/schemas/json/DerivedProperty.json in opengeospatial/ogcapi-connected-systems",
+      "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/sensorml/schemas/json/DerivedProperty.json"
+    }
+  ],
+  "shaclShapes": {},
+  "dependsOn": [
+    "ogc.api.connected-systems.swecommon.swe-common",
+    "ogc.api.connected-systems.swecommon.abstract-swe-identifiable"
+  ],
+  "dateOfLastChange": "2026-09-23",
+  "schema": {
+    "application/yaml": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/derived-property/schema.yaml",
+    "application/json": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/derived-property/schema.json"
+  },
+  "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/sensorml/derived-property/schema.json",
+  "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/derived-property/resolvedProperties.json",
+  "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/sensorml/derived-property/",
+  "validationPassed": true,
+  "description": "<!-- generated -->\n# DerivedProperty\n\nConverted from [`sensorml/schemas/json/DerivedProperty.json`](https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/sensorml/schemas/json/DerivedProperty.json) in the OGC API - Connected Systems repository.\n\n## Properties\n\n| Property | Type | Required | Description |\n|---|---|---|---|\n| `uniqueId` | `string` |  | Unique identifier of the property |\n| `label` |  | yes |  |\n| `description` |  |  |  |\n| `baseProperty` | `string` | yes | URI pointing to the definition of the base property this property is derived from |\n| `objectType` | `string` |  | URI pointing to the type of entity that the base property applies to |\n| `statistic` | `string` |  | URI pointing to the definition of the statistic applied to the base property values |\n| `qualifiers` | `array` |  | Additional qualifiers for the property (e.g., frequency range, measurement height, medium, etc.) |\n\n",
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ntype: object\nallOf:\n- $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/abstract-swe-identifiable/schema.yaml\n- properties:\n    uniqueId:\n      description: Unique identifier of the property\n      type: string\n      format: uri\n      example: urn:example:property:avg-cpu-temp\n    label:\n      example: Average CPU Temp\n    description:\n      example: Hourly average of the CPU temperature\n    baseProperty:\n      description: URI pointing to the definition of the base property this property\n        is derived from\n      type: string\n      format: uri\n      example: https://qudt.org/vocab/quantitykind/Temperature\n    objectType:\n      description: URI pointing to the type of entity that the base property applies\n        to\n      type: string\n      format: uri\n      example: http://dbpedia.org/resource/Central_processing_unit\n    statistic:\n      description: URI pointing to the definition of the statistic applied to the\n        base property values\n      type: string\n      format: uri\n      example: http://sensorml.com/ont/x-stats/HourlyMean\n    qualifiers:\n      description: Additional qualifiers for the property (e.g., frequency range,\n        measurement height, medium, etc.)\n      type: array\n      minItems: 1\n      items:\n        $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/swe-common/schema.yaml#AnySimpleComponent\n  required:\n  - label\n  - baseProperty\n",
+  "gitRepository": "https://github.com/ogcincubator/bblocks-connected-systems",
+  "gitPath": "_sources/sensorml/derived-property"
+}

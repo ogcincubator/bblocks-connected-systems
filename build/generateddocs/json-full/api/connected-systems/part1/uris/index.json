@@ -1,0 +1,31 @@
+
+
+{
+  "itemIdentifier": "ogc.api.connected-systems.part1.uris",
+  "name": "Uris",
+  "abstract": "Enumerations of the allowed type URIs (from the SSN/SOSA and Connected Systems vocabularies) for System, Deployment and Procedure features.",
+  "status": "under-development",
+  "dateTimeAddition": "2026-09-23T00:00:00Z",
+  "itemClass": "schema",
+  "version": "0.1",
+  "group": "Part 1",
+  "sources": [
+    {
+      "title": "api/part1/openapi/schemas/common/uris.json in opengeospatial/ogcapi-connected-systems",
+      "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/api/part1/openapi/schemas/common/uris.json"
+    }
+  ],
+  "shaclShapes": {},
+  "dateOfLastChange": "2026-09-23",
+  "schema": {
+    "application/yaml": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part1/uris/schema.yaml",
+    "application/json": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part1/uris/schema.json"
+  },
+  "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part1/uris/schema.json",
+  "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part1/uris/",
+  "validationPassed": true,
+  "description": "<!-- generated -->\n# Uris\n\nConverted from [`api/part1/openapi/schemas/common/uris.json`](https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/api/part1/openapi/schemas/common/uris.json) in the OGC API - Connected Systems repository.\n\n## Definitions\n\nThe following definitions can be referenced individually using their anchor, e.g. `bblocks://ogc.api.connected-systems.part1.uris#SystemTypeUris`:\n\n- `SystemTypeUris`\n- `DeploymentTypeUris`\n- `ProcedureTypeUris`\n\n## Differences from the source\n\nThis block differs from the upstream file (which should be fixed there too):\n\n- `ProcedureTypeUris` additionally allows `http://www.w3.org/ns/ssn-system/SensorKind`, which the specification's own procedure examples use as `featureType`/`definition`.\n\n",
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\n$defs:\n  SystemTypeUris:\n    type: string\n    enum:\n    - http://www.w3.org/ns/sosa/Sensor\n    - http://www.w3.org/ns/sosa/Actuator\n    - http://www.w3.org/ns/sosa/Platform\n    - http://www.w3.org/ns/sosa/Sampler\n    - http://www.w3.org/ns/sosa/System\n    - sosa:Sensor\n    - sosa:Actuator\n    - sosa:Platform\n    - sosa:Sampler\n    - sosa:System\n    $anchor: SystemTypeUris\n  DeploymentTypeUris:\n    type: string\n    enum:\n    - http://www.w3.org/ns/sosa/Deployment\n    - sosa:Deployment\n    $anchor: DeploymentTypeUris\n  ProcedureTypeUris:\n    type: string\n    enum:\n    - http://www.w3.org/ns/sosa/Procedure\n    - http://www.w3.org/ns/sosa/ObservingProcedure\n    - http://www.w3.org/ns/sosa/SamplingProcedure\n    - http://www.w3.org/ns/sosa/ActuatingProcedure\n    - http://www.w3.org/ns/sosa/System\n    - http://www.w3.org/ns/sosa/Sensor\n    - http://www.w3.org/ns/sosa/Actuator\n    - http://www.w3.org/ns/sosa/Sampler\n    - http://www.w3.org/ns/sosa/Platform\n    - sosa:Procedure\n    - sosa:ObservingProcedure\n    - sosa:SamplingProcedure\n    - sosa:ActuatingProcedure\n    - sosa:System\n    - sosa:Sensor\n    - sosa:Actuator\n    - sosa:Sampler\n    - sosa:Platform\n    - http://www.w3.org/ns/ssn-system/SensorKind\n    $anchor: ProcedureTypeUris\n",
+  "gitRepository": "https://github.com/ogcincubator/bblocks-connected-systems",
+  "gitPath": "_sources/part1/uris"
+}

@@ -1,0 +1,17 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+type: object
+properties:
+  commandFormat:
+    const: application/x-protobuf
+  messageSchema:
+    description: Protobuf schema provided as a string or as a link to an external
+      proto file
+    oneOf:
+    - title: Inline schema
+      type: string
+      minLength: 1
+    - title: Link to external file
+      $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/link/schema.yaml
+required:
+- commandFormat
+- messageSchema

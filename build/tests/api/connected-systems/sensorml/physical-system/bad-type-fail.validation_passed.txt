@@ -1,0 +1,22 @@
+Validation report for ogc.api.connected-systems.sensorml.physical-system - PhysicalSystem
+Generated 2026-09-23T22:13:52.748115+00:00
+=== General ===
+Test was expected to fail and it did.
+=== End General ===
+
+=== Files ===
+Using bad-type-fail.json from test resources
+=== End Files ===
+
+=== JSON Schema ===
+
+** Validation error **
+ValidationError: 'PhysicalSystem' was expected
+
+Failed validating 'const' in schema['allOf'][1]['properties']['type']:
+    {'const': 'PhysicalSystem'}
+
+On instance['type']:
+    'Sensor'
+=== End JSON Schema ===
+

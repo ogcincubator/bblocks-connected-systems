@@ -1,0 +1,44 @@
+
+
+{
+  "itemIdentifier": "ogc.api.connected-systems.part1.feature",
+  "name": "Feature (GeoJSON)",
+  "abstract": "Generic GeoJSON feature used as the base of the Connected Systems feature resources, with local `id`, `geometry`, `bbox`, free-form `properties` and `links`.",
+  "status": "under-development",
+  "dateTimeAddition": "2026-09-23T00:00:00Z",
+  "itemClass": "schema",
+  "version": "0.1",
+  "group": "Part 1",
+  "sources": [
+    {
+      "title": "api/part1/openapi/schemas/geojson/feature.json in opengeospatial/ogcapi-connected-systems",
+      "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/api/part1/openapi/schemas/geojson/feature.json"
+    }
+  ],
+  "isProfileOf": [
+    "ogc.geo.features.feature"
+  ],
+  "shaclShapes": {
+    "ogc.geo.features.feature": [
+      "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl"
+    ]
+  },
+  "dependsOn": [
+    "ogc.api.connected-systems.part1.links",
+    "ogc.geo.features.feature"
+  ],
+  "dateOfLastChange": "2026-09-23",
+  "schema": {
+    "application/yaml": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part1/feature/schema.yaml",
+    "application/json": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part1/feature/schema.json"
+  },
+  "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part1/feature/schema.json",
+  "ldContext": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part1/feature/context.jsonld",
+  "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part1/feature/resolvedProperties.json",
+  "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part1/feature/",
+  "validationPassed": true,
+  "description": "<!-- generated -->\n# Feature (GeoJSON)\n\nConverted from [`api/part1/openapi/schemas/geojson/feature.json`](https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/api/part1/openapi/schemas/geojson/feature.json) in the OGC API - Connected Systems repository.\n\n## Properties\n\n| Property | Type | Required | Description |\n|---|---|---|---|\n| `id` |  |  | Local ID of the feature (ignored on create or update) |\n| `geometry` |  |  | Geometry of the feature |\n| `bbox` |  |  | Optional bounding box for the feature |\n| `properties` | `object` |  | Feature properties |\n| `links` | `../common/links.json` |  | Links to related resources |\n\n",
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\nallOf:\n- $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/feature/schema.yaml\n- type: object\n  properties:\n    id:\n      description: Local ID of the feature (ignored on create or update)\n      minLength: 1\n    geometry:\n      description: Geometry of the feature\n    bbox:\n      description: Optional bounding box for the feature\n    properties:\n      description: Feature properties\n      type: object\n      required:\n      - featureType\n      - uid\n      - name\n      properties:\n        featureType:\n          description: Identifier of the type of feature, either a URI, a CURIE, or\n            a simple token\n          type: string\n        uid:\n          description: Globally unique identifier of the feature\n          type: string\n          format: uri\n          example: urn:x-org:namespace:id\n        name:\n          description: Human readable name of the feature\n          type: string\n          minLength: 1\n        description:\n          description: Human readable description of the feature\n          type: string\n          minLength: 1\n    links:\n      description: Links to related resources\n      $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part1/links/schema.yaml\n",
+  "gitRepository": "https://github.com/ogcincubator/bblocks-connected-systems",
+  "gitPath": "_sources/part1/feature"
+}

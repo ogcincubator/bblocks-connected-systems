@@ -1,0 +1,10 @@
+Validation report for ogc.api.connected-systems.part2.observation-schema-json - ObservationSchemaJson
+Generated 2026-09-23T22:13:51.617280+00:00
+=== Files ===
+Using examples/observationSchema-vector-json.json from examples
+=== End Files ===
+
+=== JSON Schema ===
+Validation passed
+=== End JSON Schema ===
+

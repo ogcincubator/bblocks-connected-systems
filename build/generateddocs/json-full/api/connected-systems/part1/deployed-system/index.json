@@ -1,0 +1,44 @@
+
+
+{
+  "itemIdentifier": "ogc.api.connected-systems.part1.deployed-system",
+  "name": "DeployedSystem (GeoJSON)",
+  "abstract": "A deployed System (GeoJSON encoding, a profile of the OGC API - Features feature): a system as listed within a Deployment, tying it to its installation in that deployment.",
+  "status": "under-development",
+  "dateTimeAddition": "2026-09-23T00:00:00Z",
+  "itemClass": "schema",
+  "version": "0.1",
+  "group": "Part 1",
+  "sources": [
+    {
+      "title": "api/part1/openapi/schemas/geojson/deployedSystem.json in opengeospatial/ogcapi-connected-systems",
+      "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/api/part1/openapi/schemas/geojson/deployedSystem.json"
+    }
+  ],
+  "isProfileOf": [
+    "ogc.geo.features.feature"
+  ],
+  "shaclShapes": {
+    "ogc.geo.features.feature": [
+      "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl"
+    ]
+  },
+  "dependsOn": [
+    "ogc.geo.features.feature",
+    "ogc.api.connected-systems.common.link"
+  ],
+  "dateOfLastChange": "2026-09-23",
+  "schema": {
+    "application/yaml": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part1/deployed-system/schema.yaml",
+    "application/json": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part1/deployed-system/schema.json"
+  },
+  "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part1/deployed-system/schema.json",
+  "ldContext": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part1/deployed-system/context.jsonld",
+  "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part1/deployed-system/resolvedProperties.json",
+  "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part1/deployed-system/",
+  "validationPassed": true,
+  "description": "<!-- generated -->\n# DeployedSystem (GeoJSON)\n\nConverted from [`api/part1/openapi/schemas/geojson/deployedSystem.json`](https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/api/part1/openapi/schemas/geojson/deployedSystem.json) in the OGC API - Connected Systems repository.\n\n## Properties\n\n| Property | Type | Required | Description |\n|---|---|---|---|\n| `properties` |  |  |  |\n\n",
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\nallOf:\n- $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/feature/schema.yaml\n- properties:\n    properties:\n      required:\n      - system@link\n      properties:\n        system@link:\n          description: Link to the deployed system.\n          $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/link/schema.yaml\n        procedure@link:\n          description: Link to the procedure used by the system, or to operate the\n            system, during the deployment (e.g., mission plan for an autonomous system,\n            methodology for human operator).\n          $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/link/schema.yaml\n",
+  "gitRepository": "https://github.com/ogcincubator/bblocks-connected-systems",
+  "gitPath": "_sources/part1/deployed-system"
+}

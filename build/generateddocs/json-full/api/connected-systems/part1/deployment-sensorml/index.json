@@ -1,0 +1,52 @@
+
+
+{
+  "itemIdentifier": "ogc.api.connected-systems.part1.deployment-sensorml",
+  "name": "Deployment (SensorML)",
+  "abstract": "A Deployment (SensorML 3.0 JSON encoding): the installation of one or more systems at a location and time, describing where and when they operate.",
+  "status": "under-development",
+  "dateTimeAddition": "2026-09-23T00:00:00Z",
+  "itemClass": "schema",
+  "version": "0.1",
+  "group": "Part 1",
+  "sources": [
+    {
+      "title": "api/part1/openapi/schemas/sensorml/deployment.json in opengeospatial/ogcapi-connected-systems",
+      "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/api/part1/openapi/schemas/sensorml/deployment.json"
+    }
+  ],
+  "shaclShapes": {},
+  "dependsOn": [
+    "ogc.api.connected-systems.part1.links",
+    "ogc.api.connected-systems.sensorml.deployment",
+    "ogc.api.connected-systems.part1.uris"
+  ],
+  "dateOfLastChange": "2026-09-23",
+  "schema": {
+    "application/yaml": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part1/deployment-sensorml/schema.yaml",
+    "application/json": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part1/deployment-sensorml/schema.json"
+  },
+  "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part1/deployment-sensorml/schema.json",
+  "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part1/deployment-sensorml/resolvedProperties.json",
+  "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part1/deployment-sensorml/",
+  "validationPassed": true,
+  "testOutputs": "https://github.com/ogcincubator/bblocks-connected-systems/blob/master/build/tests/api/connected-systems/part1/deployment-sensorml/",
+  "description": "<!-- generated -->\n# Deployment (SensorML)\n\nConverted from [`api/part1/openapi/schemas/sensorml/deployment.json`](https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/api/part1/openapi/schemas/sensorml/deployment.json) in the OGC API - Connected Systems repository.\n\n## Properties\n\n| Property | Type | Required | Description |\n|---|---|---|---|\n| `definition` | `../common/uris.json#/$defs/DeploymentTypeUris` | yes |  |\n| `links` | `../common/links.json` |  | Links to related resources |\n\n## Examples\n\n1 example(s) taken from the specification are included and validated against this schema.\n\n",
+  "examples": [
+    {
+      "title": "Deployment sml",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part1/deployment-sensorml/examples/deployment-sml.json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part1/deployment-sensorml/example_1_1.json",
+          "sizeBytes": 3074,
+          "code": "{\n  \"type\": \"Deployment\",\n  \"id\": \"iv3f2kcq27gfi\",\n  \"definition\": \"http://www.w3.org/ns/sosa/Deployment\",\n  \"uniqueId\": \"urn:x-saildrone:mission:2025\",\n  \"label\": \"Saildrone - 2017 Arctic Mission\",\n  \"description\": \"In July 2017, three saildrones were launched from Dutch Harbor, Alaska, in partnership with NOAA Research...\",\n  \"classifiers\": [\n    {\n      \"definition\": \"https://schema.org/DefinedRegion\",\n      \"label\": \"Region\",\n      \"value\": \"Arctic\"\n    }\n  ],\n  \"contacts\": [\n    {\n      \"role\": \"http://sensorml.com/ont/swe/property/Operator\",\n      \"organisationName\": \"Saildrone, Inc.\",\n      \"contactInfo\": {\n        \"website\": \"https://www.saildrone.com/\",\n        \"address\": {\n          \"deliveryPoint\": \"1050 W. Tower Ave.\",\n          \"city\": \"Alameda\",\n          \"postalCode\": \"94501\",\n          \"administrativeArea\": \"CA\",\n          \"country\": \"USA\"\n        }\n      }\n    },\n    {\n      \"role\": \"http://sensorml.com/ont/swe/property/DataProvider\",\n      \"organisationName\": \"NOAA Pacific Marine Environmental Laboratory (PMEL)\",\n      \"contactInfo\": {\n        \"website\": \"https://www.pmel.noaa.gov\"\n      }\n    }\n  ],\n  \"validTime\": [\n    \"2017-07-17T00:00:00Z\",\n    \"2017-09-29T00:00:00Z\"\n  ],\n  \"location\": {\n    \"type\": \"Polygon\",\n    \"coordinates\": [[\n      [-173.70, 53.76],\n      [-173.70, 75.03],\n      [-155.07, 75.03],\n      [-155.07, 53.76],\n      [-173.70, 53.76]\n    ]]\n  },\n  \"platform\": {\n    \"system\": {\n      \"href\": \"https://data.example.org/api/systems/27559?f=sml\",\n      \"uid\": \"urn:x-saildrone:platforms:SD-1003\",\n      \"title\": \"Saildrone SD-1003\"\n    }\n  },\n  \"deployedSystems\": [\n    {\n      \"name\": \"air_temp_sensor\",\n      \"description\": \"Air temperature sensor installed in the boom\",\n      \"system\": {\n        \"href\": \"https://data.example.org/api/systems/41548?f=sml\",\n        \"uid\": \"urn:x-saildrone:sensors:temp01\",\n        \"title\": \"Air Temperature Sensor\"\n      },\n      \"configuration\": {\n        \"setValues\": [{\n          \"ref\": \"parameters/sampling_rate\",\n          \"value\": 0.1\n        }]\n      }\n    },\n    {\n      \"name\": \"water_temp_sensor\",\n      \"description\": \"Water temperature sensor installed on the keel\",\n      \"system\": {\n        \"href\": \"https://data.example.org/api/systems/36584?f=sml\",\n        \"uid\": \"urn:x-saildrone:sensors:temp02\",\n        \"title\": \"Water Temperature Sensor\"\n      }\n    },\n    {\n      \"name\": \"wind_sensor\",\n      \"description\": \"Wind sensor installed at the top of the mast\",\n      \"system\": {\n        \"href\": \"https://data.example.org/api/systems/47752?f=sml\",\n        \"uid\": \"urn:x-saildrone:sensors:wind01\",\n        \"title\": \"Wind Speed and Direction Sensor\"\n      }\n    }\n  ],\n  \"links\": [\n    {\n      \"rel\" : \"self\",\n      \"href\" : \"https://data.example.org/api/deployments/iv3f2kcq27gfi?f=sml\",\n      \"type\" : \"application/sml+json\",\n      \"title\" : \"this document\"\n    }, {\n      \"rel\" : \"alternate\",\n      \"href\" : \"https://data.example.org/api/deployments/iv3f2kcq27gfi?f=json\",\n      \"type\" : \"application/geo+json\",\n      \"title\" : \"this resource as GeoJSON\"\n    }\n  ]\n}"
+        }
+      ]
+    }
+  ],
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\nallOf:\n- $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/deployment/schema.yaml\n- properties:\n    definition:\n      $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part1/uris/schema.yaml#DeploymentTypeUris\n    links:\n      description: Links to related resources\n      $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part1/links/schema.yaml\n  required:\n  - definition\n  - uniqueId\n",
+  "gitRepository": "https://github.com/ogcincubator/bblocks-connected-systems",
+  "gitPath": "_sources/part1/deployment-sensorml"
+}

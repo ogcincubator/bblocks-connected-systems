@@ -1,0 +1,10 @@
+Validation report for ogc.api.connected-systems.swecommon.text - Text
+Generated 2026-09-23T22:13:48.401765+00:00
+=== Files ===
+Using examples/nil-values3.json from examples
+=== End Files ===
+
+=== JSON Schema ===
+Validation passed
+=== End JSON Schema ===
+

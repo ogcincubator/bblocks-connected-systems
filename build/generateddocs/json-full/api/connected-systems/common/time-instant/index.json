@@ -1,0 +1,31 @@
+
+
+{
+  "itemIdentifier": "ogc.api.connected-systems.common.time-instant",
+  "name": "TimeInstant",
+  "abstract": "Time Instant",
+  "status": "under-development",
+  "dateTimeAddition": "2026-09-23T00:00:00Z",
+  "itemClass": "schema",
+  "version": "0.1",
+  "group": "Common",
+  "sources": [
+    {
+      "title": "common/timeInstant.json in opengeospatial/ogcapi-connected-systems",
+      "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/common/timeInstant.json"
+    }
+  ],
+  "shaclShapes": {},
+  "dateOfLastChange": "2026-09-23",
+  "schema": {
+    "application/yaml": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/time-instant/schema.yaml",
+    "application/json": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/time-instant/schema.json"
+  },
+  "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/common/time-instant/schema.json",
+  "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/common/time-instant/",
+  "validationPassed": true,
+  "description": "<!-- generated -->\n# TimeInstant\n\nTime Instant\n\nConverted from [`common/timeInstant.json`](https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/common/timeInstant.json) in the OGC API - Connected Systems repository.\n\n",
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ntitle: Time Instant\ntype: string\nformat: date-time\n",
+  "gitRepository": "https://github.com/ogcincubator/bblocks-connected-systems",
+  "gitPath": "_sources/common/time-instant"
+}

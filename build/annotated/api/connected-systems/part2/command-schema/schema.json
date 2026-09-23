@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "oneOf": [
+    {
+      "title": "JSON",
+      "$ref": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part2/command-schema-json/schema.json"
+    },
+    {
+      "title": "SWE Common",
+      "$ref": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part2/command-schema-swe/schema.json"
+    },
+    {
+      "title": "Protobuf",
+      "$ref": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part2/command-schema-protobuf/schema.json"
+    },
+    {
+      "title": "Other format",
+      "$ref": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part2/command-schema-any-other/schema.json"
+    }
+  ],
+  "required": [
+    "commandFormat"
+  ]
+}

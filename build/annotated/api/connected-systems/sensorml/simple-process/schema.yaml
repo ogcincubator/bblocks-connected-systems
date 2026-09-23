@@ -1,0 +1,20 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+type: object
+allOf:
+- $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/abstract-process/schema.yaml
+- properties:
+    type:
+      const: SimpleProcess
+    method:
+      $ref: '#/$defs/ProcessMethod'
+$defs:
+  ProcessMethod:
+    type: object
+    properties:
+      algorithm:
+        title: A description of the algorithm using a machine readable language, either
+          inline or by reference
+      description:
+        title: A description of the method in natural language
+        type: string
+    $anchor: ProcessMethod

@@ -1,0 +1,67 @@
+
+
+{
+  "itemIdentifier": "ogc.api.connected-systems.part1.system-sensorml",
+  "name": "System (SensorML)",
+  "abstract": "A System (SensorML 3.0 JSON encoding): a sensor, actuator, platform, sampler or other asset that produces observations or receives commands, with its identity, type and relationships to other resources.",
+  "status": "under-development",
+  "dateTimeAddition": "2026-09-23T00:00:00Z",
+  "itemClass": "schema",
+  "version": "0.1",
+  "group": "Part 1",
+  "sources": [
+    {
+      "title": "api/part1/openapi/schemas/sensorml/system.json in opengeospatial/ogcapi-connected-systems",
+      "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/api/part1/openapi/schemas/sensorml/system.json"
+    }
+  ],
+  "shaclShapes": {},
+  "dependsOn": [
+    "ogc.api.connected-systems.sensorml.aggregate-process",
+    "ogc.api.connected-systems.sensorml.simple-process",
+    "ogc.api.connected-systems.part1.links",
+    "ogc.api.connected-systems.part1.uris",
+    "ogc.api.connected-systems.sensorml.physical-component",
+    "ogc.api.connected-systems.sensorml.physical-system"
+  ],
+  "dateOfLastChange": "2026-09-23",
+  "schema": {
+    "application/yaml": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part1/system-sensorml/schema.yaml",
+    "application/json": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part1/system-sensorml/schema.json"
+  },
+  "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part1/system-sensorml/schema.json",
+  "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part1/system-sensorml/resolvedProperties.json",
+  "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part1/system-sensorml/",
+  "validationPassed": true,
+  "testOutputs": "https://github.com/ogcincubator/bblocks-connected-systems/blob/master/build/tests/api/connected-systems/part1/system-sensorml/",
+  "description": "<!-- generated -->\n# System (SensorML)\n\nConverted from [`api/part1/openapi/schemas/sensorml/system.json`](https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/api/part1/openapi/schemas/sensorml/system.json) in the OGC API - Connected Systems repository.\n\n## Properties\n\n| Property | Type | Required | Description |\n|---|---|---|---|\n| `definition` | `../common/uris.json#/$defs/SystemTypeUris` | yes |  |\n| `links` | `../common/links.json` |  | Links to related resources |\n\n## Examples\n\n2 example(s) taken from the specification are included and validated against this schema.\n\n",
+  "examples": [
+    {
+      "title": "Thermometer sensor sml",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part1/system-sensorml/examples/thermometer-sensor-sml.json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part1/system-sensorml/example_1_1.json",
+          "sizeBytes": 853,
+          "code": "{\n  \"type\": \"PhysicalSystem\",\n  \"id\": \"123\",\n  \"definition\": \"http://www.w3.org/ns/sosa/Sensor\",\n  \"uniqueId\": \"urn:x-ogc:systems:001\",\n  \"label\": \"Outdoor Thermometer 001\",\n  \"description\": \"Digital thermometer located on first floor window 1\",\n  \"typeOf\": {\n    \"href\": \"https://data.example.org/api/procedures/TP60S?f=sml\",\n    \"uid\": \"urn:x-myorg:datasheets:ThermoPro:TP60S:v001\",\n    \"title\": \"ThermoPro TP60S\",\n    \"type\" : \"application/sml+json\"\n  },\n  \"identifiers\": [\n    {\n      \"definition\": \"http://sensorml.com/ont/swe/property/SerialNumber\",\n      \"label\": \"Serial Number\",\n      \"value\": \"0123456879\"\n    }\n  ],\n  \"contacts\": [\n    {\n      \"role\": \"http://sensorml.com/ont/swe/roles/Operator\",\n      \"organisationName\": \"Field Maintenance Corp.\"\n    }\n  ],\n  \"position\": {\n    \"type\": \"Point\",\n    \"coordinates\": [41.8781, -87.6298]\n  }\n}"
+        }
+      ]
+    },
+    {
+      "title": "Uav platform sml",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part1/system-sensorml/examples/uav-platform-sml.json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part1/system-sensorml/example_2_1.json",
+          "sizeBytes": 1516,
+          "code": "{\n  \"type\": \"PhysicalSystem\",\n  \"id\": \"PLT412\",\n  \"definition\": \"http://www.w3.org/ns/sosa/Platform\",\n  \"uniqueId\": \"urn:x-usaf:systems:aircraft:101\",\n  \"label\": \"Global Hawk 101\",\n  \"description\": \"Example UAV platform\",\n  \"typeOf\": {\n    \"href\": \"https://data.example.org/api/procedures/ge4pjqq0hq6y?f=json\",\n    \"uid\": \"urn:x-ngc:datasheets:uav:RQ-4B\",\n    \"type\" : \"application/sml+json\"\n  },\n  \"identifiers\": [\n    {\n      \"definition\": \"http://sensorml.com/ont/swe/property/SerialNumber\",\n      \"label\": \"Serial Number\",\n      \"value\": \"0123456879\"\n    }\n  ],\n  \"contacts\": [\n    {\n      \"role\": \"http://sensorml.com/ont/swe/property/Operator\",\n      \"organisationName\": \"Field Maintenance Corp.\"\n    }\n  ],\n  \"localReferenceFrames\": [\n    {\n      \"label\": \"Platform Frame\",\n      \"description\": \"The platform frame is defined as the aircraft principal axes\",\n      \"origin\": \"Center of gravity of the aircraft\",\n      \"axes\": [\n        {\n          \"name\": \"x\",\n          \"description\": \"Longitudinal or roll axis, parallel to the fuselage reference line, directed forward\"\n        },\n        {\n          \"name\": \"y\",\n          \"description\": \"Transverse or pitch axis, parallel to the line drawn from wingtip to wingtip, directed to the right of the aircraft when looking forward\"\n        },\n        {\n          \"name\": \"z\",\n          \"description\": \"Vertical or yaw axis, perpendicular to the wings and to the fuselage reference line, directed toward the bottom of the aircraft\"\n        }\n      ]\n    }\n  ]\n}"
+        }
+      ]
+    }
+  ],
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\nallOf:\n- oneOf:\n  - $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/simple-process/schema.yaml\n  - $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/aggregate-process/schema.yaml\n  - $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/physical-component/schema.yaml\n  - $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/physical-system/schema.yaml\n- properties:\n    definition:\n      $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part1/uris/schema.yaml#SystemTypeUris\n    links:\n      description: Links to related resources\n      $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part1/links/schema.yaml\n  required:\n  - definition\n  - uniqueId\n",
+  "gitRepository": "https://github.com/ogcincubator/bblocks-connected-systems",
+  "gitPath": "_sources/part1/system-sensorml"
+}

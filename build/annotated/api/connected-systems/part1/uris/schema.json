@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$defs": {
+    "SystemTypeUris": {
+      "type": "string",
+      "enum": [
+        "http://www.w3.org/ns/sosa/Sensor",
+        "http://www.w3.org/ns/sosa/Actuator",
+        "http://www.w3.org/ns/sosa/Platform",
+        "http://www.w3.org/ns/sosa/Sampler",
+        "http://www.w3.org/ns/sosa/System",
+        "sosa:Sensor",
+        "sosa:Actuator",
+        "sosa:Platform",
+        "sosa:Sampler",
+        "sosa:System"
+      ],
+      "$anchor": "SystemTypeUris"
+    },
+    "DeploymentTypeUris": {
+      "type": "string",
+      "enum": [
+        "http://www.w3.org/ns/sosa/Deployment",
+        "sosa:Deployment"
+      ],
+      "$anchor": "DeploymentTypeUris"
+    },
+    "ProcedureTypeUris": {
+      "type": "string",
+      "enum": [
+        "http://www.w3.org/ns/sosa/Procedure",
+        "http://www.w3.org/ns/sosa/ObservingProcedure",
+        "http://www.w3.org/ns/sosa/SamplingProcedure",
+        "http://www.w3.org/ns/sosa/ActuatingProcedure",
+        "http://www.w3.org/ns/sosa/System",
+        "http://www.w3.org/ns/sosa/Sensor",
+        "http://www.w3.org/ns/sosa/Actuator",
+        "http://www.w3.org/ns/sosa/Sampler",
+        "http://www.w3.org/ns/sosa/Platform",
+        "sosa:Procedure",
+        "sosa:ObservingProcedure",
+        "sosa:SamplingProcedure",
+        "sosa:ActuatingProcedure",
+        "sosa:System",
+        "sosa:Sensor",
+        "sosa:Actuator",
+        "sosa:Sampler",
+        "sosa:Platform",
+        "http://www.w3.org/ns/ssn-system/SensorKind"
+      ],
+      "$anchor": "ProcedureTypeUris"
+    }
+  }
+}

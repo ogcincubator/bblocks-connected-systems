@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$defs": {
+    "AnyComponent": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/AnySimpleComponent"
+        },
+        {
+          "$ref": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/data-record/schema.json"
+        },
+        {
+          "$ref": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/vector/schema.json"
+        },
+        {
+          "$ref": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/data-array/schema.json"
+        },
+        {
+          "$ref": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/matrix/schema.json"
+        },
+        {
+          "$ref": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/data-choice/schema.json"
+        },
+        {
+          "$ref": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/geometry/schema.json"
+        }
+      ],
+      "$anchor": "AnyComponent"
+    },
+    "AnySimpleComponent": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/AnyScalarComponent"
+        },
+        {
+          "$ref": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/count-range/schema.json"
+        },
+        {
+          "$ref": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/quantity-range/schema.json"
+        },
+        {
+          "$ref": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/time-range/schema.json"
+        },
+        {
+          "$ref": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/category-range/schema.json"
+        }
+      ],
+      "$anchor": "AnySimpleComponent"
+    },
+    "AnyScalarComponent": {
+      "oneOf": [
+        {
+          "$ref": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/boolean/schema.json"
+        },
+        {
+          "$ref": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/count/schema.json"
+        },
+        {
+          "$ref": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/quantity/schema.json"
+        },
+        {
+          "$ref": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/time/schema.json"
+        },
+        {
+          "$ref": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/category/schema.json"
+        },
+        {
+          "$ref": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/text/schema.json"
+        }
+      ],
+      "$anchor": "AnyScalarComponent"
+    }
+  },
+  "oneOf": [
+    {
+      "$ref": "#/$defs/AnyComponent"
+    },
+    {
+      "$ref": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/data-stream/schema.json"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "title": "Validation report for ogc.api.connected-systems.common.time-instant-or-now - TimeInstantOrNow",
+  "bblockName": "TimeInstantOrNow",
+  "bblockId": "ogc.api.connected-systems.common.time-instant-or-now",
+  "generated": "2026-09-23T22:13:47.928219+00:00",
+  "result": true,
+  "items": [],
+  "globalErrors": {},
+  "counts": {
+    "total": 0,
+    "passed": 0,
+    "failed": 0
+  }
+}

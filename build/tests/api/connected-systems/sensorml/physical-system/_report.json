@@ -1,0 +1,397 @@
+{
+  "title": "Validation report for ogc.api.connected-systems.sensorml.physical-system - PhysicalSystem",
+  "bblockName": "PhysicalSystem",
+  "bblockId": "ogc.api.connected-systems.sensorml.physical-system",
+  "generated": "2026-09-23T22:13:53.770556+00:00",
+  "result": true,
+  "items": [
+    {
+      "source": {
+        "type": "TEST_RESOURCE",
+        "requireFail": true,
+        "filename": "_sources/sensorml/physical-system/tests/bad-type-fail.json",
+        "url": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/sensorml/physical-system/tests/bad-type-fail.json",
+        "language": "json"
+      },
+      "result": true,
+      "sections": [
+        {
+          "name": "GENERAL",
+          "title": "General",
+          "entries": [
+            {
+              "op": "require-fail",
+              "isError": false,
+              "message": "Test was expected to fail and it did."
+            }
+          ]
+        },
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using bad-type-fail.json from test resources"
+            }
+          ]
+        },
+        {
+          "name": "JSON_SCHEMA",
+          "title": "JSON Schema",
+          "entries": [
+            {
+              "op": "validation",
+              "result": false,
+              "exception": "ValidationError",
+              "errorMessage": "'PhysicalSystem' was expected",
+              "isError": true,
+              "message": "ValidationError: 'PhysicalSystem' was expected\n\nFailed validating 'const' in schema['allOf'][1]['properties']['type']:\n    {'const': 'PhysicalSystem'}\n\nOn instance['type']:\n    'Sensor'"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": {
+        "type": "TEST_RESOURCE",
+        "requireFail": true,
+        "filename": "_sources/sensorml/physical-system/tests/no-label-fail.json",
+        "url": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/sensorml/physical-system/tests/no-label-fail.json",
+        "language": "json"
+      },
+      "result": true,
+      "sections": [
+        {
+          "name": "GENERAL",
+          "title": "General",
+          "entries": [
+            {
+              "op": "require-fail",
+              "isError": false,
+              "message": "Test was expected to fail and it did."
+            }
+          ]
+        },
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using no-label-fail.json from test resources"
+            }
+          ]
+        },
+        {
+          "name": "JSON_SCHEMA",
+          "title": "JSON Schema",
+          "entries": [
+            {
+              "op": "validation",
+              "result": false,
+              "exception": "ValidationError",
+              "errorMessage": "'label' is a required property",
+              "isError": true,
+              "message": "ValidationError: 'label' is a required property\n\nFailed validating 'required' in schema['allOf'][0]['allOf'][0]['allOf'][0]:\n    {'$defs': {'CapabilityList': {'$anchor': 'CapabilityList',\n                                  'allOf': [{'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/abstract-swe-identifiable/schema.yaml'},\n                                            {'description': 'A group of '\n                                                            'capabilities.',\n                                             'properties': {'capabilities': {'description': 'The '\n                                                                                            'list '\n                                                                                            'of '\n                                                                                            'capabilities '\n                                                                                            'in '\n                                                                                            'this '\n                                                                                            'group',\n                                                                             'items': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/common-defs/schema.yaml#AnyProperty'},\n                                                                             'type': 'array'},\n                                                            'conditions': {'description': 'The '\n                                                                                          'conditions '\n                                                                                          'under '\n                                                                                          'which '\n                                                                                          'the '\n                                                                                          'capabilities '\n                                                                                          'apply',\n                                                                           'items': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/swe-common/schema.yaml#AnySimpleComponent'},\n                                                                           'type': 'array'},\n                                                            'definition': {'description': 'Semantic '\n                                                                                          'link '\n                                                                                          'to '\n                                                                                          'the '\n                                                                                          'definition '\n                                                                                          'of '\n                                                                                          'this '\n                                                                                          'group '\n                                                                                          'of '\n                                                                                          'capabilities',\n                                                                           'format': 'uri',\n                                                                           'type': 'string'}},\n                                             'required': ['capabilities'],\n                                             'type': 'object'}],\n                                  'unevaluatedProperties': False},\n               'CharacteristicList': {'$anchor': 'CharacteristicList',\n                                      'allOf': [{'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/abstract-swe-identifiable/schema.yaml'},\n                                                {'properties': {'characteristics': {'description': 'The '\n                                                                                                   'list '\n                                                                                                   'of '\n                                                                                                   'characteristics '\n                                                                                                   'in '\n                                                                                                   'this '\n                                                                                                   'group',\n                                                                                    'items': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/common-defs/schema.yaml#AnyProperty'},\n                                                                                    'type': 'array'},\n                                                                'conditions': {'description': 'The '\n                                                                                              'conditions '\n                                                                                              'under '\n                                                                                              'which '\n                                                                                              'the '\n                                                                                              'characteristics '\n                                                                                              'apply',\n                                                                               'items': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/swe-common/schema.yaml#AnySimpleComponent'},\n                                                                               'type': 'array'},\n                                                                'definition': {'description': 'Semantic '\n                                                                                              'link '\n                                                                                              'to '\n                                                                                              'the '\n                                                                                              'definition '\n                                                                                              'of '\n                                                                                              'this '\n                                                                                              'group '\n                                                                                              'of '\n                                                                                              'capabilities',\n                                                                               'format': 'uri',\n                                                                               'type': 'string'}},\n                                                 'required': ['characteristics'],\n                                                 'type': 'object'}],\n                                      'unevaluatedProperties': False}},\n     '$schema': 'https://json-schema.org/draft/2020-12/schema',\n     'properties': {'capabilities': {'description': 'Groups of '\n                                                    'capabilities '\n                                                    'applicable to this '\n                                                    'asset under various '\n                                                    'conditions',\n                                     'items': {'$ref': '#/$defs/CapabilityList'},\n                                     'type': 'array'},\n                    'characteristics': {'description': 'Groups of '\n                                                       'characteristics '\n                                                       'applicable to this '\n                                                       'asset under '\n                                                       'various conditions',\n                                        'items': {'$ref': '#/$defs/CharacteristicList'},\n                                        'type': 'array'},\n                    'classifiers': {'description': 'Classifiers for the '\n                                                   'asset, useful for '\n                                                   'discovery (e.g., '\n                                                   'process type, sensor '\n                                                   'type, intended '\n                                                   'application, etc.).',\n                                    'items': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/common-defs/schema.yaml#Term'},\n                                    'type': 'array'},\n                    'contacts': {'description': 'The list of contacts '\n                                                'related to this asset',\n                                 'items': {'oneOf': [{'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/responsible-party/schema.yaml'},\n                                                     {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/contact-link/schema.yaml'}]},\n                                 'type': 'array'},\n                    'description': {'description': 'A textual description '\n                                                   'of the feature',\n                                    'minLength': 1,\n                                    'type': 'string'},\n                    'documents': {'description': 'Additional documentation '\n                                                 'about the asset',\n                                  'items': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/document/schema.yaml'},\n                                  'type': 'array'},\n                    'history': {'description': 'The list of events related '\n                                               'to this asset',\n                                'items': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/event/schema.yaml'},\n                                'type': 'array'},\n                    'id': {'description': 'Local ID of the feature (e.g., '\n                                          'locally unique on a server)',\n                           'minLength': 1,\n                           'type': 'string'},\n                    'identifiers': {'description': 'Additional identifiers '\n                                                   'for the asset, useful '\n                                                   'for discovery (e.g., '\n                                                   'short name, mission '\n                                                   'id, model number, '\n                                                   'serial number, etc.).',\n                                    'items': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/common-defs/schema.yaml#Term'},\n                                    'type': 'array'},\n                    'keywords': {'description': 'Short keywords describing '\n                                                'the context of this '\n                                                'document to aid in '\n                                                'discovery.',\n                                 'items': {'minLength': 1,\n                                           'type': 'string'},\n                                 'type': 'array'},\n                    'label': {'description': 'A human readable label for '\n                                             'the feature',\n                              'minLength': 1,\n                              'type': 'string'},\n                    'lang': {'description': 'Language of this document',\n                             'type': 'string'},\n                    'legalConstraints': {'description': 'Legal constraints '\n                                                        'applied to this '\n                                                        'description '\n                                                        '(e.g., '\n                                                        'copyrights, legal '\n                                                        'use, etc.)',\n                                         'items': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/legal-constraint/schema.yaml'},\n                                         'type': 'array'},\n                    'securityConstraints': {'description': 'Overall '\n                                                           'security '\n                                                           'tagging of '\n                                                           'process '\n                                                           'description; '\n                                                           'Individual '\n                                                           'tagging of '\n                                                           'properties can '\n                                                           'be done using '\n                                                           'extension '\n                                                           'properties.',\n                                            'items': {'additionalProperties': True,\n                                                      'properties': {'type': {'format': 'uri',\n                                                                              'type': 'string'}},\n                                                      'required': ['type'],\n                                                      'type': 'object'},\n                                            'type': 'array'},\n                    'type': {'description': 'Type of object',\n                             'type': 'string'},\n                    'uniqueId': {'description': 'URI serving as the '\n                                                'globally unique '\n                                                'identifier of the feature '\n                                                '(typically a URN)',\n                                 'format': 'uri',\n                                 'type': 'string'},\n                    'validTime': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/time-period/schema.yaml'}},\n     'required': ['type', 'label'],\n     'type': 'object'}\n\nOn instance:\n    {'$schema': '../../PhysicalSystem.json',\n     'contacts': [{'contactInfo': {'address': {'city': 'TOULOUSE',\n                                               'country': 'France',\n                                               'deliveryPoint': '42 avenue '\n                                                                'Gaspard-Coriolis',\n                                               'postalCode': '31057 Cedex '\n                                                             '1'},\n                                   'phone': {'voice': '+33 5 61 07 80 80'},\n                                   'website': 'https://www.meteo.fr'},\n                   'organisationName': 'Meteo France',\n                   'role': 'http://sensorml.com/ont/swe/property/Operator'}],\n     'definition': 'http://www.w3.org/ns/sosa/Sensor',\n     'position': {'coordinates': [1.35997, 43.637788], 'type': 'Point'},\n     'type': 'PhysicalSystem',\n     'typeOf': {'href': 'http://example.org/api/procedures/2ev1rrr8dkeuu',\n                'type': 'application/sml+json',\n                'uid': 'urn:x-davis:station:vantagepro2'},\n     'uniqueId': 'urn:x-meteofrance:stations:davis:WS00010'}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": {
+        "type": "EXAMPLE",
+        "requireFail": false,
+        "filename": "build/tests/api/connected-systems/sensorml/physical-system/example_1_1.json",
+        "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/sensorml/physical-system/example_1_1.json",
+        "exampleIndex": 1,
+        "snippetIndex": 1,
+        "language": "application/json"
+      },
+      "result": true,
+      "sections": [
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using examples/physical_system_instance.json from examples"
+            }
+          ]
+        },
+        {
+          "name": "JSON_SCHEMA",
+          "title": "JSON Schema",
+          "entries": [
+            {
+              "op": "validation",
+              "result": true,
+              "isError": false,
+              "message": "Validation passed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": {
+        "type": "EXAMPLE",
+        "requireFail": false,
+        "filename": "build/tests/api/connected-systems/sensorml/physical-system/example_2_1.json",
+        "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/sensorml/physical-system/example_2_1.json",
+        "exampleIndex": 2,
+        "snippetIndex": 1,
+        "language": "application/json"
+      },
+      "result": true,
+      "sections": [
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using examples/sensor_datasheet_with_modes.json from examples"
+            }
+          ]
+        },
+        {
+          "name": "JSON_SCHEMA",
+          "title": "JSON Schema",
+          "entries": [
+            {
+              "op": "validation",
+              "result": true,
+              "isError": false,
+              "message": "Validation passed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": {
+        "type": "EXAMPLE",
+        "requireFail": false,
+        "filename": "build/tests/api/connected-systems/sensorml/physical-system/example_3_1.json",
+        "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/sensorml/physical-system/example_3_1.json",
+        "exampleIndex": 3,
+        "snippetIndex": 1,
+        "language": "application/json"
+      },
+      "result": true,
+      "sections": [
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using examples/sensor_instance_with_config.json from examples"
+            }
+          ]
+        },
+        {
+          "name": "JSON_SCHEMA",
+          "title": "JSON Schema",
+          "entries": [
+            {
+              "op": "validation",
+              "result": true,
+              "isError": false,
+              "message": "Validation passed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": {
+        "type": "EXAMPLE",
+        "requireFail": false,
+        "filename": "build/tests/api/connected-systems/sensorml/physical-system/example_4_1.json",
+        "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/sensorml/physical-system/example_4_1.json",
+        "exampleIndex": 4,
+        "snippetIndex": 1,
+        "language": "application/json"
+      },
+      "result": true,
+      "sections": [
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using examples/sensor_instance_with_geojson_location.json from examples"
+            }
+          ]
+        },
+        {
+          "name": "JSON_SCHEMA",
+          "title": "JSON Schema",
+          "entries": [
+            {
+              "op": "validation",
+              "result": true,
+              "isError": false,
+              "message": "Validation passed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": {
+        "type": "EXAMPLE",
+        "requireFail": false,
+        "filename": "build/tests/api/connected-systems/sensorml/physical-system/example_5_1.json",
+        "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/sensorml/physical-system/example_5_1.json",
+        "exampleIndex": 5,
+        "snippetIndex": 1,
+        "language": "application/json"
+      },
+      "result": true,
+      "sections": [
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using examples/sensor_instance_with_geopose_quat.json from examples"
+            }
+          ]
+        },
+        {
+          "name": "JSON_SCHEMA",
+          "title": "JSON Schema",
+          "entries": [
+            {
+              "op": "validation",
+              "result": true,
+              "isError": false,
+              "message": "Validation passed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": {
+        "type": "EXAMPLE",
+        "requireFail": false,
+        "filename": "build/tests/api/connected-systems/sensorml/physical-system/example_6_1.json",
+        "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/sensorml/physical-system/example_6_1.json",
+        "exampleIndex": 6,
+        "snippetIndex": 1,
+        "language": "application/json"
+      },
+      "result": true,
+      "sections": [
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using examples/sensor_instance_with_parent_and_frame.json from examples"
+            }
+          ]
+        },
+        {
+          "name": "JSON_SCHEMA",
+          "title": "JSON Schema",
+          "entries": [
+            {
+              "op": "validation",
+              "result": true,
+              "isError": false,
+              "message": "Validation passed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": {
+        "type": "EXAMPLE",
+        "requireFail": false,
+        "filename": "build/tests/api/connected-systems/sensorml/physical-system/example_7_1.json",
+        "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/sensorml/physical-system/example_7_1.json",
+        "exampleIndex": 7,
+        "snippetIndex": 1,
+        "language": "application/json"
+      },
+      "result": true,
+      "sections": [
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using examples/system_with_components_and_connections.json from examples"
+            }
+          ]
+        },
+        {
+          "name": "JSON_SCHEMA",
+          "title": "JSON Schema",
+          "entries": [
+            {
+              "op": "validation",
+              "result": true,
+              "isError": false,
+              "message": "Validation passed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": {
+        "type": "EXAMPLE",
+        "requireFail": false,
+        "filename": "build/tests/api/connected-systems/sensorml/physical-system/example_8_1.json",
+        "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/sensorml/physical-system/example_8_1.json",
+        "exampleIndex": 8,
+        "snippetIndex": 1,
+        "language": "application/json"
+      },
+      "result": true,
+      "sections": [
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using examples/weather_station_system.json from examples"
+            }
+          ]
+        },
+        {
+          "name": "JSON_SCHEMA",
+          "title": "JSON Schema",
+          "entries": [
+            {
+              "op": "validation",
+              "result": true,
+              "isError": false,
+              "message": "Validation passed"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "globalErrors": {},
+  "counts": {
+    "total": 10,
+    "passed": 10,
+    "failed": 0
+  }
+}

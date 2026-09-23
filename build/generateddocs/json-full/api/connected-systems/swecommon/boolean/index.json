@@ -1,0 +1,62 @@
+
+
+{
+  "itemIdentifier": "ogc.api.connected-systems.swecommon.boolean",
+  "name": "Boolean",
+  "abstract": "Scalar component used to express truth: True or False, 0 or 1",
+  "status": "under-development",
+  "dateTimeAddition": "2026-09-23T00:00:00Z",
+  "itemClass": "schema",
+  "version": "0.1",
+  "group": "SWE Common",
+  "sources": [
+    {
+      "title": "swecommon/schemas/json/Boolean.json in opengeospatial/ogcapi-connected-systems",
+      "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/swecommon/schemas/json/Boolean.json"
+    }
+  ],
+  "shaclShapes": {},
+  "dependsOn": [
+    "ogc.api.connected-systems.swecommon.abstract-simple-component"
+  ],
+  "dateOfLastChange": "2026-09-23",
+  "schema": {
+    "application/yaml": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/boolean/schema.yaml",
+    "application/json": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/boolean/schema.json"
+  },
+  "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/boolean/schema.json",
+  "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/boolean/resolvedProperties.json",
+  "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/boolean/",
+  "validationPassed": true,
+  "testOutputs": "https://github.com/ogcincubator/bblocks-connected-systems/blob/master/build/tests/api/connected-systems/swecommon/boolean/",
+  "description": "<!-- generated -->\n# Boolean\n\nScalar component used to express truth: True or False, 0 or 1\n\nConverted from [`swecommon/schemas/json/Boolean.json`](https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/swecommon/schemas/json/Boolean.json) in the OGC API - Connected Systems repository.\n\n## Properties\n\n| Property | Type | Required | Description |\n|---|---|---|---|\n| `type` | `\"Boolean\"` | yes |  |\n| `value` | `boolean` |  |  |\n\n## Examples\n\n2 example(s) taken from the specification are included and validated against this schema.\n\n",
+  "examples": [
+    {
+      "title": "Boolean1",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/boolean/examples/boolean1.json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/swecommon/boolean/example_1_1.json",
+          "sizeBytes": 205,
+          "code": "{\n  \"type\": \"Boolean\",\n  \"definition\": \"http://sweet.jpl.nasa.gov/2.0/physDynamics.owl#Motion\",\n  \"label\": \"Motion Detected\",\n  \"description\": \"True when motion was detected in the room\",\n  \"value\": true\n}"
+        }
+      ]
+    },
+    {
+      "title": "Boolean2",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/boolean/examples/boolean2.json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/swecommon/boolean/example_2_1.json",
+          "sizeBytes": 189,
+          "code": "{\n  \"type\": \"Boolean\",\n  \"definition\": \"http://mmisw.org/ont/q2o/test/timeContinuityTest\",\n  \"label\": \"Time Continuity Test\",\n  \"description\": \"Set to true to enable time continuity test\"\n}"
+        }
+      ]
+    }
+  ],
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: 'Scalar component used to express truth: True or False, 0 or 1'\ntype: object\nallOf:\n- $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/abstract-simple-component/schema.yaml\n- properties:\n    type:\n      const: Boolean\n    value:\n      type: boolean\n  required:\n  - type\n  - definition\n  - label\n",
+  "gitRepository": "https://github.com/ogcincubator/bblocks-connected-systems",
+  "gitPath": "_sources/swecommon/boolean"
+}

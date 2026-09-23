@@ -1,0 +1,56 @@
+
+
+{
+  "itemIdentifier": "ogc.api.connected-systems.sensorml.aggregate-process",
+  "name": "AggregateProcess",
+  "abstract": "AggregateProcess schema.",
+  "status": "under-development",
+  "dateTimeAddition": "2026-09-23T00:00:00Z",
+  "itemClass": "schema",
+  "version": "0.1",
+  "group": "SensorML",
+  "sources": [
+    {
+      "title": "sensorml/schemas/json/AggregateProcess.json in opengeospatial/ogcapi-connected-systems",
+      "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/sensorml/schemas/json/AggregateProcess.json"
+    }
+  ],
+  "shaclShapes": {},
+  "dependsOn": [
+    "ogc.api.connected-systems.sensorml.abstract-process",
+    "ogc.api.connected-systems.common.link",
+    "ogc.api.connected-systems.sensorml.common-defs",
+    "ogc.api.connected-systems.sensorml.simple-process",
+    "ogc.api.connected-systems.sensorml.physical-component",
+    "ogc.api.connected-systems.sensorml.physical-system",
+    "ogc.api.connected-systems.swecommon.basic-types"
+  ],
+  "dateOfLastChange": "2026-09-23",
+  "schema": {
+    "application/yaml": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/aggregate-process/schema.yaml",
+    "application/json": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/aggregate-process/schema.json"
+  },
+  "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/sensorml/aggregate-process/schema.json",
+  "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/aggregate-process/resolvedProperties.json",
+  "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/sensorml/aggregate-process/",
+  "validationPassed": true,
+  "testOutputs": "https://github.com/ogcincubator/bblocks-connected-systems/blob/master/build/tests/api/connected-systems/sensorml/aggregate-process/",
+  "description": "<!-- generated -->\n# AggregateProcess\n\nConverted from [`sensorml/schemas/json/AggregateProcess.json`](https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/sensorml/schemas/json/AggregateProcess.json) in the OGC API - Connected Systems repository.\n\n## Definitions\n\nThe following definitions can be referenced individually using their anchor, e.g. `bblocks://ogc.api.connected-systems.sensorml.aggregate-process#ComponentList`:\n\n- `ComponentList`\n- `ConnectionList`\n\n## Properties\n\n| Property | Type | Required | Description |\n|---|---|---|---|\n| `type` | `\"AggregateProcess\"` |  |  |\n| `components` | `#/$defs/ComponentList` |  | The list of sub-processes |\n| `connections` | `#/$defs/ConnectionList` |  | The explicit definition of data links between outputs, inputs, and parameters of the components within an aggregate process. |\n\n## Examples\n\n1 example(s) taken from the specification are included and validated against this schema.\n\n",
+  "examples": [
+    {
+      "title": "Process chain",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/sensorml/aggregate-process/examples/process_chain.json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/sensorml/aggregate-process/example_1_1.json",
+          "sizeBytes": 1976,
+          "code": "{\n  \"$schema\": \"../../AggregateProcess.json\",\n  \"type\": \"AggregateProcess\",\n  \"uniqueId\": \"urn:x-ogc:process-chain:001\",\n  \"label\": \"Simple Process Chain\",\n  \"description\": \"A simple process chain that applies a linear transformation and clips the value to a threshold.\",\n  \"inputs\": [\n    {\n      \"name\": \"valueIn\",\n      \"type\": \"Quantity\",\n      \"definition\": \"http://sensorml.com/ont/swe/property/DN\",\n      \"label\": \"Input Value\",\n      \"uom\": { \"href\": \"http://www.opengis.net/def/nil/OGC/0/unknown\" }\n    }\n  ],\n  \"outputs\": [\n    {\n      \"name\": \"valueOut\",\n      \"type\": \"Quantity\",\n      \"definition\": \"http://sensorml.com/ont/swe/property/DN\",\n      \"label\": \"Output Value\",\n      \"uom\": { \"href\": \"http://www.opengis.net/def/nil/OGC/0/unknown\" }\n    }\n  ],\n  \"components\": [\n    {\n      \"name\": \"scale\",\n      \"type\": \"SimpleProcess\",\n      \"label\": \"Linear Transform 01\",\n      \"typeOf\": {\n        \"href\": \"http://example.org/processlib/linearTransform.json\",\n        \"uid\": \"urn:x-org:process:LinearTransform:v1.0\",\n        \"title\": \"Linear Transform\"\n      },\n      \"configuration\": {\n        \"setValues\": [\n          { \"ref\": \"parameters/slope\", \"value\": 2.3 },\n          { \"ref\": \"parameters/intercept\", \"value\": 1.76 }\n        ]\n      }\n    },\n    {\n      \"name\": \"clip\",\n      \"type\": \"SimpleProcess\",\n      \"label\": \"Threshold Clipper 01\",\n      \"typeOf\": {\n        \"href\": \"http://example.org/processlib/thresholdClipper.json\",\n        \"uid\": \"urn:x-org:process:ThresholdClipper:v1.0\",\n        \"title\": \"Threshold Clip\"\n      },\n      \"configuration\": {\n        \"setValues\": [\n          { \"ref\": \"parameters/threshold\", \"value\": 15.0 }\n        ]\n      }\n    }\n  ],\n  \"connections\": [\n    { \"source\": \"inputs/valueIn\", \"destination\": \"components/scale/inputs/x\" },\n    { \"source\": \"components/scale/outputs/y\", \"destination\": \"components/clip/inputs/valueIn\" },\n    { \"source\": \"components/clip/outputs/passValue\", \"destination\": \"outputs/valueOut\" }\n  ]\n}"
+        }
+      ]
+    }
+  ],
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ntype: object\nallOf:\n- $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/abstract-process/schema.yaml\n- properties:\n    type:\n      const: AggregateProcess\n    components:\n      description: The list of sub-processes\n      $ref: '#/$defs/ComponentList'\n    connections:\n      description: The explicit definition of data links between outputs, inputs,\n        and parameters of the components within an aggregate process.\n      $ref: '#/$defs/ConnectionList'\n$defs:\n  ComponentList:\n    type: array\n    minItems: 1\n    items:\n      allOf:\n      - $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/basic-types/schema.yaml#SoftNamedProperty\n      - oneOf:\n        - $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/simple-process/schema.yaml\n        - $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/aggregate-process/schema.yaml\n        - $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/physical-component/schema.yaml\n        - $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/physical-system/schema.yaml\n        - $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/link/schema.yaml\n          properties:\n            type:\n              const: Link\n    $anchor: ComponentList\n  ConnectionList:\n    type: array\n    minItems: 1\n    items:\n      type: object\n      properties:\n        source:\n          $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/common-defs/schema.yaml#PathRef\n        destination:\n          $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/common-defs/schema.yaml#PathRef\n      required:\n      - source\n      - destination\n    $anchor: ConnectionList\n",
+  "gitRepository": "https://github.com/ogcincubator/bblocks-connected-systems",
+  "gitPath": "_sources/sensorml/aggregate-process"
+}

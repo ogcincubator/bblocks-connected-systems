@@ -1,0 +1,18 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+type: object
+properties:
+  commandFormat:
+    type: string
+    const: application/json
+  parametersSchema:
+    description: Schema for the command `parameters`.
+    $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/swe-common/schema.yaml#AnyComponent
+  resultSchema:
+    description: Schema for the inline command results (if any).
+    $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/swe-common/schema.yaml#AnyComponent
+  feasibilityResultSchema:
+    description: Schema for the feasibility results (if any).
+    $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/swe-common/schema.yaml#AnyComponent
+required:
+- commandFormat
+- parametersSchema

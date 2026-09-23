@@ -1,0 +1,46 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+type: object
+properties:
+  id:
+    description: Local identifier of the status report
+    type: string
+    minLength: 1
+    readOnly: true
+  command@id:
+    description: Local identifier of the command that this report applies to
+    type: string
+    minLength: 1
+    readOnly: true
+  reportTime:
+    description: Time at which this report was generated. If omitted on creation,
+      the server sets it to the time the request was received.
+    $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/time-instant/schema.yaml
+    readOnly: true
+  statusCode:
+    description: Current status code
+    $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part2/command-status-code/schema.yaml
+  percentCompletion:
+    description: Current progress expressed as a percentage of total task execution
+    type: number
+    minimum: 0
+    maximum: 100
+  executionTime:
+    description: Time period during which the command was executed or is scheduled
+      to be executed (depending on status code)
+    $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/time-period/schema.yaml
+  message:
+    description: Human readable message providing more details on the current status
+      (can be both an error or information message depending on the status code)
+    type: string
+    minLength: 1
+  results:
+    description: New result(s) of the command available at the time of the progress
+      report (can be a partial result)
+    type: array
+    items:
+      $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part2/command-result/schema.yaml
+required:
+- id
+- command@id
+- reportTime
+- statusCode

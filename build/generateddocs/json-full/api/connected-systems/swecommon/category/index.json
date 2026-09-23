@@ -1,0 +1,75 @@
+
+
+{
+  "itemIdentifier": "ogc.api.connected-systems.swecommon.category",
+  "name": "Category",
+  "abstract": "Scalar component used to represent a categorical value as a simple token identifying a term in a code space",
+  "status": "under-development",
+  "dateTimeAddition": "2026-09-23T00:00:00Z",
+  "itemClass": "schema",
+  "version": "0.1",
+  "group": "SWE Common",
+  "sources": [
+    {
+      "title": "swecommon/schemas/json/Category.json in opengeospatial/ogcapi-connected-systems",
+      "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/swecommon/schemas/json/Category.json"
+    }
+  ],
+  "shaclShapes": {},
+  "dependsOn": [
+    "ogc.api.connected-systems.swecommon.basic-types",
+    "ogc.api.connected-systems.swecommon.abstract-simple-component"
+  ],
+  "dateOfLastChange": "2026-09-23",
+  "schema": {
+    "application/yaml": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/category/schema.yaml",
+    "application/json": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/category/schema.json"
+  },
+  "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/category/schema.json",
+  "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/category/resolvedProperties.json",
+  "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/category/",
+  "validationPassed": true,
+  "testOutputs": "https://github.com/ogcincubator/bblocks-connected-systems/blob/master/build/tests/api/connected-systems/swecommon/category/",
+  "description": "<!-- generated -->\n# Category\n\nScalar component used to represent a categorical value as a simple token identifying a term in a code space\n\nConverted from [`swecommon/schemas/json/Category.json`](https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/swecommon/schemas/json/Category.json) in the OGC API - Connected Systems repository.\n\n## Properties\n\n| Property | Type | Required | Description |\n|---|---|---|---|\n| `type` | `\"Category\"` | yes |  |\n| `codeSpace` | `string` |  | Name of the dictionary where the possible values for this component are listed and defined |\n| `constraint` | `basicTypes.json#/$defs/AllowedTokens` |  |  |\n| `nilValues` | `basicTypes.json#/$defs/NilValuesText` |  |  |\n| `value` | `string` |  |  |\n\n## Examples\n\n3 example(s) taken from the specification are included and validated against this schema.\n\n",
+  "examples": [
+    {
+      "title": "AllowedTokens2",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/category/examples/allowedTokens2.json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/swecommon/category/example_1_1.json",
+          "sizeBytes": 262,
+          "code": "{\n  \"type\": \"Category\",\n  \"definition\": \"http://www.opengis.net/def/property/OGC/0/SensorStatus\",\n  \"label\": \"Sensor Status\",\n  \"description\": \"Current connection status of the sensor\",\n  \"constraint\": {\n    \"values\": [ \"Off\", \"Stand-by\", \"Ready\", \"Busy\" ]\n  }\n}"
+        }
+      ]
+    },
+    {
+      "title": "Category1",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/category/examples/category1.json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/swecommon/category/example_2_1.json",
+          "sizeBytes": 358,
+          "code": "{\n  \"type\": \"Category\",\n  \"definition\": \"http://sweet.jpl.nasa.gov/2.0/timeGeologic.owl#GeologicTime\",\n  \"label\": \"Geological Period\",\n  \"description\": \"Name of the geological period according to the nomenclature of the International Commission on Stratigraphy\",\n  \"codeSpace\": \"http://sweet.jpl.nasa.gov/2.0/timeGeologic.owl#Period\",\n  \"value\": \"Jurassic\"\n}"
+        }
+      ]
+    },
+    {
+      "title": "Category2",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/category/examples/category2.json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/swecommon/category/example_3_1.json",
+          "sizeBytes": 279,
+          "code": "{\n  \"type\": \"Category\",\n  \"definition\": \"http://sweet.jpl.nasa.gov/2.0/biol.owl#Species\",\n  \"label\": \"Bird Species\",\n  \"description\": \"Bird species according to the classification of the World Bird Database\",\n  \"codeSpace\": \"http://www.birdlife.org/datazone/species/index.html\"\n}"
+        }
+      ]
+    }
+  ],
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: Scalar component used to represent a categorical value as a simple token\n  identifying a term in a code space\ntype: object\nallOf:\n- $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/abstract-simple-component/schema.yaml\n- properties:\n    type:\n      const: Category\n    codeSpace:\n      description: Name of the dictionary where the possible values for this component\n        are listed and defined\n      type: string\n      format: uri\n    constraint:\n      $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/basic-types/schema.yaml#AllowedTokens\n    nilValues:\n      $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/basic-types/schema.yaml#NilValuesText\n    value:\n      type: string\n  required:\n  - type\n  - definition\n  - label\n",
+  "gitRepository": "https://github.com/ogcincubator/bblocks-connected-systems",
+  "gitPath": "_sources/swecommon/category"
+}

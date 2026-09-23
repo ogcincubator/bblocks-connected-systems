@@ -1,0 +1,210 @@
+{
+  "title": "Validation report for ogc.api.connected-systems.part1.deployment - Deployment (GeoJSON)",
+  "bblockName": "Deployment (GeoJSON)",
+  "bblockId": "ogc.api.connected-systems.part1.deployment",
+  "generated": "2026-09-23T22:13:49.191217+00:00",
+  "result": true,
+  "items": [
+    {
+      "source": {
+        "type": "TEST_RESOURCE",
+        "requireFail": true,
+        "filename": "_sources/part1/deployment/tests/no-valid-time-fail.json",
+        "url": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part1/deployment/tests/no-valid-time-fail.json",
+        "language": "json"
+      },
+      "result": true,
+      "sections": [
+        {
+          "name": "GENERAL",
+          "title": "General",
+          "entries": [
+            {
+              "op": "require-fail",
+              "isError": false,
+              "message": "Test was expected to fail and it did."
+            }
+          ]
+        },
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using no-valid-time-fail.json from test resources"
+            },
+            {
+              "op": "jsonld-uplift",
+              "isError": false,
+              "message": "JSON-LD context is present - uplifting"
+            },
+            {
+              "op": "jsonld-create",
+              "filename": "no-valid-time-fail.jsonld",
+              "isError": false,
+              "message": "Output JSON-LD no-valid-time-fail.jsonld created"
+            },
+            {
+              "op": "ttl-create",
+              "empty": false,
+              "filename": "no-valid-time-fail.ttl",
+              "size": 46,
+              "isError": false,
+              "message": "Output Turtle no-valid-time-fail.ttl created"
+            }
+          ]
+        },
+        {
+          "name": "JSON_SCHEMA",
+          "title": "JSON Schema",
+          "entries": [
+            {
+              "op": "validation",
+              "result": false,
+              "exception": "ValidationError",
+              "errorMessage": "'validTime' is a required property",
+              "isError": true,
+              "message": "ValidationError: 'validTime' is a required property\n\nFailed validating 'required' in schema['allOf'][1]['properties']['properties']:\n    {'properties': {'deployedSystems@link': {'items': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/link/schema.yaml',\n                                                       'description': 'Link '\n                                                                      'to '\n                                                                      'the '\n                                                                      'system '\n                                                                      'being '\n                                                                      'deployed. '\n                                                                      'Either '\n                                                                      'a '\n                                                                      'URN '\n                                                                      'if '\n                                                                      'the '\n                                                                      'system '\n                                                                      'is '\n                                                                      'stored '\n                                                                      'locally, '\n                                                                      'or '\n                                                                      'a '\n                                                                      'URL '\n                                                                      'if '\n                                                                      'the '\n                                                                      'system '\n                                                                      'is '\n                                                                      'hosted '\n                                                                      'externally'},\n                                             'type': 'array'},\n                    'featureType': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part1/uris/schema.yaml#DeploymentTypeUris'},\n                    'platform@link': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/link/schema.yaml',\n                                      'description': 'Link to the platform '\n                                                     'on which the systems '\n                                                     'are deployed.'},\n                    'validTime': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/time-period/schema.yaml',\n                                  'description': 'Time period during which '\n                                                 'the systems are '\n                                                 'deployed.'}},\n     'required': ['validTime']}\n\nOn instance['properties']:\n    {'deployedSystems@link': [{'href': 'https://data.example.org/api/systems/41548?f=sml',\n                               'title': 'Air Temperature Sensor',\n                               'uid': 'urn:x-saildrone:sensors:temp01'},\n                              {'href': 'https://data.example.org/api/systems/36584?f=sml',\n                               'title': 'Water Temperature Sensor',\n                               'uid': 'urn:x-saildrone:sensors:temp02'},\n                              {'href': 'https://data.example.org/api/systems/47752?f=sml',\n                               'title': 'Wind Speed and Direction Sensor',\n                               'uid': 'urn:x-saildrone:sensors:wind01'}],\n     'description': 'In July 2017, three saildrones were launched from '\n                    'Dutch Harbor, Alaska, in partnership with NOAA '\n                    'Research...',\n     'featureType': 'http://www.w3.org/ns/sosa/Deployment',\n     'name': 'Saildrone - 2017 Arctic Mission',\n     'platform@link': {'href': 'https://data.example.org/api/systems/27559?f=sml',\n                       'title': 'Saildrone SD-1003',\n                       'uid': 'urn:x-saildrone:platforms:SD-1003'},\n     'uid': 'urn:x-ogc:deployments:D001'}"
+            }
+          ]
+        },
+        {
+          "name": "SHACL",
+          "title": "SHACL",
+          "entries": [
+            {
+              "op": "shacl-report",
+              "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl",
+              "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+              "isError": false,
+              "message": "Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n  Validation Report\n  Conforms: True\n  "
+            },
+            {
+              "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl",
+              "focusNodes": {
+                "geojson:GeometryShape": {
+                  "nodes": []
+                },
+                "geojson:GeometryShape/sh:or/rdf:first": {
+                  "nodes": []
+                },
+                "geojson:GeometryShape/sh:or/rdf:rest/rdf:first": {
+                  "nodes": []
+                },
+                "geojson:LinkShape": {
+                  "nodes": []
+                },
+                "geojson:FeatureShape": {
+                  "nodes": [
+                    "<file:///github/workspace/iv3f2kcq27gfi>"
+                  ]
+                }
+              },
+              "isError": false,
+              "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n - Shape geojson:GeometryShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape geojson:LinkShape: *none*\n - Shape geojson:FeatureShape: <file:///github/workspace/iv3f2kcq27gfi>\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": {
+        "type": "EXAMPLE",
+        "requireFail": false,
+        "filename": "build/tests/api/connected-systems/part1/deployment/example_1_1.json",
+        "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part1/deployment/example_1_1.json",
+        "exampleIndex": 1,
+        "snippetIndex": 1,
+        "language": "application/json"
+      },
+      "result": true,
+      "sections": [
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using examples/deployment-geojson.json from examples"
+            },
+            {
+              "op": "jsonld-uplift",
+              "isError": false,
+              "message": "JSON-LD context is present - uplifting"
+            },
+            {
+              "op": "jsonld-create",
+              "filename": "example_1_1.jsonld",
+              "isError": false,
+              "message": "Output JSON-LD example_1_1.jsonld created"
+            },
+            {
+              "op": "ttl-create",
+              "empty": false,
+              "filename": "example_1_1.ttl",
+              "size": 46,
+              "isError": false,
+              "message": "Output Turtle example_1_1.ttl created"
+            }
+          ]
+        },
+        {
+          "name": "JSON_SCHEMA",
+          "title": "JSON Schema",
+          "entries": [
+            {
+              "op": "validation",
+              "result": true,
+              "isError": false,
+              "message": "Validation passed"
+            }
+          ]
+        },
+        {
+          "name": "SHACL",
+          "title": "SHACL",
+          "entries": [
+            {
+              "op": "shacl-report",
+              "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl",
+              "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+              "isError": false,
+              "message": "Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n  Validation Report\n  Conforms: True\n  "
+            },
+            {
+              "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl",
+              "focusNodes": {
+                "geojson:GeometryShape": {
+                  "nodes": []
+                },
+                "geojson:GeometryShape/sh:or/rdf:first": {
+                  "nodes": []
+                },
+                "geojson:GeometryShape/sh:or/rdf:rest/rdf:first": {
+                  "nodes": []
+                },
+                "geojson:LinkShape": {
+                  "nodes": []
+                },
+                "geojson:FeatureShape": {
+                  "nodes": [
+                    "<file:///github/workspace/iv3f2kcq27gfi>"
+                  ]
+                }
+              },
+              "isError": false,
+              "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n - Shape geojson:GeometryShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape geojson:LinkShape: *none*\n - Shape geojson:FeatureShape: <file:///github/workspace/iv3f2kcq27gfi>\n"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "globalErrors": {},
+  "counts": {
+    "total": 2,
+    "passed": 2,
+    "failed": 0
+  }
+}

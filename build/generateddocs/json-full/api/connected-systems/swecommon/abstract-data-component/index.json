@@ -1,0 +1,35 @@
+
+
+{
+  "itemIdentifier": "ogc.api.connected-systems.swecommon.abstract-data-component",
+  "name": "AbstractDataComponent",
+  "abstract": "Abstract base class for all data components",
+  "status": "under-development",
+  "dateTimeAddition": "2026-09-23T00:00:00Z",
+  "itemClass": "schema",
+  "version": "0.1",
+  "group": "SWE Common",
+  "sources": [
+    {
+      "title": "swecommon/schemas/json/AbstractDataComponent.json in opengeospatial/ogcapi-connected-systems",
+      "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/swecommon/schemas/json/AbstractDataComponent.json"
+    }
+  ],
+  "shaclShapes": {},
+  "dependsOn": [
+    "ogc.api.connected-systems.swecommon.abstract-swe-identifiable"
+  ],
+  "dateOfLastChange": "2026-09-23",
+  "schema": {
+    "application/yaml": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/abstract-data-component/schema.yaml",
+    "application/json": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/abstract-data-component/schema.json"
+  },
+  "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/abstract-data-component/schema.json",
+  "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/abstract-data-component/resolvedProperties.json",
+  "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/abstract-data-component/",
+  "validationPassed": true,
+  "description": "<!-- generated -->\n# AbstractDataComponent\n\nAbstract base class for all data components\n\nConverted from [`swecommon/schemas/json/AbstractDataComponent.json`](https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/swecommon/schemas/json/AbstractDataComponent.json) in the OGC API - Connected Systems repository.\n\n## Properties\n\n| Property | Type | Required | Description |\n|---|---|---|---|\n| `type` | `string` |  |  |\n| `updatable` | `boolean` |  | Specifies if the value of a data component can be updated externally (i.e., is variable) |\n| `optional` | `boolean` |  | Specifies if the data for this component can be omitted in the datastream |\n| `definition` | `string` |  | The definition of the property whose value is provided by this component (semantic link) |\n\n",
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: Abstract base class for all data components\ntype: object\nallOf:\n- $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/abstract-swe-identifiable/schema.yaml\n- properties:\n    type:\n      type: string\n    updatable:\n      description: Specifies if the value of a data component can be updated externally\n        (i.e., is variable)\n      type: boolean\n      default: false\n    optional:\n      description: Specifies if the data for this component can be omitted in the\n        datastream\n      type: boolean\n      default: false\n    definition:\n      description: The definition of the property whose value is provided by this\n        component (semantic link)\n      type: string\n      format: uri\n",
+  "gitRepository": "https://github.com/ogcincubator/bblocks-connected-systems",
+  "gitPath": "_sources/swecommon/abstract-data-component"
+}

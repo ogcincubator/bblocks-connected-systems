@@ -1,0 +1,50 @@
+
+
+{
+  "itemIdentifier": "ogc.api.connected-systems.swecommon.matrix",
+  "name": "Matrix",
+  "abstract": "Implementation of ISO-11404 Array datatype. This defines an array of identical data components with a elementCount. Values are given as a block and can be encoded in different ways",
+  "status": "under-development",
+  "dateTimeAddition": "2026-09-23T00:00:00Z",
+  "itemClass": "schema",
+  "version": "0.1",
+  "group": "SWE Common",
+  "sources": [
+    {
+      "title": "swecommon/schemas/json/Matrix.json in opengeospatial/ogcapi-connected-systems",
+      "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/swecommon/schemas/json/Matrix.json"
+    }
+  ],
+  "shaclShapes": {},
+  "dependsOn": [
+    "ogc.api.connected-systems.swecommon.data-array"
+  ],
+  "dateOfLastChange": "2026-09-23",
+  "schema": {
+    "application/yaml": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/matrix/schema.yaml",
+    "application/json": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/matrix/schema.json"
+  },
+  "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/matrix/schema.json",
+  "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/matrix/resolvedProperties.json",
+  "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/matrix/",
+  "validationPassed": true,
+  "testOutputs": "https://github.com/ogcincubator/bblocks-connected-systems/blob/master/build/tests/api/connected-systems/swecommon/matrix/",
+  "description": "<!-- generated -->\n# Matrix\n\nImplementation of ISO-11404 Array datatype. This defines an array of identical data components with a elementCount. Values are given as a block and can be encoded in different ways\n\nConverted from [`swecommon/schemas/json/Matrix.json`](https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/swecommon/schemas/json/Matrix.json) in the OGC API - Connected Systems repository.\n\n## Properties\n\n| Property | Type | Required | Description |\n|---|---|---|---|\n| `type` | `\"Matrix\"` | yes |  |\n| `referenceFrame` | `string` |  | Frame of reference (usually spatial) with respect to which the coordinates of this matrix are expressed |\n| `localFrame` | `string` |  | Frame of reference whose position and orientation are provided by the transformation defined by this matrix |\n\n## Examples\n\n1 example(s) taken from the specification are included and validated against this schema.\n\n",
+  "examples": [
+    {
+      "title": "Matrix1",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/matrix/examples/matrix1.json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/swecommon/matrix/example_1_1.json",
+          "sizeBytes": 548,
+          "code": "{\n  \"type\": \"Matrix\",\n  \"definition\": \"http://sensorml.com/ont/swe/property/RotationMatrix\",\n  \"referenceFrame\": \"http://www.opengis.net/def/crs/OGC/0/ECI_J2000\",\n  \"label\": \"3D Orientation Matrix\",\n  \"elementType\": {\n    \"name\": \"row\",\n    \"type\": \"Matrix\",\n    \"elementType\": {\n      \"name\": \"coef\",\n      \"type\": \"Quantity\",\n      \"definition\": \"http://sensorml.com/ont/swe/property/Coordinate\",\n      \"label\": \"Matrix Coef\",\n      \"uom\": { \"code\": \"1\" }\n    }\n  },\n  \"values\": [\n    [0.36,0.48,-0.8],\n    [-0.8,0.6,0],\n    [0.48,0.64,0.6]\n  ]\n}"
+        }
+      ]
+    }
+  ],
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: Implementation of ISO-11404 Array datatype. This defines an array of\n  identical data components with a elementCount. Values are given as a block and can\n  be encoded in different ways\ntype: object\nallOf:\n- $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/data-array/schema.yaml#AbstractArray\n- properties:\n    type:\n      const: Matrix\n    referenceFrame:\n      description: Frame of reference (usually spatial) with respect to which the\n        coordinates of this matrix are expressed\n      type: string\n      format: uri-reference\n    localFrame:\n      description: Frame of reference whose position and orientation are provided\n        by the transformation defined by this matrix\n      type: string\n      format: uri-reference\n  required:\n  - type\n  - elementType\n",
+  "gitRepository": "https://github.com/ogcincubator/bblocks-connected-systems",
+  "gitPath": "_sources/swecommon/matrix"
+}

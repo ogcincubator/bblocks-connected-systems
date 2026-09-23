@@ -1,0 +1,32 @@
+
+
+{
+  "itemIdentifier": "ogc.api.connected-systems.part1.batch-response",
+  "name": "Batch_response",
+  "abstract": "Response describing the outcome of a batch create, update or delete operation, reporting the per-item result of each request.",
+  "status": "under-development",
+  "dateTimeAddition": "2026-09-23T00:00:00Z",
+  "itemClass": "schema",
+  "version": "0.1",
+  "group": "Part 1",
+  "sources": [
+    {
+      "title": "api/part1/openapi/schemas/common/batch_response.json in opengeospatial/ogcapi-connected-systems",
+      "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/api/part1/openapi/schemas/common/batch_response.json"
+    }
+  ],
+  "shaclShapes": {},
+  "dateOfLastChange": "2026-09-23",
+  "schema": {
+    "application/yaml": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part1/batch-response/schema.yaml",
+    "application/json": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part1/batch-response/schema.json"
+  },
+  "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part1/batch-response/schema.json",
+  "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part1/batch-response/resolvedProperties.json",
+  "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part1/batch-response/",
+  "validationPassed": true,
+  "description": "<!-- generated -->\n# Batch_response\n\nBatch Operation Response\n\nConverted from [`api/part1/openapi/schemas/common/batch_response.json`](https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/api/part1/openapi/schemas/common/batch_response.json) in the OGC API - Connected Systems repository.\n\n",
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ntitle: Batch Operation Response\ntype: array\nminItems: 1\nitems:\n  type: object\n  properties:\n    id:\n      description: Identifier of resource as provided in request\n      type: string\n    status:\n      description: HTTP status code\n      type: integer\n    location:\n      description: URL of created resource (equivalent to HTTP Location header), only\n        provided on create\n      type: string\n      format: uri\n    error:\n      description: An optional error message\n      type: string\n  required:\n  - id\n  - status\n",
+  "gitRepository": "https://github.com/ogcincubator/bblocks-connected-systems",
+  "gitPath": "_sources/part1/batch-response"
+}

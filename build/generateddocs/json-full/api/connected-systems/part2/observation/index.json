@@ -1,0 +1,111 @@
+
+
+{
+  "itemIdentifier": "ogc.api.connected-systems.part2.observation",
+  "name": "Observation",
+  "abstract": "An Observation: the result of observing a property of a feature of interest at a given time, produced by a System and stored in a DataStream.",
+  "status": "under-development",
+  "dateTimeAddition": "2026-09-23T00:00:00Z",
+  "itemClass": "schema",
+  "version": "0.1",
+  "group": "Part 2",
+  "sources": [
+    {
+      "title": "api/part2/openapi/schemas/json/observation.json in opengeospatial/ogcapi-connected-systems",
+      "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/api/part2/openapi/schemas/json/observation.json"
+    }
+  ],
+  "shaclShapes": {},
+  "dependsOn": [
+    "ogc.api.connected-systems.common.time-instant",
+    "ogc.api.connected-systems.common.link"
+  ],
+  "dateOfLastChange": "2026-09-23",
+  "schema": {
+    "application/yaml": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part2/observation/schema.yaml",
+    "application/json": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part2/observation/schema.json"
+  },
+  "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part2/observation/schema.json",
+  "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part2/observation/resolvedProperties.json",
+  "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part2/observation/",
+  "validationPassed": true,
+  "testOutputs": "https://github.com/ogcincubator/bblocks-connected-systems/blob/master/build/tests/api/connected-systems/part2/observation/",
+  "description": "<!-- generated -->\n# Observation\n\nConverted from [`api/part2/openapi/schemas/json/observation.json`](https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/api/part2/openapi/schemas/json/observation.json) in the OGC API - Connected Systems repository.\n\n## Properties\n\n| Property | Type | Required | Description |\n|---|---|---|---|\n| `id` | `string` | yes | Local ID of the observation |\n| `datastream@id` | `string` | yes | Local ID of the datastream that the observation is part of |\n| `samplingFeature@id` | `string` |  | Local ID of the sampling feature that is the target of the observation |\n| `procedure@link` | `../common/commonDefs.json#/$defs/Link` |  | Link to the procedure/method used to make the observation |\n| `phenomenonTime` | `../common/commonDefs.json#/$defs/TimeInstant` |  | Time at which the observation result is a valid estimate of the sampling feature property(ies). Defaults to the same value as `resultTime`. |\n| `resultTime` | `../common/commonDefs.json#/$defs/TimeInstant` | yes | Time at which the observation result was generated. |\n| `parameters` | `object` |  | Parameters of the observation. Must be valid according to the parameters schema provided in the datastream metadata. |\n| `result` |  |  | Result of the observation. Must be valid according to the result schema provided in the datastream metadata. |\n| `result@link` | `../common/commonDefs.json#/$defs/Link` |  | Link to external result data (e.g., large raster dataset served by a tiling service) |\n\n## Examples\n\n6 example(s) taken from the specification are included and validated against this schema.\n\n",
+  "examples": [
+    {
+      "title": "Obs geopose",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part2/observation/examples/obs-geopose.json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part2/observation/example_1_1.json",
+          "sizeBytes": 351,
+          "code": "{\n  \"id\": \"maqdpujcj8dkstqhibju0ncmvqqh0k8\",\n  \"datastream@id\": \"tm3kijpkaoei6\",\n  \"phenomenonTime\": \"2023-03-15T10:03:34Z\",\n  \"resultTime\": \"2023-03-15T10:03:34Z\",\n  \"result\": {\n    \"position\": {\n      \"lat\": -86.5861,\n      \"lon\": 34.7304,\n      \"h\": 183\n    },\n    \"angles\": {\n      \"yaw\": -124.3,\n      \"pitch\": 3.4,\n      \"roll\": -5.8\n    }\n  }\n}"
+        }
+      ]
+    },
+    {
+      "title": "Obs link inline image",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part2/observation/examples/obs-link-inline-image.json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part2/observation/example_2_1.json",
+          "sizeBytes": 323,
+          "code": "{\n  \"id\": \"fefaig45w46v5186d6w\",\n  \"datastream@id\": \"f44f85rrt\",\n  \"foi@id\": \"55f48g48th\",\n  \"phenomenonTime\": \"2023-04-03T18:45:23Z\",\n  \"resultTime\": \"2023-04-03T18:45:23Z\",\n  \"result@link\": {\n    \"href\": \"data:image/png;base64,dGhlIGltYWdlIGFzIGJhc2U2NAo=\",\n    \"title\": \"Inline PNG image\",\n    \"type\": \"image/png\"\n  }\n}\n"
+        }
+      ]
+    },
+    {
+      "title": "Obs link",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part2/observation/examples/obs-link.json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part2/observation/example_3_1.json",
+          "sizeBytes": 549,
+          "code": "{\n  \"id\": \"fefaig45w46v5186d6w\",\n  \"datastream@id\": \"f44f85rrt\",\n  \"foi@id\": \"55f48g48th\",\n  \"phenomenonTime\": \"2023-04-03T18:45:23Z\",\n  \"resultTime\": \"2023-04-03T18:45:23Z\",\n  \"result@link\": {\n    \"href\": \"https://data.x-ecmwf.int/wms?service=WMS&version=1.1.0&request=GetMap&format=image/tiff&layers=HRES-2T-20230215-0600-T1&bbox=-180,90,180,-90&width=3600&height=1800&srs=EPSG:4326\",\n    \"title\": \"Imagery on external WMS server\",\n    \"type\": \"image/tiff; application=geotiff\",\n    \"if\": \"http://www.opengis.net/def/serviceType/ogc/wms/1.1\"\n  }\n}"
+        }
+      ]
+    },
+    {
+      "title": "Obs location",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part2/observation/examples/obs-location.json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part2/observation/example_4_1.json",
+          "sizeBytes": 235,
+          "code": "{\n  \"id\": \"1125alnna75hafppknk9aefpvs\",\n  \"datastream@id\": \"1vf8i5ois38u8\",\n  \"phenomenonTime\": \"2021-03-15T04:53:34Z\",\n  \"resultTime\": \"2021-03-15T04:53:34Z\",\n  \"result\": {\n    \"lat\": -86.5861,\n    \"lon\": 34.7304,\n    \"alt\": 183\n  }\n}"
+        }
+      ]
+    },
+    {
+      "title": "Obs profile",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part2/observation/examples/obs-profile.json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part2/observation/example_5_1.json",
+          "sizeBytes": 221,
+          "code": "{\n  \"id\": \"1125alnna75hafppk4845g4s6\",\n  \"datastream@id\": \"1vf8i5ois447g\",\n  \"phenomenonTime\": \"2022-03-15T04:53:34Z\",\n  \"resultTime\": \"2022-03-15T04:53:34Z\",\n  \"result\": [12.5, 11.3, 10.6, 9.1, 7.4, 5.6, 5.5, 5.5, 5.4]\n}"
+        }
+      ]
+    },
+    {
+      "title": "Obs simple",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part2/observation/examples/obs-simple.json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part2/observation/example_6_1.json",
+          "sizeBytes": 178,
+          "code": "{\n  \"id\": \"1h6pmb3ntfmogfppknk9aefpvs\",\n  \"datastream@id\": \"958tf25kjm2f6\",\n  \"phenomenonTime\": \"2021-03-15T04:53:34Z\",\n  \"resultTime\": \"2021-03-15T04:53:34Z\",\n  \"result\": 23.5\n}"
+        }
+      ]
+    }
+  ],
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ntype: object\nproperties:\n  id:\n    description: Local ID of the observation\n    type: string\n    minLength: 1\n    readOnly: true\n  datastream@id:\n    description: Local ID of the datastream that the observation is part of\n    type: string\n    minLength: 1\n    readOnly: true\n  samplingFeature@id:\n    description: Local ID of the sampling feature that is the target of the observation\n    type: string\n    minLength: 1\n  procedure@link:\n    description: Link to the procedure/method used to make the observation\n    $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/link/schema.yaml\n  phenomenonTime:\n    description: Time at which the observation result is a valid estimate of the sampling\n      feature property(ies). Defaults to the same value as `resultTime`.\n    $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/time-instant/schema.yaml\n  resultTime:\n    description: Time at which the observation result was generated.\n    $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/time-instant/schema.yaml\n  parameters:\n    description: Parameters of the observation. Must be valid according to the parameters\n      schema provided in the datastream metadata.\n    type: object\n  result:\n    description: Result of the observation. Must be valid according to the result\n      schema provided in the datastream metadata.\n  result@link:\n    description: Link to external result data (e.g., large raster dataset served by\n      a tiling service)\n    $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/link/schema.yaml\nrequired:\n- id\n- datastream@id\n- resultTime\noneOf:\n- title: Inline result\n  required:\n  - result\n- title: Link to external result\n  required:\n  - result@link\n",
+  "gitRepository": "https://github.com/ogcincubator/bblocks-connected-systems",
+  "gitPath": "_sources/part2/observation"
+}

@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Base substitution groups for all SWE Common objects with identification metadata",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/basic-types/schema.json#AbstractSWE"
+    },
+    {
+      "properties": {
+        "label": {
+          "description": "Human readable label for the object",
+          "type": "string",
+          "minLength": 1
+        },
+        "description": {
+          "description": "Human readable description of the object",
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    }
+  ]
+}

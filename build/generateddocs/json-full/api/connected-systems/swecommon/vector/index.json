@@ -1,0 +1,78 @@
+
+
+{
+  "itemIdentifier": "ogc.api.connected-systems.swecommon.vector",
+  "name": "Vector",
+  "abstract": "Implementation of a mathematical vector composed of a list of scalar coordinates expressed in the mandatory reference frame.",
+  "status": "under-development",
+  "dateTimeAddition": "2026-09-23T00:00:00Z",
+  "itemClass": "schema",
+  "version": "0.1",
+  "group": "SWE Common",
+  "sources": [
+    {
+      "title": "swecommon/schemas/json/Vector.json in opengeospatial/ogcapi-connected-systems",
+      "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/swecommon/schemas/json/Vector.json"
+    }
+  ],
+  "shaclShapes": {},
+  "dependsOn": [
+    "ogc.api.connected-systems.swecommon.time",
+    "ogc.api.connected-systems.swecommon.count",
+    "ogc.api.connected-systems.swecommon.quantity",
+    "ogc.api.connected-systems.swecommon.basic-types",
+    "ogc.api.connected-systems.swecommon.abstract-data-component"
+  ],
+  "dateOfLastChange": "2026-09-23",
+  "schema": {
+    "application/yaml": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/vector/schema.yaml",
+    "application/json": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/vector/schema.json"
+  },
+  "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/vector/schema.json",
+  "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/vector/resolvedProperties.json",
+  "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/vector/",
+  "validationPassed": true,
+  "testOutputs": "https://github.com/ogcincubator/bblocks-connected-systems/blob/master/build/tests/api/connected-systems/swecommon/vector/",
+  "description": "<!-- generated -->\n# Vector\n\nImplementation of a mathematical vector composed of a list of scalar coordinates expressed in the mandatory reference frame.\n\nConverted from [`swecommon/schemas/json/Vector.json`](https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/swecommon/schemas/json/Vector.json) in the OGC API - Connected Systems repository.\n\n## Properties\n\n| Property | Type | Required | Description |\n|---|---|---|---|\n| `type` | `\"Vector\"` | yes |  |\n| `referenceFrame` | `string` | yes | Frame of reference (usually spatial) with respect to which the coordinates of this vector are expressed. A reference frame anchors a vector value to a real world datum. |\n| `localFrame` | `string` |  | Frame of reference whose origin is located by the coordinates of this vector |\n| `coordinates` | `array` | yes | Definition of the coordinate provided as a data component with a numerical representation |\n\n## Examples\n\n3 example(s) taken from the specification are included and validated against this schema.\n\n",
+  "examples": [
+    {
+      "title": "Vector1",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/vector/examples/vector1.json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/swecommon/vector/example_1_1.json",
+          "sizeBytes": 693,
+          "code": "{\n  \"type\": \"Vector\",\n  \"definition\": \"http://www.opengis.net/def/property/OGC/0/PlatformLocation\",\n  \"referenceFrame\": \"http://www.opengis.net/def/crs/EPSG/0/4326\",\n  \"label\": \"Platform Location\",\n  \"coordinates\": [\n    {\n      \"name\": \"lat\",\n      \"type\": \"Quantity\",\n      \"definition\": \"http://sensorml.com/ont/swe/property/GeodeticLatitude\",\n      \"label\": \"Latitude\",\n      \"axisID\": \"Lat\",\n      \"uom\": { \"code\": \"deg\" },\n      \"value\": 45.36\n    },\n    {\n      \"name\": \"lon\",\n      \"type\": \"Quantity\",\n      \"definition\": \"http://sensorml.com/ont/swe/property/Longitude\",\n      \"label\": \"Longitude\",\n      \"axisID\": \"Lon\",\n      \"uom\": { \"code\": \"deg\" },\n      \"value\": 5.2\n    }\n  ]\n}"
+        }
+      ]
+    },
+    {
+      "title": "Vector2",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/vector/examples/vector2.json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/swecommon/vector/example_2_1.json",
+          "sizeBytes": 765,
+          "code": "{\n  \"type\": \"Vector\",\n  \"definition\": \"http://qudt.org/vocab/quantitykind/LinearVelocity\",\n  \"referenceFrame\": \"http://www.opengis.net/def/crs/OGC/0/ECI_J2000\",\n  \"label\": \"Platform Velocity\",\n  \"coordinates\": [\n    {\n      \"name\": \"vx\",\n      \"type\": \"Quantity\",\n      \"definition\": \"http://qudt.org/vocab/quantitykind/Speed\",\n      \"label\": \"Velocity X\",\n      \"uom\": { \"code\": \"m/s\" }\n    },\n    {\n      \"name\": \"vy\",\n      \"type\": \"Quantity\",\n      \"definition\": \"http://qudt.org/vocab/quantitykind/Speed\",\n      \"label\": \"Velocity Y\",\n      \"uom\": { \"code\": \"m/s\" }\n    },\n    {\n      \"name\": \"vz\",\n      \"type\": \"Quantity\",\n      \"definition\": \"http://qudt.org/vocab/quantitykind/Speed\",\n      \"label\": \"Velocity Z\",\n      \"uom\": { \"code\": \"m/s\" }\n    }\n  ]\n}"
+        }
+      ]
+    },
+    {
+      "title": "Vector3",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/vector/examples/vector3.json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/swecommon/vector/example_3_1.json",
+          "sizeBytes": 999,
+          "code": "{\n  \"type\": \"Vector\",\n  \"definition\": \"http://sensorml.com/ont/swe/property/RotationQuaternion\",\n  \"referenceFrame\": \"http://www.opengis.net/def/crs/OGC/0/ECI_J2000\",\n  \"localFrame\": \"urn:org:systems:001#PLATFORM_FRAME\",\n  \"label\": \"Platform Orientation\",\n  \"coordinates\": [\n    {\n      \"name\": \"qx\",\n      \"type\": \"Quantity\",\n      \"definition\": \"http://sensorml.com/ont/swe/property/Coordinate\",\n      \"label\": \"QX\",\n      \"uom\": { \"code\": \"1\" }\n    },\n    {\n      \"name\": \"qy\",\n      \"type\": \"Quantity\",\n      \"definition\": \"http://sensorml.com/ont/swe/property/Coordinate\",\n      \"label\": \"QY\",\n      \"uom\": { \"code\": \"1\" }\n    },\n    {\n      \"name\": \"qz\",\n      \"type\": \"Quantity\",\n      \"definition\": \"http://sensorml.com/ont/swe/property/Coordinate\",\n      \"label\": \"QZ\",\n      \"uom\": { \"code\": \"1\" }\n    },\n    {\n      \"name\": \"qw\",\n      \"type\": \"Quantity\",\n      \"definition\": \"http://sensorml.com/ont/swe/property/Coordinate\",\n      \"label\": \"QW\",\n      \"uom\": { \"code\": \"1\" }\n    }\n  ]\n}"
+        }
+      ]
+    }
+  ],
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: Implementation of a mathematical vector composed of a list of scalar\n  coordinates expressed in the mandatory reference frame.\ntype: object\nallOf:\n- $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/abstract-data-component/schema.yaml\n- properties:\n    type:\n      const: Vector\n    referenceFrame:\n      description: Frame of reference (usually spatial) with respect to which the\n        coordinates of this vector are expressed. A reference frame anchors a vector\n        value to a real world datum.\n      type: string\n      format: uri-reference\n    localFrame:\n      description: Frame of reference whose origin is located by the coordinates of\n        this vector\n      type: string\n      format: uri-reference\n    coordinates:\n      description: Definition of the coordinate provided as a data component with\n        a numerical representation\n      type: array\n      items:\n        allOf:\n        - $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/basic-types/schema.yaml#SoftNamedProperty\n        - oneOf:\n          - $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/count/schema.yaml\n          - $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/quantity/schema.yaml\n          - $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/time/schema.yaml\n  required:\n  - type\n  - definition\n  - referenceFrame\n  - label\n  - coordinates\n",
+  "gitRepository": "https://github.com/ogcincubator/bblocks-connected-systems",
+  "gitPath": "_sources/swecommon/vector"
+}

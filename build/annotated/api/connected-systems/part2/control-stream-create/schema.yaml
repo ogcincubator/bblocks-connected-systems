@@ -1,0 +1,11 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+allOf:
+- $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part2/control-stream/schema.yaml
+- properties:
+    schema:
+      description: Schema describing the content of commands in this control stream.
+        The exact syntax of the schema depends on the encoding format.
+      $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part2/command-schema/schema.yaml
+      writeOnly: true
+  required:
+  - schema

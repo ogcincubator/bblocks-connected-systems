@@ -1,0 +1,75 @@
+
+
+{
+  "itemIdentifier": "ogc.api.connected-systems.part2.observation-schema-swe",
+  "name": "ObservationSchemaSwe",
+  "abstract": "Observation schema for SWE Common encodings (text, binary, etc.), giving the record schema and the encoding rules of the observation stream.",
+  "status": "under-development",
+  "dateTimeAddition": "2026-09-23T00:00:00Z",
+  "itemClass": "schema",
+  "version": "0.1",
+  "group": "Part 2",
+  "sources": [
+    {
+      "title": "api/part2/openapi/schemas/json/observationSchemaSwe.json in opengeospatial/ogcapi-connected-systems",
+      "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/api/part2/openapi/schemas/json/observationSchemaSwe.json"
+    }
+  ],
+  "shaclShapes": {},
+  "dependsOn": [
+    "ogc.api.connected-systems.swecommon.swe-common",
+    "ogc.api.connected-systems.swecommon.encodings"
+  ],
+  "dateOfLastChange": "2026-09-23",
+  "schema": {
+    "application/yaml": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part2/observation-schema-swe/schema.yaml",
+    "application/json": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part2/observation-schema-swe/schema.json"
+  },
+  "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part2/observation-schema-swe/schema.json",
+  "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part2/observation-schema-swe/resolvedProperties.json",
+  "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part2/observation-schema-swe/",
+  "validationPassed": true,
+  "testOutputs": "https://github.com/ogcincubator/bblocks-connected-systems/blob/master/build/tests/api/connected-systems/part2/observation-schema-swe/",
+  "description": "<!-- generated -->\n# ObservationSchemaSwe\n\nConverted from [`api/part2/openapi/schemas/json/observationSchemaSwe.json`](https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/api/part2/openapi/schemas/json/observationSchemaSwe.json) in the OGC API - Connected Systems repository.\n\n## Properties\n\n| Property | Type | Required | Description |\n|---|---|---|---|\n| `obsFormat` | `string` | yes |  |\n| `recordSchema` | `../common/sweCommonDefs.json#/$defs/AnyComponent` | yes |  |\n| `encoding` |  | yes |  |\n\n## Examples\n\n3 example(s) taken from the specification are included and validated against this schema.\n\n",
+  "examples": [
+    {
+      "title": "ObservationSchema geopose swejson",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part2/observation-schema-swe/examples/observationSchema-geopose-swejson.json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part2/observation-schema-swe/example_1_1.json",
+          "sizeBytes": 3393,
+          "code": "{\n  \"obsFormat\": \"application/swe+json\",\n  \"recordSchema\": {\n    \"type\": \"DataRecord\",\n    \"label\": \"Basic YPR Pose\",\n    \"description\": \"Pose of platform (position + euler angles) in WGS84/ENU\",\n    \"definition\": \"http://www.opengis.net/spec/geopose/1.0/req/basic-ypr\",\n    \"fields\": [\n      {\n        \"name\": \"time\",\n        \"type\": \"Time\",\n        \"definition\": \"http://www.opengis.net/def/property/OGC/0/SamplingTime\",\n        \"referenceFrame\": \"http://www.opengis.net/def/trs/BIPM/0/UTC\",\n        \"label\": \"Sampling Time\",\n        \"uom\": {\n          \"href\": \"http://www.opengis.net/def/uom/ISO-8601/0/Gregorian\"\n        }\n      },\n      {\n        \"name\": \"position\",\n        \"type\": \"Vector\",\n        \"label\": \"Tangent Point Position\",\n        \"definition\": \"http://sensorml.com/ont/swe/property/Location\",\n        \"referenceFrame\": \"http://www.opengis.net/def/crs/EPSG/0/4979\",\n        \"coordinates\": [\n          {\n            \"name\": \"lat\",\n            \"type\": \"Quantity\",\n            \"definition\": \"http://sensorml.com/ont/swe/property/GeodeticLatitude\",\n            \"axisID\": \"Lat\",\n            \"label\": \"Geodetic Latitude\",\n            \"uom\": {\n              \"code\": \"deg\"\n            }\n          },\n          {\n            \"name\": \"lon\",\n            \"type\": \"Quantity\",\n            \"definition\": \"http://sensorml.com/ont/swe/property/Longitude\",\n            \"axisID\": \"Lon\",\n            \"label\": \"Longitude\",\n            \"uom\": {\n              \"code\": \"deg\"\n            }\n          },\n          {\n            \"name\": \"h\",\n            \"type\": \"Quantity\",\n            \"definition\": \"http://sensorml.com/ont/swe/property/HeightAboveEllipsoid\",\n            \"axisID\": \"h\",\n            \"label\": \"Ellipsoidal Height\",\n            \"uom\": {\n              \"code\": \"m\"\n            }\n          }\n        ]\n      },\n      {\n        \"name\": \"angles\",\n        \"type\": \"Vector\",\n        \"label\": \"Yaw Pitch Roll Angles\",\n        \"description\": \"Euler angles with order of rotation yaw/pitch/roll in rotating frame\",\n        \"definition\": \"http://sensorml.com/ont/swe/property/EulerAngles\",\n        \"referenceFrame\": \"http://www.opengis.net/def/cs/OGC/0/ENU\",\n        \"coordinates\": [\n          {\n            \"name\": \"yaw\",\n            \"type\": \"Quantity\",\n            \"definition\": \"http://sensorml.com/ont/swe/property/YawAngle\",\n            \"axisID\": \"Z\",\n            \"label\": \"Yaw Angle\",\n            \"description\": \"Heading angle from true north, measured clockwise\",\n            \"uom\": {\n              \"code\": \"deg\"\n            }\n          },\n          {\n            \"name\": \"pitch\",\n            \"type\": \"Quantity\",\n            \"definition\": \"http://sensorml.com/ont/swe/property/PitchAngle\",\n            \"axisID\": \"Y\",\n            \"label\": \"Pitch Angle\",\n            \"description\": \"Rotation around the lateral axis, up/down from the local horizontal plane (positive when pointing up)\",\n            \"uom\": {\n              \"code\": \"deg\"\n            }\n          },\n          {\n            \"name\": \"roll\",\n            \"type\": \"Quantity\",\n            \"definition\": \"http://sensorml.com/ont/swe/property/RollAngle\",\n            \"axisID\": \"X\",\n            \"label\": \"Roll Angle\",\n            \"description\": \"Rotation around the longitudinal axis\",\n            \"uom\": {\n              \"code\": \"deg\"\n            }\n          }\n        ]\n      }\n    ]\n  },\n  \"encoding\": {\n    \"type\": \"JSONEncoding\"\n  }\n}"
+        }
+      ]
+    },
+    {
+      "title": "ObservationSchema scalar swecsv",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part2/observation-schema-swe/examples/observationSchema-scalar-swecsv.json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part2/observation-schema-swe/example_2_1.json",
+          "sizeBytes": 1266,
+          "code": "{\n  \"obsFormat\": \"application/swe+csv\",\n  \"recordSchema\": {\n    \"type\": \"DataRecord\",\n    \"fields\": [\n      {\n        \"name\": \"time\",\n        \"type\": \"Time\",\n        \"definition\": \"http://www.opengis.net/def/property/OGC/0/SamplingTime\",\n        \"referenceFrame\": \"http://www.opengis.net/def/trs/BIPM/0/UTC\",\n        \"label\": \"Sampling Time\",\n        \"uom\": {\n          \"href\": \"http://www.opengis.net/def/uom/ISO-8601/0/Gregorian\"\n        }\n      },\n      {\n        \"name\": \"temp\",\n        \"type\": \"Quantity\",\n        \"definition\": \"http://mmisw.org/ont/cf/parameter/air_temperature\",\n        \"label\": \"Room Temperature\",\n        \"description\": \"Ambient air temperature measured inside the room\",\n        \"uom\": {\n          \"code\": \"Cel\"\n        },\n        \"nilValues\": [\n          { \"reason\": \"http://www.opengis.net/def/nil/OGC/0/missing\", \"value\": \"NaN\" },\n          { \"reason\": \"http://www.opengis.net/def/nil/OGC/0/BelowDetectionRange\", \"value\": \"-Infinity\" },\n          { \"reason\": \"http://www.opengis.net/def/nil/OGC/0/AboveDetectionRange\", \"value\": \"+Infinity\" }\n        ]\n      }\n    ]\n  },\n  \"encoding\": {\n    \"type\": \"TextEncoding\",\n    \"collapseWhiteSpaces\": true,\n    \"decimalSeparator\": \".\",\n    \"tokenSeparator\": \",\",\n    \"blockSeparator\": \"\\n\"\n  }\n}"
+        }
+      ]
+    },
+    {
+      "title": "ObservationSchema scalar swejson",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part2/observation-schema-swe/examples/observationSchema-scalar-swejson.json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part2/observation-schema-swe/example_3_1.json",
+          "sizeBytes": 1150,
+          "code": "{\n  \"obsFormat\": \"application/swe+json\",\n  \"recordSchema\": {\n    \"type\": \"DataRecord\",\n    \"fields\": [\n      {\n        \"name\": \"time\",\n        \"type\": \"Time\",\n        \"definition\": \"http://www.opengis.net/def/property/OGC/0/SamplingTime\",\n        \"referenceFrame\": \"http://www.opengis.net/def/trs/BIPM/0/UTC\",\n        \"label\": \"Sampling Time\",\n        \"uom\": {\n          \"href\": \"http://www.opengis.net/def/uom/ISO-8601/0/Gregorian\"\n        }\n      },\n      {\n        \"name\": \"temp\",\n        \"type\": \"Quantity\",\n        \"definition\": \"http://mmisw.org/ont/cf/parameter/air_temperature\",\n        \"label\": \"Room Temperature\",\n        \"description\": \"Ambient air temperature measured inside the room\",\n        \"uom\": {\n          \"code\": \"Cel\"\n        },\n        \"nilValues\": [\n          { \"reason\": \"http://www.opengis.net/def/nil/OGC/0/missing\", \"value\": \"NaN\" },\n          { \"reason\": \"http://www.opengis.net/def/nil/OGC/0/BelowDetectionRange\", \"value\": \"-Infinity\" },\n          { \"reason\": \"http://www.opengis.net/def/nil/OGC/0/AboveDetectionRange\", \"value\": \"+Infinity\" }\n        ]\n      }\n    ]\n  },\n  \"encoding\": {\n    \"type\": \"JSONEncoding\"\n  }\n}"
+        }
+      ]
+    }
+  ],
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ntype: object\nproperties:\n  obsFormat:\n    type: string\n  recordSchema:\n    $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/swe-common/schema.yaml#AnyComponent\n  encoding: {}\nrequired:\n- obsFormat\n- recordSchema\n- encoding\noneOf:\n- title: SWE JSON\n  properties:\n    obsFormat:\n      const: application/swe+json\n    encoding:\n      $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/encodings/schema.yaml#JSONEncoding\n- title: SWE Text\n  properties:\n    obsFormat:\n      const: application/swe+text\n    encoding:\n      $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/encodings/schema.yaml#TextEncoding\n- title: SWE CSV\n  properties:\n    obsFormat:\n      const: application/swe+csv\n    encoding:\n      allOf:\n      - $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/encodings/schema.yaml#TextEncoding\n      - properties:\n          tokenSeparator:\n            const: ','\n          blockSeparator:\n            const: '\n\n              '\n- title: SWE Binary\n  properties:\n    obsFormat:\n      const: application/swe+binary\n    encoding:\n      $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/encodings/schema.yaml#BinaryEncoding\n",
+  "gitRepository": "https://github.com/ogcincubator/bblocks-connected-systems",
+  "gitPath": "_sources/part2/observation-schema-swe"
+}

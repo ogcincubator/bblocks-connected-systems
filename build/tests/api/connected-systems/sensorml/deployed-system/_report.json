@@ -1,0 +1,14 @@
+{
+  "title": "Validation report for ogc.api.connected-systems.sensorml.deployed-system - DeployedSystem",
+  "bblockName": "DeployedSystem",
+  "bblockId": "ogc.api.connected-systems.sensorml.deployed-system",
+  "generated": "2026-09-23T22:13:51.975628+00:00",
+  "result": true,
+  "items": [],
+  "globalErrors": {},
+  "counts": {
+    "total": 0,
+    "passed": 0,
+    "failed": 0
+  }
+}

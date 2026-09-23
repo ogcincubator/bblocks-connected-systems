@@ -1,0 +1,24 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+description: Scalar component used to represent a categorical value as a simple token
+  identifying a term in a code space
+type: object
+allOf:
+- $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/abstract-simple-component/schema.yaml
+- properties:
+    type:
+      const: Category
+    codeSpace:
+      description: Name of the dictionary where the possible values for this component
+        are listed and defined
+      type: string
+      format: uri
+    constraint:
+      $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/basic-types/schema.yaml#AllowedTokens
+    nilValues:
+      $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/basic-types/schema.yaml#NilValuesText
+    value:
+      type: string
+  required:
+  - type
+  - definition
+  - label

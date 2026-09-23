@@ -1,0 +1,67 @@
+
+
+{
+  "itemIdentifier": "ogc.api.connected-systems.part1.procedure-sensorml",
+  "name": "Procedure (SensorML)",
+  "abstract": "A Procedure (SensorML 3.0 JSON encoding): a specification of how observations are made or commands are executed, such as a sensor datasheet, method or protocol that systems implement.",
+  "status": "under-development",
+  "dateTimeAddition": "2026-09-23T00:00:00Z",
+  "itemClass": "schema",
+  "version": "0.1",
+  "group": "Part 1",
+  "sources": [
+    {
+      "title": "api/part1/openapi/schemas/sensorml/procedure.json in opengeospatial/ogcapi-connected-systems",
+      "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/api/part1/openapi/schemas/sensorml/procedure.json"
+    }
+  ],
+  "shaclShapes": {},
+  "dependsOn": [
+    "ogc.api.connected-systems.sensorml.aggregate-process",
+    "ogc.api.connected-systems.sensorml.simple-process",
+    "ogc.api.connected-systems.part1.links",
+    "ogc.api.connected-systems.part1.uris",
+    "ogc.api.connected-systems.sensorml.physical-component",
+    "ogc.api.connected-systems.sensorml.physical-system"
+  ],
+  "dateOfLastChange": "2026-09-23",
+  "schema": {
+    "application/yaml": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part1/procedure-sensorml/schema.yaml",
+    "application/json": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part1/procedure-sensorml/schema.json"
+  },
+  "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part1/procedure-sensorml/schema.json",
+  "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part1/procedure-sensorml/resolvedProperties.json",
+  "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part1/procedure-sensorml/",
+  "validationPassed": true,
+  "testOutputs": "https://github.com/ogcincubator/bblocks-connected-systems/blob/master/build/tests/api/connected-systems/part1/procedure-sensorml/",
+  "description": "<!-- generated -->\n# Procedure (SensorML)\n\nConverted from [`api/part1/openapi/schemas/sensorml/procedure.json`](https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/api/part1/openapi/schemas/sensorml/procedure.json) in the OGC API - Connected Systems repository.\n\n## Properties\n\n| Property | Type | Required | Description |\n|---|---|---|---|\n| `definition` | `../common/uris.json#/$defs/ProcedureTypeUris` | yes |  |\n| `position` |  |  |  |\n| `links` | `../common/links.json` |  | Links to related resources |\n\n## Examples\n\n2 example(s) taken from the specification are included and validated against this schema.\n\n",
+  "examples": [
+    {
+      "title": "Ins sensor sml",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part1/procedure-sensorml/examples/ins-sensor-sml.json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part1/procedure-sensorml/example_1_1.json",
+          "sizeBytes": 4597,
+          "code": "{\n  \"type\": \"PhysicalSystem\",\n  \"id\": \"INS001\",\n  \"definition\": \"http://www.w3.org/ns/ssn-system/SensorKind\",\n  \"uniqueId\": \"urn:x-vectornav:sensor:vn200\",\n  \"label\": \"VectorNav VN-200\",\n  \"description\": \"Datasheet of VN-200 GNSS-aided inertial navigation system\",\n  \"identifiers\": [\n    {\n      \"definition\": \"http://sensorml.com/ont/swe/property/ModelNumber\",\n      \"label\": \"Model Number\",\n      \"value\": \"VN-200\"\n    }\n  ],\n  \"classifiers\": [\n    {\n      \"definition\": \"http://sensorml.com/ont/swe/property/SensorType\",\n      \"label\": \"Sensor Type\",\n      \"value\": \"Inertial Navigation System\"\n    }\n  ],\n  \"contacts\": [\n    {\n      \"role\": \"http://sensorml.com/ont/swe/property/Manufacturer\",\n      \"organisationName\": \"VectorNav\"\n    }\n  ],\n  \"capabilities\": [\n    {\n      \"definition\": \"http://www.w3.org/ns/ssn/systems/SystemCapability\",\n      \"label\": \"Heading Measurement Capabilities\",\n      \"capabilities\": [\n        {\n          \"name\": \"range\",\n          \"type\": \"QuantityRange\",\n          \"definition\": \"http://www.w3.org/ns/ssn/systems/MeasurementRange\",\n          \"label\": \"Measurement Range\",\n          \"uom\": {\n            \"code\": \"deg\"\n          },\n          \"value\": [-180.0,180.0]\n        },\n        {\n          \"name\": \"resolution\",\n          \"type\": \"Quantity\",\n          \"definition\": \"http://www.w3.org/ns/ssn/systems/Resolution\",\n          \"label\": \"Resolution\",\n          \"uom\": {\n            \"code\": \"deg\"\n          },\n          \"value\": 0.001\n        },\n        {\n          \"name\": \"accuracy\",\n          \"type\": \"Quantity\",\n          \"definition\": \"http://sensorml.com/ont/swe/property/AbsoluteAccuracy\",\n          \"label\": \"Absolute Accuracy (1\u03c3)\",\n          \"uom\": {\n            \"code\": \"deg\"\n          },\n          \"value\": 0.2\n        }\n      ]\n    },\n    {\n      \"definition\": \"http://www.w3.org/ns/ssn/systems/SystemCapability\",\n      \"label\": \"Pitch Measurement Capabilities\",\n      \"capabilities\": [\n        {\n          \"name\": \"range\",\n          \"type\": \"QuantityRange\",\n          \"definition\": \"http://www.w3.org/ns/ssn/systems/MeasurementRange\",\n          \"label\": \"Measurement Range\",\n          \"uom\": {\n            \"code\": \"deg\"\n          },\n          \"value\": [-90.0,90.0]\n        },\n        {\n          \"name\": \"resolution\",\n          \"type\": \"Quantity\",\n          \"definition\": \"http://www.w3.org/ns/ssn/systems/Resolution\",\n          \"label\": \"Resolution\",\n          \"uom\": {\n            \"code\": \"deg\"\n          },\n          \"value\": 0.001\n        },\n        {\n          \"name\": \"accuracy\",\n          \"type\": \"Quantity\",\n          \"definition\": \"http://sensorml.com/ont/swe/property/AbsoluteAccuracy\",\n          \"label\": \"Absolute Accuracy (1\u03c3)\",\n          \"uom\": {\n            \"code\": \"deg\"\n          },\n          \"value\": 0.03\n        }\n      ]\n    },\n    {\n      \"definition\": \"http://www.w3.org/ns/ssn/systems/SystemCapability\",\n      \"label\": \"Roll Measurement Capabilities\",\n      \"capabilities\": [\n        {\n          \"name\": \"range\",\n          \"type\": \"QuantityRange\",\n          \"definition\": \"http://www.w3.org/ns/ssn/systems/MeasurementRange\",\n          \"label\": \"Measurement Range\",\n          \"uom\": {\n            \"code\": \"deg\"\n          },\n          \"value\": [-180.0,180.0]\n        },\n        {\n          \"name\": \"resolution\",\n          \"type\": \"Quantity\",\n          \"definition\": \"http://www.w3.org/ns/ssn/systems/Resolution\",\n          \"label\": \"Resolution\",\n          \"uom\": {\n            \"code\": \"deg\"\n          },\n          \"value\": 0.001\n        },\n        {\n          \"name\": \"accuracy\",\n          \"type\": \"Quantity\",\n          \"definition\": \"http://sensorml.com/ont/swe/property/AbsoluteAccuracy\",\n          \"label\": \"Absolute Accuracy (1\u03c3)\",\n          \"uom\": {\n            \"code\": \"deg\"\n          },\n          \"value\": 0.03\n        }\n      ]\n    }\n  ],\n  \"components\": [\n    {\n      \"name\": \"accel\",\n      \"type\": \"PhysicalSystem\",\n      \"definition\": \"http://www.w3.org/ns/sosa/Sensor\",\n      \"uniqueId\": \"urn:x-vectornav:sensor:vn200:accel\",\n      \"label\": \"Accelerometer\",\n      \"description\": \"3-axis accelerometer\"\n    },\n    {\n      \"name\": \"gyro\",\n      \"type\": \"PhysicalSystem\",\n      \"definition\": \"http://www.w3.org/ns/sosa/Sensor\",\n      \"uniqueId\": \"urn:x-vectornav:sensor:vn200:gyro\",\n      \"label\": \"Gyroscope\",\n      \"description\": \"3-axis gyroscope\"\n    },\n    {\n      \"name\": \"mag\",\n      \"type\": \"PhysicalSystem\",\n      \"definition\": \"http://www.w3.org/ns/sosa/Sensor\",\n      \"uniqueId\": \"urn:x-vectornav:sensor:vn200:mag\",\n      \"label\": \"Magnetometer\",\n      \"description\": \"3-axis magnetometer\"\n    }\n  ]\n}"
+        }
+      ]
+    },
+    {
+      "title": "Sensor datasheet sml",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part1/procedure-sensorml/examples/sensor-datasheet-sml.json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part1/procedure-sensorml/example_2_1.json",
+          "sizeBytes": 2169,
+          "code": "{\n  \"type\": \"PhysicalComponent\",\n  \"id\": \"iv3f2kcq27gfi\",\n  \"definition\": \"http://www.w3.org/ns/ssn-system/SensorKind\",\n  \"uniqueId\": \"urn:osh:sensors:saildrone:S0004\",\n  \"label\": \"3D Ultrasonic Anemometer\",\n  \"description\": \"Precision 3-axis ultrasonic anemometer\",\n  \"identifiers\": [\n    {\n      \"definition\": \"http://sensorml.com/ont/swe/property/Manufacturer\",\n      \"label\": \"Manufacturer Name\",\n      \"value\": \"Gill\"\n    },\n    {\n      \"definition\": \"http://sensorml.com/ont/swe/property/ModelNumber\",\n      \"label\": \"Model Number\",\n      \"value\": \"WindMaster\"\n    }\n  ],\n  \"classifiers\": [\n    {\n      \"definition\": \"http://sensorml.com/ont/swe/property/SensorType\",\n      \"label\": \"Sensor Type\",\n      \"value\": \"Anemometer\"\n    }\n  ],\n  \"capabilities\": [\n    {\n      \"definition\": \"http://www.w3.org/ns/ssn/systems/SystemCapability\",\n      \"label\": \"Speed Measurement Capabilities\",\n      \"capabilities\": [\n        {\n          \"name\": \"range\",\n          \"type\": \"QuantityRange\",\n          \"definition\": \"http://www.w3.org/ns/ssn/systems/MeasurementRange\",\n          \"label\": \"Measurement Range\",\n          \"uom\": {\n            \"code\": \"m/s\"\n          },\n          \"value\": [0.0,50.0]\n        },\n        {\n          \"name\": \"resolution\",\n          \"type\": \"Quantity\",\n          \"definition\": \"http://www.w3.org/ns/ssn/systems/Resolution\",\n          \"label\": \"Resolution\",\n          \"uom\": {\n            \"code\": \"m/s\"\n          },\n          \"value\": 0.01\n        },\n        {\n          \"name\": \"accuracy\",\n          \"type\": \"Quantity\",\n          \"definition\": \"http://sensorml.com/ont/swe/property/RelativeAccuracy\",\n          \"label\": \"Relative Accuracy\",\n          \"uom\": {\n            \"code\": \"%\"\n          },\n          \"value\": 1.5\n        }\n      ]\n    }\n  ],\n  \"links\": [\n    {\n      \"href\" : \"https://data.example.org/api/procedures/iv3f2kcq27gfi?f=sml\",\n      \"rel\" : \"self\",\n      \"type\" : \"application/sml+json\",\n      \"title\" : \"this document\"\n    }, {\n      \"href\" : \"https://data.example.org/api/procedures/iv3f2kcq27gfi?f=json\",\n      \"rel\" : \"alternate\",\n      \"type\" : \"application/geo+json\",\n      \"title\" : \"this resource as GeoJSON\"\n    }\n  ]\n}"
+        }
+      ]
+    }
+  ],
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\nallOf:\n- oneOf:\n  - $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/simple-process/schema.yaml\n  - $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/aggregate-process/schema.yaml\n  - $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/physical-component/schema.yaml\n  - $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/physical-system/schema.yaml\n- properties:\n    definition:\n      $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part1/uris/schema.yaml#ProcedureTypeUris\n    position:\n      not: {}\n    links:\n      description: Links to related resources\n      $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part1/links/schema.yaml\n  required:\n  - definition\n  - uniqueId\n",
+  "gitRepository": "https://github.com/ogcincubator/bblocks-connected-systems",
+  "gitPath": "_sources/part1/procedure-sensorml"
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "allOf": [
+    {
+      "$ref": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/deployed-system/schema.json"
+    },
+    {
+      "properties": {
+        "id": {
+          "description": "Local ID of the deployed system resource (e.g., locally unique on a server)",
+          "type": "string",
+          "minLength": 1,
+          "readOnly": true
+        },
+        "links": {
+          "description": "Links to related resources",
+          "$ref": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part1/links/schema.json"
+        }
+      }
+    }
+  ]
+}

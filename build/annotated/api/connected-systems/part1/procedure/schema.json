@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "allOf": [
+    {
+      "$ref": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part1/feature/schema.json"
+    },
+    {
+      "properties": {
+        "geometry": {
+          "type": "null"
+        },
+        "properties": {
+          "properties": {
+            "featureType": {
+              "$ref": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part1/uris/schema.json#ProcedureTypeUris"
+            }
+          }
+        }
+      }
+    }
+  ]
+}

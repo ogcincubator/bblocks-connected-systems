@@ -1,0 +1,14 @@
+{
+  "title": "Validation report for ogc.api.connected-systems.part2.data-stream-create - DataStream_create",
+  "bblockName": "DataStream_create",
+  "bblockId": "ogc.api.connected-systems.part2.data-stream-create",
+  "generated": "2026-09-23T22:13:51.962872+00:00",
+  "result": true,
+  "items": [],
+  "globalErrors": {},
+  "counts": {
+    "total": 0,
+    "passed": 0,
+    "failed": 0
+  }
+}
