@@ -37,9 +37,9 @@ schema-oas30-downcompile: False
 # If "url" is left unspecified and a LICENSE, LICENSE.md or LICENSE.txt file exists at the repository
 # root, its published URL is used automatically.
 #
-# license:
-#   name: Apache-2.0
-#   url: https://www.apache.org/licenses/LICENSE-2.0
+license:
+  name: Apache-2.0
+  url: https://www.apache.org/licenses/LICENSE-2.0
 
 # Viewer configuration (optional)
 #
