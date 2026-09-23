@@ -1,5 +1,5 @@
 Validation report for ogc.api.connected-systems.swecommon.matrix - Matrix
-Generated 2026-09-23T22:13:47.866415+00:00
+Generated 2026-09-23T22:26:43.872416+00:00
 === Files ===
 Using examples/matrix1.json from examples
 === End Files ===

@@ -2,7 +2,7 @@
   "title": "Validation report for ogc.api.connected-systems.part2.control-stream-create - ControlStream_create",
   "bblockName": "ControlStream_create",
   "bblockId": "ogc.api.connected-systems.part2.control-stream-create",
-  "generated": "2026-09-23T22:13:51.949260+00:00",
+  "generated": "2026-09-23T22:26:47.721984+00:00",
   "result": true,
   "items": [],
   "globalErrors": {},

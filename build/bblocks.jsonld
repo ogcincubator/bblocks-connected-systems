@@ -213,7 +213,7 @@
   "name": "Building Blocks - OGC API - Connected Systems Building Blocks",
   "abstract": "Data models of the OGC API - Connected Systems standard and its underlying SWE Common 3.0 and SensorML 3.0 encodings, as reusable building blocks.\n",
   "description": "Draft conversion of the JSON schemas maintained in [opengeospatial/ogcapi-connected-systems](https://github.com/opengeospatial/ogcapi-connected-systems)\ninto building blocks. Scope is limited to data models (no OpenAPI paths/parameters, no XML encodings).\nSemantic annotations (JSON-LD contexts) are not yet provided.\n",
-  "modified": "2026-09-23T22:13:27.832054",
+  "modified": "2026-09-23T22:26:30.800337",
   "tooling": {
     "bblocks-postprocess": {
       "commitId": "\"6411aed037da38c6d9079d9350eca33d004a4d0c",
@@ -225,6 +225,10 @@
   "gitHubRepository": "https://github.com/ogcincubator/bblocks-connected-systems/blob/master/",
   "baseURL": "https://ogcincubator.github.io/bblocks-connected-systems/",
   "viewerURL": "https://ogcincubator.github.io/bblocks-connected-systems/",
+  "license": {
+    "name": "Apache-2.0",
+    "url": "https://www.apache.org/licenses/LICENSE-2.0"
+  },
   "validationReport": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/report.html",
   "validationReportJson": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/report.json",
   "imports": [
@@ -274,6 +278,10 @@
         }
       ],
       "shaclShapes": null,
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
@@ -341,6 +349,10 @@
         }
       ],
       "shaclShapes": null,
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
@@ -407,6 +419,10 @@
         }
       ],
       "shaclShapes": null,
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
@@ -473,6 +489,10 @@
         }
       ],
       "shaclShapes": null,
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
@@ -540,6 +560,10 @@
         }
       ],
       "shaclShapes": null,
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
@@ -606,6 +630,10 @@
         }
       ],
       "shaclShapes": null,
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
@@ -672,6 +700,10 @@
         }
       ],
       "shaclShapes": null,
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
@@ -739,6 +771,10 @@
         }
       ],
       "shaclShapes": null,
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
@@ -791,6 +827,79 @@
       }
     },
     {
+      "itemIdentifier": "ogc.api.connected-systems.swecommon.abstract-swe-identifiable",
+      "name": "AbstractSweIdentifiable",
+      "abstract": "Base substitution groups for all SWE Common objects with identification metadata",
+      "status": "under-development",
+      "dateTimeAddition": "2026-09-23T00:00:00Z",
+      "itemClass": "schema",
+      "version": "0.1",
+      "group": "SWE Common",
+      "sources": [
+        {
+          "title": "swecommon/schemas/json/AbstractSweIdentifiable.json in opengeospatial/ogcapi-connected-systems",
+          "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/swecommon/schemas/json/AbstractSweIdentifiable.json"
+        }
+      ],
+      "shaclShapes": null,
+      "dependsOn": [
+        "bblocks://ogc.api.connected-systems.swecommon.basic-types"
+      ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
+      "dateOfLastChange": "2026-09-23",
+      "schema": [
+        {
+          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/abstract-swe-identifiable/schema.yaml",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/yaml",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        },
+        {
+          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/abstract-swe-identifiable/schema.json",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/json",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        }
+      ],
+      "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/abstract-swe-identifiable/schema.json",
+      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/abstract-swe-identifiable/resolvedProperties.json",
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/abstract-swe-identifiable/",
+      "validationPassed": true,
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/markdown/api/connected-systems/swecommon/abstract-swe-identifiable/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/json-full/api/connected-systems/swecommon/abstract-swe-identifiable/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/bblock/ogc.api.connected-systems.swecommon.abstract-swe-identifiable"
+        }
+      },
+      "@id": "bblocks://ogc.api.connected-systems.swecommon.abstract-swe-identifiable",
+      "@type": [
+        "bblocks:Schema",
+        "skos:Concept",
+        "dcat:Dataset",
+        "bblocks:BBlock"
+      ],
+      "skos:prefLabel": "AbstractSweIdentifiable",
+      "ldContext": null,
+      "openAPIDocument": null,
+      "ontology": null,
+      "rdfData": [],
+      "isProfileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://ogcincubator.github.io/bblocks-connected-systems/"
+      }
+    },
+    {
       "itemIdentifier": "ogc.api.connected-systems.sensorml.pose",
       "name": "Pose",
       "abstract": "A Pose object that can be either a GeoPose Basic instance of a relative pose.",
@@ -806,6 +915,10 @@
         }
       ],
       "shaclShapes": null,
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
@@ -876,6 +989,10 @@
       "dependsOn": [
         "bblocks://ogc.api.connected-systems.swecommon.data-array"
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
@@ -928,73 +1045,6 @@
       }
     },
     {
-      "itemIdentifier": "ogc.api.connected-systems.sensorml.legal-constraint",
-      "name": "LegalConstraint",
-      "abstract": "LegalConstraint schema.",
-      "status": "under-development",
-      "dateTimeAddition": "2026-09-23T00:00:00Z",
-      "itemClass": "schema",
-      "version": "0.1",
-      "group": "SensorML",
-      "sources": [
-        {
-          "title": "sensorml/schemas/json/LegalConstraint.json in opengeospatial/ogcapi-connected-systems",
-          "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/sensorml/schemas/json/LegalConstraint.json"
-        }
-      ],
-      "shaclShapes": null,
-      "dateOfLastChange": "2026-09-23",
-      "schema": [
-        {
-          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/legal-constraint/schema.yaml",
-          "prof:hasRole": "role:schema",
-          "dct:format": "application/yaml",
-          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
-        },
-        {
-          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/legal-constraint/schema.json",
-          "prof:hasRole": "role:schema",
-          "dct:format": "application/json",
-          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
-        }
-      ],
-      "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/sensorml/legal-constraint/schema.json",
-      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/legal-constraint/resolvedProperties.json",
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/sensorml/legal-constraint/",
-      "validationPassed": true,
-      "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/markdown/api/connected-systems/sensorml/legal-constraint/index.md"
-        },
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/json-full/api/connected-systems/sensorml/legal-constraint/index.json"
-        },
-        "bblocks-viewer": {
-          "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/bblock/ogc.api.connected-systems.sensorml.legal-constraint"
-        }
-      },
-      "@id": "bblocks://ogc.api.connected-systems.sensorml.legal-constraint",
-      "@type": [
-        "bblocks:Schema",
-        "skos:Concept",
-        "dcat:Dataset",
-        "bblocks:BBlock"
-      ],
-      "skos:prefLabel": "LegalConstraint",
-      "ldContext": null,
-      "openAPIDocument": null,
-      "ontology": null,
-      "rdfData": [],
-      "dependsOn": null,
-      "isProfileOf": null,
-      "skos:topConceptOf": {
-        "@id": "https://ogcincubator.github.io/bblocks-connected-systems/"
-      }
-    },
-    {
       "itemIdentifier": "ogc.api.connected-systems.sensorml.responsible-party",
       "name": "ResponsibleParty",
       "abstract": "ResponsibleParty schema.",
@@ -1010,6 +1060,10 @@
         }
       ],
       "shaclShapes": null,
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
@@ -1062,69 +1116,71 @@
       }
     },
     {
-      "itemIdentifier": "ogc.api.connected-systems.swecommon.abstract-simple-component",
-      "name": "AbstractSimpleComponent",
-      "abstract": "AbstractSimpleComponent schema.",
+      "itemIdentifier": "ogc.api.connected-systems.sensorml.legal-constraint",
+      "name": "LegalConstraint",
+      "abstract": "LegalConstraint schema.",
       "status": "under-development",
       "dateTimeAddition": "2026-09-23T00:00:00Z",
       "itemClass": "schema",
       "version": "0.1",
-      "group": "SWE Common",
+      "group": "SensorML",
       "sources": [
         {
-          "title": "swecommon/schemas/json/AbstractSimpleComponent.json in opengeospatial/ogcapi-connected-systems",
-          "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/swecommon/schemas/json/AbstractSimpleComponent.json"
+          "title": "sensorml/schemas/json/LegalConstraint.json in opengeospatial/ogcapi-connected-systems",
+          "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/sensorml/schemas/json/LegalConstraint.json"
         }
       ],
       "shaclShapes": null,
-      "dependsOn": [
-        "bblocks://ogc.api.connected-systems.swecommon.abstract-data-component"
-      ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
-          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/abstract-simple-component/schema.yaml",
+          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/legal-constraint/schema.yaml",
           "prof:hasRole": "role:schema",
           "dct:format": "application/yaml",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         },
         {
-          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/abstract-simple-component/schema.json",
+          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/legal-constraint/schema.json",
           "prof:hasRole": "role:schema",
           "dct:format": "application/json",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         }
       ],
-      "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/abstract-simple-component/schema.json",
-      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/abstract-simple-component/resolvedProperties.json",
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/abstract-simple-component/",
+      "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/sensorml/legal-constraint/schema.json",
+      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/legal-constraint/resolvedProperties.json",
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/sensorml/legal-constraint/",
       "validationPassed": true,
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/markdown/api/connected-systems/swecommon/abstract-simple-component/index.md"
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/markdown/api/connected-systems/sensorml/legal-constraint/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/json-full/api/connected-systems/swecommon/abstract-simple-component/index.json"
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/json-full/api/connected-systems/sensorml/legal-constraint/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/bblock/ogc.api.connected-systems.swecommon.abstract-simple-component"
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/bblock/ogc.api.connected-systems.sensorml.legal-constraint"
         }
       },
-      "@id": "bblocks://ogc.api.connected-systems.swecommon.abstract-simple-component",
+      "@id": "bblocks://ogc.api.connected-systems.sensorml.legal-constraint",
       "@type": [
         "bblocks:Schema",
         "skos:Concept",
         "dcat:Dataset",
         "bblocks:BBlock"
       ],
-      "skos:prefLabel": "AbstractSimpleComponent",
+      "skos:prefLabel": "LegalConstraint",
       "ldContext": null,
       "openAPIDocument": null,
       "ontology": null,
       "rdfData": [],
+      "dependsOn": null,
       "isProfileOf": null,
       "skos:topConceptOf": {
         "@id": "https://ogcincubator.github.io/bblocks-connected-systems/"
@@ -1149,6 +1205,10 @@
       "dependsOn": [
         "bblocks://ogc.api.connected-systems.common.link"
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
@@ -1218,6 +1278,10 @@
       "dependsOn": [
         "bblocks://ogc.api.connected-systems.common.link"
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
@@ -1287,6 +1351,10 @@
       "dependsOn": [
         "bblocks://ogc.api.connected-systems.common.link"
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
@@ -1356,6 +1424,10 @@
       "dependsOn": [
         "bblocks://ogc.api.connected-systems.common.link"
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
@@ -1425,6 +1497,10 @@
       "dependsOn": [
         "bblocks://ogc.api.connected-systems.common.link"
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
@@ -1494,6 +1570,10 @@
       "dependsOn": [
         "bblocks://ogc.api.connected-systems.common.time-instant"
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
@@ -1563,6 +1643,10 @@
         "bblocks://ogc.api.connected-systems.common.time-instant",
         "bblocks://ogc.api.connected-systems.common.link"
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
@@ -1615,9 +1699,9 @@
       }
     },
     {
-      "itemIdentifier": "ogc.api.connected-systems.swecommon.basic-types",
-      "name": "BasicTypes",
-      "abstract": "BasicTypes schema.",
+      "itemIdentifier": "ogc.api.connected-systems.swecommon.abstract-data-component",
+      "name": "AbstractDataComponent",
+      "abstract": "Abstract base class for all data components",
       "status": "under-development",
       "dateTimeAddition": "2026-09-23T00:00:00Z",
       "itemClass": "schema",
@@ -1625,124 +1709,59 @@
       "group": "SWE Common",
       "sources": [
         {
-          "title": "swecommon/schemas/json/basicTypes.json in opengeospatial/ogcapi-connected-systems",
-          "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/swecommon/schemas/json/basicTypes.json"
+          "title": "swecommon/schemas/json/AbstractDataComponent.json in opengeospatial/ogcapi-connected-systems",
+          "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/swecommon/schemas/json/AbstractDataComponent.json"
         }
       ],
       "shaclShapes": null,
       "dependsOn": [
-        "bblocks://ogc.api.connected-systems.swecommon.abstract-simple-component"
+        "bblocks://ogc.api.connected-systems.swecommon.abstract-swe-identifiable"
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
-          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/basic-types/schema.yaml",
+          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/abstract-data-component/schema.yaml",
           "prof:hasRole": "role:schema",
           "dct:format": "application/yaml",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         },
         {
-          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/basic-types/schema.json",
+          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/abstract-data-component/schema.json",
           "prof:hasRole": "role:schema",
           "dct:format": "application/json",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         }
       ],
-      "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/basic-types/schema.json",
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/basic-types/",
+      "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/abstract-data-component/schema.json",
+      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/abstract-data-component/resolvedProperties.json",
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/abstract-data-component/",
       "validationPassed": true,
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/markdown/api/connected-systems/swecommon/basic-types/index.md"
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/markdown/api/connected-systems/swecommon/abstract-data-component/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/json-full/api/connected-systems/swecommon/basic-types/index.json"
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/json-full/api/connected-systems/swecommon/abstract-data-component/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/bblock/ogc.api.connected-systems.swecommon.basic-types"
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/bblock/ogc.api.connected-systems.swecommon.abstract-data-component"
         }
       },
-      "@id": "bblocks://ogc.api.connected-systems.swecommon.basic-types",
+      "@id": "bblocks://ogc.api.connected-systems.swecommon.abstract-data-component",
       "@type": [
         "bblocks:Schema",
         "skos:Concept",
         "dcat:Dataset",
         "bblocks:BBlock"
       ],
-      "skos:prefLabel": "BasicTypes",
-      "ldContext": null,
-      "openAPIDocument": null,
-      "ontology": null,
-      "rdfData": [],
-      "isProfileOf": null,
-      "skos:topConceptOf": {
-        "@id": "https://ogcincubator.github.io/bblocks-connected-systems/"
-      }
-    },
-    {
-      "itemIdentifier": "ogc.api.connected-systems.swecommon.boolean",
-      "name": "Boolean",
-      "abstract": "Scalar component used to express truth: True or False, 0 or 1",
-      "status": "under-development",
-      "dateTimeAddition": "2026-09-23T00:00:00Z",
-      "itemClass": "schema",
-      "version": "0.1",
-      "group": "SWE Common",
-      "sources": [
-        {
-          "title": "swecommon/schemas/json/Boolean.json in opengeospatial/ogcapi-connected-systems",
-          "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/swecommon/schemas/json/Boolean.json"
-        }
-      ],
-      "shaclShapes": null,
-      "dependsOn": [
-        "bblocks://ogc.api.connected-systems.swecommon.abstract-simple-component"
-      ],
-      "dateOfLastChange": "2026-09-23",
-      "schema": [
-        {
-          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/boolean/schema.yaml",
-          "prof:hasRole": "role:schema",
-          "dct:format": "application/yaml",
-          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
-        },
-        {
-          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/boolean/schema.json",
-          "prof:hasRole": "role:schema",
-          "dct:format": "application/json",
-          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
-        }
-      ],
-      "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/boolean/schema.json",
-      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/boolean/resolvedProperties.json",
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/boolean/",
-      "validationPassed": true,
-      "testOutputs": "https://github.com/ogcincubator/bblocks-connected-systems/blob/master/build/tests/api/connected-systems/swecommon/boolean/",
-      "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/markdown/api/connected-systems/swecommon/boolean/index.md"
-        },
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/json-full/api/connected-systems/swecommon/boolean/index.json"
-        },
-        "bblocks-viewer": {
-          "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/bblock/ogc.api.connected-systems.swecommon.boolean"
-        }
-      },
-      "@id": "bblocks://ogc.api.connected-systems.swecommon.boolean",
-      "@type": [
-        "bblocks:Schema",
-        "skos:Concept",
-        "dcat:Dataset",
-        "bblocks:BBlock"
-      ],
-      "skos:prefLabel": "Boolean",
+      "skos:prefLabel": "AbstractDataComponent",
       "ldContext": null,
       "openAPIDocument": null,
       "ontology": null,
@@ -1785,6 +1804,10 @@
         "bblocks://ogc.geo.features.feature",
         "bblocks://ogc.api.connected-systems.common.link"
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
@@ -1872,6 +1895,10 @@
         "bblocks://ogc.api.connected-systems.part1.links",
         "bblocks://ogc.geo.features.feature"
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
@@ -1945,6 +1972,10 @@
       "dependsOn": [
         "bblocks://ogc.api.connected-systems.common.time-instant-or-now"
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
@@ -2011,9 +2042,13 @@
       ],
       "shaclShapes": null,
       "dependsOn": [
-        "bblocks://ogc.api.connected-systems.part1.links",
-        "bblocks://ogc.api.connected-systems.part2.observation"
+        "bblocks://ogc.api.connected-systems.part2.observation",
+        "bblocks://ogc.api.connected-systems.part1.links"
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
@@ -2065,9 +2100,9 @@
       }
     },
     {
-      "itemIdentifier": "ogc.api.connected-systems.swecommon.abstract-swe-identifiable",
-      "name": "AbstractSweIdentifiable",
-      "abstract": "Base substitution groups for all SWE Common objects with identification metadata",
+      "itemIdentifier": "ogc.api.connected-systems.swecommon.abstract-simple-component",
+      "name": "AbstractSimpleComponent",
+      "abstract": "AbstractSimpleComponent schema.",
       "status": "under-development",
       "dateTimeAddition": "2026-09-23T00:00:00Z",
       "itemClass": "schema",
@@ -2075,763 +2110,59 @@
       "group": "SWE Common",
       "sources": [
         {
-          "title": "swecommon/schemas/json/AbstractSweIdentifiable.json in opengeospatial/ogcapi-connected-systems",
-          "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/swecommon/schemas/json/AbstractSweIdentifiable.json"
+          "title": "swecommon/schemas/json/AbstractSimpleComponent.json in opengeospatial/ogcapi-connected-systems",
+          "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/swecommon/schemas/json/AbstractSimpleComponent.json"
         }
       ],
       "shaclShapes": null,
       "dependsOn": [
-        "bblocks://ogc.api.connected-systems.swecommon.basic-types"
+        "bblocks://ogc.api.connected-systems.swecommon.abstract-data-component"
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
-          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/abstract-swe-identifiable/schema.yaml",
+          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/abstract-simple-component/schema.yaml",
           "prof:hasRole": "role:schema",
           "dct:format": "application/yaml",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         },
         {
-          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/abstract-swe-identifiable/schema.json",
+          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/abstract-simple-component/schema.json",
           "prof:hasRole": "role:schema",
           "dct:format": "application/json",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         }
       ],
-      "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/abstract-swe-identifiable/schema.json",
-      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/abstract-swe-identifiable/resolvedProperties.json",
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/abstract-swe-identifiable/",
+      "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/abstract-simple-component/schema.json",
+      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/abstract-simple-component/resolvedProperties.json",
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/abstract-simple-component/",
       "validationPassed": true,
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/markdown/api/connected-systems/swecommon/abstract-swe-identifiable/index.md"
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/markdown/api/connected-systems/swecommon/abstract-simple-component/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/json-full/api/connected-systems/swecommon/abstract-swe-identifiable/index.json"
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/json-full/api/connected-systems/swecommon/abstract-simple-component/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/bblock/ogc.api.connected-systems.swecommon.abstract-swe-identifiable"
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/bblock/ogc.api.connected-systems.swecommon.abstract-simple-component"
         }
       },
-      "@id": "bblocks://ogc.api.connected-systems.swecommon.abstract-swe-identifiable",
+      "@id": "bblocks://ogc.api.connected-systems.swecommon.abstract-simple-component",
       "@type": [
         "bblocks:Schema",
         "skos:Concept",
         "dcat:Dataset",
         "bblocks:BBlock"
       ],
-      "skos:prefLabel": "AbstractSweIdentifiable",
-      "ldContext": null,
-      "openAPIDocument": null,
-      "ontology": null,
-      "rdfData": [],
-      "isProfileOf": null,
-      "skos:topConceptOf": {
-        "@id": "https://ogcincubator.github.io/bblocks-connected-systems/"
-      }
-    },
-    {
-      "itemIdentifier": "ogc.api.connected-systems.swecommon.category",
-      "name": "Category",
-      "abstract": "Scalar component used to represent a categorical value as a simple token identifying a term in a code space",
-      "status": "under-development",
-      "dateTimeAddition": "2026-09-23T00:00:00Z",
-      "itemClass": "schema",
-      "version": "0.1",
-      "group": "SWE Common",
-      "sources": [
-        {
-          "title": "swecommon/schemas/json/Category.json in opengeospatial/ogcapi-connected-systems",
-          "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/swecommon/schemas/json/Category.json"
-        }
-      ],
-      "shaclShapes": null,
-      "dependsOn": [
-        "bblocks://ogc.api.connected-systems.swecommon.basic-types",
-        "bblocks://ogc.api.connected-systems.swecommon.abstract-simple-component"
-      ],
-      "dateOfLastChange": "2026-09-23",
-      "schema": [
-        {
-          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/category/schema.yaml",
-          "prof:hasRole": "role:schema",
-          "dct:format": "application/yaml",
-          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
-        },
-        {
-          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/category/schema.json",
-          "prof:hasRole": "role:schema",
-          "dct:format": "application/json",
-          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
-        }
-      ],
-      "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/category/schema.json",
-      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/category/resolvedProperties.json",
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/category/",
-      "validationPassed": true,
-      "testOutputs": "https://github.com/ogcincubator/bblocks-connected-systems/blob/master/build/tests/api/connected-systems/swecommon/category/",
-      "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/markdown/api/connected-systems/swecommon/category/index.md"
-        },
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/json-full/api/connected-systems/swecommon/category/index.json"
-        },
-        "bblocks-viewer": {
-          "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/bblock/ogc.api.connected-systems.swecommon.category"
-        }
-      },
-      "@id": "bblocks://ogc.api.connected-systems.swecommon.category",
-      "@type": [
-        "bblocks:Schema",
-        "skos:Concept",
-        "dcat:Dataset",
-        "bblocks:BBlock"
-      ],
-      "skos:prefLabel": "Category",
-      "ldContext": null,
-      "openAPIDocument": null,
-      "ontology": null,
-      "rdfData": [],
-      "isProfileOf": null,
-      "skos:topConceptOf": {
-        "@id": "https://ogcincubator.github.io/bblocks-connected-systems/"
-      }
-    },
-    {
-      "itemIdentifier": "ogc.api.connected-systems.swecommon.category-range",
-      "name": "CategoryRange",
-      "abstract": "Pair of categorical values used to specify a range in an ordinal reference system (specified by the code space)",
-      "status": "under-development",
-      "dateTimeAddition": "2026-09-23T00:00:00Z",
-      "itemClass": "schema",
-      "version": "0.1",
-      "group": "SWE Common",
-      "sources": [
-        {
-          "title": "swecommon/schemas/json/CategoryRange.json in opengeospatial/ogcapi-connected-systems",
-          "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/swecommon/schemas/json/CategoryRange.json"
-        }
-      ],
-      "shaclShapes": null,
-      "dependsOn": [
-        "bblocks://ogc.api.connected-systems.swecommon.basic-types",
-        "bblocks://ogc.api.connected-systems.swecommon.abstract-simple-component"
-      ],
-      "dateOfLastChange": "2026-09-23",
-      "schema": [
-        {
-          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/category-range/schema.yaml",
-          "prof:hasRole": "role:schema",
-          "dct:format": "application/yaml",
-          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
-        },
-        {
-          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/category-range/schema.json",
-          "prof:hasRole": "role:schema",
-          "dct:format": "application/json",
-          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
-        }
-      ],
-      "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/category-range/schema.json",
-      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/category-range/resolvedProperties.json",
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/category-range/",
-      "validationPassed": true,
-      "testOutputs": "https://github.com/ogcincubator/bblocks-connected-systems/blob/master/build/tests/api/connected-systems/swecommon/category-range/",
-      "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/markdown/api/connected-systems/swecommon/category-range/index.md"
-        },
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/json-full/api/connected-systems/swecommon/category-range/index.json"
-        },
-        "bblocks-viewer": {
-          "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/bblock/ogc.api.connected-systems.swecommon.category-range"
-        }
-      },
-      "@id": "bblocks://ogc.api.connected-systems.swecommon.category-range",
-      "@type": [
-        "bblocks:Schema",
-        "skos:Concept",
-        "dcat:Dataset",
-        "bblocks:BBlock"
-      ],
-      "skos:prefLabel": "CategoryRange",
-      "ldContext": null,
-      "openAPIDocument": null,
-      "ontology": null,
-      "rdfData": [],
-      "isProfileOf": null,
-      "skos:topConceptOf": {
-        "@id": "https://ogcincubator.github.io/bblocks-connected-systems/"
-      }
-    },
-    {
-      "itemIdentifier": "ogc.api.connected-systems.swecommon.count",
-      "name": "Count",
-      "abstract": "Scalar component with integer representation used for a discrete counting value",
-      "status": "under-development",
-      "dateTimeAddition": "2026-09-23T00:00:00Z",
-      "itemClass": "schema",
-      "version": "0.1",
-      "group": "SWE Common",
-      "sources": [
-        {
-          "title": "swecommon/schemas/json/Count.json in opengeospatial/ogcapi-connected-systems",
-          "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/swecommon/schemas/json/Count.json"
-        }
-      ],
-      "shaclShapes": null,
-      "dependsOn": [
-        "bblocks://ogc.api.connected-systems.swecommon.basic-types",
-        "bblocks://ogc.api.connected-systems.swecommon.abstract-simple-component"
-      ],
-      "dateOfLastChange": "2026-09-23",
-      "schema": [
-        {
-          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/count/schema.yaml",
-          "prof:hasRole": "role:schema",
-          "dct:format": "application/yaml",
-          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
-        },
-        {
-          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/count/schema.json",
-          "prof:hasRole": "role:schema",
-          "dct:format": "application/json",
-          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
-        }
-      ],
-      "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/count/schema.json",
-      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/count/resolvedProperties.json",
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/count/",
-      "validationPassed": true,
-      "testOutputs": "https://github.com/ogcincubator/bblocks-connected-systems/blob/master/build/tests/api/connected-systems/swecommon/count/",
-      "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/markdown/api/connected-systems/swecommon/count/index.md"
-        },
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/json-full/api/connected-systems/swecommon/count/index.json"
-        },
-        "bblocks-viewer": {
-          "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/bblock/ogc.api.connected-systems.swecommon.count"
-        }
-      },
-      "@id": "bblocks://ogc.api.connected-systems.swecommon.count",
-      "@type": [
-        "bblocks:Schema",
-        "skos:Concept",
-        "dcat:Dataset",
-        "bblocks:BBlock"
-      ],
-      "skos:prefLabel": "Count",
-      "ldContext": null,
-      "openAPIDocument": null,
-      "ontology": null,
-      "rdfData": [],
-      "isProfileOf": null,
-      "skos:topConceptOf": {
-        "@id": "https://ogcincubator.github.io/bblocks-connected-systems/"
-      }
-    },
-    {
-      "itemIdentifier": "ogc.api.connected-systems.swecommon.count-range",
-      "name": "CountRange",
-      "abstract": "Integer pair used for specifying a count range",
-      "status": "under-development",
-      "dateTimeAddition": "2026-09-23T00:00:00Z",
-      "itemClass": "schema",
-      "version": "0.1",
-      "group": "SWE Common",
-      "sources": [
-        {
-          "title": "swecommon/schemas/json/CountRange.json in opengeospatial/ogcapi-connected-systems",
-          "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/swecommon/schemas/json/CountRange.json"
-        }
-      ],
-      "shaclShapes": null,
-      "dependsOn": [
-        "bblocks://ogc.api.connected-systems.swecommon.basic-types",
-        "bblocks://ogc.api.connected-systems.swecommon.abstract-simple-component"
-      ],
-      "dateOfLastChange": "2026-09-23",
-      "schema": [
-        {
-          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/count-range/schema.yaml",
-          "prof:hasRole": "role:schema",
-          "dct:format": "application/yaml",
-          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
-        },
-        {
-          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/count-range/schema.json",
-          "prof:hasRole": "role:schema",
-          "dct:format": "application/json",
-          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
-        }
-      ],
-      "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/count-range/schema.json",
-      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/count-range/resolvedProperties.json",
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/count-range/",
-      "validationPassed": true,
-      "testOutputs": "https://github.com/ogcincubator/bblocks-connected-systems/blob/master/build/tests/api/connected-systems/swecommon/count-range/",
-      "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/markdown/api/connected-systems/swecommon/count-range/index.md"
-        },
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/json-full/api/connected-systems/swecommon/count-range/index.json"
-        },
-        "bblocks-viewer": {
-          "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/bblock/ogc.api.connected-systems.swecommon.count-range"
-        }
-      },
-      "@id": "bblocks://ogc.api.connected-systems.swecommon.count-range",
-      "@type": [
-        "bblocks:Schema",
-        "skos:Concept",
-        "dcat:Dataset",
-        "bblocks:BBlock"
-      ],
-      "skos:prefLabel": "CountRange",
-      "ldContext": null,
-      "openAPIDocument": null,
-      "ontology": null,
-      "rdfData": [],
-      "isProfileOf": null,
-      "skos:topConceptOf": {
-        "@id": "https://ogcincubator.github.io/bblocks-connected-systems/"
-      }
-    },
-    {
-      "itemIdentifier": "ogc.api.connected-systems.swecommon.encodings",
-      "name": "Encodings",
-      "abstract": "Encodings schema.",
-      "status": "under-development",
-      "dateTimeAddition": "2026-09-23T00:00:00Z",
-      "itemClass": "schema",
-      "version": "0.1",
-      "group": "SWE Common",
-      "sources": [
-        {
-          "title": "swecommon/schemas/json/encodings.json in opengeospatial/ogcapi-connected-systems",
-          "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/swecommon/schemas/json/encodings.json"
-        }
-      ],
-      "shaclShapes": null,
-      "dependsOn": [
-        "bblocks://ogc.api.connected-systems.swecommon.basic-types"
-      ],
-      "dateOfLastChange": "2026-09-23",
-      "schema": [
-        {
-          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/encodings/schema.yaml",
-          "prof:hasRole": "role:schema",
-          "dct:format": "application/yaml",
-          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
-        },
-        {
-          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/encodings/schema.json",
-          "prof:hasRole": "role:schema",
-          "dct:format": "application/json",
-          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
-        }
-      ],
-      "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/encodings/schema.json",
-      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/encodings/resolvedProperties.json",
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/encodings/",
-      "validationPassed": true,
-      "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/markdown/api/connected-systems/swecommon/encodings/index.md"
-        },
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/json-full/api/connected-systems/swecommon/encodings/index.json"
-        },
-        "bblocks-viewer": {
-          "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/bblock/ogc.api.connected-systems.swecommon.encodings"
-        }
-      },
-      "@id": "bblocks://ogc.api.connected-systems.swecommon.encodings",
-      "@type": [
-        "bblocks:Schema",
-        "skos:Concept",
-        "dcat:Dataset",
-        "bblocks:BBlock"
-      ],
-      "skos:prefLabel": "Encodings",
-      "ldContext": null,
-      "openAPIDocument": null,
-      "ontology": null,
-      "rdfData": [],
-      "isProfileOf": null,
-      "skos:topConceptOf": {
-        "@id": "https://ogcincubator.github.io/bblocks-connected-systems/"
-      }
-    },
-    {
-      "itemIdentifier": "ogc.api.connected-systems.swecommon.quantity",
-      "name": "Quantity",
-      "abstract": "Scalar component with decimal representation and a unit of measure used to store value of a continuous quantity",
-      "status": "under-development",
-      "dateTimeAddition": "2026-09-23T00:00:00Z",
-      "itemClass": "schema",
-      "version": "0.1",
-      "group": "SWE Common",
-      "sources": [
-        {
-          "title": "swecommon/schemas/json/Quantity.json in opengeospatial/ogcapi-connected-systems",
-          "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/swecommon/schemas/json/Quantity.json"
-        }
-      ],
-      "shaclShapes": null,
-      "dependsOn": [
-        "bblocks://ogc.api.connected-systems.swecommon.basic-types",
-        "bblocks://ogc.api.connected-systems.swecommon.abstract-simple-component"
-      ],
-      "dateOfLastChange": "2026-09-23",
-      "schema": [
-        {
-          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/quantity/schema.yaml",
-          "prof:hasRole": "role:schema",
-          "dct:format": "application/yaml",
-          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
-        },
-        {
-          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/quantity/schema.json",
-          "prof:hasRole": "role:schema",
-          "dct:format": "application/json",
-          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
-        }
-      ],
-      "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/quantity/schema.json",
-      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/quantity/resolvedProperties.json",
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/quantity/",
-      "validationPassed": true,
-      "testOutputs": "https://github.com/ogcincubator/bblocks-connected-systems/blob/master/build/tests/api/connected-systems/swecommon/quantity/",
-      "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/markdown/api/connected-systems/swecommon/quantity/index.md"
-        },
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/json-full/api/connected-systems/swecommon/quantity/index.json"
-        },
-        "bblocks-viewer": {
-          "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/bblock/ogc.api.connected-systems.swecommon.quantity"
-        }
-      },
-      "@id": "bblocks://ogc.api.connected-systems.swecommon.quantity",
-      "@type": [
-        "bblocks:Schema",
-        "skos:Concept",
-        "dcat:Dataset",
-        "bblocks:BBlock"
-      ],
-      "skos:prefLabel": "Quantity",
-      "ldContext": null,
-      "openAPIDocument": null,
-      "ontology": null,
-      "rdfData": [],
-      "isProfileOf": null,
-      "skos:topConceptOf": {
-        "@id": "https://ogcincubator.github.io/bblocks-connected-systems/"
-      }
-    },
-    {
-      "itemIdentifier": "ogc.api.connected-systems.swecommon.quantity-range",
-      "name": "QuantityRange",
-      "abstract": "Decimal pair for specifying a quantity range with a unit of measure",
-      "status": "under-development",
-      "dateTimeAddition": "2026-09-23T00:00:00Z",
-      "itemClass": "schema",
-      "version": "0.1",
-      "group": "SWE Common",
-      "sources": [
-        {
-          "title": "swecommon/schemas/json/QuantityRange.json in opengeospatial/ogcapi-connected-systems",
-          "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/swecommon/schemas/json/QuantityRange.json"
-        }
-      ],
-      "shaclShapes": null,
-      "dependsOn": [
-        "bblocks://ogc.api.connected-systems.swecommon.basic-types",
-        "bblocks://ogc.api.connected-systems.swecommon.abstract-simple-component"
-      ],
-      "dateOfLastChange": "2026-09-23",
-      "schema": [
-        {
-          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/quantity-range/schema.yaml",
-          "prof:hasRole": "role:schema",
-          "dct:format": "application/yaml",
-          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
-        },
-        {
-          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/quantity-range/schema.json",
-          "prof:hasRole": "role:schema",
-          "dct:format": "application/json",
-          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
-        }
-      ],
-      "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/quantity-range/schema.json",
-      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/quantity-range/resolvedProperties.json",
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/quantity-range/",
-      "validationPassed": true,
-      "testOutputs": "https://github.com/ogcincubator/bblocks-connected-systems/blob/master/build/tests/api/connected-systems/swecommon/quantity-range/",
-      "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/markdown/api/connected-systems/swecommon/quantity-range/index.md"
-        },
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/json-full/api/connected-systems/swecommon/quantity-range/index.json"
-        },
-        "bblocks-viewer": {
-          "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/bblock/ogc.api.connected-systems.swecommon.quantity-range"
-        }
-      },
-      "@id": "bblocks://ogc.api.connected-systems.swecommon.quantity-range",
-      "@type": [
-        "bblocks:Schema",
-        "skos:Concept",
-        "dcat:Dataset",
-        "bblocks:BBlock"
-      ],
-      "skos:prefLabel": "QuantityRange",
-      "ldContext": null,
-      "openAPIDocument": null,
-      "ontology": null,
-      "rdfData": [],
-      "isProfileOf": null,
-      "skos:topConceptOf": {
-        "@id": "https://ogcincubator.github.io/bblocks-connected-systems/"
-      }
-    },
-    {
-      "itemIdentifier": "ogc.api.connected-systems.swecommon.text",
-      "name": "Text",
-      "abstract": "Free text component used to store comments or any other type of textual statement",
-      "status": "under-development",
-      "dateTimeAddition": "2026-09-23T00:00:00Z",
-      "itemClass": "schema",
-      "version": "0.1",
-      "group": "SWE Common",
-      "sources": [
-        {
-          "title": "swecommon/schemas/json/Text.json in opengeospatial/ogcapi-connected-systems",
-          "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/swecommon/schemas/json/Text.json"
-        }
-      ],
-      "shaclShapes": null,
-      "dependsOn": [
-        "bblocks://ogc.api.connected-systems.swecommon.basic-types",
-        "bblocks://ogc.api.connected-systems.swecommon.abstract-simple-component"
-      ],
-      "dateOfLastChange": "2026-09-23",
-      "schema": [
-        {
-          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/text/schema.yaml",
-          "prof:hasRole": "role:schema",
-          "dct:format": "application/yaml",
-          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
-        },
-        {
-          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/text/schema.json",
-          "prof:hasRole": "role:schema",
-          "dct:format": "application/json",
-          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
-        }
-      ],
-      "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/text/schema.json",
-      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/text/resolvedProperties.json",
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/text/",
-      "validationPassed": true,
-      "testOutputs": "https://github.com/ogcincubator/bblocks-connected-systems/blob/master/build/tests/api/connected-systems/swecommon/text/",
-      "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/markdown/api/connected-systems/swecommon/text/index.md"
-        },
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/json-full/api/connected-systems/swecommon/text/index.json"
-        },
-        "bblocks-viewer": {
-          "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/bblock/ogc.api.connected-systems.swecommon.text"
-        }
-      },
-      "@id": "bblocks://ogc.api.connected-systems.swecommon.text",
-      "@type": [
-        "bblocks:Schema",
-        "skos:Concept",
-        "dcat:Dataset",
-        "bblocks:BBlock"
-      ],
-      "skos:prefLabel": "Text",
-      "ldContext": null,
-      "openAPIDocument": null,
-      "ontology": null,
-      "rdfData": [],
-      "isProfileOf": null,
-      "skos:topConceptOf": {
-        "@id": "https://ogcincubator.github.io/bblocks-connected-systems/"
-      }
-    },
-    {
-      "itemIdentifier": "ogc.api.connected-systems.swecommon.time",
-      "name": "Time",
-      "abstract": "Scalar component used to represent a time quantity either as ISO 8601 (e.g., 2004-04-18T12:03:04.6Z) or as a duration relative to a time of reference",
-      "status": "under-development",
-      "dateTimeAddition": "2026-09-23T00:00:00Z",
-      "itemClass": "schema",
-      "version": "0.1",
-      "group": "SWE Common",
-      "sources": [
-        {
-          "title": "swecommon/schemas/json/Time.json in opengeospatial/ogcapi-connected-systems",
-          "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/swecommon/schemas/json/Time.json"
-        }
-      ],
-      "shaclShapes": null,
-      "dependsOn": [
-        "bblocks://ogc.api.connected-systems.swecommon.basic-types",
-        "bblocks://ogc.api.connected-systems.swecommon.abstract-simple-component"
-      ],
-      "dateOfLastChange": "2026-09-23",
-      "schema": [
-        {
-          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/time/schema.yaml",
-          "prof:hasRole": "role:schema",
-          "dct:format": "application/yaml",
-          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
-        },
-        {
-          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/time/schema.json",
-          "prof:hasRole": "role:schema",
-          "dct:format": "application/json",
-          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
-        }
-      ],
-      "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/time/schema.json",
-      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/time/resolvedProperties.json",
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/time/",
-      "validationPassed": true,
-      "testOutputs": "https://github.com/ogcincubator/bblocks-connected-systems/blob/master/build/tests/api/connected-systems/swecommon/time/",
-      "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/markdown/api/connected-systems/swecommon/time/index.md"
-        },
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/json-full/api/connected-systems/swecommon/time/index.json"
-        },
-        "bblocks-viewer": {
-          "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/bblock/ogc.api.connected-systems.swecommon.time"
-        }
-      },
-      "@id": "bblocks://ogc.api.connected-systems.swecommon.time",
-      "@type": [
-        "bblocks:Schema",
-        "skos:Concept",
-        "dcat:Dataset",
-        "bblocks:BBlock"
-      ],
-      "skos:prefLabel": "Time",
-      "ldContext": null,
-      "openAPIDocument": null,
-      "ontology": null,
-      "rdfData": [],
-      "isProfileOf": null,
-      "skos:topConceptOf": {
-        "@id": "https://ogcincubator.github.io/bblocks-connected-systems/"
-      }
-    },
-    {
-      "itemIdentifier": "ogc.api.connected-systems.swecommon.time-range",
-      "name": "TimeRange",
-      "abstract": "Time value pair for specifying a time range (can be a decimal or ISO 8601)",
-      "status": "under-development",
-      "dateTimeAddition": "2026-09-23T00:00:00Z",
-      "itemClass": "schema",
-      "version": "0.1",
-      "group": "SWE Common",
-      "sources": [
-        {
-          "title": "swecommon/schemas/json/TimeRange.json in opengeospatial/ogcapi-connected-systems",
-          "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/swecommon/schemas/json/TimeRange.json"
-        }
-      ],
-      "shaclShapes": null,
-      "dependsOn": [
-        "bblocks://ogc.api.connected-systems.swecommon.basic-types",
-        "bblocks://ogc.api.connected-systems.swecommon.abstract-simple-component"
-      ],
-      "dateOfLastChange": "2026-09-23",
-      "schema": [
-        {
-          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/time-range/schema.yaml",
-          "prof:hasRole": "role:schema",
-          "dct:format": "application/yaml",
-          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
-        },
-        {
-          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/time-range/schema.json",
-          "prof:hasRole": "role:schema",
-          "dct:format": "application/json",
-          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
-        }
-      ],
-      "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/time-range/schema.json",
-      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/time-range/resolvedProperties.json",
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/time-range/",
-      "validationPassed": true,
-      "testOutputs": "https://github.com/ogcincubator/bblocks-connected-systems/blob/master/build/tests/api/connected-systems/swecommon/time-range/",
-      "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/markdown/api/connected-systems/swecommon/time-range/index.md"
-        },
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/json-full/api/connected-systems/swecommon/time-range/index.json"
-        },
-        "bblocks-viewer": {
-          "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/bblock/ogc.api.connected-systems.swecommon.time-range"
-        }
-      },
-      "@id": "bblocks://ogc.api.connected-systems.swecommon.time-range",
-      "@type": [
-        "bblocks:Schema",
-        "skos:Concept",
-        "dcat:Dataset",
-        "bblocks:BBlock"
-      ],
-      "skos:prefLabel": "TimeRange",
+      "skos:prefLabel": "AbstractSimpleComponent",
       "ldContext": null,
       "openAPIDocument": null,
       "ontology": null,
@@ -2870,6 +2201,10 @@
       "dependsOn": [
         "bblocks://ogc.api.connected-systems.part1.deployed-system"
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
@@ -2958,6 +2293,10 @@
         "bblocks://ogc.api.connected-systems.part1.feature",
         "bblocks://ogc.api.connected-systems.part1.uris"
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
@@ -3043,11 +2382,15 @@
         }
       ],
       "dependsOn": [
-        "bblocks://ogc.api.connected-systems.common.time-period",
         "bblocks://ogc.api.connected-systems.part1.feature",
-        "bblocks://ogc.api.connected-systems.common.link",
-        "bblocks://ogc.api.connected-systems.part1.uris"
+        "bblocks://ogc.api.connected-systems.part1.uris",
+        "bblocks://ogc.api.connected-systems.common.time-period",
+        "bblocks://ogc.api.connected-systems.common.link"
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
@@ -3133,10 +2476,14 @@
         }
       ],
       "dependsOn": [
-        "bblocks://ogc.api.connected-systems.common.time-period",
         "bblocks://ogc.api.connected-systems.part1.feature",
+        "bblocks://ogc.api.connected-systems.common.time-period",
         "bblocks://ogc.api.connected-systems.common.link"
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
@@ -3222,11 +2569,15 @@
         }
       ],
       "dependsOn": [
-        "bblocks://ogc.api.connected-systems.common.time-period",
         "bblocks://ogc.api.connected-systems.part1.feature",
-        "bblocks://ogc.api.connected-systems.common.link",
-        "bblocks://ogc.api.connected-systems.part1.uris"
+        "bblocks://ogc.api.connected-systems.part1.uris",
+        "bblocks://ogc.api.connected-systems.common.time-period",
+        "bblocks://ogc.api.connected-systems.common.link"
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
@@ -3301,6 +2652,10 @@
       "dependsOn": [
         "bblocks://ogc.api.connected-systems.common.time-period"
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
@@ -3368,11 +2723,15 @@
       ],
       "shaclShapes": null,
       "dependsOn": [
+        "bblocks://ogc.api.connected-systems.common.time-instant",
         "bblocks://ogc.api.connected-systems.common.time-period",
         "bblocks://ogc.api.connected-systems.part2.command-status-code",
-        "bblocks://ogc.api.connected-systems.common.time-instant",
         "bblocks://ogc.api.connected-systems.common.link"
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
@@ -3444,6 +2803,10 @@
         "bblocks://ogc.api.connected-systems.common.time-period",
         "bblocks://ogc.api.connected-systems.common.link"
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
@@ -3495,9 +2858,9 @@
       }
     },
     {
-      "itemIdentifier": "ogc.api.connected-systems.swecommon.abstract-data-component",
-      "name": "AbstractDataComponent",
-      "abstract": "Abstract base class for all data components",
+      "itemIdentifier": "ogc.api.connected-systems.swecommon.basic-types",
+      "name": "BasicTypes",
+      "abstract": "BasicTypes schema.",
       "status": "under-development",
       "dateTimeAddition": "2026-09-23T00:00:00Z",
       "itemClass": "schema",
@@ -3505,55 +2868,58 @@
       "group": "SWE Common",
       "sources": [
         {
-          "title": "swecommon/schemas/json/AbstractDataComponent.json in opengeospatial/ogcapi-connected-systems",
-          "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/swecommon/schemas/json/AbstractDataComponent.json"
+          "title": "swecommon/schemas/json/basicTypes.json in opengeospatial/ogcapi-connected-systems",
+          "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/swecommon/schemas/json/basicTypes.json"
         }
       ],
       "shaclShapes": null,
       "dependsOn": [
-        "bblocks://ogc.api.connected-systems.swecommon.abstract-swe-identifiable"
+        "bblocks://ogc.api.connected-systems.swecommon.abstract-simple-component"
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
-          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/abstract-data-component/schema.yaml",
+          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/basic-types/schema.yaml",
           "prof:hasRole": "role:schema",
           "dct:format": "application/yaml",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         },
         {
-          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/abstract-data-component/schema.json",
+          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/basic-types/schema.json",
           "prof:hasRole": "role:schema",
           "dct:format": "application/json",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         }
       ],
-      "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/abstract-data-component/schema.json",
-      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/abstract-data-component/resolvedProperties.json",
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/abstract-data-component/",
+      "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/basic-types/schema.json",
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/basic-types/",
       "validationPassed": true,
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/markdown/api/connected-systems/swecommon/abstract-data-component/index.md"
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/markdown/api/connected-systems/swecommon/basic-types/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/json-full/api/connected-systems/swecommon/abstract-data-component/index.json"
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/json-full/api/connected-systems/swecommon/basic-types/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/bblock/ogc.api.connected-systems.swecommon.abstract-data-component"
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/bblock/ogc.api.connected-systems.swecommon.basic-types"
         }
       },
-      "@id": "bblocks://ogc.api.connected-systems.swecommon.abstract-data-component",
+      "@id": "bblocks://ogc.api.connected-systems.swecommon.basic-types",
       "@type": [
         "bblocks:Schema",
         "skos:Concept",
         "dcat:Dataset",
         "bblocks:BBlock"
       ],
-      "skos:prefLabel": "AbstractDataComponent",
+      "skos:prefLabel": "BasicTypes",
       "ldContext": null,
       "openAPIDocument": null,
       "ontology": null,
@@ -3564,9 +2930,9 @@
       }
     },
     {
-      "itemIdentifier": "ogc.api.connected-systems.swecommon.data-stream",
-      "name": "DataStream",
-      "abstract": "Defines the structure of the element that will be repeated in the stream",
+      "itemIdentifier": "ogc.api.connected-systems.swecommon.boolean",
+      "name": "Boolean",
+      "abstract": "Scalar component used to express truth: True or False, 0 or 1",
       "status": "under-development",
       "dateTimeAddition": "2026-09-23T00:00:00Z",
       "itemClass": "schema",
@@ -3574,59 +2940,60 @@
       "group": "SWE Common",
       "sources": [
         {
-          "title": "swecommon/schemas/json/DataStream.json in opengeospatial/ogcapi-connected-systems",
-          "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/swecommon/schemas/json/DataStream.json"
+          "title": "swecommon/schemas/json/Boolean.json in opengeospatial/ogcapi-connected-systems",
+          "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/swecommon/schemas/json/Boolean.json"
         }
       ],
       "shaclShapes": null,
       "dependsOn": [
-        "bblocks://ogc.api.connected-systems.swecommon.swe-common",
-        "bblocks://ogc.api.connected-systems.swecommon.encodings",
-        "bblocks://ogc.api.connected-systems.swecommon.basic-types",
-        "bblocks://ogc.api.connected-systems.swecommon.abstract-swe-identifiable"
+        "bblocks://ogc.api.connected-systems.swecommon.abstract-simple-component"
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
-          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/data-stream/schema.yaml",
+          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/boolean/schema.yaml",
           "prof:hasRole": "role:schema",
           "dct:format": "application/yaml",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         },
         {
-          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/data-stream/schema.json",
+          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/boolean/schema.json",
           "prof:hasRole": "role:schema",
           "dct:format": "application/json",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         }
       ],
-      "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/data-stream/schema.json",
-      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/data-stream/resolvedProperties.json",
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/data-stream/",
+      "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/boolean/schema.json",
+      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/boolean/resolvedProperties.json",
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/boolean/",
       "validationPassed": true,
-      "testOutputs": "https://github.com/ogcincubator/bblocks-connected-systems/blob/master/build/tests/api/connected-systems/swecommon/data-stream/",
+      "testOutputs": "https://github.com/ogcincubator/bblocks-connected-systems/blob/master/build/tests/api/connected-systems/swecommon/boolean/",
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/markdown/api/connected-systems/swecommon/data-stream/index.md"
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/markdown/api/connected-systems/swecommon/boolean/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/json-full/api/connected-systems/swecommon/data-stream/index.json"
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/json-full/api/connected-systems/swecommon/boolean/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/bblock/ogc.api.connected-systems.swecommon.data-stream"
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/bblock/ogc.api.connected-systems.swecommon.boolean"
         }
       },
-      "@id": "bblocks://ogc.api.connected-systems.swecommon.data-stream",
+      "@id": "bblocks://ogc.api.connected-systems.swecommon.boolean",
       "@type": [
         "bblocks:Schema",
         "skos:Concept",
         "dcat:Dataset",
         "bblocks:BBlock"
       ],
-      "skos:prefLabel": "DataStream",
+      "skos:prefLabel": "Boolean",
       "ldContext": null,
       "openAPIDocument": null,
       "ontology": null,
@@ -3675,10 +3042,14 @@
         }
       ],
       "dependsOn": [
-        "bblocks://ogc.api.connected-systems.part1.links",
         "bblocks://ogc.geo.features.featureCollection",
+        "bblocks://ogc.api.connected-systems.part1.links",
         "bblocks://ogc.api.connected-systems.part1.deployed-system-array"
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
@@ -3762,6 +3133,10 @@
       "dependsOn": [
         "bblocks://ogc.api.connected-systems.part1.procedure"
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
@@ -3846,6 +3221,10 @@
       "dependsOn": [
         "bblocks://ogc.api.connected-systems.part1.deployment"
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
@@ -3930,6 +3309,10 @@
       "dependsOn": [
         "bblocks://ogc.api.connected-systems.part1.sampling-feature"
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
@@ -4014,6 +3397,10 @@
       "dependsOn": [
         "bblocks://ogc.api.connected-systems.part1.system"
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
@@ -4089,6 +3476,10 @@
         "bblocks://ogc.api.connected-systems.part1.links",
         "bblocks://ogc.api.connected-systems.part2.command"
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
@@ -4156,9 +3547,13 @@
       ],
       "shaclShapes": null,
       "dependsOn": [
-        "bblocks://ogc.api.connected-systems.part1.links",
-        "bblocks://ogc.api.connected-systems.part2.command-result"
+        "bblocks://ogc.api.connected-systems.part2.command-result",
+        "bblocks://ogc.api.connected-systems.part1.links"
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
@@ -4226,11 +3621,15 @@
       ],
       "shaclShapes": null,
       "dependsOn": [
+        "bblocks://ogc.api.connected-systems.part2.command-result",
         "bblocks://ogc.api.connected-systems.common.time-period",
         "bblocks://ogc.api.connected-systems.part2.command-status-code",
-        "bblocks://ogc.api.connected-systems.common.time-instant",
-        "bblocks://ogc.api.connected-systems.part2.command-result"
+        "bblocks://ogc.api.connected-systems.common.time-instant"
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
@@ -4283,6 +3682,306 @@
       }
     },
     {
+      "itemIdentifier": "ogc.api.connected-systems.swecommon.category",
+      "name": "Category",
+      "abstract": "Scalar component used to represent a categorical value as a simple token identifying a term in a code space",
+      "status": "under-development",
+      "dateTimeAddition": "2026-09-23T00:00:00Z",
+      "itemClass": "schema",
+      "version": "0.1",
+      "group": "SWE Common",
+      "sources": [
+        {
+          "title": "swecommon/schemas/json/Category.json in opengeospatial/ogcapi-connected-systems",
+          "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/swecommon/schemas/json/Category.json"
+        }
+      ],
+      "shaclShapes": null,
+      "dependsOn": [
+        "bblocks://ogc.api.connected-systems.swecommon.basic-types",
+        "bblocks://ogc.api.connected-systems.swecommon.abstract-simple-component"
+      ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
+      "dateOfLastChange": "2026-09-23",
+      "schema": [
+        {
+          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/category/schema.yaml",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/yaml",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        },
+        {
+          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/category/schema.json",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/json",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        }
+      ],
+      "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/category/schema.json",
+      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/category/resolvedProperties.json",
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/category/",
+      "validationPassed": true,
+      "testOutputs": "https://github.com/ogcincubator/bblocks-connected-systems/blob/master/build/tests/api/connected-systems/swecommon/category/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/markdown/api/connected-systems/swecommon/category/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/json-full/api/connected-systems/swecommon/category/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/bblock/ogc.api.connected-systems.swecommon.category"
+        }
+      },
+      "@id": "bblocks://ogc.api.connected-systems.swecommon.category",
+      "@type": [
+        "bblocks:Schema",
+        "skos:Concept",
+        "dcat:Dataset",
+        "bblocks:BBlock"
+      ],
+      "skos:prefLabel": "Category",
+      "ldContext": null,
+      "openAPIDocument": null,
+      "ontology": null,
+      "rdfData": [],
+      "isProfileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://ogcincubator.github.io/bblocks-connected-systems/"
+      }
+    },
+    {
+      "itemIdentifier": "ogc.api.connected-systems.swecommon.category-range",
+      "name": "CategoryRange",
+      "abstract": "Pair of categorical values used to specify a range in an ordinal reference system (specified by the code space)",
+      "status": "under-development",
+      "dateTimeAddition": "2026-09-23T00:00:00Z",
+      "itemClass": "schema",
+      "version": "0.1",
+      "group": "SWE Common",
+      "sources": [
+        {
+          "title": "swecommon/schemas/json/CategoryRange.json in opengeospatial/ogcapi-connected-systems",
+          "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/swecommon/schemas/json/CategoryRange.json"
+        }
+      ],
+      "shaclShapes": null,
+      "dependsOn": [
+        "bblocks://ogc.api.connected-systems.swecommon.basic-types",
+        "bblocks://ogc.api.connected-systems.swecommon.abstract-simple-component"
+      ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
+      "dateOfLastChange": "2026-09-23",
+      "schema": [
+        {
+          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/category-range/schema.yaml",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/yaml",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        },
+        {
+          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/category-range/schema.json",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/json",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        }
+      ],
+      "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/category-range/schema.json",
+      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/category-range/resolvedProperties.json",
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/category-range/",
+      "validationPassed": true,
+      "testOutputs": "https://github.com/ogcincubator/bblocks-connected-systems/blob/master/build/tests/api/connected-systems/swecommon/category-range/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/markdown/api/connected-systems/swecommon/category-range/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/json-full/api/connected-systems/swecommon/category-range/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/bblock/ogc.api.connected-systems.swecommon.category-range"
+        }
+      },
+      "@id": "bblocks://ogc.api.connected-systems.swecommon.category-range",
+      "@type": [
+        "bblocks:Schema",
+        "skos:Concept",
+        "dcat:Dataset",
+        "bblocks:BBlock"
+      ],
+      "skos:prefLabel": "CategoryRange",
+      "ldContext": null,
+      "openAPIDocument": null,
+      "ontology": null,
+      "rdfData": [],
+      "isProfileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://ogcincubator.github.io/bblocks-connected-systems/"
+      }
+    },
+    {
+      "itemIdentifier": "ogc.api.connected-systems.swecommon.count",
+      "name": "Count",
+      "abstract": "Scalar component with integer representation used for a discrete counting value",
+      "status": "under-development",
+      "dateTimeAddition": "2026-09-23T00:00:00Z",
+      "itemClass": "schema",
+      "version": "0.1",
+      "group": "SWE Common",
+      "sources": [
+        {
+          "title": "swecommon/schemas/json/Count.json in opengeospatial/ogcapi-connected-systems",
+          "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/swecommon/schemas/json/Count.json"
+        }
+      ],
+      "shaclShapes": null,
+      "dependsOn": [
+        "bblocks://ogc.api.connected-systems.swecommon.basic-types",
+        "bblocks://ogc.api.connected-systems.swecommon.abstract-simple-component"
+      ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
+      "dateOfLastChange": "2026-09-23",
+      "schema": [
+        {
+          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/count/schema.yaml",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/yaml",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        },
+        {
+          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/count/schema.json",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/json",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        }
+      ],
+      "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/count/schema.json",
+      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/count/resolvedProperties.json",
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/count/",
+      "validationPassed": true,
+      "testOutputs": "https://github.com/ogcincubator/bblocks-connected-systems/blob/master/build/tests/api/connected-systems/swecommon/count/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/markdown/api/connected-systems/swecommon/count/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/json-full/api/connected-systems/swecommon/count/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/bblock/ogc.api.connected-systems.swecommon.count"
+        }
+      },
+      "@id": "bblocks://ogc.api.connected-systems.swecommon.count",
+      "@type": [
+        "bblocks:Schema",
+        "skos:Concept",
+        "dcat:Dataset",
+        "bblocks:BBlock"
+      ],
+      "skos:prefLabel": "Count",
+      "ldContext": null,
+      "openAPIDocument": null,
+      "ontology": null,
+      "rdfData": [],
+      "isProfileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://ogcincubator.github.io/bblocks-connected-systems/"
+      }
+    },
+    {
+      "itemIdentifier": "ogc.api.connected-systems.swecommon.count-range",
+      "name": "CountRange",
+      "abstract": "Integer pair used for specifying a count range",
+      "status": "under-development",
+      "dateTimeAddition": "2026-09-23T00:00:00Z",
+      "itemClass": "schema",
+      "version": "0.1",
+      "group": "SWE Common",
+      "sources": [
+        {
+          "title": "swecommon/schemas/json/CountRange.json in opengeospatial/ogcapi-connected-systems",
+          "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/swecommon/schemas/json/CountRange.json"
+        }
+      ],
+      "shaclShapes": null,
+      "dependsOn": [
+        "bblocks://ogc.api.connected-systems.swecommon.basic-types",
+        "bblocks://ogc.api.connected-systems.swecommon.abstract-simple-component"
+      ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
+      "dateOfLastChange": "2026-09-23",
+      "schema": [
+        {
+          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/count-range/schema.yaml",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/yaml",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        },
+        {
+          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/count-range/schema.json",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/json",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        }
+      ],
+      "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/count-range/schema.json",
+      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/count-range/resolvedProperties.json",
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/count-range/",
+      "validationPassed": true,
+      "testOutputs": "https://github.com/ogcincubator/bblocks-connected-systems/blob/master/build/tests/api/connected-systems/swecommon/count-range/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/markdown/api/connected-systems/swecommon/count-range/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/json-full/api/connected-systems/swecommon/count-range/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/bblock/ogc.api.connected-systems.swecommon.count-range"
+        }
+      },
+      "@id": "bblocks://ogc.api.connected-systems.swecommon.count-range",
+      "@type": [
+        "bblocks:Schema",
+        "skos:Concept",
+        "dcat:Dataset",
+        "bblocks:BBlock"
+      ],
+      "skos:prefLabel": "CountRange",
+      "ldContext": null,
+      "openAPIDocument": null,
+      "ontology": null,
+      "rdfData": [],
+      "isProfileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://ogcincubator.github.io/bblocks-connected-systems/"
+      }
+    },
+    {
       "itemIdentifier": "ogc.api.connected-systems.swecommon.data-record",
       "name": "DataRecord",
       "abstract": "Implementation of ISO-11404 Record datatype. This allows grouping (sequence) of data components which can themselves be simple types, records, arrays or choices",
@@ -4303,6 +4002,10 @@
         "bblocks://ogc.api.connected-systems.swecommon.basic-types",
         "bblocks://ogc.api.connected-systems.swecommon.abstract-data-component"
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
@@ -4355,6 +4058,79 @@
       }
     },
     {
+      "itemIdentifier": "ogc.api.connected-systems.swecommon.encodings",
+      "name": "Encodings",
+      "abstract": "Encodings schema.",
+      "status": "under-development",
+      "dateTimeAddition": "2026-09-23T00:00:00Z",
+      "itemClass": "schema",
+      "version": "0.1",
+      "group": "SWE Common",
+      "sources": [
+        {
+          "title": "swecommon/schemas/json/encodings.json in opengeospatial/ogcapi-connected-systems",
+          "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/swecommon/schemas/json/encodings.json"
+        }
+      ],
+      "shaclShapes": null,
+      "dependsOn": [
+        "bblocks://ogc.api.connected-systems.swecommon.basic-types"
+      ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
+      "dateOfLastChange": "2026-09-23",
+      "schema": [
+        {
+          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/encodings/schema.yaml",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/yaml",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        },
+        {
+          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/encodings/schema.json",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/json",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        }
+      ],
+      "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/encodings/schema.json",
+      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/encodings/resolvedProperties.json",
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/encodings/",
+      "validationPassed": true,
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/markdown/api/connected-systems/swecommon/encodings/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/json-full/api/connected-systems/swecommon/encodings/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/bblock/ogc.api.connected-systems.swecommon.encodings"
+        }
+      },
+      "@id": "bblocks://ogc.api.connected-systems.swecommon.encodings",
+      "@type": [
+        "bblocks:Schema",
+        "skos:Concept",
+        "dcat:Dataset",
+        "bblocks:BBlock"
+      ],
+      "skos:prefLabel": "Encodings",
+      "ldContext": null,
+      "openAPIDocument": null,
+      "ontology": null,
+      "rdfData": [],
+      "isProfileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://ogcincubator.github.io/bblocks-connected-systems/"
+      }
+    },
+    {
       "itemIdentifier": "ogc.api.connected-systems.swecommon.geometry",
       "name": "Geometry",
       "abstract": "Implementation of ISO-19107 geometry datatype. This allows embedding a geometry in a larger schema",
@@ -4374,6 +4150,10 @@
         "bblocks://ogc.api.connected-systems.swecommon.basic-types",
         "bblocks://ogc.api.connected-systems.swecommon.abstract-data-component"
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
@@ -4426,9 +4206,9 @@
       }
     },
     {
-      "itemIdentifier": "ogc.api.connected-systems.swecommon.vector",
-      "name": "Vector",
-      "abstract": "Implementation of a mathematical vector composed of a list of scalar coordinates expressed in the mandatory reference frame.",
+      "itemIdentifier": "ogc.api.connected-systems.swecommon.quantity",
+      "name": "Quantity",
+      "abstract": "Scalar component with decimal representation and a unit of measure used to store value of a continuous quantity",
       "status": "under-development",
       "dateTimeAddition": "2026-09-23T00:00:00Z",
       "itemClass": "schema",
@@ -4436,60 +4216,361 @@
       "group": "SWE Common",
       "sources": [
         {
-          "title": "swecommon/schemas/json/Vector.json in opengeospatial/ogcapi-connected-systems",
-          "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/swecommon/schemas/json/Vector.json"
+          "title": "swecommon/schemas/json/Quantity.json in opengeospatial/ogcapi-connected-systems",
+          "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/swecommon/schemas/json/Quantity.json"
         }
       ],
       "shaclShapes": null,
       "dependsOn": [
-        "bblocks://ogc.api.connected-systems.swecommon.time",
-        "bblocks://ogc.api.connected-systems.swecommon.count",
-        "bblocks://ogc.api.connected-systems.swecommon.quantity",
         "bblocks://ogc.api.connected-systems.swecommon.basic-types",
-        "bblocks://ogc.api.connected-systems.swecommon.abstract-data-component"
+        "bblocks://ogc.api.connected-systems.swecommon.abstract-simple-component"
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
-          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/vector/schema.yaml",
+          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/quantity/schema.yaml",
           "prof:hasRole": "role:schema",
           "dct:format": "application/yaml",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         },
         {
-          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/vector/schema.json",
+          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/quantity/schema.json",
           "prof:hasRole": "role:schema",
           "dct:format": "application/json",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         }
       ],
-      "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/vector/schema.json",
-      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/vector/resolvedProperties.json",
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/vector/",
+      "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/quantity/schema.json",
+      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/quantity/resolvedProperties.json",
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/quantity/",
       "validationPassed": true,
-      "testOutputs": "https://github.com/ogcincubator/bblocks-connected-systems/blob/master/build/tests/api/connected-systems/swecommon/vector/",
+      "testOutputs": "https://github.com/ogcincubator/bblocks-connected-systems/blob/master/build/tests/api/connected-systems/swecommon/quantity/",
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/markdown/api/connected-systems/swecommon/vector/index.md"
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/markdown/api/connected-systems/swecommon/quantity/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/json-full/api/connected-systems/swecommon/vector/index.json"
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/json-full/api/connected-systems/swecommon/quantity/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/bblock/ogc.api.connected-systems.swecommon.vector"
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/bblock/ogc.api.connected-systems.swecommon.quantity"
         }
       },
-      "@id": "bblocks://ogc.api.connected-systems.swecommon.vector",
+      "@id": "bblocks://ogc.api.connected-systems.swecommon.quantity",
       "@type": [
         "bblocks:Schema",
         "skos:Concept",
         "dcat:Dataset",
         "bblocks:BBlock"
       ],
-      "skos:prefLabel": "Vector",
+      "skos:prefLabel": "Quantity",
+      "ldContext": null,
+      "openAPIDocument": null,
+      "ontology": null,
+      "rdfData": [],
+      "isProfileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://ogcincubator.github.io/bblocks-connected-systems/"
+      }
+    },
+    {
+      "itemIdentifier": "ogc.api.connected-systems.swecommon.quantity-range",
+      "name": "QuantityRange",
+      "abstract": "Decimal pair for specifying a quantity range with a unit of measure",
+      "status": "under-development",
+      "dateTimeAddition": "2026-09-23T00:00:00Z",
+      "itemClass": "schema",
+      "version": "0.1",
+      "group": "SWE Common",
+      "sources": [
+        {
+          "title": "swecommon/schemas/json/QuantityRange.json in opengeospatial/ogcapi-connected-systems",
+          "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/swecommon/schemas/json/QuantityRange.json"
+        }
+      ],
+      "shaclShapes": null,
+      "dependsOn": [
+        "bblocks://ogc.api.connected-systems.swecommon.basic-types",
+        "bblocks://ogc.api.connected-systems.swecommon.abstract-simple-component"
+      ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
+      "dateOfLastChange": "2026-09-23",
+      "schema": [
+        {
+          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/quantity-range/schema.yaml",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/yaml",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        },
+        {
+          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/quantity-range/schema.json",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/json",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        }
+      ],
+      "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/quantity-range/schema.json",
+      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/quantity-range/resolvedProperties.json",
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/quantity-range/",
+      "validationPassed": true,
+      "testOutputs": "https://github.com/ogcincubator/bblocks-connected-systems/blob/master/build/tests/api/connected-systems/swecommon/quantity-range/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/markdown/api/connected-systems/swecommon/quantity-range/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/json-full/api/connected-systems/swecommon/quantity-range/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/bblock/ogc.api.connected-systems.swecommon.quantity-range"
+        }
+      },
+      "@id": "bblocks://ogc.api.connected-systems.swecommon.quantity-range",
+      "@type": [
+        "bblocks:Schema",
+        "skos:Concept",
+        "dcat:Dataset",
+        "bblocks:BBlock"
+      ],
+      "skos:prefLabel": "QuantityRange",
+      "ldContext": null,
+      "openAPIDocument": null,
+      "ontology": null,
+      "rdfData": [],
+      "isProfileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://ogcincubator.github.io/bblocks-connected-systems/"
+      }
+    },
+    {
+      "itemIdentifier": "ogc.api.connected-systems.swecommon.text",
+      "name": "Text",
+      "abstract": "Free text component used to store comments or any other type of textual statement",
+      "status": "under-development",
+      "dateTimeAddition": "2026-09-23T00:00:00Z",
+      "itemClass": "schema",
+      "version": "0.1",
+      "group": "SWE Common",
+      "sources": [
+        {
+          "title": "swecommon/schemas/json/Text.json in opengeospatial/ogcapi-connected-systems",
+          "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/swecommon/schemas/json/Text.json"
+        }
+      ],
+      "shaclShapes": null,
+      "dependsOn": [
+        "bblocks://ogc.api.connected-systems.swecommon.basic-types",
+        "bblocks://ogc.api.connected-systems.swecommon.abstract-simple-component"
+      ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
+      "dateOfLastChange": "2026-09-23",
+      "schema": [
+        {
+          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/text/schema.yaml",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/yaml",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        },
+        {
+          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/text/schema.json",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/json",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        }
+      ],
+      "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/text/schema.json",
+      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/text/resolvedProperties.json",
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/text/",
+      "validationPassed": true,
+      "testOutputs": "https://github.com/ogcincubator/bblocks-connected-systems/blob/master/build/tests/api/connected-systems/swecommon/text/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/markdown/api/connected-systems/swecommon/text/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/json-full/api/connected-systems/swecommon/text/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/bblock/ogc.api.connected-systems.swecommon.text"
+        }
+      },
+      "@id": "bblocks://ogc.api.connected-systems.swecommon.text",
+      "@type": [
+        "bblocks:Schema",
+        "skos:Concept",
+        "dcat:Dataset",
+        "bblocks:BBlock"
+      ],
+      "skos:prefLabel": "Text",
+      "ldContext": null,
+      "openAPIDocument": null,
+      "ontology": null,
+      "rdfData": [],
+      "isProfileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://ogcincubator.github.io/bblocks-connected-systems/"
+      }
+    },
+    {
+      "itemIdentifier": "ogc.api.connected-systems.swecommon.time",
+      "name": "Time",
+      "abstract": "Scalar component used to represent a time quantity either as ISO 8601 (e.g., 2004-04-18T12:03:04.6Z) or as a duration relative to a time of reference",
+      "status": "under-development",
+      "dateTimeAddition": "2026-09-23T00:00:00Z",
+      "itemClass": "schema",
+      "version": "0.1",
+      "group": "SWE Common",
+      "sources": [
+        {
+          "title": "swecommon/schemas/json/Time.json in opengeospatial/ogcapi-connected-systems",
+          "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/swecommon/schemas/json/Time.json"
+        }
+      ],
+      "shaclShapes": null,
+      "dependsOn": [
+        "bblocks://ogc.api.connected-systems.swecommon.basic-types",
+        "bblocks://ogc.api.connected-systems.swecommon.abstract-simple-component"
+      ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
+      "dateOfLastChange": "2026-09-23",
+      "schema": [
+        {
+          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/time/schema.yaml",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/yaml",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        },
+        {
+          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/time/schema.json",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/json",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        }
+      ],
+      "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/time/schema.json",
+      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/time/resolvedProperties.json",
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/time/",
+      "validationPassed": true,
+      "testOutputs": "https://github.com/ogcincubator/bblocks-connected-systems/blob/master/build/tests/api/connected-systems/swecommon/time/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/markdown/api/connected-systems/swecommon/time/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/json-full/api/connected-systems/swecommon/time/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/bblock/ogc.api.connected-systems.swecommon.time"
+        }
+      },
+      "@id": "bblocks://ogc.api.connected-systems.swecommon.time",
+      "@type": [
+        "bblocks:Schema",
+        "skos:Concept",
+        "dcat:Dataset",
+        "bblocks:BBlock"
+      ],
+      "skos:prefLabel": "Time",
+      "ldContext": null,
+      "openAPIDocument": null,
+      "ontology": null,
+      "rdfData": [],
+      "isProfileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://ogcincubator.github.io/bblocks-connected-systems/"
+      }
+    },
+    {
+      "itemIdentifier": "ogc.api.connected-systems.swecommon.time-range",
+      "name": "TimeRange",
+      "abstract": "Time value pair for specifying a time range (can be a decimal or ISO 8601)",
+      "status": "under-development",
+      "dateTimeAddition": "2026-09-23T00:00:00Z",
+      "itemClass": "schema",
+      "version": "0.1",
+      "group": "SWE Common",
+      "sources": [
+        {
+          "title": "swecommon/schemas/json/TimeRange.json in opengeospatial/ogcapi-connected-systems",
+          "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/swecommon/schemas/json/TimeRange.json"
+        }
+      ],
+      "shaclShapes": null,
+      "dependsOn": [
+        "bblocks://ogc.api.connected-systems.swecommon.basic-types",
+        "bblocks://ogc.api.connected-systems.swecommon.abstract-simple-component"
+      ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
+      "dateOfLastChange": "2026-09-23",
+      "schema": [
+        {
+          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/time-range/schema.yaml",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/yaml",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        },
+        {
+          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/time-range/schema.json",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/json",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        }
+      ],
+      "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/time-range/schema.json",
+      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/time-range/resolvedProperties.json",
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/time-range/",
+      "validationPassed": true,
+      "testOutputs": "https://github.com/ogcincubator/bblocks-connected-systems/blob/master/build/tests/api/connected-systems/swecommon/time-range/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/markdown/api/connected-systems/swecommon/time-range/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/json-full/api/connected-systems/swecommon/time-range/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/bblock/ogc.api.connected-systems.swecommon.time-range"
+        }
+      },
+      "@id": "bblocks://ogc.api.connected-systems.swecommon.time-range",
+      "@type": [
+        "bblocks:Schema",
+        "skos:Concept",
+        "dcat:Dataset",
+        "bblocks:BBlock"
+      ],
+      "skos:prefLabel": "TimeRange",
       "ldContext": null,
       "openAPIDocument": null,
       "ontology": null,
@@ -4538,10 +4619,14 @@
         }
       ],
       "dependsOn": [
-        "bblocks://ogc.api.connected-systems.part1.links",
         "bblocks://ogc.geo.features.featureCollection",
+        "bblocks://ogc.api.connected-systems.part1.links",
         "bblocks://ogc.api.connected-systems.part1.procedure-array"
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
@@ -4635,10 +4720,14 @@
         }
       ],
       "dependsOn": [
-        "bblocks://ogc.api.connected-systems.part1.links",
         "bblocks://ogc.geo.features.featureCollection",
+        "bblocks://ogc.api.connected-systems.part1.links",
         "bblocks://ogc.api.connected-systems.part1.deployment-array"
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
@@ -4714,28 +4803,32 @@
       "shaclShapes": [
         {
           "prof:hasArtifact": [
-            "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl"
-          ],
-          "rdfs:seeAlso": "bblocks://ogc.geo.features.feature",
-          "prof:hasRole": "role:validation",
-          "dct:format": "text/turtle",
-          "dct:conformsTo": "shacl:"
-        },
-        {
-          "prof:hasArtifact": [
             "https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl"
           ],
           "rdfs:seeAlso": "bblocks://ogc.geo.features.featureCollection",
           "prof:hasRole": "role:validation",
           "dct:format": "text/turtle",
           "dct:conformsTo": "shacl:"
+        },
+        {
+          "prof:hasArtifact": [
+            "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl"
+          ],
+          "rdfs:seeAlso": "bblocks://ogc.geo.features.feature",
+          "prof:hasRole": "role:validation",
+          "dct:format": "text/turtle",
+          "dct:conformsTo": "shacl:"
         }
       ],
       "dependsOn": [
-        "bblocks://ogc.api.connected-systems.part1.sampling-feature-array",
         "bblocks://ogc.geo.features.featureCollection",
-        "bblocks://ogc.api.connected-systems.part1.links"
+        "bblocks://ogc.api.connected-systems.part1.links",
+        "bblocks://ogc.api.connected-systems.part1.sampling-feature-array"
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
@@ -4829,10 +4922,14 @@
         }
       ],
       "dependsOn": [
-        "bblocks://ogc.api.connected-systems.part1.links",
         "bblocks://ogc.geo.features.featureCollection",
+        "bblocks://ogc.api.connected-systems.part1.links",
         "bblocks://ogc.api.connected-systems.part1.system-array"
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
@@ -4904,9 +5001,13 @@
       ],
       "shaclShapes": null,
       "dependsOn": [
-        "bblocks://ogc.api.connected-systems.part1.links",
-        "bblocks://ogc.api.connected-systems.part2.command-status"
+        "bblocks://ogc.api.connected-systems.part2.command-status",
+        "bblocks://ogc.api.connected-systems.part1.links"
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
@@ -4958,6 +5059,238 @@
       }
     },
     {
+      "itemIdentifier": "ogc.api.connected-systems.swecommon.data-choice",
+      "name": "DataChoice",
+      "abstract": "Implementation of a choice of two or more Data Components (also called disjoint union)",
+      "status": "under-development",
+      "dateTimeAddition": "2026-09-23T00:00:00Z",
+      "itemClass": "schema",
+      "version": "0.1",
+      "group": "SWE Common",
+      "sources": [
+        {
+          "title": "swecommon/schemas/json/DataChoice.json in opengeospatial/ogcapi-connected-systems",
+          "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/swecommon/schemas/json/DataChoice.json"
+        }
+      ],
+      "shaclShapes": null,
+      "dependsOn": [
+        "bblocks://ogc.api.connected-systems.swecommon.category",
+        "bblocks://ogc.api.connected-systems.swecommon.swe-common",
+        "bblocks://ogc.api.connected-systems.swecommon.abstract-data-component",
+        "bblocks://ogc.api.connected-systems.swecommon.basic-types"
+      ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
+      "dateOfLastChange": "2026-09-23",
+      "schema": [
+        {
+          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/data-choice/schema.yaml",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/yaml",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        },
+        {
+          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/data-choice/schema.json",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/json",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        }
+      ],
+      "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/data-choice/schema.json",
+      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/data-choice/resolvedProperties.json",
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/data-choice/",
+      "validationPassed": true,
+      "testOutputs": "https://github.com/ogcincubator/bblocks-connected-systems/blob/master/build/tests/api/connected-systems/swecommon/data-choice/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/markdown/api/connected-systems/swecommon/data-choice/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/json-full/api/connected-systems/swecommon/data-choice/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/bblock/ogc.api.connected-systems.swecommon.data-choice"
+        }
+      },
+      "@id": "bblocks://ogc.api.connected-systems.swecommon.data-choice",
+      "@type": [
+        "bblocks:Schema",
+        "skos:Concept",
+        "dcat:Dataset",
+        "bblocks:BBlock"
+      ],
+      "skos:prefLabel": "DataChoice",
+      "ldContext": null,
+      "openAPIDocument": null,
+      "ontology": null,
+      "rdfData": [],
+      "isProfileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://ogcincubator.github.io/bblocks-connected-systems/"
+      }
+    },
+    {
+      "itemIdentifier": "ogc.api.connected-systems.swecommon.data-stream",
+      "name": "DataStream",
+      "abstract": "Defines the structure of the element that will be repeated in the stream",
+      "status": "under-development",
+      "dateTimeAddition": "2026-09-23T00:00:00Z",
+      "itemClass": "schema",
+      "version": "0.1",
+      "group": "SWE Common",
+      "sources": [
+        {
+          "title": "swecommon/schemas/json/DataStream.json in opengeospatial/ogcapi-connected-systems",
+          "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/swecommon/schemas/json/DataStream.json"
+        }
+      ],
+      "shaclShapes": null,
+      "dependsOn": [
+        "bblocks://ogc.api.connected-systems.swecommon.swe-common",
+        "bblocks://ogc.api.connected-systems.swecommon.basic-types",
+        "bblocks://ogc.api.connected-systems.swecommon.abstract-swe-identifiable",
+        "bblocks://ogc.api.connected-systems.swecommon.encodings"
+      ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
+      "dateOfLastChange": "2026-09-23",
+      "schema": [
+        {
+          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/data-stream/schema.yaml",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/yaml",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        },
+        {
+          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/data-stream/schema.json",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/json",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        }
+      ],
+      "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/data-stream/schema.json",
+      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/data-stream/resolvedProperties.json",
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/data-stream/",
+      "validationPassed": true,
+      "testOutputs": "https://github.com/ogcincubator/bblocks-connected-systems/blob/master/build/tests/api/connected-systems/swecommon/data-stream/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/markdown/api/connected-systems/swecommon/data-stream/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/json-full/api/connected-systems/swecommon/data-stream/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/bblock/ogc.api.connected-systems.swecommon.data-stream"
+        }
+      },
+      "@id": "bblocks://ogc.api.connected-systems.swecommon.data-stream",
+      "@type": [
+        "bblocks:Schema",
+        "skos:Concept",
+        "dcat:Dataset",
+        "bblocks:BBlock"
+      ],
+      "skos:prefLabel": "DataStream",
+      "ldContext": null,
+      "openAPIDocument": null,
+      "ontology": null,
+      "rdfData": [],
+      "isProfileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://ogcincubator.github.io/bblocks-connected-systems/"
+      }
+    },
+    {
+      "itemIdentifier": "ogc.api.connected-systems.swecommon.vector",
+      "name": "Vector",
+      "abstract": "Implementation of a mathematical vector composed of a list of scalar coordinates expressed in the mandatory reference frame.",
+      "status": "under-development",
+      "dateTimeAddition": "2026-09-23T00:00:00Z",
+      "itemClass": "schema",
+      "version": "0.1",
+      "group": "SWE Common",
+      "sources": [
+        {
+          "title": "swecommon/schemas/json/Vector.json in opengeospatial/ogcapi-connected-systems",
+          "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/swecommon/schemas/json/Vector.json"
+        }
+      ],
+      "shaclShapes": null,
+      "dependsOn": [
+        "bblocks://ogc.api.connected-systems.swecommon.abstract-data-component",
+        "bblocks://ogc.api.connected-systems.swecommon.basic-types",
+        "bblocks://ogc.api.connected-systems.swecommon.count",
+        "bblocks://ogc.api.connected-systems.swecommon.quantity",
+        "bblocks://ogc.api.connected-systems.swecommon.time"
+      ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
+      "dateOfLastChange": "2026-09-23",
+      "schema": [
+        {
+          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/vector/schema.yaml",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/yaml",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        },
+        {
+          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/vector/schema.json",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/json",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        }
+      ],
+      "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/vector/schema.json",
+      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/vector/resolvedProperties.json",
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/vector/",
+      "validationPassed": true,
+      "testOutputs": "https://github.com/ogcincubator/bblocks-connected-systems/blob/master/build/tests/api/connected-systems/swecommon/vector/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/markdown/api/connected-systems/swecommon/vector/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/json-full/api/connected-systems/swecommon/vector/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/bblock/ogc.api.connected-systems.swecommon.vector"
+        }
+      },
+      "@id": "bblocks://ogc.api.connected-systems.swecommon.vector",
+      "@type": [
+        "bblocks:Schema",
+        "skos:Concept",
+        "dcat:Dataset",
+        "bblocks:BBlock"
+      ],
+      "skos:prefLabel": "Vector",
+      "ldContext": null,
+      "openAPIDocument": null,
+      "ontology": null,
+      "rdfData": [],
+      "isProfileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://ogcincubator.github.io/bblocks-connected-systems/"
+      }
+    },
+    {
       "itemIdentifier": "ogc.api.connected-systems.swecommon.swe-common",
       "name": "SweCommon",
       "abstract": "SweCommon schema.",
@@ -4974,24 +5307,28 @@
       ],
       "shaclShapes": null,
       "dependsOn": [
+        "bblocks://ogc.api.connected-systems.swecommon.data-array",
+        "bblocks://ogc.api.connected-systems.swecommon.data-choice",
         "bblocks://ogc.api.connected-systems.swecommon.vector",
         "bblocks://ogc.api.connected-systems.swecommon.count",
-        "bblocks://ogc.api.connected-systems.swecommon.data-choice",
-        "bblocks://ogc.api.connected-systems.swecommon.quantity-range",
-        "bblocks://ogc.api.connected-systems.swecommon.time",
-        "bblocks://ogc.api.connected-systems.swecommon.category",
-        "bblocks://ogc.api.connected-systems.swecommon.data-array",
-        "bblocks://ogc.api.connected-systems.swecommon.category-range",
-        "bblocks://ogc.api.connected-systems.swecommon.boolean",
-        "bblocks://ogc.api.connected-systems.swecommon.count-range",
         "bblocks://ogc.api.connected-systems.swecommon.data-stream",
-        "bblocks://ogc.api.connected-systems.swecommon.time-range",
         "bblocks://ogc.api.connected-systems.swecommon.quantity",
-        "bblocks://ogc.api.connected-systems.swecommon.geometry",
+        "bblocks://ogc.api.connected-systems.swecommon.category-range",
+        "bblocks://ogc.api.connected-systems.swecommon.time-range",
+        "bblocks://ogc.api.connected-systems.swecommon.category",
+        "bblocks://ogc.api.connected-systems.swecommon.boolean",
         "bblocks://ogc.api.connected-systems.swecommon.matrix",
+        "bblocks://ogc.api.connected-systems.swecommon.count-range",
+        "bblocks://ogc.api.connected-systems.swecommon.time",
+        "bblocks://ogc.api.connected-systems.swecommon.data-record",
+        "bblocks://ogc.api.connected-systems.swecommon.geometry",
         "bblocks://ogc.api.connected-systems.swecommon.text",
-        "bblocks://ogc.api.connected-systems.swecommon.data-record"
+        "bblocks://ogc.api.connected-systems.swecommon.quantity-range"
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
@@ -5061,6 +5398,10 @@
       "dependsOn": [
         "bblocks://ogc.api.connected-systems.swecommon.swe-common"
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
@@ -5132,6 +5473,10 @@
         "bblocks://ogc.api.connected-systems.swecommon.swe-common",
         "bblocks://ogc.api.connected-systems.swecommon.encodings"
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
@@ -5201,10 +5546,14 @@
       "shaclShapes": null,
       "dependsOn": [
         "bblocks://ogc.api.connected-systems.swecommon.category",
-        "bblocks://ogc.api.connected-systems.swecommon.swe-common",
         "bblocks://ogc.api.connected-systems.swecommon.time",
+        "bblocks://ogc.api.connected-systems.swecommon.swe-common",
         "bblocks://ogc.api.connected-systems.swecommon.data-record"
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
@@ -5275,6 +5624,10 @@
         "bblocks://ogc.api.connected-systems.swecommon.swe-common",
         "bblocks://ogc.api.connected-systems.swecommon.data-record"
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
@@ -5346,6 +5699,10 @@
         "bblocks://ogc.api.connected-systems.swecommon.swe-common",
         "bblocks://ogc.api.connected-systems.swecommon.encodings"
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
@@ -5417,6 +5774,10 @@
         "bblocks://ogc.api.connected-systems.swecommon.swe-common",
         "bblocks://ogc.api.connected-systems.swecommon.abstract-swe-identifiable"
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
@@ -5484,11 +5845,15 @@
       ],
       "shaclShapes": null,
       "dependsOn": [
-        "bblocks://ogc.api.connected-systems.swecommon.swe-common",
-        "bblocks://ogc.api.connected-systems.swecommon.encodings",
         "bblocks://ogc.api.connected-systems.swecommon.basic-types",
-        "bblocks://ogc.api.connected-systems.swecommon.abstract-data-component"
+        "bblocks://ogc.api.connected-systems.swecommon.swe-common",
+        "bblocks://ogc.api.connected-systems.swecommon.abstract-data-component",
+        "bblocks://ogc.api.connected-systems.swecommon.encodings"
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
@@ -5541,79 +5906,6 @@
       }
     },
     {
-      "itemIdentifier": "ogc.api.connected-systems.swecommon.data-choice",
-      "name": "DataChoice",
-      "abstract": "Implementation of a choice of two or more Data Components (also called disjoint union)",
-      "status": "under-development",
-      "dateTimeAddition": "2026-09-23T00:00:00Z",
-      "itemClass": "schema",
-      "version": "0.1",
-      "group": "SWE Common",
-      "sources": [
-        {
-          "title": "swecommon/schemas/json/DataChoice.json in opengeospatial/ogcapi-connected-systems",
-          "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/swecommon/schemas/json/DataChoice.json"
-        }
-      ],
-      "shaclShapes": null,
-      "dependsOn": [
-        "bblocks://ogc.api.connected-systems.swecommon.category",
-        "bblocks://ogc.api.connected-systems.swecommon.swe-common",
-        "bblocks://ogc.api.connected-systems.swecommon.basic-types",
-        "bblocks://ogc.api.connected-systems.swecommon.abstract-data-component"
-      ],
-      "dateOfLastChange": "2026-09-23",
-      "schema": [
-        {
-          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/data-choice/schema.yaml",
-          "prof:hasRole": "role:schema",
-          "dct:format": "application/yaml",
-          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
-        },
-        {
-          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/data-choice/schema.json",
-          "prof:hasRole": "role:schema",
-          "dct:format": "application/json",
-          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
-        }
-      ],
-      "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/data-choice/schema.json",
-      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/data-choice/resolvedProperties.json",
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/data-choice/",
-      "validationPassed": true,
-      "testOutputs": "https://github.com/ogcincubator/bblocks-connected-systems/blob/master/build/tests/api/connected-systems/swecommon/data-choice/",
-      "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/markdown/api/connected-systems/swecommon/data-choice/index.md"
-        },
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/json-full/api/connected-systems/swecommon/data-choice/index.json"
-        },
-        "bblocks-viewer": {
-          "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/bblock/ogc.api.connected-systems.swecommon.data-choice"
-        }
-      },
-      "@id": "bblocks://ogc.api.connected-systems.swecommon.data-choice",
-      "@type": [
-        "bblocks:Schema",
-        "skos:Concept",
-        "dcat:Dataset",
-        "bblocks:BBlock"
-      ],
-      "skos:prefLabel": "DataChoice",
-      "ldContext": null,
-      "openAPIDocument": null,
-      "ontology": null,
-      "rdfData": [],
-      "isProfileOf": null,
-      "skos:topConceptOf": {
-        "@id": "https://ogcincubator.github.io/bblocks-connected-systems/"
-      }
-    },
-    {
       "itemIdentifier": "ogc.api.connected-systems.part2.command-schema",
       "name": "CommandSchema",
       "abstract": "Schema describing the content of commands in a ControlStream; the syntax depends on the command format (JSON, SWE, Protobuf or other).",
@@ -5630,11 +5922,15 @@
       ],
       "shaclShapes": null,
       "dependsOn": [
-        "bblocks://ogc.api.connected-systems.part2.command-schema-swe",
-        "bblocks://ogc.api.connected-systems.part2.command-schema-any-other",
         "bblocks://ogc.api.connected-systems.part2.command-schema-protobuf",
-        "bblocks://ogc.api.connected-systems.part2.command-schema-json"
+        "bblocks://ogc.api.connected-systems.part2.command-schema-json",
+        "bblocks://ogc.api.connected-systems.part2.command-schema-any-other",
+        "bblocks://ogc.api.connected-systems.part2.command-schema-swe"
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
@@ -5702,11 +5998,15 @@
       ],
       "shaclShapes": null,
       "dependsOn": [
-        "bblocks://ogc.api.connected-systems.part2.observation-schema-swe",
-        "bblocks://ogc.api.connected-systems.part2.observation-schema-protobuf",
+        "bblocks://ogc.api.connected-systems.part2.observation-schema-any-other",
         "bblocks://ogc.api.connected-systems.part2.observation-schema-json",
-        "bblocks://ogc.api.connected-systems.part2.observation-schema-any-other"
+        "bblocks://ogc.api.connected-systems.part2.observation-schema-swe",
+        "bblocks://ogc.api.connected-systems.part2.observation-schema-protobuf"
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
@@ -5777,6 +6077,10 @@
         "bblocks://ogc.api.connected-systems.part1.links",
         "bblocks://ogc.api.connected-systems.sensorml.derived-property"
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
@@ -5844,15 +6148,19 @@
       ],
       "shaclShapes": null,
       "dependsOn": [
-        "bblocks://ogc.api.connected-systems.common.time-period",
-        "bblocks://ogc.api.connected-systems.swecommon.vector",
         "bblocks://ogc.api.connected-systems.swecommon.data-array",
         "bblocks://ogc.api.connected-systems.common.time-instant",
+        "bblocks://ogc.api.connected-systems.swecommon.abstract-swe-identifiable",
+        "bblocks://ogc.api.connected-systems.swecommon.vector",
+        "bblocks://ogc.api.connected-systems.swecommon.basic-types",
         "bblocks://ogc.api.connected-systems.swecommon.swe-common",
         "bblocks://ogc.api.connected-systems.swecommon.matrix",
-        "bblocks://ogc.api.connected-systems.swecommon.basic-types",
-        "bblocks://ogc.api.connected-systems.swecommon.abstract-swe-identifiable"
+        "bblocks://ogc.api.connected-systems.common.time-period"
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
@@ -5919,12 +6227,16 @@
       ],
       "shaclShapes": null,
       "dependsOn": [
-        "bblocks://ogc.api.connected-systems.common.time-period",
+        "bblocks://ogc.api.connected-systems.part1.links",
         "bblocks://ogc.api.connected-systems.part2.base-stream",
         "bblocks://ogc.api.connected-systems.common.link",
-        "bblocks://ogc.api.connected-systems.part2.command-schema",
-        "bblocks://ogc.api.connected-systems.part1.links"
+        "bblocks://ogc.api.connected-systems.common.time-period",
+        "bblocks://ogc.api.connected-systems.part2.command-schema"
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
@@ -5993,12 +6305,16 @@
       ],
       "shaclShapes": null,
       "dependsOn": [
-        "bblocks://ogc.api.connected-systems.common.time-period",
+        "bblocks://ogc.api.connected-systems.part1.links",
         "bblocks://ogc.api.connected-systems.part2.base-stream",
-        "bblocks://ogc.api.connected-systems.part2.observation-schema",
         "bblocks://ogc.api.connected-systems.common.link",
-        "bblocks://ogc.api.connected-systems.part1.links"
+        "bblocks://ogc.api.connected-systems.common.time-period",
+        "bblocks://ogc.api.connected-systems.part2.observation-schema"
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
@@ -6069,6 +6385,10 @@
       "dependsOn": [
         "bblocks://ogc.api.connected-systems.part1.property-sensorml"
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
@@ -6138,6 +6458,10 @@
       "dependsOn": [
         "bblocks://ogc.api.connected-systems.sensorml.common-defs"
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
@@ -6205,9 +6529,13 @@
       ],
       "shaclShapes": null,
       "dependsOn": [
-        "bblocks://ogc.api.connected-systems.part1.links",
-        "bblocks://ogc.api.connected-systems.part2.control-stream"
+        "bblocks://ogc.api.connected-systems.part2.control-stream",
+        "bblocks://ogc.api.connected-systems.part1.links"
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
@@ -6278,6 +6606,10 @@
         "bblocks://ogc.api.connected-systems.part2.control-stream",
         "bblocks://ogc.api.connected-systems.part2.command-schema"
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
@@ -6345,9 +6677,13 @@
       ],
       "shaclShapes": null,
       "dependsOn": [
-        "bblocks://ogc.api.connected-systems.part2.data-stream",
-        "bblocks://ogc.api.connected-systems.part1.links"
+        "bblocks://ogc.api.connected-systems.part1.links",
+        "bblocks://ogc.api.connected-systems.part2.data-stream"
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
@@ -6418,6 +6754,10 @@
         "bblocks://ogc.api.connected-systems.part2.observation-schema",
         "bblocks://ogc.api.connected-systems.part2.data-stream"
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
@@ -6488,6 +6828,10 @@
         "bblocks://ogc.api.connected-systems.part1.links",
         "bblocks://ogc.api.connected-systems.part1.property-array-sensorml"
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
@@ -6558,6 +6902,10 @@
         "bblocks://ogc.api.connected-systems.sensorml.settings",
         "bblocks://ogc.api.connected-systems.common.link"
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
@@ -6626,11 +6974,15 @@
       "shaclShapes": null,
       "dependsOn": [
         "bblocks://ogc.api.connected-systems.sensorml.settings",
-        "bblocks://ogc.api.connected-systems.sensorml.common-defs",
+        "bblocks://ogc.api.connected-systems.swecommon.abstract-swe-identifiable",
         "bblocks://ogc.api.connected-systems.sensorml.responsible-party",
-        "bblocks://ogc.api.connected-systems.sensorml.document",
-        "bblocks://ogc.api.connected-systems.swecommon.abstract-swe-identifiable"
+        "bblocks://ogc.api.connected-systems.sensorml.common-defs",
+        "bblocks://ogc.api.connected-systems.sensorml.document"
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
@@ -6701,6 +7053,10 @@
         "bblocks://ogc.api.connected-systems.part1.links",
         "bblocks://ogc.api.connected-systems.sensorml.deployed-system"
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
@@ -6771,6 +7127,10 @@
         "bblocks://ogc.api.connected-systems.part1.links",
         "bblocks://ogc.api.connected-systems.sensorml.event"
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
@@ -6839,16 +7199,20 @@
       ],
       "shaclShapes": null,
       "dependsOn": [
-        "bblocks://ogc.api.connected-systems.common.time-period",
-        "bblocks://ogc.api.connected-systems.sensorml.event",
-        "bblocks://ogc.api.connected-systems.sensorml.legal-constraint",
-        "bblocks://ogc.api.connected-systems.sensorml.contact-link",
-        "bblocks://ogc.api.connected-systems.sensorml.common-defs",
-        "bblocks://ogc.api.connected-systems.swecommon.swe-common",
+        "bblocks://ogc.api.connected-systems.swecommon.abstract-swe-identifiable",
         "bblocks://ogc.api.connected-systems.sensorml.responsible-party",
+        "bblocks://ogc.api.connected-systems.swecommon.swe-common",
+        "bblocks://ogc.api.connected-systems.sensorml.common-defs",
+        "bblocks://ogc.api.connected-systems.sensorml.contact-link",
+        "bblocks://ogc.api.connected-systems.sensorml.event",
         "bblocks://ogc.api.connected-systems.sensorml.document",
-        "bblocks://ogc.api.connected-systems.swecommon.abstract-swe-identifiable"
+        "bblocks://ogc.api.connected-systems.common.time-period",
+        "bblocks://ogc.api.connected-systems.sensorml.legal-constraint"
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
@@ -6918,6 +7282,10 @@
       "dependsOn": [
         "bblocks://ogc.api.connected-systems.part1.deployed-system-sensorml"
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
@@ -6988,6 +7356,10 @@
         "bblocks://ogc.api.connected-systems.part1.links",
         "bblocks://ogc.api.connected-systems.part2.system-event"
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
@@ -7055,10 +7427,14 @@
       ],
       "shaclShapes": null,
       "dependsOn": [
-        "bblocks://ogc.api.connected-systems.sensorml.described-object",
+        "bblocks://ogc.api.connected-systems.swecommon.basic-types",
         "bblocks://ogc.api.connected-systems.sensorml.deployed-system",
-        "bblocks://ogc.api.connected-systems.swecommon.basic-types"
+        "bblocks://ogc.api.connected-systems.sensorml.described-object"
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
@@ -7126,9 +7502,13 @@
       ],
       "shaclShapes": null,
       "dependsOn": [
-        "bblocks://ogc.api.connected-systems.sensorml.described-object",
-        "bblocks://ogc.api.connected-systems.sensorml.settings"
+        "bblocks://ogc.api.connected-systems.sensorml.settings",
+        "bblocks://ogc.api.connected-systems.sensorml.described-object"
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
@@ -7199,6 +7579,10 @@
         "bblocks://ogc.api.connected-systems.part1.links",
         "bblocks://ogc.api.connected-systems.part1.deployed-system-array-sensorml"
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
@@ -7266,10 +7650,14 @@
       ],
       "shaclShapes": null,
       "dependsOn": [
+        "bblocks://ogc.api.connected-systems.part1.uris",
         "bblocks://ogc.api.connected-systems.part1.links",
-        "bblocks://ogc.api.connected-systems.sensorml.deployment",
-        "bblocks://ogc.api.connected-systems.part1.uris"
+        "bblocks://ogc.api.connected-systems.sensorml.deployment"
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
@@ -7339,13 +7727,17 @@
       "shaclShapes": null,
       "dependsOn": [
         "bblocks://ogc.api.connected-systems.sensorml.settings",
+        "bblocks://ogc.api.connected-systems.swecommon.basic-types",
         "bblocks://ogc.api.connected-systems.common.link",
-        "bblocks://ogc.api.connected-systems.sensorml.common-defs",
-        "bblocks://ogc.api.connected-systems.sensorml.described-object",
         "bblocks://ogc.api.connected-systems.swecommon.swe-common",
+        "bblocks://ogc.api.connected-systems.sensorml.common-defs",
         "bblocks://ogc.api.connected-systems.sensorml.mode",
-        "bblocks://ogc.api.connected-systems.swecommon.basic-types"
+        "bblocks://ogc.api.connected-systems.sensorml.described-object"
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
@@ -7415,6 +7807,10 @@
       "dependsOn": [
         "bblocks://ogc.api.connected-systems.part1.deployment-sensorml"
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
@@ -7482,15 +7878,19 @@
       ],
       "shaclShapes": null,
       "dependsOn": [
-        "bblocks://ogc.api.connected-systems.swecommon.vector",
         "bblocks://ogc.api.connected-systems.swecommon.data-array",
-        "bblocks://ogc.api.connected-systems.sensorml.abstract-process",
+        "bblocks://ogc.api.connected-systems.swecommon.abstract-swe-identifiable",
+        "bblocks://ogc.api.connected-systems.swecommon.vector",
         "bblocks://ogc.api.connected-systems.sensorml.pose",
         "bblocks://ogc.api.connected-systems.common.link",
-        "bblocks://ogc.api.connected-systems.swecommon.text",
         "bblocks://ogc.api.connected-systems.swecommon.data-record",
-        "bblocks://ogc.api.connected-systems.swecommon.abstract-swe-identifiable"
+        "bblocks://ogc.api.connected-systems.sensorml.abstract-process",
+        "bblocks://ogc.api.connected-systems.swecommon.text"
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
@@ -7560,6 +7960,10 @@
       "dependsOn": [
         "bblocks://ogc.api.connected-systems.sensorml.abstract-process"
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
@@ -7631,6 +8035,10 @@
         "bblocks://ogc.api.connected-systems.part1.links",
         "bblocks://ogc.api.connected-systems.part1.deployment-array-sensorml"
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
@@ -7698,9 +8106,13 @@
       ],
       "shaclShapes": null,
       "dependsOn": [
-        "bblocks://ogc.api.connected-systems.sensorml.abstract-physical-process",
-        "bblocks://ogc.api.connected-systems.sensorml.aggregate-process"
+        "bblocks://ogc.api.connected-systems.sensorml.aggregate-process",
+        "bblocks://ogc.api.connected-systems.sensorml.abstract-physical-process"
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
@@ -7772,6 +8184,10 @@
         "bblocks://ogc.api.connected-systems.sensorml.abstract-physical-process",
         "bblocks://ogc.api.connected-systems.sensorml.simple-process"
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
@@ -7840,14 +8256,18 @@
       ],
       "shaclShapes": null,
       "dependsOn": [
-        "bblocks://ogc.api.connected-systems.sensorml.abstract-process",
+        "bblocks://ogc.api.connected-systems.sensorml.simple-process",
+        "bblocks://ogc.api.connected-systems.swecommon.basic-types",
+        "bblocks://ogc.api.connected-systems.sensorml.physical-system",
         "bblocks://ogc.api.connected-systems.common.link",
         "bblocks://ogc.api.connected-systems.sensorml.common-defs",
-        "bblocks://ogc.api.connected-systems.sensorml.simple-process",
-        "bblocks://ogc.api.connected-systems.sensorml.physical-component",
-        "bblocks://ogc.api.connected-systems.sensorml.physical-system",
-        "bblocks://ogc.api.connected-systems.swecommon.basic-types"
+        "bblocks://ogc.api.connected-systems.sensorml.abstract-process",
+        "bblocks://ogc.api.connected-systems.sensorml.physical-component"
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
@@ -7916,13 +8336,17 @@
       ],
       "shaclShapes": null,
       "dependsOn": [
-        "bblocks://ogc.api.connected-systems.sensorml.aggregate-process",
         "bblocks://ogc.api.connected-systems.sensorml.simple-process",
+        "bblocks://ogc.api.connected-systems.sensorml.physical-system",
+        "bblocks://ogc.api.connected-systems.sensorml.aggregate-process",
         "bblocks://ogc.api.connected-systems.part1.links",
         "bblocks://ogc.api.connected-systems.part1.uris",
-        "bblocks://ogc.api.connected-systems.sensorml.physical-component",
-        "bblocks://ogc.api.connected-systems.sensorml.physical-system"
+        "bblocks://ogc.api.connected-systems.sensorml.physical-component"
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
@@ -7991,13 +8415,17 @@
       ],
       "shaclShapes": null,
       "dependsOn": [
-        "bblocks://ogc.api.connected-systems.sensorml.aggregate-process",
         "bblocks://ogc.api.connected-systems.sensorml.simple-process",
+        "bblocks://ogc.api.connected-systems.sensorml.physical-system",
+        "bblocks://ogc.api.connected-systems.sensorml.aggregate-process",
         "bblocks://ogc.api.connected-systems.part1.links",
         "bblocks://ogc.api.connected-systems.part1.uris",
-        "bblocks://ogc.api.connected-systems.sensorml.physical-component",
-        "bblocks://ogc.api.connected-systems.sensorml.physical-system"
+        "bblocks://ogc.api.connected-systems.sensorml.physical-component"
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
@@ -8068,6 +8496,10 @@
       "dependsOn": [
         "bblocks://ogc.api.connected-systems.part1.procedure-sensorml"
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
@@ -8137,6 +8569,10 @@
       "dependsOn": [
         "bblocks://ogc.api.connected-systems.part1.system-sensorml"
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
@@ -8207,6 +8643,10 @@
         "bblocks://ogc.api.connected-systems.part1.links",
         "bblocks://ogc.api.connected-systems.part1.procedure-array-sensorml"
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
@@ -8277,6 +8717,10 @@
         "bblocks://ogc.api.connected-systems.part1.links",
         "bblocks://ogc.api.connected-systems.part1.system-array-sensorml"
       ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
       "dateOfLastChange": "2026-09-23",
       "schema": [
         {
@@ -8354,19 +8798,19 @@
       "@id": "bblocks://ogc.api.connected-systems.part2.observation-schema-any-other"
     },
     {
+      "@id": "bblocks://ogc.api.connected-systems.swecommon.abstract-swe-identifiable"
+    },
+    {
       "@id": "bblocks://ogc.api.connected-systems.sensorml.pose"
     },
     {
       "@id": "bblocks://ogc.api.connected-systems.swecommon.matrix"
     },
     {
-      "@id": "bblocks://ogc.api.connected-systems.sensorml.legal-constraint"
-    },
-    {
       "@id": "bblocks://ogc.api.connected-systems.sensorml.responsible-party"
     },
     {
-      "@id": "bblocks://ogc.api.connected-systems.swecommon.abstract-simple-component"
+      "@id": "bblocks://ogc.api.connected-systems.sensorml.legal-constraint"
     },
     {
       "@id": "bblocks://ogc.api.connected-systems.part1.links"
@@ -8390,10 +8834,7 @@
       "@id": "bblocks://ogc.api.connected-systems.part2.observation"
     },
     {
-      "@id": "bblocks://ogc.api.connected-systems.swecommon.basic-types"
-    },
-    {
-      "@id": "bblocks://ogc.api.connected-systems.swecommon.boolean"
+      "@id": "bblocks://ogc.api.connected-systems.swecommon.abstract-data-component"
     },
     {
       "@id": "bblocks://ogc.api.connected-systems.part1.deployed-system"
@@ -8408,37 +8849,7 @@
       "@id": "bblocks://ogc.api.connected-systems.part2.observation-collection"
     },
     {
-      "@id": "bblocks://ogc.api.connected-systems.swecommon.abstract-swe-identifiable"
-    },
-    {
-      "@id": "bblocks://ogc.api.connected-systems.swecommon.category"
-    },
-    {
-      "@id": "bblocks://ogc.api.connected-systems.swecommon.category-range"
-    },
-    {
-      "@id": "bblocks://ogc.api.connected-systems.swecommon.count"
-    },
-    {
-      "@id": "bblocks://ogc.api.connected-systems.swecommon.count-range"
-    },
-    {
-      "@id": "bblocks://ogc.api.connected-systems.swecommon.encodings"
-    },
-    {
-      "@id": "bblocks://ogc.api.connected-systems.swecommon.quantity"
-    },
-    {
-      "@id": "bblocks://ogc.api.connected-systems.swecommon.quantity-range"
-    },
-    {
-      "@id": "bblocks://ogc.api.connected-systems.swecommon.text"
-    },
-    {
-      "@id": "bblocks://ogc.api.connected-systems.swecommon.time"
-    },
-    {
-      "@id": "bblocks://ogc.api.connected-systems.swecommon.time-range"
+      "@id": "bblocks://ogc.api.connected-systems.swecommon.abstract-simple-component"
     },
     {
       "@id": "bblocks://ogc.api.connected-systems.part1.deployed-system-array"
@@ -8465,10 +8876,10 @@
       "@id": "bblocks://ogc.api.connected-systems.part2.command-result"
     },
     {
-      "@id": "bblocks://ogc.api.connected-systems.swecommon.abstract-data-component"
+      "@id": "bblocks://ogc.api.connected-systems.swecommon.basic-types"
     },
     {
-      "@id": "bblocks://ogc.api.connected-systems.swecommon.data-stream"
+      "@id": "bblocks://ogc.api.connected-systems.swecommon.boolean"
     },
     {
       "@id": "bblocks://ogc.api.connected-systems.part1.deployed-system-collection"
@@ -8495,13 +8906,40 @@
       "@id": "bblocks://ogc.api.connected-systems.part2.command-status"
     },
     {
+      "@id": "bblocks://ogc.api.connected-systems.swecommon.category"
+    },
+    {
+      "@id": "bblocks://ogc.api.connected-systems.swecommon.category-range"
+    },
+    {
+      "@id": "bblocks://ogc.api.connected-systems.swecommon.count"
+    },
+    {
+      "@id": "bblocks://ogc.api.connected-systems.swecommon.count-range"
+    },
+    {
       "@id": "bblocks://ogc.api.connected-systems.swecommon.data-record"
+    },
+    {
+      "@id": "bblocks://ogc.api.connected-systems.swecommon.encodings"
     },
     {
       "@id": "bblocks://ogc.api.connected-systems.swecommon.geometry"
     },
     {
-      "@id": "bblocks://ogc.api.connected-systems.swecommon.vector"
+      "@id": "bblocks://ogc.api.connected-systems.swecommon.quantity"
+    },
+    {
+      "@id": "bblocks://ogc.api.connected-systems.swecommon.quantity-range"
+    },
+    {
+      "@id": "bblocks://ogc.api.connected-systems.swecommon.text"
+    },
+    {
+      "@id": "bblocks://ogc.api.connected-systems.swecommon.time"
+    },
+    {
+      "@id": "bblocks://ogc.api.connected-systems.swecommon.time-range"
     },
     {
       "@id": "bblocks://ogc.api.connected-systems.part1.procedure-collection"
@@ -8517,6 +8955,15 @@
     },
     {
       "@id": "bblocks://ogc.api.connected-systems.part2.command-status-collection"
+    },
+    {
+      "@id": "bblocks://ogc.api.connected-systems.swecommon.data-choice"
+    },
+    {
+      "@id": "bblocks://ogc.api.connected-systems.swecommon.data-stream"
+    },
+    {
+      "@id": "bblocks://ogc.api.connected-systems.swecommon.vector"
     },
     {
       "@id": "bblocks://ogc.api.connected-systems.swecommon.swe-common"
@@ -8541,9 +8988,6 @@
     },
     {
       "@id": "bblocks://ogc.api.connected-systems.swecommon.data-array"
-    },
-    {
-      "@id": "bblocks://ogc.api.connected-systems.swecommon.data-choice"
     },
     {
       "@id": "bblocks://ogc.api.connected-systems.part2.command-schema"

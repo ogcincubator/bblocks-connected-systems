@@ -1,5 +1,5 @@
 Validation report for ogc.api.connected-systems.part2.observation-schema-swe - ObservationSchemaSwe
-Generated 2026-09-23T22:13:51.681370+00:00
+Generated 2026-09-23T22:26:47.594414+00:00
 === Files ===
 Using examples/observationSchema-scalar-swecsv.json from examples
 === End Files ===

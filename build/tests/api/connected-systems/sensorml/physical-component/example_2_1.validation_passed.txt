@@ -1,5 +1,5 @@
 Validation report for ogc.api.connected-systems.sensorml.physical-component - PhysicalComponent
-Generated 2026-09-23T22:13:54.056020+00:00
+Generated 2026-09-23T22:26:49.235273+00:00
 === Files ===
 Using examples/sensor_instance_with_geopose_ypr.json from examples
 === End Files ===

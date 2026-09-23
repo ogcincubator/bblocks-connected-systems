@@ -17,15 +17,19 @@
   ],
   "shaclShapes": {},
   "dependsOn": [
-    "ogc.api.connected-systems.swecommon.vector",
     "ogc.api.connected-systems.swecommon.data-array",
-    "ogc.api.connected-systems.sensorml.abstract-process",
+    "ogc.api.connected-systems.swecommon.abstract-swe-identifiable",
+    "ogc.api.connected-systems.swecommon.vector",
     "ogc.api.connected-systems.sensorml.pose",
     "ogc.api.connected-systems.common.link",
-    "ogc.api.connected-systems.swecommon.text",
     "ogc.api.connected-systems.swecommon.data-record",
-    "ogc.api.connected-systems.swecommon.abstract-swe-identifiable"
+    "ogc.api.connected-systems.sensorml.abstract-process",
+    "ogc.api.connected-systems.swecommon.text"
   ],
+  "license": {
+    "name": "Apache-2.0",
+    "url": "https://www.apache.org/licenses/LICENSE-2.0"
+  },
   "dateOfLastChange": "2026-09-23",
   "schema": {
     "application/yaml": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/abstract-physical-process/schema.yaml",

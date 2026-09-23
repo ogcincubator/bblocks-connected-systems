@@ -2,7 +2,7 @@
   "title": "Validation report for ogc.api.connected-systems.part2.command-status-collection - CommandStatusCollection",
   "bblockName": "CommandStatusCollection",
   "bblockId": "ogc.api.connected-systems.part2.command-status-collection",
-  "generated": "2026-09-23T22:13:51.447951+00:00",
+  "generated": "2026-09-23T22:26:47.349877+00:00",
   "result": true,
   "items": [],
   "globalErrors": {},

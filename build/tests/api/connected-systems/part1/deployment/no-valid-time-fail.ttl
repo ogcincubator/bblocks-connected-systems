@@ -7,14 +7,14 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <file:///github/workspace/iv3f2kcq27gfi> a geojson:Feature ;
-    rdfs:seeAlso [ rdfs:label "this document" ;
-            dct:type "application/geo+json" ;
-            ns1:relation <http://www.iana.org/assignments/relation/self> ;
-            oa:hasTarget <https://data.example.org/api/deployments/iv3f2kcq27gfi?f=json> ],
-        [ rdfs:label "this resource as SensorML" ;
+    rdfs:seeAlso [ rdfs:label "this resource as SensorML" ;
             dct:type "application/sml+json" ;
             ns1:relation <http://www.iana.org/assignments/relation/alternate> ;
-            oa:hasTarget <https://data.example.org/api/deployments/iv3f2kcq27gfi?f=sml> ] ;
+            oa:hasTarget <https://data.example.org/api/deployments/iv3f2kcq27gfi?f=sml> ],
+        [ rdfs:label "this document" ;
+            dct:type "application/geo+json" ;
+            ns1:relation <http://www.iana.org/assignments/relation/self> ;
+            oa:hasTarget <https://data.example.org/api/deployments/iv3f2kcq27gfi?f=json> ] ;
     geojson:geometry [ a geojson:Polygon ;
             geojson:coordinates ( ( ( 5.376e+01 -1.737e+02 ) ( 5.376e+01 -1.5507e+02 ) ( 7.503e+01 -1.5507e+02 ) ( 7.503e+01 -1.737e+02 ) ( 5.376e+01 -1.737e+02 ) ) ) ] .
 

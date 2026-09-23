@@ -1,5 +1,5 @@
 Validation report for ogc.api.connected-systems.part2.observation - Observation
-Generated 2026-09-23T22:13:47.940867+00:00
+Generated 2026-09-23T22:26:43.912717+00:00
 === Files ===
 Using examples/obs-simple.json from examples
 === End Files ===

@@ -27,6 +27,10 @@
     "ogc.api.connected-systems.part1.feature",
     "ogc.api.connected-systems.part1.uris"
   ],
+  "license": {
+    "name": "Apache-2.0",
+    "url": "https://www.apache.org/licenses/LICENSE-2.0"
+  },
   "dateOfLastChange": "2026-09-23",
   "schema": {
     "application/yaml": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part1/procedure/schema.yaml",
@@ -60,7 +64,7 @@
           "language": "ttl",
           "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part1/procedure/example_1_1.ttl",
           "sizeBytes": 834,
-          "code": "@prefix dct: <http://purl.org/dc/terms/> .\n@prefix geojson: <https://purl.org/geojson/vocab#> .\n@prefix ns1: <http://www.iana.org/assignments/> .\n@prefix oa: <http://www.w3.org/ns/oa#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n\n<file:///github/workspace/iv3f2kcq27gfi> a geojson:Feature ;\n    rdfs:seeAlso [ rdfs:label \"this resource as SensorML\" ;\n            dct:type \"application/sml+json\" ;\n            ns1:relation <http://www.iana.org/assignments/relation/alternate> ;\n            oa:hasTarget <https://data.example.org/api/procedures/iv3f2kcq27gfi?f=sml> ],\n        [ rdfs:label \"this document\" ;\n            dct:type \"application/geo+json\" ;\n            ns1:relation <http://www.iana.org/assignments/relation/self> ;\n            oa:hasTarget <https://data.example.org/api/procedures/iv3f2kcq27gfi?f=json> ] .\n\n"
+          "code": "@prefix dct: <http://purl.org/dc/terms/> .\n@prefix geojson: <https://purl.org/geojson/vocab#> .\n@prefix ns1: <http://www.iana.org/assignments/> .\n@prefix oa: <http://www.w3.org/ns/oa#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n\n<file:///github/workspace/iv3f2kcq27gfi> a geojson:Feature ;\n    rdfs:seeAlso [ rdfs:label \"this document\" ;\n            dct:type \"application/geo+json\" ;\n            ns1:relation <http://www.iana.org/assignments/relation/self> ;\n            oa:hasTarget <https://data.example.org/api/procedures/iv3f2kcq27gfi?f=json> ],\n        [ rdfs:label \"this resource as SensorML\" ;\n            dct:type \"application/sml+json\" ;\n            ns1:relation <http://www.iana.org/assignments/relation/alternate> ;\n            oa:hasTarget <https://data.example.org/api/procedures/iv3f2kcq27gfi?f=sml> ] .\n\n"
         }
       ]
     }

@@ -1,5 +1,5 @@
 Validation report for ogc.api.connected-systems.part1.system-sensorml - System (SensorML)
-Generated 2026-09-23T22:13:55.157957+00:00
+Generated 2026-09-23T22:26:49.828509+00:00
 === Files ===
 Using examples/thermometer-sensor-sml.json from examples
 === End Files ===

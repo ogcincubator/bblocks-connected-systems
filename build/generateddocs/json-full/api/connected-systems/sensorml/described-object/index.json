@@ -17,16 +17,20 @@
   ],
   "shaclShapes": {},
   "dependsOn": [
-    "ogc.api.connected-systems.common.time-period",
-    "ogc.api.connected-systems.sensorml.event",
-    "ogc.api.connected-systems.sensorml.legal-constraint",
-    "ogc.api.connected-systems.sensorml.contact-link",
-    "ogc.api.connected-systems.sensorml.common-defs",
-    "ogc.api.connected-systems.swecommon.swe-common",
+    "ogc.api.connected-systems.swecommon.abstract-swe-identifiable",
     "ogc.api.connected-systems.sensorml.responsible-party",
+    "ogc.api.connected-systems.swecommon.swe-common",
+    "ogc.api.connected-systems.sensorml.common-defs",
+    "ogc.api.connected-systems.sensorml.contact-link",
+    "ogc.api.connected-systems.sensorml.event",
     "ogc.api.connected-systems.sensorml.document",
-    "ogc.api.connected-systems.swecommon.abstract-swe-identifiable"
+    "ogc.api.connected-systems.common.time-period",
+    "ogc.api.connected-systems.sensorml.legal-constraint"
   ],
+  "license": {
+    "name": "Apache-2.0",
+    "url": "https://www.apache.org/licenses/LICENSE-2.0"
+  },
   "dateOfLastChange": "2026-09-23",
   "schema": {
     "application/yaml": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/described-object/schema.yaml",

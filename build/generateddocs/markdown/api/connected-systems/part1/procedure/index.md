@@ -96,14 +96,14 @@ Converted from [`api/part1/openapi/schemas/geojson/procedure.json`](https://gith
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 <file:///github/workspace/iv3f2kcq27gfi> a geojson:Feature ;
-    rdfs:seeAlso [ rdfs:label "this resource as SensorML" ;
-            dct:type "application/sml+json" ;
-            ns1:relation <http://www.iana.org/assignments/relation/alternate> ;
-            oa:hasTarget <https://data.example.org/api/procedures/iv3f2kcq27gfi?f=sml> ],
-        [ rdfs:label "this document" ;
+    rdfs:seeAlso [ rdfs:label "this document" ;
             dct:type "application/geo+json" ;
             ns1:relation <http://www.iana.org/assignments/relation/self> ;
-            oa:hasTarget <https://data.example.org/api/procedures/iv3f2kcq27gfi?f=json> ] .
+            oa:hasTarget <https://data.example.org/api/procedures/iv3f2kcq27gfi?f=json> ],
+        [ rdfs:label "this resource as SensorML" ;
+            dct:type "application/sml+json" ;
+            ns1:relation <http://www.iana.org/assignments/relation/alternate> ;
+            oa:hasTarget <https://data.example.org/api/procedures/iv3f2kcq27gfi?f=sml> ] .
 
 
 ```

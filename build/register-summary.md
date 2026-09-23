@@ -58,6 +58,12 @@ Command schema for any other command format, identified by `commandFormat` and c
 
 Observation schema for any other observation format, identified by `obsFormat` and carrying free-form schema properties.
 
+### `ogc.api.connected-systems.swecommon.abstract-swe-identifiable` — AbstractSweIdentifiable
+
+**Type:** schema
+
+Base substitution groups for all SWE Common objects with identification metadata
+
 ### `ogc.api.connected-systems.sensorml.pose` — Pose
 
 **Type:** schema
@@ -70,23 +76,17 @@ A Pose object that can be either a GeoPose Basic instance of a relative pose.
 
 Implementation of ISO-11404 Array datatype. This defines an array of identical data components with a elementCount. Values are given as a block and can be encoded in different ways
 
-### `ogc.api.connected-systems.sensorml.legal-constraint` — LegalConstraint
-
-**Type:** schema
-
-LegalConstraint schema.
-
 ### `ogc.api.connected-systems.sensorml.responsible-party` — ResponsibleParty
 
 **Type:** schema
 
 ResponsibleParty schema.
 
-### `ogc.api.connected-systems.swecommon.abstract-simple-component` — AbstractSimpleComponent
+### `ogc.api.connected-systems.sensorml.legal-constraint` — LegalConstraint
 
 **Type:** schema
 
-AbstractSimpleComponent schema.
+LegalConstraint schema.
 
 ### `ogc.api.connected-systems.part1.links` — Links
 
@@ -130,17 +130,11 @@ Time Instant
 
 An Observation: the result of observing a property of a feature of interest at a given time, produced by a System and stored in a DataStream.
 
-### `ogc.api.connected-systems.swecommon.basic-types` — BasicTypes
+### `ogc.api.connected-systems.swecommon.abstract-data-component` — AbstractDataComponent
 
 **Type:** schema
 
-BasicTypes schema.
-
-### `ogc.api.connected-systems.swecommon.boolean` — Boolean
-
-**Type:** schema
-
-Scalar component used to express truth: True or False, 0 or 1
+Abstract base class for all data components
 
 ### `ogc.api.connected-systems.part1.deployed-system` — DeployedSystem (GeoJSON)
 
@@ -166,71 +160,11 @@ Time Period
 
 Paged collection of Observation resources as returned by list queries, with the items plus navigation `links`.
 
-### `ogc.api.connected-systems.swecommon.abstract-swe-identifiable` — AbstractSweIdentifiable
+### `ogc.api.connected-systems.swecommon.abstract-simple-component` — AbstractSimpleComponent
 
 **Type:** schema
 
-Base substitution groups for all SWE Common objects with identification metadata
-
-### `ogc.api.connected-systems.swecommon.category` — Category
-
-**Type:** schema
-
-Scalar component used to represent a categorical value as a simple token identifying a term in a code space
-
-### `ogc.api.connected-systems.swecommon.category-range` — CategoryRange
-
-**Type:** schema
-
-Pair of categorical values used to specify a range in an ordinal reference system (specified by the code space)
-
-### `ogc.api.connected-systems.swecommon.count` — Count
-
-**Type:** schema
-
-Scalar component with integer representation used for a discrete counting value
-
-### `ogc.api.connected-systems.swecommon.count-range` — CountRange
-
-**Type:** schema
-
-Integer pair used for specifying a count range
-
-### `ogc.api.connected-systems.swecommon.encodings` — Encodings
-
-**Type:** schema
-
-Encodings schema.
-
-### `ogc.api.connected-systems.swecommon.quantity` — Quantity
-
-**Type:** schema
-
-Scalar component with decimal representation and a unit of measure used to store value of a continuous quantity
-
-### `ogc.api.connected-systems.swecommon.quantity-range` — QuantityRange
-
-**Type:** schema
-
-Decimal pair for specifying a quantity range with a unit of measure
-
-### `ogc.api.connected-systems.swecommon.text` — Text
-
-**Type:** schema
-
-Free text component used to store comments or any other type of textual statement
-
-### `ogc.api.connected-systems.swecommon.time` — Time
-
-**Type:** schema
-
-Scalar component used to represent a time quantity either as ISO 8601 (e.g., 2004-04-18T12:03:04.6Z) or as a duration relative to a time of reference
-
-### `ogc.api.connected-systems.swecommon.time-range` — TimeRange
-
-**Type:** schema
-
-Time value pair for specifying a time range (can be a decimal or ISO 8601)
+AbstractSimpleComponent schema.
 
 ### `ogc.api.connected-systems.part1.deployed-system-array` — DeployedSystemArray (GeoJSON)
 
@@ -280,17 +214,17 @@ A Command: a request sent through a ControlStream to a System to perform an acti
 
 A CommandResult: a result resource produced by the execution of a Command, linked to it by `command@id` and carrying inline data or a reference to the result.
 
-### `ogc.api.connected-systems.swecommon.abstract-data-component` — AbstractDataComponent
+### `ogc.api.connected-systems.swecommon.basic-types` — BasicTypes
 
 **Type:** schema
 
-Abstract base class for all data components
+BasicTypes schema.
 
-### `ogc.api.connected-systems.swecommon.data-stream` — DataStream
+### `ogc.api.connected-systems.swecommon.boolean` — Boolean
 
 **Type:** schema
 
-Defines the structure of the element that will be repeated in the stream
+Scalar component used to express truth: True or False, 0 or 1
 
 ### `ogc.api.connected-systems.part1.deployed-system-collection` — DeployedSystemCollection (GeoJSON)
 
@@ -340,11 +274,41 @@ Paged collection of CommandResult resources as returned by list queries, with th
 
 A CommandStatus report: the state of execution of a Command at a given report time, with status code, percent completion, message and any results.
 
+### `ogc.api.connected-systems.swecommon.category` — Category
+
+**Type:** schema
+
+Scalar component used to represent a categorical value as a simple token identifying a term in a code space
+
+### `ogc.api.connected-systems.swecommon.category-range` — CategoryRange
+
+**Type:** schema
+
+Pair of categorical values used to specify a range in an ordinal reference system (specified by the code space)
+
+### `ogc.api.connected-systems.swecommon.count` — Count
+
+**Type:** schema
+
+Scalar component with integer representation used for a discrete counting value
+
+### `ogc.api.connected-systems.swecommon.count-range` — CountRange
+
+**Type:** schema
+
+Integer pair used for specifying a count range
+
 ### `ogc.api.connected-systems.swecommon.data-record` — DataRecord
 
 **Type:** schema
 
 Implementation of ISO-11404 Record datatype. This allows grouping (sequence) of data components which can themselves be simple types, records, arrays or choices
+
+### `ogc.api.connected-systems.swecommon.encodings` — Encodings
+
+**Type:** schema
+
+Encodings schema.
 
 ### `ogc.api.connected-systems.swecommon.geometry` — Geometry
 
@@ -352,11 +316,35 @@ Implementation of ISO-11404 Record datatype. This allows grouping (sequence) of 
 
 Implementation of ISO-19107 geometry datatype. This allows embedding a geometry in a larger schema
 
-### `ogc.api.connected-systems.swecommon.vector` — Vector
+### `ogc.api.connected-systems.swecommon.quantity` — Quantity
 
 **Type:** schema
 
-Implementation of a mathematical vector composed of a list of scalar coordinates expressed in the mandatory reference frame.
+Scalar component with decimal representation and a unit of measure used to store value of a continuous quantity
+
+### `ogc.api.connected-systems.swecommon.quantity-range` — QuantityRange
+
+**Type:** schema
+
+Decimal pair for specifying a quantity range with a unit of measure
+
+### `ogc.api.connected-systems.swecommon.text` — Text
+
+**Type:** schema
+
+Free text component used to store comments or any other type of textual statement
+
+### `ogc.api.connected-systems.swecommon.time` — Time
+
+**Type:** schema
+
+Scalar component used to represent a time quantity either as ISO 8601 (e.g., 2004-04-18T12:03:04.6Z) or as a duration relative to a time of reference
+
+### `ogc.api.connected-systems.swecommon.time-range` — TimeRange
+
+**Type:** schema
+
+Time value pair for specifying a time range (can be a decimal or ISO 8601)
 
 ### `ogc.api.connected-systems.part1.procedure-collection` — ProcedureCollection (GeoJSON)
 
@@ -387,6 +375,24 @@ Paged collection of System resources (GeoJSON encoding) as returned by list quer
 **Type:** schema
 
 Paged collection of CommandStatus reports as returned by list queries, with the items plus navigation `links`.
+
+### `ogc.api.connected-systems.swecommon.data-choice` — DataChoice
+
+**Type:** schema
+
+Implementation of a choice of two or more Data Components (also called disjoint union)
+
+### `ogc.api.connected-systems.swecommon.data-stream` — DataStream
+
+**Type:** schema
+
+Defines the structure of the element that will be repeated in the stream
+
+### `ogc.api.connected-systems.swecommon.vector` — Vector
+
+**Type:** schema
+
+Implementation of a mathematical vector composed of a list of scalar coordinates expressed in the mandatory reference frame.
 
 ### `ogc.api.connected-systems.swecommon.swe-common` — SweCommon
 
@@ -435,12 +441,6 @@ DerivedProperty schema.
 **Type:** schema
 
 Implementation of ISO-11404 Array datatype. This defines an array of identical data components with a elementCount. Values are given as a block and can be encoded in different ways
-
-### `ogc.api.connected-systems.swecommon.data-choice` — DataChoice
-
-**Type:** schema
-
-Implementation of a choice of two or more Data Components (also called disjoint union)
 
 ### `ogc.api.connected-systems.part2.command-schema` — CommandSchema
 
