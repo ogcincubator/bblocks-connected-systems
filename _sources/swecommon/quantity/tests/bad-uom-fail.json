@@ -1,0 +1,7 @@
+{
+  "type": "Quantity",
+  "definition": "http://qudt.org/vocab/quantitykind/Temperature",
+  "label": "Outside Temperature",
+  "uom": { "label": "Celsius", "unknownProp": true },
+  "value": 21.5
+}

@@ -1,0 +1,15 @@
+{
+  "name": "basicTypes",
+  "abstract": "Basic types shared by SWE Common components: unit references, allowed values/tokens/times, nil values and named properties. Each type is addressable by anchor, e.g. `bblocks://ogc.swecommon.basic-types#UnitReference`.",
+  "status": "under-development",
+  "dateTimeAddition": "2026-09-23T00:00:00Z",
+  "itemClass": "schema",
+  "version": "0.1",
+  "group": "SWE Common",
+  "sources": [
+    {
+      "title": "basicTypes.json in opengeospatial/ogcapi-connected-systems",
+      "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/swecommon/schemas/json/basicTypes.json"
+    }
+  ]
+}

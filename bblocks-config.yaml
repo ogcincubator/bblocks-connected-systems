@@ -1,18 +1,18 @@
 # A short, descriptive name of this building block collection
-name: My OGC Building Blocks repository
+name: OGC API - Connected Systems Building Blocks
 
 # Short abstract for this collection (optional)
 abstract: |
-  This is an example text for the abstract. It should be short and to the point.
-  A "Tell me more" link will appear if there is an additional description with a longer explanation.
+  Data models of the OGC API - Connected Systems standard and its underlying SWE Common 3.0 and SensorML 3.0 encodings, as reusable building blocks.
 
 # Description for this collection (optional)
 description: |
-  The description can be longer. Both **the abstract** *and the description* support Markdown,
-  including [links](https://google.es).
+  Draft conversion of the JSON schemas maintained in [opengeospatial/ogcapi-connected-systems](https://github.com/opengeospatial/ogcapi-connected-systems)
+  into building blocks. Scope is limited to data models (no OpenAPI paths/parameters, no XML encodings).
+  Semantic annotations (JSON-LD contexts) are not yet provided.
 
 # Customize the following prefix (will be prepended to the path of the building blocks):
-identifier-prefix: ogc.bbr.template.
+identifier-prefix: ogc.
 
 # List of imports ("default" is an alias for the main OGC Building Blocks Register).
 # An entry can also be an "@org/register" alias (e.g. "@ogc/main", equivalent to "default"),
