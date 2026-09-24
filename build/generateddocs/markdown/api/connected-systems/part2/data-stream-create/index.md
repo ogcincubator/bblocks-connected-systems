@@ -22,10 +22,51 @@ Converted from [`api/part2/openapi/schemas/json/dataStream_create.json`](https:/
 
 ## Known failing examples
 
-1 example(s) taken from the specification do **not** validate against this schema. They are included as negative tests (`tests/spec-*-fail.json`), which pass only while the problem persists:
+1 of the examples taken from the specification do **not** validate against this schema. They are included on purpose, so the validation report shows the problem:
 
 - `datastream-simple-create.json`: Request payload validated against the response schema: `readOnly` properties (`id`, `live`, `system@link`...) are `required`.
 
+## Examples
+
+1 example(s) taken from the specification are included and validated against this schema.
+
+
+## Examples
+
+### Datastream simple create
+#### json
+```json
+{
+  "name": "Indoor Thermometer 001 - Living Room Temperature",
+  "description": "Indoor temperature measured on the south wall of the living room at 1.5m above the floor",
+  "featureOfInterest@link": {
+    "href": "https://data.example.org/api/collections/buildings/items/754",
+    "title": "My House"
+  },
+  "samplingFeature@link": {
+    "href": "https://data.example.org/api/samplingFeatures/4478",
+    "title": "Thermometer Sampling Point"
+  },
+  "schema": {
+    "obsFormat": "application/json",
+    "resultSchema": {
+      "name": "temp",
+      "type": "Quantity",
+      "definition": "http://mmisw.org/ont/cf/parameter/air_temperature",
+      "label": "Room Temperature",
+      "description": "Ambient air temperature measured inside the room",
+      "uom": {
+        "code": "Cel"
+      },
+      "nilValues": [
+        { "reason": "http://www.opengis.net/def/nil/OGC/0/missing", "value": "NaN" },
+        { "reason": "http://www.opengis.net/def/nil/OGC/0/BelowDetectionRange", "value": "-Infinity" },
+        { "reason": "http://www.opengis.net/def/nil/OGC/0/AboveDetectionRange", "value": "+Infinity" }
+      ]
+    }
+  }
+}
+```
 
 ## Schema
 

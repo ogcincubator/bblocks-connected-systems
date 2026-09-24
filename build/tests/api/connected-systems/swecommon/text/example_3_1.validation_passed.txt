@@ -1,5 +1,5 @@
 Validation report for ogc.api.connected-systems.swecommon.text - Text
-Generated 2026-09-24T07:53:24.693652+00:00
+Generated 2026-09-24T07:57:55.391764+00:00
 === Files ===
 Using examples/text1.json from examples
 === End Files ===

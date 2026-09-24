@@ -18,8 +18,8 @@
   "shaclShapes": {},
   "dependsOn": [
     "ogc.api.connected-systems.common.time-instant",
-    "ogc.api.connected-systems.common.link",
     "ogc.api.connected-systems.common.time-period",
+    "ogc.api.connected-systems.common.link",
     "ogc.api.connected-systems.part2.command-status-code"
   ],
   "license": {
@@ -34,19 +34,43 @@
   "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part2/command/schema.json",
   "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part2/command/resolvedProperties.json",
   "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part2/command/",
-  "validationPassed": true,
+  "validationPassed": false,
   "testOutputs": "https://github.com/ogcincubator/bblocks-connected-systems/blob/master/build/tests/api/connected-systems/part2/command/",
-  "description": "<!-- generated -->\n# Command\n\nConverted from [`api/part2/openapi/schemas/json/command.json`](https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/api/part2/openapi/schemas/json/command.json) in the OGC API - Connected Systems repository.\n\n## Properties\n\n| Property | Type | Required | Description |\n|---|---|---|---|\n| `id` | `string` | yes | Local ID of the command |\n| `controlstream@id` | `string` | yes | Local ID of the control stream that the command is part of. This can be omitted when posting the command to a specific control stream URL. |\n| `samplingFeature@id` | `string` |  | Local ID of the sampling feature that is the target of the command |\n| `procedure@link` | `../common/commonDefs.json#/$defs/Link` |  | Link to the procedure/method used to process the command |\n| `issueTime` | `../common/commonDefs.json#/$defs/TimeInstant` | yes | Time at which the command was issued. If omitted on creation, the server sets it to the time the request was received. |\n| `executionTime` | `../common/commonDefs.json#/$defs/TimePeriod` |  | Time period during which the command was executed |\n| `sender` | `string` |  | Identifier of the person or entity who submitted the command |\n| `currentStatus` | `commandStatusCode.json` |  | Current status of the command |\n| `parameters` |  | yes | Command parameters. Must be valid according to the schema provided in the control stream metadata |\n\n## Known failing examples\n\n2 example(s) taken from the specification do **not** validate against this schema. They are included as negative tests (`tests/spec-*-fail.json`), which pass only while the problem persists:\n\n- `command-ptz-create.json`: Request payload validated against the response schema: `readOnly` properties (`id`, `live`, `system@link`...) are `required`.\n- `uav-mission.json`: Request payload validated against the response schema: `readOnly` properties (`id`, `live`, `system@link`...) are `required`.\n\n## Examples\n\n1 example(s) taken from the specification are included and validated against this schema.\n\n",
+  "description": "<!-- generated -->\n# Command\n\nConverted from [`api/part2/openapi/schemas/json/command.json`](https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/api/part2/openapi/schemas/json/command.json) in the OGC API - Connected Systems repository.\n\n## Properties\n\n| Property | Type | Required | Description |\n|---|---|---|---|\n| `id` | `string` | yes | Local ID of the command |\n| `controlstream@id` | `string` | yes | Local ID of the control stream that the command is part of. This can be omitted when posting the command to a specific control stream URL. |\n| `samplingFeature@id` | `string` |  | Local ID of the sampling feature that is the target of the command |\n| `procedure@link` | `../common/commonDefs.json#/$defs/Link` |  | Link to the procedure/method used to process the command |\n| `issueTime` | `../common/commonDefs.json#/$defs/TimeInstant` | yes | Time at which the command was issued. If omitted on creation, the server sets it to the time the request was received. |\n| `executionTime` | `../common/commonDefs.json#/$defs/TimePeriod` |  | Time period during which the command was executed |\n| `sender` | `string` |  | Identifier of the person or entity who submitted the command |\n| `currentStatus` | `commandStatusCode.json` |  | Current status of the command |\n| `parameters` |  | yes | Command parameters. Must be valid according to the schema provided in the control stream metadata |\n\n## Known failing examples\n\n2 of the examples taken from the specification do **not** validate against this schema. They are included on purpose, so the validation report shows the problem:\n\n- `command-ptz-create.json`: Request payload validated against the response schema: `readOnly` properties (`id`, `live`, `system@link`...) are `required`.\n- `uav-mission.json`: Request payload validated against the response schema: `readOnly` properties (`id`, `live`, `system@link`...) are `required`.\n\n## Examples\n\n3 example(s) taken from the specification are included and validated against this schema.\n\n",
   "examples": [
+    {
+      "title": "Command ptz create",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part2/command/examples/command-ptz-create.json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part2/command/example_1_1.json",
+          "sizeBytes": 77,
+          "code": "{\n  \"parameters\": {\n    \"pan\": -10.0,\n    \"tilt\": 23.0,\n    \"zoom\": 0.4\n  }\n}"
+        }
+      ]
+    },
     {
       "title": "Command ptz",
       "snippets": [
         {
           "language": "json",
           "ref": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part2/command/examples/command-ptz.json",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part2/command/example_1_1.json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part2/command/example_2_1.json",
           "sizeBytes": 340,
           "code": "{\n  \"id\": \"1125alnna75hafppknk9aefpvs\",\n  \"controlstream@id\": \"hf62t0dotfd5k\",\n  \"sender\": \"user01\",\n  \"issueTime\": \"2021-03-15T04:53:34.248Z\",\n  \"executionTime\": [\n    \"2021-03-15T04:53:34.543Z\",\n    \"2021-03-15T04:53:36.021Z\"\n  ],\n  \"currentStatus\": \"COMPLETED\",\n  \"parameters\": {\n    \"pan\": -10.0,\n    \"tilt\": 23.0,\n    \"zoom\": 0.4\n  }\n}"
+        }
+      ]
+    },
+    {
+      "title": "Uav mission",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part2/command/examples/uav-mission.json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part2/command/example_3_1.json",
+          "sizeBytes": 576,
+          "code": "{\n  \"parameters\": {\n    \"startTime\": \"2023-05-026T10:20:00Z\",\n    \"instructions\": [\n      {\n        \"type\": \"TAKEOFF\",\n        \"altitude\": 20\n      },\n      {\n        \"type\": \"GOTO_WAYPOINT\",\n        \"lat\": 23.1455,\n        \"lon\": -86.5897,\n        \"alt\": 35,\n        \"yaw\": 0.0,\n        \"travelSpeed\": 1.2\n      },\n      {\n        \"type\": \"LOITER\",\n        \"loiterType\": \"CIRCLE|HOVER\",\n        \"loiterDirection\": \"CLOCKWISE|COUNTERCLOCKWISE\",\n        \"duration\": \"45\",\n        \"yaw\": 0.0,\n        \"yawMode\": \"auto\"\n      },\n      {\n        \"type\": \"LAND\"\n      }\n    ]\n  }\n}"
         }
       ]
     }

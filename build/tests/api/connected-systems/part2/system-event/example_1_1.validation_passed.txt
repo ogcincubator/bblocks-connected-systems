@@ -1,5 +1,5 @@
 Validation report for ogc.api.connected-systems.part2.system-event - SystemEvent
-Generated 2026-09-24T07:53:25.846191+00:00
+Generated 2026-09-24T07:57:58.964747+00:00
 === Files ===
 Using examples/systemEvent.json from examples
 === End Files ===

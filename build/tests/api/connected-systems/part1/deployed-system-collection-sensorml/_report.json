@@ -2,7 +2,7 @@
   "title": "Validation report for ogc.api.connected-systems.part1.deployed-system-collection-sensorml - DeployedSystemCollection (SensorML)",
   "bblockName": "DeployedSystemCollection (SensorML)",
   "bblockId": "ogc.api.connected-systems.part1.deployed-system-collection-sensorml",
-  "generated": "2026-09-24T07:53:25.952809+00:00",
+  "generated": "2026-09-24T07:57:59.060361+00:00",
   "result": true,
   "items": [],
   "globalErrors": {},

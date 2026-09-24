@@ -1,5 +1,5 @@
 Validation report for ogc.api.connected-systems.part2.observation - Observation
-Generated 2026-09-24T07:53:23.007012+00:00
+Generated 2026-09-24T07:57:54.982699+00:00
 === Files ===
 Using examples/obs-geopose.json from examples
 === End Files ===

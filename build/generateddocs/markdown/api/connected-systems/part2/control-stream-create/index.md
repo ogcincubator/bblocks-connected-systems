@@ -22,10 +22,64 @@ Converted from [`api/part2/openapi/schemas/json/controlStream_create.json`](http
 
 ## Known failing examples
 
-1 example(s) taken from the specification do **not** validate against this schema. They are included as negative tests (`tests/spec-*-fail.json`), which pass only while the problem persists:
+1 of the examples taken from the specification do **not** validate against this schema. They are included on purpose, so the validation report shows the problem:
 
 - `controlstream-ptz-create.json`: Request payload validated against the response schema: `readOnly` properties (`id`, `live`, `system@link`...) are `required`.
 
+## Examples
+
+1 example(s) taken from the specification are included and validated against this schema.
+
+
+## Examples
+
+### Controlstream ptz create
+#### json
+```json
+{
+  "name": "Garage Video Camera 001 - PTZ Control",
+  "inputName": "ptz",
+  "async": false,
+  "schema": {
+    "commandFormat": "application/json",
+    "parametersSchema": {
+      "type": "DataRecord",
+      "fields": [
+        {
+          "name": "pan",
+          "type": "Quantity",
+          "definition": "http://sensorml.com/ont/swe/property/PanAngle",
+          "label": "Pan Angle",
+          "description": "Rotation of the camera around its vertical axis (i.e., causing the image to translate along its horizontal axis)",
+          "uom": {
+            "code": "deg"
+          }
+        },
+        {
+          "name": "tilt",
+          "type": "Quantity",
+          "definition": "http://sensorml.com/ont/swe/property/PanAngle",
+          "label": "Pan Angle",
+          "description": "Rotation of the camera around its horizontal axis (i.e., causing the image to translate along its vertical axis)",
+          "uom": {
+            "code": "deg"
+          }
+        },
+        {
+          "name": "zoom",
+          "type": "Quantity",
+          "definition": "http://sensorml.com/ont/swe/property/ZoomFactor",
+          "label": "Zoom Factor",
+          "description": "Amount of zoom, 0 being the highest FOV and 100 being the lowest",
+          "uom": {
+            "code": "%"
+          }
+        }
+      ]
+    }
+  }
+}
+```
 
 ## Schema
 

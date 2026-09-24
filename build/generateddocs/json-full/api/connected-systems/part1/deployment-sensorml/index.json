@@ -17,9 +17,9 @@
   ],
   "shaclShapes": {},
   "dependsOn": [
+    "ogc.api.connected-systems.part1.links",
     "ogc.api.connected-systems.sensorml.deployment",
-    "ogc.api.connected-systems.part1.uris",
-    "ogc.api.connected-systems.part1.links"
+    "ogc.api.connected-systems.part1.uris"
   ],
   "license": {
     "name": "Apache-2.0",

@@ -28,8 +28,8 @@
   },
   "dependsOn": [
     "ogc.geo.features.featureCollection",
-    "ogc.api.connected-systems.part1.links",
-    "ogc.api.connected-systems.part1.procedure-array"
+    "ogc.api.connected-systems.part1.procedure-array",
+    "ogc.api.connected-systems.part1.links"
   ],
   "license": {
     "name": "Apache-2.0",

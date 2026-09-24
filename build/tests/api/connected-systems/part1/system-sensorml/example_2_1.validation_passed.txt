@@ -1,5 +1,5 @@
 Validation report for ogc.api.connected-systems.part1.system-sensorml - System (SensorML)
-Generated 2026-09-24T07:53:28.492462+00:00
+Generated 2026-09-24T07:58:02.053844+00:00
 === Files ===
 Using examples/uav-platform-sml.json from examples
 === End Files ===

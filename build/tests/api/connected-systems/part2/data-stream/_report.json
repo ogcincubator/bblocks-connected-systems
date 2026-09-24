@@ -2,37 +2,28 @@
   "title": "Validation report for ogc.api.connected-systems.part2.data-stream - DataStream",
   "bblockName": "DataStream",
   "bblockId": "ogc.api.connected-systems.part2.data-stream",
-  "generated": "2026-09-24T07:53:25.825524+00:00",
-  "result": true,
+  "generated": "2026-09-24T07:57:58.946303+00:00",
+  "result": false,
   "items": [
     {
       "source": {
-        "type": "TEST_RESOURCE",
-        "requireFail": true,
-        "filename": "_sources/part2/data-stream/tests/spec-datastream-external-link-edr-fail.json",
-        "url": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part2/data-stream/tests/spec-datastream-external-link-edr-fail.json",
-        "language": "json"
+        "type": "EXAMPLE",
+        "requireFail": false,
+        "filename": "build/tests/api/connected-systems/part2/data-stream/example_1_1.json",
+        "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part2/data-stream/example_1_1.json",
+        "exampleIndex": 1,
+        "snippetIndex": 1,
+        "language": "application/json"
       },
-      "result": true,
+      "result": false,
       "sections": [
-        {
-          "name": "GENERAL",
-          "title": "General",
-          "entries": [
-            {
-              "op": "require-fail",
-              "isError": false,
-              "message": "Test was expected to fail and it did."
-            }
-          ]
-        },
         {
           "name": "FILES",
           "title": "Files",
           "entries": [
             {
               "isError": false,
-              "message": "Using spec-datastream-external-link-edr-fail.json from test resources"
+              "message": "Using examples/datastream-external-link-edr.json from examples"
             }
           ]
         },
@@ -56,9 +47,9 @@
       "source": {
         "type": "EXAMPLE",
         "requireFail": false,
-        "filename": "build/tests/api/connected-systems/part2/data-stream/example_1_1.json",
-        "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part2/data-stream/example_1_1.json",
-        "exampleIndex": 1,
+        "filename": "build/tests/api/connected-systems/part2/data-stream/example_2_1.json",
+        "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part2/data-stream/example_2_1.json",
+        "exampleIndex": 2,
         "snippetIndex": 1,
         "language": "application/json"
       },
@@ -92,9 +83,9 @@
       "source": {
         "type": "EXAMPLE",
         "requireFail": false,
-        "filename": "build/tests/api/connected-systems/part2/data-stream/example_2_1.json",
-        "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part2/data-stream/example_2_1.json",
-        "exampleIndex": 2,
+        "filename": "build/tests/api/connected-systems/part2/data-stream/example_3_1.json",
+        "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part2/data-stream/example_3_1.json",
+        "exampleIndex": 3,
         "snippetIndex": 1,
         "language": "application/json"
       },
@@ -128,7 +119,7 @@
   "globalErrors": {},
   "counts": {
     "total": 3,
-    "passed": 3,
-    "failed": 0
+    "passed": 2,
+    "failed": 1
   }
 }

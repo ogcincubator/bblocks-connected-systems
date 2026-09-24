@@ -1,0 +1,37 @@
+Validation report for ogc.api.connected-systems.part1.procedure-sensorml - Procedure (SensorML)
+Generated 2026-09-24T07:58:01.655793+00:00
+=== Files ===
+Using examples/ins-sensor-sml.json from examples
+=== End Files ===
+
+=== JSON Schema ===
+
+** Validation error **
+ValidationError: 'http://www.w3.org/ns/ssn-system/SensorKind' is not one of ['http://www.w3.org/ns/sosa/Procedure', 'http://www.w3.org/ns/sosa/ObservingProcedure', 'http://www.w3.org/ns/sosa/SamplingProcedure', 'http://www.w3.org/ns/sosa/ActuatingProcedure', 'http://www.w3.org/ns/sosa/System', 'http://www.w3.org/ns/sosa/Sensor', 'http://www.w3.org/ns/sosa/Actuator', 'http://www.w3.org/ns/sosa/Sampler', 'http://www.w3.org/ns/sosa/Platform', 'sosa:Procedure', 'sosa:ObservingProcedure', 'sosa:SamplingProcedure', 'sosa:ActuatingProcedure', 'sosa:System', 'sosa:Sensor', 'sosa:Actuator', 'sosa:Sampler', 'sosa:Platform']
+
+Failed validating 'enum' in schema['allOf'][1]['properties']['definition']:
+    {'$anchor': 'ProcedureTypeUris',
+     'enum': ['http://www.w3.org/ns/sosa/Procedure',
+              'http://www.w3.org/ns/sosa/ObservingProcedure',
+              'http://www.w3.org/ns/sosa/SamplingProcedure',
+              'http://www.w3.org/ns/sosa/ActuatingProcedure',
+              'http://www.w3.org/ns/sosa/System',
+              'http://www.w3.org/ns/sosa/Sensor',
+              'http://www.w3.org/ns/sosa/Actuator',
+              'http://www.w3.org/ns/sosa/Sampler',
+              'http://www.w3.org/ns/sosa/Platform',
+              'sosa:Procedure',
+              'sosa:ObservingProcedure',
+              'sosa:SamplingProcedure',
+              'sosa:ActuatingProcedure',
+              'sosa:System',
+              'sosa:Sensor',
+              'sosa:Actuator',
+              'sosa:Sampler',
+              'sosa:Platform'],
+     'type': 'string'}
+
+On instance['definition']:
+    'http://www.w3.org/ns/ssn-system/SensorKind'
+=== End JSON Schema ===
+

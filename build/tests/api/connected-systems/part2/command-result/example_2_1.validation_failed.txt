@@ -1,0 +1,124 @@
+Validation report for ogc.api.connected-systems.part2.command-result - CommandResult
+Generated 2026-09-24T07:57:57.006712+00:00
+=== Files ===
+Using examples/command-result-inline.json from examples
+=== End Files ===
+
+=== JSON Schema ===
+
+** Validation error **
+ValidationError: 'id' is a required property
+
+Failed validating 'required' in schema:
+    {'$schema': 'https://json-schema.org/draft/2020-12/schema',
+     'oneOf': [{'properties': {'command@id': {},
+                               'data': {'description': 'Inline JSON data '
+                                                       'encoded according '
+                                                       'to the control '
+                                                       'stream result '
+                                                       'schema'},
+                               'id': {}},
+                'required': ['data'],
+                'title': 'Inline result'},
+               {'properties': {'command@id': {},
+                               'id': {},
+                               'observation@link': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/link/schema.yaml',
+                                                    'description': 'Link '
+                                                                   'to an '
+                                                                   'observation '
+                                                                   'resulting '
+                                                                   'from '
+                                                                   'the '
+                                                                   'execution '
+                                                                   'of the '
+                                                                   'command'}},
+                'required': ['observation@link'],
+                'title': 'Link to a single observation'},
+               {'properties': {'command@id': {},
+                               'id': {},
+                               'observationSet@link': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/link/schema.yaml',
+                                                       'description': 'Link '
+                                                                      'to '
+                                                                      'a '
+                                                                      'set '
+                                                                      'of '
+                                                                      'observations '
+                                                                      'resulting '
+                                                                      'from '
+                                                                      'the '
+                                                                      'execution '
+                                                                      'of '
+                                                                      'the '
+                                                                      'command'}},
+                'required': ['observationSet@link'],
+                'title': 'Link to a set of observations'},
+               {'properties': {'command@id': {},
+                               'datastream@link': {'allOf': [{'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/link/schema.yaml'},
+                                                             {'properties': {'resultTime': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/time-period/schema.yaml',
+                                                                                            'description': 'Time '
+                                                                                                           'range '
+                                                                                                           'during '
+                                                                                                           'which '
+                                                                                                           'the '
+                                                                                                           'resulting '
+                                                                                                           'observations '
+                                                                                                           'were '
+                                                                                                           'generated '
+                                                                                                           '(If '
+                                                                                                           'not '
+                                                                                                           'provided, '
+                                                                                                           'the '
+                                                                                                           'entire '
+                                                                                                           'datastream '
+                                                                                                           'is '
+                                                                                                           'assumed '
+                                                                                                           'to '
+                                                                                                           'be '
+                                                                                                           'the '
+                                                                                                           'result)'}}}],
+                                                   'description': 'Link to '
+                                                                  'a '
+                                                                  'datastream '
+                                                                  'containing '
+                                                                  'observations '
+                                                                  'resulting '
+                                                                  'from '
+                                                                  'the '
+                                                                  'execution '
+                                                                  'of the '
+                                                                  'command'},
+                               'id': {}},
+                'required': ['datastream@link'],
+                'title': 'Link to a datastream'},
+               {'properties': {'command@id': {},
+                               'external@link': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/link/schema.yaml',
+                                                 'description': 'Link to '
+                                                                'an '
+                                                                'external '
+                                                                'dataset '
+                                                                'containing '
+                                                                'the '
+                                                                'result(s) '
+                                                                'of the '
+                                                                'command'},
+                               'id': {}},
+                'required': ['external@link'],
+                'title': 'Link to an external dataset'}],
+     'properties': {'command@id': {'description': 'Local identifier of the '
+                                                  'command that this '
+                                                  'result is associated to',
+                                   'minLength': 1,
+                                   'readOnly': True,
+                                   'type': 'string'},
+                    'id': {'description': 'Local identifier of the result '
+                                          'resource',
+                           'minLength': 1,
+                           'readOnly': True,
+                           'type': 'string'}},
+     'required': ['id', 'command@id'],
+     'type': 'object'}
+
+On instance:
+    {'data': {'mean': '10.51', 'stdev': '1.23'}}
+=== End JSON Schema ===
+

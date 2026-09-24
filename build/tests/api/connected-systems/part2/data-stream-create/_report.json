@@ -2,37 +2,28 @@
   "title": "Validation report for ogc.api.connected-systems.part2.data-stream-create - DataStream_create",
   "bblockName": "DataStream_create",
   "bblockId": "ogc.api.connected-systems.part2.data-stream-create",
-  "generated": "2026-09-24T07:53:25.913399+00:00",
-  "result": true,
+  "generated": "2026-09-24T07:57:59.023961+00:00",
+  "result": false,
   "items": [
     {
       "source": {
-        "type": "TEST_RESOURCE",
-        "requireFail": true,
-        "filename": "_sources/part2/data-stream-create/tests/spec-datastream-simple-create-fail.json",
-        "url": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part2/data-stream-create/tests/spec-datastream-simple-create-fail.json",
-        "language": "json"
+        "type": "EXAMPLE",
+        "requireFail": false,
+        "filename": "build/tests/api/connected-systems/part2/data-stream-create/example_1_1.json",
+        "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part2/data-stream-create/example_1_1.json",
+        "exampleIndex": 1,
+        "snippetIndex": 1,
+        "language": "application/json"
       },
-      "result": true,
+      "result": false,
       "sections": [
-        {
-          "name": "GENERAL",
-          "title": "General",
-          "entries": [
-            {
-              "op": "require-fail",
-              "isError": false,
-              "message": "Test was expected to fail and it did."
-            }
-          ]
-        },
         {
           "name": "FILES",
           "title": "Files",
           "entries": [
             {
               "isError": false,
-              "message": "Using spec-datastream-simple-create-fail.json from test resources"
+              "message": "Using examples/datastream-simple-create.json from examples"
             }
           ]
         },
@@ -56,7 +47,7 @@
   "globalErrors": {},
   "counts": {
     "total": 1,
-    "passed": 1,
-    "failed": 0
+    "passed": 0,
+    "failed": 1
   }
 }

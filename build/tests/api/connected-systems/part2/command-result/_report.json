@@ -2,37 +2,28 @@
   "title": "Validation report for ogc.api.connected-systems.part2.command-result - CommandResult",
   "bblockName": "CommandResult",
   "bblockId": "ogc.api.connected-systems.part2.command-result",
-  "generated": "2026-09-24T07:53:23.939039+00:00",
-  "result": true,
+  "generated": "2026-09-24T07:57:57.009826+00:00",
+  "result": false,
   "items": [
     {
       "source": {
-        "type": "TEST_RESOURCE",
-        "requireFail": true,
-        "filename": "_sources/part2/command-result/tests/spec-command-result-datastream-fail.json",
-        "url": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part2/command-result/tests/spec-command-result-datastream-fail.json",
-        "language": "json"
+        "type": "EXAMPLE",
+        "requireFail": false,
+        "filename": "build/tests/api/connected-systems/part2/command-result/example_1_1.json",
+        "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part2/command-result/example_1_1.json",
+        "exampleIndex": 1,
+        "snippetIndex": 1,
+        "language": "application/json"
       },
-      "result": true,
+      "result": false,
       "sections": [
-        {
-          "name": "GENERAL",
-          "title": "General",
-          "entries": [
-            {
-              "op": "require-fail",
-              "isError": false,
-              "message": "Test was expected to fail and it did."
-            }
-          ]
-        },
         {
           "name": "FILES",
           "title": "Files",
           "entries": [
             {
               "isError": false,
-              "message": "Using spec-command-result-datastream-fail.json from test resources"
+              "message": "Using examples/command-result-datastream.json from examples"
             }
           ]
         },
@@ -54,32 +45,23 @@
     },
     {
       "source": {
-        "type": "TEST_RESOURCE",
-        "requireFail": true,
-        "filename": "_sources/part2/command-result/tests/spec-command-result-inline-fail.json",
-        "url": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part2/command-result/tests/spec-command-result-inline-fail.json",
-        "language": "json"
+        "type": "EXAMPLE",
+        "requireFail": false,
+        "filename": "build/tests/api/connected-systems/part2/command-result/example_2_1.json",
+        "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part2/command-result/example_2_1.json",
+        "exampleIndex": 2,
+        "snippetIndex": 1,
+        "language": "application/json"
       },
-      "result": true,
+      "result": false,
       "sections": [
-        {
-          "name": "GENERAL",
-          "title": "General",
-          "entries": [
-            {
-              "op": "require-fail",
-              "isError": false,
-              "message": "Test was expected to fail and it did."
-            }
-          ]
-        },
         {
           "name": "FILES",
           "title": "Files",
           "entries": [
             {
               "isError": false,
-              "message": "Using spec-command-result-inline-fail.json from test resources"
+              "message": "Using examples/command-result-inline.json from examples"
             }
           ]
         },
@@ -101,32 +83,23 @@
     },
     {
       "source": {
-        "type": "TEST_RESOURCE",
-        "requireFail": true,
-        "filename": "_sources/part2/command-result/tests/spec-command-result-single-obs-fail.json",
-        "url": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part2/command-result/tests/spec-command-result-single-obs-fail.json",
-        "language": "json"
+        "type": "EXAMPLE",
+        "requireFail": false,
+        "filename": "build/tests/api/connected-systems/part2/command-result/example_3_1.json",
+        "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part2/command-result/example_3_1.json",
+        "exampleIndex": 3,
+        "snippetIndex": 1,
+        "language": "application/json"
       },
-      "result": true,
+      "result": false,
       "sections": [
-        {
-          "name": "GENERAL",
-          "title": "General",
-          "entries": [
-            {
-              "op": "require-fail",
-              "isError": false,
-              "message": "Test was expected to fail and it did."
-            }
-          ]
-        },
         {
           "name": "FILES",
           "title": "Files",
           "entries": [
             {
               "isError": false,
-              "message": "Using spec-command-result-single-obs-fail.json from test resources"
+              "message": "Using examples/command-result-single-obs.json from examples"
             }
           ]
         },
@@ -150,7 +123,7 @@
   "globalErrors": {},
   "counts": {
     "total": 3,
-    "passed": 3,
-    "failed": 0
+    "passed": 0,
+    "failed": 3
   }
 }

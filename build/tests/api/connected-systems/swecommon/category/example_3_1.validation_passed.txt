@@ -1,5 +1,5 @@
 Validation report for ogc.api.connected-systems.swecommon.category - Category
-Generated 2026-09-24T07:53:24.233075+00:00
+Generated 2026-09-24T07:57:55.282917+00:00
 === Files ===
 Using examples/category2.json from examples
 === End Files ===

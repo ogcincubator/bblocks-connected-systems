@@ -30,7 +30,7 @@ Converted from [`api/part2/openapi/schemas/json/observation.json`](https://githu
 
 ## Known failing examples
 
-5 example(s) taken from the specification do **not** validate against this schema. They are included as negative tests (`tests/spec-*-fail.json`), which pass only while the problem persists:
+5 of the examples taken from the specification do **not** validate against this schema. They are included on purpose, so the validation report shows the problem:
 
 - `obs-link-create.json`: Request payload validated against the response schema: `readOnly` properties (`id`, `live`, `system@link`...) are `required`.
 - `obs-location-create.json`: Request payload validated against the response schema: `readOnly` properties (`id`, `live`, `system@link`...) are `required`.
@@ -40,7 +40,7 @@ Converted from [`api/part2/openapi/schemas/json/observation.json`](https://githu
 
 ## Examples
 
-6 example(s) taken from the specification are included and validated against this schema.
+11 example(s) taken from the specification are included and validated against this schema.
 
 
 ## Examples
@@ -64,6 +64,22 @@ Converted from [`api/part2/openapi/schemas/json/observation.json`](https://githu
       "pitch": 3.4,
       "roll": -5.8
     }
+  }
+}
+```
+
+
+### Obs link create
+#### json
+```json
+{
+  "foi@id": "55f48g48th",
+  "resultTime": "2023-04-03T18:45:23Z",
+  "result@link": {
+    "href": "https://data.x-ecmwf.int/wms?service=WMS&version=1.1.0&request=GetMap&format=image/tiff&layers=HRES-2T-20230215-0600-T1&bbox=-180,90,180,-90&width=3600&height=1800&srs=EPSG:4326",
+    "title": "Imagery on external WMS server",
+    "type": "image/tiff; application=geotiff",
+    "if": "http://www.opengis.net/def/serviceType/ogc/wms/1.1"
   }
 }
 ```
@@ -107,6 +123,20 @@ Converted from [`api/part2/openapi/schemas/json/observation.json`](https://githu
 ```
 
 
+### Obs location create
+#### json
+```json
+{
+  "resultTime": "2021-03-15T04:53:34Z",
+  "result": {
+    "lat": -86.5861,
+    "lon": 34.7304,
+    "alt": 183
+  }
+}
+```
+
+
 ### Obs location
 #### json
 ```json
@@ -124,6 +154,16 @@ Converted from [`api/part2/openapi/schemas/json/observation.json`](https://githu
 ```
 
 
+### Obs profile create
+#### json
+```json
+{
+  "resultTime": "2022-03-15T04:53:34Z",
+  "result": [12.5, 11.3, 10.6, 9.1, 7.4, 5.6, 5.5, 5.5, 5.4]
+}
+```
+
+
 ### Obs profile
 #### json
 ```json
@@ -133,6 +173,16 @@ Converted from [`api/part2/openapi/schemas/json/observation.json`](https://githu
   "phenomenonTime": "2022-03-15T04:53:34Z",
   "resultTime": "2022-03-15T04:53:34Z",
   "result": [12.5, 11.3, 10.6, 9.1, 7.4, 5.6, 5.5, 5.5, 5.4]
+}
+```
+
+
+### Obs simple create
+#### json
+```json
+{
+  "resultTime": "2021-03-15T04:53:34Z",
+  "result": 23.5
 }
 ```
 
@@ -147,6 +197,18 @@ Converted from [`api/part2/openapi/schemas/json/observation.json`](https://githu
   "resultTime": "2021-03-15T04:53:34Z",
   "result": 23.5
 }
+```
+
+
+### ObservationSchema image link
+#### json
+```json
+{
+    "obsFormat": "application/json",
+    "resultLink": {
+        "mediaType": "image/png"
+    }
+  }
 ```
 
 ## Schema

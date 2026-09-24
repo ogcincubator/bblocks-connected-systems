@@ -2,37 +2,28 @@
   "title": "Validation report for ogc.api.connected-systems.swecommon.time - Time",
   "bblockName": "Time",
   "bblockId": "ogc.api.connected-systems.swecommon.time",
-  "generated": "2026-09-24T07:53:24.723302+00:00",
-  "result": true,
+  "generated": "2026-09-24T07:57:55.417018+00:00",
+  "result": false,
   "items": [
     {
       "source": {
-        "type": "TEST_RESOURCE",
-        "requireFail": true,
-        "filename": "_sources/swecommon/time/tests/spec-allowedTimes1-fail.json",
-        "url": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/time/tests/spec-allowedTimes1-fail.json",
-        "language": "json"
+        "type": "EXAMPLE",
+        "requireFail": false,
+        "filename": "build/tests/api/connected-systems/swecommon/time/example_1_1.json",
+        "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/swecommon/time/example_1_1.json",
+        "exampleIndex": 1,
+        "snippetIndex": 1,
+        "language": "application/json"
       },
-      "result": true,
+      "result": false,
       "sections": [
-        {
-          "name": "GENERAL",
-          "title": "General",
-          "entries": [
-            {
-              "op": "require-fail",
-              "isError": false,
-              "message": "Test was expected to fail and it did."
-            }
-          ]
-        },
         {
           "name": "FILES",
           "title": "Files",
           "entries": [
             {
               "isError": false,
-              "message": "Using spec-allowedTimes1-fail.json from test resources"
+              "message": "Using examples/allowedTimes1.json from examples"
             }
           ]
         },
@@ -56,42 +47,6 @@
       "source": {
         "type": "EXAMPLE",
         "requireFail": false,
-        "filename": "build/tests/api/connected-systems/swecommon/time/example_1_1.json",
-        "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/swecommon/time/example_1_1.json",
-        "exampleIndex": 1,
-        "snippetIndex": 1,
-        "language": "application/json"
-      },
-      "result": true,
-      "sections": [
-        {
-          "name": "FILES",
-          "title": "Files",
-          "entries": [
-            {
-              "isError": false,
-              "message": "Using examples/allowedTimes2.json from examples"
-            }
-          ]
-        },
-        {
-          "name": "JSON_SCHEMA",
-          "title": "JSON Schema",
-          "entries": [
-            {
-              "op": "validation",
-              "result": true,
-              "isError": false,
-              "message": "Validation passed"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": {
-        "type": "EXAMPLE",
-        "requireFail": false,
         "filename": "build/tests/api/connected-systems/swecommon/time/example_2_1.json",
         "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/swecommon/time/example_2_1.json",
         "exampleIndex": 2,
@@ -106,7 +61,7 @@
           "entries": [
             {
               "isError": false,
-              "message": "Using examples/time1.json from examples"
+              "message": "Using examples/allowedTimes2.json from examples"
             }
           ]
         },
@@ -142,7 +97,7 @@
           "entries": [
             {
               "isError": false,
-              "message": "Using examples/time2.json from examples"
+              "message": "Using examples/time1.json from examples"
             }
           ]
         },
@@ -178,7 +133,7 @@
           "entries": [
             {
               "isError": false,
-              "message": "Using examples/time3.json from examples"
+              "message": "Using examples/time2.json from examples"
             }
           ]
         },
@@ -214,6 +169,42 @@
           "entries": [
             {
               "isError": false,
+              "message": "Using examples/time3.json from examples"
+            }
+          ]
+        },
+        {
+          "name": "JSON_SCHEMA",
+          "title": "JSON Schema",
+          "entries": [
+            {
+              "op": "validation",
+              "result": true,
+              "isError": false,
+              "message": "Validation passed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": {
+        "type": "EXAMPLE",
+        "requireFail": false,
+        "filename": "build/tests/api/connected-systems/swecommon/time/example_6_1.json",
+        "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/swecommon/time/example_6_1.json",
+        "exampleIndex": 6,
+        "snippetIndex": 1,
+        "language": "application/json"
+      },
+      "result": true,
+      "sections": [
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
               "message": "Using examples/time4.json from examples"
             }
           ]
@@ -236,7 +227,7 @@
   "globalErrors": {},
   "counts": {
     "total": 6,
-    "passed": 6,
-    "failed": 0
+    "passed": 5,
+    "failed": 1
   }
 }

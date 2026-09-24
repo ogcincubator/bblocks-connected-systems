@@ -1,0 +1,238 @@
+Validation report for ogc.api.connected-systems.part2.data-stream - DataStream
+Generated 2026-09-24T07:57:58.944069+00:00
+=== Files ===
+Using examples/datastream-external-link-edr.json from examples
+=== End Files ===
+
+=== JSON Schema ===
+
+** Validation error **
+ValidationError: 'live' is a required property
+
+Failed validating 'required' in schema:
+    {'$schema': 'https://json-schema.org/draft/2020-12/schema',
+     'allOf': [{'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part2/base-stream/schema.yaml'},
+               {'properties': {'deployment@link': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/link/schema.yaml',
+                                                   'description': 'Link to '
+                                                                  'the '
+                                                                  'deployment '
+                                                                  'during '
+                                                                  'which '
+                                                                  'the '
+                                                                  'observations '
+                                                                  'are/were '
+                                                                  'collected '
+                                                                  '(only '
+                                                                  'provided '
+                                                                  'if all '
+                                                                  'observations '
+                                                                  'in the '
+                                                                  'datastream '
+                                                                  'share '
+                                                                  'the '
+                                                                  'same '
+                                                                  'deployment)'},
+                               'featureOfInterest@link': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/link/schema.yaml',
+                                                          'description': 'Link '
+                                                                         'to '
+                                                                         'the '
+                                                                         'ultimate '
+                                                                         'feature '
+                                                                         'of '
+                                                                         'interest '
+                                                                         '(only '
+                                                                         'provided '
+                                                                         'if '
+                                                                         'all '
+                                                                         'observations '
+                                                                         'in '
+                                                                         'the '
+                                                                         'datastream '
+                                                                         'share '
+                                                                         'the '
+                                                                         'same '
+                                                                         'feature '
+                                                                         'of '
+                                                                         'interest)'},
+                               'links': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part1/links/schema.yaml',
+                                         'description': 'Other links to '
+                                                        'related '
+                                                        'resources'},
+                               'live': {'oneOf': [{'type': 'null'},
+                                                  {'description': 'Flag '
+                                                                  'indicating '
+                                                                  'if the '
+                                                                  'datastream '
+                                                                  'is '
+                                                                  'currently '
+                                                                  'streaming '
+                                                                  'data',
+                                                   'type': 'boolean'}]},
+                               'observedProperties': {'oneOf': [{'type': 'null'},
+                                                                {'description': 'List '
+                                                                                'of '
+                                                                                'observed '
+                                                                                'properties '
+                                                                                'included '
+                                                                                'in '
+                                                                                'this '
+                                                                                'datastream',
+                                                                 'items': {'properties': {'definition': {'format': 'uri',
+                                                                                                         'type': 'string'},
+                                                                                          'description': {'type': 'string'},
+                                                                                          'label': {'type': 'string'}},
+                                                                           'type': 'object'},
+                                                                 'minItems': 1,
+                                                                 'type': 'array'}],
+                                                      'readOnly': True},
+                               'outputName': {'description': 'Name of the '
+                                                             'system '
+                                                             'output '
+                                                             'feeding this '
+                                                             'datastream',
+                                              'type': 'string'},
+                               'phenomenonTime': {'oneOf': [{'type': 'null'},
+                                                            {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/time-period/schema.yaml',
+                                                             'description': 'Time '
+                                                                            'extent '
+                                                                            'spanning '
+                                                                            'all '
+                                                                            'phenomenon '
+                                                                            'times '
+                                                                            'of '
+                                                                            'observations '
+                                                                            'in '
+                                                                            'this '
+                                                                            'datastream'}],
+                                                  'readOnly': True},
+                               'phenomenonTimeInterval': {'description': 'An '
+                                                                         'indication '
+                                                                         'of '
+                                                                         'how '
+                                                                         'often '
+                                                                         'feature '
+                                                                         'of '
+                                                                         'interest '
+                                                                         'properties '
+                                                                         'are '
+                                                                         'observed',
+                                                          'format': 'duration',
+                                                          'type': 'string'},
+                               'procedure@link': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/link/schema.yaml',
+                                                  'description': 'Link to '
+                                                                 'the '
+                                                                 'procedure '
+                                                                 'used to '
+                                                                 'acquire '
+                                                                 'observations '
+                                                                 '(only '
+                                                                 'provided '
+                                                                 'if all '
+                                                                 'observations '
+                                                                 'in the '
+                                                                 'datastream '
+                                                                 'share '
+                                                                 'the same '
+                                                                 'procedure)'},
+                               'resultTime': {'oneOf': [{'type': 'null'},
+                                                        {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/time-period/schema.yaml',
+                                                         'description': 'Time '
+                                                                        'extent '
+                                                                        'spanning '
+                                                                        'all '
+                                                                        'result '
+                                                                        'times '
+                                                                        'of '
+                                                                        'observations '
+                                                                        'in '
+                                                                        'this '
+                                                                        'datastream'}],
+                                              'readOnly': True},
+                               'resultTimeInterval': {'description': 'An '
+                                                                     'indication '
+                                                                     'of '
+                                                                     'how '
+                                                                     'often '
+                                                                     'observation '
+                                                                     'results '
+                                                                     'are '
+                                                                     'produced',
+                                                      'format': 'duration',
+                                                      'type': 'string'},
+                               'resultType': {'oneOf': [{'type': 'null'},
+                                                        {'enum': ['measure',
+                                                                  'vector',
+                                                                  'record',
+                                                                  'coverage',
+                                                                  'complex'],
+                                                         'type': 'string'}],
+                                              'readOnly': True},
+                               'samplingFeature@link': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/link/schema.yaml',
+                                                        'description': 'Link '
+                                                                       'to '
+                                                                       'the '
+                                                                       'sampling '
+                                                                       'feature '
+                                                                       '(only '
+                                                                       'provided '
+                                                                       'if '
+                                                                       'all '
+                                                                       'observations '
+                                                                       'in '
+                                                                       'the '
+                                                                       'datastream '
+                                                                       'share '
+                                                                       'the '
+                                                                       'same '
+                                                                       'sampling '
+                                                                       'feature)'},
+                               'schema': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part2/observation-schema/schema.yaml',
+                                          'description': 'Schema '
+                                                         'describing the '
+                                                         'content of '
+                                                         'observations in '
+                                                         'this datastream. '
+                                                         'The exact syntax '
+                                                         'of the schema '
+                                                         'depends on the '
+                                                         'encoding format.',
+                                          'writeOnly': True},
+                               'system@link': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/link/schema.yaml',
+                                               'description': 'Link to the '
+                                                              'system '
+                                                              'producing '
+                                                              'the '
+                                                              'observations',
+                                               'readOnly': True},
+                               'type': {'enum': ['status', 'observation'],
+                                        'type': 'string'}}}],
+     'required': ['name',
+                  'system@link',
+                  'observedProperties',
+                  'phenomenonTime',
+                  'resultTime',
+                  'resultType',
+                  'live']}
+
+On instance:
+    {'formats': ['application/json'],
+     'id': '958tf25kjm2f6',
+     'links': [{'href': 'https://data.example.org/api/datastreams/958tf25kjm2f6',
+                'rel': 'self',
+                'type': 'application/json'},
+               {'href': 'https://data.other.net/edr/collections/nyc-temp-754',
+                'rel': 'dataset',
+                'serviceRoot': 'https://data.other.net/edr',
+                'serviceType': 'http://www.opengis.net/doc/IS/ogcapi-edr-1/1.0',
+                'type': 'application/json'}],
+     'name': 'Outdoor Thermometer 001 - Air Temperature',
+     'observedProperties': [{'definition': 'http://mmisw.org/ont/cf/parameter/air_temperature',
+                             'label': 'Air Temperature'}],
+     'phenomenonTime': ['2020-06-29T14:32:00Z', '2022-06-29T19:37:00Z'],
+     'resultTime': ['2020-06-29T14:32:00Z', '2012-06-29T19:37:00Z'],
+     'resultType': 'measure',
+     'system@link': {'href': 'https://data.example.org/api/systems/123',
+                     'outputName': 'temp',
+                     'uid': 'urn:x-ogc:systems:001'}}
+=== End JSON Schema ===
+

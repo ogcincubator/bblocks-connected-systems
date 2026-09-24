@@ -32,9 +32,23 @@
   "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part2/data-stream-create/schema.json",
   "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part2/data-stream-create/resolvedProperties.json",
   "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part2/data-stream-create/",
-  "validationPassed": true,
+  "validationPassed": false,
   "testOutputs": "https://github.com/ogcincubator/bblocks-connected-systems/blob/master/build/tests/api/connected-systems/part2/data-stream-create/",
-  "description": "<!-- generated -->\n# DataStream_create\n\nConverted from [`api/part2/openapi/schemas/json/dataStream_create.json`](https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/api/part2/openapi/schemas/json/dataStream_create.json) in the OGC API - Connected Systems repository.\n\n## Properties\n\n| Property | Type | Required | Description |\n|---|---|---|---|\n| `schema` | `observationSchema.json` | yes | Schema describing the content of observations in this datastream. The exact syntax of the schema depends on the encoding format. |\n\n## Known failing examples\n\n1 example(s) taken from the specification do **not** validate against this schema. They are included as negative tests (`tests/spec-*-fail.json`), which pass only while the problem persists:\n\n- `datastream-simple-create.json`: Request payload validated against the response schema: `readOnly` properties (`id`, `live`, `system@link`...) are `required`.\n\n",
+  "description": "<!-- generated -->\n# DataStream_create\n\nConverted from [`api/part2/openapi/schemas/json/dataStream_create.json`](https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/api/part2/openapi/schemas/json/dataStream_create.json) in the OGC API - Connected Systems repository.\n\n## Properties\n\n| Property | Type | Required | Description |\n|---|---|---|---|\n| `schema` | `observationSchema.json` | yes | Schema describing the content of observations in this datastream. The exact syntax of the schema depends on the encoding format. |\n\n## Known failing examples\n\n1 of the examples taken from the specification do **not** validate against this schema. They are included on purpose, so the validation report shows the problem:\n\n- `datastream-simple-create.json`: Request payload validated against the response schema: `readOnly` properties (`id`, `live`, `system@link`...) are `required`.\n\n## Examples\n\n1 example(s) taken from the specification are included and validated against this schema.\n\n",
+  "examples": [
+    {
+      "title": "Datastream simple create",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part2/data-stream-create/examples/datastream-simple-create.json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part2/data-stream-create/example_1_1.json",
+          "sizeBytes": 1130,
+          "code": "{\n  \"name\": \"Indoor Thermometer 001 - Living Room Temperature\",\n  \"description\": \"Indoor temperature measured on the south wall of the living room at 1.5m above the floor\",\n  \"featureOfInterest@link\": {\n    \"href\": \"https://data.example.org/api/collections/buildings/items/754\",\n    \"title\": \"My House\"\n  },\n  \"samplingFeature@link\": {\n    \"href\": \"https://data.example.org/api/samplingFeatures/4478\",\n    \"title\": \"Thermometer Sampling Point\"\n  },\n  \"schema\": {\n    \"obsFormat\": \"application/json\",\n    \"resultSchema\": {\n      \"name\": \"temp\",\n      \"type\": \"Quantity\",\n      \"definition\": \"http://mmisw.org/ont/cf/parameter/air_temperature\",\n      \"label\": \"Room Temperature\",\n      \"description\": \"Ambient air temperature measured inside the room\",\n      \"uom\": {\n        \"code\": \"Cel\"\n      },\n      \"nilValues\": [\n        { \"reason\": \"http://www.opengis.net/def/nil/OGC/0/missing\", \"value\": \"NaN\" },\n        { \"reason\": \"http://www.opengis.net/def/nil/OGC/0/BelowDetectionRange\", \"value\": \"-Infinity\" },\n        { \"reason\": \"http://www.opengis.net/def/nil/OGC/0/AboveDetectionRange\", \"value\": \"+Infinity\" }\n      ]\n    }\n  }\n}"
+        }
+      ]
+    }
+  ],
   "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\nallOf:\n- $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part2/data-stream/schema.yaml\n- properties:\n    schema:\n      description: Schema describing the content of observations in this datastream.\n        The exact syntax of the schema depends on the encoding format.\n      $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part2/observation-schema/schema.yaml\n      writeOnly: true\n  required:\n  - schema\n",
   "gitRepository": "https://github.com/ogcincubator/bblocks-connected-systems",
   "gitPath": "_sources/part2/data-stream-create"

@@ -1,0 +1,54 @@
+Validation report for ogc.api.connected-systems.part1.procedure - Procedure (GeoJSON)
+Generated 2026-09-24T07:57:55.861371+00:00
+=== Files ===
+Using examples/sensor-datasheet-geojson.json from examples
+JSON-LD context is present - uplifting
+Output JSON-LD example_1_1.jsonld created
+Output Turtle example_1_1.ttl created
+=== End Files ===
+
+=== JSON Schema ===
+
+** Validation error **
+ValidationError: 'http://www.w3.org/ns/ssn-system/SensorKind' is not one of ['http://www.w3.org/ns/sosa/Procedure', 'http://www.w3.org/ns/sosa/ObservingProcedure', 'http://www.w3.org/ns/sosa/SamplingProcedure', 'http://www.w3.org/ns/sosa/ActuatingProcedure', 'http://www.w3.org/ns/sosa/System', 'http://www.w3.org/ns/sosa/Sensor', 'http://www.w3.org/ns/sosa/Actuator', 'http://www.w3.org/ns/sosa/Sampler', 'http://www.w3.org/ns/sosa/Platform', 'sosa:Procedure', 'sosa:ObservingProcedure', 'sosa:SamplingProcedure', 'sosa:ActuatingProcedure', 'sosa:System', 'sosa:Sensor', 'sosa:Actuator', 'sosa:Sampler', 'sosa:Platform']
+
+Failed validating 'enum' in schema['allOf'][1]['properties']['properties']['properties']['featureType']:
+    {'$anchor': 'ProcedureTypeUris',
+     'enum': ['http://www.w3.org/ns/sosa/Procedure',
+              'http://www.w3.org/ns/sosa/ObservingProcedure',
+              'http://www.w3.org/ns/sosa/SamplingProcedure',
+              'http://www.w3.org/ns/sosa/ActuatingProcedure',
+              'http://www.w3.org/ns/sosa/System',
+              'http://www.w3.org/ns/sosa/Sensor',
+              'http://www.w3.org/ns/sosa/Actuator',
+              'http://www.w3.org/ns/sosa/Sampler',
+              'http://www.w3.org/ns/sosa/Platform',
+              'sosa:Procedure',
+              'sosa:ObservingProcedure',
+              'sosa:SamplingProcedure',
+              'sosa:ActuatingProcedure',
+              'sosa:System',
+              'sosa:Sensor',
+              'sosa:Actuator',
+              'sosa:Sampler',
+              'sosa:Platform'],
+     'type': 'string'}
+
+On instance['properties']['featureType']:
+    'http://www.w3.org/ns/ssn-system/SensorKind'
+=== End JSON Schema ===
+
+=== SHACL ===
+Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
+  Validation Report
+  Conforms: True
+  
+Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
+ - Shape geojson:GeometryShape: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
+ - Shape geojson:LinkShape: *none*
+ - Shape geojson:FeatureShape: <file:///github/workspace/iv3f2kcq27gfi>
+ - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
+
+=== End SHACL ===
+

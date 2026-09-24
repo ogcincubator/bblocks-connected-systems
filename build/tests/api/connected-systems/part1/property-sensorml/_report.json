@@ -2,37 +2,28 @@
   "title": "Validation report for ogc.api.connected-systems.part1.property-sensorml - Property (SensorML)",
   "bblockName": "Property (SensorML)",
   "bblockId": "ogc.api.connected-systems.part1.property-sensorml",
-  "generated": "2026-09-24T07:53:25.601481+00:00",
-  "result": true,
+  "generated": "2026-09-24T07:57:58.749244+00:00",
+  "result": false,
   "items": [
     {
       "source": {
-        "type": "TEST_RESOURCE",
-        "requireFail": true,
-        "filename": "_sources/part1/property-sensorml/tests/spec-air-temp-fail.json",
-        "url": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part1/property-sensorml/tests/spec-air-temp-fail.json",
-        "language": "json"
+        "type": "EXAMPLE",
+        "requireFail": false,
+        "filename": "build/tests/api/connected-systems/part1/property-sensorml/example_1_1.json",
+        "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part1/property-sensorml/example_1_1.json",
+        "exampleIndex": 1,
+        "snippetIndex": 1,
+        "language": "application/json"
       },
-      "result": true,
+      "result": false,
       "sections": [
-        {
-          "name": "GENERAL",
-          "title": "General",
-          "entries": [
-            {
-              "op": "require-fail",
-              "isError": false,
-              "message": "Test was expected to fail and it did."
-            }
-          ]
-        },
         {
           "name": "FILES",
           "title": "Files",
           "entries": [
             {
               "isError": false,
-              "message": "Using spec-air-temp-fail.json from test resources"
+              "message": "Using examples/air-temp.json from examples"
             }
           ]
         },
@@ -54,32 +45,23 @@
     },
     {
       "source": {
-        "type": "TEST_RESOURCE",
-        "requireFail": true,
-        "filename": "_sources/part1/property-sensorml/tests/spec-avg-cpu-temp-fail.json",
-        "url": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part1/property-sensorml/tests/spec-avg-cpu-temp-fail.json",
-        "language": "json"
+        "type": "EXAMPLE",
+        "requireFail": false,
+        "filename": "build/tests/api/connected-systems/part1/property-sensorml/example_2_1.json",
+        "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part1/property-sensorml/example_2_1.json",
+        "exampleIndex": 2,
+        "snippetIndex": 1,
+        "language": "application/json"
       },
-      "result": true,
+      "result": false,
       "sections": [
-        {
-          "name": "GENERAL",
-          "title": "General",
-          "entries": [
-            {
-              "op": "require-fail",
-              "isError": false,
-              "message": "Test was expected to fail and it did."
-            }
-          ]
-        },
         {
           "name": "FILES",
           "title": "Files",
           "entries": [
             {
               "isError": false,
-              "message": "Using spec-avg-cpu-temp-fail.json from test resources"
+              "message": "Using examples/avg-cpu-temp.json from examples"
             }
           ]
         },
@@ -101,32 +83,23 @@
     },
     {
       "source": {
-        "type": "TEST_RESOURCE",
-        "requireFail": true,
-        "filename": "_sources/part1/property-sensorml/tests/spec-combustion-chamber-temp-fail.json",
-        "url": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part1/property-sensorml/tests/spec-combustion-chamber-temp-fail.json",
-        "language": "json"
+        "type": "EXAMPLE",
+        "requireFail": false,
+        "filename": "build/tests/api/connected-systems/part1/property-sensorml/example_3_1.json",
+        "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part1/property-sensorml/example_3_1.json",
+        "exampleIndex": 3,
+        "snippetIndex": 1,
+        "language": "application/json"
       },
-      "result": true,
+      "result": false,
       "sections": [
-        {
-          "name": "GENERAL",
-          "title": "General",
-          "entries": [
-            {
-              "op": "require-fail",
-              "isError": false,
-              "message": "Test was expected to fail and it did."
-            }
-          ]
-        },
         {
           "name": "FILES",
           "title": "Files",
           "entries": [
             {
               "isError": false,
-              "message": "Using spec-combustion-chamber-temp-fail.json from test resources"
+              "message": "Using examples/combustion-chamber-temp.json from examples"
             }
           ]
         },
@@ -148,32 +121,23 @@
     },
     {
       "source": {
-        "type": "TEST_RESOURCE",
-        "requireFail": true,
-        "filename": "_sources/part1/property-sensorml/tests/spec-daily-avg-air-temp-fail.json",
-        "url": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part1/property-sensorml/tests/spec-daily-avg-air-temp-fail.json",
-        "language": "json"
+        "type": "EXAMPLE",
+        "requireFail": false,
+        "filename": "build/tests/api/connected-systems/part1/property-sensorml/example_4_1.json",
+        "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part1/property-sensorml/example_4_1.json",
+        "exampleIndex": 4,
+        "snippetIndex": 1,
+        "language": "application/json"
       },
-      "result": true,
+      "result": false,
       "sections": [
-        {
-          "name": "GENERAL",
-          "title": "General",
-          "entries": [
-            {
-              "op": "require-fail",
-              "isError": false,
-              "message": "Test was expected to fail and it did."
-            }
-          ]
-        },
         {
           "name": "FILES",
           "title": "Files",
           "entries": [
             {
               "isError": false,
-              "message": "Using spec-daily-avg-air-temp-fail.json from test resources"
+              "message": "Using examples/daily-avg-air-temp.json from examples"
             }
           ]
         },
@@ -195,32 +159,23 @@
     },
     {
       "source": {
-        "type": "TEST_RESOURCE",
-        "requireFail": true,
-        "filename": "_sources/part1/property-sensorml/tests/spec-engine-power-fail.json",
-        "url": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part1/property-sensorml/tests/spec-engine-power-fail.json",
-        "language": "json"
+        "type": "EXAMPLE",
+        "requireFail": false,
+        "filename": "build/tests/api/connected-systems/part1/property-sensorml/example_5_1.json",
+        "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part1/property-sensorml/example_5_1.json",
+        "exampleIndex": 5,
+        "snippetIndex": 1,
+        "language": "application/json"
       },
-      "result": true,
+      "result": false,
       "sections": [
-        {
-          "name": "GENERAL",
-          "title": "General",
-          "entries": [
-            {
-              "op": "require-fail",
-              "isError": false,
-              "message": "Test was expected to fail and it did."
-            }
-          ]
-        },
         {
           "name": "FILES",
           "title": "Files",
           "entries": [
             {
               "isError": false,
-              "message": "Using spec-engine-power-fail.json from test resources"
+              "message": "Using examples/engine-power.json from examples"
             }
           ]
         },
@@ -242,32 +197,23 @@
     },
     {
       "source": {
-        "type": "TEST_RESOURCE",
-        "requireFail": true,
-        "filename": "_sources/part1/property-sensorml/tests/spec-engine-temp-fail.json",
-        "url": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part1/property-sensorml/tests/spec-engine-temp-fail.json",
-        "language": "json"
+        "type": "EXAMPLE",
+        "requireFail": false,
+        "filename": "build/tests/api/connected-systems/part1/property-sensorml/example_6_1.json",
+        "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part1/property-sensorml/example_6_1.json",
+        "exampleIndex": 6,
+        "snippetIndex": 1,
+        "language": "application/json"
       },
-      "result": true,
+      "result": false,
       "sections": [
-        {
-          "name": "GENERAL",
-          "title": "General",
-          "entries": [
-            {
-              "op": "require-fail",
-              "isError": false,
-              "message": "Test was expected to fail and it did."
-            }
-          ]
-        },
         {
           "name": "FILES",
           "title": "Files",
           "entries": [
             {
               "isError": false,
-              "message": "Using spec-engine-temp-fail.json from test resources"
+              "message": "Using examples/engine-temp.json from examples"
             }
           ]
         },
@@ -289,79 +235,23 @@
     },
     {
       "source": {
-        "type": "TEST_RESOURCE",
-        "requireFail": true,
-        "filename": "_sources/part1/property-sensorml/tests/spec-received-rf-power-fail.json",
-        "url": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part1/property-sensorml/tests/spec-received-rf-power-fail.json",
-        "language": "json"
+        "type": "EXAMPLE",
+        "requireFail": false,
+        "filename": "build/tests/api/connected-systems/part1/property-sensorml/example_7_1.json",
+        "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part1/property-sensorml/example_7_1.json",
+        "exampleIndex": 7,
+        "snippetIndex": 1,
+        "language": "application/json"
       },
-      "result": true,
+      "result": false,
       "sections": [
-        {
-          "name": "GENERAL",
-          "title": "General",
-          "entries": [
-            {
-              "op": "require-fail",
-              "isError": false,
-              "message": "Test was expected to fail and it did."
-            }
-          ]
-        },
         {
           "name": "FILES",
           "title": "Files",
           "entries": [
             {
               "isError": false,
-              "message": "Using spec-received-rf-power-fail.json from test resources"
-            }
-          ]
-        },
-        {
-          "name": "JSON_SCHEMA",
-          "title": "JSON Schema",
-          "entries": [
-            {
-              "op": "validation",
-              "result": false,
-              "exception": "ValidationError",
-              "errorMessage": "'uniqueId' is a required property",
-              "isError": true,
-              "message": "ValidationError: 'uniqueId' is a required property\n\nFailed validating 'required' in schema['allOf'][1]:\n    {'properties': {'links': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part1/links/schema.yaml',\n                              'description': 'Links to related resources'}},\n     'required': ['uniqueId']}\n\nOn instance:\n    {'baseProperty': 'http://qudt.org/vocab/quantitykind/RF-Power',\n     'description': 'RF Power received in band 620-720 MHz',\n     'id': 'RFPower_Received_620-720',\n     'label': 'Received RF Power',\n     'qualifiers': [{'definition': 'http://qudt.org/vocab/quantitykind/Frequency',\n                     'label': 'Frequency Range',\n                     'type': 'QuantityRange',\n                     'uom': {'code': 'MHz'},\n                     'value': [620.0, 720.0]}]}"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": {
-        "type": "TEST_RESOURCE",
-        "requireFail": true,
-        "filename": "_sources/part1/property-sensorml/tests/spec-received-rf-power-xband-fail.json",
-        "url": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part1/property-sensorml/tests/spec-received-rf-power-xband-fail.json",
-        "language": "json"
-      },
-      "result": true,
-      "sections": [
-        {
-          "name": "GENERAL",
-          "title": "General",
-          "entries": [
-            {
-              "op": "require-fail",
-              "isError": false,
-              "message": "Test was expected to fail and it did."
-            }
-          ]
-        },
-        {
-          "name": "FILES",
-          "title": "Files",
-          "entries": [
-            {
-              "isError": false,
-              "message": "Using spec-received-rf-power-xband-fail.json from test resources"
+              "message": "Using examples/received-rf-power-xband.json from examples"
             }
           ]
         },
@@ -383,32 +273,61 @@
     },
     {
       "source": {
-        "type": "TEST_RESOURCE",
-        "requireFail": true,
-        "filename": "_sources/part1/property-sensorml/tests/spec-water-temp-fail.json",
-        "url": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part1/property-sensorml/tests/spec-water-temp-fail.json",
-        "language": "json"
+        "type": "EXAMPLE",
+        "requireFail": false,
+        "filename": "build/tests/api/connected-systems/part1/property-sensorml/example_8_1.json",
+        "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part1/property-sensorml/example_8_1.json",
+        "exampleIndex": 8,
+        "snippetIndex": 1,
+        "language": "application/json"
       },
-      "result": true,
+      "result": false,
       "sections": [
-        {
-          "name": "GENERAL",
-          "title": "General",
-          "entries": [
-            {
-              "op": "require-fail",
-              "isError": false,
-              "message": "Test was expected to fail and it did."
-            }
-          ]
-        },
         {
           "name": "FILES",
           "title": "Files",
           "entries": [
             {
               "isError": false,
-              "message": "Using spec-water-temp-fail.json from test resources"
+              "message": "Using examples/received-rf-power.json from examples"
+            }
+          ]
+        },
+        {
+          "name": "JSON_SCHEMA",
+          "title": "JSON Schema",
+          "entries": [
+            {
+              "op": "validation",
+              "result": false,
+              "exception": "ValidationError",
+              "errorMessage": "'uniqueId' is a required property",
+              "isError": true,
+              "message": "ValidationError: 'uniqueId' is a required property\n\nFailed validating 'required' in schema['allOf'][1]:\n    {'properties': {'links': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part1/links/schema.yaml',\n                              'description': 'Links to related resources'}},\n     'required': ['uniqueId']}\n\nOn instance:\n    {'baseProperty': 'http://qudt.org/vocab/quantitykind/RF-Power',\n     'description': 'RF Power received in band 620-720 MHz',\n     'id': 'RFPower_Received_620-720',\n     'label': 'Received RF Power',\n     'qualifiers': [{'definition': 'http://qudt.org/vocab/quantitykind/Frequency',\n                     'label': 'Frequency Range',\n                     'type': 'QuantityRange',\n                     'uom': {'code': 'MHz'},\n                     'value': [620.0, 720.0]}]}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": {
+        "type": "EXAMPLE",
+        "requireFail": false,
+        "filename": "build/tests/api/connected-systems/part1/property-sensorml/example_9_1.json",
+        "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part1/property-sensorml/example_9_1.json",
+        "exampleIndex": 9,
+        "snippetIndex": 1,
+        "language": "application/json"
+      },
+      "result": false,
+      "sections": [
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using examples/water-temp.json from examples"
             }
           ]
         },
@@ -432,7 +351,7 @@
   "globalErrors": {},
   "counts": {
     "total": 9,
-    "passed": 9,
-    "failed": 0
+    "passed": 0,
+    "failed": 9
   }
 }

@@ -17,15 +17,15 @@
   ],
   "shaclShapes": {},
   "dependsOn": [
-    "ogc.api.connected-systems.swecommon.swe-common",
-    "ogc.api.connected-systems.sensorml.legal-constraint",
-    "ogc.api.connected-systems.swecommon.abstract-swe-identifiable",
-    "ogc.api.connected-systems.sensorml.contact-link",
-    "ogc.api.connected-systems.sensorml.responsible-party",
-    "ogc.api.connected-systems.sensorml.common-defs",
-    "ogc.api.connected-systems.sensorml.document",
     "ogc.api.connected-systems.sensorml.event",
-    "ogc.api.connected-systems.common.time-period"
+    "ogc.api.connected-systems.sensorml.responsible-party",
+    "ogc.api.connected-systems.sensorml.contact-link",
+    "ogc.api.connected-systems.swecommon.abstract-swe-identifiable",
+    "ogc.api.connected-systems.common.time-period",
+    "ogc.api.connected-systems.sensorml.legal-constraint",
+    "ogc.api.connected-systems.sensorml.document",
+    "ogc.api.connected-systems.swecommon.swe-common",
+    "ogc.api.connected-systems.sensorml.common-defs"
   ],
   "license": {
     "name": "Apache-2.0",

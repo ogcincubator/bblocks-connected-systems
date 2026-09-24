@@ -17,8 +17,8 @@
   ],
   "shaclShapes": {},
   "dependsOn": [
-    "ogc.api.connected-systems.part1.links",
-    "ogc.api.connected-systems.part2.command-status"
+    "ogc.api.connected-systems.part2.command-status",
+    "ogc.api.connected-systems.part1.links"
   ],
   "license": {
     "name": "Apache-2.0",

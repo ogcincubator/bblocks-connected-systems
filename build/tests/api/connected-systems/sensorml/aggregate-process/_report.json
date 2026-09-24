@@ -2,37 +2,28 @@
   "title": "Validation report for ogc.api.connected-systems.sensorml.aggregate-process - AggregateProcess",
   "bblockName": "AggregateProcess",
   "bblockId": "ogc.api.connected-systems.sensorml.aggregate-process",
-  "generated": "2026-09-24T07:53:26.554474+00:00",
-  "result": true,
+  "generated": "2026-09-24T07:58:01.303174+00:00",
+  "result": false,
   "items": [
     {
       "source": {
-        "type": "TEST_RESOURCE",
-        "requireFail": true,
-        "filename": "_sources/sensorml/aggregate-process/tests/spec-process_chain-fail.json",
-        "url": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/sensorml/aggregate-process/tests/spec-process_chain-fail.json",
-        "language": "json"
+        "type": "EXAMPLE",
+        "requireFail": false,
+        "filename": "build/tests/api/connected-systems/sensorml/aggregate-process/example_1_1.json",
+        "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/sensorml/aggregate-process/example_1_1.json",
+        "exampleIndex": 1,
+        "snippetIndex": 1,
+        "language": "application/json"
       },
-      "result": true,
+      "result": false,
       "sections": [
-        {
-          "name": "GENERAL",
-          "title": "General",
-          "entries": [
-            {
-              "op": "require-fail",
-              "isError": false,
-              "message": "Test was expected to fail and it did."
-            }
-          ]
-        },
         {
           "name": "FILES",
           "title": "Files",
           "entries": [
             {
               "isError": false,
-              "message": "Using spec-process_chain-fail.json from test resources"
+              "message": "Using examples/process_chain.json from examples"
             }
           ]
         },
@@ -56,7 +47,7 @@
   "globalErrors": {},
   "counts": {
     "total": 1,
-    "passed": 1,
-    "failed": 0
+    "passed": 0,
+    "failed": 1
   }
 }

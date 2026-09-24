@@ -17,8 +17,8 @@
   ],
   "shaclShapes": {},
   "dependsOn": [
-    "ogc.api.connected-systems.swecommon.basic-types",
-    "ogc.api.connected-systems.swecommon.abstract-simple-component"
+    "ogc.api.connected-systems.swecommon.abstract-simple-component",
+    "ogc.api.connected-systems.swecommon.basic-types"
   ],
   "license": {
     "name": "Apache-2.0",

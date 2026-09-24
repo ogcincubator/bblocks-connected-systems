@@ -1,5 +1,5 @@
 Validation report for ogc.api.connected-systems.swecommon.geometry - Geometry
-Generated 2026-09-24T07:53:24.625895+00:00
+Generated 2026-09-24T07:57:57.801705+00:00
 === Files ===
 Using examples/geometry2.json from examples
 === End Files ===

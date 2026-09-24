@@ -1,0 +1,22 @@
+Validation report for ogc.api.connected-systems.swecommon.time - Time
+Generated 2026-09-24T07:57:55.411753+00:00
+=== Files ===
+Using examples/allowedTimes1.json from examples
+=== End Files ===
+
+=== JSON Schema ===
+
+** Validation error **
+ValidationError: '+Infinity' is valid under each of {'$ref': '#/$defs/NumberOrSpecial'}, {'title': 'Date/Time', 'type': 'string', 'format': 'date-time'}
+
+Failed validating 'oneOf' in schema['allOf'][1]['properties']['constraint']['properties']['intervals']['items']['items']:
+    {'$anchor': 'DateTimeNumberOrSpecial',
+     'oneOf': [{'format': 'date-time',
+                'title': 'Date/Time',
+                'type': 'string'},
+               {'$ref': '#/$defs/NumberOrSpecial'}]}
+
+On instance['constraint']['intervals'][0][1]:
+    '+Infinity'
+=== End JSON Schema ===
+

@@ -30,16 +30,34 @@ Converted from [`swecommon/schemas/json/Time.json`](https://github.com/opengeosp
 
 ## Known failing examples
 
-1 example(s) taken from the specification do **not** validate against this schema. They are included as negative tests (`tests/spec-*-fail.json`), which pass only while the problem persists:
+1 of the examples taken from the specification do **not** validate against this schema. They are included on purpose, so the validation report shows the problem:
 
 - `allowedTimes1.json`: `DateTimeNumberOrSpecial` is a `oneOf`: `+Infinity` matches both the special-number and the date-time branch.
 
 ## Examples
 
-5 example(s) taken from the specification are included and validated against this schema.
+6 example(s) taken from the specification are included and validated against this schema.
 
 
 ## Examples
+
+### AllowedTimes1
+#### json
+```json
+{
+  "type": "Time",
+  "definition": "http://www.opengis.net/def/property/OGC/0/SamplingTime",
+  "referenceFrame": "http://www.opengis.net/def/trs/USNO/0/GPS",
+  "label": "Acquisition Time",
+  "uom": {
+    "href": "http://www.opengis.net/def/uom/ISO-8601/0/Gregorian"
+  },
+  "constraint": {
+    "intervals": [["2009-01-01T00:00:00Z", "+Infinity"]]
+  }
+}
+```
+
 
 ### AllowedTimes2
 #### json

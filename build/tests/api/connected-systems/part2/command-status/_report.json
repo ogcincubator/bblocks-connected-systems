@@ -2,103 +2,9 @@
   "title": "Validation report for ogc.api.connected-systems.part2.command-status - CommandStatus",
   "bblockName": "CommandStatus",
   "bblockId": "ogc.api.connected-systems.part2.command-status",
-  "generated": "2026-09-24T07:53:24.217569+00:00",
-  "result": true,
+  "generated": "2026-09-24T07:57:57.409961+00:00",
+  "result": false,
   "items": [
-    {
-      "source": {
-        "type": "TEST_RESOURCE",
-        "requireFail": true,
-        "filename": "_sources/part2/command-status/tests/spec-command-status-inline-result-complex-fail.json",
-        "url": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part2/command-status/tests/spec-command-status-inline-result-complex-fail.json",
-        "language": "json"
-      },
-      "result": true,
-      "sections": [
-        {
-          "name": "GENERAL",
-          "title": "General",
-          "entries": [
-            {
-              "op": "require-fail",
-              "isError": false,
-              "message": "Test was expected to fail and it did."
-            }
-          ]
-        },
-        {
-          "name": "FILES",
-          "title": "Files",
-          "entries": [
-            {
-              "isError": false,
-              "message": "Using spec-command-status-inline-result-complex-fail.json from test resources"
-            }
-          ]
-        },
-        {
-          "name": "JSON_SCHEMA",
-          "title": "JSON Schema",
-          "entries": [
-            {
-              "op": "validation",
-              "result": false,
-              "exception": "ValidationError",
-              "errorMessage": "'id' is a required property",
-              "isError": true,
-              "message": "ValidationError: 'id' is a required property\n\nFailed validating 'required' in schema:\n    {'$schema': 'https://json-schema.org/draft/2020-12/schema',\n     'properties': {'command@id': {'description': 'Local identifier of the '\n                                                  'command that this '\n                                                  'report applies to',\n                                   'minLength': 1,\n                                   'readOnly': True,\n                                   'type': 'string'},\n                    'executionTime': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/time-period/schema.yaml',\n                                      'description': 'Time period during '\n                                                     'which the command '\n                                                     'was executed or is '\n                                                     'scheduled to be '\n                                                     'executed (depending '\n                                                     'on status code)'},\n                    'id': {'description': 'Local identifier of the status '\n                                          'report',\n                           'minLength': 1,\n                           'readOnly': True,\n                           'type': 'string'},\n                    'message': {'description': 'Human readable message '\n                                               'providing more details on '\n                                               'the current status (can be '\n                                               'both an error or '\n                                               'information message '\n                                               'depending on the status '\n                                               'code)',\n                                'minLength': 1,\n                                'type': 'string'},\n                    'percentCompletion': {'description': 'Current progress '\n                                                         'expressed as a '\n                                                         'percentage of '\n                                                         'total task '\n                                                         'execution',\n                                          'maximum': 100,\n                                          'minimum': 0,\n                                          'type': 'number'},\n                    'reportTime': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/time-instant/schema.yaml',\n                                   'description': 'Time at which this '\n                                                  'report was generated. '\n                                                  'If omitted on creation, '\n                                                  'the server sets it to '\n                                                  'the time the request '\n                                                  'was received.',\n                                   'readOnly': True},\n                    'results': {'description': 'New result(s) of the '\n                                               'command available at the '\n                                               'time of the progress '\n                                               'report (can be a partial '\n                                               'result)',\n                                'items': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part2/command-result/schema.yaml'},\n                                'type': 'array'},\n                    'statusCode': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part2/command-status-code/schema.yaml',\n                                   'description': 'Current status code'}},\n     'required': ['id', 'command@id', 'reportTime', 'statusCode'],\n     'type': 'object'}\n\nOn instance:\n    {'result': [{'inline': {'mean': '10.51', 'stdev': '1.23'}}],\n     'statusCode': 'COMPLETED'}"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": {
-        "type": "TEST_RESOURCE",
-        "requireFail": true,
-        "filename": "_sources/part2/command-status/tests/spec-command-status-inline-result-simple-fail.json",
-        "url": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part2/command-status/tests/spec-command-status-inline-result-simple-fail.json",
-        "language": "json"
-      },
-      "result": true,
-      "sections": [
-        {
-          "name": "GENERAL",
-          "title": "General",
-          "entries": [
-            {
-              "op": "require-fail",
-              "isError": false,
-              "message": "Test was expected to fail and it did."
-            }
-          ]
-        },
-        {
-          "name": "FILES",
-          "title": "Files",
-          "entries": [
-            {
-              "isError": false,
-              "message": "Using spec-command-status-inline-result-simple-fail.json from test resources"
-            }
-          ]
-        },
-        {
-          "name": "JSON_SCHEMA",
-          "title": "JSON Schema",
-          "entries": [
-            {
-              "op": "validation",
-              "result": false,
-              "exception": "ValidationError",
-              "errorMessage": "'id' is a required property",
-              "isError": true,
-              "message": "ValidationError: 'id' is a required property\n\nFailed validating 'required' in schema:\n    {'$schema': 'https://json-schema.org/draft/2020-12/schema',\n     'properties': {'command@id': {'description': 'Local identifier of the '\n                                                  'command that this '\n                                                  'report applies to',\n                                   'minLength': 1,\n                                   'readOnly': True,\n                                   'type': 'string'},\n                    'executionTime': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/time-period/schema.yaml',\n                                      'description': 'Time period during '\n                                                     'which the command '\n                                                     'was executed or is '\n                                                     'scheduled to be '\n                                                     'executed (depending '\n                                                     'on status code)'},\n                    'id': {'description': 'Local identifier of the status '\n                                          'report',\n                           'minLength': 1,\n                           'readOnly': True,\n                           'type': 'string'},\n                    'message': {'description': 'Human readable message '\n                                               'providing more details on '\n                                               'the current status (can be '\n                                               'both an error or '\n                                               'information message '\n                                               'depending on the status '\n                                               'code)',\n                                'minLength': 1,\n                                'type': 'string'},\n                    'percentCompletion': {'description': 'Current progress '\n                                                         'expressed as a '\n                                                         'percentage of '\n                                                         'total task '\n                                                         'execution',\n                                          'maximum': 100,\n                                          'minimum': 0,\n                                          'type': 'number'},\n                    'reportTime': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/time-instant/schema.yaml',\n                                   'description': 'Time at which this '\n                                                  'report was generated. '\n                                                  'If omitted on creation, '\n                                                  'the server sets it to '\n                                                  'the time the request '\n                                                  'was received.',\n                                   'readOnly': True},\n                    'results': {'description': 'New result(s) of the '\n                                               'command available at the '\n                                               'time of the progress '\n                                               'report (can be a partial '\n                                               'result)',\n                                'items': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part2/command-result/schema.yaml'},\n                                'type': 'array'},\n                    'statusCode': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part2/command-status-code/schema.yaml',\n                                   'description': 'Current status code'}},\n     'required': ['id', 'command@id', 'reportTime', 'statusCode'],\n     'type': 'object'}\n\nOn instance:\n    {'result': [{'inline': {'mean': '10.51', 'stdev': '1.23'}}],\n     'statusCode': 'COMPLETED'}"
-            }
-          ]
-        }
-      ]
-    },
     {
       "source": {
         "type": "EXAMPLE",
@@ -181,6 +87,82 @@
         "snippetIndex": 1,
         "language": "application/json"
       },
+      "result": false,
+      "sections": [
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using examples/command-status-inline-result-complex.json from examples"
+            }
+          ]
+        },
+        {
+          "name": "JSON_SCHEMA",
+          "title": "JSON Schema",
+          "entries": [
+            {
+              "op": "validation",
+              "result": false,
+              "exception": "ValidationError",
+              "errorMessage": "'id' is a required property",
+              "isError": true,
+              "message": "ValidationError: 'id' is a required property\n\nFailed validating 'required' in schema:\n    {'$schema': 'https://json-schema.org/draft/2020-12/schema',\n     'properties': {'command@id': {'description': 'Local identifier of the '\n                                                  'command that this '\n                                                  'report applies to',\n                                   'minLength': 1,\n                                   'readOnly': True,\n                                   'type': 'string'},\n                    'executionTime': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/time-period/schema.yaml',\n                                      'description': 'Time period during '\n                                                     'which the command '\n                                                     'was executed or is '\n                                                     'scheduled to be '\n                                                     'executed (depending '\n                                                     'on status code)'},\n                    'id': {'description': 'Local identifier of the status '\n                                          'report',\n                           'minLength': 1,\n                           'readOnly': True,\n                           'type': 'string'},\n                    'message': {'description': 'Human readable message '\n                                               'providing more details on '\n                                               'the current status (can be '\n                                               'both an error or '\n                                               'information message '\n                                               'depending on the status '\n                                               'code)',\n                                'minLength': 1,\n                                'type': 'string'},\n                    'percentCompletion': {'description': 'Current progress '\n                                                         'expressed as a '\n                                                         'percentage of '\n                                                         'total task '\n                                                         'execution',\n                                          'maximum': 100,\n                                          'minimum': 0,\n                                          'type': 'number'},\n                    'reportTime': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/time-instant/schema.yaml',\n                                   'description': 'Time at which this '\n                                                  'report was generated. '\n                                                  'If omitted on creation, '\n                                                  'the server sets it to '\n                                                  'the time the request '\n                                                  'was received.',\n                                   'readOnly': True},\n                    'results': {'description': 'New result(s) of the '\n                                               'command available at the '\n                                               'time of the progress '\n                                               'report (can be a partial '\n                                               'result)',\n                                'items': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part2/command-result/schema.yaml'},\n                                'type': 'array'},\n                    'statusCode': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part2/command-status-code/schema.yaml',\n                                   'description': 'Current status code'}},\n     'required': ['id', 'command@id', 'reportTime', 'statusCode'],\n     'type': 'object'}\n\nOn instance:\n    {'result': [{'inline': {'mean': '10.51', 'stdev': '1.23'}}],\n     'statusCode': 'COMPLETED'}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": {
+        "type": "EXAMPLE",
+        "requireFail": false,
+        "filename": "build/tests/api/connected-systems/part2/command-status/example_4_1.json",
+        "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part2/command-status/example_4_1.json",
+        "exampleIndex": 4,
+        "snippetIndex": 1,
+        "language": "application/json"
+      },
+      "result": false,
+      "sections": [
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using examples/command-status-inline-result-simple.json from examples"
+            }
+          ]
+        },
+        {
+          "name": "JSON_SCHEMA",
+          "title": "JSON Schema",
+          "entries": [
+            {
+              "op": "validation",
+              "result": false,
+              "exception": "ValidationError",
+              "errorMessage": "'id' is a required property",
+              "isError": true,
+              "message": "ValidationError: 'id' is a required property\n\nFailed validating 'required' in schema:\n    {'$schema': 'https://json-schema.org/draft/2020-12/schema',\n     'properties': {'command@id': {'description': 'Local identifier of the '\n                                                  'command that this '\n                                                  'report applies to',\n                                   'minLength': 1,\n                                   'readOnly': True,\n                                   'type': 'string'},\n                    'executionTime': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/time-period/schema.yaml',\n                                      'description': 'Time period during '\n                                                     'which the command '\n                                                     'was executed or is '\n                                                     'scheduled to be '\n                                                     'executed (depending '\n                                                     'on status code)'},\n                    'id': {'description': 'Local identifier of the status '\n                                          'report',\n                           'minLength': 1,\n                           'readOnly': True,\n                           'type': 'string'},\n                    'message': {'description': 'Human readable message '\n                                               'providing more details on '\n                                               'the current status (can be '\n                                               'both an error or '\n                                               'information message '\n                                               'depending on the status '\n                                               'code)',\n                                'minLength': 1,\n                                'type': 'string'},\n                    'percentCompletion': {'description': 'Current progress '\n                                                         'expressed as a '\n                                                         'percentage of '\n                                                         'total task '\n                                                         'execution',\n                                          'maximum': 100,\n                                          'minimum': 0,\n                                          'type': 'number'},\n                    'reportTime': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/time-instant/schema.yaml',\n                                   'description': 'Time at which this '\n                                                  'report was generated. '\n                                                  'If omitted on creation, '\n                                                  'the server sets it to '\n                                                  'the time the request '\n                                                  'was received.',\n                                   'readOnly': True},\n                    'results': {'description': 'New result(s) of the '\n                                               'command available at the '\n                                               'time of the progress '\n                                               'report (can be a partial '\n                                               'result)',\n                                'items': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part2/command-result/schema.yaml'},\n                                'type': 'array'},\n                    'statusCode': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part2/command-status-code/schema.yaml',\n                                   'description': 'Current status code'}},\n     'required': ['id', 'command@id', 'reportTime', 'statusCode'],\n     'type': 'object'}\n\nOn instance:\n    {'result': [{'inline': {'mean': '10.51', 'stdev': '1.23'}}],\n     'statusCode': 'COMPLETED'}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": {
+        "type": "EXAMPLE",
+        "requireFail": false,
+        "filename": "build/tests/api/connected-systems/part2/command-status/example_5_1.json",
+        "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part2/command-status/example_5_1.json",
+        "exampleIndex": 5,
+        "snippetIndex": 1,
+        "language": "application/json"
+      },
       "result": true,
       "sections": [
         {
@@ -211,7 +193,7 @@
   "globalErrors": {},
   "counts": {
     "total": 5,
-    "passed": 5,
-    "failed": 0
+    "passed": 3,
+    "failed": 2
   }
 }

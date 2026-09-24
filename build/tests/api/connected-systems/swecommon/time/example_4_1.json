@@ -1,12 +1,11 @@
 {
   "type": "Time",
-  "definition": "http://www.opengis.net/def/property/OGC-EO/0/MissionStartTime",
-  "referenceFrame": "http://www.opengis.net/def/trs/BIPM/0/UTC",
-  "localFrame": "urn:org:systems:001#MISSION-START-TIME",
-  "label": "Flight Time",
-  "description": "Time at take-off in UTC",
+  "definition": "http://www.opengis.net/def/property/OGC/0/RunTime",
+  "referenceTime": "1970-01-01T00:00:00Z",
+  "label": "Model Run Time",
+  "description": "Run time of the model expressed as a Unix time",
   "uom": {
-    "href": "http://www.opengis.net/def/uom/ISO-8601/0/Gregorian"
+    "code": "s"
   },
-  "value": "2009-01-26T10:21:45+01:00"
+  "value": 1257415633
 }

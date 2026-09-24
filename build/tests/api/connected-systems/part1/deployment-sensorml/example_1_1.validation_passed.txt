@@ -1,5 +1,5 @@
 Validation report for ogc.api.connected-systems.part1.deployment-sensorml - Deployment (SensorML)
-Generated 2026-09-24T07:53:26.055457+00:00
+Generated 2026-09-24T07:57:59.440557+00:00
 === Files ===
 Using examples/deployment-sml.json from examples
 === End Files ===

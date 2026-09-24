@@ -24,10 +24,10 @@
     ]
   },
   "dependsOn": [
-    "ogc.api.connected-systems.part1.uris",
-    "ogc.api.connected-systems.common.link",
     "ogc.api.connected-systems.part1.feature",
-    "ogc.api.connected-systems.common.time-period"
+    "ogc.api.connected-systems.common.time-period",
+    "ogc.api.connected-systems.common.link",
+    "ogc.api.connected-systems.part1.uris"
   ],
   "license": {
     "name": "Apache-2.0",

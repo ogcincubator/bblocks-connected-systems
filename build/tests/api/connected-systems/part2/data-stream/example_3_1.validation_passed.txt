@@ -1,0 +1,10 @@
+Validation report for ogc.api.connected-systems.part2.data-stream - DataStream
+Generated 2026-09-24T07:57:58.946253+00:00
+=== Files ===
+Using examples/datastream.json from examples
+=== End Files ===
+
+=== JSON Schema ===
+Validation passed
+=== End JSON Schema ===
+

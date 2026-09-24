@@ -1,0 +1,10 @@
+Validation report for ogc.api.connected-systems.sensorml.physical-system - PhysicalSystem
+Generated 2026-09-24T07:57:59.981185+00:00
+=== Files ===
+Using examples/sensor_instance_with_geopose_quat.json from examples
+=== End Files ===
+
+=== JSON Schema ===
+Validation passed
+=== End JSON Schema ===
+

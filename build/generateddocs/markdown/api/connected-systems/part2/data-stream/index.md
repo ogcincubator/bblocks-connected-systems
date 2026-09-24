@@ -37,16 +37,62 @@ Converted from [`api/part2/openapi/schemas/json/dataStream.json`](https://github
 
 ## Known failing examples
 
-1 example(s) taken from the specification do **not** validate against this schema. They are included as negative tests (`tests/spec-*-fail.json`), which pass only while the problem persists:
+1 of the examples taken from the specification do **not** validate against this schema. They are included on purpose, so the validation report shows the problem:
 
 - `datastream-external-link-edr.json`: Request payload validated against the response schema: `readOnly` properties (`id`, `live`, `system@link`...) are `required`.
 
 ## Examples
 
-2 example(s) taken from the specification are included and validated against this schema.
+3 example(s) taken from the specification are included and validated against this schema.
 
 
 ## Examples
+
+### Datastream external link edr
+#### json
+```json
+{
+  "id": "958tf25kjm2f6",
+  "name": "Outdoor Thermometer 001 - Air Temperature",
+  "system@link": {
+    "href": "https://data.example.org/api/systems/123",
+    "uid": "urn:x-ogc:systems:001",
+    "outputName": "temp"
+  },
+  "phenomenonTime": [
+    "2020-06-29T14:32:00Z",
+    "2022-06-29T19:37:00Z"
+  ],
+  "resultTime": [
+    "2020-06-29T14:32:00Z",
+    "2012-06-29T19:37:00Z"
+  ],
+  "observedProperties": [
+    {
+      "definition": "http://mmisw.org/ont/cf/parameter/air_temperature",
+      "label": "Air Temperature"
+    }
+  ],
+  "resultType": "measure",
+  "formats": [
+    "application/json"
+  ],
+  "links": [
+    {
+      "rel" : "self",
+      "href" : "https://data.example.org/api/datastreams/958tf25kjm2f6",
+      "type" : "application/json"
+    }, {
+      "rel": "dataset",
+      "href": "https://data.other.net/edr/collections/nyc-temp-754",
+      "type" : "application/json",
+      "serviceRoot": "https://data.other.net/edr",
+      "serviceType": "http://www.opengis.net/doc/IS/ogcapi-edr-1/1.0"
+    }
+  ]
+}
+```
+
 
 ### Datastream simple
 #### json

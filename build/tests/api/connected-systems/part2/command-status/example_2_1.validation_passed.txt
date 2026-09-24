@@ -1,5 +1,5 @@
 Validation report for ogc.api.connected-systems.part2.command-status - CommandStatus
-Generated 2026-09-24T07:53:24.216924+00:00
+Generated 2026-09-24T07:57:57.405606+00:00
 === Files ===
 Using examples/command-status-completed.json from examples
 === End Files ===

@@ -32,9 +32,119 @@
   "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part1/property-sensorml/schema.json",
   "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part1/property-sensorml/resolvedProperties.json",
   "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part1/property-sensorml/",
-  "validationPassed": true,
+  "validationPassed": false,
   "testOutputs": "https://github.com/ogcincubator/bblocks-connected-systems/blob/master/build/tests/api/connected-systems/part1/property-sensorml/",
-  "description": "<!-- generated -->\n# Property (SensorML)\n\nConverted from [`api/part1/openapi/schemas/sensorml/property.json`](https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/api/part1/openapi/schemas/sensorml/property.json) in the OGC API - Connected Systems repository.\n\n## Properties\n\n| Property | Type | Required | Description |\n|---|---|---|---|\n| `links` | `../common/links.json` |  | Links to related resources |\n\n## Known failing examples\n\n9 example(s) taken from the specification do **not** validate against this schema. They are included as negative tests (`tests/spec-*-fail.json`), which pass only while the problem persists:\n\n- `air-temp.json`: Example has `id` but no `uniqueId`, which the property schema requires.\n- `avg-cpu-temp.json`: Example has `id` but no `uniqueId`, which the property schema requires.\n- `combustion-chamber-temp.json`: Example has `id` but no `uniqueId`, which the property schema requires.\n- `daily-avg-air-temp.json`: Example has `id` but no `uniqueId`, which the property schema requires.\n- `engine-power.json`: Example has `id` but no `uniqueId`, which the property schema requires.\n- `engine-temp.json`: Example has `id` but no `uniqueId`, which the property schema requires.\n- `received-rf-power-xband.json`: Example has `id` but no `uniqueId`, which the property schema requires.\n- `received-rf-power.json`: Example has `id` but no `uniqueId`, which the property schema requires.\n- `water-temp.json`: Example has `id` but no `uniqueId`, which the property schema requires.\n\n",
+  "description": "<!-- generated -->\n# Property (SensorML)\n\nConverted from [`api/part1/openapi/schemas/sensorml/property.json`](https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/api/part1/openapi/schemas/sensorml/property.json) in the OGC API - Connected Systems repository.\n\n## Properties\n\n| Property | Type | Required | Description |\n|---|---|---|---|\n| `links` | `../common/links.json` |  | Links to related resources |\n\n## Known failing examples\n\n9 of the examples taken from the specification do **not** validate against this schema. They are included on purpose, so the validation report shows the problem:\n\n- `air-temp.json`: Example has `id` but no `uniqueId`, which the property schema requires.\n- `avg-cpu-temp.json`: Example has `id` but no `uniqueId`, which the property schema requires.\n- `combustion-chamber-temp.json`: Example has `id` but no `uniqueId`, which the property schema requires.\n- `daily-avg-air-temp.json`: Example has `id` but no `uniqueId`, which the property schema requires.\n- `engine-power.json`: Example has `id` but no `uniqueId`, which the property schema requires.\n- `engine-temp.json`: Example has `id` but no `uniqueId`, which the property schema requires.\n- `received-rf-power-xband.json`: Example has `id` but no `uniqueId`, which the property schema requires.\n- `received-rf-power.json`: Example has `id` but no `uniqueId`, which the property schema requires.\n- `water-temp.json`: Example has `id` but no `uniqueId`, which the property schema requires.\n\n## Examples\n\n9 example(s) taken from the specification are included and validated against this schema.\n\n",
+  "examples": [
+    {
+      "title": "Air temp",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part1/property-sensorml/examples/air-temp.json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part1/property-sensorml/example_1_1.json",
+          "sizeBytes": 232,
+          "code": "{\n  \"id\": \"AirTemp\",\n  \"label\": \"Air Temperature\",\n  \"description\": \"Temperature of the air under cover\",\n  \"baseProperty\": \"http://qudt.org/vocab/quantitykind/Temperature\",\n  \"objectType\": \"http://dbpedia.org/resource/Atmosphere\"\n}"
+        }
+      ]
+    },
+    {
+      "title": "Avg cpu temp",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part1/property-sensorml/examples/avg-cpu-temp.json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part1/property-sensorml/example_2_1.json",
+          "sizeBytes": 317,
+          "code": "{\n  \"id\": \"AverageCpuTemp\",\n  \"label\": \"Average CPU Temp\",\n  \"description\": \"Hourly average of the CPU temperature\",\n  \"baseProperty\": \"http://qudt.org/vocab/quantitykind/Temperature\",\n  \"objectType\": \"http://dbpedia.org/resource/Central_processing_unit\",\n  \"statistic\": \"http://sensorml.com/ont/x-stats/HourlyMean\"\n}"
+        }
+      ]
+    },
+    {
+      "title": "Combustion chamber temp",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part1/property-sensorml/examples/combustion-chamber-temp.json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part1/property-sensorml/example_3_1.json",
+          "sizeBytes": 263,
+          "code": "{\n  \"id\": \"CombustionTemp\",\n  \"label\": \"Combustion Temp\",\n  \"description\": \"Temperature measured inside the combustion chamber\",\n  \"baseProperty\": \"http://qudt.org/vocab/quantitykind/Temperature\",\n  \"objectType\": \"http://dbpedia.org/resource/Combustion_chamber\"\n}"
+        }
+      ]
+    },
+    {
+      "title": "Daily avg air temp",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part1/property-sensorml/examples/daily-avg-air-temp.json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part1/property-sensorml/example_4_1.json",
+          "sizeBytes": 342,
+          "code": "{\n  \"id\": \"DailyAverageAirTemp\",\n  \"label\": \"Daily Average Temperature\",\n  \"description\": \"Average temperature computed over a 24-hour calendar day, starting at midnight local time at the measurement location\",\n  \"baseProperty\": \"http://mmisw.org/ont/cf/parameter/air_temperature\",\n  \"statistic\": \"http://sensorml.com/ont/x-stats/DailyMean\"\n}"
+        }
+      ]
+    },
+    {
+      "title": "Engine power",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part1/property-sensorml/examples/engine-power.json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part1/property-sensorml/example_5_1.json",
+          "sizeBytes": 228,
+          "code": "{\n  \"id\": \"EnginePower\",\n  \"label\": \"Engine Power\",\n  \"description\": \"Mechanical power produced by the engine\",\n  \"baseProperty\": \"http://qudt.org/vocab/quantitykind/Power\",\n  \"objectType\": \"http://dbpedia.org/resource/Engine\"\n}"
+        }
+      ]
+    },
+    {
+      "title": "Engine temp",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part1/property-sensorml/examples/engine-temp.json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part1/property-sensorml/example_6_1.json",
+          "sizeBytes": 266,
+          "code": "{\n  \"id\": \"EngineTemp\",\n  \"label\": \"Engine Temp\",\n  \"description\": \"Temperature of the engine oil, measured at the bottom of the engine block\",\n  \"baseProperty\": \"http://qudt.org/vocab/quantitykind/Temperature\",\n  \"objectType\": \"http://dbpedia.org/resource/Engine\"\n}"
+        }
+      ]
+    },
+    {
+      "title": "Received rf power xband",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part1/property-sensorml/examples/received-rf-power-xband.json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part1/property-sensorml/example_7_1.json",
+          "sizeBytes": 417,
+          "code": "{\n  \"id\": \"RFPower_Received_XBand\",\n  \"baseProperty\": \"http://qudt.org/vocab/quantitykind/RF-Power\",\n  \"label\": \"Received RF Power (XBand)\",\n  \"description\": \"RF Power received in band X\",\n  \"qualifiers\": [\n    {\n      \"type\": \"Category\",\n      \"definition\": \"http://qudt.org/vocab/quantitykind/Frequency\",\n      \"label\": \"Frequency Band\",\n      \"value\": \"http://sensorml.com/ont/swe/spectrum/IEEE/X_band\"\n    }\n  ]\n}"
+        }
+      ]
+    },
+    {
+      "title": "Received rf power",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part1/property-sensorml/examples/received-rf-power.json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part1/property-sensorml/example_8_1.json",
+          "sizeBytes": 423,
+          "code": "{\n  \"id\": \"RFPower_Received_620-720\",\n  \"baseProperty\": \"http://qudt.org/vocab/quantitykind/RF-Power\",\n  \"label\": \"Received RF Power\",\n  \"description\": \"RF Power received in band 620-720 MHz\",\n  \"qualifiers\": [\n    {\n      \"type\": \"QuantityRange\",\n      \"definition\": \"http://qudt.org/vocab/quantitykind/Frequency\",\n      \"label\": \"Frequency Range\",\n      \"uom\": { \"code\": \"MHz\" },\n      \"value\": [620.0, 720.0]\n    }\n  ]\n}"
+        }
+      ]
+    },
+    {
+      "title": "Water temp",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part1/property-sensorml/examples/water-temp.json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part1/property-sensorml/example_9_1.json",
+          "sizeBytes": 242,
+          "code": "{\n  \"id\": \"SeaWaterTemp\",\n  \"label\": \"Seawater Temperature\",\n  \"description\": \"Temperature of the sea surface water\",\n  \"baseProperty\": \"http://qudt.org/vocab/quantitykind/Temperature\",\n  \"objectType\": \"http://dbpedia.org/resource/Seawater\"\n}"
+        }
+      ]
+    }
+  ],
   "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\nallOf:\n- $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/derived-property/schema.yaml\n- properties:\n    links:\n      description: Links to related resources\n      $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part1/links/schema.yaml\n  required:\n  - uniqueId\n",
   "gitRepository": "https://github.com/ogcincubator/bblocks-connected-systems",
   "gitPath": "_sources/part1/property-sensorml"

@@ -1,18 +1,10 @@
 {
   "id": "958tf25kjm2f6",
-  "name": "Indoor Thermometer 001 - Living Room Temperature",
-  "outputName": "temp",
+  "name": "Outdoor Thermometer 001 - Air Temperature",
   "system@link": {
     "href": "https://data.example.org/api/systems/123",
-    "uid": "urn:x-ogc:systems:001"
-  },
-  "featureOfInterest@link": {
-    "href": "https://data.example.org/api/collections/buildings/items/754",
-    "title": "My House"
-  },
-  "samplingFeature@link": {
-    "href": "https://data.example.org/api/samplingFeatures/4478",
-    "title": "Thermometer Sampling Point"
+    "uid": "urn:x-ogc:systems:001",
+    "outputName": "temp"
   },
   "phenomenonTime": [
     "2020-06-29T14:32:00Z",
@@ -25,23 +17,25 @@
   "observedProperties": [
     {
       "definition": "http://mmisw.org/ont/cf/parameter/air_temperature",
-      "label": "Room Temperature",
-      "description": "Ambient air temperature measured inside the room"
+      "label": "Air Temperature"
     }
   ],
   "resultType": "measure",
   "formats": [
-    "application/json",
-    "application/swe+json",
-    "application/swe+csv",
-    "application/x-protobuf"
+    "application/json"
   ],
-  "live": true,
   "links": [
     {
-      "rel": "observations",
-      "href": "https://data.example.org/api/datastreams/958tf25kjm2f6/observations",
+      "rel": "self",
+      "href": "https://data.example.org/api/datastreams/958tf25kjm2f6",
       "type": "application/json"
+    },
+    {
+      "rel": "dataset",
+      "href": "https://data.other.net/edr/collections/nyc-temp-754",
+      "type": "application/json",
+      "serviceRoot": "https://data.other.net/edr",
+      "serviceType": "http://www.opengis.net/doc/IS/ogcapi-edr-1/1.0"
     }
   ]
 }

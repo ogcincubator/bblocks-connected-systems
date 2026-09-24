@@ -23,12 +23,55 @@ Converted from [`api/part2/openapi/schemas/json/commandResult.json`](https://git
 
 ## Known failing examples
 
-3 example(s) taken from the specification do **not** validate against this schema. They are included as negative tests (`tests/spec-*-fail.json`), which pass only while the problem persists:
+3 of the examples taken from the specification do **not** validate against this schema. They are included on purpose, so the validation report shows the problem:
 
 - `command-result-datastream.json`: Request payload validated against the response schema: `readOnly` properties (`id`, `live`, `system@link`...) are `required`.
 - `command-result-inline.json`: Request payload validated against the response schema: `readOnly` properties (`id`, `live`, `system@link`...) are `required`.
 - `command-result-single-obs.json`: Request payload validated against the response schema: `readOnly` properties (`id`, `live`, `system@link`...) are `required`.
 
+## Examples
+
+3 example(s) taken from the specification are included and validated against this schema.
+
+
+## Examples
+
+### Command result datastream
+#### json
+```json
+{
+  "datastream@link": {
+    "href": "https://data.example.org/api/datastreams/445ssdf55",
+    "title": "Plume Simulation Data",
+    "type": "application/json"
+  }
+}
+```
+
+
+### Command result inline
+#### json
+```json
+{
+  "data": {
+    "mean": "10.51",
+    "stdev": "1.23"
+  }
+}
+```
+
+
+### Command result single obs
+#### json
+```json
+{
+  "observation@link": {
+    "href": "https://data.example.org/api/observations/gss45sdf413s387g49445ssdf55?f=json",
+    "title": "Satellite Image",
+    "type": "application/json"
+  }
+}
+```
 
 ## Schema
 

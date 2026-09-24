@@ -17,11 +17,11 @@
   ],
   "shaclShapes": {},
   "dependsOn": [
-    "ogc.api.connected-systems.part1.links",
     "ogc.api.connected-systems.part2.command-schema",
+    "ogc.api.connected-systems.common.time-period",
     "ogc.api.connected-systems.common.link",
     "ogc.api.connected-systems.part2.base-stream",
-    "ogc.api.connected-systems.common.time-period"
+    "ogc.api.connected-systems.part1.links"
   ],
   "license": {
     "name": "Apache-2.0",

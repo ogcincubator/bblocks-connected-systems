@@ -1,7 +1,7 @@
 Validation report for ogc.api.connected-systems.sensorml.physical-system - PhysicalSystem
-Generated 2026-09-24T07:53:27.704585+00:00
+Generated 2026-09-24T07:57:59.976571+00:00
 === Files ===
-Using examples/sensor_instance_with_geojson_location.json from examples
+Using examples/sensor_instance_with_config.json from examples
 === End Files ===
 
 === JSON Schema ===

@@ -1,5 +1,5 @@
 Validation report for ogc.api.connected-systems.part2.observation-schema-json - ObservationSchemaJson
-Generated 2026-09-24T07:53:25.668702+00:00
+Generated 2026-09-24T07:57:58.811889+00:00
 === Files ===
 Using examples/observationSchema-scalar-json.json from examples
 === End Files ===

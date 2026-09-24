@@ -1,7 +1,7 @@
 Validation report for ogc.api.connected-systems.swecommon.time - Time
-Generated 2026-09-24T07:53:24.722570+00:00
+Generated 2026-09-24T07:57:55.415818+00:00
 === Files ===
-Using examples/time3.json from examples
+Using examples/time2.json from examples
 === End Files ===
 
 === JSON Schema ===

@@ -24,8 +24,8 @@
     ]
   },
   "dependsOn": [
-    "ogc.api.connected-systems.part1.uris",
-    "ogc.api.connected-systems.part1.feature"
+    "ogc.api.connected-systems.part1.feature",
+    "ogc.api.connected-systems.part1.uris"
   ],
   "license": {
     "name": "Apache-2.0",
@@ -40,9 +40,35 @@
   "ldContext": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part1/procedure/context.jsonld",
   "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part1/procedure/resolvedProperties.json",
   "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part1/procedure/",
-  "validationPassed": true,
+  "validationPassed": false,
   "testOutputs": "https://github.com/ogcincubator/bblocks-connected-systems/blob/master/build/tests/api/connected-systems/part1/procedure/",
-  "description": "<!-- generated -->\n# Procedure (GeoJSON)\n\nConverted from [`api/part1/openapi/schemas/geojson/procedure.json`](https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/api/part1/openapi/schemas/geojson/procedure.json) in the OGC API - Connected Systems repository.\n\n## Properties\n\n| Property | Type | Required | Description |\n|---|---|---|---|\n| `geometry` | `null` |  |  |\n| `properties` |  |  |  |\n\n## Known failing examples\n\n1 example(s) taken from the specification do **not** validate against this schema. They are included as negative tests (`tests/spec-*-fail.json`), which pass only while the problem persists:\n\n- `sensor-datasheet-geojson.json`: `ProcedureTypeUris` does not allow `http://www.w3.org/ns/ssn-system/SensorKind` (used as `featureType`/`definition`).\n\n",
+  "description": "<!-- generated -->\n# Procedure (GeoJSON)\n\nConverted from [`api/part1/openapi/schemas/geojson/procedure.json`](https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/api/part1/openapi/schemas/geojson/procedure.json) in the OGC API - Connected Systems repository.\n\n## Properties\n\n| Property | Type | Required | Description |\n|---|---|---|---|\n| `geometry` | `null` |  |  |\n| `properties` |  |  |  |\n\n## Known failing examples\n\n1 of the examples taken from the specification do **not** validate against this schema. They are included on purpose, so the validation report shows the problem:\n\n- `sensor-datasheet-geojson.json`: `ProcedureTypeUris` does not allow `http://www.w3.org/ns/ssn-system/SensorKind` (used as `featureType`/`definition`).\n\n## Examples\n\n1 example(s) taken from the specification are included and validated against this schema.\n\n",
+  "examples": [
+    {
+      "title": "Sensor datasheet geojson",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part1/procedure/examples/sensor-datasheet-geojson.json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part1/procedure/example_1_1.json",
+          "sizeBytes": 696,
+          "code": "{\n  \"type\": \"Feature\",\n  \"id\": \"iv3f2kcq27gfi\",\n  \"geometry\": null,\n  \"properties\": {\n    \"uid\": \"urn:x-gill:datasheets:windmaster:v1\",\n    \"name\": \"Gill WindMaster\",\n    \"description\": \"Precision 3-axis ultrasonic anemometer\",\n    \"featureType\": \"http://www.w3.org/ns/ssn-system/SensorKind\"\n  },\n  \"links\": [\n    {\n      \"href\" : \"https://data.example.org/api/procedures/iv3f2kcq27gfi?f=json\",\n      \"rel\" : \"self\",\n      \"type\" : \"application/geo+json\",\n      \"title\" : \"this document\"\n    }, {\n      \"href\" : \"https://data.example.org/api/procedures/iv3f2kcq27gfi?f=sml\",\n      \"rel\" : \"alternate\",\n      \"type\" : \"application/sml+json\",\n      \"title\" : \"this resource as SensorML\"\n    }\n  ]\n}"
+        },
+        {
+          "language": "jsonld",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part1/procedure/example_1_1.jsonld",
+          "sizeBytes": 835,
+          "code": "{\n  \"@context\": \"https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part1/procedure/context.jsonld\",\n  \"type\": \"Feature\",\n  \"id\": \"iv3f2kcq27gfi\",\n  \"geometry\": null,\n  \"properties\": {\n    \"uid\": \"urn:x-gill:datasheets:windmaster:v1\",\n    \"name\": \"Gill WindMaster\",\n    \"description\": \"Precision 3-axis ultrasonic anemometer\",\n    \"featureType\": \"http://www.w3.org/ns/ssn-system/SensorKind\"\n  },\n  \"links\": [\n    {\n      \"href\": \"https://data.example.org/api/procedures/iv3f2kcq27gfi?f=json\",\n      \"rel\": \"self\",\n      \"type\": \"application/geo+json\",\n      \"title\": \"this document\"\n    },\n    {\n      \"href\": \"https://data.example.org/api/procedures/iv3f2kcq27gfi?f=sml\",\n      \"rel\": \"alternate\",\n      \"type\": \"application/sml+json\",\n      \"title\": \"this resource as SensorML\"\n    }\n  ]\n}"
+        },
+        {
+          "language": "ttl",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part1/procedure/example_1_1.ttl",
+          "sizeBytes": 834,
+          "code": "@prefix dct: <http://purl.org/dc/terms/> .\n@prefix geojson: <https://purl.org/geojson/vocab#> .\n@prefix ns1: <http://www.iana.org/assignments/> .\n@prefix oa: <http://www.w3.org/ns/oa#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n\n<file:///github/workspace/iv3f2kcq27gfi> a geojson:Feature ;\n    rdfs:seeAlso [ rdfs:label \"this resource as SensorML\" ;\n            dct:type \"application/sml+json\" ;\n            ns1:relation <http://www.iana.org/assignments/relation/alternate> ;\n            oa:hasTarget <https://data.example.org/api/procedures/iv3f2kcq27gfi?f=sml> ],\n        [ rdfs:label \"this document\" ;\n            dct:type \"application/geo+json\" ;\n            ns1:relation <http://www.iana.org/assignments/relation/self> ;\n            oa:hasTarget <https://data.example.org/api/procedures/iv3f2kcq27gfi?f=json> ] .\n\n"
+        }
+      ]
+    }
+  ],
   "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\nallOf:\n- $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part1/feature/schema.yaml\n- properties:\n    geometry:\n      type: 'null'\n    properties:\n      properties:\n        featureType:\n          $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part1/uris/schema.yaml#ProcedureTypeUris\n",
   "gitRepository": "https://github.com/ogcincubator/bblocks-connected-systems",
   "gitPath": "_sources/part1/procedure"

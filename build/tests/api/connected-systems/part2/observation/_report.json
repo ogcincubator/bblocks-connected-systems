@@ -2,244 +2,9 @@
   "title": "Validation report for ogc.api.connected-systems.part2.observation - Observation",
   "bblockName": "Observation",
   "bblockId": "ogc.api.connected-systems.part2.observation",
-  "generated": "2026-09-24T07:53:23.009642+00:00",
-  "result": true,
+  "generated": "2026-09-24T07:57:54.995277+00:00",
+  "result": false,
   "items": [
-    {
-      "source": {
-        "type": "TEST_RESOURCE",
-        "requireFail": true,
-        "filename": "_sources/part2/observation/tests/spec-obs-link-create-fail.json",
-        "url": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part2/observation/tests/spec-obs-link-create-fail.json",
-        "language": "json"
-      },
-      "result": true,
-      "sections": [
-        {
-          "name": "GENERAL",
-          "title": "General",
-          "entries": [
-            {
-              "op": "require-fail",
-              "isError": false,
-              "message": "Test was expected to fail and it did."
-            }
-          ]
-        },
-        {
-          "name": "FILES",
-          "title": "Files",
-          "entries": [
-            {
-              "isError": false,
-              "message": "Using spec-obs-link-create-fail.json from test resources"
-            }
-          ]
-        },
-        {
-          "name": "JSON_SCHEMA",
-          "title": "JSON Schema",
-          "entries": [
-            {
-              "op": "validation",
-              "result": false,
-              "exception": "ValidationError",
-              "errorMessage": "'id' is a required property",
-              "isError": true,
-              "message": "ValidationError: 'id' is a required property\n\nFailed validating 'required' in schema:\n    {'$schema': 'https://json-schema.org/draft/2020-12/schema',\n     'oneOf': [{'required': ['result'], 'title': 'Inline result'},\n               {'required': ['result@link'],\n                'title': 'Link to external result'}],\n     'properties': {'datastream@id': {'description': 'Local ID of the '\n                                                     'datastream that the '\n                                                     'observation is part '\n                                                     'of',\n                                      'minLength': 1,\n                                      'readOnly': True,\n                                      'type': 'string'},\n                    'id': {'description': 'Local ID of the observation',\n                           'minLength': 1,\n                           'readOnly': True,\n                           'type': 'string'},\n                    'parameters': {'description': 'Parameters of the '\n                                                  'observation. Must be '\n                                                  'valid according to the '\n                                                  'parameters schema '\n                                                  'provided in the '\n                                                  'datastream metadata.',\n                                   'type': 'object'},\n                    'phenomenonTime': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/time-instant/schema.yaml',\n                                       'description': 'Time at which the '\n                                                      'observation result '\n                                                      'is a valid estimate '\n                                                      'of the sampling '\n                                                      'feature '\n                                                      'property(ies). '\n                                                      'Defaults to the '\n                                                      'same value as '\n                                                      '`resultTime`.'},\n                    'procedure@link': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/link/schema.yaml',\n                                       'description': 'Link to the '\n                                                      'procedure/method '\n                                                      'used to make the '\n                                                      'observation'},\n                    'result': {'description': 'Result of the observation. '\n                                              'Must be valid according to '\n                                              'the result schema provided '\n                                              'in the datastream '\n                                              'metadata.'},\n                    'result@link': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/link/schema.yaml',\n                                    'description': 'Link to external '\n                                                   'result data (e.g., '\n                                                   'large raster dataset '\n                                                   'served by a tiling '\n                                                   'service)'},\n                    'resultTime': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/time-instant/schema.yaml',\n                                   'description': 'Time at which the '\n                                                  'observation result was '\n                                                  'generated.'},\n                    'samplingFeature@id': {'description': 'Local ID of the '\n                                                          'sampling '\n                                                          'feature that is '\n                                                          'the target of '\n                                                          'the observation',\n                                           'minLength': 1,\n                                           'type': 'string'}},\n     'required': ['id', 'datastream@id', 'resultTime'],\n     'type': 'object'}\n\nOn instance:\n    {'foi@id': '55f48g48th',\n     'result@link': {'href': 'https://data.x-ecmwf.int/wms?service=WMS&version=1.1.0&request=GetMap&format=image/tiff&layers=HRES-2T-20230215-0600-T1&bbox=-180,90,180,-90&width=3600&height=1800&srs=EPSG:4326',\n                     'if': 'http://www.opengis.net/def/serviceType/ogc/wms/1.1',\n                     'title': 'Imagery on external WMS server',\n                     'type': 'image/tiff; application=geotiff'},\n     'resultTime': '2023-04-03T18:45:23Z'}"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": {
-        "type": "TEST_RESOURCE",
-        "requireFail": true,
-        "filename": "_sources/part2/observation/tests/spec-obs-location-create-fail.json",
-        "url": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part2/observation/tests/spec-obs-location-create-fail.json",
-        "language": "json"
-      },
-      "result": true,
-      "sections": [
-        {
-          "name": "GENERAL",
-          "title": "General",
-          "entries": [
-            {
-              "op": "require-fail",
-              "isError": false,
-              "message": "Test was expected to fail and it did."
-            }
-          ]
-        },
-        {
-          "name": "FILES",
-          "title": "Files",
-          "entries": [
-            {
-              "isError": false,
-              "message": "Using spec-obs-location-create-fail.json from test resources"
-            }
-          ]
-        },
-        {
-          "name": "JSON_SCHEMA",
-          "title": "JSON Schema",
-          "entries": [
-            {
-              "op": "validation",
-              "result": false,
-              "exception": "ValidationError",
-              "errorMessage": "'id' is a required property",
-              "isError": true,
-              "message": "ValidationError: 'id' is a required property\n\nFailed validating 'required' in schema:\n    {'$schema': 'https://json-schema.org/draft/2020-12/schema',\n     'oneOf': [{'required': ['result'], 'title': 'Inline result'},\n               {'required': ['result@link'],\n                'title': 'Link to external result'}],\n     'properties': {'datastream@id': {'description': 'Local ID of the '\n                                                     'datastream that the '\n                                                     'observation is part '\n                                                     'of',\n                                      'minLength': 1,\n                                      'readOnly': True,\n                                      'type': 'string'},\n                    'id': {'description': 'Local ID of the observation',\n                           'minLength': 1,\n                           'readOnly': True,\n                           'type': 'string'},\n                    'parameters': {'description': 'Parameters of the '\n                                                  'observation. Must be '\n                                                  'valid according to the '\n                                                  'parameters schema '\n                                                  'provided in the '\n                                                  'datastream metadata.',\n                                   'type': 'object'},\n                    'phenomenonTime': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/time-instant/schema.yaml',\n                                       'description': 'Time at which the '\n                                                      'observation result '\n                                                      'is a valid estimate '\n                                                      'of the sampling '\n                                                      'feature '\n                                                      'property(ies). '\n                                                      'Defaults to the '\n                                                      'same value as '\n                                                      '`resultTime`.'},\n                    'procedure@link': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/link/schema.yaml',\n                                       'description': 'Link to the '\n                                                      'procedure/method '\n                                                      'used to make the '\n                                                      'observation'},\n                    'result': {'description': 'Result of the observation. '\n                                              'Must be valid according to '\n                                              'the result schema provided '\n                                              'in the datastream '\n                                              'metadata.'},\n                    'result@link': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/link/schema.yaml',\n                                    'description': 'Link to external '\n                                                   'result data (e.g., '\n                                                   'large raster dataset '\n                                                   'served by a tiling '\n                                                   'service)'},\n                    'resultTime': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/time-instant/schema.yaml',\n                                   'description': 'Time at which the '\n                                                  'observation result was '\n                                                  'generated.'},\n                    'samplingFeature@id': {'description': 'Local ID of the '\n                                                          'sampling '\n                                                          'feature that is '\n                                                          'the target of '\n                                                          'the observation',\n                                           'minLength': 1,\n                                           'type': 'string'}},\n     'required': ['id', 'datastream@id', 'resultTime'],\n     'type': 'object'}\n\nOn instance:\n    {'result': {'alt': 183, 'lat': -86.5861, 'lon': 34.7304},\n     'resultTime': '2021-03-15T04:53:34Z'}"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": {
-        "type": "TEST_RESOURCE",
-        "requireFail": true,
-        "filename": "_sources/part2/observation/tests/spec-obs-profile-create-fail.json",
-        "url": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part2/observation/tests/spec-obs-profile-create-fail.json",
-        "language": "json"
-      },
-      "result": true,
-      "sections": [
-        {
-          "name": "GENERAL",
-          "title": "General",
-          "entries": [
-            {
-              "op": "require-fail",
-              "isError": false,
-              "message": "Test was expected to fail and it did."
-            }
-          ]
-        },
-        {
-          "name": "FILES",
-          "title": "Files",
-          "entries": [
-            {
-              "isError": false,
-              "message": "Using spec-obs-profile-create-fail.json from test resources"
-            }
-          ]
-        },
-        {
-          "name": "JSON_SCHEMA",
-          "title": "JSON Schema",
-          "entries": [
-            {
-              "op": "validation",
-              "result": false,
-              "exception": "ValidationError",
-              "errorMessage": "'id' is a required property",
-              "isError": true,
-              "message": "ValidationError: 'id' is a required property\n\nFailed validating 'required' in schema:\n    {'$schema': 'https://json-schema.org/draft/2020-12/schema',\n     'oneOf': [{'required': ['result'], 'title': 'Inline result'},\n               {'required': ['result@link'],\n                'title': 'Link to external result'}],\n     'properties': {'datastream@id': {'description': 'Local ID of the '\n                                                     'datastream that the '\n                                                     'observation is part '\n                                                     'of',\n                                      'minLength': 1,\n                                      'readOnly': True,\n                                      'type': 'string'},\n                    'id': {'description': 'Local ID of the observation',\n                           'minLength': 1,\n                           'readOnly': True,\n                           'type': 'string'},\n                    'parameters': {'description': 'Parameters of the '\n                                                  'observation. Must be '\n                                                  'valid according to the '\n                                                  'parameters schema '\n                                                  'provided in the '\n                                                  'datastream metadata.',\n                                   'type': 'object'},\n                    'phenomenonTime': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/time-instant/schema.yaml',\n                                       'description': 'Time at which the '\n                                                      'observation result '\n                                                      'is a valid estimate '\n                                                      'of the sampling '\n                                                      'feature '\n                                                      'property(ies). '\n                                                      'Defaults to the '\n                                                      'same value as '\n                                                      '`resultTime`.'},\n                    'procedure@link': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/link/schema.yaml',\n                                       'description': 'Link to the '\n                                                      'procedure/method '\n                                                      'used to make the '\n                                                      'observation'},\n                    'result': {'description': 'Result of the observation. '\n                                              'Must be valid according to '\n                                              'the result schema provided '\n                                              'in the datastream '\n                                              'metadata.'},\n                    'result@link': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/link/schema.yaml',\n                                    'description': 'Link to external '\n                                                   'result data (e.g., '\n                                                   'large raster dataset '\n                                                   'served by a tiling '\n                                                   'service)'},\n                    'resultTime': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/time-instant/schema.yaml',\n                                   'description': 'Time at which the '\n                                                  'observation result was '\n                                                  'generated.'},\n                    'samplingFeature@id': {'description': 'Local ID of the '\n                                                          'sampling '\n                                                          'feature that is '\n                                                          'the target of '\n                                                          'the observation',\n                                           'minLength': 1,\n                                           'type': 'string'}},\n     'required': ['id', 'datastream@id', 'resultTime'],\n     'type': 'object'}\n\nOn instance:\n    {'result': [12.5, 11.3, 10.6, 9.1, 7.4, 5.6, 5.5, 5.5, 5.4],\n     'resultTime': '2022-03-15T04:53:34Z'}"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": {
-        "type": "TEST_RESOURCE",
-        "requireFail": true,
-        "filename": "_sources/part2/observation/tests/spec-obs-simple-create-fail.json",
-        "url": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part2/observation/tests/spec-obs-simple-create-fail.json",
-        "language": "json"
-      },
-      "result": true,
-      "sections": [
-        {
-          "name": "GENERAL",
-          "title": "General",
-          "entries": [
-            {
-              "op": "require-fail",
-              "isError": false,
-              "message": "Test was expected to fail and it did."
-            }
-          ]
-        },
-        {
-          "name": "FILES",
-          "title": "Files",
-          "entries": [
-            {
-              "isError": false,
-              "message": "Using spec-obs-simple-create-fail.json from test resources"
-            }
-          ]
-        },
-        {
-          "name": "JSON_SCHEMA",
-          "title": "JSON Schema",
-          "entries": [
-            {
-              "op": "validation",
-              "result": false,
-              "exception": "ValidationError",
-              "errorMessage": "'id' is a required property",
-              "isError": true,
-              "message": "ValidationError: 'id' is a required property\n\nFailed validating 'required' in schema:\n    {'$schema': 'https://json-schema.org/draft/2020-12/schema',\n     'oneOf': [{'required': ['result'], 'title': 'Inline result'},\n               {'required': ['result@link'],\n                'title': 'Link to external result'}],\n     'properties': {'datastream@id': {'description': 'Local ID of the '\n                                                     'datastream that the '\n                                                     'observation is part '\n                                                     'of',\n                                      'minLength': 1,\n                                      'readOnly': True,\n                                      'type': 'string'},\n                    'id': {'description': 'Local ID of the observation',\n                           'minLength': 1,\n                           'readOnly': True,\n                           'type': 'string'},\n                    'parameters': {'description': 'Parameters of the '\n                                                  'observation. Must be '\n                                                  'valid according to the '\n                                                  'parameters schema '\n                                                  'provided in the '\n                                                  'datastream metadata.',\n                                   'type': 'object'},\n                    'phenomenonTime': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/time-instant/schema.yaml',\n                                       'description': 'Time at which the '\n                                                      'observation result '\n                                                      'is a valid estimate '\n                                                      'of the sampling '\n                                                      'feature '\n                                                      'property(ies). '\n                                                      'Defaults to the '\n                                                      'same value as '\n                                                      '`resultTime`.'},\n                    'procedure@link': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/link/schema.yaml',\n                                       'description': 'Link to the '\n                                                      'procedure/method '\n                                                      'used to make the '\n                                                      'observation'},\n                    'result': {'description': 'Result of the observation. '\n                                              'Must be valid according to '\n                                              'the result schema provided '\n                                              'in the datastream '\n                                              'metadata.'},\n                    'result@link': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/link/schema.yaml',\n                                    'description': 'Link to external '\n                                                   'result data (e.g., '\n                                                   'large raster dataset '\n                                                   'served by a tiling '\n                                                   'service)'},\n                    'resultTime': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/time-instant/schema.yaml',\n                                   'description': 'Time at which the '\n                                                  'observation result was '\n                                                  'generated.'},\n                    'samplingFeature@id': {'description': 'Local ID of the '\n                                                          'sampling '\n                                                          'feature that is '\n                                                          'the target of '\n                                                          'the observation',\n                                           'minLength': 1,\n                                           'type': 'string'}},\n     'required': ['id', 'datastream@id', 'resultTime'],\n     'type': 'object'}\n\nOn instance:\n    {'result': 23.5, 'resultTime': '2021-03-15T04:53:34Z'}"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": {
-        "type": "TEST_RESOURCE",
-        "requireFail": true,
-        "filename": "_sources/part2/observation/tests/spec-observationSchema-image-link-fail.json",
-        "url": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part2/observation/tests/spec-observationSchema-image-link-fail.json",
-        "language": "json"
-      },
-      "result": true,
-      "sections": [
-        {
-          "name": "GENERAL",
-          "title": "General",
-          "entries": [
-            {
-              "op": "require-fail",
-              "isError": false,
-              "message": "Test was expected to fail and it did."
-            }
-          ]
-        },
-        {
-          "name": "FILES",
-          "title": "Files",
-          "entries": [
-            {
-              "isError": false,
-              "message": "Using spec-observationSchema-image-link-fail.json from test resources"
-            }
-          ]
-        },
-        {
-          "name": "JSON_SCHEMA",
-          "title": "JSON Schema",
-          "entries": [
-            {
-              "op": "validation",
-              "result": false,
-              "exception": "ValidationError",
-              "errorMessage": "'id' is a required property",
-              "isError": true,
-              "message": "ValidationError: 'id' is a required property\n\nFailed validating 'required' in schema:\n    {'$schema': 'https://json-schema.org/draft/2020-12/schema',\n     'oneOf': [{'required': ['result'], 'title': 'Inline result'},\n               {'required': ['result@link'],\n                'title': 'Link to external result'}],\n     'properties': {'datastream@id': {'description': 'Local ID of the '\n                                                     'datastream that the '\n                                                     'observation is part '\n                                                     'of',\n                                      'minLength': 1,\n                                      'readOnly': True,\n                                      'type': 'string'},\n                    'id': {'description': 'Local ID of the observation',\n                           'minLength': 1,\n                           'readOnly': True,\n                           'type': 'string'},\n                    'parameters': {'description': 'Parameters of the '\n                                                  'observation. Must be '\n                                                  'valid according to the '\n                                                  'parameters schema '\n                                                  'provided in the '\n                                                  'datastream metadata.',\n                                   'type': 'object'},\n                    'phenomenonTime': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/time-instant/schema.yaml',\n                                       'description': 'Time at which the '\n                                                      'observation result '\n                                                      'is a valid estimate '\n                                                      'of the sampling '\n                                                      'feature '\n                                                      'property(ies). '\n                                                      'Defaults to the '\n                                                      'same value as '\n                                                      '`resultTime`.'},\n                    'procedure@link': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/link/schema.yaml',\n                                       'description': 'Link to the '\n                                                      'procedure/method '\n                                                      'used to make the '\n                                                      'observation'},\n                    'result': {'description': 'Result of the observation. '\n                                              'Must be valid according to '\n                                              'the result schema provided '\n                                              'in the datastream '\n                                              'metadata.'},\n                    'result@link': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/link/schema.yaml',\n                                    'description': 'Link to external '\n                                                   'result data (e.g., '\n                                                   'large raster dataset '\n                                                   'served by a tiling '\n                                                   'service)'},\n                    'resultTime': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/time-instant/schema.yaml',\n                                   'description': 'Time at which the '\n                                                  'observation result was '\n                                                  'generated.'},\n                    'samplingFeature@id': {'description': 'Local ID of the '\n                                                          'sampling '\n                                                          'feature that is '\n                                                          'the target of '\n                                                          'the observation',\n                                           'minLength': 1,\n                                           'type': 'string'}},\n     'required': ['id', 'datastream@id', 'resultTime'],\n     'type': 'object'}\n\nOn instance:\n    {'obsFormat': 'application/json',\n     'resultLink': {'mediaType': 'image/png'}}"
-            }
-          ]
-        }
-      ]
-    },
     {
       "source": {
         "type": "EXAMPLE",
@@ -286,7 +51,7 @@
         "snippetIndex": 1,
         "language": "application/json"
       },
-      "result": true,
+      "result": false,
       "sections": [
         {
           "name": "FILES",
@@ -294,7 +59,7 @@
           "entries": [
             {
               "isError": false,
-              "message": "Using examples/obs-link-inline-image.json from examples"
+              "message": "Using examples/obs-link-create.json from examples"
             }
           ]
         },
@@ -304,9 +69,11 @@
           "entries": [
             {
               "op": "validation",
-              "result": true,
-              "isError": false,
-              "message": "Validation passed"
+              "result": false,
+              "exception": "ValidationError",
+              "errorMessage": "'id' is a required property",
+              "isError": true,
+              "message": "ValidationError: 'id' is a required property\n\nFailed validating 'required' in schema:\n    {'$schema': 'https://json-schema.org/draft/2020-12/schema',\n     'oneOf': [{'required': ['result'], 'title': 'Inline result'},\n               {'required': ['result@link'],\n                'title': 'Link to external result'}],\n     'properties': {'datastream@id': {'description': 'Local ID of the '\n                                                     'datastream that the '\n                                                     'observation is part '\n                                                     'of',\n                                      'minLength': 1,\n                                      'readOnly': True,\n                                      'type': 'string'},\n                    'id': {'description': 'Local ID of the observation',\n                           'minLength': 1,\n                           'readOnly': True,\n                           'type': 'string'},\n                    'parameters': {'description': 'Parameters of the '\n                                                  'observation. Must be '\n                                                  'valid according to the '\n                                                  'parameters schema '\n                                                  'provided in the '\n                                                  'datastream metadata.',\n                                   'type': 'object'},\n                    'phenomenonTime': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/time-instant/schema.yaml',\n                                       'description': 'Time at which the '\n                                                      'observation result '\n                                                      'is a valid estimate '\n                                                      'of the sampling '\n                                                      'feature '\n                                                      'property(ies). '\n                                                      'Defaults to the '\n                                                      'same value as '\n                                                      '`resultTime`.'},\n                    'procedure@link': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/link/schema.yaml',\n                                       'description': 'Link to the '\n                                                      'procedure/method '\n                                                      'used to make the '\n                                                      'observation'},\n                    'result': {'description': 'Result of the observation. '\n                                              'Must be valid according to '\n                                              'the result schema provided '\n                                              'in the datastream '\n                                              'metadata.'},\n                    'result@link': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/link/schema.yaml',\n                                    'description': 'Link to external '\n                                                   'result data (e.g., '\n                                                   'large raster dataset '\n                                                   'served by a tiling '\n                                                   'service)'},\n                    'resultTime': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/time-instant/schema.yaml',\n                                   'description': 'Time at which the '\n                                                  'observation result was '\n                                                  'generated.'},\n                    'samplingFeature@id': {'description': 'Local ID of the '\n                                                          'sampling '\n                                                          'feature that is '\n                                                          'the target of '\n                                                          'the observation',\n                                           'minLength': 1,\n                                           'type': 'string'}},\n     'required': ['id', 'datastream@id', 'resultTime'],\n     'type': 'object'}\n\nOn instance:\n    {'foi@id': '55f48g48th',\n     'result@link': {'href': 'https://data.x-ecmwf.int/wms?service=WMS&version=1.1.0&request=GetMap&format=image/tiff&layers=HRES-2T-20230215-0600-T1&bbox=-180,90,180,-90&width=3600&height=1800&srs=EPSG:4326',\n                     'if': 'http://www.opengis.net/def/serviceType/ogc/wms/1.1',\n                     'title': 'Imagery on external WMS server',\n                     'type': 'image/tiff; application=geotiff'},\n     'resultTime': '2023-04-03T18:45:23Z'}"
             }
           ]
         }
@@ -330,7 +97,7 @@
           "entries": [
             {
               "isError": false,
-              "message": "Using examples/obs-link.json from examples"
+              "message": "Using examples/obs-link-inline-image.json from examples"
             }
           ]
         },
@@ -366,7 +133,7 @@
           "entries": [
             {
               "isError": false,
-              "message": "Using examples/obs-location.json from examples"
+              "message": "Using examples/obs-link.json from examples"
             }
           ]
         },
@@ -391,6 +158,118 @@
         "filename": "build/tests/api/connected-systems/part2/observation/example_5_1.json",
         "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part2/observation/example_5_1.json",
         "exampleIndex": 5,
+        "snippetIndex": 1,
+        "language": "application/json"
+      },
+      "result": false,
+      "sections": [
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using examples/obs-location-create.json from examples"
+            }
+          ]
+        },
+        {
+          "name": "JSON_SCHEMA",
+          "title": "JSON Schema",
+          "entries": [
+            {
+              "op": "validation",
+              "result": false,
+              "exception": "ValidationError",
+              "errorMessage": "'id' is a required property",
+              "isError": true,
+              "message": "ValidationError: 'id' is a required property\n\nFailed validating 'required' in schema:\n    {'$schema': 'https://json-schema.org/draft/2020-12/schema',\n     'oneOf': [{'required': ['result'], 'title': 'Inline result'},\n               {'required': ['result@link'],\n                'title': 'Link to external result'}],\n     'properties': {'datastream@id': {'description': 'Local ID of the '\n                                                     'datastream that the '\n                                                     'observation is part '\n                                                     'of',\n                                      'minLength': 1,\n                                      'readOnly': True,\n                                      'type': 'string'},\n                    'id': {'description': 'Local ID of the observation',\n                           'minLength': 1,\n                           'readOnly': True,\n                           'type': 'string'},\n                    'parameters': {'description': 'Parameters of the '\n                                                  'observation. Must be '\n                                                  'valid according to the '\n                                                  'parameters schema '\n                                                  'provided in the '\n                                                  'datastream metadata.',\n                                   'type': 'object'},\n                    'phenomenonTime': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/time-instant/schema.yaml',\n                                       'description': 'Time at which the '\n                                                      'observation result '\n                                                      'is a valid estimate '\n                                                      'of the sampling '\n                                                      'feature '\n                                                      'property(ies). '\n                                                      'Defaults to the '\n                                                      'same value as '\n                                                      '`resultTime`.'},\n                    'procedure@link': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/link/schema.yaml',\n                                       'description': 'Link to the '\n                                                      'procedure/method '\n                                                      'used to make the '\n                                                      'observation'},\n                    'result': {'description': 'Result of the observation. '\n                                              'Must be valid according to '\n                                              'the result schema provided '\n                                              'in the datastream '\n                                              'metadata.'},\n                    'result@link': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/link/schema.yaml',\n                                    'description': 'Link to external '\n                                                   'result data (e.g., '\n                                                   'large raster dataset '\n                                                   'served by a tiling '\n                                                   'service)'},\n                    'resultTime': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/time-instant/schema.yaml',\n                                   'description': 'Time at which the '\n                                                  'observation result was '\n                                                  'generated.'},\n                    'samplingFeature@id': {'description': 'Local ID of the '\n                                                          'sampling '\n                                                          'feature that is '\n                                                          'the target of '\n                                                          'the observation',\n                                           'minLength': 1,\n                                           'type': 'string'}},\n     'required': ['id', 'datastream@id', 'resultTime'],\n     'type': 'object'}\n\nOn instance:\n    {'result': {'alt': 183, 'lat': -86.5861, 'lon': 34.7304},\n     'resultTime': '2021-03-15T04:53:34Z'}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": {
+        "type": "EXAMPLE",
+        "requireFail": false,
+        "filename": "build/tests/api/connected-systems/part2/observation/example_6_1.json",
+        "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part2/observation/example_6_1.json",
+        "exampleIndex": 6,
+        "snippetIndex": 1,
+        "language": "application/json"
+      },
+      "result": true,
+      "sections": [
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using examples/obs-location.json from examples"
+            }
+          ]
+        },
+        {
+          "name": "JSON_SCHEMA",
+          "title": "JSON Schema",
+          "entries": [
+            {
+              "op": "validation",
+              "result": true,
+              "isError": false,
+              "message": "Validation passed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": {
+        "type": "EXAMPLE",
+        "requireFail": false,
+        "filename": "build/tests/api/connected-systems/part2/observation/example_7_1.json",
+        "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part2/observation/example_7_1.json",
+        "exampleIndex": 7,
+        "snippetIndex": 1,
+        "language": "application/json"
+      },
+      "result": false,
+      "sections": [
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using examples/obs-profile-create.json from examples"
+            }
+          ]
+        },
+        {
+          "name": "JSON_SCHEMA",
+          "title": "JSON Schema",
+          "entries": [
+            {
+              "op": "validation",
+              "result": false,
+              "exception": "ValidationError",
+              "errorMessage": "'id' is a required property",
+              "isError": true,
+              "message": "ValidationError: 'id' is a required property\n\nFailed validating 'required' in schema:\n    {'$schema': 'https://json-schema.org/draft/2020-12/schema',\n     'oneOf': [{'required': ['result'], 'title': 'Inline result'},\n               {'required': ['result@link'],\n                'title': 'Link to external result'}],\n     'properties': {'datastream@id': {'description': 'Local ID of the '\n                                                     'datastream that the '\n                                                     'observation is part '\n                                                     'of',\n                                      'minLength': 1,\n                                      'readOnly': True,\n                                      'type': 'string'},\n                    'id': {'description': 'Local ID of the observation',\n                           'minLength': 1,\n                           'readOnly': True,\n                           'type': 'string'},\n                    'parameters': {'description': 'Parameters of the '\n                                                  'observation. Must be '\n                                                  'valid according to the '\n                                                  'parameters schema '\n                                                  'provided in the '\n                                                  'datastream metadata.',\n                                   'type': 'object'},\n                    'phenomenonTime': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/time-instant/schema.yaml',\n                                       'description': 'Time at which the '\n                                                      'observation result '\n                                                      'is a valid estimate '\n                                                      'of the sampling '\n                                                      'feature '\n                                                      'property(ies). '\n                                                      'Defaults to the '\n                                                      'same value as '\n                                                      '`resultTime`.'},\n                    'procedure@link': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/link/schema.yaml',\n                                       'description': 'Link to the '\n                                                      'procedure/method '\n                                                      'used to make the '\n                                                      'observation'},\n                    'result': {'description': 'Result of the observation. '\n                                              'Must be valid according to '\n                                              'the result schema provided '\n                                              'in the datastream '\n                                              'metadata.'},\n                    'result@link': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/link/schema.yaml',\n                                    'description': 'Link to external '\n                                                   'result data (e.g., '\n                                                   'large raster dataset '\n                                                   'served by a tiling '\n                                                   'service)'},\n                    'resultTime': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/time-instant/schema.yaml',\n                                   'description': 'Time at which the '\n                                                  'observation result was '\n                                                  'generated.'},\n                    'samplingFeature@id': {'description': 'Local ID of the '\n                                                          'sampling '\n                                                          'feature that is '\n                                                          'the target of '\n                                                          'the observation',\n                                           'minLength': 1,\n                                           'type': 'string'}},\n     'required': ['id', 'datastream@id', 'resultTime'],\n     'type': 'object'}\n\nOn instance:\n    {'result': [12.5, 11.3, 10.6, 9.1, 7.4, 5.6, 5.5, 5.5, 5.4],\n     'resultTime': '2022-03-15T04:53:34Z'}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": {
+        "type": "EXAMPLE",
+        "requireFail": false,
+        "filename": "build/tests/api/connected-systems/part2/observation/example_8_1.json",
+        "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part2/observation/example_8_1.json",
+        "exampleIndex": 8,
         "snippetIndex": 1,
         "language": "application/json"
       },
@@ -424,9 +303,47 @@
       "source": {
         "type": "EXAMPLE",
         "requireFail": false,
-        "filename": "build/tests/api/connected-systems/part2/observation/example_6_1.json",
-        "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part2/observation/example_6_1.json",
-        "exampleIndex": 6,
+        "filename": "build/tests/api/connected-systems/part2/observation/example_9_1.json",
+        "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part2/observation/example_9_1.json",
+        "exampleIndex": 9,
+        "snippetIndex": 1,
+        "language": "application/json"
+      },
+      "result": false,
+      "sections": [
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using examples/obs-simple-create.json from examples"
+            }
+          ]
+        },
+        {
+          "name": "JSON_SCHEMA",
+          "title": "JSON Schema",
+          "entries": [
+            {
+              "op": "validation",
+              "result": false,
+              "exception": "ValidationError",
+              "errorMessage": "'id' is a required property",
+              "isError": true,
+              "message": "ValidationError: 'id' is a required property\n\nFailed validating 'required' in schema:\n    {'$schema': 'https://json-schema.org/draft/2020-12/schema',\n     'oneOf': [{'required': ['result'], 'title': 'Inline result'},\n               {'required': ['result@link'],\n                'title': 'Link to external result'}],\n     'properties': {'datastream@id': {'description': 'Local ID of the '\n                                                     'datastream that the '\n                                                     'observation is part '\n                                                     'of',\n                                      'minLength': 1,\n                                      'readOnly': True,\n                                      'type': 'string'},\n                    'id': {'description': 'Local ID of the observation',\n                           'minLength': 1,\n                           'readOnly': True,\n                           'type': 'string'},\n                    'parameters': {'description': 'Parameters of the '\n                                                  'observation. Must be '\n                                                  'valid according to the '\n                                                  'parameters schema '\n                                                  'provided in the '\n                                                  'datastream metadata.',\n                                   'type': 'object'},\n                    'phenomenonTime': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/time-instant/schema.yaml',\n                                       'description': 'Time at which the '\n                                                      'observation result '\n                                                      'is a valid estimate '\n                                                      'of the sampling '\n                                                      'feature '\n                                                      'property(ies). '\n                                                      'Defaults to the '\n                                                      'same value as '\n                                                      '`resultTime`.'},\n                    'procedure@link': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/link/schema.yaml',\n                                       'description': 'Link to the '\n                                                      'procedure/method '\n                                                      'used to make the '\n                                                      'observation'},\n                    'result': {'description': 'Result of the observation. '\n                                              'Must be valid according to '\n                                              'the result schema provided '\n                                              'in the datastream '\n                                              'metadata.'},\n                    'result@link': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/link/schema.yaml',\n                                    'description': 'Link to external '\n                                                   'result data (e.g., '\n                                                   'large raster dataset '\n                                                   'served by a tiling '\n                                                   'service)'},\n                    'resultTime': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/time-instant/schema.yaml',\n                                   'description': 'Time at which the '\n                                                  'observation result was '\n                                                  'generated.'},\n                    'samplingFeature@id': {'description': 'Local ID of the '\n                                                          'sampling '\n                                                          'feature that is '\n                                                          'the target of '\n                                                          'the observation',\n                                           'minLength': 1,\n                                           'type': 'string'}},\n     'required': ['id', 'datastream@id', 'resultTime'],\n     'type': 'object'}\n\nOn instance:\n    {'result': 23.5, 'resultTime': '2021-03-15T04:53:34Z'}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": {
+        "type": "EXAMPLE",
+        "requireFail": false,
+        "filename": "build/tests/api/connected-systems/part2/observation/example_10_1.json",
+        "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part2/observation/example_10_1.json",
+        "exampleIndex": 10,
         "snippetIndex": 1,
         "language": "application/json"
       },
@@ -455,12 +372,50 @@
           ]
         }
       ]
+    },
+    {
+      "source": {
+        "type": "EXAMPLE",
+        "requireFail": false,
+        "filename": "build/tests/api/connected-systems/part2/observation/example_11_1.json",
+        "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part2/observation/example_11_1.json",
+        "exampleIndex": 11,
+        "snippetIndex": 1,
+        "language": "application/json"
+      },
+      "result": false,
+      "sections": [
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using examples/observationSchema-image-link.json from examples"
+            }
+          ]
+        },
+        {
+          "name": "JSON_SCHEMA",
+          "title": "JSON Schema",
+          "entries": [
+            {
+              "op": "validation",
+              "result": false,
+              "exception": "ValidationError",
+              "errorMessage": "'id' is a required property",
+              "isError": true,
+              "message": "ValidationError: 'id' is a required property\n\nFailed validating 'required' in schema:\n    {'$schema': 'https://json-schema.org/draft/2020-12/schema',\n     'oneOf': [{'required': ['result'], 'title': 'Inline result'},\n               {'required': ['result@link'],\n                'title': 'Link to external result'}],\n     'properties': {'datastream@id': {'description': 'Local ID of the '\n                                                     'datastream that the '\n                                                     'observation is part '\n                                                     'of',\n                                      'minLength': 1,\n                                      'readOnly': True,\n                                      'type': 'string'},\n                    'id': {'description': 'Local ID of the observation',\n                           'minLength': 1,\n                           'readOnly': True,\n                           'type': 'string'},\n                    'parameters': {'description': 'Parameters of the '\n                                                  'observation. Must be '\n                                                  'valid according to the '\n                                                  'parameters schema '\n                                                  'provided in the '\n                                                  'datastream metadata.',\n                                   'type': 'object'},\n                    'phenomenonTime': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/time-instant/schema.yaml',\n                                       'description': 'Time at which the '\n                                                      'observation result '\n                                                      'is a valid estimate '\n                                                      'of the sampling '\n                                                      'feature '\n                                                      'property(ies). '\n                                                      'Defaults to the '\n                                                      'same value as '\n                                                      '`resultTime`.'},\n                    'procedure@link': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/link/schema.yaml',\n                                       'description': 'Link to the '\n                                                      'procedure/method '\n                                                      'used to make the '\n                                                      'observation'},\n                    'result': {'description': 'Result of the observation. '\n                                              'Must be valid according to '\n                                              'the result schema provided '\n                                              'in the datastream '\n                                              'metadata.'},\n                    'result@link': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/link/schema.yaml',\n                                    'description': 'Link to external '\n                                                   'result data (e.g., '\n                                                   'large raster dataset '\n                                                   'served by a tiling '\n                                                   'service)'},\n                    'resultTime': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/time-instant/schema.yaml',\n                                   'description': 'Time at which the '\n                                                  'observation result was '\n                                                  'generated.'},\n                    'samplingFeature@id': {'description': 'Local ID of the '\n                                                          'sampling '\n                                                          'feature that is '\n                                                          'the target of '\n                                                          'the observation',\n                                           'minLength': 1,\n                                           'type': 'string'}},\n     'required': ['id', 'datastream@id', 'resultTime'],\n     'type': 'object'}\n\nOn instance:\n    {'obsFormat': 'application/json',\n     'resultLink': {'mediaType': 'image/png'}}"
+            }
+          ]
+        }
+      ]
     }
   ],
   "globalErrors": {},
   "counts": {
     "total": 11,
-    "passed": 11,
-    "failed": 0
+    "passed": 6,
+    "failed": 5
   }
 }

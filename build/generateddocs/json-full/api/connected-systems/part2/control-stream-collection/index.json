@@ -17,8 +17,8 @@
   ],
   "shaclShapes": {},
   "dependsOn": [
-    "ogc.api.connected-systems.part2.control-stream",
-    "ogc.api.connected-systems.part1.links"
+    "ogc.api.connected-systems.part1.links",
+    "ogc.api.connected-systems.part2.control-stream"
   ],
   "license": {
     "name": "Apache-2.0",

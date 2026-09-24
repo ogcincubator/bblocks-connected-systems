@@ -1,5 +1,5 @@
 Validation report for ogc.api.connected-systems.swecommon.count-range - CountRange
-Generated 2026-09-24T07:53:24.277128+00:00
+Generated 2026-09-24T07:57:55.319441+00:00
 === Files ===
 Using examples/count-range1.json from examples
 === End Files ===

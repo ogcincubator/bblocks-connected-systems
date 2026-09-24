@@ -2,37 +2,28 @@
   "title": "Validation report for ogc.api.connected-systems.part1.procedure - Procedure (GeoJSON)",
   "bblockName": "Procedure (GeoJSON)",
   "bblockId": "ogc.api.connected-systems.part1.procedure",
-  "generated": "2026-09-24T07:53:23.418809+00:00",
-  "result": true,
+  "generated": "2026-09-24T07:57:55.861440+00:00",
+  "result": false,
   "items": [
     {
       "source": {
-        "type": "TEST_RESOURCE",
-        "requireFail": true,
-        "filename": "_sources/part1/procedure/tests/spec-sensor-datasheet-geojson-fail.json",
-        "url": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part1/procedure/tests/spec-sensor-datasheet-geojson-fail.json",
-        "language": "json"
+        "type": "EXAMPLE",
+        "requireFail": false,
+        "filename": "build/tests/api/connected-systems/part1/procedure/example_1_1.json",
+        "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/part1/procedure/example_1_1.json",
+        "exampleIndex": 1,
+        "snippetIndex": 1,
+        "language": "application/json"
       },
-      "result": true,
+      "result": false,
       "sections": [
-        {
-          "name": "GENERAL",
-          "title": "General",
-          "entries": [
-            {
-              "op": "require-fail",
-              "isError": false,
-              "message": "Test was expected to fail and it did."
-            }
-          ]
-        },
         {
           "name": "FILES",
           "title": "Files",
           "entries": [
             {
               "isError": false,
-              "message": "Using spec-sensor-datasheet-geojson-fail.json from test resources"
+              "message": "Using examples/sensor-datasheet-geojson.json from examples"
             },
             {
               "op": "jsonld-uplift",
@@ -41,17 +32,17 @@
             },
             {
               "op": "jsonld-create",
-              "filename": "spec-sensor-datasheet-geojson-fail.jsonld",
+              "filename": "example_1_1.jsonld",
               "isError": false,
-              "message": "Output JSON-LD spec-sensor-datasheet-geojson-fail.jsonld created"
+              "message": "Output JSON-LD example_1_1.jsonld created"
             },
             {
               "op": "ttl-create",
               "empty": false,
-              "filename": "spec-sensor-datasheet-geojson-fail.ttl",
+              "filename": "example_1_1.ttl",
               "size": 11,
               "isError": false,
-              "message": "Output Turtle spec-sensor-datasheet-geojson-fail.ttl created"
+              "message": "Output Turtle example_1_1.ttl created"
             }
           ]
         },
@@ -83,26 +74,26 @@
             {
               "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl",
               "focusNodes": {
+                "geojson:GeometryShape": {
+                  "nodes": []
+                },
+                "geojson:GeometryShape/sh:or/rdf:first": {
+                  "nodes": []
+                },
+                "geojson:LinkShape": {
+                  "nodes": []
+                },
                 "geojson:FeatureShape": {
                   "nodes": [
                     "<file:///github/workspace/iv3f2kcq27gfi>"
                   ]
                 },
-                "geojson:GeometryShape/sh:or/rdf:first": {
-                  "nodes": []
-                },
-                "geojson:GeometryShape": {
-                  "nodes": []
-                },
                 "geojson:GeometryShape/sh:or/rdf:rest/rdf:first": {
-                  "nodes": []
-                },
-                "geojson:LinkShape": {
                   "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n - Shape geojson:FeatureShape: <file:///github/workspace/iv3f2kcq27gfi>\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n - Shape geojson:GeometryShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape geojson:LinkShape: *none*\n"
+              "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n - Shape geojson:GeometryShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n - Shape geojson:LinkShape: *none*\n - Shape geojson:FeatureShape: <file:///github/workspace/iv3f2kcq27gfi>\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n"
             }
           ]
         }
@@ -112,7 +103,7 @@
   "globalErrors": {},
   "counts": {
     "total": 1,
-    "passed": 1,
-    "failed": 0
+    "passed": 0,
+    "failed": 1
   }
 }

@@ -1,11 +1,18 @@
 {
   "type": "Time",
   "definition": "http://www.opengis.net/def/property/OGC/0/SamplingTime",
-  "referenceFrame": "http://www.opengis.net/def/trs/USNO/0/GPS",
-  "label": "Sampling Time",
-  "description": "Time at which the measurement was made",
+  "referenceFrame": "urn:org:systems:001#SCAN-START-TIME",
+  "label": "Lidar Pulse Time",
+  "description": "Time stamp of LiDAR pulse relative to start of scan",
   "uom": {
-    "href": "http://www.opengis.net/def/uom/ISO-8601/0/Gregorian"
+    "code": "ms"
   },
-  "value": "2009-11-05T16:29:26Z"
+  "constraint": {
+    "intervals": [
+      [
+        0,
+        1000000.0
+      ]
+    ]
+  }
 }

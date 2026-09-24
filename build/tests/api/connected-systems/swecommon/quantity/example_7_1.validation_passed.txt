@@ -1,5 +1,5 @@
 Validation report for ogc.api.connected-systems.swecommon.quantity - Quantity
-Generated 2026-09-24T07:53:24.656639+00:00
+Generated 2026-09-24T07:57:55.360038+00:00
 === Files ===
 Using examples/quantity3.json from examples
 === End Files ===

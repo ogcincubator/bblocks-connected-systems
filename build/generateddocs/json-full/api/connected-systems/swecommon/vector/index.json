@@ -17,11 +17,11 @@
   ],
   "shaclShapes": {},
   "dependsOn": [
-    "ogc.api.connected-systems.swecommon.count",
-    "ogc.api.connected-systems.swecommon.basic-types",
     "ogc.api.connected-systems.swecommon.time",
     "ogc.api.connected-systems.swecommon.quantity",
-    "ogc.api.connected-systems.swecommon.abstract-data-component"
+    "ogc.api.connected-systems.swecommon.abstract-data-component",
+    "ogc.api.connected-systems.swecommon.basic-types",
+    "ogc.api.connected-systems.swecommon.count"
   ],
   "license": {
     "name": "Apache-2.0",
