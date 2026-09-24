@@ -43,11 +43,11 @@ The following definitions can be referenced individually using their anchor, e.g
 | `documents` | `array` |  | Additional documentation about the asset |
 | `history` | `array` |  | The list of events related to this asset |
 
-## Differences from the source
+## Known issues in the source
 
-This block differs from the upstream file (which should be fixed there too):
+This block is a faithful copy of the upstream file, which has the following mismatches with the examples of the specification (see `SCHEMA-FIXES.md`):
 
-- `uniqueId` is no longer in `required`: embedded components, modes and inline processes in the specification examples do not have one. Top-level systems still require it in the Part 1 system schemas.
+- `uniqueId` is `required`, but embedded components, modes and inline processes in the specification examples do not have one. Possible resolution: remove it from `required` (or add `uniqueId` to the examples) (top-level systems still require it in the Part 1 system schemas).
 
 
 ## Schema
@@ -150,6 +150,7 @@ properties:
 required:
 - type
 - label
+- uniqueId
 $defs:
   CharacteristicList:
     allOf:

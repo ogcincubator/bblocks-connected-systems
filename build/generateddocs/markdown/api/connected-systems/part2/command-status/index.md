@@ -27,6 +27,13 @@ Converted from [`api/part2/openapi/schemas/json/commandStatus.json`](https://git
 | `message` | `string` |  | Human readable message providing more details on the current status (can be both an error or information message depending on the status code) |
 | `results` | `array` |  | New result(s) of the command available at the time of the progress report (can be a partial result) |
 
+## Known failing examples
+
+2 example(s) taken from the specification do **not** validate against this schema. They are included as negative tests (`tests/spec-*-fail.json`), which pass only while the problem persists:
+
+- `command-status-inline-result-complex.json`: Request payload validated against the response schema: `readOnly` properties (`id`, `live`, `system@link`...) are `required`.
+- `command-status-inline-result-simple.json`: Request payload validated against the response schema: `readOnly` properties (`id`, `live`, `system@link`...) are `required`.
+
 ## Examples
 
 3 example(s) taken from the specification are included and validated against this schema.

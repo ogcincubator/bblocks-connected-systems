@@ -1,0 +1,66 @@
+Validation report for ogc.api.connected-systems.sensorml.physical-system - PhysicalSystem
+Generated 2026-09-24T07:53:27.692713+00:00
+=== General ===
+Test was expected to fail and it did.
+=== End General ===
+
+=== Files ===
+Using spec-weather_station_system-fail.json from test resources
+=== End Files ===
+
+=== JSON Schema ===
+
+** Validation error **
+ValidationError: {'type': 'PhysicalComponent', 'name': 'temp_sensor', 'definition': 'http://www.w3.org/ns/sosa/Sensor', 'label': 'Temperature Sensor', 'identifiers': [{'definition': 'http://sensorml.com/ont/swe/property/Manufacturer', 'label': 'Manufacturer Name', 'value': 'Davis Instruments'}], 'classifiers': [{'definition': 'http://sensorml.com/ont/swe/property/SensorType', 'label': 'Sensor Type', 'value': 'Thermometer'}], 'capabilities': [{'definition': 'http://www.w3.org/ns/ssn/systems/SystemCapability', 'label': 'Measurement Capabilities', 'capabilities': [{'type': 'QuantityRange', 'name': 'range', 'definition': 'http://www.w3.org/ns/ssn/systems/MeasurementRange', 'label': 'Measurement Range', 'uom': {'code': 'Cel'}, 'value': [-40.0, 60.0]}, {'type': 'Quantity', 'name': 'resolution', 'definition': 'http://www.w3.org/ns/ssn/systems/Resolution', 'label': 'Resolution', 'uom': {'code': 'Cel'}, 'value': 0.1}, {'type': 'Quantity', 'name': 'accuracy', 'definition': 'http://sensorml.com/ont/swe/property/AbsoluteAccuracy', 'label': 'Absolute Accuracy', 'uom': {'code': 'Cel'}, 'value': 0.3}, {'type': 'Quantity', 'name': 'samp_freq', 'definition': 'http://sensorml.com/ont/swe/property/SamplingFrequency', 'label': 'Sampling Frequency', 'uom': {'code': 'Hz'}, 'value': 0.1}]}], 'inputs': [{'name': 'temp', 'type': 'ObservableProperty', 'definition': 'http://mmisw.org/ont/cf/parameter/air_temperature', 'label': 'Air Temperature'}]} is not valid under any of the given schemas
+
+Failed validating 'oneOf' in schema['allOf'][1]['properties']['components']['items']['allOf'][1]:
+    {'oneOf': [{'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/simple-process/schema.yaml'},
+               {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/aggregate-process/schema.yaml'},
+               {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/physical-component/schema.yaml'},
+               {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/physical-system/schema.yaml'},
+               {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/link/schema.yaml',
+                'properties': {'type': {'const': 'Link'}}}]}
+
+On instance['components'][0]:
+    {'capabilities': [{'capabilities': [{'definition': 'http://www.w3.org/ns/ssn/systems/MeasurementRange',
+                                         'label': 'Measurement Range',
+                                         'name': 'range',
+                                         'type': 'QuantityRange',
+                                         'uom': {'code': 'Cel'},
+                                         'value': [-40.0, 60.0]},
+                                        {'definition': 'http://www.w3.org/ns/ssn/systems/Resolution',
+                                         'label': 'Resolution',
+                                         'name': 'resolution',
+                                         'type': 'Quantity',
+                                         'uom': {'code': 'Cel'},
+                                         'value': 0.1},
+                                        {'definition': 'http://sensorml.com/ont/swe/property/AbsoluteAccuracy',
+                                         'label': 'Absolute Accuracy',
+                                         'name': 'accuracy',
+                                         'type': 'Quantity',
+                                         'uom': {'code': 'Cel'},
+                                         'value': 0.3},
+                                        {'definition': 'http://sensorml.com/ont/swe/property/SamplingFrequency',
+                                         'label': 'Sampling Frequency',
+                                         'name': 'samp_freq',
+                                         'type': 'Quantity',
+                                         'uom': {'code': 'Hz'},
+                                         'value': 0.1}],
+                       'definition': 'http://www.w3.org/ns/ssn/systems/SystemCapability',
+                       'label': 'Measurement Capabilities'}],
+     'classifiers': [{'definition': 'http://sensorml.com/ont/swe/property/SensorType',
+                      'label': 'Sensor Type',
+                      'value': 'Thermometer'}],
+     'definition': 'http://www.w3.org/ns/sosa/Sensor',
+     'identifiers': [{'definition': 'http://sensorml.com/ont/swe/property/Manufacturer',
+                      'label': 'Manufacturer Name',
+                      'value': 'Davis Instruments'}],
+     'inputs': [{'definition': 'http://mmisw.org/ont/cf/parameter/air_temperature',
+                 'label': 'Air Temperature',
+                 'name': 'temp',
+                 'type': 'ObservableProperty'}],
+     'label': 'Temperature Sensor',
+     'name': 'temp_sensor',
+     'type': 'PhysicalComponent'}
+=== End JSON Schema ===
+

@@ -17,12 +17,12 @@
   ],
   "shaclShapes": {},
   "dependsOn": [
-    "ogc.api.connected-systems.sensorml.simple-process",
     "ogc.api.connected-systems.sensorml.physical-system",
-    "ogc.api.connected-systems.sensorml.aggregate-process",
     "ogc.api.connected-systems.part1.links",
-    "ogc.api.connected-systems.part1.uris",
-    "ogc.api.connected-systems.sensorml.physical-component"
+    "ogc.api.connected-systems.sensorml.simple-process",
+    "ogc.api.connected-systems.sensorml.aggregate-process",
+    "ogc.api.connected-systems.sensorml.physical-component",
+    "ogc.api.connected-systems.part1.uris"
   ],
   "license": {
     "name": "Apache-2.0",

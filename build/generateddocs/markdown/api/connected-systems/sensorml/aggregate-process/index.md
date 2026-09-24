@@ -29,80 +29,12 @@ The following definitions can be referenced individually using their anchor, e.g
 | `components` | `#/$defs/ComponentList` |  | The list of sub-processes |
 | `connections` | `#/$defs/ConnectionList` |  | The explicit definition of data links between outputs, inputs, and parameters of the components within an aggregate process. |
 
-## Examples
+## Known failing examples
 
-1 example(s) taken from the specification are included and validated against this schema.
+1 example(s) taken from the specification do **not** validate against this schema. They are included as negative tests (`tests/spec-*-fail.json`), which pass only while the problem persists:
 
+- `process_chain.json`: `DescribedObject` requires `uniqueId`, which embedded components/modes/processes in the example do not have.
 
-## Examples
-
-### Process chain
-#### json
-```json
-{
-  "$schema": "../../AggregateProcess.json",
-  "type": "AggregateProcess",
-  "uniqueId": "urn:x-ogc:process-chain:001",
-  "label": "Simple Process Chain",
-  "description": "A simple process chain that applies a linear transformation and clips the value to a threshold.",
-  "inputs": [
-    {
-      "name": "valueIn",
-      "type": "Quantity",
-      "definition": "http://sensorml.com/ont/swe/property/DN",
-      "label": "Input Value",
-      "uom": { "href": "http://www.opengis.net/def/nil/OGC/0/unknown" }
-    }
-  ],
-  "outputs": [
-    {
-      "name": "valueOut",
-      "type": "Quantity",
-      "definition": "http://sensorml.com/ont/swe/property/DN",
-      "label": "Output Value",
-      "uom": { "href": "http://www.opengis.net/def/nil/OGC/0/unknown" }
-    }
-  ],
-  "components": [
-    {
-      "name": "scale",
-      "type": "SimpleProcess",
-      "label": "Linear Transform 01",
-      "typeOf": {
-        "href": "http://example.org/processlib/linearTransform.json",
-        "uid": "urn:x-org:process:LinearTransform:v1.0",
-        "title": "Linear Transform"
-      },
-      "configuration": {
-        "setValues": [
-          { "ref": "parameters/slope", "value": 2.3 },
-          { "ref": "parameters/intercept", "value": 1.76 }
-        ]
-      }
-    },
-    {
-      "name": "clip",
-      "type": "SimpleProcess",
-      "label": "Threshold Clipper 01",
-      "typeOf": {
-        "href": "http://example.org/processlib/thresholdClipper.json",
-        "uid": "urn:x-org:process:ThresholdClipper:v1.0",
-        "title": "Threshold Clip"
-      },
-      "configuration": {
-        "setValues": [
-          { "ref": "parameters/threshold", "value": 15.0 }
-        ]
-      }
-    }
-  ],
-  "connections": [
-    { "source": "inputs/valueIn", "destination": "components/scale/inputs/x" },
-    { "source": "components/scale/outputs/y", "destination": "components/clip/inputs/valueIn" },
-    { "source": "components/clip/outputs/passValue", "destination": "outputs/valueOut" }
-  ]
-}
-```
 
 ## Schema
 

@@ -247,12 +247,12 @@ $defs:
       - -Infinity
     $anchor: NumberOrSpecial
   DateTimeNumberOrSpecial:
-    $anchor: DateTimeNumberOrSpecial
-    anyOf:
+    oneOf:
     - title: Date/Time
       type: string
       format: date-time
     - $ref: '#/$defs/NumberOrSpecial'
+    $anchor: DateTimeNumberOrSpecial
   ElementCount:
     type: object
     allOf:

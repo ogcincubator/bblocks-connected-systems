@@ -1,11 +1,11 @@
 {
   "type": "Time",
-  "definition": "http://www.opengis.net/def/property/OGC/0/SamplingTime",
-  "referenceFrame": "http://www.opengis.net/def/trs/USNO/0/GPS",
-  "label": "Sampling Time",
-  "description": "Time at which the measurement was made",
+  "definition": "http://www.opengis.net/def/property/OGC/0/RunTime",
+  "referenceTime": "1970-01-01T00:00:00Z",
+  "label": "Model Run Time",
+  "description": "Run time of the model expressed as a Unix time",
   "uom": {
-    "href": "http://www.opengis.net/def/uom/ISO-8601/0/Gregorian"
+    "code": "s"
   },
-  "value": "2009-11-05T16:29:26Z"
+  "value": 1257415633
 }

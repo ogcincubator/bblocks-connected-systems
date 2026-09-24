@@ -21,92 +21,12 @@ Converted from [`api/part1/openapi/schemas/geojson/procedure.json`](https://gith
 | `geometry` | `null` |  |  |
 | `properties` |  |  |  |
 
-## Examples
+## Known failing examples
 
-1 example(s) taken from the specification are included and validated against this schema.
+1 example(s) taken from the specification do **not** validate against this schema. They are included as negative tests (`tests/spec-*-fail.json`), which pass only while the problem persists:
 
+- `sensor-datasheet-geojson.json`: `ProcedureTypeUris` does not allow `http://www.w3.org/ns/ssn-system/SensorKind` (used as `featureType`/`definition`).
 
-## Examples
-
-### Sensor datasheet geojson
-#### json
-```json
-{
-  "type": "Feature",
-  "id": "iv3f2kcq27gfi",
-  "geometry": null,
-  "properties": {
-    "uid": "urn:x-gill:datasheets:windmaster:v1",
-    "name": "Gill WindMaster",
-    "description": "Precision 3-axis ultrasonic anemometer",
-    "featureType": "http://www.w3.org/ns/ssn-system/SensorKind"
-  },
-  "links": [
-    {
-      "href" : "https://data.example.org/api/procedures/iv3f2kcq27gfi?f=json",
-      "rel" : "self",
-      "type" : "application/geo+json",
-      "title" : "this document"
-    }, {
-      "href" : "https://data.example.org/api/procedures/iv3f2kcq27gfi?f=sml",
-      "rel" : "alternate",
-      "type" : "application/sml+json",
-      "title" : "this resource as SensorML"
-    }
-  ]
-}
-```
-
-#### jsonld
-```jsonld
-{
-  "@context": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part1/procedure/context.jsonld",
-  "type": "Feature",
-  "id": "iv3f2kcq27gfi",
-  "geometry": null,
-  "properties": {
-    "uid": "urn:x-gill:datasheets:windmaster:v1",
-    "name": "Gill WindMaster",
-    "description": "Precision 3-axis ultrasonic anemometer",
-    "featureType": "http://www.w3.org/ns/ssn-system/SensorKind"
-  },
-  "links": [
-    {
-      "href": "https://data.example.org/api/procedures/iv3f2kcq27gfi?f=json",
-      "rel": "self",
-      "type": "application/geo+json",
-      "title": "this document"
-    },
-    {
-      "href": "https://data.example.org/api/procedures/iv3f2kcq27gfi?f=sml",
-      "rel": "alternate",
-      "type": "application/sml+json",
-      "title": "this resource as SensorML"
-    }
-  ]
-}
-```
-
-#### ttl
-```ttl
-@prefix dct: <http://purl.org/dc/terms/> .
-@prefix geojson: <https://purl.org/geojson/vocab#> .
-@prefix ns1: <http://www.iana.org/assignments/> .
-@prefix oa: <http://www.w3.org/ns/oa#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-<file:///github/workspace/iv3f2kcq27gfi> a geojson:Feature ;
-    rdfs:seeAlso [ rdfs:label "this document" ;
-            dct:type "application/geo+json" ;
-            ns1:relation <http://www.iana.org/assignments/relation/self> ;
-            oa:hasTarget <https://data.example.org/api/procedures/iv3f2kcq27gfi?f=json> ],
-        [ rdfs:label "this resource as SensorML" ;
-            dct:type "application/sml+json" ;
-            ns1:relation <http://www.iana.org/assignments/relation/alternate> ;
-            oa:hasTarget <https://data.example.org/api/procedures/iv3f2kcq27gfi?f=sml> ] .
-
-
-```
 
 ## Schema
 

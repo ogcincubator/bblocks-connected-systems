@@ -34,27 +34,15 @@
   "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/time/",
   "validationPassed": true,
   "testOutputs": "https://github.com/ogcincubator/bblocks-connected-systems/blob/master/build/tests/api/connected-systems/swecommon/time/",
-  "description": "<!-- generated -->\n# Time\n\nScalar component used to represent a time quantity either as ISO 8601 (e.g., 2004-04-18T12:03:04.6Z) or as a duration relative to a time of reference\n\nConverted from [`swecommon/schemas/json/Time.json`](https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/swecommon/schemas/json/Time.json) in the OGC API - Connected Systems repository.\n\n## Properties\n\n| Property | Type | Required | Description |\n|---|---|---|---|\n| `type` | `\"Time\"` | yes |  |\n| `referenceTime` | `string` |  | Specifies the origin of the temporal reference frame as an ISO8601 date (used to specify time after an epoch that is to say in a custom frame) |\n| `localFrame` | `string` |  | Temporal frame of reference whose origin is located by the value of this component |\n| `uom` | `basicTypes.json#/$defs/UnitReference` | yes | Temporal unit of measure used to express the value of this data component |\n| `constraint` | `basicTypes.json#/$defs/AllowedTimes` |  |  |\n| `nilValues` | `basicTypes.json#/$defs/NilValuesTime` |  |  |\n| `value` | `basicTypes.json#/$defs/DateTimeNumberOrSpecial` |  |  |\n\n## Examples\n\n6 example(s) taken from the specification are included and validated against this schema.\n\n",
+  "description": "<!-- generated -->\n# Time\n\nScalar component used to represent a time quantity either as ISO 8601 (e.g., 2004-04-18T12:03:04.6Z) or as a duration relative to a time of reference\n\nConverted from [`swecommon/schemas/json/Time.json`](https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/swecommon/schemas/json/Time.json) in the OGC API - Connected Systems repository.\n\n## Properties\n\n| Property | Type | Required | Description |\n|---|---|---|---|\n| `type` | `\"Time\"` | yes |  |\n| `referenceTime` | `string` |  | Specifies the origin of the temporal reference frame as an ISO8601 date (used to specify time after an epoch that is to say in a custom frame) |\n| `localFrame` | `string` |  | Temporal frame of reference whose origin is located by the value of this component |\n| `uom` | `basicTypes.json#/$defs/UnitReference` | yes | Temporal unit of measure used to express the value of this data component |\n| `constraint` | `basicTypes.json#/$defs/AllowedTimes` |  |  |\n| `nilValues` | `basicTypes.json#/$defs/NilValuesTime` |  |  |\n| `value` | `basicTypes.json#/$defs/DateTimeNumberOrSpecial` |  |  |\n\n## Known failing examples\n\n1 example(s) taken from the specification do **not** validate against this schema. They are included as negative tests (`tests/spec-*-fail.json`), which pass only while the problem persists:\n\n- `allowedTimes1.json`: `DateTimeNumberOrSpecial` is a `oneOf`: `+Infinity` matches both the special-number and the date-time branch.\n\n## Examples\n\n5 example(s) taken from the specification are included and validated against this schema.\n\n",
   "examples": [
-    {
-      "title": "AllowedTimes1",
-      "snippets": [
-        {
-          "language": "json",
-          "ref": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/time/examples/allowedTimes1.json",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/swecommon/time/example_1_1.json",
-          "sizeBytes": 352,
-          "code": "{\n  \"type\": \"Time\",\n  \"definition\": \"http://www.opengis.net/def/property/OGC/0/SamplingTime\",\n  \"referenceFrame\": \"http://www.opengis.net/def/trs/USNO/0/GPS\",\n  \"label\": \"Acquisition Time\",\n  \"uom\": {\n    \"href\": \"http://www.opengis.net/def/uom/ISO-8601/0/Gregorian\"\n  },\n  \"constraint\": {\n    \"intervals\": [[\"2009-01-01T00:00:00Z\", \"+Infinity\"]]\n  }\n}"
-        }
-      ]
-    },
     {
       "title": "AllowedTimes2",
       "snippets": [
         {
           "language": "json",
           "ref": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/time/examples/allowedTimes2.json",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/swecommon/time/example_2_1.json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/swecommon/time/example_1_1.json",
           "sizeBytes": 334,
           "code": "{\n  \"type\": \"Time\",\n  \"definition\": \"http://www.opengis.net/def/property/OGC/0/SamplingTime\",\n  \"referenceFrame\": \"urn:org:systems:001#SCAN-START-TIME\",\n  \"label\": \"Lidar Pulse Time\",\n  \"description\": \"Time stamp of LiDAR pulse relative to start of scan\",\n  \"uom\": { \"code\": \"ms\" },\n  \"constraint\": {\n    \"intervals\": [[0, 1e6]]\n  }\n}"
         }
@@ -66,7 +54,7 @@
         {
           "language": "json",
           "ref": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/time/examples/time1.json",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/swecommon/time/example_3_1.json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/swecommon/time/example_2_1.json",
           "sizeBytes": 363,
           "code": "{\n  \"type\": \"Time\",\n  \"definition\": \"http://www.opengis.net/def/property/OGC/0/SamplingTime\",\n  \"referenceFrame\": \"http://www.opengis.net/def/trs/USNO/0/GPS\",\n  \"label\": \"Sampling Time\",\n  \"description\": \"Time at which the measurement was made\",\n  \"uom\": {\n    \"href\": \"http://www.opengis.net/def/uom/ISO-8601/0/Gregorian\"\n  },\n  \"value\": \"2009-11-05T16:29:26Z\"\n}"
         }
@@ -78,7 +66,7 @@
         {
           "language": "json",
           "ref": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/time/examples/time2.json",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/swecommon/time/example_4_1.json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/swecommon/time/example_3_1.json",
           "sizeBytes": 276,
           "code": "{\n  \"type\": \"Time\",\n  \"definition\": \"http://www.opengis.net/def/property/OGC/0/RunTime\",\n  \"referenceTime\": \"1970-01-01T00:00:00Z\",\n  \"label\": \"Model Run Time\",\n  \"description\": \"Run time of the model expressed as a Unix time\",\n  \"uom\": {\"code\": \"s\" },\n  \"value\": 1257415633\n}"
         }
@@ -90,7 +78,7 @@
         {
           "language": "json",
           "ref": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/time/examples/time3.json",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/swecommon/time/example_5_1.json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/swecommon/time/example_4_1.json",
           "sizeBytes": 416,
           "code": "{\n  \"type\": \"Time\",\n  \"definition\": \"http://www.opengis.net/def/property/OGC-EO/0/MissionStartTime\",\n  \"referenceFrame\": \"http://www.opengis.net/def/trs/BIPM/0/UTC\",\n  \"localFrame\": \"urn:org:systems:001#MISSION-START-TIME\",\n  \"label\": \"Flight Time\",\n  \"description\": \"Time at take-off in UTC\",\n  \"uom\": {\n    \"href\": \"http://www.opengis.net/def/uom/ISO-8601/0/Gregorian\"\n  },\n  \"value\": \"2009-01-26T10:21:45+01:00\"\n}"
         }
@@ -102,7 +90,7 @@
         {
           "language": "json",
           "ref": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/time/examples/time4.json",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/swecommon/time/example_6_1.json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/swecommon/time/example_5_1.json",
           "sizeBytes": 323,
           "code": "{\n  \"type\": \"Time\",\n  \"definition\": \"http://www.opengis.net/def/property/OGC-EO/0/ScanStartTime\",\n  \"referenceFrame\": \"urn:org:systems:001#MISSION-START-TIME\",\n  \"localFrame\": \"urn:org:systems:001#SCAN-START-TIME\",\n  \"label\": \"Scanline Time\",\n  \"description\": \"Acquisition time of the scan line\",\n  \"uom\": { \"code\": \"s\" }\n}"
         }

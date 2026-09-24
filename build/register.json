@@ -3,7 +3,7 @@
   "name": "OGC API - Connected Systems Building Blocks",
   "abstract": "Data models of the OGC API - Connected Systems standard and its underlying SWE Common 3.0 and SensorML 3.0 encodings, as reusable building blocks.\n",
   "description": "Draft conversion of the JSON schemas maintained in [opengeospatial/ogcapi-connected-systems](https://github.com/opengeospatial/ogcapi-connected-systems)\ninto building blocks. Scope is limited to data models (no OpenAPI paths/parameters, no XML encodings).\nSemantic annotations (JSON-LD contexts) are not yet provided.\n",
-  "modified": "2026-09-23T22:26:30.800337",
+  "modified": "2026-09-24T07:53:03.095163",
   "tooling": {
     "bblocks-postprocess": {
       "commitId": "\"6411aed037da38c6d9079d9350eca33d004a4d0c",
@@ -374,6 +374,50 @@
       }
     },
     {
+      "itemIdentifier": "ogc.api.connected-systems.sensorml.pose",
+      "name": "Pose",
+      "abstract": "A Pose object that can be either a GeoPose Basic instance of a relative pose.",
+      "status": "under-development",
+      "dateTimeAddition": "2026-09-23T00:00:00Z",
+      "itemClass": "schema",
+      "version": "0.1",
+      "group": "SensorML",
+      "sources": [
+        {
+          "title": "sensorml/schemas/json/Pose.json in opengeospatial/ogcapi-connected-systems",
+          "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/sensorml/schemas/json/Pose.json"
+        }
+      ],
+      "shaclShapes": {},
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
+      "dateOfLastChange": "2026-09-23",
+      "schema": {
+        "application/yaml": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/pose/schema.yaml",
+        "application/json": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/pose/schema.json"
+      },
+      "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/sensorml/pose/schema.json",
+      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/pose/resolvedProperties.json",
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/sensorml/pose/",
+      "validationPassed": true,
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/markdown/api/connected-systems/sensorml/pose/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/json-full/api/connected-systems/sensorml/pose/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/bblock/ogc.api.connected-systems.sensorml.pose"
+        }
+      }
+    },
+    {
       "itemIdentifier": "ogc.api.connected-systems.swecommon.abstract-swe-identifiable",
       "name": "AbstractSweIdentifiable",
       "abstract": "Base substitution groups for all SWE Common objects with identification metadata",
@@ -417,50 +461,6 @@
         "bblocks-viewer": {
           "mediatype": "text/html",
           "url": "https://ogcincubator.github.io/bblocks-connected-systems/bblock/ogc.api.connected-systems.swecommon.abstract-swe-identifiable"
-        }
-      }
-    },
-    {
-      "itemIdentifier": "ogc.api.connected-systems.sensorml.pose",
-      "name": "Pose",
-      "abstract": "A Pose object that can be either a GeoPose Basic instance of a relative pose.",
-      "status": "under-development",
-      "dateTimeAddition": "2026-09-23T00:00:00Z",
-      "itemClass": "schema",
-      "version": "0.1",
-      "group": "SensorML",
-      "sources": [
-        {
-          "title": "sensorml/schemas/json/Pose.json in opengeospatial/ogcapi-connected-systems",
-          "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/sensorml/schemas/json/Pose.json"
-        }
-      ],
-      "shaclShapes": {},
-      "license": {
-        "name": "Apache-2.0",
-        "url": "https://www.apache.org/licenses/LICENSE-2.0"
-      },
-      "dateOfLastChange": "2026-09-23",
-      "schema": {
-        "application/yaml": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/pose/schema.yaml",
-        "application/json": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/pose/schema.json"
-      },
-      "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/sensorml/pose/schema.json",
-      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/pose/resolvedProperties.json",
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/sensorml/pose/",
-      "validationPassed": true,
-      "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/markdown/api/connected-systems/sensorml/pose/index.md"
-        },
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/json-full/api/connected-systems/sensorml/pose/index.json"
-        },
-        "bblocks-viewer": {
-          "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/bblock/ogc.api.connected-systems.sensorml.pose"
         }
       }
     },
@@ -513,50 +513,6 @@
       }
     },
     {
-      "itemIdentifier": "ogc.api.connected-systems.sensorml.responsible-party",
-      "name": "ResponsibleParty",
-      "abstract": "ResponsibleParty schema.",
-      "status": "under-development",
-      "dateTimeAddition": "2026-09-23T00:00:00Z",
-      "itemClass": "schema",
-      "version": "0.1",
-      "group": "SensorML",
-      "sources": [
-        {
-          "title": "sensorml/schemas/json/ResponsibleParty.json in opengeospatial/ogcapi-connected-systems",
-          "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/sensorml/schemas/json/ResponsibleParty.json"
-        }
-      ],
-      "shaclShapes": {},
-      "license": {
-        "name": "Apache-2.0",
-        "url": "https://www.apache.org/licenses/LICENSE-2.0"
-      },
-      "dateOfLastChange": "2026-09-23",
-      "schema": {
-        "application/yaml": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/responsible-party/schema.yaml",
-        "application/json": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/responsible-party/schema.json"
-      },
-      "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/sensorml/responsible-party/schema.json",
-      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/responsible-party/resolvedProperties.json",
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/sensorml/responsible-party/",
-      "validationPassed": true,
-      "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/markdown/api/connected-systems/sensorml/responsible-party/index.md"
-        },
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/json-full/api/connected-systems/sensorml/responsible-party/index.json"
-        },
-        "bblocks-viewer": {
-          "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/bblock/ogc.api.connected-systems.sensorml.responsible-party"
-        }
-      }
-    },
-    {
       "itemIdentifier": "ogc.api.connected-systems.sensorml.legal-constraint",
       "name": "LegalConstraint",
       "abstract": "LegalConstraint schema.",
@@ -597,6 +553,50 @@
         "bblocks-viewer": {
           "mediatype": "text/html",
           "url": "https://ogcincubator.github.io/bblocks-connected-systems/bblock/ogc.api.connected-systems.sensorml.legal-constraint"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.api.connected-systems.sensorml.responsible-party",
+      "name": "ResponsibleParty",
+      "abstract": "ResponsibleParty schema.",
+      "status": "under-development",
+      "dateTimeAddition": "2026-09-23T00:00:00Z",
+      "itemClass": "schema",
+      "version": "0.1",
+      "group": "SensorML",
+      "sources": [
+        {
+          "title": "sensorml/schemas/json/ResponsibleParty.json in opengeospatial/ogcapi-connected-systems",
+          "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/sensorml/schemas/json/ResponsibleParty.json"
+        }
+      ],
+      "shaclShapes": {},
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
+      "dateOfLastChange": "2026-09-23",
+      "schema": {
+        "application/yaml": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/responsible-party/schema.yaml",
+        "application/json": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/responsible-party/schema.json"
+      },
+      "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/sensorml/responsible-party/schema.json",
+      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/responsible-party/resolvedProperties.json",
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/sensorml/responsible-party/",
+      "validationPassed": true,
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/markdown/api/connected-systems/sensorml/responsible-party/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/json-full/api/connected-systems/sensorml/responsible-party/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/bblock/ogc.api.connected-systems.sensorml.responsible-party"
         }
       }
     },
@@ -1001,8 +1001,8 @@
         ]
       },
       "dependsOn": [
-        "bblocks://ogc.geo.features.feature",
-        "bblocks://ogc.api.connected-systems.common.link"
+        "bblocks://ogc.api.connected-systems.common.link",
+        "bblocks://ogc.geo.features.feature"
       ],
       "license": {
         "name": "Apache-2.0",
@@ -1306,8 +1306,8 @@
         ]
       },
       "dependsOn": [
-        "bblocks://ogc.api.connected-systems.part1.feature",
-        "bblocks://ogc.api.connected-systems.part1.uris"
+        "bblocks://ogc.api.connected-systems.part1.uris",
+        "bblocks://ogc.api.connected-systems.part1.feature"
       ],
       "license": {
         "name": "Apache-2.0",
@@ -1363,10 +1363,10 @@
         ]
       },
       "dependsOn": [
-        "bblocks://ogc.api.connected-systems.part1.feature",
         "bblocks://ogc.api.connected-systems.part1.uris",
-        "bblocks://ogc.api.connected-systems.common.time-period",
-        "bblocks://ogc.api.connected-systems.common.link"
+        "bblocks://ogc.api.connected-systems.common.link",
+        "bblocks://ogc.api.connected-systems.part1.feature",
+        "bblocks://ogc.api.connected-systems.common.time-period"
       ],
       "license": {
         "name": "Apache-2.0",
@@ -1422,9 +1422,9 @@
         ]
       },
       "dependsOn": [
+        "bblocks://ogc.api.connected-systems.common.link",
         "bblocks://ogc.api.connected-systems.part1.feature",
-        "bblocks://ogc.api.connected-systems.common.time-period",
-        "bblocks://ogc.api.connected-systems.common.link"
+        "bblocks://ogc.api.connected-systems.common.time-period"
       ],
       "license": {
         "name": "Apache-2.0",
@@ -1480,10 +1480,10 @@
         ]
       },
       "dependsOn": [
-        "bblocks://ogc.api.connected-systems.part1.feature",
         "bblocks://ogc.api.connected-systems.part1.uris",
-        "bblocks://ogc.api.connected-systems.common.time-period",
-        "bblocks://ogc.api.connected-systems.common.link"
+        "bblocks://ogc.api.connected-systems.common.link",
+        "bblocks://ogc.api.connected-systems.part1.feature",
+        "bblocks://ogc.api.connected-systems.common.time-period"
       ],
       "license": {
         "name": "Apache-2.0",
@@ -1580,9 +1580,9 @@
       "shaclShapes": {},
       "dependsOn": [
         "bblocks://ogc.api.connected-systems.common.time-instant",
+        "bblocks://ogc.api.connected-systems.common.link",
         "bblocks://ogc.api.connected-systems.common.time-period",
-        "bblocks://ogc.api.connected-systems.part2.command-status-code",
-        "bblocks://ogc.api.connected-systems.common.link"
+        "bblocks://ogc.api.connected-systems.part2.command-status-code"
       ],
       "license": {
         "name": "Apache-2.0",
@@ -1630,8 +1630,8 @@
       ],
       "shaclShapes": {},
       "dependsOn": [
-        "bblocks://ogc.api.connected-systems.common.time-period",
-        "bblocks://ogc.api.connected-systems.common.link"
+        "bblocks://ogc.api.connected-systems.common.link",
+        "bblocks://ogc.api.connected-systems.common.time-period"
       ],
       "license": {
         "name": "Apache-2.0",
@@ -1646,6 +1646,7 @@
       "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part2/command-result/resolvedProperties.json",
       "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part2/command-result/",
       "validationPassed": true,
+      "testOutputs": "https://github.com/ogcincubator/bblocks-connected-systems/blob/master/build/tests/api/connected-systems/part2/command-result/",
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
@@ -1774,17 +1775,17 @@
         "bblocks://ogc.geo.features.featureCollection"
       ],
       "shaclShapes": {
-        "ogc.geo.features.featureCollection": [
-          "https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl"
-        ],
         "ogc.geo.features.feature": [
           "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl"
+        ],
+        "ogc.geo.features.featureCollection": [
+          "https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl"
         ]
       },
       "dependsOn": [
+        "bblocks://ogc.api.connected-systems.part1.deployed-system-array",
         "bblocks://ogc.geo.features.featureCollection",
-        "bblocks://ogc.api.connected-systems.part1.links",
-        "bblocks://ogc.api.connected-systems.part1.deployed-system-array"
+        "bblocks://ogc.api.connected-systems.part1.links"
       ],
       "license": {
         "name": "Apache-2.0",
@@ -2040,8 +2041,8 @@
       ],
       "shaclShapes": {},
       "dependsOn": [
-        "bblocks://ogc.api.connected-systems.part1.links",
-        "bblocks://ogc.api.connected-systems.part2.command"
+        "bblocks://ogc.api.connected-systems.part2.command",
+        "bblocks://ogc.api.connected-systems.part1.links"
       ],
       "license": {
         "name": "Apache-2.0",
@@ -2137,9 +2138,9 @@
       "shaclShapes": {},
       "dependsOn": [
         "bblocks://ogc.api.connected-systems.part2.command-result",
-        "bblocks://ogc.api.connected-systems.common.time-period",
+        "bblocks://ogc.api.connected-systems.common.time-instant",
         "bblocks://ogc.api.connected-systems.part2.command-status-code",
-        "bblocks://ogc.api.connected-systems.common.time-instant"
+        "bblocks://ogc.api.connected-systems.common.time-period"
       ],
       "license": {
         "name": "Apache-2.0",
@@ -2367,56 +2368,6 @@
       }
     },
     {
-      "itemIdentifier": "ogc.api.connected-systems.swecommon.data-record",
-      "name": "DataRecord",
-      "abstract": "Implementation of ISO-11404 Record datatype. This allows grouping (sequence) of data components which can themselves be simple types, records, arrays or choices",
-      "status": "under-development",
-      "dateTimeAddition": "2026-09-23T00:00:00Z",
-      "itemClass": "schema",
-      "version": "0.1",
-      "group": "SWE Common",
-      "sources": [
-        {
-          "title": "swecommon/schemas/json/DataRecord.json in opengeospatial/ogcapi-connected-systems",
-          "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/swecommon/schemas/json/DataRecord.json"
-        }
-      ],
-      "shaclShapes": {},
-      "dependsOn": [
-        "bblocks://ogc.api.connected-systems.swecommon.swe-common",
-        "bblocks://ogc.api.connected-systems.swecommon.basic-types",
-        "bblocks://ogc.api.connected-systems.swecommon.abstract-data-component"
-      ],
-      "license": {
-        "name": "Apache-2.0",
-        "url": "https://www.apache.org/licenses/LICENSE-2.0"
-      },
-      "dateOfLastChange": "2026-09-23",
-      "schema": {
-        "application/yaml": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/data-record/schema.yaml",
-        "application/json": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/data-record/schema.json"
-      },
-      "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/data-record/schema.json",
-      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/data-record/resolvedProperties.json",
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/data-record/",
-      "validationPassed": true,
-      "testOutputs": "https://github.com/ogcincubator/bblocks-connected-systems/blob/master/build/tests/api/connected-systems/swecommon/data-record/",
-      "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/markdown/api/connected-systems/swecommon/data-record/index.md"
-        },
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/json-full/api/connected-systems/swecommon/data-record/index.json"
-        },
-        "bblocks-viewer": {
-          "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/bblock/ogc.api.connected-systems.swecommon.data-record"
-        }
-      }
-    },
-    {
       "itemIdentifier": "ogc.api.connected-systems.swecommon.encodings",
       "name": "Encodings",
       "abstract": "Encodings schema.",
@@ -2480,8 +2431,8 @@
       ],
       "shaclShapes": {},
       "dependsOn": [
-        "bblocks://ogc.api.connected-systems.swecommon.basic-types",
-        "bblocks://ogc.api.connected-systems.swecommon.abstract-data-component"
+        "bblocks://ogc.api.connected-systems.swecommon.abstract-data-component",
+        "bblocks://ogc.api.connected-systems.swecommon.basic-types"
       ],
       "license": {
         "name": "Apache-2.0",
@@ -2845,8 +2796,8 @@
       },
       "dependsOn": [
         "bblocks://ogc.geo.features.featureCollection",
-        "bblocks://ogc.api.connected-systems.part1.links",
-        "bblocks://ogc.api.connected-systems.part1.deployment-array"
+        "bblocks://ogc.api.connected-systems.part1.deployment-array",
+        "bblocks://ogc.api.connected-systems.part1.links"
       ],
       "license": {
         "name": "Apache-2.0",
@@ -2896,17 +2847,17 @@
         "bblocks://ogc.geo.features.featureCollection"
       ],
       "shaclShapes": {
-        "ogc.geo.features.featureCollection": [
-          "https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl"
-        ],
         "ogc.geo.features.feature": [
           "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl"
+        ],
+        "ogc.geo.features.featureCollection": [
+          "https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl"
         ]
       },
       "dependsOn": [
+        "bblocks://ogc.api.connected-systems.part1.sampling-feature-array",
         "bblocks://ogc.geo.features.featureCollection",
-        "bblocks://ogc.api.connected-systems.part1.links",
-        "bblocks://ogc.api.connected-systems.part1.sampling-feature-array"
+        "bblocks://ogc.api.connected-systems.part1.links"
       ],
       "license": {
         "name": "Apache-2.0",
@@ -3014,8 +2965,8 @@
       ],
       "shaclShapes": {},
       "dependsOn": [
-        "bblocks://ogc.api.connected-systems.part2.command-status",
-        "bblocks://ogc.api.connected-systems.part1.links"
+        "bblocks://ogc.api.connected-systems.part1.links",
+        "bblocks://ogc.api.connected-systems.part2.command-status"
       ],
       "license": {
         "name": "Apache-2.0",
@@ -3046,108 +2997,6 @@
       }
     },
     {
-      "itemIdentifier": "ogc.api.connected-systems.swecommon.data-choice",
-      "name": "DataChoice",
-      "abstract": "Implementation of a choice of two or more Data Components (also called disjoint union)",
-      "status": "under-development",
-      "dateTimeAddition": "2026-09-23T00:00:00Z",
-      "itemClass": "schema",
-      "version": "0.1",
-      "group": "SWE Common",
-      "sources": [
-        {
-          "title": "swecommon/schemas/json/DataChoice.json in opengeospatial/ogcapi-connected-systems",
-          "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/swecommon/schemas/json/DataChoice.json"
-        }
-      ],
-      "shaclShapes": {},
-      "dependsOn": [
-        "bblocks://ogc.api.connected-systems.swecommon.category",
-        "bblocks://ogc.api.connected-systems.swecommon.swe-common",
-        "bblocks://ogc.api.connected-systems.swecommon.abstract-data-component",
-        "bblocks://ogc.api.connected-systems.swecommon.basic-types"
-      ],
-      "license": {
-        "name": "Apache-2.0",
-        "url": "https://www.apache.org/licenses/LICENSE-2.0"
-      },
-      "dateOfLastChange": "2026-09-23",
-      "schema": {
-        "application/yaml": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/data-choice/schema.yaml",
-        "application/json": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/data-choice/schema.json"
-      },
-      "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/data-choice/schema.json",
-      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/data-choice/resolvedProperties.json",
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/data-choice/",
-      "validationPassed": true,
-      "testOutputs": "https://github.com/ogcincubator/bblocks-connected-systems/blob/master/build/tests/api/connected-systems/swecommon/data-choice/",
-      "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/markdown/api/connected-systems/swecommon/data-choice/index.md"
-        },
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/json-full/api/connected-systems/swecommon/data-choice/index.json"
-        },
-        "bblocks-viewer": {
-          "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/bblock/ogc.api.connected-systems.swecommon.data-choice"
-        }
-      }
-    },
-    {
-      "itemIdentifier": "ogc.api.connected-systems.swecommon.data-stream",
-      "name": "DataStream",
-      "abstract": "Defines the structure of the element that will be repeated in the stream",
-      "status": "under-development",
-      "dateTimeAddition": "2026-09-23T00:00:00Z",
-      "itemClass": "schema",
-      "version": "0.1",
-      "group": "SWE Common",
-      "sources": [
-        {
-          "title": "swecommon/schemas/json/DataStream.json in opengeospatial/ogcapi-connected-systems",
-          "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/swecommon/schemas/json/DataStream.json"
-        }
-      ],
-      "shaclShapes": {},
-      "dependsOn": [
-        "bblocks://ogc.api.connected-systems.swecommon.swe-common",
-        "bblocks://ogc.api.connected-systems.swecommon.basic-types",
-        "bblocks://ogc.api.connected-systems.swecommon.abstract-swe-identifiable",
-        "bblocks://ogc.api.connected-systems.swecommon.encodings"
-      ],
-      "license": {
-        "name": "Apache-2.0",
-        "url": "https://www.apache.org/licenses/LICENSE-2.0"
-      },
-      "dateOfLastChange": "2026-09-23",
-      "schema": {
-        "application/yaml": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/data-stream/schema.yaml",
-        "application/json": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/data-stream/schema.json"
-      },
-      "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/data-stream/schema.json",
-      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/data-stream/resolvedProperties.json",
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/data-stream/",
-      "validationPassed": true,
-      "testOutputs": "https://github.com/ogcincubator/bblocks-connected-systems/blob/master/build/tests/api/connected-systems/swecommon/data-stream/",
-      "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/markdown/api/connected-systems/swecommon/data-stream/index.md"
-        },
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/json-full/api/connected-systems/swecommon/data-stream/index.json"
-        },
-        "bblocks-viewer": {
-          "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/bblock/ogc.api.connected-systems.swecommon.data-stream"
-        }
-      }
-    },
-    {
       "itemIdentifier": "ogc.api.connected-systems.swecommon.vector",
       "name": "Vector",
       "abstract": "Implementation of a mathematical vector composed of a list of scalar coordinates expressed in the mandatory reference frame.",
@@ -3164,11 +3013,11 @@
       ],
       "shaclShapes": {},
       "dependsOn": [
-        "bblocks://ogc.api.connected-systems.swecommon.abstract-data-component",
-        "bblocks://ogc.api.connected-systems.swecommon.basic-types",
         "bblocks://ogc.api.connected-systems.swecommon.count",
+        "bblocks://ogc.api.connected-systems.swecommon.basic-types",
+        "bblocks://ogc.api.connected-systems.swecommon.time",
         "bblocks://ogc.api.connected-systems.swecommon.quantity",
-        "bblocks://ogc.api.connected-systems.swecommon.time"
+        "bblocks://ogc.api.connected-systems.swecommon.abstract-data-component"
       ],
       "license": {
         "name": "Apache-2.0",
@@ -3216,23 +3065,23 @@
       ],
       "shaclShapes": {},
       "dependsOn": [
-        "bblocks://ogc.api.connected-systems.swecommon.data-array",
-        "bblocks://ogc.api.connected-systems.swecommon.data-choice",
         "bblocks://ogc.api.connected-systems.swecommon.vector",
+        "bblocks://ogc.api.connected-systems.swecommon.data-array",
         "bblocks://ogc.api.connected-systems.swecommon.count",
-        "bblocks://ogc.api.connected-systems.swecommon.data-stream",
-        "bblocks://ogc.api.connected-systems.swecommon.quantity",
         "bblocks://ogc.api.connected-systems.swecommon.category-range",
-        "bblocks://ogc.api.connected-systems.swecommon.time-range",
-        "bblocks://ogc.api.connected-systems.swecommon.category",
-        "bblocks://ogc.api.connected-systems.swecommon.boolean",
-        "bblocks://ogc.api.connected-systems.swecommon.matrix",
-        "bblocks://ogc.api.connected-systems.swecommon.count-range",
         "bblocks://ogc.api.connected-systems.swecommon.time",
+        "bblocks://ogc.api.connected-systems.swecommon.boolean",
+        "bblocks://ogc.api.connected-systems.swecommon.data-choice",
         "bblocks://ogc.api.connected-systems.swecommon.data-record",
         "bblocks://ogc.api.connected-systems.swecommon.geometry",
+        "bblocks://ogc.api.connected-systems.swecommon.category",
+        "bblocks://ogc.api.connected-systems.swecommon.matrix",
+        "bblocks://ogc.api.connected-systems.swecommon.quantity",
+        "bblocks://ogc.api.connected-systems.swecommon.time-range",
+        "bblocks://ogc.api.connected-systems.swecommon.quantity-range",
+        "bblocks://ogc.api.connected-systems.swecommon.data-stream",
         "bblocks://ogc.api.connected-systems.swecommon.text",
-        "bblocks://ogc.api.connected-systems.swecommon.quantity-range"
+        "bblocks://ogc.api.connected-systems.swecommon.count-range"
       ],
       "license": {
         "name": "Apache-2.0",
@@ -3327,8 +3176,8 @@
       ],
       "shaclShapes": {},
       "dependsOn": [
-        "bblocks://ogc.api.connected-systems.swecommon.swe-common",
-        "bblocks://ogc.api.connected-systems.swecommon.encodings"
+        "bblocks://ogc.api.connected-systems.swecommon.encodings",
+        "bblocks://ogc.api.connected-systems.swecommon.swe-common"
       ],
       "license": {
         "name": "Apache-2.0",
@@ -3360,105 +3209,6 @@
       }
     },
     {
-      "itemIdentifier": "ogc.api.connected-systems.part2.data-stream-schema-def",
-      "name": "DataStreamSchemaDef",
-      "abstract": "Schema definition of the observation record of a DataStream, describing phenomenon time, result time, feature of interest, result and parameters with SWE Common components.",
-      "status": "under-development",
-      "dateTimeAddition": "2026-09-23T00:00:00Z",
-      "itemClass": "schema",
-      "version": "0.1",
-      "group": "Part 2",
-      "sources": [
-        {
-          "title": "api/part2/openapi/schemas/json/dataStreamSchemaDef.json in opengeospatial/ogcapi-connected-systems",
-          "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/api/part2/openapi/schemas/json/dataStreamSchemaDef.json"
-        }
-      ],
-      "shaclShapes": {},
-      "dependsOn": [
-        "bblocks://ogc.api.connected-systems.swecommon.category",
-        "bblocks://ogc.api.connected-systems.swecommon.time",
-        "bblocks://ogc.api.connected-systems.swecommon.swe-common",
-        "bblocks://ogc.api.connected-systems.swecommon.data-record"
-      ],
-      "license": {
-        "name": "Apache-2.0",
-        "url": "https://www.apache.org/licenses/LICENSE-2.0"
-      },
-      "dateOfLastChange": "2026-09-23",
-      "schema": {
-        "application/yaml": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part2/data-stream-schema-def/schema.yaml",
-        "application/json": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part2/data-stream-schema-def/schema.json"
-      },
-      "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part2/data-stream-schema-def/schema.json",
-      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part2/data-stream-schema-def/resolvedProperties.json",
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part2/data-stream-schema-def/",
-      "validationPassed": true,
-      "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/markdown/api/connected-systems/part2/data-stream-schema-def/index.md"
-        },
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/json-full/api/connected-systems/part2/data-stream-schema-def/index.json"
-        },
-        "bblocks-viewer": {
-          "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/bblock/ogc.api.connected-systems.part2.data-stream-schema-def"
-        }
-      }
-    },
-    {
-      "itemIdentifier": "ogc.api.connected-systems.part2.observation-schema-json",
-      "name": "ObservationSchemaJson",
-      "abstract": "Observation schema for the JSON format (`application/json`), describing the observation result, parameters and related fields with SWE Common components.",
-      "status": "under-development",
-      "dateTimeAddition": "2026-09-23T00:00:00Z",
-      "itemClass": "schema",
-      "version": "0.1",
-      "group": "Part 2",
-      "sources": [
-        {
-          "title": "api/part2/openapi/schemas/json/observationSchemaJson.json in opengeospatial/ogcapi-connected-systems",
-          "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/api/part2/openapi/schemas/json/observationSchemaJson.json"
-        }
-      ],
-      "shaclShapes": {},
-      "dependsOn": [
-        "bblocks://ogc.api.connected-systems.swecommon.swe-common",
-        "bblocks://ogc.api.connected-systems.swecommon.data-record"
-      ],
-      "license": {
-        "name": "Apache-2.0",
-        "url": "https://www.apache.org/licenses/LICENSE-2.0"
-      },
-      "dateOfLastChange": "2026-09-23",
-      "schema": {
-        "application/yaml": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part2/observation-schema-json/schema.yaml",
-        "application/json": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part2/observation-schema-json/schema.json"
-      },
-      "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part2/observation-schema-json/schema.json",
-      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part2/observation-schema-json/resolvedProperties.json",
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part2/observation-schema-json/",
-      "validationPassed": true,
-      "testOutputs": "https://github.com/ogcincubator/bblocks-connected-systems/blob/master/build/tests/api/connected-systems/part2/observation-schema-json/",
-      "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/markdown/api/connected-systems/part2/observation-schema-json/index.md"
-        },
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/json-full/api/connected-systems/part2/observation-schema-json/index.json"
-        },
-        "bblocks-viewer": {
-          "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/bblock/ogc.api.connected-systems.part2.observation-schema-json"
-        }
-      }
-    },
-    {
       "itemIdentifier": "ogc.api.connected-systems.part2.observation-schema-swe",
       "name": "ObservationSchemaSwe",
       "abstract": "Observation schema for SWE Common encodings (text, binary, etc.), giving the record schema and the encoding rules of the observation stream.",
@@ -3475,8 +3225,8 @@
       ],
       "shaclShapes": {},
       "dependsOn": [
-        "bblocks://ogc.api.connected-systems.swecommon.swe-common",
-        "bblocks://ogc.api.connected-systems.swecommon.encodings"
+        "bblocks://ogc.api.connected-systems.swecommon.encodings",
+        "bblocks://ogc.api.connected-systems.swecommon.swe-common"
       ],
       "license": {
         "name": "Apache-2.0",
@@ -3572,8 +3322,8 @@
       ],
       "shaclShapes": {},
       "dependsOn": [
-        "bblocks://ogc.api.connected-systems.swecommon.basic-types",
         "bblocks://ogc.api.connected-systems.swecommon.swe-common",
+        "bblocks://ogc.api.connected-systems.swecommon.basic-types",
         "bblocks://ogc.api.connected-systems.swecommon.abstract-data-component",
         "bblocks://ogc.api.connected-systems.swecommon.encodings"
       ],
@@ -3607,6 +3357,158 @@
       }
     },
     {
+      "itemIdentifier": "ogc.api.connected-systems.swecommon.data-choice",
+      "name": "DataChoice",
+      "abstract": "Implementation of a choice of two or more Data Components (also called disjoint union)",
+      "status": "under-development",
+      "dateTimeAddition": "2026-09-23T00:00:00Z",
+      "itemClass": "schema",
+      "version": "0.1",
+      "group": "SWE Common",
+      "sources": [
+        {
+          "title": "swecommon/schemas/json/DataChoice.json in opengeospatial/ogcapi-connected-systems",
+          "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/swecommon/schemas/json/DataChoice.json"
+        }
+      ],
+      "shaclShapes": {},
+      "dependsOn": [
+        "bblocks://ogc.api.connected-systems.swecommon.swe-common",
+        "bblocks://ogc.api.connected-systems.swecommon.abstract-data-component",
+        "bblocks://ogc.api.connected-systems.swecommon.category",
+        "bblocks://ogc.api.connected-systems.swecommon.basic-types"
+      ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
+      "dateOfLastChange": "2026-09-23",
+      "schema": {
+        "application/yaml": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/data-choice/schema.yaml",
+        "application/json": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/data-choice/schema.json"
+      },
+      "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/data-choice/schema.json",
+      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/data-choice/resolvedProperties.json",
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/data-choice/",
+      "validationPassed": true,
+      "testOutputs": "https://github.com/ogcincubator/bblocks-connected-systems/blob/master/build/tests/api/connected-systems/swecommon/data-choice/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/markdown/api/connected-systems/swecommon/data-choice/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/json-full/api/connected-systems/swecommon/data-choice/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/bblock/ogc.api.connected-systems.swecommon.data-choice"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.api.connected-systems.swecommon.data-record",
+      "name": "DataRecord",
+      "abstract": "Implementation of ISO-11404 Record datatype. This allows grouping (sequence) of data components which can themselves be simple types, records, arrays or choices",
+      "status": "under-development",
+      "dateTimeAddition": "2026-09-23T00:00:00Z",
+      "itemClass": "schema",
+      "version": "0.1",
+      "group": "SWE Common",
+      "sources": [
+        {
+          "title": "swecommon/schemas/json/DataRecord.json in opengeospatial/ogcapi-connected-systems",
+          "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/swecommon/schemas/json/DataRecord.json"
+        }
+      ],
+      "shaclShapes": {},
+      "dependsOn": [
+        "bblocks://ogc.api.connected-systems.swecommon.swe-common",
+        "bblocks://ogc.api.connected-systems.swecommon.abstract-data-component",
+        "bblocks://ogc.api.connected-systems.swecommon.basic-types"
+      ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
+      "dateOfLastChange": "2026-09-23",
+      "schema": {
+        "application/yaml": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/data-record/schema.yaml",
+        "application/json": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/data-record/schema.json"
+      },
+      "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/data-record/schema.json",
+      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/data-record/resolvedProperties.json",
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/data-record/",
+      "validationPassed": true,
+      "testOutputs": "https://github.com/ogcincubator/bblocks-connected-systems/blob/master/build/tests/api/connected-systems/swecommon/data-record/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/markdown/api/connected-systems/swecommon/data-record/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/json-full/api/connected-systems/swecommon/data-record/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/bblock/ogc.api.connected-systems.swecommon.data-record"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.api.connected-systems.swecommon.data-stream",
+      "name": "DataStream",
+      "abstract": "Defines the structure of the element that will be repeated in the stream",
+      "status": "under-development",
+      "dateTimeAddition": "2026-09-23T00:00:00Z",
+      "itemClass": "schema",
+      "version": "0.1",
+      "group": "SWE Common",
+      "sources": [
+        {
+          "title": "swecommon/schemas/json/DataStream.json in opengeospatial/ogcapi-connected-systems",
+          "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/swecommon/schemas/json/DataStream.json"
+        }
+      ],
+      "shaclShapes": {},
+      "dependsOn": [
+        "bblocks://ogc.api.connected-systems.swecommon.encodings",
+        "bblocks://ogc.api.connected-systems.swecommon.basic-types",
+        "bblocks://ogc.api.connected-systems.swecommon.swe-common",
+        "bblocks://ogc.api.connected-systems.swecommon.abstract-swe-identifiable"
+      ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
+      "dateOfLastChange": "2026-09-23",
+      "schema": {
+        "application/yaml": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/data-stream/schema.yaml",
+        "application/json": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/data-stream/schema.json"
+      },
+      "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/data-stream/schema.json",
+      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/swecommon/data-stream/resolvedProperties.json",
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/data-stream/",
+      "validationPassed": true,
+      "testOutputs": "https://github.com/ogcincubator/bblocks-connected-systems/blob/master/build/tests/api/connected-systems/swecommon/data-stream/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/markdown/api/connected-systems/swecommon/data-stream/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/json-full/api/connected-systems/swecommon/data-stream/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/bblock/ogc.api.connected-systems.swecommon.data-stream"
+        }
+      }
+    },
+    {
       "itemIdentifier": "ogc.api.connected-systems.part2.command-schema",
       "name": "CommandSchema",
       "abstract": "Schema describing the content of commands in a ControlStream; the syntax depends on the command format (JSON, SWE, Protobuf or other).",
@@ -3623,10 +3525,10 @@
       ],
       "shaclShapes": {},
       "dependsOn": [
-        "bblocks://ogc.api.connected-systems.part2.command-schema-protobuf",
         "bblocks://ogc.api.connected-systems.part2.command-schema-json",
         "bblocks://ogc.api.connected-systems.part2.command-schema-any-other",
-        "bblocks://ogc.api.connected-systems.part2.command-schema-swe"
+        "bblocks://ogc.api.connected-systems.part2.command-schema-swe",
+        "bblocks://ogc.api.connected-systems.part2.command-schema-protobuf"
       ],
       "license": {
         "name": "Apache-2.0",
@@ -3657,56 +3559,6 @@
       }
     },
     {
-      "itemIdentifier": "ogc.api.connected-systems.part2.observation-schema",
-      "name": "ObservationSchema",
-      "abstract": "Schema describing the content of observations in a DataStream; the syntax depends on the observation format (JSON, SWE, Protobuf or other).",
-      "status": "under-development",
-      "dateTimeAddition": "2026-09-23T00:00:00Z",
-      "itemClass": "schema",
-      "version": "0.1",
-      "group": "Part 2",
-      "sources": [
-        {
-          "title": "api/part2/openapi/schemas/json/observationSchema.json in opengeospatial/ogcapi-connected-systems",
-          "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/api/part2/openapi/schemas/json/observationSchema.json"
-        }
-      ],
-      "shaclShapes": {},
-      "dependsOn": [
-        "bblocks://ogc.api.connected-systems.part2.observation-schema-any-other",
-        "bblocks://ogc.api.connected-systems.part2.observation-schema-json",
-        "bblocks://ogc.api.connected-systems.part2.observation-schema-swe",
-        "bblocks://ogc.api.connected-systems.part2.observation-schema-protobuf"
-      ],
-      "license": {
-        "name": "Apache-2.0",
-        "url": "https://www.apache.org/licenses/LICENSE-2.0"
-      },
-      "dateOfLastChange": "2026-09-23",
-      "schema": {
-        "application/yaml": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part2/observation-schema/schema.yaml",
-        "application/json": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part2/observation-schema/schema.json"
-      },
-      "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part2/observation-schema/schema.json",
-      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part2/observation-schema/resolvedProperties.json",
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part2/observation-schema/",
-      "validationPassed": true,
-      "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/markdown/api/connected-systems/part2/observation-schema/index.md"
-        },
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/json-full/api/connected-systems/part2/observation-schema/index.json"
-        },
-        "bblocks-viewer": {
-          "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/bblock/ogc.api.connected-systems.part2.observation-schema"
-        }
-      }
-    },
-    {
       "itemIdentifier": "ogc.api.connected-systems.part1.property-sensorml",
       "name": "Property (SensorML)",
       "abstract": "A Property (SensorML 3.0 JSON encoding): a definition of an observable or controllable property (e.g. temperature, wind speed) that systems and procedures can reference.",
@@ -3723,8 +3575,8 @@
       ],
       "shaclShapes": {},
       "dependsOn": [
-        "bblocks://ogc.api.connected-systems.part1.links",
-        "bblocks://ogc.api.connected-systems.sensorml.derived-property"
+        "bblocks://ogc.api.connected-systems.sensorml.derived-property",
+        "bblocks://ogc.api.connected-systems.part1.links"
       ],
       "license": {
         "name": "Apache-2.0",
@@ -3739,6 +3591,7 @@
       "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part1/property-sensorml/resolvedProperties.json",
       "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part1/property-sensorml/",
       "validationPassed": true,
+      "testOutputs": "https://github.com/ogcincubator/bblocks-connected-systems/blob/master/build/tests/api/connected-systems/part1/property-sensorml/",
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
@@ -3771,13 +3624,13 @@
       ],
       "shaclShapes": {},
       "dependsOn": [
-        "bblocks://ogc.api.connected-systems.swecommon.data-array",
-        "bblocks://ogc.api.connected-systems.common.time-instant",
-        "bblocks://ogc.api.connected-systems.swecommon.abstract-swe-identifiable",
         "bblocks://ogc.api.connected-systems.swecommon.vector",
+        "bblocks://ogc.api.connected-systems.swecommon.data-array",
         "bblocks://ogc.api.connected-systems.swecommon.basic-types",
+        "bblocks://ogc.api.connected-systems.common.time-instant",
         "bblocks://ogc.api.connected-systems.swecommon.swe-common",
         "bblocks://ogc.api.connected-systems.swecommon.matrix",
+        "bblocks://ogc.api.connected-systems.swecommon.abstract-swe-identifiable",
         "bblocks://ogc.api.connected-systems.common.time-period"
       ],
       "license": {
@@ -3808,6 +3661,105 @@
       }
     },
     {
+      "itemIdentifier": "ogc.api.connected-systems.part2.data-stream-schema-def",
+      "name": "DataStreamSchemaDef",
+      "abstract": "Schema definition of the observation record of a DataStream, describing phenomenon time, result time, feature of interest, result and parameters with SWE Common components.",
+      "status": "under-development",
+      "dateTimeAddition": "2026-09-23T00:00:00Z",
+      "itemClass": "schema",
+      "version": "0.1",
+      "group": "Part 2",
+      "sources": [
+        {
+          "title": "api/part2/openapi/schemas/json/dataStreamSchemaDef.json in opengeospatial/ogcapi-connected-systems",
+          "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/api/part2/openapi/schemas/json/dataStreamSchemaDef.json"
+        }
+      ],
+      "shaclShapes": {},
+      "dependsOn": [
+        "bblocks://ogc.api.connected-systems.swecommon.data-record",
+        "bblocks://ogc.api.connected-systems.swecommon.swe-common",
+        "bblocks://ogc.api.connected-systems.swecommon.category",
+        "bblocks://ogc.api.connected-systems.swecommon.time"
+      ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
+      "dateOfLastChange": "2026-09-23",
+      "schema": {
+        "application/yaml": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part2/data-stream-schema-def/schema.yaml",
+        "application/json": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part2/data-stream-schema-def/schema.json"
+      },
+      "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part2/data-stream-schema-def/schema.json",
+      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part2/data-stream-schema-def/resolvedProperties.json",
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part2/data-stream-schema-def/",
+      "validationPassed": true,
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/markdown/api/connected-systems/part2/data-stream-schema-def/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/json-full/api/connected-systems/part2/data-stream-schema-def/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/bblock/ogc.api.connected-systems.part2.data-stream-schema-def"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.api.connected-systems.part2.observation-schema-json",
+      "name": "ObservationSchemaJson",
+      "abstract": "Observation schema for the JSON format (`application/json`), describing the observation result, parameters and related fields with SWE Common components.",
+      "status": "under-development",
+      "dateTimeAddition": "2026-09-23T00:00:00Z",
+      "itemClass": "schema",
+      "version": "0.1",
+      "group": "Part 2",
+      "sources": [
+        {
+          "title": "api/part2/openapi/schemas/json/observationSchemaJson.json in opengeospatial/ogcapi-connected-systems",
+          "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/api/part2/openapi/schemas/json/observationSchemaJson.json"
+        }
+      ],
+      "shaclShapes": {},
+      "dependsOn": [
+        "bblocks://ogc.api.connected-systems.swecommon.data-record",
+        "bblocks://ogc.api.connected-systems.swecommon.swe-common"
+      ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
+      "dateOfLastChange": "2026-09-23",
+      "schema": {
+        "application/yaml": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part2/observation-schema-json/schema.yaml",
+        "application/json": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part2/observation-schema-json/schema.json"
+      },
+      "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part2/observation-schema-json/schema.json",
+      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part2/observation-schema-json/resolvedProperties.json",
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part2/observation-schema-json/",
+      "validationPassed": true,
+      "testOutputs": "https://github.com/ogcincubator/bblocks-connected-systems/blob/master/build/tests/api/connected-systems/part2/observation-schema-json/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/markdown/api/connected-systems/part2/observation-schema-json/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/json-full/api/connected-systems/part2/observation-schema-json/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/bblock/ogc.api.connected-systems.part2.observation-schema-json"
+        }
+      }
+    },
+    {
       "itemIdentifier": "ogc.api.connected-systems.part2.control-stream",
       "name": "ControlStream",
       "abstract": "A ControlStream: a channel through which commands are sent to a controllable System, describing the supported command parameters, result schema and formats.",
@@ -3825,10 +3777,10 @@
       "shaclShapes": {},
       "dependsOn": [
         "bblocks://ogc.api.connected-systems.part1.links",
-        "bblocks://ogc.api.connected-systems.part2.base-stream",
+        "bblocks://ogc.api.connected-systems.part2.command-schema",
         "bblocks://ogc.api.connected-systems.common.link",
-        "bblocks://ogc.api.connected-systems.common.time-period",
-        "bblocks://ogc.api.connected-systems.part2.command-schema"
+        "bblocks://ogc.api.connected-systems.part2.base-stream",
+        "bblocks://ogc.api.connected-systems.common.time-period"
       ],
       "license": {
         "name": "Apache-2.0",
@@ -3856,58 +3808,6 @@
         "bblocks-viewer": {
           "mediatype": "text/html",
           "url": "https://ogcincubator.github.io/bblocks-connected-systems/bblock/ogc.api.connected-systems.part2.control-stream"
-        }
-      }
-    },
-    {
-      "itemIdentifier": "ogc.api.connected-systems.part2.data-stream",
-      "name": "DataStream",
-      "abstract": "A DataStream: a time-ordered stream of observations produced by a System, describing the observed properties, result schema and formats. Observations are posted to and retrieved from it.",
-      "status": "under-development",
-      "dateTimeAddition": "2026-09-23T00:00:00Z",
-      "itemClass": "schema",
-      "version": "0.1",
-      "group": "Part 2",
-      "sources": [
-        {
-          "title": "api/part2/openapi/schemas/json/dataStream.json in opengeospatial/ogcapi-connected-systems",
-          "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/api/part2/openapi/schemas/json/dataStream.json"
-        }
-      ],
-      "shaclShapes": {},
-      "dependsOn": [
-        "bblocks://ogc.api.connected-systems.part1.links",
-        "bblocks://ogc.api.connected-systems.part2.base-stream",
-        "bblocks://ogc.api.connected-systems.common.link",
-        "bblocks://ogc.api.connected-systems.common.time-period",
-        "bblocks://ogc.api.connected-systems.part2.observation-schema"
-      ],
-      "license": {
-        "name": "Apache-2.0",
-        "url": "https://www.apache.org/licenses/LICENSE-2.0"
-      },
-      "dateOfLastChange": "2026-09-23",
-      "schema": {
-        "application/yaml": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part2/data-stream/schema.yaml",
-        "application/json": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part2/data-stream/schema.json"
-      },
-      "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part2/data-stream/schema.json",
-      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part2/data-stream/resolvedProperties.json",
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part2/data-stream/",
-      "validationPassed": true,
-      "testOutputs": "https://github.com/ogcincubator/bblocks-connected-systems/blob/master/build/tests/api/connected-systems/part2/data-stream/",
-      "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/markdown/api/connected-systems/part2/data-stream/index.md"
-        },
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/json-full/api/connected-systems/part2/data-stream/index.json"
-        },
-        "bblocks-viewer": {
-          "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/bblock/ogc.api.connected-systems.part2.data-stream"
         }
       }
     },
@@ -4006,6 +3906,56 @@
       }
     },
     {
+      "itemIdentifier": "ogc.api.connected-systems.part2.observation-schema",
+      "name": "ObservationSchema",
+      "abstract": "Schema describing the content of observations in a DataStream; the syntax depends on the observation format (JSON, SWE, Protobuf or other).",
+      "status": "under-development",
+      "dateTimeAddition": "2026-09-23T00:00:00Z",
+      "itemClass": "schema",
+      "version": "0.1",
+      "group": "Part 2",
+      "sources": [
+        {
+          "title": "api/part2/openapi/schemas/json/observationSchema.json in opengeospatial/ogcapi-connected-systems",
+          "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/api/part2/openapi/schemas/json/observationSchema.json"
+        }
+      ],
+      "shaclShapes": {},
+      "dependsOn": [
+        "bblocks://ogc.api.connected-systems.part2.observation-schema-any-other",
+        "bblocks://ogc.api.connected-systems.part2.observation-schema-protobuf",
+        "bblocks://ogc.api.connected-systems.part2.observation-schema-json",
+        "bblocks://ogc.api.connected-systems.part2.observation-schema-swe"
+      ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
+      "dateOfLastChange": "2026-09-23",
+      "schema": {
+        "application/yaml": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part2/observation-schema/schema.yaml",
+        "application/json": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part2/observation-schema/schema.json"
+      },
+      "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part2/observation-schema/schema.json",
+      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part2/observation-schema/resolvedProperties.json",
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part2/observation-schema/",
+      "validationPassed": true,
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/markdown/api/connected-systems/part2/observation-schema/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/json-full/api/connected-systems/part2/observation-schema/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/bblock/ogc.api.connected-systems.part2.observation-schema"
+        }
+      }
+    },
+    {
       "itemIdentifier": "ogc.api.connected-systems.part2.control-stream-collection",
       "name": "ControlStreamCollection",
       "abstract": "Paged collection of ControlStream resources as returned by list queries, with the items plus navigation `links`.",
@@ -4070,8 +4020,8 @@
       ],
       "shaclShapes": {},
       "dependsOn": [
-        "bblocks://ogc.api.connected-systems.part2.control-stream",
-        "bblocks://ogc.api.connected-systems.part2.command-schema"
+        "bblocks://ogc.api.connected-systems.part2.command-schema",
+        "bblocks://ogc.api.connected-systems.part2.control-stream"
       ],
       "license": {
         "name": "Apache-2.0",
@@ -4086,6 +4036,7 @@
       "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part2/control-stream-create/resolvedProperties.json",
       "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part2/control-stream-create/",
       "validationPassed": true,
+      "testOutputs": "https://github.com/ogcincubator/bblocks-connected-systems/blob/master/build/tests/api/connected-systems/part2/control-stream-create/",
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
@@ -4098,102 +4049,6 @@
         "bblocks-viewer": {
           "mediatype": "text/html",
           "url": "https://ogcincubator.github.io/bblocks-connected-systems/bblock/ogc.api.connected-systems.part2.control-stream-create"
-        }
-      }
-    },
-    {
-      "itemIdentifier": "ogc.api.connected-systems.part2.data-stream-collection",
-      "name": "DataStreamCollection",
-      "abstract": "Paged collection of DataStream resources as returned by list queries, with the items plus navigation `links`.",
-      "status": "under-development",
-      "dateTimeAddition": "2026-09-23T00:00:00Z",
-      "itemClass": "schema",
-      "version": "0.1",
-      "group": "Part 2",
-      "sources": [
-        {
-          "title": "api/part2/openapi/schemas/json/dataStreamCollection.json in opengeospatial/ogcapi-connected-systems",
-          "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/api/part2/openapi/schemas/json/dataStreamCollection.json"
-        }
-      ],
-      "shaclShapes": {},
-      "dependsOn": [
-        "bblocks://ogc.api.connected-systems.part1.links",
-        "bblocks://ogc.api.connected-systems.part2.data-stream"
-      ],
-      "license": {
-        "name": "Apache-2.0",
-        "url": "https://www.apache.org/licenses/LICENSE-2.0"
-      },
-      "dateOfLastChange": "2026-09-23",
-      "schema": {
-        "application/yaml": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part2/data-stream-collection/schema.yaml",
-        "application/json": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part2/data-stream-collection/schema.json"
-      },
-      "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part2/data-stream-collection/schema.json",
-      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part2/data-stream-collection/resolvedProperties.json",
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part2/data-stream-collection/",
-      "validationPassed": true,
-      "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/markdown/api/connected-systems/part2/data-stream-collection/index.md"
-        },
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/json-full/api/connected-systems/part2/data-stream-collection/index.json"
-        },
-        "bblocks-viewer": {
-          "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/bblock/ogc.api.connected-systems.part2.data-stream-collection"
-        }
-      }
-    },
-    {
-      "itemIdentifier": "ogc.api.connected-systems.part2.data-stream-create",
-      "name": "DataStream_create",
-      "abstract": "Create payload for a DataStream: the DataStream properties plus the required `schema` (observation schema) describing the content of its observations.",
-      "status": "under-development",
-      "dateTimeAddition": "2026-09-23T00:00:00Z",
-      "itemClass": "schema",
-      "version": "0.1",
-      "group": "Part 2",
-      "sources": [
-        {
-          "title": "api/part2/openapi/schemas/json/dataStream_create.json in opengeospatial/ogcapi-connected-systems",
-          "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/api/part2/openapi/schemas/json/dataStream_create.json"
-        }
-      ],
-      "shaclShapes": {},
-      "dependsOn": [
-        "bblocks://ogc.api.connected-systems.part2.observation-schema",
-        "bblocks://ogc.api.connected-systems.part2.data-stream"
-      ],
-      "license": {
-        "name": "Apache-2.0",
-        "url": "https://www.apache.org/licenses/LICENSE-2.0"
-      },
-      "dateOfLastChange": "2026-09-23",
-      "schema": {
-        "application/yaml": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part2/data-stream-create/schema.yaml",
-        "application/json": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part2/data-stream-create/schema.json"
-      },
-      "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part2/data-stream-create/schema.json",
-      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part2/data-stream-create/resolvedProperties.json",
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part2/data-stream-create/",
-      "validationPassed": true,
-      "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/markdown/api/connected-systems/part2/data-stream-create/index.md"
-        },
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/json-full/api/connected-systems/part2/data-stream-create/index.json"
-        },
-        "bblocks-viewer": {
-          "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/bblock/ogc.api.connected-systems.part2.data-stream-create"
         }
       }
     },
@@ -4262,8 +4117,8 @@
       ],
       "shaclShapes": {},
       "dependsOn": [
-        "bblocks://ogc.api.connected-systems.sensorml.settings",
-        "bblocks://ogc.api.connected-systems.common.link"
+        "bblocks://ogc.api.connected-systems.common.link",
+        "bblocks://ogc.api.connected-systems.sensorml.settings"
       ],
       "license": {
         "name": "Apache-2.0",
@@ -4310,8 +4165,8 @@
       ],
       "shaclShapes": {},
       "dependsOn": [
-        "bblocks://ogc.api.connected-systems.sensorml.settings",
         "bblocks://ogc.api.connected-systems.swecommon.abstract-swe-identifiable",
+        "bblocks://ogc.api.connected-systems.sensorml.settings",
         "bblocks://ogc.api.connected-systems.sensorml.responsible-party",
         "bblocks://ogc.api.connected-systems.sensorml.common-defs",
         "bblocks://ogc.api.connected-systems.sensorml.document"
@@ -4345,6 +4200,58 @@
       }
     },
     {
+      "itemIdentifier": "ogc.api.connected-systems.part2.data-stream",
+      "name": "DataStream",
+      "abstract": "A DataStream: a time-ordered stream of observations produced by a System, describing the observed properties, result schema and formats. Observations are posted to and retrieved from it.",
+      "status": "under-development",
+      "dateTimeAddition": "2026-09-23T00:00:00Z",
+      "itemClass": "schema",
+      "version": "0.1",
+      "group": "Part 2",
+      "sources": [
+        {
+          "title": "api/part2/openapi/schemas/json/dataStream.json in opengeospatial/ogcapi-connected-systems",
+          "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/api/part2/openapi/schemas/json/dataStream.json"
+        }
+      ],
+      "shaclShapes": {},
+      "dependsOn": [
+        "bblocks://ogc.api.connected-systems.part1.links",
+        "bblocks://ogc.api.connected-systems.common.link",
+        "bblocks://ogc.api.connected-systems.part2.observation-schema",
+        "bblocks://ogc.api.connected-systems.part2.base-stream",
+        "bblocks://ogc.api.connected-systems.common.time-period"
+      ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
+      "dateOfLastChange": "2026-09-23",
+      "schema": {
+        "application/yaml": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part2/data-stream/schema.yaml",
+        "application/json": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part2/data-stream/schema.json"
+      },
+      "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part2/data-stream/schema.json",
+      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part2/data-stream/resolvedProperties.json",
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part2/data-stream/",
+      "validationPassed": true,
+      "testOutputs": "https://github.com/ogcincubator/bblocks-connected-systems/blob/master/build/tests/api/connected-systems/part2/data-stream/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/markdown/api/connected-systems/part2/data-stream/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/json-full/api/connected-systems/part2/data-stream/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/bblock/ogc.api.connected-systems.part2.data-stream"
+        }
+      }
+    },
+    {
       "itemIdentifier": "ogc.api.connected-systems.part1.deployed-system-sensorml",
       "name": "DeployedSystem (SensorML)",
       "abstract": "A deployed System (SensorML 3.0 JSON encoding): a system as listed within a Deployment, tying it to its installation in that deployment.",
@@ -4361,8 +4268,8 @@
       ],
       "shaclShapes": {},
       "dependsOn": [
-        "bblocks://ogc.api.connected-systems.part1.links",
-        "bblocks://ogc.api.connected-systems.sensorml.deployed-system"
+        "bblocks://ogc.api.connected-systems.sensorml.deployed-system",
+        "bblocks://ogc.api.connected-systems.part1.links"
       ],
       "license": {
         "name": "Apache-2.0",
@@ -4458,15 +4365,15 @@
       ],
       "shaclShapes": {},
       "dependsOn": [
-        "bblocks://ogc.api.connected-systems.swecommon.abstract-swe-identifiable",
-        "bblocks://ogc.api.connected-systems.sensorml.responsible-party",
         "bblocks://ogc.api.connected-systems.swecommon.swe-common",
-        "bblocks://ogc.api.connected-systems.sensorml.common-defs",
+        "bblocks://ogc.api.connected-systems.sensorml.legal-constraint",
+        "bblocks://ogc.api.connected-systems.swecommon.abstract-swe-identifiable",
         "bblocks://ogc.api.connected-systems.sensorml.contact-link",
-        "bblocks://ogc.api.connected-systems.sensorml.event",
+        "bblocks://ogc.api.connected-systems.sensorml.responsible-party",
+        "bblocks://ogc.api.connected-systems.sensorml.common-defs",
         "bblocks://ogc.api.connected-systems.sensorml.document",
-        "bblocks://ogc.api.connected-systems.common.time-period",
-        "bblocks://ogc.api.connected-systems.sensorml.legal-constraint"
+        "bblocks://ogc.api.connected-systems.sensorml.event",
+        "bblocks://ogc.api.connected-systems.common.time-period"
       ],
       "license": {
         "name": "Apache-2.0",
@@ -4493,6 +4400,103 @@
         "bblocks-viewer": {
           "mediatype": "text/html",
           "url": "https://ogcincubator.github.io/bblocks-connected-systems/bblock/ogc.api.connected-systems.sensorml.described-object"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.api.connected-systems.part2.data-stream-collection",
+      "name": "DataStreamCollection",
+      "abstract": "Paged collection of DataStream resources as returned by list queries, with the items plus navigation `links`.",
+      "status": "under-development",
+      "dateTimeAddition": "2026-09-23T00:00:00Z",
+      "itemClass": "schema",
+      "version": "0.1",
+      "group": "Part 2",
+      "sources": [
+        {
+          "title": "api/part2/openapi/schemas/json/dataStreamCollection.json in opengeospatial/ogcapi-connected-systems",
+          "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/api/part2/openapi/schemas/json/dataStreamCollection.json"
+        }
+      ],
+      "shaclShapes": {},
+      "dependsOn": [
+        "bblocks://ogc.api.connected-systems.part1.links",
+        "bblocks://ogc.api.connected-systems.part2.data-stream"
+      ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
+      "dateOfLastChange": "2026-09-23",
+      "schema": {
+        "application/yaml": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part2/data-stream-collection/schema.yaml",
+        "application/json": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part2/data-stream-collection/schema.json"
+      },
+      "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part2/data-stream-collection/schema.json",
+      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part2/data-stream-collection/resolvedProperties.json",
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part2/data-stream-collection/",
+      "validationPassed": true,
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/markdown/api/connected-systems/part2/data-stream-collection/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/json-full/api/connected-systems/part2/data-stream-collection/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/bblock/ogc.api.connected-systems.part2.data-stream-collection"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.api.connected-systems.part2.data-stream-create",
+      "name": "DataStream_create",
+      "abstract": "Create payload for a DataStream: the DataStream properties plus the required `schema` (observation schema) describing the content of its observations.",
+      "status": "under-development",
+      "dateTimeAddition": "2026-09-23T00:00:00Z",
+      "itemClass": "schema",
+      "version": "0.1",
+      "group": "Part 2",
+      "sources": [
+        {
+          "title": "api/part2/openapi/schemas/json/dataStream_create.json in opengeospatial/ogcapi-connected-systems",
+          "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/api/part2/openapi/schemas/json/dataStream_create.json"
+        }
+      ],
+      "shaclShapes": {},
+      "dependsOn": [
+        "bblocks://ogc.api.connected-systems.part2.observation-schema",
+        "bblocks://ogc.api.connected-systems.part2.data-stream"
+      ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
+      "dateOfLastChange": "2026-09-23",
+      "schema": {
+        "application/yaml": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part2/data-stream-create/schema.yaml",
+        "application/json": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part2/data-stream-create/schema.json"
+      },
+      "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part2/data-stream-create/schema.json",
+      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part2/data-stream-create/resolvedProperties.json",
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part2/data-stream-create/",
+      "validationPassed": true,
+      "testOutputs": "https://github.com/ogcincubator/bblocks-connected-systems/blob/master/build/tests/api/connected-systems/part2/data-stream-create/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/markdown/api/connected-systems/part2/data-stream-create/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/json-full/api/connected-systems/part2/data-stream-create/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/bblock/ogc.api.connected-systems.part2.data-stream-create"
         }
       }
     },
@@ -4608,8 +4612,8 @@
       ],
       "shaclShapes": {},
       "dependsOn": [
-        "bblocks://ogc.api.connected-systems.swecommon.basic-types",
         "bblocks://ogc.api.connected-systems.sensorml.deployed-system",
+        "bblocks://ogc.api.connected-systems.swecommon.basic-types",
         "bblocks://ogc.api.connected-systems.sensorml.described-object"
       ],
       "license": {
@@ -4657,8 +4661,8 @@
       ],
       "shaclShapes": {},
       "dependsOn": [
-        "bblocks://ogc.api.connected-systems.sensorml.settings",
-        "bblocks://ogc.api.connected-systems.sensorml.described-object"
+        "bblocks://ogc.api.connected-systems.sensorml.described-object",
+        "bblocks://ogc.api.connected-systems.sensorml.settings"
       ],
       "license": {
         "name": "Apache-2.0",
@@ -4753,9 +4757,9 @@
       ],
       "shaclShapes": {},
       "dependsOn": [
+        "bblocks://ogc.api.connected-systems.sensorml.deployment",
         "bblocks://ogc.api.connected-systems.part1.uris",
-        "bblocks://ogc.api.connected-systems.part1.links",
-        "bblocks://ogc.api.connected-systems.sensorml.deployment"
+        "bblocks://ogc.api.connected-systems.part1.links"
       ],
       "license": {
         "name": "Apache-2.0",
@@ -4803,13 +4807,13 @@
       ],
       "shaclShapes": {},
       "dependsOn": [
-        "bblocks://ogc.api.connected-systems.sensorml.settings",
         "bblocks://ogc.api.connected-systems.swecommon.basic-types",
-        "bblocks://ogc.api.connected-systems.common.link",
         "bblocks://ogc.api.connected-systems.swecommon.swe-common",
-        "bblocks://ogc.api.connected-systems.sensorml.common-defs",
+        "bblocks://ogc.api.connected-systems.sensorml.settings",
+        "bblocks://ogc.api.connected-systems.sensorml.described-object",
+        "bblocks://ogc.api.connected-systems.common.link",
         "bblocks://ogc.api.connected-systems.sensorml.mode",
-        "bblocks://ogc.api.connected-systems.sensorml.described-object"
+        "bblocks://ogc.api.connected-systems.sensorml.common-defs"
       ],
       "license": {
         "name": "Apache-2.0",
@@ -4903,12 +4907,12 @@
       ],
       "shaclShapes": {},
       "dependsOn": [
-        "bblocks://ogc.api.connected-systems.swecommon.data-array",
-        "bblocks://ogc.api.connected-systems.swecommon.abstract-swe-identifiable",
-        "bblocks://ogc.api.connected-systems.swecommon.vector",
         "bblocks://ogc.api.connected-systems.sensorml.pose",
-        "bblocks://ogc.api.connected-systems.common.link",
+        "bblocks://ogc.api.connected-systems.swecommon.vector",
+        "bblocks://ogc.api.connected-systems.swecommon.data-array",
         "bblocks://ogc.api.connected-systems.swecommon.data-record",
+        "bblocks://ogc.api.connected-systems.swecommon.abstract-swe-identifiable",
+        "bblocks://ogc.api.connected-systems.common.link",
         "bblocks://ogc.api.connected-systems.sensorml.abstract-process",
         "bblocks://ogc.api.connected-systems.swecommon.text"
       ],
@@ -5005,8 +5009,8 @@
       ],
       "shaclShapes": {},
       "dependsOn": [
-        "bblocks://ogc.api.connected-systems.part1.links",
-        "bblocks://ogc.api.connected-systems.part1.deployment-array-sensorml"
+        "bblocks://ogc.api.connected-systems.part1.deployment-array-sensorml",
+        "bblocks://ogc.api.connected-systems.part1.links"
       ],
       "license": {
         "name": "Apache-2.0",
@@ -5033,55 +5037,6 @@
         "bblocks-viewer": {
           "mediatype": "text/html",
           "url": "https://ogcincubator.github.io/bblocks-connected-systems/bblock/ogc.api.connected-systems.part1.deployment-collection-sensorml"
-        }
-      }
-    },
-    {
-      "itemIdentifier": "ogc.api.connected-systems.sensorml.physical-system",
-      "name": "PhysicalSystem",
-      "abstract": "PhysicalSystem schema.",
-      "status": "under-development",
-      "dateTimeAddition": "2026-09-23T00:00:00Z",
-      "itemClass": "schema",
-      "version": "0.1",
-      "group": "SensorML",
-      "sources": [
-        {
-          "title": "sensorml/schemas/json/PhysicalSystem.json in opengeospatial/ogcapi-connected-systems",
-          "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/sensorml/schemas/json/PhysicalSystem.json"
-        }
-      ],
-      "shaclShapes": {},
-      "dependsOn": [
-        "bblocks://ogc.api.connected-systems.sensorml.aggregate-process",
-        "bblocks://ogc.api.connected-systems.sensorml.abstract-physical-process"
-      ],
-      "license": {
-        "name": "Apache-2.0",
-        "url": "https://www.apache.org/licenses/LICENSE-2.0"
-      },
-      "dateOfLastChange": "2026-09-23",
-      "schema": {
-        "application/yaml": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/physical-system/schema.yaml",
-        "application/json": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/physical-system/schema.json"
-      },
-      "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/sensorml/physical-system/schema.json",
-      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/physical-system/resolvedProperties.json",
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/sensorml/physical-system/",
-      "validationPassed": true,
-      "testOutputs": "https://github.com/ogcincubator/bblocks-connected-systems/blob/master/build/tests/api/connected-systems/sensorml/physical-system/",
-      "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/markdown/api/connected-systems/sensorml/physical-system/index.md"
-        },
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/json-full/api/connected-systems/sensorml/physical-system/index.json"
-        },
-        "bblocks-viewer": {
-          "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-connected-systems/bblock/ogc.api.connected-systems.sensorml.physical-system"
         }
       }
     },
@@ -5151,13 +5106,13 @@
       ],
       "shaclShapes": {},
       "dependsOn": [
-        "bblocks://ogc.api.connected-systems.sensorml.simple-process",
-        "bblocks://ogc.api.connected-systems.swecommon.basic-types",
         "bblocks://ogc.api.connected-systems.sensorml.physical-system",
+        "bblocks://ogc.api.connected-systems.swecommon.basic-types",
+        "bblocks://ogc.api.connected-systems.sensorml.simple-process",
         "bblocks://ogc.api.connected-systems.common.link",
-        "bblocks://ogc.api.connected-systems.sensorml.common-defs",
+        "bblocks://ogc.api.connected-systems.sensorml.physical-component",
         "bblocks://ogc.api.connected-systems.sensorml.abstract-process",
-        "bblocks://ogc.api.connected-systems.sensorml.physical-component"
+        "bblocks://ogc.api.connected-systems.sensorml.common-defs"
       ],
       "license": {
         "name": "Apache-2.0",
@@ -5189,6 +5144,55 @@
       }
     },
     {
+      "itemIdentifier": "ogc.api.connected-systems.sensorml.physical-system",
+      "name": "PhysicalSystem",
+      "abstract": "PhysicalSystem schema.",
+      "status": "under-development",
+      "dateTimeAddition": "2026-09-23T00:00:00Z",
+      "itemClass": "schema",
+      "version": "0.1",
+      "group": "SensorML",
+      "sources": [
+        {
+          "title": "sensorml/schemas/json/PhysicalSystem.json in opengeospatial/ogcapi-connected-systems",
+          "link": "https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/sensorml/schemas/json/PhysicalSystem.json"
+        }
+      ],
+      "shaclShapes": {},
+      "dependsOn": [
+        "bblocks://ogc.api.connected-systems.sensorml.abstract-physical-process",
+        "bblocks://ogc.api.connected-systems.sensorml.aggregate-process"
+      ],
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
+      "dateOfLastChange": "2026-09-23",
+      "schema": {
+        "application/yaml": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/physical-system/schema.yaml",
+        "application/json": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/physical-system/schema.json"
+      },
+      "sourceSchema": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/sensorml/physical-system/schema.json",
+      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/sensorml/physical-system/resolvedProperties.json",
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/sensorml/physical-system/",
+      "validationPassed": true,
+      "testOutputs": "https://github.com/ogcincubator/bblocks-connected-systems/blob/master/build/tests/api/connected-systems/sensorml/physical-system/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/markdown/api/connected-systems/sensorml/physical-system/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/generateddocs/json-full/api/connected-systems/sensorml/physical-system/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-connected-systems/bblock/ogc.api.connected-systems.sensorml.physical-system"
+        }
+      }
+    },
+    {
       "itemIdentifier": "ogc.api.connected-systems.part1.procedure-sensorml",
       "name": "Procedure (SensorML)",
       "abstract": "A Procedure (SensorML 3.0 JSON encoding): a specification of how observations are made or commands are executed, such as a sensor datasheet, method or protocol that systems implement.",
@@ -5205,12 +5209,12 @@
       ],
       "shaclShapes": {},
       "dependsOn": [
-        "bblocks://ogc.api.connected-systems.sensorml.simple-process",
         "bblocks://ogc.api.connected-systems.sensorml.physical-system",
-        "bblocks://ogc.api.connected-systems.sensorml.aggregate-process",
         "bblocks://ogc.api.connected-systems.part1.links",
-        "bblocks://ogc.api.connected-systems.part1.uris",
-        "bblocks://ogc.api.connected-systems.sensorml.physical-component"
+        "bblocks://ogc.api.connected-systems.sensorml.simple-process",
+        "bblocks://ogc.api.connected-systems.sensorml.aggregate-process",
+        "bblocks://ogc.api.connected-systems.sensorml.physical-component",
+        "bblocks://ogc.api.connected-systems.part1.uris"
       ],
       "license": {
         "name": "Apache-2.0",
@@ -5258,12 +5262,12 @@
       ],
       "shaclShapes": {},
       "dependsOn": [
-        "bblocks://ogc.api.connected-systems.sensorml.simple-process",
         "bblocks://ogc.api.connected-systems.sensorml.physical-system",
-        "bblocks://ogc.api.connected-systems.sensorml.aggregate-process",
         "bblocks://ogc.api.connected-systems.part1.links",
-        "bblocks://ogc.api.connected-systems.part1.uris",
-        "bblocks://ogc.api.connected-systems.sensorml.physical-component"
+        "bblocks://ogc.api.connected-systems.sensorml.simple-process",
+        "bblocks://ogc.api.connected-systems.sensorml.aggregate-process",
+        "bblocks://ogc.api.connected-systems.sensorml.physical-component",
+        "bblocks://ogc.api.connected-systems.part1.uris"
       ],
       "license": {
         "name": "Apache-2.0",
@@ -5453,8 +5457,8 @@
       ],
       "shaclShapes": {},
       "dependsOn": [
-        "bblocks://ogc.api.connected-systems.part1.links",
-        "bblocks://ogc.api.connected-systems.part1.system-array-sensorml"
+        "bblocks://ogc.api.connected-systems.part1.system-array-sensorml",
+        "bblocks://ogc.api.connected-systems.part1.links"
       ],
       "license": {
         "name": "Apache-2.0",

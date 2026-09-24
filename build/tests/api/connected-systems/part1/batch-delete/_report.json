@@ -2,7 +2,7 @@
   "title": "Validation report for ogc.api.connected-systems.part1.batch-delete - Batch_delete",
   "bblockName": "Batch_delete",
   "bblockId": "ogc.api.connected-systems.part1.batch-delete",
-  "generated": "2026-09-23T22:26:43.820497+00:00",
+  "generated": "2026-09-24T07:53:22.809198+00:00",
   "result": true,
   "items": [],
   "globalErrors": {},

@@ -35,11 +35,11 @@ The following definitions can be referenced individually using their anchor, e.g
 - `ElementCount`
 - `EncodedValues`
 
-## Differences from the source
+## Known issues in the source
 
-This block differs from the upstream file (which should be fixed there too):
+This block is a faithful copy of the upstream file, which has the following mismatches with the examples of the specification (see `SCHEMA-FIXES.md`):
 
-- `DateTimeNumberOrSpecial` uses `anyOf` instead of `oneOf`: with `oneOf`, the strings `NaN`/`Infinity` etc. match both branches unless `format: date-time` is asserted, which makes valid instances fail.
+- `DateTimeNumberOrSpecial` uses `oneOf`: strings such as `NaN`/`Infinity` match both branches unless `format: date-time` is asserted, so valid instances fail. Possible resolution: `anyOf`.
 
 
 ## Schema
@@ -294,12 +294,12 @@ $defs:
       - -Infinity
     $anchor: NumberOrSpecial
   DateTimeNumberOrSpecial:
-    $anchor: DateTimeNumberOrSpecial
-    anyOf:
+    oneOf:
     - title: Date/Time
       type: string
       format: date-time
     - $ref: '#/$defs/NumberOrSpecial'
+    $anchor: DateTimeNumberOrSpecial
   ElementCount:
     type: object
     allOf:

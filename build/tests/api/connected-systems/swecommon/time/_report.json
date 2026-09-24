@@ -2,9 +2,56 @@
   "title": "Validation report for ogc.api.connected-systems.swecommon.time - Time",
   "bblockName": "Time",
   "bblockId": "ogc.api.connected-systems.swecommon.time",
-  "generated": "2026-09-23T22:26:46.724193+00:00",
+  "generated": "2026-09-24T07:53:24.723302+00:00",
   "result": true,
   "items": [
+    {
+      "source": {
+        "type": "TEST_RESOURCE",
+        "requireFail": true,
+        "filename": "_sources/swecommon/time/tests/spec-allowedTimes1-fail.json",
+        "url": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/time/tests/spec-allowedTimes1-fail.json",
+        "language": "json"
+      },
+      "result": true,
+      "sections": [
+        {
+          "name": "GENERAL",
+          "title": "General",
+          "entries": [
+            {
+              "op": "require-fail",
+              "isError": false,
+              "message": "Test was expected to fail and it did."
+            }
+          ]
+        },
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using spec-allowedTimes1-fail.json from test resources"
+            }
+          ]
+        },
+        {
+          "name": "JSON_SCHEMA",
+          "title": "JSON Schema",
+          "entries": [
+            {
+              "op": "validation",
+              "result": false,
+              "exception": "ValidationError",
+              "errorMessage": "'+Infinity' is valid under each of {'$ref': '#/$defs/NumberOrSpecial'}, {'title': 'Date/Time', 'type': 'string', 'format': 'date-time'}",
+              "isError": true,
+              "message": "ValidationError: '+Infinity' is valid under each of {'$ref': '#/$defs/NumberOrSpecial'}, {'title': 'Date/Time', 'type': 'string', 'format': 'date-time'}\n\nFailed validating 'oneOf' in schema['allOf'][1]['properties']['constraint']['properties']['intervals']['items']['items']:\n    {'$anchor': 'DateTimeNumberOrSpecial',\n     'oneOf': [{'format': 'date-time',\n                'title': 'Date/Time',\n                'type': 'string'},\n               {'$ref': '#/$defs/NumberOrSpecial'}]}\n\nOn instance['constraint']['intervals'][0][1]:\n    '+Infinity'"
+            }
+          ]
+        }
+      ]
+    },
     {
       "source": {
         "type": "EXAMPLE",
@@ -23,7 +70,7 @@
           "entries": [
             {
               "isError": false,
-              "message": "Using examples/allowedTimes1.json from examples"
+              "message": "Using examples/allowedTimes2.json from examples"
             }
           ]
         },
@@ -59,7 +106,7 @@
           "entries": [
             {
               "isError": false,
-              "message": "Using examples/allowedTimes2.json from examples"
+              "message": "Using examples/time1.json from examples"
             }
           ]
         },
@@ -95,7 +142,7 @@
           "entries": [
             {
               "isError": false,
-              "message": "Using examples/time1.json from examples"
+              "message": "Using examples/time2.json from examples"
             }
           ]
         },
@@ -131,7 +178,7 @@
           "entries": [
             {
               "isError": false,
-              "message": "Using examples/time2.json from examples"
+              "message": "Using examples/time3.json from examples"
             }
           ]
         },
@@ -156,42 +203,6 @@
         "filename": "build/tests/api/connected-systems/swecommon/time/example_5_1.json",
         "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/swecommon/time/example_5_1.json",
         "exampleIndex": 5,
-        "snippetIndex": 1,
-        "language": "application/json"
-      },
-      "result": true,
-      "sections": [
-        {
-          "name": "FILES",
-          "title": "Files",
-          "entries": [
-            {
-              "isError": false,
-              "message": "Using examples/time3.json from examples"
-            }
-          ]
-        },
-        {
-          "name": "JSON_SCHEMA",
-          "title": "JSON Schema",
-          "entries": [
-            {
-              "op": "validation",
-              "result": true,
-              "isError": false,
-              "message": "Validation passed"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": {
-        "type": "EXAMPLE",
-        "requireFail": false,
-        "filename": "build/tests/api/connected-systems/swecommon/time/example_6_1.json",
-        "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/swecommon/time/example_6_1.json",
-        "exampleIndex": 6,
         "snippetIndex": 1,
         "language": "application/json"
       },

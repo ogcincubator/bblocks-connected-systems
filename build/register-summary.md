@@ -58,17 +58,17 @@ Command schema for any other command format, identified by `commandFormat` and c
 
 Observation schema for any other observation format, identified by `obsFormat` and carrying free-form schema properties.
 
-### `ogc.api.connected-systems.swecommon.abstract-swe-identifiable` — AbstractSweIdentifiable
-
-**Type:** schema
-
-Base substitution groups for all SWE Common objects with identification metadata
-
 ### `ogc.api.connected-systems.sensorml.pose` — Pose
 
 **Type:** schema
 
 A Pose object that can be either a GeoPose Basic instance of a relative pose.
+
+### `ogc.api.connected-systems.swecommon.abstract-swe-identifiable` — AbstractSweIdentifiable
+
+**Type:** schema
+
+Base substitution groups for all SWE Common objects with identification metadata
 
 ### `ogc.api.connected-systems.swecommon.matrix` — Matrix
 
@@ -76,17 +76,17 @@ A Pose object that can be either a GeoPose Basic instance of a relative pose.
 
 Implementation of ISO-11404 Array datatype. This defines an array of identical data components with a elementCount. Values are given as a block and can be encoded in different ways
 
-### `ogc.api.connected-systems.sensorml.responsible-party` — ResponsibleParty
-
-**Type:** schema
-
-ResponsibleParty schema.
-
 ### `ogc.api.connected-systems.sensorml.legal-constraint` — LegalConstraint
 
 **Type:** schema
 
 LegalConstraint schema.
+
+### `ogc.api.connected-systems.sensorml.responsible-party` — ResponsibleParty
+
+**Type:** schema
+
+ResponsibleParty schema.
 
 ### `ogc.api.connected-systems.part1.links` — Links
 
@@ -298,12 +298,6 @@ Scalar component with integer representation used for a discrete counting value
 
 Integer pair used for specifying a count range
 
-### `ogc.api.connected-systems.swecommon.data-record` — DataRecord
-
-**Type:** schema
-
-Implementation of ISO-11404 Record datatype. This allows grouping (sequence) of data components which can themselves be simple types, records, arrays or choices
-
 ### `ogc.api.connected-systems.swecommon.encodings` — Encodings
 
 **Type:** schema
@@ -376,18 +370,6 @@ Paged collection of System resources (GeoJSON encoding) as returned by list quer
 
 Paged collection of CommandStatus reports as returned by list queries, with the items plus navigation `links`.
 
-### `ogc.api.connected-systems.swecommon.data-choice` — DataChoice
-
-**Type:** schema
-
-Implementation of a choice of two or more Data Components (also called disjoint union)
-
-### `ogc.api.connected-systems.swecommon.data-stream` — DataStream
-
-**Type:** schema
-
-Defines the structure of the element that will be repeated in the stream
-
 ### `ogc.api.connected-systems.swecommon.vector` — Vector
 
 **Type:** schema
@@ -412,18 +394,6 @@ Command schema for the JSON format (`application/json`), defining the `parameter
 
 Command schema for SWE Common encodings (text, binary, etc.), giving the record schema and encoding rules of the command stream.
 
-### `ogc.api.connected-systems.part2.data-stream-schema-def` — DataStreamSchemaDef
-
-**Type:** schema
-
-Schema definition of the observation record of a DataStream, describing phenomenon time, result time, feature of interest, result and parameters with SWE Common components.
-
-### `ogc.api.connected-systems.part2.observation-schema-json` — ObservationSchemaJson
-
-**Type:** schema
-
-Observation schema for the JSON format (`application/json`), describing the observation result, parameters and related fields with SWE Common components.
-
 ### `ogc.api.connected-systems.part2.observation-schema-swe` — ObservationSchemaSwe
 
 **Type:** schema
@@ -442,17 +412,29 @@ DerivedProperty schema.
 
 Implementation of ISO-11404 Array datatype. This defines an array of identical data components with a elementCount. Values are given as a block and can be encoded in different ways
 
+### `ogc.api.connected-systems.swecommon.data-choice` — DataChoice
+
+**Type:** schema
+
+Implementation of a choice of two or more Data Components (also called disjoint union)
+
+### `ogc.api.connected-systems.swecommon.data-record` — DataRecord
+
+**Type:** schema
+
+Implementation of ISO-11404 Record datatype. This allows grouping (sequence) of data components which can themselves be simple types, records, arrays or choices
+
+### `ogc.api.connected-systems.swecommon.data-stream` — DataStream
+
+**Type:** schema
+
+Defines the structure of the element that will be repeated in the stream
+
 ### `ogc.api.connected-systems.part2.command-schema` — CommandSchema
 
 **Type:** schema
 
 Schema describing the content of commands in a ControlStream; the syntax depends on the command format (JSON, SWE, Protobuf or other).
-
-### `ogc.api.connected-systems.part2.observation-schema` — ObservationSchema
-
-**Type:** schema
-
-Schema describing the content of observations in a DataStream; the syntax depends on the observation format (JSON, SWE, Protobuf or other).
 
 ### `ogc.api.connected-systems.part1.property-sensorml` — Property (SensorML)
 
@@ -466,17 +448,23 @@ A Property (SensorML 3.0 JSON encoding): a definition of an observable or contro
 
 Definitions shared by SensorML schemas: observable properties, terms, any-property and any-constraint unions, path references and time instant-or-period.
 
+### `ogc.api.connected-systems.part2.data-stream-schema-def` — DataStreamSchemaDef
+
+**Type:** schema
+
+Schema definition of the observation record of a DataStream, describing phenomenon time, result time, feature of interest, result and parameters with SWE Common components.
+
+### `ogc.api.connected-systems.part2.observation-schema-json` — ObservationSchemaJson
+
+**Type:** schema
+
+Observation schema for the JSON format (`application/json`), describing the observation result, parameters and related fields with SWE Common components.
+
 ### `ogc.api.connected-systems.part2.control-stream` — ControlStream
 
 **Type:** schema
 
 A ControlStream: a channel through which commands are sent to a controllable System, describing the supported command parameters, result schema and formats.
-
-### `ogc.api.connected-systems.part2.data-stream` — DataStream
-
-**Type:** schema
-
-A DataStream: a time-ordered stream of observations produced by a System, describing the observed properties, result schema and formats. Observations are posted to and retrieved from it.
 
 ### `ogc.api.connected-systems.part1.property-array-sensorml` — PropertyArray (SensorML)
 
@@ -490,6 +478,12 @@ Bare JSON array of Property resources (SensorML encoding), used as the request p
 
 Settings schema.
 
+### `ogc.api.connected-systems.part2.observation-schema` — ObservationSchema
+
+**Type:** schema
+
+Schema describing the content of observations in a DataStream; the syntax depends on the observation format (JSON, SWE, Protobuf or other).
+
 ### `ogc.api.connected-systems.part2.control-stream-collection` — ControlStreamCollection
 
 **Type:** schema
@@ -501,18 +495,6 @@ Paged collection of ControlStream resources as returned by list queries, with th
 **Type:** schema
 
 Create payload for a ControlStream: the ControlStream properties plus the required `schema` (command schema) describing the content of its commands.
-
-### `ogc.api.connected-systems.part2.data-stream-collection` — DataStreamCollection
-
-**Type:** schema
-
-Paged collection of DataStream resources as returned by list queries, with the items plus navigation `links`.
-
-### `ogc.api.connected-systems.part2.data-stream-create` — DataStream_create
-
-**Type:** schema
-
-Create payload for a DataStream: the DataStream properties plus the required `schema` (observation schema) describing the content of its observations.
 
 ### `ogc.api.connected-systems.part1.property-collection-sensorml` — PropertyCollection (SensorML)
 
@@ -532,6 +514,12 @@ DeployedSystem schema.
 
 A time tagged event with description and relevant property values.
 
+### `ogc.api.connected-systems.part2.data-stream` — DataStream
+
+**Type:** schema
+
+A DataStream: a time-ordered stream of observations produced by a System, describing the observed properties, result schema and formats. Observations are posted to and retrieved from it.
+
 ### `ogc.api.connected-systems.part1.deployed-system-sensorml` — DeployedSystem (SensorML)
 
 **Type:** schema
@@ -549,6 +537,18 @@ A SystemEvent: a time-stamped event in the life of a System (e.g. calibration, m
 **Type:** schema
 
 DescribedObject schema.
+
+### `ogc.api.connected-systems.part2.data-stream-collection` — DataStreamCollection
+
+**Type:** schema
+
+Paged collection of DataStream resources as returned by list queries, with the items plus navigation `links`.
+
+### `ogc.api.connected-systems.part2.data-stream-create` — DataStream_create
+
+**Type:** schema
+
+Create payload for a DataStream: the DataStream properties plus the required `schema` (observation schema) describing the content of its observations.
 
 ### `ogc.api.connected-systems.part1.deployed-system-array-sensorml` — DeployedSystemArray (SensorML)
 
@@ -616,12 +616,6 @@ SimpleProcess schema.
 
 Paged collection of Deployment resources (SensorML encoding) as returned by list queries, with the items plus navigation `links`.
 
-### `ogc.api.connected-systems.sensorml.physical-system` — PhysicalSystem
-
-**Type:** schema
-
-PhysicalSystem schema.
-
 ### `ogc.api.connected-systems.sensorml.physical-component` — PhysicalComponent
 
 **Type:** schema
@@ -633,6 +627,12 @@ PhysicalComponent schema.
 **Type:** schema
 
 AggregateProcess schema.
+
+### `ogc.api.connected-systems.sensorml.physical-system` — PhysicalSystem
+
+**Type:** schema
+
+PhysicalSystem schema.
 
 ### `ogc.api.connected-systems.part1.procedure-sensorml` — Procedure (SensorML)
 

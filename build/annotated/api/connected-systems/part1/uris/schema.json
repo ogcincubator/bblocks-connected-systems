@@ -45,8 +45,7 @@
         "sosa:Sensor",
         "sosa:Actuator",
         "sosa:Sampler",
-        "sosa:Platform",
-        "http://www.w3.org/ns/ssn-system/SensorKind"
+        "sosa:Platform"
       ],
       "$anchor": "ProcedureTypeUris"
     }

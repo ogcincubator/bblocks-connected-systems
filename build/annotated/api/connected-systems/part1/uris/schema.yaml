@@ -41,5 +41,4 @@ $defs:
     - sosa:Actuator
     - sosa:Sampler
     - sosa:Platform
-    - http://www.w3.org/ns/ssn-system/SensorKind
     $anchor: ProcedureTypeUris

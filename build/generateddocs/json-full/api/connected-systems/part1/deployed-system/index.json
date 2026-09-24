@@ -24,8 +24,8 @@
     ]
   },
   "dependsOn": [
-    "ogc.geo.features.feature",
-    "ogc.api.connected-systems.common.link"
+    "ogc.api.connected-systems.common.link",
+    "ogc.geo.features.feature"
   ],
   "license": {
     "name": "Apache-2.0",

@@ -17,8 +17,8 @@
   ],
   "shaclShapes": {},
   "dependsOn": [
-    "ogc.api.connected-systems.part1.links",
-    "ogc.api.connected-systems.part1.system-array-sensorml"
+    "ogc.api.connected-systems.part1.system-array-sensorml",
+    "ogc.api.connected-systems.part1.links"
   ],
   "license": {
     "name": "Apache-2.0",

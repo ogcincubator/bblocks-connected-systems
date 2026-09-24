@@ -1,0 +1,32 @@
+Validation report for ogc.api.connected-systems.part1.property-sensorml - Property (SensorML)
+Generated 2026-09-24T07:53:25.597959+00:00
+=== General ===
+Test was expected to fail and it did.
+=== End General ===
+
+=== Files ===
+Using spec-received-rf-power-fail.json from test resources
+=== End Files ===
+
+=== JSON Schema ===
+
+** Validation error **
+ValidationError: 'uniqueId' is a required property
+
+Failed validating 'required' in schema['allOf'][1]:
+    {'properties': {'links': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part1/links/schema.yaml',
+                              'description': 'Links to related resources'}},
+     'required': ['uniqueId']}
+
+On instance:
+    {'baseProperty': 'http://qudt.org/vocab/quantitykind/RF-Power',
+     'description': 'RF Power received in band 620-720 MHz',
+     'id': 'RFPower_Received_620-720',
+     'label': 'Received RF Power',
+     'qualifiers': [{'definition': 'http://qudt.org/vocab/quantitykind/Frequency',
+                     'label': 'Frequency Range',
+                     'type': 'QuantityRange',
+                     'uom': {'code': 'MHz'},
+                     'value': [620.0, 720.0]}]}
+=== End JSON Schema ===
+

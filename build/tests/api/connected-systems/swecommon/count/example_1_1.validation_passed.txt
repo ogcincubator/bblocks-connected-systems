@@ -1,5 +1,5 @@
 Validation report for ogc.api.connected-systems.swecommon.count - Count
-Generated 2026-09-23T22:26:46.492277+00:00
+Generated 2026-09-24T07:53:24.261316+00:00
 === Files ===
 Using examples/allowedValues2.json from examples
 === End Files ===

@@ -2,28 +2,37 @@
   "title": "Validation report for ogc.api.connected-systems.swecommon.data-stream - DataStream",
   "bblockName": "DataStream",
   "bblockId": "ogc.api.connected-systems.swecommon.data-stream",
-  "generated": "2026-09-23T22:26:47.399816+00:00",
+  "generated": "2026-09-24T07:53:25.562561+00:00",
   "result": true,
   "items": [
     {
       "source": {
-        "type": "EXAMPLE",
-        "requireFail": false,
-        "filename": "build/tests/api/connected-systems/swecommon/data-stream/example_1_1.json",
-        "url": "https://ogcincubator.github.io/bblocks-connected-systems/build/tests/api/connected-systems/swecommon/data-stream/example_1_1.json",
-        "exampleIndex": 1,
-        "snippetIndex": 1,
-        "language": "application/json"
+        "type": "TEST_RESOURCE",
+        "requireFail": true,
+        "filename": "_sources/swecommon/data-stream/tests/spec-datastream1-fail.json",
+        "url": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/swecommon/data-stream/tests/spec-datastream1-fail.json",
+        "language": "json"
       },
       "result": true,
       "sections": [
+        {
+          "name": "GENERAL",
+          "title": "General",
+          "entries": [
+            {
+              "op": "require-fail",
+              "isError": false,
+              "message": "Test was expected to fail and it did."
+            }
+          ]
+        },
         {
           "name": "FILES",
           "title": "Files",
           "entries": [
             {
               "isError": false,
-              "message": "Using examples/datastream1.json from examples"
+              "message": "Using spec-datastream1-fail.json from test resources"
             }
           ]
         },
@@ -33,9 +42,11 @@
           "entries": [
             {
               "op": "validation",
-              "result": true,
-              "isError": false,
-              "message": "Validation passed"
+              "result": false,
+              "exception": "ValidationError",
+              "errorMessage": "'name' is a required property",
+              "isError": true,
+              "message": "ValidationError: 'name' is a required property\n\nFailed validating 'required' in schema[1]['allOf'][1]['properties']['fields']['items']['allOf'][0]:\n    {'$anchor': 'SoftNamedProperty',\n     'properties': {'name': {'$ref': '#/$defs/NameToken'}},\n     'required': ['name'],\n     'type': 'object'}\n\nOn instance['fields'][0]:\n    {'definition': 'http://www.opengis.net/def/property/OGC/0/SamplingTime',\n     'label': 'Sampling Time',\n     'referenceFrame': 'http://www.opengis.net/def/trs/USNO/0/GPS',\n     'referenceTime': '1970-01-01T00:00:00Z',\n     'type': 'Time',\n     'uom': {'code': 's'}}"
             }
           ]
         }

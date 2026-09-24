@@ -18,9 +18,9 @@
   "shaclShapes": {},
   "dependsOn": [
     "ogc.api.connected-systems.part2.observation-schema-any-other",
+    "ogc.api.connected-systems.part2.observation-schema-protobuf",
     "ogc.api.connected-systems.part2.observation-schema-json",
-    "ogc.api.connected-systems.part2.observation-schema-swe",
-    "ogc.api.connected-systems.part2.observation-schema-protobuf"
+    "ogc.api.connected-systems.part2.observation-schema-swe"
   ],
   "license": {
     "name": "Apache-2.0",

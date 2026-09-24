@@ -1,5 +1,5 @@
 Validation report for ogc.api.connected-systems.part2.data-stream - DataStream
-Generated 2026-09-23T22:26:47.701205+00:00
+Generated 2026-09-24T07:53:25.825468+00:00
 === Files ===
 Using examples/datastream.json from examples
 === End Files ===

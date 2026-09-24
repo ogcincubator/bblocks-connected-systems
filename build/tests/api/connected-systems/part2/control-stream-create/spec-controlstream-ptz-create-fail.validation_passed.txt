@@ -1,0 +1,264 @@
+Validation report for ogc.api.connected-systems.part2.control-stream-create - ControlStream_create
+Generated 2026-09-24T07:53:25.776514+00:00
+=== General ===
+Test was expected to fail and it did.
+=== End General ===
+
+=== Files ===
+Using spec-controlstream-ptz-create-fail.json from test resources
+=== End Files ===
+
+=== JSON Schema ===
+
+** Validation error **
+ValidationError: 'system@link' is a required property
+
+Failed validating 'required' in schema['allOf'][0]:
+    {'$schema': 'https://json-schema.org/draft/2020-12/schema',
+     'allOf': [{'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part2/base-stream/schema.yaml'},
+               {'properties': {'async': {'description': 'Flag indicating '
+                                                        'if the command '
+                                                        'channel processes '
+                                                        'commands '
+                                                        'asynchronously',
+                                         'type': 'boolean'},
+                               'controlledProperties': {'oneOf': [{'type': 'null'},
+                                                                  {'description': 'List '
+                                                                                  'of '
+                                                                                  'properties '
+                                                                                  'that '
+                                                                                  'are '
+                                                                                  'controllable '
+                                                                                  'through '
+                                                                                  'this '
+                                                                                  'control '
+                                                                                  'stream',
+                                                                   'items': {'properties': {'definition': {'format': 'uri',
+                                                                                                           'type': 'string'},
+                                                                                            'description': {'type': 'string'},
+                                                                                            'label': {'type': 'string'}},
+                                                                             'type': 'object'},
+                                                                   'minItems': 1,
+                                                                   'type': 'array'}],
+                                                        'readOnly': True},
+                               'deployment@link': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/link/schema.yaml',
+                                                   'description': 'Link to '
+                                                                  'the '
+                                                                  'deployment '
+                                                                  'during '
+                                                                  'which '
+                                                                  'the '
+                                                                  'commands '
+                                                                  'are/were '
+                                                                  'received '
+                                                                  '(only '
+                                                                  'provided '
+                                                                  'if all '
+                                                                  'commands '
+                                                                  'in the '
+                                                                  'control '
+                                                                  'stream '
+                                                                  'share '
+                                                                  'the '
+                                                                  'same '
+                                                                  'deployment)'},
+                               'executionTime': {'oneOf': [{'type': 'null'},
+                                                           {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/time-period/schema.yaml',
+                                                            'description': 'Time '
+                                                                           'extent '
+                                                                           'spanning '
+                                                                           'all '
+                                                                           'execution '
+                                                                           'times '
+                                                                           'of '
+                                                                           'commands '
+                                                                           'in '
+                                                                           'this '
+                                                                           'control '
+                                                                           'stream',
+                                                            'readOnly': True}]},
+                               'featureOfInterest@link': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/link/schema.yaml',
+                                                          'description': 'Link '
+                                                                         'to '
+                                                                         'the '
+                                                                         'ultimate '
+                                                                         'feature '
+                                                                         'of '
+                                                                         'interest '
+                                                                         '(only '
+                                                                         'provided '
+                                                                         'if '
+                                                                         'all '
+                                                                         'commands '
+                                                                         'in '
+                                                                         'the '
+                                                                         'control '
+                                                                         'stream '
+                                                                         'share '
+                                                                         'the '
+                                                                         'same '
+                                                                         'feature '
+                                                                         'of '
+                                                                         'interest)'},
+                               'inputName': {'description': 'Name of the '
+                                                            'system '
+                                                            'control input '
+                                                            'receiving '
+                                                            'data from '
+                                                            'this control '
+                                                            'stream',
+                                             'type': 'string'},
+                               'issueTime': {'oneOf': [{'type': 'null'},
+                                                       {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/time-period/schema.yaml',
+                                                        'description': 'Time '
+                                                                       'extent '
+                                                                       'spanning '
+                                                                       'all '
+                                                                       'issue '
+                                                                       'times '
+                                                                       'of '
+                                                                       'commands '
+                                                                       'in '
+                                                                       'this '
+                                                                       'control '
+                                                                       'stream',
+                                                        'readOnly': True}]},
+                               'links': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part1/links/schema.yaml',
+                                         'description': 'Links to related '
+                                                        'resources'},
+                               'live': {'oneOf': [{'type': 'null'},
+                                                  {'description': 'Flag '
+                                                                  'indicating '
+                                                                  'if the '
+                                                                  'command '
+                                                                  'channel '
+                                                                  'can '
+                                                                  'currently '
+                                                                  'accept '
+                                                                  'commands',
+                                                   'readOnly': True,
+                                                   'type': 'boolean'}]},
+                               'procedure@link': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/link/schema.yaml',
+                                                  'description': 'Link to '
+                                                                 'the '
+                                                                 'procedure '
+                                                                 'used to '
+                                                                 'execute '
+                                                                 'commands '
+                                                                 '(only '
+                                                                 'provided '
+                                                                 'if all '
+                                                                 'commands '
+                                                                 'in the '
+                                                                 'control '
+                                                                 'stream '
+                                                                 'share '
+                                                                 'the same '
+                                                                 'procedure)'},
+                               'samplingFeature@link': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/link/schema.yaml',
+                                                        'description': 'Link '
+                                                                       'to '
+                                                                       'the '
+                                                                       'sampling '
+                                                                       'feature '
+                                                                       '(only '
+                                                                       'provided '
+                                                                       'if '
+                                                                       'all '
+                                                                       'commands '
+                                                                       'in '
+                                                                       'the '
+                                                                       'control '
+                                                                       'stream '
+                                                                       'share '
+                                                                       'the '
+                                                                       'same '
+                                                                       'sampling '
+                                                                       'feature)'},
+                               'schema': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part2/command-schema/schema.yaml',
+                                          'description': 'Schema '
+                                                         'describing the '
+                                                         'content of '
+                                                         'commands in this '
+                                                         'control stream. '
+                                                         'The exact syntax '
+                                                         'of the schema '
+                                                         'depends on the '
+                                                         'encoding format.',
+                                          'writeOnly': True},
+                               'system@link': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/link/schema.yaml',
+                                               'description': 'Link to the '
+                                                              'system '
+                                                              'receiving '
+                                                              'the '
+                                                              'commands',
+                                               'readOnly': True}}}],
+     'required': ['name',
+                  'system@link',
+                  'controlledProperties',
+                  'issueTime',
+                  'executionTime',
+                  'live',
+                  'async']}
+
+On instance:
+    {'async': False,
+     'inputName': 'ptz',
+     'name': 'Garage Video Camera 001 - PTZ Control',
+     'schema': {'commandFormat': 'application/json',
+                'parametersSchema': {'fields': [{'definition': 'http://sensorml.com/ont/swe/property/PanAngle',
+                                                 'description': 'Rotation '
+                                                                'of the '
+                                                                'camera '
+                                                                'around '
+                                                                'its '
+                                                                'vertical '
+                                                                'axis '
+                                                                '(i.e., '
+                                                                'causing '
+                                                                'the image '
+                                                                'to '
+                                                                'translate '
+                                                                'along its '
+                                                                'horizontal '
+                                                                'axis)',
+                                                 'label': 'Pan Angle',
+                                                 'name': 'pan',
+                                                 'type': 'Quantity',
+                                                 'uom': {'code': 'deg'}},
+                                                {'definition': 'http://sensorml.com/ont/swe/property/PanAngle',
+                                                 'description': 'Rotation '
+                                                                'of the '
+                                                                'camera '
+                                                                'around '
+                                                                'its '
+                                                                'horizontal '
+                                                                'axis '
+                                                                '(i.e., '
+                                                                'causing '
+                                                                'the image '
+                                                                'to '
+                                                                'translate '
+                                                                'along its '
+                                                                'vertical '
+                                                                'axis)',
+                                                 'label': 'Pan Angle',
+                                                 'name': 'tilt',
+                                                 'type': 'Quantity',
+                                                 'uom': {'code': 'deg'}},
+                                                {'definition': 'http://sensorml.com/ont/swe/property/ZoomFactor',
+                                                 'description': 'Amount of '
+                                                                'zoom, 0 '
+                                                                'being the '
+                                                                'highest '
+                                                                'FOV and '
+                                                                '100 being '
+                                                                'the '
+                                                                'lowest',
+                                                 'label': 'Zoom Factor',
+                                                 'name': 'zoom',
+                                                 'type': 'Quantity',
+                                                 'uom': {'code': '%'}}],
+                                     'type': 'DataRecord'}}}
+=== End JSON Schema ===
+

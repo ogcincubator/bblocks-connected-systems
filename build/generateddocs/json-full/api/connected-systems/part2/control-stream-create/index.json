@@ -17,8 +17,8 @@
   ],
   "shaclShapes": {},
   "dependsOn": [
-    "ogc.api.connected-systems.part2.control-stream",
-    "ogc.api.connected-systems.part2.command-schema"
+    "ogc.api.connected-systems.part2.command-schema",
+    "ogc.api.connected-systems.part2.control-stream"
   ],
   "license": {
     "name": "Apache-2.0",
@@ -33,7 +33,8 @@
   "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part2/control-stream-create/resolvedProperties.json",
   "sourceFiles": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part2/control-stream-create/",
   "validationPassed": true,
-  "description": "<!-- generated -->\n# ControlStream_create\n\nConverted from [`api/part2/openapi/schemas/json/controlStream_create.json`](https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/api/part2/openapi/schemas/json/controlStream_create.json) in the OGC API - Connected Systems repository.\n\n## Properties\n\n| Property | Type | Required | Description |\n|---|---|---|---|\n| `schema` | `commandSchema.json` | yes | Schema describing the content of commands in this control stream. The exact syntax of the schema depends on the encoding format. |\n\n",
+  "testOutputs": "https://github.com/ogcincubator/bblocks-connected-systems/blob/master/build/tests/api/connected-systems/part2/control-stream-create/",
+  "description": "<!-- generated -->\n# ControlStream_create\n\nConverted from [`api/part2/openapi/schemas/json/controlStream_create.json`](https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/api/part2/openapi/schemas/json/controlStream_create.json) in the OGC API - Connected Systems repository.\n\n## Properties\n\n| Property | Type | Required | Description |\n|---|---|---|---|\n| `schema` | `commandSchema.json` | yes | Schema describing the content of commands in this control stream. The exact syntax of the schema depends on the encoding format. |\n\n## Known failing examples\n\n1 example(s) taken from the specification do **not** validate against this schema. They are included as negative tests (`tests/spec-*-fail.json`), which pass only while the problem persists:\n\n- `controlstream-ptz-create.json`: Request payload validated against the response schema: `readOnly` properties (`id`, `live`, `system@link`...) are `required`.\n\n",
   "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\nallOf:\n- $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part2/control-stream/schema.yaml\n- properties:\n    schema:\n      description: Schema describing the content of commands in this control stream.\n        The exact syntax of the schema depends on the encoding format.\n      $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part2/command-schema/schema.yaml\n      writeOnly: true\n  required:\n  - schema\n",
   "gitRepository": "https://github.com/ogcincubator/bblocks-connected-systems",
   "gitPath": "_sources/part2/control-stream-create"

@@ -1,5 +1,5 @@
 Validation report for ogc.api.connected-systems.swecommon.data-array - DataArray
-Generated 2026-09-23T22:26:47.659992+00:00
+Generated 2026-09-24T07:53:25.386720+00:00
 === Files ===
 Using examples/array3.json from examples
 === End Files ===

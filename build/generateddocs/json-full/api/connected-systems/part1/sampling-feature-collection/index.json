@@ -19,17 +19,17 @@
     "ogc.geo.features.featureCollection"
   ],
   "shaclShapes": {
-    "ogc.geo.features.featureCollection": [
-      "https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl"
-    ],
     "ogc.geo.features.feature": [
       "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl"
+    ],
+    "ogc.geo.features.featureCollection": [
+      "https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl"
     ]
   },
   "dependsOn": [
+    "ogc.api.connected-systems.part1.sampling-feature-array",
     "ogc.geo.features.featureCollection",
-    "ogc.api.connected-systems.part1.links",
-    "ogc.api.connected-systems.part1.sampling-feature-array"
+    "ogc.api.connected-systems.part1.links"
   ],
   "license": {
     "name": "Apache-2.0",

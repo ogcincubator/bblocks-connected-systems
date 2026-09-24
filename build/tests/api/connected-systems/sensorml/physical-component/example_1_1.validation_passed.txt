@@ -1,5 +1,5 @@
 Validation report for ogc.api.connected-systems.sensorml.physical-component - PhysicalComponent
-Generated 2026-09-23T22:26:49.233012+00:00
+Generated 2026-09-24T07:53:26.447113+00:00
 === Files ===
 Using examples/physical_component.json from examples
 === End Files ===

@@ -2,13 +2,437 @@
   "title": "Validation report for ogc.api.connected-systems.part1.property-sensorml - Property (SensorML)",
   "bblockName": "Property (SensorML)",
   "bblockId": "ogc.api.connected-systems.part1.property-sensorml",
-  "generated": "2026-09-23T22:26:47.675215+00:00",
+  "generated": "2026-09-24T07:53:25.601481+00:00",
   "result": true,
-  "items": [],
+  "items": [
+    {
+      "source": {
+        "type": "TEST_RESOURCE",
+        "requireFail": true,
+        "filename": "_sources/part1/property-sensorml/tests/spec-air-temp-fail.json",
+        "url": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part1/property-sensorml/tests/spec-air-temp-fail.json",
+        "language": "json"
+      },
+      "result": true,
+      "sections": [
+        {
+          "name": "GENERAL",
+          "title": "General",
+          "entries": [
+            {
+              "op": "require-fail",
+              "isError": false,
+              "message": "Test was expected to fail and it did."
+            }
+          ]
+        },
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using spec-air-temp-fail.json from test resources"
+            }
+          ]
+        },
+        {
+          "name": "JSON_SCHEMA",
+          "title": "JSON Schema",
+          "entries": [
+            {
+              "op": "validation",
+              "result": false,
+              "exception": "ValidationError",
+              "errorMessage": "'uniqueId' is a required property",
+              "isError": true,
+              "message": "ValidationError: 'uniqueId' is a required property\n\nFailed validating 'required' in schema['allOf'][1]:\n    {'properties': {'links': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part1/links/schema.yaml',\n                              'description': 'Links to related resources'}},\n     'required': ['uniqueId']}\n\nOn instance:\n    {'baseProperty': 'http://qudt.org/vocab/quantitykind/Temperature',\n     'description': 'Temperature of the air under cover',\n     'id': 'AirTemp',\n     'label': 'Air Temperature',\n     'objectType': 'http://dbpedia.org/resource/Atmosphere'}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": {
+        "type": "TEST_RESOURCE",
+        "requireFail": true,
+        "filename": "_sources/part1/property-sensorml/tests/spec-avg-cpu-temp-fail.json",
+        "url": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part1/property-sensorml/tests/spec-avg-cpu-temp-fail.json",
+        "language": "json"
+      },
+      "result": true,
+      "sections": [
+        {
+          "name": "GENERAL",
+          "title": "General",
+          "entries": [
+            {
+              "op": "require-fail",
+              "isError": false,
+              "message": "Test was expected to fail and it did."
+            }
+          ]
+        },
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using spec-avg-cpu-temp-fail.json from test resources"
+            }
+          ]
+        },
+        {
+          "name": "JSON_SCHEMA",
+          "title": "JSON Schema",
+          "entries": [
+            {
+              "op": "validation",
+              "result": false,
+              "exception": "ValidationError",
+              "errorMessage": "'uniqueId' is a required property",
+              "isError": true,
+              "message": "ValidationError: 'uniqueId' is a required property\n\nFailed validating 'required' in schema['allOf'][1]:\n    {'properties': {'links': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part1/links/schema.yaml',\n                              'description': 'Links to related resources'}},\n     'required': ['uniqueId']}\n\nOn instance:\n    {'baseProperty': 'http://qudt.org/vocab/quantitykind/Temperature',\n     'description': 'Hourly average of the CPU temperature',\n     'id': 'AverageCpuTemp',\n     'label': 'Average CPU Temp',\n     'objectType': 'http://dbpedia.org/resource/Central_processing_unit',\n     'statistic': 'http://sensorml.com/ont/x-stats/HourlyMean'}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": {
+        "type": "TEST_RESOURCE",
+        "requireFail": true,
+        "filename": "_sources/part1/property-sensorml/tests/spec-combustion-chamber-temp-fail.json",
+        "url": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part1/property-sensorml/tests/spec-combustion-chamber-temp-fail.json",
+        "language": "json"
+      },
+      "result": true,
+      "sections": [
+        {
+          "name": "GENERAL",
+          "title": "General",
+          "entries": [
+            {
+              "op": "require-fail",
+              "isError": false,
+              "message": "Test was expected to fail and it did."
+            }
+          ]
+        },
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using spec-combustion-chamber-temp-fail.json from test resources"
+            }
+          ]
+        },
+        {
+          "name": "JSON_SCHEMA",
+          "title": "JSON Schema",
+          "entries": [
+            {
+              "op": "validation",
+              "result": false,
+              "exception": "ValidationError",
+              "errorMessage": "'uniqueId' is a required property",
+              "isError": true,
+              "message": "ValidationError: 'uniqueId' is a required property\n\nFailed validating 'required' in schema['allOf'][1]:\n    {'properties': {'links': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part1/links/schema.yaml',\n                              'description': 'Links to related resources'}},\n     'required': ['uniqueId']}\n\nOn instance:\n    {'baseProperty': 'http://qudt.org/vocab/quantitykind/Temperature',\n     'description': 'Temperature measured inside the combustion chamber',\n     'id': 'CombustionTemp',\n     'label': 'Combustion Temp',\n     'objectType': 'http://dbpedia.org/resource/Combustion_chamber'}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": {
+        "type": "TEST_RESOURCE",
+        "requireFail": true,
+        "filename": "_sources/part1/property-sensorml/tests/spec-daily-avg-air-temp-fail.json",
+        "url": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part1/property-sensorml/tests/spec-daily-avg-air-temp-fail.json",
+        "language": "json"
+      },
+      "result": true,
+      "sections": [
+        {
+          "name": "GENERAL",
+          "title": "General",
+          "entries": [
+            {
+              "op": "require-fail",
+              "isError": false,
+              "message": "Test was expected to fail and it did."
+            }
+          ]
+        },
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using spec-daily-avg-air-temp-fail.json from test resources"
+            }
+          ]
+        },
+        {
+          "name": "JSON_SCHEMA",
+          "title": "JSON Schema",
+          "entries": [
+            {
+              "op": "validation",
+              "result": false,
+              "exception": "ValidationError",
+              "errorMessage": "'uniqueId' is a required property",
+              "isError": true,
+              "message": "ValidationError: 'uniqueId' is a required property\n\nFailed validating 'required' in schema['allOf'][1]:\n    {'properties': {'links': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part1/links/schema.yaml',\n                              'description': 'Links to related resources'}},\n     'required': ['uniqueId']}\n\nOn instance:\n    {'baseProperty': 'http://mmisw.org/ont/cf/parameter/air_temperature',\n     'description': 'Average temperature computed over a 24-hour calendar '\n                    'day, starting at midnight local time at the '\n                    'measurement location',\n     'id': 'DailyAverageAirTemp',\n     'label': 'Daily Average Temperature',\n     'statistic': 'http://sensorml.com/ont/x-stats/DailyMean'}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": {
+        "type": "TEST_RESOURCE",
+        "requireFail": true,
+        "filename": "_sources/part1/property-sensorml/tests/spec-engine-power-fail.json",
+        "url": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part1/property-sensorml/tests/spec-engine-power-fail.json",
+        "language": "json"
+      },
+      "result": true,
+      "sections": [
+        {
+          "name": "GENERAL",
+          "title": "General",
+          "entries": [
+            {
+              "op": "require-fail",
+              "isError": false,
+              "message": "Test was expected to fail and it did."
+            }
+          ]
+        },
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using spec-engine-power-fail.json from test resources"
+            }
+          ]
+        },
+        {
+          "name": "JSON_SCHEMA",
+          "title": "JSON Schema",
+          "entries": [
+            {
+              "op": "validation",
+              "result": false,
+              "exception": "ValidationError",
+              "errorMessage": "'uniqueId' is a required property",
+              "isError": true,
+              "message": "ValidationError: 'uniqueId' is a required property\n\nFailed validating 'required' in schema['allOf'][1]:\n    {'properties': {'links': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part1/links/schema.yaml',\n                              'description': 'Links to related resources'}},\n     'required': ['uniqueId']}\n\nOn instance:\n    {'baseProperty': 'http://qudt.org/vocab/quantitykind/Power',\n     'description': 'Mechanical power produced by the engine',\n     'id': 'EnginePower',\n     'label': 'Engine Power',\n     'objectType': 'http://dbpedia.org/resource/Engine'}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": {
+        "type": "TEST_RESOURCE",
+        "requireFail": true,
+        "filename": "_sources/part1/property-sensorml/tests/spec-engine-temp-fail.json",
+        "url": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part1/property-sensorml/tests/spec-engine-temp-fail.json",
+        "language": "json"
+      },
+      "result": true,
+      "sections": [
+        {
+          "name": "GENERAL",
+          "title": "General",
+          "entries": [
+            {
+              "op": "require-fail",
+              "isError": false,
+              "message": "Test was expected to fail and it did."
+            }
+          ]
+        },
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using spec-engine-temp-fail.json from test resources"
+            }
+          ]
+        },
+        {
+          "name": "JSON_SCHEMA",
+          "title": "JSON Schema",
+          "entries": [
+            {
+              "op": "validation",
+              "result": false,
+              "exception": "ValidationError",
+              "errorMessage": "'uniqueId' is a required property",
+              "isError": true,
+              "message": "ValidationError: 'uniqueId' is a required property\n\nFailed validating 'required' in schema['allOf'][1]:\n    {'properties': {'links': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part1/links/schema.yaml',\n                              'description': 'Links to related resources'}},\n     'required': ['uniqueId']}\n\nOn instance:\n    {'baseProperty': 'http://qudt.org/vocab/quantitykind/Temperature',\n     'description': 'Temperature of the engine oil, measured at the bottom '\n                    'of the engine block',\n     'id': 'EngineTemp',\n     'label': 'Engine Temp',\n     'objectType': 'http://dbpedia.org/resource/Engine'}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": {
+        "type": "TEST_RESOURCE",
+        "requireFail": true,
+        "filename": "_sources/part1/property-sensorml/tests/spec-received-rf-power-fail.json",
+        "url": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part1/property-sensorml/tests/spec-received-rf-power-fail.json",
+        "language": "json"
+      },
+      "result": true,
+      "sections": [
+        {
+          "name": "GENERAL",
+          "title": "General",
+          "entries": [
+            {
+              "op": "require-fail",
+              "isError": false,
+              "message": "Test was expected to fail and it did."
+            }
+          ]
+        },
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using spec-received-rf-power-fail.json from test resources"
+            }
+          ]
+        },
+        {
+          "name": "JSON_SCHEMA",
+          "title": "JSON Schema",
+          "entries": [
+            {
+              "op": "validation",
+              "result": false,
+              "exception": "ValidationError",
+              "errorMessage": "'uniqueId' is a required property",
+              "isError": true,
+              "message": "ValidationError: 'uniqueId' is a required property\n\nFailed validating 'required' in schema['allOf'][1]:\n    {'properties': {'links': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part1/links/schema.yaml',\n                              'description': 'Links to related resources'}},\n     'required': ['uniqueId']}\n\nOn instance:\n    {'baseProperty': 'http://qudt.org/vocab/quantitykind/RF-Power',\n     'description': 'RF Power received in band 620-720 MHz',\n     'id': 'RFPower_Received_620-720',\n     'label': 'Received RF Power',\n     'qualifiers': [{'definition': 'http://qudt.org/vocab/quantitykind/Frequency',\n                     'label': 'Frequency Range',\n                     'type': 'QuantityRange',\n                     'uom': {'code': 'MHz'},\n                     'value': [620.0, 720.0]}]}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": {
+        "type": "TEST_RESOURCE",
+        "requireFail": true,
+        "filename": "_sources/part1/property-sensorml/tests/spec-received-rf-power-xband-fail.json",
+        "url": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part1/property-sensorml/tests/spec-received-rf-power-xband-fail.json",
+        "language": "json"
+      },
+      "result": true,
+      "sections": [
+        {
+          "name": "GENERAL",
+          "title": "General",
+          "entries": [
+            {
+              "op": "require-fail",
+              "isError": false,
+              "message": "Test was expected to fail and it did."
+            }
+          ]
+        },
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using spec-received-rf-power-xband-fail.json from test resources"
+            }
+          ]
+        },
+        {
+          "name": "JSON_SCHEMA",
+          "title": "JSON Schema",
+          "entries": [
+            {
+              "op": "validation",
+              "result": false,
+              "exception": "ValidationError",
+              "errorMessage": "'uniqueId' is a required property",
+              "isError": true,
+              "message": "ValidationError: 'uniqueId' is a required property\n\nFailed validating 'required' in schema['allOf'][1]:\n    {'properties': {'links': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part1/links/schema.yaml',\n                              'description': 'Links to related resources'}},\n     'required': ['uniqueId']}\n\nOn instance:\n    {'baseProperty': 'http://qudt.org/vocab/quantitykind/RF-Power',\n     'description': 'RF Power received in band X',\n     'id': 'RFPower_Received_XBand',\n     'label': 'Received RF Power (XBand)',\n     'qualifiers': [{'definition': 'http://qudt.org/vocab/quantitykind/Frequency',\n                     'label': 'Frequency Band',\n                     'type': 'Category',\n                     'value': 'http://sensorml.com/ont/swe/spectrum/IEEE/X_band'}]}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": {
+        "type": "TEST_RESOURCE",
+        "requireFail": true,
+        "filename": "_sources/part1/property-sensorml/tests/spec-water-temp-fail.json",
+        "url": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part1/property-sensorml/tests/spec-water-temp-fail.json",
+        "language": "json"
+      },
+      "result": true,
+      "sections": [
+        {
+          "name": "GENERAL",
+          "title": "General",
+          "entries": [
+            {
+              "op": "require-fail",
+              "isError": false,
+              "message": "Test was expected to fail and it did."
+            }
+          ]
+        },
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using spec-water-temp-fail.json from test resources"
+            }
+          ]
+        },
+        {
+          "name": "JSON_SCHEMA",
+          "title": "JSON Schema",
+          "entries": [
+            {
+              "op": "validation",
+              "result": false,
+              "exception": "ValidationError",
+              "errorMessage": "'uniqueId' is a required property",
+              "isError": true,
+              "message": "ValidationError: 'uniqueId' is a required property\n\nFailed validating 'required' in schema['allOf'][1]:\n    {'properties': {'links': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part1/links/schema.yaml',\n                              'description': 'Links to related resources'}},\n     'required': ['uniqueId']}\n\nOn instance:\n    {'baseProperty': 'http://qudt.org/vocab/quantitykind/Temperature',\n     'description': 'Temperature of the sea surface water',\n     'id': 'SeaWaterTemp',\n     'label': 'Seawater Temperature',\n     'objectType': 'http://dbpedia.org/resource/Seawater'}"
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "globalErrors": {},
   "counts": {
-    "total": 0,
-    "passed": 0,
+    "total": 9,
+    "passed": 9,
     "failed": 0
   }
 }

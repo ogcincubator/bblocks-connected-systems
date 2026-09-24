@@ -28,6 +28,16 @@ Converted from [`api/part2/openapi/schemas/json/observation.json`](https://githu
 | `result` |  |  | Result of the observation. Must be valid according to the result schema provided in the datastream metadata. |
 | `result@link` | `../common/commonDefs.json#/$defs/Link` |  | Link to external result data (e.g., large raster dataset served by a tiling service) |
 
+## Known failing examples
+
+5 example(s) taken from the specification do **not** validate against this schema. They are included as negative tests (`tests/spec-*-fail.json`), which pass only while the problem persists:
+
+- `obs-link-create.json`: Request payload validated against the response schema: `readOnly` properties (`id`, `live`, `system@link`...) are `required`.
+- `obs-location-create.json`: Request payload validated against the response schema: `readOnly` properties (`id`, `live`, `system@link`...) are `required`.
+- `obs-profile-create.json`: Request payload validated against the response schema: `readOnly` properties (`id`, `live`, `system@link`...) are `required`.
+- `obs-simple-create.json`: Request payload validated against the response schema: `readOnly` properties (`id`, `live`, `system@link`...) are `required`.
+- `observationSchema-image-link.json`: Request payload validated against the response schema: `readOnly` properties (`id`, `live`, `system@link`...) are `required`.
+
 ## Examples
 
 6 example(s) taken from the specification are included and validated against this schema.

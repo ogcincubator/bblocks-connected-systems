@@ -28,6 +28,13 @@ Converted from [`api/part2/openapi/schemas/json/command.json`](https://github.co
 | `currentStatus` | `commandStatusCode.json` |  | Current status of the command |
 | `parameters` |  | yes | Command parameters. Must be valid according to the schema provided in the control stream metadata |
 
+## Known failing examples
+
+2 example(s) taken from the specification do **not** validate against this schema. They are included as negative tests (`tests/spec-*-fail.json`), which pass only while the problem persists:
+
+- `command-ptz-create.json`: Request payload validated against the response schema: `readOnly` properties (`id`, `live`, `system@link`...) are `required`.
+- `uav-mission.json`: Request payload validated against the response schema: `readOnly` properties (`id`, `live`, `system@link`...) are `required`.
+
 ## Examples
 
 1 example(s) taken from the specification are included and validated against this schema.

@@ -1,5 +1,5 @@
 Validation report for ogc.api.connected-systems.sensorml.physical-system - PhysicalSystem
-Generated 2026-09-23T22:26:48.525092+00:00
+Generated 2026-09-24T07:53:26.695523+00:00
 === General ===
 Test was expected to fail and it did.
 === End General ===
@@ -185,7 +185,7 @@ Failed validating 'required' in schema['allOf'][0]['allOf'][0]['allOf'][0]:
                                  'format': 'uri',
                                  'type': 'string'},
                     'validTime': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/time-period/schema.yaml'}},
-     'required': ['type', 'label'],
+     'required': ['type', 'label', 'uniqueId'],
      'type': 'object'}
 
 On instance:

@@ -2,9 +2,103 @@
   "title": "Validation report for ogc.api.connected-systems.part2.command - Command",
   "bblockName": "Command",
   "bblockId": "ogc.api.connected-systems.part2.command",
-  "generated": "2026-09-23T22:26:45.952183+00:00",
+  "generated": "2026-09-24T07:53:23.916025+00:00",
   "result": true,
   "items": [
+    {
+      "source": {
+        "type": "TEST_RESOURCE",
+        "requireFail": true,
+        "filename": "_sources/part2/command/tests/spec-command-ptz-create-fail.json",
+        "url": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part2/command/tests/spec-command-ptz-create-fail.json",
+        "language": "json"
+      },
+      "result": true,
+      "sections": [
+        {
+          "name": "GENERAL",
+          "title": "General",
+          "entries": [
+            {
+              "op": "require-fail",
+              "isError": false,
+              "message": "Test was expected to fail and it did."
+            }
+          ]
+        },
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using spec-command-ptz-create-fail.json from test resources"
+            }
+          ]
+        },
+        {
+          "name": "JSON_SCHEMA",
+          "title": "JSON Schema",
+          "entries": [
+            {
+              "op": "validation",
+              "result": false,
+              "exception": "ValidationError",
+              "errorMessage": "'id' is a required property",
+              "isError": true,
+              "message": "ValidationError: 'id' is a required property\n\nFailed validating 'required' in schema:\n    {'$schema': 'https://json-schema.org/draft/2020-12/schema',\n     'properties': {'controlstream@id': {'description': 'Local ID of the '\n                                                        'control stream '\n                                                        'that the command '\n                                                        'is part of. This '\n                                                        'can be omitted '\n                                                        'when posting the '\n                                                        'command to a '\n                                                        'specific control '\n                                                        'stream URL.',\n                                         'minLength': 1,\n                                         'readOnly': True,\n                                         'type': 'string'},\n                    'currentStatus': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part2/command-status-code/schema.yaml',\n                                      'description': 'Current status of '\n                                                     'the command',\n                                      'readOnly': True},\n                    'executionTime': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/time-period/schema.yaml',\n                                      'description': 'Time period during '\n                                                     'which the command '\n                                                     'was executed',\n                                      'readOnly': True},\n                    'id': {'description': 'Local ID of the command',\n                           'minLength': 1,\n                           'readOnly': True,\n                           'type': 'string'},\n                    'issueTime': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/time-instant/schema.yaml',\n                                  'description': 'Time at which the '\n                                                 'command was issued. If '\n                                                 'omitted on creation, the '\n                                                 'server sets it to the '\n                                                 'time the request was '\n                                                 'received.',\n                                  'readOnly': True},\n                    'parameters': {'description': 'Command parameters. '\n                                                  'Must be valid according '\n                                                  'to the schema provided '\n                                                  'in the control stream '\n                                                  'metadata'},\n                    'procedure@link': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/link/schema.yaml',\n                                       'description': 'Link to the '\n                                                      'procedure/method '\n                                                      'used to process the '\n                                                      'command'},\n                    'samplingFeature@id': {'description': 'Local ID of the '\n                                                          'sampling '\n                                                          'feature that is '\n                                                          'the target of '\n                                                          'the command',\n                                           'minLength': 1,\n                                           'type': 'string'},\n                    'sender': {'description': 'Identifier of the person or '\n                                              'entity who submitted the '\n                                              'command',\n                               'minLength': 1,\n                               'readOnly': True,\n                               'type': 'string'}},\n     'required': ['id', 'controlstream@id', 'issueTime', 'parameters'],\n     'type': 'object'}\n\nOn instance:\n    {'parameters': {'pan': -10.0, 'tilt': 23.0, 'zoom': 0.4}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": {
+        "type": "TEST_RESOURCE",
+        "requireFail": true,
+        "filename": "_sources/part2/command/tests/spec-uav-mission-fail.json",
+        "url": "https://ogcincubator.github.io/bblocks-connected-systems/_sources/part2/command/tests/spec-uav-mission-fail.json",
+        "language": "json"
+      },
+      "result": true,
+      "sections": [
+        {
+          "name": "GENERAL",
+          "title": "General",
+          "entries": [
+            {
+              "op": "require-fail",
+              "isError": false,
+              "message": "Test was expected to fail and it did."
+            }
+          ]
+        },
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using spec-uav-mission-fail.json from test resources"
+            }
+          ]
+        },
+        {
+          "name": "JSON_SCHEMA",
+          "title": "JSON Schema",
+          "entries": [
+            {
+              "op": "validation",
+              "result": false,
+              "exception": "ValidationError",
+              "errorMessage": "'id' is a required property",
+              "isError": true,
+              "message": "ValidationError: 'id' is a required property\n\nFailed validating 'required' in schema:\n    {'$schema': 'https://json-schema.org/draft/2020-12/schema',\n     'properties': {'controlstream@id': {'description': 'Local ID of the '\n                                                        'control stream '\n                                                        'that the command '\n                                                        'is part of. This '\n                                                        'can be omitted '\n                                                        'when posting the '\n                                                        'command to a '\n                                                        'specific control '\n                                                        'stream URL.',\n                                         'minLength': 1,\n                                         'readOnly': True,\n                                         'type': 'string'},\n                    'currentStatus': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/part2/command-status-code/schema.yaml',\n                                      'description': 'Current status of '\n                                                     'the command',\n                                      'readOnly': True},\n                    'executionTime': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/time-period/schema.yaml',\n                                      'description': 'Time period during '\n                                                     'which the command '\n                                                     'was executed',\n                                      'readOnly': True},\n                    'id': {'description': 'Local ID of the command',\n                           'minLength': 1,\n                           'readOnly': True,\n                           'type': 'string'},\n                    'issueTime': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/time-instant/schema.yaml',\n                                  'description': 'Time at which the '\n                                                 'command was issued. If '\n                                                 'omitted on creation, the '\n                                                 'server sets it to the '\n                                                 'time the request was '\n                                                 'received.',\n                                  'readOnly': True},\n                    'parameters': {'description': 'Command parameters. '\n                                                  'Must be valid according '\n                                                  'to the schema provided '\n                                                  'in the control stream '\n                                                  'metadata'},\n                    'procedure@link': {'$ref': 'https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/link/schema.yaml',\n                                       'description': 'Link to the '\n                                                      'procedure/method '\n                                                      'used to process the '\n                                                      'command'},\n                    'samplingFeature@id': {'description': 'Local ID of the '\n                                                          'sampling '\n                                                          'feature that is '\n                                                          'the target of '\n                                                          'the command',\n                                           'minLength': 1,\n                                           'type': 'string'},\n                    'sender': {'description': 'Identifier of the person or '\n                                              'entity who submitted the '\n                                              'command',\n                               'minLength': 1,\n                               'readOnly': True,\n                               'type': 'string'}},\n     'required': ['id', 'controlstream@id', 'issueTime', 'parameters'],\n     'type': 'object'}\n\nOn instance:\n    {'parameters': {'instructions': [{'altitude': 20, 'type': 'TAKEOFF'},\n                                     {'alt': 35,\n                                      'lat': 23.1455,\n                                      'lon': -86.5897,\n                                      'travelSpeed': 1.2,\n                                      'type': 'GOTO_WAYPOINT',\n                                      'yaw': 0.0},\n                                     {'duration': '45',\n                                      'loiterDirection': 'CLOCKWISE|COUNTERCLOCKWISE',\n                                      'loiterType': 'CIRCLE|HOVER',\n                                      'type': 'LOITER',\n                                      'yaw': 0.0,\n                                      'yawMode': 'auto'},\n                                     {'type': 'LAND'}],\n                    'startTime': '2023-05-026T10:20:00Z'}}"
+            }
+          ]
+        }
+      ]
+    },
     {
       "source": {
         "type": "EXAMPLE",
@@ -44,8 +138,8 @@
   ],
   "globalErrors": {},
   "counts": {
-    "total": 1,
-    "passed": 1,
+    "total": 3,
+    "passed": 3,
     "failed": 0
   }
 }

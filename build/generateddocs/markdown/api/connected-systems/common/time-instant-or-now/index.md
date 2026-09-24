@@ -16,11 +16,11 @@ Time Instant
 
 Converted from [`common/timeInstantOrNow.json`](https://github.com/opengeospatial/ogcapi-connected-systems/blob/master/common/timeInstantOrNow.json) in the OGC API - Connected Systems repository.
 
-## Differences from the source
+## Known issues in the source
 
-This block differs from the upstream file (which should be fixed there too):
+This block is a faithful copy of the upstream file, which has the following mismatches with the examples of the specification (see `SCHEMA-FIXES.md`):
 
-- Uses `anyOf` instead of `oneOf`: the string `now` also matches the `date-time` branch unless `format` is asserted, which made valid instances fail.
+- Uses `oneOf`: the string `now` also matches the `date-time` branch unless `format` is asserted, so valid instances fail. Possible resolution: `anyOf`.
 
 
 ## Schema
@@ -28,7 +28,7 @@ This block differs from the upstream file (which should be fixed there too):
 ```yaml
 $schema: https://json-schema.org/draft/2020-12/schema
 title: Time Instant
-anyOf:
+oneOf:
 - $ref: https://ogcincubator.github.io/bblocks-connected-systems/build/annotated/api/connected-systems/common/time-instant/schema.yaml
 - type: string
   const: now
