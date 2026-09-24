@@ -1,0 +1,5 @@
+examples:
+  - title: Controlstream ptz create
+    snippets:
+      - language: json
+        ref: examples/controlstream-ptz-create.json

@@ -19,11 +19,11 @@ Converted from [`swecommon/schemas/json/Time.json`](https://github.com/opengeosp
 
 ## Known failing examples
 
-1 example(s) taken from the specification do **not** validate against this schema. They are included as negative tests (`tests/spec-*-fail.json`), which pass only while the problem persists:
+1 of the examples taken from the specification do **not** validate against this schema. They are included on purpose, so the validation report shows the problem:
 
 - `allowedTimes1.json`: `DateTimeNumberOrSpecial` is a `oneOf`: `+Infinity` matches both the special-number and the date-time branch.
 
 ## Examples
 
-5 example(s) taken from the specification are included and validated against this schema.
+6 example(s) taken from the specification are included and validated against this schema.
 

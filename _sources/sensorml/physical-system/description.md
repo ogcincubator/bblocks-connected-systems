@@ -13,7 +13,7 @@ Converted from [`sensorml/schemas/json/PhysicalSystem.json`](https://github.com/
 
 ## Known failing examples
 
-4 example(s) taken from the specification do **not** validate against this schema. They are included as negative tests (`tests/spec-*-fail.json`), which pass only while the problem persists:
+4 of the examples taken from the specification do **not** validate against this schema. They are included on purpose, so the validation report shows the problem:
 
 - `sensor_datasheet_with_modes.json`: `DescribedObject` requires `uniqueId`, which embedded components/modes/processes in the example do not have.
 - `sensor_instance_with_parent_and_frame.json`: `timeInstantOrNow` is a `oneOf`: the string `now` matches both the `const` and the `date-time` branch.
@@ -22,5 +22,5 @@ Converted from [`sensorml/schemas/json/PhysicalSystem.json`](https://github.com/
 
 ## Examples
 
-4 example(s) taken from the specification are included and validated against this schema.
+8 example(s) taken from the specification are included and validated against this schema.
 

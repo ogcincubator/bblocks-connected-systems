@@ -1,5 +1,13 @@
 examples:
+  - title: Command ptz create
+    snippets:
+      - language: json
+        ref: examples/command-ptz-create.json
   - title: Command ptz
     snippets:
       - language: json
         ref: examples/command-ptz.json
+  - title: Uav mission
+    snippets:
+      - language: json
+        ref: examples/uav-mission.json

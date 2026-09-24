@@ -1,0 +1,5 @@
+examples:
+  - title: Datastream simple create
+    snippets:
+      - language: json
+        ref: examples/datastream-simple-create.json

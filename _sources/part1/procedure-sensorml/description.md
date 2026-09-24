@@ -13,8 +13,12 @@ Converted from [`api/part1/openapi/schemas/sensorml/procedure.json`](https://git
 
 ## Known failing examples
 
-2 example(s) taken from the specification do **not** validate against this schema. They are included as negative tests (`tests/spec-*-fail.json`), which pass only while the problem persists:
+2 of the examples taken from the specification do **not** validate against this schema. They are included on purpose, so the validation report shows the problem:
 
 - `ins-sensor-sml.json`: `ProcedureTypeUris` does not allow `http://www.w3.org/ns/ssn-system/SensorKind` (used as `featureType`/`definition`).
 - `sensor-datasheet-sml.json`: `ProcedureTypeUris` does not allow `http://www.w3.org/ns/ssn-system/SensorKind` (used as `featureType`/`definition`).
+
+## Examples
+
+2 example(s) taken from the specification are included and validated against this schema.
 

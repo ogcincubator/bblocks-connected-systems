@@ -20,7 +20,11 @@ The following definitions can be referenced individually using their anchor, e.g
 
 ## Known failing examples
 
-1 example(s) taken from the specification do **not** validate against this schema. They are included as negative tests (`tests/spec-*-fail.json`), which pass only while the problem persists:
+1 of the examples taken from the specification do **not** validate against this schema. They are included on purpose, so the validation report shows the problem:
 
 - `process_chain.json`: `DescribedObject` requires `uniqueId`, which embedded components/modes/processes in the example do not have.
+
+## Examples
+
+1 example(s) taken from the specification are included and validated against this schema.
 

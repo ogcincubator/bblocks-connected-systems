@@ -3,6 +3,10 @@ examples:
     snippets:
       - language: json
         ref: examples/obs-geopose.json
+  - title: Obs link create
+    snippets:
+      - language: json
+        ref: examples/obs-link-create.json
   - title: Obs link inline image
     snippets:
       - language: json
@@ -11,15 +15,31 @@ examples:
     snippets:
       - language: json
         ref: examples/obs-link.json
+  - title: Obs location create
+    snippets:
+      - language: json
+        ref: examples/obs-location-create.json
   - title: Obs location
     snippets:
       - language: json
         ref: examples/obs-location.json
+  - title: Obs profile create
+    snippets:
+      - language: json
+        ref: examples/obs-profile-create.json
   - title: Obs profile
     snippets:
       - language: json
         ref: examples/obs-profile.json
+  - title: Obs simple create
+    snippets:
+      - language: json
+        ref: examples/obs-simple-create.json
   - title: Obs simple
     snippets:
       - language: json
         ref: examples/obs-simple.json
+  - title: ObservationSchema image link
+    snippets:
+      - language: json
+        ref: examples/observationSchema-image-link.json

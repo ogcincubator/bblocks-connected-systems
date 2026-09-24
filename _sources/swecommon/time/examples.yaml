@@ -1,4 +1,8 @@
 examples:
+  - title: AllowedTimes1
+    snippets:
+      - language: json
+        ref: examples/allowedTimes1.json
   - title: AllowedTimes2
     snippets:
       - language: json

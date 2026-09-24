@@ -7,6 +7,14 @@ examples:
     snippets:
       - language: json
         ref: examples/command-status-completed.json
+  - title: Command status inline result complex
+    snippets:
+      - language: json
+        ref: examples/command-status-inline-result-complex.json
+  - title: Command status inline result simple
+    snippets:
+      - language: json
+        ref: examples/command-status-inline-result-simple.json
   - title: Command status result obs link
     snippets:
       - language: json

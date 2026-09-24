@@ -4,15 +4,15 @@ The blocks in `_sources/` are generated copies of the JSON schemas in
 [opengeospatial/ogcapi-connected-systems](https://github.com/opengeospatial/ogcapi-connected-systems)
 by `tools/convert.py`. Beyond mechanical changes (`$ref`s to `bblocks://` URIs, `$anchor` added to every
 `$defs` entry), the blocks are **faithful copies** of the upstream schemas: the problems below are deliberately
-**not fixed**, so that the specification's own examples that fail against the schemas are visible. Each such example
-is included as a negative test (`tests/spec-*-fail.json`, 42 in total), which passes only while the problem exists,
-and is listed in the block's `description.md` under "Known failing examples". All 110 blocks therefore pass
-validation, and the failures can be seen in the test report.
+**not fixed**, so that the specification's own examples that fail against the schemas are visible. Those 34 examples
+are included as regular examples, so the validation report (`build/tests/report.html`) **fails** for 14 blocks, which
+is intended: it demonstrates that the specification's schemas and examples disagree. Each affected block lists its
+failing examples in its `description.md` under "Known failing examples".
 
 In several cases it is **not known whether the schema or the example is wrong**, so the changes below are only
 possible resolutions to be discussed upstream. `python3 tools/convert.py --fixed` regenerates the register with them
-applied (10 of the 42 negative tests then become regular examples, and all blocks still pass), which shows that they
-would resolve the mismatches.
+applied (10 of the 34 failing examples then validate, leaving 24), which shows that they would resolve those
+mismatches.
 
 ## Mismatches between schemas and examples
 
@@ -38,9 +38,9 @@ This one is most likely an example bug (a required member is missing); not chang
 
 ## Other known failing examples
 
-The 10 examples affected by the mismatches above are listed, with the reason, in `tools/excluded_examples.json` (entries
-marked `fixed`). These further upstream examples do not validate against the corresponding schema either, and would
-need a schema redesign or changes to the examples:
+The 10 examples affected by the mismatches above are listed, with the reason, in `tools/known_failing_examples.json` (entries
+marked `fixed`; the file lists all 34 known failing examples). These further upstream examples do not validate
+against the corresponding schema either, and would need a schema redesign or changes to the examples:
 
 - **Request payloads vs. response schemas** (Part 2: observation `*-create`, command, command-result, command-status
   inline results, data-stream / control-stream `*-create`, datastream-external-link-edr): the schemas describe

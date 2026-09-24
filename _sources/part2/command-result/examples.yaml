@@ -1,0 +1,13 @@
+examples:
+  - title: Command result datastream
+    snippets:
+      - language: json
+        ref: examples/command-result-datastream.json
+  - title: Command result inline
+    snippets:
+      - language: json
+        ref: examples/command-result-inline.json
+  - title: Command result single obs
+    snippets:
+      - language: json
+        ref: examples/command-result-single-obs.json

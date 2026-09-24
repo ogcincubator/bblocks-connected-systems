@@ -1,0 +1,37 @@
+examples:
+  - title: Air temp
+    snippets:
+      - language: json
+        ref: examples/air-temp.json
+  - title: Avg cpu temp
+    snippets:
+      - language: json
+        ref: examples/avg-cpu-temp.json
+  - title: Combustion chamber temp
+    snippets:
+      - language: json
+        ref: examples/combustion-chamber-temp.json
+  - title: Daily avg air temp
+    snippets:
+      - language: json
+        ref: examples/daily-avg-air-temp.json
+  - title: Engine power
+    snippets:
+      - language: json
+        ref: examples/engine-power.json
+  - title: Engine temp
+    snippets:
+      - language: json
+        ref: examples/engine-temp.json
+  - title: Received rf power xband
+    snippets:
+      - language: json
+        ref: examples/received-rf-power-xband.json
+  - title: Received rf power
+    snippets:
+      - language: json
+        ref: examples/received-rf-power.json
+  - title: Water temp
+    snippets:
+      - language: json
+        ref: examples/water-temp.json

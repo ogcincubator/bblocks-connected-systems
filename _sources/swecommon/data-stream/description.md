@@ -19,10 +19,15 @@ Converted from [`swecommon/schemas/json/DataStream.json`](https://github.com/ope
 This block is a faithful copy of the upstream file, which has the following mismatches with the examples of the specification (see `SCHEMA-FIXES.md`):
 
 - The DataStream example does not validate: the first field of `elementType` has no `name`, which is required. Possible resolution: add `"name": "time"` to the example.
+- The DataStream example does not validate: the first field of `elementType` has no `name`, which is required. Possible resolution: add `"name": "time"` to the example.
 
 ## Known failing examples
 
-1 example(s) taken from the specification do **not** validate against this schema. They are included as negative tests (`tests/spec-*-fail.json`), which pass only while the problem persists:
+1 of the examples taken from the specification do **not** validate against this schema. They are included on purpose, so the validation report shows the problem:
 
 - `datastream1.json`: The first field of `elementType` has no `name`, which is required (this is an example bug, not a schema bug).
+
+## Examples
+
+1 example(s) taken from the specification are included and validated against this schema.
 

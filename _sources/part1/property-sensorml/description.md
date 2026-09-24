@@ -11,7 +11,7 @@ Converted from [`api/part1/openapi/schemas/sensorml/property.json`](https://gith
 
 ## Known failing examples
 
-9 example(s) taken from the specification do **not** validate against this schema. They are included as negative tests (`tests/spec-*-fail.json`), which pass only while the problem persists:
+9 of the examples taken from the specification do **not** validate against this schema. They are included on purpose, so the validation report shows the problem:
 
 - `air-temp.json`: Example has `id` but no `uniqueId`, which the property schema requires.
 - `avg-cpu-temp.json`: Example has `id` but no `uniqueId`, which the property schema requires.
@@ -22,4 +22,8 @@ Converted from [`api/part1/openapi/schemas/sensorml/property.json`](https://gith
 - `received-rf-power-xband.json`: Example has `id` but no `uniqueId`, which the property schema requires.
 - `received-rf-power.json`: Example has `id` but no `uniqueId`, which the property schema requires.
 - `water-temp.json`: Example has `id` but no `uniqueId`, which the property schema requires.
+
+## Examples
+
+9 example(s) taken from the specification are included and validated against this schema.
 

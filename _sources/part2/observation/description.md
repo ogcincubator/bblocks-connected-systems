@@ -19,7 +19,7 @@ Converted from [`api/part2/openapi/schemas/json/observation.json`](https://githu
 
 ## Known failing examples
 
-5 example(s) taken from the specification do **not** validate against this schema. They are included as negative tests (`tests/spec-*-fail.json`), which pass only while the problem persists:
+5 of the examples taken from the specification do **not** validate against this schema. They are included on purpose, so the validation report shows the problem:
 
 - `obs-link-create.json`: Request payload validated against the response schema: `readOnly` properties (`id`, `live`, `system@link`...) are `required`.
 - `obs-location-create.json`: Request payload validated against the response schema: `readOnly` properties (`id`, `live`, `system@link`...) are `required`.
@@ -29,5 +29,5 @@ Converted from [`api/part2/openapi/schemas/json/observation.json`](https://githu
 
 ## Examples
 
-6 example(s) taken from the specification are included and validated against this schema.
+11 example(s) taken from the specification are included and validated against this schema.
 

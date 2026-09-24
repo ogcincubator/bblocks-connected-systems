@@ -1,4 +1,8 @@
 examples:
+  - title: Datastream external link edr
+    snippets:
+      - language: json
+        ref: examples/datastream-external-link-edr.json
   - title: Datastream simple
     snippets:
       - language: json
