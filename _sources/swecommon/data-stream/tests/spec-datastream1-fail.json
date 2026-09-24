@@ -11,10 +11,7 @@
         "referenceFrame": "http://www.opengis.net/def/trs/USNO/0/GPS",
         "referenceTime": "1970-01-01T00:00:00Z",
         "label": "Sampling Time",
-        "uom": {
-          "code": "s"
-        },
-        "name": "time"
+        "uom": { "code": "s" }
       },
       {
         "name": "location",
@@ -29,9 +26,7 @@
             "definition": "http://sensorml.com/ont/swe/property/GeodeticLatitude",
             "label": "Latitude",
             "axisID": "Lat",
-            "uom": {
-              "code": "deg"
-            }
+            "uom": { "code": "deg" }
           },
           {
             "name": "lon",
@@ -39,9 +34,7 @@
             "definition": "http://sensorml.com/ont/swe/property/Longitude",
             "label": "Longitude",
             "axisID": "Lon",
-            "uom": {
-              "code": "deg"
-            }
+            "uom": { "code": "deg" }
           },
           {
             "name": "alt",
@@ -49,9 +42,7 @@
             "definition": "http://sensorml.com/ont/swe/property/HeightAboveEllipsoid",
             "label": "Altitude",
             "axisID": "h",
-            "uom": {
-              "code": "m"
-            }
+            "uom": { "code": "m" }
           }
         ]
       },
@@ -68,9 +59,7 @@
             "definition": "http://sensorml.com/ont/swe/property/TrueHeading",
             "label": "Heading",
             "axisID": "Z",
-            "uom": {
-              "code": "deg"
-            }
+            "uom": { "code": "deg" }
           },
           {
             "name": "pitch",
@@ -78,9 +67,7 @@
             "definition": "http://sensorml.com/ont/swe/property/PitchAngle",
             "label": "Pitch",
             "axisID": "X",
-            "uom": {
-              "code": "deg"
-            }
+            "uom": { "code": "deg" }
           },
           {
             "name": "roll",
@@ -88,9 +75,7 @@
             "definition": "http://sensorml.com/ont/swe/property/RollAngle",
             "label": "Roll",
             "axisID": "Y",
-            "uom": {
-              "code": "deg"
-            }
+            "uom": { "code": "deg" }
           }
         ]
       }

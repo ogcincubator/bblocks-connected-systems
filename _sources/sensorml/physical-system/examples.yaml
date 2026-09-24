@@ -3,10 +3,6 @@ examples:
     snippets:
       - language: json
         ref: examples/physical_system_instance.json
-  - title: Sensor datasheet with modes
-    snippets:
-      - language: json
-        ref: examples/sensor_datasheet_with_modes.json
   - title: Sensor instance with config
     snippets:
       - language: json
@@ -19,15 +15,3 @@ examples:
     snippets:
       - language: json
         ref: examples/sensor_instance_with_geopose_quat.json
-  - title: Sensor instance with parent and frame
-    snippets:
-      - language: json
-        ref: examples/sensor_instance_with_parent_and_frame.json
-  - title: System with components and connections
-    snippets:
-      - language: json
-        ref: examples/system_with_components_and_connections.json
-  - title: Weather station system
-    snippets:
-      - language: json
-        ref: examples/weather_station_system.json

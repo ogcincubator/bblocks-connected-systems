@@ -24,6 +24,12 @@ Converted from [`api/part2/openapi/schemas/json/dataStream.json`](https://github
 | `schema` | `observationSchema.json` |  | Schema describing the content of observations in this datastream. The exact syntax of the schema depends on the encoding format. |
 | `links` | `../common/commonDefs.json#/$defs/Links` |  | Other links to related resources |
 
+## Known failing examples
+
+1 example(s) taken from the specification do **not** validate against this schema. They are included as negative tests (`tests/spec-*-fail.json`), which pass only while the problem persists:
+
+- `datastream-external-link-edr.json`: Request payload validated against the response schema: `readOnly` properties (`id`, `live`, `system@link`...) are `required`.
+
 ## Examples
 
 2 example(s) taken from the specification are included and validated against this schema.

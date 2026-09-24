@@ -94,5 +94,55 @@
  "datastream-simple-create.json": {
   "block": "part2/data-stream-create",
   "reason": "Request payload validated against the response schema: `readOnly` properties (`id`, `live`, `system@link`...) are `required`."
+ },
+ "sensor-datasheet-geojson.json": {
+  "block": "part1/procedure",
+  "reason": "`ProcedureTypeUris` does not allow `http://www.w3.org/ns/ssn-system/SensorKind` (used as `featureType`/`definition`).",
+  "fixed": true
+ },
+ "sensor-datasheet-sml.json": {
+  "block": "part1/procedure-sensorml",
+  "reason": "`ProcedureTypeUris` does not allow `http://www.w3.org/ns/ssn-system/SensorKind` (used as `featureType`/`definition`).",
+  "fixed": true
+ },
+ "ins-sensor-sml.json": {
+  "block": "part1/procedure-sensorml",
+  "reason": "`ProcedureTypeUris` does not allow `http://www.w3.org/ns/ssn-system/SensorKind` (used as `featureType`/`definition`).",
+  "fixed": true
+ },
+ "allowedTimes1.json": {
+  "block": "swecommon/time",
+  "reason": "`DateTimeNumberOrSpecial` is a `oneOf`: `+Infinity` matches both the special-number and the date-time branch.",
+  "fixed": true
+ },
+ "datastream1.json": {
+  "block": "swecommon/data-stream",
+  "reason": "The first field of `elementType` has no `name`, which is required (this is an example bug, not a schema bug).",
+  "fixed": true
+ },
+ "sensor_datasheet_with_modes.json": {
+  "block": "sensorml/physical-system",
+  "reason": "`DescribedObject` requires `uniqueId`, which embedded components/modes/processes in the example do not have.",
+  "fixed": true
+ },
+ "weather_station_system.json": {
+  "block": "sensorml/physical-system",
+  "reason": "`DescribedObject` requires `uniqueId`, which embedded components/modes/processes in the example do not have.",
+  "fixed": true
+ },
+ "process_chain.json": {
+  "block": "sensorml/aggregate-process",
+  "reason": "`DescribedObject` requires `uniqueId`, which embedded components/modes/processes in the example do not have.",
+  "fixed": true
+ },
+ "sensor_instance_with_parent_and_frame.json": {
+  "block": "sensorml/physical-system",
+  "reason": "`timeInstantOrNow` is a `oneOf`: the string `now` matches both the `const` and the `date-time` branch.",
+  "fixed": true
+ },
+ "system_with_components_and_connections.json": {
+  "block": "sensorml/physical-system",
+  "reason": "`timeInstantOrNow` is a `oneOf`: the string `now` matches both the `const` and the `date-time` branch.",
+  "fixed": true
  }
 }

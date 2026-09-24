@@ -18,7 +18,9 @@ The following definitions can be referenced individually using their anchor, e.g
 | `components` | `#/$defs/ComponentList` |  | The list of sub-processes |
 | `connections` | `#/$defs/ConnectionList` |  | The explicit definition of data links between outputs, inputs, and parameters of the components within an aggregate process. |
 
-## Examples
+## Known failing examples
 
-1 example(s) taken from the specification are included and validated against this schema.
+1 example(s) taken from the specification do **not** validate against this schema. They are included as negative tests (`tests/spec-*-fail.json`), which pass only while the problem persists:
+
+- `process_chain.json`: `DescribedObject` requires `uniqueId`, which embedded components/modes/processes in the example do not have.
 

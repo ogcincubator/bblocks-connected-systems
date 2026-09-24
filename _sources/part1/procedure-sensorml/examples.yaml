@@ -1,9 +1,0 @@
-examples:
-  - title: Ins sensor sml
-    snippets:
-      - language: json
-        ref: examples/ins-sensor-sml.json
-  - title: Sensor datasheet sml
-    snippets:
-      - language: json
-        ref: examples/sensor-datasheet-sml.json

@@ -14,13 +14,15 @@ Converted from [`swecommon/schemas/json/DataStream.json`](https://github.com/ope
 | `encoding` |  | yes | Method used to encode the stream values |
 | `values` | `basicTypes.json#/$defs/AssociationAttributeGroup` |  | Encoded values for the stream (can be out of band) |
 
-## Differences from the source
+## Known issues in the source
 
-This block differs from the upstream file (which should be fixed there too):
+This block is a faithful copy of the upstream file, which has the following mismatches with the examples of the specification (see `SCHEMA-FIXES.md`):
 
-- The DataStream example was fixed: the first field of `elementType` had no `name`, which is required.
+- The DataStream example does not validate: the first field of `elementType` has no `name`, which is required. Possible resolution: add `"name": "time"` to the example.
 
-## Examples
+## Known failing examples
 
-1 example(s) taken from the specification are included and validated against this schema.
+1 example(s) taken from the specification do **not** validate against this schema. They are included as negative tests (`tests/spec-*-fail.json`), which pass only while the problem persists:
+
+- `datastream1.json`: The first field of `elementType` has no `name`, which is required (this is an example bug, not a schema bug).
 

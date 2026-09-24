@@ -1,5 +1,0 @@
-examples:
-  - title: Sensor datasheet geojson
-    snippets:
-      - language: json
-        ref: examples/sensor-datasheet-geojson.json

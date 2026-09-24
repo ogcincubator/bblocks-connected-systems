@@ -10,7 +10,9 @@ Converted from [`api/part1/openapi/schemas/geojson/procedure.json`](https://gith
 | `geometry` | `null` |  |  |
 | `properties` |  |  |  |
 
-## Examples
+## Known failing examples
 
-1 example(s) taken from the specification are included and validated against this schema.
+1 example(s) taken from the specification do **not** validate against this schema. They are included as negative tests (`tests/spec-*-fail.json`), which pass only while the problem persists:
+
+- `sensor-datasheet-geojson.json`: `ProcedureTypeUris` does not allow `http://www.w3.org/ns/ssn-system/SensorKind` (used as `featureType`/`definition`).
 

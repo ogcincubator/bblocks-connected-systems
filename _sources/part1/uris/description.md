@@ -11,9 +11,9 @@ The following definitions can be referenced individually using their anchor, e.g
 - `DeploymentTypeUris`
 - `ProcedureTypeUris`
 
-## Differences from the source
+## Known issues in the source
 
-This block differs from the upstream file (which should be fixed there too):
+This block is a faithful copy of the upstream file, which has the following mismatches with the examples of the specification (see `SCHEMA-FIXES.md`):
 
-- `ProcedureTypeUris` additionally allows `http://www.w3.org/ns/ssn-system/SensorKind`, which the specification's own procedure examples use as `featureType`/`definition`.
+- `ProcedureTypeUris` does not allow `http://www.w3.org/ns/ssn-system/SensorKind`, which the specification's own procedure examples use as `featureType`/`definition`. Possible resolution: add it (or change the examples).
 

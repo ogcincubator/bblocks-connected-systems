@@ -349,8 +349,7 @@
       "$anchor": "NumberOrSpecial"
     },
     "DateTimeNumberOrSpecial": {
-      "$anchor": "DateTimeNumberOrSpecial",
-      "anyOf": [
+      "oneOf": [
         {
           "title": "Date/Time",
           "type": "string",
@@ -359,7 +358,8 @@
         {
           "$ref": "#/$defs/NumberOrSpecial"
         }
-      ]
+      ],
+      "$anchor": "DateTimeNumberOrSpecial"
     },
     "ElementCount": {
       "type": "object",

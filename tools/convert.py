@@ -16,13 +16,20 @@ GEOJSON_MAP = {
 MARK = '<!-- generated -->'
 ABSTRACTS = json.load(open(Path(__file__).with_name('abstracts.json'))) if Path(__file__).with_name('abstracts.json').exists() else {}
 EXCLUDES = json.load(open(Path(__file__).with_name('excluded_examples.json'))) if Path(__file__).with_name('excluded_examples.json').exists() else {}
-DIFFS = {
-    'basicTypes.json': ['`DateTimeNumberOrSpecial` uses `anyOf` instead of `oneOf`: with `oneOf`, the strings `NaN`/`Infinity` etc. match both branches unless `format: date-time` is asserted, which makes valid instances fail.'],
-    'timeInstantOrNow.json': ['Uses `anyOf` instead of `oneOf`: the string `now` also matches the `date-time` branch unless `format` is asserted, which made valid instances fail.'],
-    'DescribedObject.json': ['`uniqueId` is no longer in `required`: embedded components, modes and inline processes in the specification examples do not have one. Top-level systems still require it in the Part 1 system schemas.'],
-    'uris.json': ['`ProcedureTypeUris` additionally allows `http://www.w3.org/ns/ssn-system/SensorKind`, which the specification\'s own procedure examples use as `featureType`/`definition`.'],
-    'datastream1.json': ['The DataStream example was fixed: the first field of `elementType` had no `name`, which is required.'],
+# The blocks are faithful copies of the upstream schemas: known problems are NOT fixed, so that the specification's
+# own examples that fail against them show up as (negative) tests. `--fixed` applies the possible resolutions instead,
+# to check that they resolve the failures (it is not always clear whether the schema or the example is at fault).
+FIXED = '--fixed' in sys.argv
+if FIXED:
+    sys.argv.remove('--fixed')
+ISSUES = {
+    'basicTypes.json': ['`DateTimeNumberOrSpecial` uses `oneOf`: strings such as `NaN`/`Infinity` match both branches unless `format: date-time` is asserted, so valid instances fail. Possible resolution: `anyOf`.'],
+    'timeInstantOrNow.json': ['Uses `oneOf`: the string `now` also matches the `date-time` branch unless `format` is asserted, so valid instances fail. Possible resolution: `anyOf`.'],
+    'DescribedObject.json': ['`uniqueId` is `required`, but embedded components, modes and inline processes in the specification examples do not have one. Possible resolution: remove it from `required` (or add `uniqueId` to the examples) (top-level systems still require it in the Part 1 system schemas).'],
+    'uris.json': ['`ProcedureTypeUris` does not allow `http://www.w3.org/ns/ssn-system/SensorKind`, which the specification\'s own procedure examples use as `featureType`/`definition`. Possible resolution: add it (or change the examples).'],
+    'datastream1.json': ['The DataStream example does not validate: the first field of `elementType` has no `name`, which is required. Possible resolution: add `"name": "time"` to the example.'],
 }
+FAILING = {}   # block schema path -> [(title, example path)] known to fail against the block's schema
 
 def kebab(name):
     name = name.replace('_', '-')
@@ -164,11 +171,14 @@ def description(p, name, schema, bid, examples):
         lines.append('')
     for fn in (p.name, *[e[1].name for e in examples]):
         pass
-    diffs = DIFFS.get(p.name, []) + [x for _, e in examples for x in DIFFS.get(e.name, [])]
+    failing = FAILING.get(p, [])
+    diffs = ISSUES.get(p.name, []) + [x for _, e in (*examples, *failing) for x in ISSUES.get(e.name, [])]
     if p.name == 'links.json' and 'part1' not in str(p):
         diffs = [x for x in diffs if 'Part 1' not in x]
     if diffs:
-        lines += ['## Differences from the source', '', 'This block differs from the upstream file (which should be fixed there too):', ''] + [f'- {x}' for x in diffs] + ['']
+        lines += ['## Known issues in the source', '', 'This block is a faithful copy of the upstream file, which has the following mismatches with the examples of the specification (see `SCHEMA-FIXES.md`):', ''] + [f'- {x}' for x in diffs] + ['']
+    if failing:
+        lines += ['## Known failing examples', '', f'{len(failing)} example(s) taken from the specification do **not** validate against this schema. They are included as negative tests (`tests/spec-*-fail.json`), which pass only while the problem persists:', ''] + [f'- `{e.name}`: {EXCLUDES.get(e.name, {}).get("reason", "see above")}' for _, e in failing] + ['']
     if examples:
         lines += ['## Examples', '', f'{len(examples)} example(s) taken from the specification are included and validated against this schema.', '']
     return '\n'.join(lines)
@@ -188,13 +198,13 @@ def convert(p, examples=(), extra_meta=None):
     schema = source_schema(p)
     add_anchors(schema)
     schema = rewrite(schema, p)
-    if p.name == 'describedObject.json' or p.name == 'DescribedObject.json':
+    if FIXED and p.name == 'DescribedObject.json':
         schema['required'] = [r for r in schema['required'] if r != 'uniqueId']
-    if p.name == 'timeInstantOrNow.json':
+    if FIXED and p.name == 'timeInstantOrNow.json':
         schema['anyOf'] = schema.pop('oneOf')  # 'now' also matches date-time when format is not asserted
-    if p.name == 'uris.json':
+    if FIXED and p.name == 'uris.json':
         schema['$defs']['ProcedureTypeUris']['enum'].append('http://www.w3.org/ns/ssn-system/SensorKind')
-    if p.name == 'basicTypes.json':
+    if FIXED and p.name == 'basicTypes.json':
         # Upstream fix: 'Infinity' strings match both branches when format is not asserted
         dt = schema['$defs']['DateTimeNumberOrSpecial']
         dt['anyOf'] = dt.pop('oneOf')
@@ -225,13 +235,23 @@ def convert(p, examples=(), extra_meta=None):
         for title, src in examples:
             dst = d / 'examples' / src.name
             shutil.copy(src, dst)
-            if src.name == 'datastream1.json':
+            if FIXED and src.name == 'datastream1.json':
                 ex_json = json.load(open(src))
                 ex_json['elementType']['fields'][0]['name'] = 'time'  # upstream example lacks the required name
                 write_json(dst, ex_json)
             lines += [f'  - title: {title}', '    snippets:', '      - language: json', f'        ref: examples/{src.name}']
         (d / 'examples.yaml').write_text('\n'.join(lines) + '\n')
+    tests = d / 'tests'
+    for old in tests.glob('spec-*-fail.json'):
+        old.unlink()
+    for title, src in FAILING.get(p, ()):
+        tests.mkdir(exist_ok=True)
+        shutil.copy(src, tests / f'spec-{src.stem}-fail.json')
     return bid
+
+def is_failing(f):
+    e = EXCLUDES.get(f.name)
+    return bool(e) and not (FIXED and e.get('fixed'))
 
 def type_index():
     return {p.stem: p for p in BLOCKS if BLOCKS[p][1] in ('SWE Common', 'SensorML') and p != COMMON_DEFS}
@@ -250,7 +270,7 @@ def spec_examples():
                 continue
             if isinstance(t, str) and t in idx:
                 title = f.stem.replace('_', ' ').replace('-', ' ')
-                out.setdefault(idx[t], []).append((title[0].upper() + title[1:], f))
+                (FAILING if is_failing(f) else out).setdefault(idx[t], []).append((title[0].upper() + title[1:], f))
     return out
 
 def api_examples():
@@ -262,10 +282,8 @@ def api_examples():
     out = {}
     def add(d, name, f):
         f = Path(f)
-        if f.name in EXCLUDES:
-            return
         t = f.stem.replace('_', ' ').replace('-', ' ')
-        out.setdefault(blk(d, name), []).append((t[0].upper() + t[1:], f))
+        (FAILING if is_failing(f) else out).setdefault(blk(d, name), []).append((t[0].upper() + t[1:], f))
     p1 = REPO / 'api/part1/openapi/examples'
     for f in sorted(p1.glob('systems/*.json')):
         if f.name.endswith('.links.json'):
